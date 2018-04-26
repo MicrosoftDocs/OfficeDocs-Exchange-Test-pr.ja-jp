@@ -1,0 +1,19 @@
+- name: Exchange Server 2013 管理パックガイド
+  href: exchange-server-2013-management-pack-guide.md
+  items:
+  - name: Exchange Server 2013 管理パックのインポート
+    href: import-the-exchange-server-2013-management-pack.md
+  - name: Exchange Server 2013 管理パックをお使いになる前に
+    href: getting-started-with-exchange-server-2013-management-pack.md
+  - name: トラブルシューティングに Exchange Server 2013 管理パックを使用する
+    href: using-the-exchange-server-2013-management-pack-for-troubleshooting.md
+  - name: 展開に関連した手順
+    href: procedures-related-to-deployment.md
+  - name: Procedures related to post-deployment operation
+    href: procedures-related-to-post-deployment-operation.md
+  - name: Exchange Server 2013 管理パックによるシステム正常性の報告方法について
+    href: understanding-how-exchange-server-2013-management-pack-reports-system-health.md
+  - name: 'Appendix A: Exchange health sets'
+    href: appendix-a-exchange-health-sets.md
+  - name: '付録 B: その他のリソース'
+    href: appendix-b-additional-resources.md
