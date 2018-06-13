@@ -1,0 +1,93 @@
+- name: Exchange Server 2013 プレビューのハイブリッド展開
+  href: exchange-server-hybrid-deployments-exchange-2013-help.md
+  items:
+  - name: ハイブリッド構成ウィザード
+    href: hybrid-configuration-wizard-exchange-2013-help.md
+  - name: ハイブリッド構成ウィザードに関する FAQ
+    href: hybrid-configuration-wizard-faqs-exchange-2013-help.md
+  - name: ハイブリッド展開の前提条件
+    href: hybrid-deployment-prerequisites-exchange-2013-help.md
+  - name: ハイブリッド展開の証明書要件
+    href: certificate-requirements-for-hybrid-deployments-exchange-2013-help.md
+  - name: Exchange ハイブリッド展開でのトランスポート オプション
+    href: transport-options-in-exchange-hybrid-deployments-exchange-2013-help.md
+  - name: Exchange ハイブリッド展開でのトランスポート ルーティング
+    href: transport-routing-in-exchange-hybrid-deployments-exchange-2013-help.md
+  - name: Exchange ハイブリッド展開でのハイブリッド管理
+    href: hybrid-management-in-exchange-hybrid-deployments-exchange-2013-help.md
+  - name: Exchange ハイブリッド展開における空き時間情報の共有
+    href: shared-free-busy-in-exchange-hybrid-deployments-exchange-2013-help.md
+  - name: Exchange ハイブリッド展開のサーバー役割
+    href: server-roles-in-exchange-hybrid-deployments-exchange-2013-help.md
+  - name: Exchange ハイブリッド展開での IRM
+    href: irm-in-exchange-hybrid-deployments-exchange-2013-help.md
+  - name: Exchange ハイブリッド展開のアクセス許可
+    href: permissions-in-exchange-hybrid-deployments-exchange-2013-help.md
+  - name: ハイブリッド展開でのエッジ トランスポート サーバー
+    href: edge-transport-servers-with-hybrid-deployments-exchange-2013-help.md
+  - name: ハイブリッド展開でのシングル サインオン
+    href: single-sign-on-with-hybrid-deployments-exchange-2013-help.md
+  - name: Exchange ハイブリッド展開での Exchange ActiveSync デバイスの設定
+    href: exchange-activesync-device-settings-with-exchange-hybrid-deployments-exchange-2013-help.md
+  - name: ハイブリッド移行の場合のパフォーマンス要因とベスト プラクティス
+    href: performance-factors-and-best-practices-for-hybrid-migrations-exchange-2013-help.md
+  - name: ハイブリッド展開でオンプレミスの Exchange サーバーを使用停止にする方法とそのタイミング
+    href: how-and-when-to-decommission-your-on-premises-exchange-servers-in-a-hybrid-deployment-exchange-2013-help.md
+  - name: ハイブリッド展開の手順
+    href: hybrid-deployment-procedures-exchange-2013-help.md
+    items:
+    - name: ハイブリッド構成ウィザードを使用してハイブリッド展開を作成する
+      href: create-a-hybrid-deployment-with-the-hybrid-configuration-wizard-exchange-2013-help.md
+    - name: ハイブリッド展開においてオンプレミスの組織と Exchange Online 組織間でメールボックスを移動する
+      href: move-mailboxes-between-on-premises-and-exchange-online-organizations-in-hybrid-deployments-exchange-2013-help.md
+    - name: ハイブリッド展開用に従来の社内パブリック フォルダーを構成する
+      href: configure-legacy-on-premises-public-folders-for-a-hybrid-deployment-exchange-2013-help.md
+    - name: ハイブリッド展開用に Exchange 2013 パブリック フォルダーを構成する
+      href: configure-exchange-2013-public-folders-for-a-hybrid-deployment-exchange-2013-help.md
+    - name: ハイブリッド展開用に Exchange Online パブリック フォルダーを構成する
+      href: configure-exchange-online-public-folders-for-a-hybrid-deployment-exchange-2013-help.md
+    - name: ハイブリッド展開で委任されたメールボックスへのアクセス許可をサポートするように Exchange を構成する
+      href: configure-exchange-to-support-delegated-mailbox-permissions-in-a-hybrid-deployment-exchange-2013-help.md
+    - name: OneDrive for Business と Exchange 2016 (オンプレミス) を使用して最新の添付ファイルを構成する
+      href: configure-document-collaboration-with-onedrive-for-business-and-exchange-2016-on-premises-exchange-2013-help.md
+    - name: オンプレミスの Exchange ハイブリッドを使用して Office 365 グループを構成する
+      href: configure-office-365-groups-with-on-premises-exchange-hybrid-exchange-2013-help.md
+    - name: ハイブリッド展開でオンプレミスのプライマリ メールボックス用のクラウドベースのアーカイブを作成する
+      href: create-a-cloud-based-archive-for-an-on-premises-primary-mailbox-in-an-exchange-hybrid-deployment-exchange-online-help.md
+    - name: Office 365 ハイブリッドの Outlook Web App の URL を簡略化する
+      href: simplify-the-outlook-web-app-url-for-office-365-hybrid-exchange-2013-help.md
+    - name: ハイブリッド展開のトラブルシューティング
+      href: troubleshoot-a-hybrid-deployment-exchange-2013-help.md
+  - name: Exchange 2013 および Exchange 2007 を使用するハイブリッド展開
+    href: hybrid-deployments-with-exchange-2013-and-exchange-2007-exchange-2013-help.md
+    items:
+    - name: Exchange 2013/Exchange 2007 ハイブリッド展開でのサーバーの役割
+      href: server-roles-in-exchange-2013-exchange-2007-hybrid-deployments-exchange-2013-help.md
+    - name: Exchange 2013/Exchange 2007 ハイブリッド展開でのハイブリッド管理
+      href: hybrid-management-in-exchange-2013-exchange-2007-hybrid-deployments-exchange-2013-help.md
+    - name: Exchange 2013/Exchange 2007 ハイブリッド展開でのエッジ トランスポート サーバー
+      href: edge-transport-servers-in-exchange-2013-exchange-2007-hybrid-deployments-exchange-2013-help.md
+    - name: Exchange 2013/Exchange 2007 ハイブリッド展開でのトランスポート オプション
+      href: transport-options-in-exchange-2013-exchange-2007-hybrid-deployments-exchange-2013-help.md
+    - name: Exchange 2013/Exchange 2007 ハイブリッド展開でのトランスポート ルーティング
+      href: transport-routing-in-exchange-2013-exchange-2007-hybrid-deployments-exchange-2013-help.md
+  - name: Exchange 2013 および Exchange 2010 を使用するハイブリッド展開
+    href: hybrid-deployments-with-exchange-2013-and-exchange-2010-exchange-2013-help.md
+    items:
+    - name: Exchange 2013/Exchange 2010 ハイブリッド展開でのサーバーの役割
+      href: server-roles-in-exchange-2013-exchange-2010-hybrid-deployments-exchange-2013-help.md
+    - name: Exchange 2013/Exchange 2010 ハイブリッド展開でのハイブリッド管理
+      href: hybrid-management-in-exchange-2013-exchange-2010-hybrid-deployments-exchange-2013-help.md
+    - name: Exchange 2013/Exchange 2010 ハイブリッド展開でのエッジ トランスポート サーバー
+      href: edge-transport-servers-in-exchange-2013-exchange-2010-hybrid-deployments-exchange-2013-help.md
+    - name: Exchange 2013/Exchange 2010 ハイブリッド展開でのトランスポート オプション
+      href: transport-options-in-exchange-2013-exchange-2010-hybrid-deployments-exchange-2013-help.md
+    - name: Exchange 2013/Exchange 2010 ハイブリッド展開でのトランスポート ルーティング
+      href: transport-routing-in-exchange-2013-exchange-2010-hybrid-deployments-exchange-2013-help.md
+  - name: Exchange マニュアルについて
+    href: about-exchange-documentation-exchange-2013-help.md
+    items:
+    - name: 障碍がある方のためのユーザー補助機能
+      href: accessibility-for-people-with-disabilities-exchange-2013-help.md
+    - name: サード パーティの著作権に関する通知
+      href: third-party-copyright-notices-exchange-2013-help.md
