@@ -4,7 +4,7 @@ TOCTitle: Exchange Server 2013 管理パックをお使いになる前に
 ms:assetid: 72d1609f-ab32-44d8-aa40-b1de587442d2
 ms:mtpsurl: https://technet.microsoft.com/ja-jp/library/Dn195908(v=EXCHG.150)
 ms:contentKeyID: 53181892
-ms.author:dstrome
+ms.author: dstrome
 ms.date: 04/03/2015
 mtps_version: v=EXCHG.150
 ms.translationtype: HT

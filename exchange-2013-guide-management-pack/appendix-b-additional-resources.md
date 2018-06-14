@@ -4,7 +4,7 @@ TOCTitle: '付録 B: その他のリソース'
 ms:assetid: 3bcfb237-604a-4902-a003-b366cbf5a600
 ms:mtpsurl: https://technet.microsoft.com/ja-jp/library/Dn195905(v=EXCHG.150)
 ms:contentKeyID: 53181896
-ms.author:dstrome
+ms.author: dstrome
 ms.date: 04/03/2015
 mtps_version: v=EXCHG.150
 ms.translationtype: HT
