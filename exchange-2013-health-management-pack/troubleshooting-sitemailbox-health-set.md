@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013, Project Server 2013_
+_**適用先:** Exchange Server 2013, Project Server 2013_
 
-_**トピックの最終更新日:**2013-02-11_
+_**トピックの最終更新日:** 2013-02-11_
 
 SiteMailbox 正常性セットは、組織内のサイト メールボックスの全体的な状態とアクセス可能性を監視します。
 
@@ -29,7 +29,7 @@ SiteMailbox 監視システムは、バックグラウンド同期サービス�
 
   - **Update-SiteMailbox** コマンドを実行する
 
-  - Outlook Web App の \[オプション\] ウィンドウを開き、選択したサイト メールボックスの **\[同期の状態\]** ページの**\[同期の開始\]** ボタンをクリックする
+  - Outlook Web App の \[オプション\] ウィンドウを開き、選択したサイト メールボックスの **\[同期の状態\]** ページの **\[同期の開始\]** ボタンをクリックする
 
 Update-SiteMailbox コマンドレットの詳細については、「[Update-SiteMailbox](https://technet.microsoft.com/ja-jp/library/jj218690\(v=exchg.150\))」を参照してください。
 
