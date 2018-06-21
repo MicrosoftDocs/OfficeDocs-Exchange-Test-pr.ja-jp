@@ -13,9 +13,9 @@ ms.translationtype: HT
 
 このトピックは処理中です。  
 
-_**適用先:**Exchange Online, Exchange Server, Exchange Server 2013_
+_<strong>適用先:</strong>Exchange Online, Exchange Server, Exchange Server 2013_
 
-_**トピックの最終更新日:**2016-12-09_
+_<strong>トピックの最終更新日:</strong>2016-12-09_
 
 Microsoft Exchange のエッジ トランスポート サーバーは、組織のオンプレミスの境界ネットワークに配備されます。それらは、インターネットに直接接続されたメール フローを処理し、内部ネットワーク内の Exchange サーバーの SMTP リレーおよびスマート ホストとして動作するドメインに参加していないコンピューターです。
 

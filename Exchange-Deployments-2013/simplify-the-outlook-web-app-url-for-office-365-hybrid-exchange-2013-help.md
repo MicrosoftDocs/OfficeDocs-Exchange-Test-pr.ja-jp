@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**トピックの最終更新日:**2016-11-11_
+_<strong>トピックの最終更新日:</strong>2016-11-11_
 
 ハイブリッド環境のクラウド メールボックスのユーザーのために Web 上の Outlook (Outlook Web App) の URL を構成する方法について説明します。
 

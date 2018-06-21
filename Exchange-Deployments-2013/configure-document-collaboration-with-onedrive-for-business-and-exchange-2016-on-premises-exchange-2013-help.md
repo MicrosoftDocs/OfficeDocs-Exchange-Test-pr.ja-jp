@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2016_
+_<strong>適用先:</strong>Exchange Server 2016_
 
-_**トピックの最終更新日:**2016-12-09_
+_<strong>トピックの最終更新日:</strong>2016-12-09_
 
 **概要**:オンプレミスの Exchange Server 2016 ユーザーに、ハイブリッド構成における OneDrive for Business と SharePoint Online のドキュメント コラボレーションを活用できるようにする方法。
 

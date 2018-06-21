@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_<strong>適用先:</strong>Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**トピックの最終更新日:**2017-10-02_
+_<strong>トピックの最終更新日:</strong>2017-10-02_
 
 Exchange ベースのハイブリッド展開では、オンプレミス Exchange メールボックスを Exchange Online 組織に移動するか、Exchange Online メールボックスを Exchange 組織に移動するかを選択できます。オンプレミス組織と Exchange Online 組織との間でメールボックスを移動するときは、移行バッチを使用してリモート メールボックス移動要求を実行します。この方法では、新しいユーザー メールボックスを作成してユーザー情報をインポートする代わりに、既存のメールボックスを移動できます。この方法は、クラウドへの Exchange の完全な移行の一環としてオンプレミス Exchange 組織から Exchange Online にユーザー メールボックスを移行するのとは異なります。このトピックで説明するメールボックス移動は、オンプレミス Exchange 組織と Exchange Online 組織間の長期的な共存関係で行う Exchange の管理の一部です。
 
@@ -49,7 +49,7 @@ Exchange ベースのハイブリッド展開では、オンプレミス Exchang
 
 Exchange ハイブリッド展開でオンボードとオフボードのリモート移動/移行を実行する前に、Exchange リモート移行エンドポイントを作成することをお勧めします。移行エンドポイントには、MRS プロキシ サービスを実行しているオンプレミス Exchange サーバーの接続設定が含まれます。これは、Exchange Online との間でリモート移動/移行を実行する際に必要となります。
 
-詳しい手順については、「[移行エンドポイントを作成する](https://technet.microsoft.com/ja-jp/library/jj874458\(v=exchg.150\))」を参照してください。
+詳しい手順については、「移行エンドポイントを作成する」を参照してください。
 
 ## 手順 2: MRSProxy サービスを有効にする
 

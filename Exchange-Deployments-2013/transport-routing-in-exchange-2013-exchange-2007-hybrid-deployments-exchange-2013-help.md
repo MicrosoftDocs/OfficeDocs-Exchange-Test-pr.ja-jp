@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server, Exchange Server 2013_
+_<strong>適用先:</strong>Exchange Online, Exchange Server, Exchange Server 2013_
 
-_**トピックの最終更新日:**2016-07-29_
+_<strong>トピックの最終更新日:</strong>2016-07-29_
 
 このトピックでは、インターネットからの受信メッセージおよびインターネットへの送信メッセージのルーティング オプションについて説明します。
 

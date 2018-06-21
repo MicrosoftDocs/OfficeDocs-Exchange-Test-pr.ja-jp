@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_<strong>適用先:</strong>Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**トピックの最終更新日:**2016-12-09_
+_<strong>トピックの最終更新日:</strong>2016-12-09_
 
 ハイブリッド展開では、オンプレミスの Exchange 組織と Office 365 間の通信をセキュリティ保護する上でデジタル証明書が重要となります。証明書により、各 Exchange 組織が別の Exchange 組織の ID を信頼できるようになります。証明書では、各 Exchange 組織が適切なソースと通信していることを確認することもできます。
 

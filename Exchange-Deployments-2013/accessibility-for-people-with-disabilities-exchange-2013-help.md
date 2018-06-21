@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013_
+_<strong>適用先:</strong>Exchange Online, Exchange Server 2013_
 
 Microsoft では、すべてのユーザーにとって使いやすい製品とサービスを提供できるよう取り組んでおります。ここでは、障碍がある方に Microsoft Exchange を快適に使用していただくための機能、製品、およびサービスについて説明します。
 

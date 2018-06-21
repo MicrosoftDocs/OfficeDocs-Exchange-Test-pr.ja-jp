@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_<strong>適用先:</strong>Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**トピックの最終更新日:**2018-04-16_
+_<strong>トピックの最終更新日:</strong>2018-04-16_
 
 エッジ トランスポート サーバーの役割は省略可能で、通常は、Exchange 組織の境界ネットワークにあるコンピューター上に展開され、組織が攻撃に晒される範囲を最小限にするよう設計されています。エッジ トランスポート サーバーは、インターネットに直接接続されたすべてのメール フローを処理し、組織内のオンプレミスの Exchange サーバー用の SMTP 中継およびスマート ホスト サービスを提供します。
 

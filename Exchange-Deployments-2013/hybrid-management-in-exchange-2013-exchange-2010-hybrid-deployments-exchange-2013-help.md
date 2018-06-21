@@ -13,9 +13,9 @@ ms.translationtype: HT
 
 このトピックは処理中です。  
 
-_**適用先:**Exchange Online, Exchange Server, Exchange Server 2013_
+_<strong>適用先:</strong>Exchange Online, Exchange Server, Exchange Server 2013_
 
-_**トピックの最終更新日:**2016-12-09_
+_<strong>トピックの最終更新日:</strong>2016-12-09_
 
 Exchange 2010 のオンプレミスの組織に Microsoft Exchange Server 2013 を実行しているサーバーをインストールすると、自動的に、Exchange 2013 管理ツールがそのサーバー上にインストールされます。次のツールを使用して、オンプレミスの Exchange 組織と Exchange Online 組織の両方のハイブリッド機能を構成して管理します。
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_<strong>適用先:</strong>Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**トピックの最終更新日:**2016-12-09_
+_<strong>トピックの最終更新日:</strong>2016-12-09_
 
 Microsoft では新しいハイブリッド構成ウィザードをリリースして、ハイブリッド展開の構成を簡素化し、ハイブリッド構成をより柔軟にするとともに、常に間違いなく最新版の機能を実行いただけるようにしました。ハイブリッド ウィザードのこのバージョンは Exchange 2016 と累積更新プログラム 10 以降の Exchange 2013 のリリースに組み込まれていますが、前の Exchange 2013 累積的更新プログラム (CU) または Exchange 2010 Service Pack 3 (SP3) を実行している場合でも新しいウィザードをダウンロードすることができます。
 
