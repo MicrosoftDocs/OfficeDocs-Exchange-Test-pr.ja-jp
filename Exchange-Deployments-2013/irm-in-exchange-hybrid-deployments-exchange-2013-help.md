@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_<strong>適用先:</strong>Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**トピックの最終更新日:**2016-12-09_
+_<strong>トピックの最終更新日:</strong>2016-12-09_
 
 **概要:** Exchange ハイブリッド環境での IRM の機能、および Exchange Online とオンプレミスの Exchange サーバー間で IRM を構成する方法。
 

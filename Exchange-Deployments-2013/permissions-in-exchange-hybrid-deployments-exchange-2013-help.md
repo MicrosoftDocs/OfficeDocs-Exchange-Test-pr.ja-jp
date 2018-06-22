@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用先:**Exchange Server 2013, Exchange Server 2016_
+_<strong>適用先:</strong>Exchange Server 2013, Exchange Server 2016_
 
-_**トピックの最終更新日:**2018-05-02_
+_<strong>トピックの最終更新日:</strong>2018-05-02_
 
 Office 365 組織の Exchange Online は Exchange Server に基づいており、オンプレミスの組織の場合と同様に、役割ベースのアクセス制御 (RBAC) を使用してアクセス許可を制御します。管理者には管理役割グループを使用してアクセス許可が付与され、エンド ユーザーには管理役割の割り当てポリシーを使用してアクセス許可が付与されます。
 

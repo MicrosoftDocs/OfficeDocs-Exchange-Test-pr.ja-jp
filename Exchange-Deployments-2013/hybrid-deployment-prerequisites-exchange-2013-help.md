@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_<strong>適用先:</strong>Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**トピックの最終更新日:**2017-07-25_
+_<strong>トピックの最終更新日:</strong>2017-07-25_
 
 **概要**:ハイブリッド展開をセットアップするために必要な Exchange 環境について説明します。
 

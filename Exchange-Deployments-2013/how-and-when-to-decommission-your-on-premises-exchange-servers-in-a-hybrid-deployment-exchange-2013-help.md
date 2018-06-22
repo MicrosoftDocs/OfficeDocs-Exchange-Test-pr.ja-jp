@@ -13,9 +13,11 @@ ms.translationtype: HT
 
  
 
+
 _**適用先:** Exchange Online, Exchange Server, Exchange Server 2013, Exchange Server 2016_
 
 _**トピックの最終更新日:** 2017-07-27_
+
 
 Exchange ハイブリッド展開から完全なクラウドの実装に移行する準備ができている場合は、この記事をお読みください。
 

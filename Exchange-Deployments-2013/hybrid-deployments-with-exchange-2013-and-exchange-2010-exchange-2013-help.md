@@ -13,9 +13,9 @@ ms.translationtype: HT
 
 このトピックは処理中です。  
 
-_**適用先:**Exchange Online, Exchange Server, Exchange Server 2013_
+_<strong>適用先:</strong>Exchange Online, Exchange Server, Exchange Server 2013_
 
-_**トピックの最終更新日:**2015-07-07_
+_<strong>トピックの最終更新日:</strong>2015-07-07_
 
 Microsoft Exchange Server 2013 で導入されたハイブリッド構成ウィザードに対する最新の改善およびアーキテクチャの変更により、Exchange 2010 との Exchange 2013 ベースのハイブリッド展開の構成と管理はこれまで以上に簡単になりました。Exchange 2010 のオンプレミスの組織と Exchange Online 組織を長期共存のために接続する場合でも、クラウド移行戦略の一部として接続する場合でも、ハイブリッド展開の概念を理解することが重要です。
 

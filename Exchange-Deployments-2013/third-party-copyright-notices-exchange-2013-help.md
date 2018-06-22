@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Online Protection, Exchange Server 2013_
+_<strong>適用先:</strong>Exchange Online, Exchange Online Protection, Exchange Server 2013_
 
 Outside In HTML Export © 1991, 2011 Oracle
 
