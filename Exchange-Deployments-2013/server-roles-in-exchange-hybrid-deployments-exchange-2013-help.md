@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013, Exchange Server 2016_
+_<strong>適用先:</strong>Exchange Server 2013, Exchange Server 2016_
 
-_**トピックの最終更新日:**2016-12-09_
+_<strong>トピックの最終更新日:</strong>2016-12-09_
 
 Exchange 2013 と Exchange 2016 に基づいて、ハイブリッド展開を構成できます。ハイブリッド展開をサポートするように構成する必要がある役割は、使用している Exchange のバージョンによって異なります。
 

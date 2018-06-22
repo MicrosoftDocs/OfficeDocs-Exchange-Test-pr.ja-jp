@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_<strong>適用先:</strong>Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**トピックの最終更新日:**2017-06-14_
+_<strong>トピックの最終更新日:</strong>2017-06-14_
 
 ハイブリッド構成ウィザードの最近の改善により、ハイブリッド展開の構成と管理はこれまで以上に簡単になりました。Exchange オンプレミス組織と Exchange Online 組織を長期共存のために接続する場合でも、クラウド移行戦略の一部として接続する場合でも、ハイブリッド展開の構成が Exchange 組織の最初のステップになります。
 

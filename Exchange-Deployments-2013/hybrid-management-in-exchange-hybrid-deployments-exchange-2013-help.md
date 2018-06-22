@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013, Exchange Server 2016_
+_<strong>適用先:</strong>Exchange Server 2013, Exchange Server 2016_
 
-_**トピックの最終更新日:**2016-12-09_
+_<strong>トピックの最終更新日:</strong>2016-12-09_
 
 Exchange サーバーをインストールすると、Exchange 管理ツールがサーバーに自動的にインストールされます。次のツールを使用して、オンプレミス Exchange 組織と Exchange Online 組織の両方の構成と管理を行います。
 

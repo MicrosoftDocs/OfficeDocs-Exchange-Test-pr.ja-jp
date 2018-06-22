@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_<strong>適用先:</strong>Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**トピックの最終更新日:**2018-04-16_
+_<strong>トピックの最終更新日:</strong>2018-04-16_
 
 **概要**:Exchange ハイブリッド展開を計画する前に把握しておく必要のあること。
 

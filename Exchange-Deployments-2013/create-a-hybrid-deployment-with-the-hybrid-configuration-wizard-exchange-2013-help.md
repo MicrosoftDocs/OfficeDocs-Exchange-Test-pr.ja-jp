@@ -13,9 +13,9 @@ ms.translationtype: HT
 
 このトピックは処理中です。  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_<strong>適用先:</strong>Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**トピックの最終更新日:**2016-12-09_
+_<strong>トピックの最終更新日:</strong>2016-12-09_
 
 ハイブリッド展開を確立すると、既存の社内 Exchange Server 組織で実現されている多機能性と管理制御能力をクラウドにまで拡大できます。また、ハイブリッド展開は、社内メールボックスのクラウドベース アーカイブ ソリューションを Exchange Online Archiving でサポートし、社内メールボックスから Exchange Online への完全な移行の中間ステップにもなります。
 

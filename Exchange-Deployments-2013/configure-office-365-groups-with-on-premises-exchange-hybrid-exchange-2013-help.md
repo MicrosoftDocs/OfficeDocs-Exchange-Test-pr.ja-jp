@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**トピックの最終更新日:**2016-12-06_
+_<strong>トピックの最終更新日:</strong>2016-12-06_
 
 オンプレミスの Exchange ユーザーがハイブリッド展開で Office 365 グループを使用できるようにする方法を説明します。
 
@@ -103,7 +103,7 @@ Office 365 グループのプライマリ SMTP ドメインは、*グループ �
     <td><p>MX</p></td>
     <td><p>groups-contoso-com.mail.protection.outlook.com</p>
 
-    > [!NOTE]
+    > [!NOTE]  
     > この DNS レコード値のフォーマットは、<EM>&lt;domain key&gt;</EM>.mail.protection.outlook.com です。ドメイン キーの確認方法については、「<A href="https://support.office.com/ja-jp/article/gather-the-information-you-need-to-create-office-365-dns-records-77f90d4a-dc7f-4f09-8972-c1b03ea85a67?ui=en-us%26rs=en-us%26ad=us">Office 365 の DNS レコードの作成に必要な情報を収集する</A>」を参照してください。
 
 
@@ -118,8 +118,8 @@ Office 365 グループのプライマリ SMTP ドメインは、*グループ �
     </table>
     
 
-    > [!NOTE]
-    > グループ ドメインの MX DNS レコードがオンプレミス Exchange サーバーに設定されている場合、オンプレミス Exchange 組織と Office 365 グループのユーザー間のメール フローが正しく動作しません。
+   > [!NOTE]  
+   > グループ ドメインの MX DNS レコードがオンプレミス Exchange サーバーに設定されている場合、オンプレミス Exchange 組織と Office 365 グループのユーザー間のメール フローが正しく動作しません。
 
 
 
@@ -128,7 +128,7 @@ Office 365 グループのプライマリ SMTP ドメインは、*グループ �
         Set-SendConnector -Identity "Outbound to Office 365" -AddressSpaces "contoso.mail.onmicrosoft.com","groups.contoso.com"
     
 
-    > [!NOTE]
+    > [!NOTE]  
     > 送信コネクタが更新されていない場合、またはグループ ドメインがオンプレミス Exchange 組織の承認済みドメインとして追加されていない場合、グループが外部送信者からのメールを受信するよう設定されていないかぎり、オンプレミスのメールボックスから送信されたメールはグループに配信されません。
 
 

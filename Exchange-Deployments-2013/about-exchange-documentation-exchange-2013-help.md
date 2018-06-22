@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013_
+_<strong>適用先:</strong>Exchange Online, Exchange Server 2013_
 
 これは、内容別または Microsoft Exchange で使用されるテクノロジ別に編成された概念および手順を説明したトピックを集めたものです。それぞれのトピックへは、左側のウィンドウの目次から、他のヘルプ トピック内のリンクから、検索結果から、またはカスタマイズしたお気に入りのトピック一覧から直接アクセスできます。
 

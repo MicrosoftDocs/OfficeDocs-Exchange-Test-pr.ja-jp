@@ -13,7 +13,7 @@ ms.translationtype: MT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_<strong>適用先:</strong>Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 Exchange ハイブリッド展開では、オンプレミスのプライマリ メールボックスとクラウド ベースのアーカイブ メールボックスを Exchange Online で構成できます。
 

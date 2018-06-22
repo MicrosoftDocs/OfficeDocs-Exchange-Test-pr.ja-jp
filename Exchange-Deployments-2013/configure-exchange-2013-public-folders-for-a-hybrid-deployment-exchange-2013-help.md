@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013, Exchange Server 2016_
+_<strong>適用先:</strong>Exchange Server 2013, Exchange Server 2016_
 
 **概要**:Exchange 2013 環境にあるオンプレミスのパブリック フォルダーに Exchange Online ユーザーがアクセスできるようにする手順。
 
