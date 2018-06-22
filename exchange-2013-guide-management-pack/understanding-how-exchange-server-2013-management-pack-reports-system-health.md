@@ -4,6 +4,7 @@ TOCTitle: Exchange Server 2013 管理パックによるシステム正常性の�
 ms:assetid: 6ca8847f-93fe-458d-bd43-7afad7fdd2f4
 ms:mtpsurl: https://technet.microsoft.com/ja-jp/library/Dn195910(v=EXCHG.150)
 ms:contentKeyID: 53181895
+ms.author: dstrome
 ms.date: 04/03/2015
 mtps_version: v=EXCHG.150
 ms.translationtype: HT

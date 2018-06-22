@@ -4,6 +4,7 @@ TOCTitle: トラブルシューティングに Exchange Server 2013 管理パッ
 ms:assetid: c9672dad-1e67-4f07-bad9-539a67f2ac70
 ms:mtpsurl: https://technet.microsoft.com/ja-jp/library/Dn195913(v=EXCHG.150)
 ms:contentKeyID: 53181897
+ms.author: dstrome
 ms.date: 04/03/2015
 mtps_version: v=EXCHG.150
 ms.translationtype: HT

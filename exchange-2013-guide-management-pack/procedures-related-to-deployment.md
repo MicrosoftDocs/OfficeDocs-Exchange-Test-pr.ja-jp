@@ -4,6 +4,7 @@ TOCTitle: 展開に関連した手順
 ms:assetid: 6b7682bd-fe3d-43b9-a7db-66c0ac17656f
 ms:mtpsurl: https://technet.microsoft.com/ja-jp/library/Dn195909(v=EXCHG.150)
 ms:contentKeyID: 53181894
+ms.author: dstrome
 ms.date: 04/03/2015
 mtps_version: v=EXCHG.150
 ms.translationtype: HT

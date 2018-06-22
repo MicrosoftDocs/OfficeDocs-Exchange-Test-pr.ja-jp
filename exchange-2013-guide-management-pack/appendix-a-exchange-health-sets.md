@@ -4,6 +4,7 @@ TOCTitle: 'Appendix A: Exchange health sets'
 ms:assetid: 29af464e-ae07-40f8-ac6e-28e876a91d90
 ms:mtpsurl: https://technet.microsoft.com/ja-jp/library/Dn195906(v=EXCHG.150)
 ms:contentKeyID: 54651746
+ms.author: dstrome
 ms.date: 04/03/2015
 mtps_version: v=EXCHG.150
 ms.translationtype: HT
