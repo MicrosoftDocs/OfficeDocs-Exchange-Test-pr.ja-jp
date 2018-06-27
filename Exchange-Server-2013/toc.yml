@@ -1,0 +1,2589 @@
+- name: Exchange Server 2013 プレビュー
+  href: exchange-server-2013-exchange-2013-help.md
+  items:
+  - name: Exchange 2013 の新機能
+    href: what-s-new-in-exchange-2013-exchange-2013-help.md
+    items:
+    - name: Exchange 2013 で廃止された機能
+      href: what-s-discontinued-in-exchange-2013-exchange-2013-help.md
+    - name: Exchange 2013 の Outlook Web App の新機能
+      href: what-s-new-for-outlook-web-app-in-exchange-2013-exchange-2013-help.md
+    - name: Exchange 2013 のユニファイド メッセージングの新機能
+      href: what-s-new-for-unified-messaging-in-exchange-2013-exchange-2013-help.md
+    - name: トランスポート ルールの新機能
+      href: what-s-new-for-transport-rules-exchange-2013-help.md
+    - name: Exchange 2013 のリリース ノート
+      href: release-notes-for-exchange-2013-exchange-2013-help.md
+    - name: Exchange 2013 の更新プログラム
+      href: updates-for-exchange-2013-exchange-2013-help.md
+  - name: 計画と展開
+    href: planning-and-deployment-for-exchange-2013-installation-instructions.md
+    items:
+    - name: Exchange Server 展開アシスタント
+      href: exchange-server-deployment-assistant-exchange-2013-help.md
+    - name: Active Directory
+      href: active-directory-exchange-2013-help.md
+      items:
+      - name: Active Directory へのアクセス
+        href: access-to-active-directory-exchange-2013-help.md
+      - name: Exchange 2013 Active Directory スキーマの変更
+        href: exchange-2013-active-directory-schema-changes-exchange-2013-help.md
+      - name: 名前空間の不整合のシナリオ
+        href: disjoint-namespace-scenarios-exchange-2013-help.md
+        items:
+        - name: 名前空間の不整合の DNS サフィックス検索一覧を構成する
+          href: configure-the-dns-suffix-search-list-for-a-disjoint-namespace-exchange-2013-help.md
+    - name: Exchange 2013 のシステム要件
+      href: exchange-2013-system-requirements-exchange-2013-help.md
+    - name: Exchange 2013 の前提条件
+      href: exchange-2013-prerequisites-exchange-2013-help.md
+    - name: Active Directory とドメインを準備する
+      href: prepare-active-directory-and-domains-exchange-2013-help.md
+    - name: Exchange 2013 の新規インストールの展開
+      href: deploy-a-new-installation-of-exchange-2013-exchange-2013-help.md
+      items:
+      - name: 'チェックリスト: Exchange 2013 の新規インストールを実行する'
+        href: checklist-perform-a-new-installation-of-exchange-2013-exchange-2013-help.md
+      - name: セットアップ ウィザードを使用した Exchange 2013 のインストール
+        href: install-exchange-2013-using-the-setup-wizard-exchange-2013-help.md
+      - name: 無人モードを使用した Exchange 2013 のインストール
+        href: install-exchange-2013-using-unattended-mode-exchange-2013-help.md
+      - name: セットアップ ウィザードを使用して Exchange 2013 エッジ トランスポートの役割をインストールする
+        href: install-the-exchange-2013-edge-transport-role-using-the-setup-wizard-exchange-2013-help.md
+      - name: Exchange 2013 サーバーのインストールの委任
+        href: delegate-the-installation-of-an-exchange-2013-server-exchange-2013-help.md
+    - name: Exchange 2013 から最新の累積更新プログラムまたは Service Pack へのアップグレード
+      href: upgrade-exchange-2013-to-the-latest-cumulative-update-or-service-pack-exchange-2013-help.md
+    - name: Exchange 2010 から Exchange 2013 へのアップグレード
+      href: upgrade-from-exchange-2010-to-exchange-2013-exchange-2013-help.md
+      items:
+      - name: 'チェックリスト: Exchange 2010 からのアップグレード'
+        href: checklist-upgrade-from-exchange-2010-exchange-2013-help.md
+    - name: Exchange 2007 から Exchange 2013 へのアップグレード
+      href: upgrade-from-exchange-2007-to-exchange-2013-exchange-2013-help.md
+      items:
+      - name: 'チェックリスト: Exchange 2007 からのアップグレード'
+        href: checklist-upgrade-from-exchange-2007-exchange-2013-help.md
+    - name: 複数のフォレスト トポロジを Exchange 2013 に展開する
+      href: deploy-multiple-forest-topologies-for-exchange-2013-exchange-2013-help.md
+      items:
+      - name: フォレスト間のトポロジで Exchange 2013 を展開する
+        href: deploy-exchange-2013-in-a-cross-forest-topology-exchange-2013-help.md
+      - name: Exchange リソース フォレストのトポロジに Exchange 2013 を展開する
+        href: deploy-exchange-2013-in-an-exchange-resource-forest-topology-exchange-2013-help.md
+    - name: Exchange 2013 のインストール後のタスク
+      href: exchange-2013-post-installation-tasks-exchange-2013-help.md
+      items:
+      - name: Exchange 2013 プロダクト キーを入力する
+        href: enter-your-exchange-2013-product-key-exchange-2013-help.md
+      - name: メール フローおよびクライアント アクセスの構成
+        href: configure-mail-flow-and-client-access-exchange-2013-help.md
+      - name: Exchange 2013 のインストールの確認
+        href: verify-an-exchange-2013-installation-exchange-2013-help.md
+      - name: Exchange 2013 管理ツールをインストールする
+        href: install-the-exchange-2013-management-tools-exchange-2013-help.md
+    - name: Exchange 2013 仮想化
+      href: exchange-2013-virtualization-exchange-2013-help.md
+    - name: SharePoint および Lync との統合
+      href: integration-with-sharepoint-and-lync-exchange-2013-help.md
+      items:
+      - name: SharePoint 2013 および Lync 2013 との OAuth 認証の構成
+        href: configure-oauth-authentication-with-sharepoint-2013-and-lync-2013-exchange-2013-help.md
+    - name: 展開の参照
+      href: deployment-reference-exchange-2013-help.md
+      items:
+      - name: Exchange 2013 をインストールしたときの Active Directory の変更内容
+        href: what-changes-in-active-directory-when-exchange-2013-is-installed-exchange-2013-help.md
+      - name: 'Exchange 2013: エディションとバージョン'
+        href: exchange-2013-editions-and-versions-exchange-2013-help.md
+      - name: Exchange Server Supportability Matrix
+        href: exchange-server-supportability-matrix-exchange-2013-help.md
+      - name: Exchange 2013 の展開のアクセス許可のリファレンス
+        href: exchange-2013-deployment-permissions-reference-exchange-2013-help.md
+      - name: 展開のセキュリティ チェックリスト
+        href: deployment-security-checklist-exchange-2013-help.md
+      - name: Exchange 2013 のサイジングと容量の計画
+        href: exchange-2013-sizing-and-capacity-planning-exchange-2013-help.md
+      - name: Exchange 2013 記憶域構成オプション
+        href: exchange-2013-storage-configuration-options-exchange-2013-help.md
+      - name: Exchange 2013 での IPv6 サポート
+        href: ipv6-support-in-exchange-2013-exchange-2013-help.md
+      - name: Exchange 2013 の言語サポート
+        href: exchange-2013-language-support-exchange-2013-help.md
+      - name: Exchange 2013 インストールの前提条件の確認
+        href: exchange-2013-readiness-checks-exchange-2013-help.md
+        items:
+        - name: 既定の位置に AD LDS ディレクトリが存在する
+          href: ad-lds-directory-exists-in-default-location-exchange-2013-help.md
+        - name: 重複した Microsoft Exchange システム オブジェクト コンテナーが Active Directory に存在する
+          href: duplicate-microsoft-exchange-system-objects-container-exists-in-active-directory-exchange-2013-help.md
+        - name: フェールオーバー クラスター コマンド インターフェイス Windows 機能がインストールされていない
+          href: failover-cluster-command-interface-windows-feature-not-installed-exchange-2013-help.md
+        - name: クライアント アクセス サーバーの役割が既にインストールされている
+          href: client-access-server-role-is-already-installed-exchange-2013-help.md
+        - name: Active Directory が存在しないか接続できない
+          href: active-directory-does-not-exist-or-cannot-be-contacted-exchange-2013-help.md
+        - name: ローカル コンピューターが Active Directory ドメインに参加していない
+          href: the-local-computer-isn-t-joined-to-an-active-directory-domain-exchange-2013-help.md
+        - name: 組織の最初の Exchange サーバーのインストールを委任できない
+          href: installation-of-the-first-exchange-server-in-the-organization-can-t-be-delegated-exchange-2013-help.md
+        - name: 組織の最初の Exchange サーバーのインストールを委任できない
+          href: installation-of-the-first-exchange-server-in-the-organization-can-t-be-delegated-exchange-2013-help_1.md
+        - name: 組織内の最初の Exchange サーバーのインストールが委任できない
+          href: installation-of-the-first-exchange-server-in-the-organization-can-t-be-delegated-exchange-2013-help_2.md
+        - name: 組織の最初の Exchange サーバーのインストールを委任できない
+          href: installation-of-the-first-exchange-server-in-the-organization-can-t-be-delegated-exchange-2013-help_3.md
+        - name: 組織内の最初の Exchange サーバーのインストールが委任できない
+          href: installation-of-the-first-exchange-server-in-the-organization-can-t-be-delegated-exchange-2013-help_4.md
+        - name: Active Directory の機能レベルが Windows Server 2003 以降になっていない
+          href: active-directory-functional-level-isn-t-windows-server-2003-or-later-exchange-2013-help.md
+        - name: Exchange 組織コンテナーに書き込めない
+          href: cannot-write-to-the-exchange-organization-container-exchange-2013-help.md
+        - name: 一括更新を実行する必要がある
+          href: global-updates-required-exchange-2013-help.md
+        - name: DNS データベースにローカル コンピューターのホスト レコードが見つからない
+          href: the-host-record-for-the-local-computer-cannot-be-found-in-the-dns-database-exchange-2013-help.md
+        - name: Active Directory 分割アクセス許可を使用する場合、ドメイン コントローラーへのインストールはサポートされていない
+          href: installation-on-domain-controllers-is-not-supported-with-active-directory-split-permissions-exchange-2013-help.md
+        - name: 現在のアカウントが Active Directory ドメインにログインしていない
+          href: the-current-account-isn-t-logged-into-an-active-directory-domain-exchange-2013-help.md
+        - name: セットアップを続行する前に、コンピューターを再起動する必要がある
+          href: the-computer-needs-to-be-restarted-before-setup-can-continue-exchange-2013-help.md
+        - name: ログオン ユーザーが Schema Admins グループのメンバーではない
+          href: the-logged-on-user-is-not-a-member-of-the-schema-admins-group-exchange-2013-help.md
+        - name: UCMA 4.0、コア ランタイムがインストールされていない
+          href: ucma-4-0-core-runtime-not-installed-exchange-2013-help.md
+        - name: メールボックス データベースを削除できない
+          href: cannot-remove-mailbox-database-exchange-2013-help.md
+        - name: ドメイン コントローラーへの Exchange のインストールは推奨されない
+          href: installing-exchange-on-a-domain-controller-is-not-recommended-exchange-2013-help.md
+        - name: KB2619234 更新プログラムがインストールされていない
+          href: kb2619234-update-not-installed-exchange-2013-help.md
+        - name: 組織内の最初の Exchange サーバーのインストールを委任できない
+          href: installation-of-the-first-exchange-server-in-the-organization-can-t-be-delegated-exchange-2013-help_5.md
+        - name: Exchange 2010 または Exchange 2007 サーバーが検出されなかった
+          href: no-exchange-2010-or-exchange-2007-servers-detected-exchange-2013-help.md
+        - name: セットアップを続行する前に、コンピューターを再起動する必要がある
+          href: the-computer-needs-to-be-restarted-before-setup-can-continue-exchange-2013-help_1.md
+        - name: Exchange 2007 サーバーを Service Pack 3 更新プログラムのロールアップ 10 にアップグレードする必要がある
+          href: exchange-2007-servers-must-be-upgraded-to-service-pack-3-update-rollup-10-exchange-2013-help.md
+        - name: Exchange 2010 サーバーを Service Pack 3 にアップグレードする必要がある
+          href: exchange-2010-servers-must-be-upgraded-to-service-pack-3-exchange-2013-help.md
+        - name: Office 2010 フィルター パックがインストールされていない
+          href: office-2010-filter-pack-not-installed-exchange-2013-help.md
+        - name: Office 2010 フィルター パック SP1 がインストールされていない
+          href: office-2010-filter-pack-sp1-not-installed-exchange-2013-help.md
+        - name: Exchange 2000 または Exchange 2003 サーバーが含まれているフォレストで Exchange 2013 をインストールできない
+          href: can-t-install-exchange-2013-in-a-forest-containing-exchange-2000-or-exchange-2003-servers-exchange-2013-help.md
+        - name: 互換性のないオペレーティング システムが検出された
+          href: an-incompatible-operating-system-was-found-exchange-2013-help.md
+        - name: Exchange 2010 サーバーを Service Pack 3 にアップグレードする必要がある
+          href: exchange-2010-servers-must-be-upgraded-to-service-pack-3-exchange-2013-help_1.md
+        - name: ExecutionPolicy GPO が定義されている
+          href: executionpolicy-gpo-is-defined-exchange-2013-help.md
+        - name: プライマリ DNS サフィックスに [ms.exch.setupreadiness.FqdnMissing] が存在しない
+          href: primary-dns-suffix-is-missing-exchange-2013-help.md
+        - name: Simple Mail Transport Protocol が現在インストールされている_SMTPSvcInstalled
+          href: the-simple-mail-transport-protocol-is-currently-installed-smtpsvcinstalled-exchange-2013-help.md
+        - name: SMTP アドレス指定形式はサポートされていない_SMTPAddressLiteral
+          href: smtp-addressing-format-not-supported-smtpaddressliteral-exchange-2013-help.md
+        - name: World Wide Web Publishing Service が無効または見つからない_ShouldReRunSetupForW3SVC
+          href: the-world-wide-web-publishing-service-is-disabled-or-missing-shouldrerunsetupforw3svc-exchange-2013-help.md
+        - name: このサーバーは送信コネクタのソースである_ServerIsSourceForSendConnector
+          href: this-server-is-the-source-for-a-send-connector-serverissourceforsendconnector-exchange-2013-help.md
+        - name: ローカル コンピューターがグループ メンバーシップを拡張する責任を担う_ServerIsGroupExpansionServer
+          href: the-local-computer-is-responsible-for-expanding-group-membership-serverisgroupexpansionserver-exchange-2013-help.md
+        - name: ローカル コンピューターがグループ メンバーシップを拡張する責任を担う_ServerIsDynamicGroupExpansionServer
+          href: the-local-computer-is-responsible-for-expanding-group-membership-serverisdynamicgroupexpansionserver-exchange-2013-help.md
+        - name: コンピューターの完全修飾ドメイン名と受信者ポリシーが一致している_ServerFQDNMatchesSMTPPolicy
+          href: the-fully-qualified-domain-name-of-the-computer-matches-a-recipient-policy-serverfqdnmatchessmtppolicy-exchange-2013-help.md
+        - name: 古いデータベース ファイルが存在する_SecondSGFilesExist
+          href: older-database-files-present-secondsgfilesexist-exchange-2013-help.md
+        - name: スキーマ マスターで Windows Server 2003 Service Pack 1 以上が実行されていない_SchemaFSMONotWin2003SPn
+          href: the-schema-master-is-not-running-windows-server-2003-service-pack-1-or-later-schemafsmonotwin2003spn-exchange-2013-help.md
+        - name: 受信者更新サービスが見つからない_RUSMissing
+          href: cannot-find-a-recipient-update-service-rusmissing-exchange-2013-help.md
+        - name: Active Directory ドメインが混合モードである_RootDomainModeMixed
+          href: active-directory-domain-is-mixed-mode-rootdomainmodemixed-exchange-2013-help.md
+        - name: プライマリ DNS サーバーに接続できない_PrimaryDNSTestFailed
+          href: the-primary-dns-server-cannot-be-contacted-primarydnstestfailed-exchange-2013-help.md
+        - name: /PrepareDomain_PrepareDomainNotAdmin を実行するための十分なアクセス許可がない
+          href: insufficient-permissions-to-run-preparedomain-preparedomainnotadmin-exchange-2013-help.md
+        - name: Active Directory ドメインが混合モードである_PrepareDomainModeMixed
+          href: active-directory-domain-is-mixed-mode-preparedomainmodemixed-exchange-2013-help.md
+        - name: オペレーティング システムがデバッグ モードになっている_OSCheckedBuild
+          href: the-operating-system-is-in-debug-mode-oscheckedbuild-exchange-2013-help.md
+        - name: ログオン ユーザーがローカルの Administrators グループのメンバーではない_NotLocalAdmin
+          href: the-logged-on-user-is-not-a-member-of-the-local-administrators-group-notlocaladmin-exchange-2013-help.md
+        - name: スキーマ マスター サイト/ドメインがない_NotInSchemaMasterSite
+          href: not-in-schema-master-site-domain-notinschemamastersite-exchange-2013-help.md
+        - name: スキーマ マスター サイト/ドメインがない_NotInSchemaMasterDomain
+          href: not-in-schema-master-site-domain-notinschemamasterdomain-exchange-2013-help.md
+        - name: Exchange 2010 用に Active Directory を準備した後、Exchange 2007 の役割をインストールできない_NoE12ServerWarning
+          href: cannot-install-exchange-2007-roles-after-you-prepare-active-directory-for-exchange-2010-noe12serverwarning-exchange-2013-help.md
+        - name: セットアップを続行するために分散トランザクション コーディネーター サービスを開始する必要がある_MSDTCStopped
+          href: the-distributed-transaction-coordinator-service-must-be-started-before-setup-can-continue-msdtcstopped-exchange-2013-help.md
+        - name: 1 つ以上のキューにメッセージが存在している_MessagesInQueue
+          href: messages-currently-exist-in-one-or-more-queues-messagesinqueue-exchange-2013-help.md
+        - name: ストレージ グループ ドライブの仕様が見つからない_MailboxLogDriveDoesNotExist
+          href: storage-group-drive-specification-is-missing-mailboxlogdrivedoesnotexist-exchange-2013-help.md
+        - name: メールボックス データベース ドライブの仕様が見つからない_MailboxEDBDriveDoesNotExist
+          href: mailbox-database-drive-specification-is-missing-mailboxedbdrivedoesnotexist-exchange-2013-help.md
+        - name: Windows プロセス アクティブ化サービス - プロセス モデル コンポーネントが必要_LonghornWASProcessModelInstalled
+          href: the-windows-process-activation-service-process-model-component-is-required-longhornwasprocessmodelinstalled-exchange-2013-help.md
+        - name: IIS 7 コンポーネントがインストールされていない_LonghornIIS7WindowsAuthNotInstalled
+          href: iis-7-component-not-installed-longhorniis7windowsauthnotinstalled-exchange-2013-help.md
+        - name: IIS 7 .NET 拡張性コンポーネントが必要_LonghornIIS7NetExt
+          href: iis-7-net-extensibility-component-is-required-longhorniis7netext-exchange-2013-help.md
+        - name: ユニファイド メッセージング言語パックをアンインストールする_AdditionalUMLangPackExists
+          href: uninstall-unified-messaging-language-packs-additionalumlangpackexists-exchange-2013-help.md
+        - name: Active Directory を準備するにはアクセス許可が不十分_ADUpdateRequired
+          href: insufficient-permissions-to-prepare-active-directory-adupdaterequired-exchange-2013-help.md
+        - name: ハブ トランスポートの役割がローカル サイトで検出されない_BridgeheadRoleNotPresentInSite
+          href: hub-transport-role-not-detected-in-local-site-bridgeheadrolenotpresentinsite-exchange-2013-help.md
+        - name: すべてのサーバー役割を削除するにはアクセス許可が不十分_CannotUninstallDelegatedServer
+          href: insufficient-permissions-to-remove-all-server-roles-cannotuninstalldelegatedserver-exchange-2013-help.md
+        - name: クライアント アクセスの役割がローカル サイトで検出されない_ClientAccessRoleNotPresentInSite
+          href: client-access-role-not-detected-in-local-site-clientaccessrolenotpresentinsite-exchange-2013-help.md
+        - name: メールボックスの役割のみクラスター サーバーにインストールできる_ClusSvcInstalledRoleBlock
+          href: only-the-mailbox-role-can-be-installed-on-a-cluster-server-clussvcinstalledroleblock-exchange-2013-help.md
+        - name: セットアップで Exchange を読み取り専用ドメイン コントローラーにインストールできない_ComputerRODC
+          href: setup-cannot-install-exchange-to-a-read-only-domain-controller-computerrodc-exchange-2013-help.md
+        - name: レジストリにドメイン コントローラーのオーバーライドが設定されている_ConfigDCHostNameMismatch
+          href: domain-controller-override-is-set-in-the-registry-configdchostnamemismatch-exchange-2013-help.md
+        - name: Active Directory を準備するにはアクセス許可が不十分_DomainPrepWithoutADUpdate
+          href: insufficient-permissions-to-prepare-active-directory-domainprepwithoutadupdate-exchange-2013-help.md
+        - name: ローカル コンピューターですでに Exchange Server が実行されている_ExchangeAlreadyInstalled
+          href: the-local-computer-is-already-running-exchange-server-exchangealreadyinstalled-exchange-2013-help.md
+        - name: 古いデータベース ファイルが存在する_FirstSGFilesExist
+          href: older-database-files-present-firstsgfilesexist-exchange-2013-help.md
+        - name: 1 つ以上の Active Directory コネクタ サーバーが見つかった_ADCFound
+          href: one-or-more-active-directory-connector-servers-were-found-adcfound-exchange-2013-help.md
+        - name: スキーマ マスターが Windows Server 2003 Service Pack 1 以上を実行していない_DomainControllerIsOutOfSite
+          href: the-schema-master-is-not-running-windows-server-2003-service-pack-1-or-later-domaincontrollerisoutofsite-exchange-2013-help.md
+        - name: ドメインの準備が必要 _DomainPrepRequired
+          href: domain-preparation-required-domainpreprequired-exchange-2013-help.md
+        - name: セットアップを続行するために COM+ イベント システム サービスを開始する必要がある_EventSystemStopped
+          href: the-com-event-system-service-must-be-started-before-setup-can-continue-eventsystemstopped-exchange-2013-help.md
+        - name: IIS が 32 ビット互換モードである_IIS32BitMode
+          href: iis-is-in-32-bit-compatibility-mode-iis32bitmode-exchange-2013-help.md
+        - name: アクセス制御リスト (ACL) の継承がブロックされている_InhBlockPublicFolderTree
+          href: access-control-list-acl-inheritance-is-blocked-inhblockpublicfoldertree-exchange-2013-help.md
+        - name: サーバーの役割のインストール中にセットアップ エラーが発生した_InstallWatermark
+          href: setup-failure-occurred-while-installing-a-server-role-installwatermark-exchange-2013-help.md
+        - name: サーバー役割のアンインストール中にセットアップでエラーが発生した_InterruptedUninstallNotContinued
+          href: setup-failure-occurred-while-uninstalling-a-server-role-interrupteduninstallnotcontinued-exchange-2013-help.md
+        - name: Active Directory サイトの名前を確認できない_InvalidADSite
+          href: cannot-determine-the-name-of-the-active-directory-site-invalidadsite-exchange-2013-help.md
+        - name: ローカル コンピューターが子ドメインのドメイン コントローラーである_LocalComputerIsDCInChildDomain
+          href: the-local-computer-is-a-domain-controller-of-a-child-domain-localcomputerisdcinchilddomain-exchange-2013-help.md
+        - name: Active Directory ドメインが混合モードである_LocalDomainModeMixed
+          href: active-directory-domain-is-mixed-mode-localdomainmodemixed-exchange-2013-help.md
+        - name: ローカル ドメインは更新が必要_LocalDomainPrep
+          href: the-local-domain-needs-to-be-updated-localdomainprep-exchange-2013-help.md
+        - name: IIS 6 互換性コンポーネントがインストールされていない_LonghornIIS6MetabaseNotInstalled
+          href: iis-6-compatibility-components-not-installed-longhorniis6metabasenotinstalled-exchange-2013-help.md
+        - name: IIS 6 互換性コンポーネントがインストールされていない_LonghornIIS6MgmtConsoleNotInstalled
+          href: iis-6-compatibility-components-not-installed-longhorniis6mgmtconsolenotinstalled-exchange-2013-help.md
+        - name: IIS 7 コンポーネントがインストールされていない_LonghornIIS7BasicAuthNotInstalled
+          href: iis-7-component-not-installed-longhorniis7basicauthnotinstalled-exchange-2013-help.md
+        - name: IIS 7 コンポーネントがインストールされていない_LonghornIIS7DigestAuthNotInstalled
+          href: iis-7-component-not-installed-longhorniis7digestauthnotinstalled-exchange-2013-help.md
+        - name: IIS 7 コンポーネントがインストールされていない_LonghornIIS7HttpCompressionDynamicNotInstalled
+          href: iis-7-component-not-installed-longhorniis7httpcompressiondynamicnotinstalled-exchange-2013-help.md
+        - name: IIS 7 コンポーネントがインストールされていない_LonghornIIS7HttpCompressionStaticNotInstalled
+          href: iis-7-component-not-installed-longhorniis7httpcompressionstaticnotinstalled-exchange-2013-help.md
+        - name: World Wide Web Publishing Service が無効または見つからない_W3SVCDisabledOrNotInstalled
+          href: the-world-wide-web-publishing-service-is-disabled-or-missing-w3svcdisabledornotinstalled-exchange-2013-help.md
+        - name: OAB サーバーが削除されている_OffLineABServerDeleted
+          href: oab-server-has-been-deleted-offlineabserverdeleted-exchange-2013-help.md
+      - name: Exchange 2013 でのクライアントのネットワーク ポートとメール フロー
+        href: network-ports-for-clients-and-mail-flow-in-exchange-2013-exchange-2013-help.md
+      - name: Exchange Server 2013 サービスの概要
+        href: overview-of-exchange-2013-services-exchange-2013-help.md
+      - name: Exchange 管理シェルの基本概念
+        href: basic-concepts-in-exchange-management-shell-exchange-2013-help.md
+        items:
+        - name: コマンドレット
+          href: cmdlets-exchange-2013-help.md
+        - name: ID
+          href: identity-exchange-2013-help.md
+        - name: Exchange 管理シェルでのファイルのインポートとエクスポート
+          href: import-and-export-files-in-the-exchange-management-shell-exchange-2013-help.md
+        - name: 複数値プロパティの変更
+          href: modifying-multivalued-properties-exchange-2013-help.md
+        - name: WhatIf、Confirm、および ValidateOnly スイッチ
+          href: whatif-confirm-and-validateonly-switches-exchange-2013-help.md
+        - name: コマンド出力の操作
+          href: working-with-command-output-exchange-2013-help.md
+      - name: コマンドレット拡張エージェント
+        href: cmdlet-extension-agents-exchange-2013-help.md
+        items:
+        - name: コマンドレット拡張エージェントの管理
+          href: manage-cmdlet-extension-agents-exchange-2013-help.md
+      - name: Exchange 2013 の Exchange 管理シェル クイック リファレンス
+        href: exchange-management-shell-quick-reference-for-exchange-2013-exchange-2013-help.md
+      - name: -ContentFilter パラメーターのフィルター可能なプロパティ
+        href: filterable-properties-for-the-contentfilter-parameter.md
+    - name: Exchange 2013 でのマルチテナント機能
+      href: multi-tenancy-in-exchange-2013-exchange-2013-help.md
+    - name: 夏時間またはタイム ゾーンが変更された場合の Exchange 組織の更新
+      href: update-your-exchange-organization-when-daylight-saving-time-or-the-time-zone-changes-exchange-2013-help.md
+  - name: アクセス許可
+    href: permissions-exchange-2013-help.md
+    items:
+    - name: 役割ベースのアクセス制御について
+      href: understanding-role-based-access-control-exchange-2013-help.md
+      items:
+      - name: 管理役割グループについて
+        href: understanding-management-role-groups-exchange-2013-help.md
+      - name: 管理役割の割り当てポリシーについて
+        href: understanding-management-role-assignment-policies-exchange-2013-help.md
+      - name: 管理の役割について
+        href: understanding-management-roles-exchange-2013-help.md
+      - name: 管理役割スコープについて
+        href: understanding-management-role-scopes-exchange-2013-help.md
+        items:
+        - name: 管理ロールのスコープ フィルターについて
+          href: understanding-management-role-scope-filters-exchange-2013-help.md
+        - name: 排他スコープについて
+          href: understanding-exclusive-scopes-exchange-2013-help.md
+      - name: 管理役割の割り当てについて
+        href: understanding-management-role-assignments-exchange-2013-help.md
+      - name: 組み込みの役割グループ
+        href: built-in-role-groups-exchange-2013-help.md
+        items:
+        - name: 組織の管理
+          href: organization-management-exchange-2013-help.md
+        - name: 表示限定の組織管理
+          href: view-only-organization-management-exchange-2013-help.md
+        - name: 受信者の管理
+          href: recipient-management-exchange-2013-help.md
+        - name: UM 管理
+          href: um-management-exchange-2013-help.md
+        - name: Help Desk (ヘルプ デスク)
+          href: help-desk-exchange-2013-help.md
+        - name: 検疫管理
+          href: hygiene-management-exchange-2013-help.md
+        - name: コンプライアンス管理
+          href: compliance-management-exchange-2013-help.md
+        - name: レコードの管理
+          href: records-management-exchange-2013-help.md
+        - name: 検出の管理
+          href: discovery-management-exchange-2013-help.md
+        - name: パブリック フォルダーの管理
+          href: public-folder-management-exchange-2013-help.md
+        - name: サーバー管理
+          href: server-management-exchange-2013-help.md
+        - name: 委任されたセットアップ
+          href: delegated-setup-exchange-2013-help.md
+      - name: 組み込みの管理役割
+        href: built-in-management-roles-exchange-2013-help.md
+        items:
+        - name: "\"Active Directory Permissions/Active Directory アクセス許可\" 役割"
+          href: active-directory-permissions-role-exchange-2013-help.md
+        - name: "\"Address Lists/アドレス一覧\" 役割"
+          href: address-lists-role-exchange-2013-help.md
+        - name: ApplicationImpersonation 役割
+          href: applicationimpersonation-role-exchange-2013-help.md
+        - name: ArchiveApplication 役割
+          href: archiveapplication-role-exchange-2013-help.md
+        - name: "\"Audit Logs/監査ログ\" 役割"
+          href: audit-logs-role-exchange-2013-help.md
+        - name: "\"Cmdlet Extension Agents/コマンドレット拡張エージェント\" 役割"
+          href: cmdlet-extension-agents-role-exchange-2013-help.md
+        - name: "\"Data Loss Prevention/データ損失防止\" 役割"
+          href: data-loss-prevention-role-exchange-2013-help.md
+        - name: "\"Database Availability Groups/データベース可用性グループ\" 役割"
+          href: database-availability-groups-role-exchange-2013-help.md
+        - name: "\"Database Copies/データベース コピー\" 役割"
+          href: database-copies-role-exchange-2013-help.md
+        - name: "\"Databases/データベース\" 役割"
+          href: databases-role-exchange-2013-help.md
+        - name: "\"Disaster Recovery/障害回復\" 役割"
+          href: disaster-recovery-role-exchange-2013-help.md
+        - name: "\"Distribution Groups/配布グループ\" 役割"
+          href: distribution-groups-role-exchange-2013-help.md
+        - name: "\"Edge Subscriptions/エッジ サブスクリプション\" 役割"
+          href: edge-subscriptions-role-exchange-2013-help.md
+        - name: "\"E-Mail Address Policies/電子メール アドレス ポリシー\" 役割"
+          href: e-mail-address-policies-role-exchange-2013-help.md
+        - name: "\"Exchange Connectors/Exchange コネクタ\" 役割"
+          href: exchange-connectors-role-exchange-2013-help.md
+        - name: "\"Exchange Server Certificates/Exchange Server 証明書\" 役割"
+          href: exchange-server-certificates-role-exchange-2013-help.md
+        - name: Exchange Servers 役割
+          href: exchange-servers-role-exchange-2013-help.md
+        - name: "\"Exchange Virtual Directories/Exchange 仮想ディレクトリ\" 役割"
+          href: exchange-virtual-directories-role-exchange-2013-help.md
+        - name: "\"Federated Sharing/フェデレーションの共有\" 役割"
+          href: federated-sharing-role-exchange-2013-help.md
+        - name: Information Rights Management 役割
+          href: information-rights-management-role-exchange-2013-help.md
+        - name: "\"Journaling/ジャーナリング\" 役割"
+          href: journaling-role-exchange-2013-help.md
+        - name: "\"Legal Hold/法的情報保留\" 役割"
+          href: legal-hold-role-exchange-2013-help.md
+        - name: LegalHoldApplication 役割
+          href: legalholdapplication-role-exchange-2013-help.md
+        - name: "\"Mail Enabled Public Folders/メールが有効なパブリック フォルダー\" 役割"
+          href: mail-enabled-public-folders-role-exchange-2013-help.md
+        - name: "\"メール受信者の作成\" 役割"
+          href: mail-recipient-creation-role-exchange-2013-help.md
+        - name: "\"Mail Recipient/メール受信者\" 役割"
+          href: mail-recipients-role-exchange-2013-help.md
+        - name: "\"Mail Tips/メール ヒント\" 役割"
+          href: mail-tips-role-exchange-2013-help.md
+        - name: "\"Mailbox Import Export/メールボックスのインポートとエクスポート\" 役割"
+          href: mailbox-import-export-role-exchange-2013-help.md
+        - name: "\"Mailbox Search/メールボックス検索\" 役割"
+          href: mailbox-search-role-exchange-2013-help.md
+        - name: MailboxSearchApplication 役割
+          href: mailboxsearchapplication-role-exchange-2013-help.md
+        - name: "\"Message Tracking/メッセージ追跡\" 役割"
+          href: message-tracking-role-exchange-2013-help.md
+        - name: "\"Migration/移行\" 役割"
+          href: migration-role-exchange-2013-help.md
+        - name: "\"Monitoring/監視\" 役割"
+          href: monitoring-role-exchange-2013-help.md
+        - name: "\"Move Mailboxes/メールボックスの移動\" 役割"
+          href: move-mailboxes-role-exchange-2013-help.md
+        - name: "\"My Custom Apps/自分のカスタム アプリ\" 役割"
+          href: my-custom-apps-role-exchange-2013-help.md
+        - name: "\"My Marketplace Apps/マイ マーケットプレイス アプリ\" 役割"
+          href: my-marketplace-apps-role-exchange-2013-help.md
+        - name: MyAddressInformation 役割
+          href: myaddressinformation-role-exchange-2013-help.md
+        - name: MyBaseOptions 役割
+          href: mybaseoptions-role-exchange-2013-help.md
+        - name: MyContactInformation 役割
+          href: mycontactinformation-role-exchange-2013-help.md
+        - name: MyDiagnostics 役割
+          href: mydiagnostics-role-exchange-2013-help.md
+        - name: MyDisplayName 役割
+          href: mydisplayname-role-exchange-2013-help.md
+        - name: MyDistributionGroupMembership 役割
+          href: mydistributiongroupmembership-role-exchange-2013-help.md
+        - name: MyDistributionGroups 役割
+          href: mydistributiongroups-role-exchange-2013-help.md
+        - name: MyMobileInformation 役割
+          href: mymobileinformation-role-exchange-2013-help.md
+        - name: MyName 役割
+          href: myname-role-exchange-2013-help.md
+        - name: MyPersonalInformation 役割
+          href: mypersonalinformation-role-exchange-2013-help.md
+        - name: MyProfileInformation 役割
+          href: myprofileinformation-role-exchange-2013-help.md
+        - name: 自分の ReadWriteMailbox アプリの役割
+          href: my-readwritemailbox-apps-role-exchange-2013-help.md
+        - name: MyRetentionPolicies 役割
+          href: myretentionpolicies-role-exchange-2013-help.md
+        - name: MyTeamMailboxes 役割
+          href: myteammailboxes-role-exchange-2013-help.md
+        - name: MyTextMessaging 役割
+          href: mytextmessaging-role-exchange-2013-help.md
+        - name: MyVoiceMail 役割
+          href: myvoicemail-role-exchange-2013-help.md
+        - name: OfficeExtensionApplication 役割
+          href: officeextensionapplication-role-exchange-2013-help.md
+        - name: "\"Org Custom Apps/組織のカスタム アプリ\" 役割"
+          href: org-custom-apps-role-exchange-2013-help.md
+        - name: "\"Org Marketplace Apps/組織マーケットプレイス アプリ\" 役割"
+          href: org-marketplace-apps-role-exchange-2013-help.md
+        - name: "\"Organization Client Access/組織クライアント アクセス\" 役割"
+          href: organization-client-access-role-exchange-2013-help.md
+        - name: "\"Organization Configuration/組織の構成\" 役割"
+          href: organization-configuration-role-exchange-2013-help.md
+        - name: "\"Organization Transport Settings/組織トランスポート設定\" 役割"
+          href: organization-transport-settings-role-exchange-2013-help.md
+        - name: "\"POP3 and IMAP4 Protocols/POP3 および IMAP4 プロトコル\" 役割"
+          href: pop3-and-imap4-protocols-role-exchange-2013-help.md
+        - name: "\"Public Folders/パブリック フォルダー\" 役割"
+          href: public-folders-role-exchange-2013-help.md
+        - name: "\"Receive Connectors/受信コネクタ\" 役割"
+          href: receive-connectors-role-exchange-2013-help.md
+        - name: "\"Recipient Policies/受信者ポリシー\" 役割"
+          href: recipient-policies-role-exchange-2013-help.md
+        - name: "\"Remote and Accepted Domains/リモートおよび承認済みドメイン\" 役割"
+          href: remote-and-accepted-domains-role-exchange-2013-help.md
+        - name: "\"Reset Password/パスワードのリセット\" 役割"
+          href: reset-password-role-exchange-2013-help.md
+        - name: "\"Retention Management/保有管理\" 役割"
+          href: retention-management-role-exchange-2013-help.md
+        - name: "\"Role Management/役割管理\" 役割"
+          href: role-management-role-exchange-2013-help.md
+        - name: "\"Security Group Creation and Membership/セキュリティ グループの作成とメンバーシップ\" 役割"
+          href: security-group-creation-and-membership-role-exchange-2013-help.md
+        - name: "\"Send Connectors/送信コネクタ\" 役割"
+          href: send-connectors-role-exchange-2013-help.md
+        - name: "\"Support Diagnostics/サポート診断\" 役割"
+          href: support-diagnostics-role-exchange-2013-help.md
+        - name: "\"Team Mailboxes/チーム メールボックス\" 役割"
+          href: team-mailboxes-role-exchange-2013-help.md
+        - name: TeamMailboxLifecycleApplication 役割
+          href: teammailboxlifecycleapplication-role-exchange-2013-help.md
+        - name: "\"Transport Agents/トランスポート エージェント\" 役割"
+          href: transport-agents-role-exchange-2013-help.md
+        - name: "\"Transport Hygiene/トランスポート検疫\" 役割"
+          href: transport-hygiene-role-exchange-2013-help.md
+        - name: "\"Transport Queues/トランスポート キュー\" 役割"
+          href: transport-queues-role-exchange-2013-help.md
+        - name: "\"Transport Rules/トランスポート ルール\" 役割"
+          href: transport-rules-role-exchange-2013-help.md
+        - name: "\"UM Mailboxes/UM メールボックス\" 役割"
+          href: um-mailboxes-role-exchange-2013-help.md
+        - name: "\"UM Prompts/UM プロンプト\" 役割"
+          href: um-prompts-role-exchange-2013-help.md
+        - name: ユニファイド メッセージングの役割
+          href: unified-messaging-role-exchange-2013-help.md
+        - name: "\"Unscoped Role Management/スコープ外役割管理\" 役割"
+          href: unscoped-role-management-role-exchange-2013-help.md
+        - name: "\"User Options/ユーザー オプション\" 役割"
+          href: user-options-role-exchange-2013-help.md
+        - name: UserApplication 役割
+          href: userapplication-role-exchange-2013-help.md
+        - name: "\"View-Only Audit Logs/表示専用監査ログ\" 役割"
+          href: view-only-audit-logs-role-exchange-2013-help.md
+        - name: "\"View-Only Configuration/表示専用構成\" 役割"
+          href: view-only-configuration-role-exchange-2013-help.md
+        - name: "\"View-Only Recipients/表示専用受信者\" 役割"
+          href: view-only-recipients-role-exchange-2013-help.md
+        - name: WorkloadManagement 役割
+          href: workloadmanagement-role-exchange-2013-help.md
+    - name: 複数フォレストのアクセス許可について
+      href: understanding-multiple-forest-permissions-exchange-2013-help.md
+    - name: 分割型アクセス許可について
+      href: understanding-split-permissions-exchange-2013-help.md
+    - name: Exchange 2007 と Exchange 2010 のアクセス許可の共存について
+      href: understanding-permissions-coexistence-with-exchange-2007-and-exchange-2010-exchange-2013-help.md
+    - name: 役割グループの管理
+      href: manage-role-groups-exchange-2013-help.md
+    - name: 役割グループのメンバーの管理
+      href: manage-role-group-members-exchange-2013-help.md
+    - name: リンクされた役割グループの管理
+      href: manage-linked-role-groups-exchange-2013-help.md
+    - name: 役割の割り当てポリシーの管理
+      href: manage-role-assignment-policies-exchange-2013-help.md
+    - name: メールボックスの割り当てポリシーを変更する
+      href: change-the-assignment-policy-on-a-mailbox-exchange-2013-help.md
+    - name: 組み込みの役割グループをミラーするリンクされた役割グループを作成する
+      href: create-linked-role-groups-that-mirror-built-in-role-groups-exchange-2013-help.md
+    - name: 有効なアクセス許可を表示する
+      href: view-effective-permissions-exchange-2013-help.md
+    - name: 機能のアクセス許可
+      href: feature-permissions-exchange-2013-help.md
+      items:
+      - name: 役割管理のアクセス許可
+        href: role-management-permissions-exchange-2013-help.md
+      - name: メッセージング ポリシーとコンプライアンスのアクセス許可
+        href: messaging-policy-and-compliance-permissions-exchange-2013-help.md
+      - name: スパム対策とマルウェア対策のアクセス許可
+        href: anti-spam-and-anti-malware-permissions-exchange-2013-help.md
+      - name: メール フローのアクセス許可
+        href: mail-flow-permissions-exchange-2013-help.md
+      - name: 受信者のアクセス許可
+        href: recipients-permissions-exchange-2013-help.md
+      - name: 電子メール アドレスおよびアドレス帳のアクセス許可
+        href: email-address-and-address-book-permissions-exchange-2013-help.md
+      - name: 共有とコラボレーションのアクセス許可
+        href: sharing-and-collaboration-permissions-exchange-2013-help.md
+      - name: クライアントおよびモバイル デバイスのアクセス許可
+        href: clients-and-mobile-devices-permissions-exchange-2013-help.md
+      - name: ユニファイド メッセージングのアクセス許可
+        href: unified-messaging-permissions-exchange-2013-help.md
+      - name: 高可用性とサイト復元のアクセス許可
+        href: high-availability-and-site-resilience-permissions-exchange-2013-help.md
+      - name: Exchange およびシェル インフラストラクチャのアクセス許可
+        href: exchange-and-shell-infrastructure-permissions-exchange-2013-help.md
+      - name: サーバーの状態とパフォーマンスのアクセス許可
+        href: server-health-and-performance-permissions-exchange-2013-help.md
+    - name: 高度な権限
+      href: advanced-permissions-exchange-2013-help.md
+      items:
+      - name: 管理役割と役割エントリ
+        href: management-roles-and-role-entries-exchange-2013-help.md
+        items:
+        - name: 役割を作成する
+          href: create-a-role-exchange-2013-help.md
+        - name: 役割を表示する
+          href: view-a-role-exchange-2013-help.md
+        - name: 役割を削除する
+          href: remove-a-role-exchange-2013-help.md
+        - name: 役割エントリを役割に追加する
+          href: add-a-role-entry-to-a-role-exchange-2013-help.md
+        - name: 役割エントリを変更する
+          href: change-a-role-entry-exchange-2013-help.md
+        - name: 役割エントリを表示する
+          href: view-role-entries-exchange-2013-help.md
+        - name: 役割から役割エントリを削除する
+          href: remove-a-role-entry-from-a-role-exchange-2013-help.md
+        - name: 対象範囲外の役割を作成する
+          href: create-an-unscoped-role-exchange-2013-help.md
+        - name: スコープ外の最上位の役割における役割エントリを変更する
+          href: change-a-role-entry-on-an-unscoped-top-level-role-exchange-2013-help.md
+        - name: スコープ外の最上位の役割に役割エントリを追加する
+          href: add-a-role-entry-to-an-unscoped-top-level-role-exchange-2013-help.md
+      - name: 管理役割スコープ
+        href: management-role-scopes-exchange-2013-help.md
+        items:
+        - name: 通常または排他スコープを作成する
+          href: create-a-regular-or-exclusive-scope-exchange-2013-help.md
+        - name: 役割のスコープを変更する
+          href: change-a-role-scope-exchange-2013-help.md
+        - name: 役割スコープを表示する
+          href: view-role-scopes-exchange-2013-help.md
+        - name: 役割のスコープを削除する
+          href: remove-a-role-scope-exchange-2013-help.md
+        - name: データベース スコープを使用したメールボックスの自動配布の制御
+          href: control-automatic-mailbox-distribution-using-database-scopes-exchange-2013-help.md
+      - name: 管理役割の割り当て
+        href: management-role-assignments-exchange-2013-help.md
+        items:
+        - name: ユーザーまたは USG に役割を追加する
+          href: add-a-role-to-a-user-or-usg-exchange-2013-help.md
+        - name: 役割の割り当てを変更する
+          href: change-a-role-assignment-exchange-2013-help.md
+        - name: 役割の割り当ての表示
+          href: view-role-assignments-exchange-2013-help.md
+        - name: ユーザーまたは USG から役割を削除する
+          href: remove-a-role-from-a-user-or-usg-exchange-2013-help.md
+        - name: 役割割り当てを委任する
+          href: delegate-role-assignments-exchange-2013-help.md
+      - name: 分割アクセス許可の管理
+        href: managing-split-permissions-exchange-2013-help.md
+        items:
+        - name: Exchange 2013 の分割型アクセス許可を構成する
+          href: configure-exchange-2013-for-split-permissions-exchange-2013-help.md
+        - name: Exchange 2013 の共有アクセス許可を構成する
+          href: configure-exchange-2013-for-shared-permissions-exchange-2013-help.md
+  - name: メッセージングのポリシーと準拠
+    href: messaging-policy-and-compliance-exchange-2013-help.md
+    items:
+    - name: Exchange 2013 のインプレース アーカイブ
+      href: in-place-archiving-in-exchange-2013-exchange-2013-help.md
+      items:
+      - name: Exchange 2013 でインプレース アーカイブを管理する
+        href: manage-in-place-archives-in-exchange-2013-exchange-2013-help.md
+      - name: アーカイブ ポリシーの変更
+        href: modify-archive-policies-exchange-2013-help.md
+      - name: インプレース アーカイブ (社内) のアーカイブ クォータの構成
+        href: configure-archive-quotas-for-an-in-place-archive-in-exchange-2013-exchange-2013-help.md
+      - name: Lync 会話と会議コンテンツを Exchange にアーカイブする
+        href: archive-lync-conversations-and-meeting-content-to-exchange-exchange-2013-help.md
+      - name: OAuth 認証を使用する Exchange ハイブリッド展開での Archiving のサポート
+        href: using-oauth-authentication-to-support-archiving-in-an-exchange-hybrid-deployment-exchange-2013-help.md
+    - name: インプレース保持と訴訟ホールド
+      href: in-place-hold-and-litigation-hold-exchange-2013-help.md
+      items:
+      - name: インプレース保持を作成または削除する
+        href: create-or-remove-an-in-place-hold-exchange-2013-help.md
+      - name: メールボックスを訴訟ホールドの対象にする
+        href: place-a-mailbox-on-litigation-hold-exchange-2013-help.md
+      - name: すべてのメールボックスを保持に設定する
+        href: place-all-mailboxes-on-hold-exchange-2013-help.md
+      - name: 電子情報開示のために Bcc および展開された配布グループの受信者を保持する
+        href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery-exchange-2013-help.md
+    - name: インプレース電子情報開示 (eDiscovery)
+      href: in-place-ediscovery-exchange-2013-help.md
+      items:
+      - name: Exchange の電子情報開示のアクセス許可を割り当てる
+        href: assign-ediscovery-permissions-in-exchange-exchange-2013-help.md
+      - name: インプレース電子情報開示検索を作成する
+        href: create-an-in-place-ediscovery-search-exchange-2013-help.md
+      - name: 電子情報開示検索結果を探索メールボックスにコピーする
+        href: copy-ediscovery-search-results-to-a-discovery-mailbox-exchange-2013-help.md
+      - name: 電子情報開示検索の結果を PST ファイルへエクスポート
+        href: export-ediscovery-search-results-to-a-pst-file-exchange-2013-help.md
+      - name: インプレース電子情報開示のためのメッセージ プロパティと検索演算子
+        href: message-properties-and-search-operators-for-in-place-ediscovery-exchange-2013-help.md
+      - name: 探索メールボックスの作成
+        href: create-a-discovery-mailbox-exchange-2013-help.md
+      - name: インプレース電子情報開示の検索の開始または停止
+        href: start-or-stop-an-in-place-ediscovery-search-exchange-2013-help.md
+      - name: インプレース電子情報開示検索の変更
+        href: modify-an-in-place-ediscovery-search-exchange-2013-help.md
+      - name: インプレース電子情報開示検索用のカスタム管理スコープを作成する
+        href: create-a-custom-management-scope-for-in-place-ediscovery-searches-exchange-2013-help.md
+      - name: インプレース電子情報開示検索の削除
+        href: remove-an-in-place-ediscovery-search-exchange-2013-help.md
+      - name: メッセージを検索して削除する - 管理者向けヘルプ
+        href: search-for-and-delete-messages-admin-help-exchange-2013-help.md
+      - name: Exchange の証拠開示用メールボックスのサイズを小さくする
+        href: reduce-the-size-of-a-discovery-mailbox-in-exchange-exchange-2013-help.md
+      - name: Exchange で既定の探索メールボックスを削除して再作成する
+        href: delete-and-re-create-the-default-discovery-mailbox-in-exchange-exchange-2013-help.md
+      - name: Re-create the Discovery system mailbox
+        href: re-create-the-discovery-system-mailbox-exchange-2013-help.md
+      - name: Exchange ハイブリッド展開において電子情報開示をサポートするための OAuth 認証の使用
+        href: using-oauth-authentication-to-support-ediscovery-in-an-exchange-hybrid-deployment-exchange-2013-help.md
+      - name: SharePoint の電子情報開示センター用の Exchange の構成
+        href: configure-exchange-for-sharepoint-ediscovery-center-exchange-2013-help.md
+      - name: Exchange 電子情報開示の検索不能アイテム
+        href: unsearchable-items-in-exchange-ediscovery-exchange-2013-help.md
+    - name: メッセージング レコード管理
+      href: messaging-records-management-exchange-2013-help.md
+      items:
+      - name: Exchange 2013 のメッセージング レコード管理用語
+        href: messaging-records-management-terminology-in-exchange-2013-exchange-2013-help.md
+      - name: 保持タグおよびアイテム保持ポリシー
+        href: retention-tags-and-retention-policies-exchange-2013-help.md
+        items:
+        - name: 既定のアイテム保持ポリシー
+          href: default-retention-policy-in-exchange-online-and-exchange-server-exchange-2013-help.md
+        - name: アイテム保持ポリシー タグをサポートする既定のフォルダー
+          href: default-folders-that-support-retention-policy-tags-exchange-2013-help.md
+        - name: 保存期間の計算方法
+          href: how-retention-age-is-calculated-exchange-2013-help.md
+        - name: 'チェックリスト: アイテム保持ポリシーの展開'
+          href: checklist-deploying-retention-policies-exchange-2013-help.md
+        - name: メッセージング レコード管理の手順
+          href: messaging-records-management-procedures-exchange-2013-help.md
+          items:
+          - name: アイテム保持ポリシーの作成
+            href: create-a-retention-policy-exchange-2013-help.md
+          - name: アイテム保持ポリシーへの保持タグの追加、またはアイテム保持ポリシーからの保持タグの削除
+            href: add-retention-tags-to-or-remove-retention-tags-from-a-retention-policy-exchange-2013-help.md
+          - name: メールボックスにアイテム保持ポリシーを適用する
+            href: apply-a-retention-policy-to-mailboxes-exchange-2013-help.md
+          - name: 管理フォルダー アシスタントの構成
+            href: configure-the-managed-folder-assistant-exchange-2013-help.md
+          - name: メールボックスの保存機能を有効にする
+            href: place-a-mailbox-on-retention-hold-exchange-2013-help.md
+          - name: 保持タグのエクスポートとインポート
+            href: export-and-import-retention-tags-exchange-2013-help.md
+          - name: Outlook クライアントのブロックを構成する
+            href: configure-outlook-client-blocking-exchange-2013-help.md
+          - name: 管理フォルダーからの移行
+            href: migrate-from-managed-folders-exchange-2013-help.md
+          - name: メッセージング レコード管理を無効化または中断する
+            href: turn-off-or-suspend-messaging-records-management-exchange-2013-help.md
+      - name: メッセージング レコード管理の監視
+        href: monitoring-messaging-records-management-exchange-2013-help.md
+        items:
+        - name: メッセージング レコード管理用のパフォーマンス カウンターを表示する
+          href: view-performance-counters-for-messaging-records-management-exchange-2013-help.md
+        - name: メッセージング レコード管理用のパフォーマンス カウンター
+          href: performance-counters-for-messaging-records-management-exchange-2013-help.md
+        - name: メッセージング レコード管理のエラーおよびイベント
+          href: messaging-records-management-errors-and-events-exchange-2013-help.md
+    - name: ジャーナル
+      href: journaling-exchange-2013-help.md
+      items:
+      - name: ジャーナリングの管理
+        href: manage-journaling-exchange-2013-help.md
+      - name: ボイス メールと不在着信通知のジャーナリングを有効または無効にする
+        href: disable-or-enable-journaling-of-voice-mail-and-missed-call-notifications-exchange-2013-help.md
+    - name: メール フロー ルール (トランスポート ルール)
+      href: mail-flow-rules-transport-rules-in-exchange-2013-exchange-2013-help.md
+      items:
+      - name: 'メール フロー ルールの条件と例外 (述語) '
+        href: mail-flow-rule-conditions-and-exceptions-predicates-in-exchange-2013-exchange-2013-help.md
+      - name: メール フロー ルールの処理
+        href: mail-flow-rule-actions-in-exchange-2013-exchange-2013-help.md
+      - name: メール フローのルールを構成するためのベスト プラクティス
+        href: best-practices-for-configuring-mail-flow-rules-exchange-2013-help.md
+      - name: トランスポート ルールを使用してメッセージの添付を検査する
+        href: use-transport-rules-to-inspect-message-attachments-exchange-2013-help.md
+      - name: 添付ファイル ブロックの一般的なシナリオ
+        href: common-attachment-blocking-scenarios-for-mail-flow-rules-exchange-2013-help.md
+      - name: 組織全体の免責事項、署名、フッター、またはヘッダー
+        href: organization-wide-disclaimers-signatures-footers-or-headers-exchange-online-help.md
+      - name: メール フローやトランスポート ルールの手順
+        href: mail-flow-or-transport-rule-procedures-exchange-2013-help.md
+        items:
+        - name: メール フロー ルールを管理します
+          href: manage-mail-flow-rules-exchange-2013-help.md
+        - name: メール フロー ルールのテスト
+          href: test-a-mail-flow-rule-exchange-2013-help.md
+        - name: メッセージが低優先メール機能を迂回できるメール フロー ルールを使用する
+          href: use-mail-flow-rules-so-messages-can-bypass-clutter-exchange-2013-help.md
+        - name: 単語、語句、パターンの一覧に基づいてメールをルーティングするメール フロー ルールの使用
+          href: use-mail-flow-rules-to-route-email-based-on-a-list-of-words-phrases-or-patterns-exchange-2013-help.md
+        - name: Exchange 2013 でフィルター パック IFilter を登録する
+          href: register-filter-pack-ifilters-with-exchange-2013-exchange-2013-help.md
+      - name: メッセージ承認の管理
+        href: manage-message-approval-exchange-2013-help.md
+        items:
+        - name: 一般的なメッセージの承認シナリオ
+          href: common-message-approval-scenarios-exchange-2013-help.md
+        - name: メッセージ承認の管理とトラブルシューティング
+          href: manage-and-troubleshoot-message-approval-exchange-2013-help.md
+    - name: データ損失防止
+      href: technical-overview-of-dlp-data-loss-prevention-in-exchange.md
+      items:
+      - name: メッセージの評価に DLP ルールを適用する方法
+        href: how-dlp-rules-are-applied-to-evaluate-messages-exchange-2013-help.md
+      - name: 機密情報ルールとトランスポート ルールの統合
+        href: integrating-sensitive-information-rules-with-transport-rules-exchange-2013-help.md
+      - name: 機密情報の種類の検索基準：
+        href: what-the-sensitive-information-types-in-exchange-look-for-exchange-online-help.md
+      - name: DLP ポリシー テンプレート
+        href: dlp-policy-templates-exchange-2013-help.md
+        items:
+        - name: Exchange で提供される DLP ポリシー テンプレート
+          href: dlp-policy-templates-supplied-in-exchange-exchange-2013-help.md
+        - name: Microsoft パートナーからのポリシー テンプレート
+          href: policy-templates-from-microsoft-partners-exchange-2013-help.md
+      - name: DLP の手順
+        href: dlp-procedures-exchange-2013-help.md
+        items:
+        - name: DLP ポリシーの管理
+          href: manage-dlp-policies-exchange-2013-help.md
+        - name: テンプレートからの DLP ポリシーの作成
+          href: how-to-new-dlp-data-loss-prevention-policy-template.md
+        - name: カスタム DLP ポリシーの作成
+          href: create-a-custom-dlp-policy-exchange-2013-help.md
+        - name: ファイルからカスタムの DLP ポリシー テンプレートをインポートする
+          href: import-a-custom-dlp-policy-template-from-a-file-exchange-2013-help.md
+        - name: DLP ポリシー検出のレポートの表示
+          href: view-dlp-policy-detection-reports-exchange-2013-help.md
+        - name: DLP ポリシー検出のインシデント レポートの作成
+          href: create-incident-reports-for-dlp-policy-detections-exchange-2013-help.md
+        - name: 独自の DLP テンプレートおよび情報の種類の定義
+          href: define-your-own-dlp-templates-and-information-types-exchange-2013-help.md
+          items:
+          - name: DLP ポリシー テンプレート ファイルの作成
+            href: xml-rule-schema-and-rule-structure-guide-for-dlp-policy-files.md
+          - name: 機密情報のルール パッケージの作成
+            href: technical-description-of-xml-schema-for-dlp-rule-packages.md
+          - name: ルール パッケージの照合の方法と手法
+            href: technical-description-of-xsd-rule-matching-for-dlp-rule-packages.md
+          - name: 組み込みの DLP 機密情報の種類をカスタマイズする
+            href: customize-the-built-in-dlp-sensitive-information-types-exchange-2013-help.md
+          - name: Exchange からの DLP 機密情報の種類のエクスポート
+            href: export-dlp-sensitive-information-types-from-exchange-2013-exchange-2013-help.md
+      - name: ポリシー ヒント
+        href: technical-overview-of-policy-tips-in-exchange-online-and-exchange-2013.md
+        items:
+        - name: ポリシー ヒントの管理
+          href: how-to-configure-and-manage-policy-tips-a-dlp-feature-exchange.md
+      - name: ドキュメント フィンガープリンティング
+        href: overview-of-document-fingerprinting-in-exchange.md
+        items:
+        - name: ドキュメント フィンガープリンティングを使用してフォーム データを保護する
+          href: protect-form-data-with-document-fingerprinting-exchange-2013-help.md
+    - name: Information Rights Management
+      href: information-rights-management-exchange-2013-help.md
+      items:
+      - name: トランスポート保護ルール
+        href: transport-protection-rules-exchange-2013-help.md
+      - name: Outlook の保護ルール
+        href: outlook-protection-rules-exchange-2013-help.md
+      - name: トランスポート復号化
+        href: transport-decryption-exchange-2013-help.md
+      - name: ジャーナル レポート復号化
+        href: journal-report-decryption-exchange-2013-help.md
+      - name: Outlook Web App での Information Rights Management
+        href: information-rights-management-in-outlook-web-app-exchange-2013-help.md
+      - name: Exchange ActiveSync での Information Rights Management
+        href: information-rights-management-in-exchange-activesync-exchange-2013-help.md
+      - name: Information Rights Management のログ
+        href: information-rights-management-logging-exchange-2013-help.md
+      - name: Information Rights Management の手順
+        href: information-rights-management-procedures-exchange-2013-help.md
+        items:
+        - name: 内部メッセージの IRM を有効または無効にする
+          href: enable-or-disable-irm-for-internal-messages-exchange-2013-help.md
+        - name: トランスポート保護ルールを作成する
+          href: create-a-transport-protection-rule-exchange-2013-help.md
+        - name: Outlook 保護ルールを作成する
+          href: create-an-outlook-protection-rule-exchange-2013-help.md
+        - name: Outlook の保護ルールを削除する
+          href: remove-an-outlook-protection-rule-exchange-2013-help.md
+        - name: フェデレーション メールボックスを AD RMS のスーパー ユーザー グループに追加する
+          href: add-the-federation-mailbox-to-the-ad-rms-super-users-group-exchange-2013-help.md
+        - name: トランスポート解読を有効または無効にする
+          href: enable-or-disable-transport-decryption-exchange-2013-help.md
+        - name: Exchange 検索およびインプレース電子情報開示のための IRM の構成
+          href: configure-irm-for-exchange-search-and-in-place-ediscovery-exchange-2013-help.md
+        - name: ジャーナル レポート復号化を有効または無効にする
+          href: enable-or-disable-journal-report-decryption-exchange-2013-help.md
+        - name: クライアント アクセス サーバーで Information Rights Management を有効または無効にする
+          href: enable-or-disable-information-rights-management-on-client-access-servers-exchange-2013-help.md
+        - name: Information Rights Management のログ出力を有効または無効にする
+          href: enable-or-disable-information-rights-management-logging-exchange-2013-help.md
+    - name: S/MIME によるメッセージの署名と暗号化
+      href: s-mime-for-message-signing-and-encryption-exchange-2013-help.md
+      items:
+      - name: Outlook Web App 用 S/MIME 設定値の構成
+        href: configure-s-mime-settings-for-outlook-web-app-exchange-2013-help.md
+      - name: S/MIME を検証するための仮想証明書コレクションをセットアップする
+        href: set-up-virtual-certificate-collection-to-validate-s-mime-exchange-2013-help.md
+      - name: S/MIME 署名および暗号化された電子メールを送受信する
+        href: send-and-receive-s-mime-signed-and-encrypted-email-exchange-2013-help.md
+    - name: メールボックスの監査ログの出力
+      href: mailbox-audit-logging-exchange-2013-help.md
+      items:
+      - name: メールボックス監査ログの手順
+        href: mailbox-audit-logging-procedures-exchange-2013-help.md
+        items:
+        - name: メールボックスのメールボックス監査ログを有効または無効にする
+          href: enable-or-disable-mailbox-audit-logging-for-a-mailbox-exchange-2013-help.md
+        - name: メールボックス監査ログからユーザー アカウントをバイパスする
+          href: bypass-a-user-account-from-mailbox-audit-logging-exchange-2013-help.md
+        - name: メールボックスのメールボックス監査ログを検索する
+          href: search-the-mailbox-audit-log-for-a-mailbox-exchange-2013-help.md
+        - name: メールボックス監査ログの検索を作成する
+          href: create-a-mailbox-audit-log-search-exchange-2013-help.md
+    - name: 管理者監査ログ
+      href: administrator-audit-logging-exchange-2013-help.md
+      items:
+      - name: 管理者監査ログの構造
+        href: administrator-audit-log-structure-exchange-2013-help.md
+      - name: 管理者監査ログの管理
+        href: manage-administrator-audit-logging-exchange-2013-help.md
+    - name: Exchange 監査レポート
+      href: exchange-auditing-reports-exchange-2013-help.md
+      items:
+      - name: メールボックス監査ログをエクスポートする
+        href: export-mailbox-audit-logs-exchange-2013-help.md
+      - name: 所有者以外のメールボックス アクセスのレポートの実行
+        href: run-a-non-owner-mailbox-access-report-exchange-online-help.md
+      - name: メールボックスごとの訴訟ホールド レポートの実行
+        href: run-a-per-mailbox-litigation-hold-report-exchange-2013-help.md
+      - name: 役割グループの変更または管理者監査ログを検索する
+        href: search-the-role-group-changes-or-administrator-audit-logs-exchange-2013-help.md
+      - name: 管理者監査ログを表示する
+        href: view-the-administrator-audit-log-exchange-2013-help.md
+  - name: スパム対策およびマルウェア対策保護
+    href: anti-spam-and-anti-malware-protection-exchange-2013-help.md
+    items:
+    - name: スパム対策保護
+      href: anti-spam-protection-exchange-2013-help.md
+      items:
+      - name: Exchange Server 2013 と比較した Exchange Online Protection のスパム対策機能のメリット
+        href: benefits-of-anti-spam-features-in-exchange-online-protection-over-exchange-server-2013-exchange-2013-help.md
+      - name: メールボックス サーバーのスパム対策機能を有効にする
+        href: enable-anti-spam-functionality-on-mailbox-servers-exchange-2013-help.md
+      - name: 送信者フィルター
+        href: sender-filtering-exchange-2013-help.md
+        items:
+        - name: 送信者のフィルターの管理
+          href: manage-sender-filtering-exchange-2013-help.md
+      - name: 送信者 ID
+        href: sender-id-exchange-2013-help.md
+        items:
+        - name: 送信者 ID の管理
+          href: manage-sender-id-exchange-2013-help.md
+      - name: コンテンツ フィルター
+        href: content-filtering-exchange-2013-help.md
+        items:
+        - name: コンテンツ フィルターの管理
+          href: manage-content-filtering-exchange-2013-help.md
+        - name: セーフリスト集約機能
+          href: safelist-aggregation-exchange-2013-help.md
+          items:
+          - name: セーフリスト集約を管理する
+            href: manage-safelist-aggregation-exchange-2013-help.md
+          - name: 安全なドメイン データを使用するようにコンテンツ フィルタリングを構成する
+            href: configure-content-filtering-to-use-safe-domain-data-exchange-2013-help.md
+        - name: Spam Confidence Level のしきい値
+          href: spam-confidence-level-threshold-exchange-2013-help.md
+        - name: メールボックスにおけるスパム対策設定の構成
+          href: configure-anti-spam-settings-on-mailboxes-exchange-2013-help.md
+      - name: 送信者評価とプロトコル分析エージェント
+        href: sender-reputation-and-the-protocol-analysis-agent-exchange-2013-help.md
+        items:
+        - name: 送信者評価の管理
+          href: manage-sender-reputation-exchange-2013-help.md
+      - name: エッジ トランスポート サーバー上での接続フィルター処理
+        href: connection-filtering-on-edge-transport-servers-exchange-2013-help.md
+        items:
+        - name: エッジ トランスポート サーバーでの接続フィルターの管理
+          href: manage-connection-filtering-on-edge-transport-servers-exchange-2013-help.md
+      - name: エッジ トランスポート サーバー上での受信者フィルター処理
+        href: recipient-filtering-on-edge-transport-servers-exchange-2013-help.md
+        items:
+        - name: エッジ トランスポート サーバーでの受信者フィルターの管理
+          href: manage-recipient-filtering-on-edge-transport-servers-exchange-2013-help.md
+      - name: エッジ トランスポート サーバーでの添付ファイル フィルタリング
+        href: attachment-filtering-on-edge-transport-servers-exchange-2013-help.md
+        items:
+        - name: エッジ トランスポート サーバー上で添付ファイル フィルターを管理する
+          href: manage-attachment-filtering-on-edge-transport-servers-exchange-2013-help.md
+      - name: スパム検疫
+        href: spam-quarantine-exchange-2013-help.md
+        items:
+        - name: スパム検疫メールボックスの構成
+          href: configure-a-spam-quarantine-mailbox-exchange-2013-help.md
+        - name: 検疫メールボックス内で元の送信者を表示するように Outlook を構成する
+          href: configure-outlook-to-show-the-original-sender-in-the-quarantine-mailbox-exchange-2013-help.md
+        - name: 検疫済みメッセージをスパム検疫メールボックスから解放する
+          href: release-quarantined-messages-from-the-spam-quarantine-mailbox-exchange-2013-help.md
+      - name: スパム対策スタンプ
+        href: anti-spam-stamps-exchange-2013-help.md
+        items:
+        - name: Outlook でのスパム対策スタンプの表示
+          href: view-anti-spam-stamps-in-outlook-exchange-2013-help.md
+    - name: マルウェア対策保護
+      href: anti-malware-protection-exchange-2013-help.md
+      items:
+      - name: マルウェア対策の FAQ
+        href: anti-malware-faq-exchange-2013-help.md
+      - name: エンジンおよび定義の更新プログラムのダウンロード
+        href: download-engine-and-definition-updates-exchange-2013-help.md
+      - name: マルウェア対策ポリシーを構成する
+        href: configure-anti-malware-policies-exchange-2013-help.md
+      - name: ホストされたフィルター サービスによってすでにマルウェアがスキャンされたメッセージを再スキャンする
+        href: rescan-messages-already-malware-scanned-by-the-hosted-filtering-service-exchange-2013-help.md
+      - name: マルウェア対策スキャンを無効にするか、またはバイパスする
+        href: disable-or-bypass-anti-malware-scanning-exchange-2013-help.md
+    - name: Exchange サーバー上のオペレーティング システムのウイルス対策ソフトウェア
+      href: anti-virus-software-in-the-operating-system-on-exchange-servers-exchange-2013-help.md
+  - name: メール フロー
+    href: mail-flow-exchange-2013-help.md
+    items:
+    - name: メール ルーティング
+      href: mail-routing-exchange-2013-help.md
+      items:
+      - name: 電子メールのルーティングに Active Directory サイトを使用するための計画
+        href: planning-to-use-active-directory-sites-for-routing-mail-exchange-2013-help.md
+      - name: Exchange のメール ルーティング設定を Active Directory で構成する
+        href: configure-exchange-mail-routing-settings-in-active-directory-exchange-2013-help.md
+      - name: Active Directory サイト間でメールをルーティングする
+        href: route-mail-between-active-directory-sites-exchange-2013-help.md
+      - name: 受信者の解決
+        href: recipient-resolution-exchange-2013-help.md
+      - name: DNS クエリ エラーの感度
+        href: dns-query-failure-sensitivity-exchange-2013-help.md
+      - name: Telnet を使用した SMTP 通信のテスト
+        href: use-telnet-to-test-smtp-communication-exchange-2013-help.md
+      - name: 外部ポストマスターのアドレスを構成する
+        href: configure-the-external-postmaster-address-exchange-2013-help.md
+    - name: コネクタ
+      href: connectors-exchange-2013-help.md
+      items:
+      - name: 送信コネクタ
+        href: send-connectors-exchange-2013-help.md
+        items:
+        - name: インターネットへの電子メール送信に対応した送信コネクタの作成
+          href: create-a-send-connector-for-email-sent-to-the-internet-exchange-2013-help.md
+        - name: 送信コネクタを作成し送信電子メールをスマート ホスト経由でルーティングする
+          href: create-a-send-connector-to-route-outbound-email-through-a-smart-host-exchange-2013-help.md
+        - name: 送信コネクタを作成し、TLS (トランスポート層セキュリティ) を適用した状態でパートナーに電子メールを送信する
+          href: create-a-send-connector-to-send-email-to-a-partner-with-transport-layer-security-tls-applied-exchange-2013-help.md
+        - name: フォレスト間の送信コネクタを構成する
+          href: configure-a-cross-forest-send-connector-exchange-2013-help.md
+      - name: 受信コネクタ
+        href: receive-connectors-exchange-2013-help.md
+        items:
+        - name: 受信コネクタのアクセス許可
+          href: receive-connector-permissions-exchange-2013-help.md
+        - name: 受信コネクタの認証機構
+          href: receive-connector-authentication-mechanisms-exchange-2013-help.md
+        - name: 受信コネクタの手順
+          href: receive-connector-procedures-exchange-2013-help.md
+          items:
+          - name: 受信コネクタを作成してインターネットからの電子メールを受信する
+            href: create-a-receive-connector-to-receive-email-from-the-internet-exchange-2013-help.md
+          - name: パートナーから電子メールを受信するためのセキュリティで保護された受信コネクタの作成
+            href: create-a-secure-receive-connector-to-receive-email-from-a-partner-exchange-2013-help.md
+          - name: Exchange を実行していないシステムから電子メールを受信するための受信コネクタの作成
+            href: create-a-receive-connector-to-receive-email-from-a-system-not-running-exchange-exchange-2013-help.md
+          - name: 受信コネクタを作成して内部の Exchange サーバーからメッセージを受信する
+            href: create-a-receive-connector-to-receive-messages-from-an-internal-exchange-server-exchange-2013-help.md
+          - name: 受信コネクタで SMTP バナーを変更する
+            href: modify-the-smtp-banner-on-a-receive-connector-exchange-2013-help.md
+      - name: 外部コネクタ
+        href: foreign-connectors-exchange-2013-help.md
+        items:
+        - name: 外部コネクタを作成して SMTP Fax ゲートウェイ以外にメッセージを配信する
+          href: create-a-foreign-connector-to-deliver-messages-to-a-non-smtp-fax-gateway-exchange-2013-help.md
+      - name: 配信エージェントと配信エージェント コネクタ
+        href: delivery-agents-and-delivery-agent-connectors-exchange-2013-help.md
+      - name: ヘッダー ファイアウォール
+        href: header-firewall-exchange-2013-help.md
+    - name: ドメイン
+      href: domains-exchange-2013-help.md
+      items:
+      - name: 承認済みドメイン
+        href: accepted-domains-exchange-2013-help.md
+        items:
+        - name: Exchange 組織内の承認済みドメインを権限ありとして構成する
+          href: configure-an-accepted-domain-within-your-exchange-organization-as-authoritative-exchange-2013-help.md
+        - name: 独立した部署の承認済みドメインの構成
+          href: configure-an-accepted-domain-for-an-independent-business-unit-exchange-2013-help.md
+        - name: Exchange 組織外のメールボックスで部署用に承認済みドメインを構成する
+          href: configure-an-accepted-domain-for-a-business-unit-with-mailboxes-outside-your-exchange-organization-exchange-2013-help.md
+        - name: 複数の権限のあるドメインのメールを受け付けるように Exchange を構成する
+          href: configure-exchange-to-accept-mail-for-multiple-authoritative-domains-exchange-2013-help.md
+      - name: リモート ドメイン
+        href: remote-domains-exchange-2013-help.md
+        items:
+        - name: リモート ドメインを管理する
+          href: manage-remote-domains-exchange-2013-help.md
+        - name: リモート ドメインの不在時の応答の構成
+          href: configure-remote-domain-out-of-office-replies-exchange-2013-help.md
+        - name: リモート ドメインの自動応答の構成
+          href: configure-remote-domain-automatic-replies-exchange-2013-help.md
+        - name: リモート ドメインのメッセージ レポート作成の構成
+          href: configure-remote-domain-message-reporting-exchange-2013-help.md
+        - name: リモート ドメイン用にサポートされている文字セット
+          href: supported-character-sets-for-remote-domains-exchange-2013-help.md
+    - name: トランスポート エージェント
+      href: transport-agents-exchange-2013-help.md
+      items:
+      - name: 従来のトランスポート エージェントのサポートを有効にする
+        href: enable-support-for-legacy-transport-agents-exchange-2013-help.md
+      - name: トランスポート エージェントの管理
+        href: manage-transport-agents-exchange-2013-help.md
+      - name: トランスポート パイプライン内のトランスポート エージェントを表示する
+        href: view-transport-agents-in-the-transport-pipeline-exchange-2013-help.md
+    - name: トランスポートの高可用性
+      href: transport-high-availability-exchange-2013-help.md
+      items:
+      - name: シャドウ冗長
+        href: shadow-redundancy-exchange-2013-help.md
+      - name: セーフティ ネット
+        href: safety-net-exchange-2013-help.md
+    - name: トランスポート ログ
+      href: transport-logs-exchange-2013-help.md
+      items:
+      - name: スパム対策エージェントのログ
+        href: anti-spam-agent-logging-exchange-2013-help.md
+        items:
+        - name: スパム対策エージェントのログの構成
+          href: configure-anti-spam-agent-logging-exchange-2013-help.md
+      - name: 接続ログ
+        href: connectivity-logging-exchange-2013-help.md
+        items:
+        - name: 接続ログを構成する
+          href: configure-connectivity-logging-exchange-2013-help.md
+      - name: パイプライン トレース
+        href: pipeline-tracing-exchange-2013-help.md
+        items:
+        - name: パイプライン トレースを構成する
+          href: configure-pipeline-tracing-exchange-2013-help.md
+      - name: プロトコルのログ出力
+        href: protocol-logging-exchange-2013-help.md
+        items:
+        - name: プロトコル ログ出力を構成する
+          href: configure-protocol-logging-exchange-2013-help.md
+      - name: ルーティング テーブル ログ出力を構成する
+        href: configure-routing-table-logging-exchange-2013-help.md
+    - name: メッセージ追跡
+      href: message-tracking-exchange-2013-help.md
+      items:
+      - name: メッセージ追跡を構成する
+        href: configure-message-tracking-exchange-2013-help.md
+      - name: メッセージ追跡ログの検索
+        href: search-message-tracking-logs-exchange-2013-help.md
+    - name: 管理者用の配信レポート
+      href: delivery-reports-for-administrators-exchange-2013-help.md
+      items:
+      - name: 配信レポートによるメッセージの追跡
+        href: track-messages-with-delivery-reports-exchange-2013-help.md
+    - name: コンテンツ変換
+      href: content-conversion-exchange-2013-help.md
+      items:
+      - name: コンテンツ転送エンコードの構成
+        href: configure-content-transfer-encoding-exchange-2013-help.md
+      - name: メッセージ エンコーディング オプション
+        href: message-encoding-options-exchange-2013-help.md
+      - name: TNEF 変換オプション
+        href: tnef-conversion-options-exchange-2013-help.md
+      - name: コンテンツ変換トレース
+        href: content-conversion-tracing-exchange-2013-help.md
+    - name: Exchange 2013 の DSN と NDR
+      href: dsns-and-ndrs-in-exchange-2013-exchange-2013-help.md
+      items:
+      - name: DSN メッセージの管理
+        href: manage-dsn-messages-exchange-2013-help.md
+      - name: DSN メッセージ ID
+        href: dsn-message-identity-exchange-2013-help.md
+      - name: DSN メッセージ テキスト
+        href: dsn-message-text-exchange-2013-help.md
+      - name: システム メッセージでサポートされている言語
+        href: supported-languages-for-system-messages-exchange-2013-help.md
+    - name: メッセージ サイズの制限
+      href: message-size-limits-exchange-2013-help.md
+      items:
+      - name: メッセージ調整
+        href: message-throttling-exchange-2013-help.md
+      - name: バック プレッシャ
+        href: back-pressure-exchange-2013-help.md
+    - name: キュー
+      href: queues-exchange-2013-help.md
+      items:
+      - name: キューを管理する
+        href: manage-queues-exchange-2013-help.md
+      - name: Exchange 管理シェルを使用してキューを管理する
+        href: use-the-exchange-management-shell-to-manage-queues-exchange-2013-help.md
+        items:
+        - name: Configure Get-QueueDigest
+          href: configure-get-queuedigest-exchange-2013-help.md
+      - name: キューのフィルター
+        href: queue-filters-exchange-2013-help.md
+      - name: キュー内のメッセージを管理する
+        href: manage-messages-in-queues-exchange-2013-help.md
+      - name: キュー ビューアー
+        href: queue-viewer-exchange-2013-help.md
+        items:
+        - name: キュー ビューアーでのサーバーへの接続
+          href: connect-to-a-server-in-queue-viewer-exchange-2013-help.md
+        - name: キュー ビューアーのオプションを設定する
+          href: set-queue-viewer-options-exchange-2013-help.md
+        - name: キューに入れられたメッセージのプロパティをキュー ビューアーで表示する
+          href: view-queued-message-properties-in-queue-viewer-exchange-2013-help.md
+        - name: キュー ビューアーからのリストのエクスポート
+          href: export-lists-from-queue-viewer-exchange-2013-help.md
+      - name: メッセージ フィルター
+        href: message-filters-exchange-2013-help.md
+      - name: キューからメッセージをエクスポートする
+        href: export-messages-from-queues-exchange-2013-help.md
+      - name: メッセージの再試行、再送信、および有効期限の間隔
+        href: message-retry-resubmit-and-expiration-intervals-exchange-2013-help.md
+        items:
+        - name: メッセージの再試行、再送信、および有効期限の間隔を構成する
+          href: configure-message-retry-resubmit-and-expiration-intervals-exchange-2013-help.md
+      - name: 優先度キュー
+        href: priority-queuing-exchange-2013-help.md
+        items:
+        - name: 優先度キューを有効化および構成する
+          href: enable-and-configure-priority-queuing-exchange-2013-help.md
+      - name: キュー データベースの場所を変更する
+        href: change-the-location-of-the-queue-database-exchange-2013-help.md
+    - name: ピックアップ ディレクトリと再生ディレクトリ
+      href: pickup-directory-and-replay-directory-exchange-2013-help.md
+      items:
+      - name: ピックアップ ディレクトリと再生ディレクトリの構成
+        href: configure-the-pickup-directory-and-the-replay-directory-exchange-2013-help.md
+    - name: TLS の機能と関連用語
+      href: tls-functionality-and-related-terminology-exchange-2013-help.md
+      items:
+      - name: 'シナリオ: WAN 最適化コントローラーをサポートするように Exchange を構成する'
+        href: scenario-configure-exchange-to-support-wan-optimization-controllers-exchange-2013-help.md
+      - name: Active Directory サイト間の TLS を無効にする
+        href: disable-tls-between-active-directory-sites-exchange-2013-help.md
+  - name: 受信者
+    href: recipients-exchange-2013-help.md
+    items:
+    - name: ユーザー メールボックスを作成する
+      href: create-user-mailboxes-exchange-2013-help.md
+    - name: ユーザー メールボックスの管理
+      href: manage-user-mailboxes-exchange-2013-help.md
+      items:
+      - name: メールボックス用電子メール アドレスの追加または削除
+        href: add-or-remove-email-addresses-for-a-mailbox-exchange-2013-help.md
+      - name: メールボックスへの電子メールの転送を構成する
+        href: configure-email-forwarding-for-a-mailbox-exchange-2013-help.md
+      - name: メールボックスのメッセージの配信制限を構成する
+        href: configure-message-delivery-restrictions-for-a-mailbox-exchange-2013-help.md
+      - name: メールボックスのメッセージ サイズ制限を構成する
+        href: configure-message-size-limits-for-a-mailbox-exchange-2013-help.md
+      - name: メールボックスのストレージ クォータを構成する
+        href: configure-storage-quotas-for-a-mailbox-exchange-2013-help.md
+      - name: メールボックスを変換する
+        href: convert-a-mailbox-exchange-2013-help.md
+      - name: メールボックスの Exchange ActiveSync を有効または無効にする
+        href: enable-or-disable-exchange-activesync-for-a-mailbox-exchange-2013-help.md
+      - name: メールボックスの MAPI を有効または無効にする
+        href: enable-or-disable-mapi-for-a-mailbox-exchange-online-help.md
+      - name: メールボックスに対して Outlook Web App を有効または無効にする
+        href: enable-or-disable-outlook-web-app-for-a-mailbox-exchange-2013-help.md
+      - name: メールボックスの単一アイテムの回復を有効または無効にする
+        href: enable-or-disable-single-item-recovery-for-a-mailbox-exchange-2013-help.md
+    - name: リンクされたメールボックスの管理
+      href: manage-linked-mailboxes-exchange-2013-help.md
+    - name: 配布グループの作成と管理
+      href: create-and-manage-distribution-groups-exchange-2013-help.md
+      items:
+      - name: 配布グループ名前付けポリシーを作成する
+        href: create-a-distribution-group-naming-policy-exchange-2013-help.md
+      - name: 配布グループ名前付けポリシーの上書き
+        href: override-the-distribution-group-naming-policy-exchange-2013-help.md
+    - name: メールが有効なセキュリティ グループの管理
+      href: manage-mail-enabled-security-groups-exchange-2013-help.md
+    - name: 動的配布グループの管理
+      href: manage-dynamic-distribution-groups-exchange-2013-help.md
+      items:
+      - name: 動的配布グループのメンバーを表示する
+        href: view-members-of-a-dynamic-distribution-group-exchange-online-help.md
+    - name: メール連絡先の管理
+      href: manage-mail-contacts-exchange-2013-help.md
+      items:
+      - name: メール連絡先の電子メールを有効または無効にする
+        href: enable-or-disable-email-for-a-mail-contact-exchange-2013-help.md
+    - name: メール ユーザーの管理
+      href: manage-mail-users-exchange-2013-help.md
+      items:
+      - name: メール ユーザーの電子メールを有効または無効にする
+        href: enable-or-disable-email-for-a-mail-user-exchange-2013-help.md
+    - name: 会議室メールボックスの作成と管理
+      href: create-and-manage-room-mailboxes-exchange-2013-help.md
+    - name: 備品用メールボックスの管理
+      href: manage-equipment-mailboxes-exchange-2013-help.md
+    - name: 未接続のメールボックス
+      href: disconnected-mailboxes-exchange-2013-help.md
+      items:
+      - name: メールボックスの無効化または削除
+        href: disable-or-delete-a-mailbox-exchange-2013-help.md
+      - name: 無効にされたメールボックスを接続する
+        href: connect-a-disabled-mailbox-exchange-2013-help.md
+      - name: 削除されたメールボックスの接続または復元
+        href: connect-or-restore-a-deleted-mailbox-exchange-2013-help.md
+      - name: 回復可能な削除によって削除されたメールボックスを復元する
+        href: restore-a-soft-deleted-mailbox-exchange-2013-help.md
+      - name: メールボックス復元要求を管理する
+        href: manage-mailbox-restore-requests-exchange-2013-help.md
+      - name: メールボックスの完全削除
+        href: permanently-delete-a-mailbox-exchange-2013-help.md
+    - name: カスタム属性
+      href: custom-attributes-exchange-2013-help.md
+    - name: 受信者のアクセス許可を管理する
+      href: manage-permissions-for-recipients-exchange-online-help.md
+    - name: Exchange 2013 オブジェクト名でサポートされていない文字
+      href: unsupported-characters-for-exchange-2013-object-names-exchange-2013-help.md
+    - name: メールボックスの自動配布
+      href: automatic-mailbox-distribution-exchange-2013-help.md
+  - name: グループ作業
+    href: collaboration-exchange-2013-help.md
+    items:
+    - name: サイト メールボックス
+      href: site-mailboxes-exchange-2013-help.md
+      items:
+      - name: サイト メールボックスのプロビジョニング ポリシーの管理
+        href: manage-site-mailbox-provisioning-policies-exchange-2013-help.md
+    - name: パブリック フォルダー
+      href: public-folders-exchange-2013-help.md
+      items:
+      - name: 'FAQ: パブリック フォルダー'
+        href: faq-public-folders-exchange-2013-help.md
+      - name: パブリック フォルダーの制限
+        href: limits-for-public-folders-exchange-2013-help.md
+      - name: パブリック フォルダーを展開するときの考慮事項
+        href: considerations-when-deploying-public-folders-exchange-2013-help.md
+      - name: Outlook 2016 for Mac によるパブリック フォルダーへのアクセス
+        href: accessing-public-folders-with-outlook-2016-for-mac-exchange-2013-help.md
+      - name: パブリック フォルダーを Office 365 グループに移行する
+        href: migrate-your-public-folders-to-office-365-groups-exchange-2013-help.md
+      - name: パブリック フォルダーの手順
+        href: public-folder-procedures-exchange-2013-help.md
+        items:
+        - name: 新しい組織でパブリック フォルダーをセットアップする
+          href: set-up-public-folders-in-a-new-organization-exchange-2013-help.md
+        - name: ハイブリッド展開用に従来の社内パブリック フォルダーを構成する
+          href: configure-legacy-on-premises-public-folders-for-a-hybrid-deployment-exchange-2013-help.md
+        - name: ハイブリッド展開用に Exchange 2013 パブリック フォルダーを構成する
+          href: configure-exchange-2013-public-folders-for-a-hybrid-deployment-exchange-2013-help.md
+        - name: ハイブリッド展開用に Exchange Online パブリック フォルダーを構成する
+          href: configure-exchange-online-public-folders-for-a-hybrid-deployment-exchange-2013-help.md
+        - name: ユーザー メールボックスが Exchange 2013 サーバー上に存在するレガシ パブリック フォルダーを構成する
+          href: configure-legacy-public-folders-where-user-mailboxes-are-on-exchange-2013-servers-exchange-2013-help.md
+        - name: バッチ移行を使用して以前のバージョンから Exchange 2013 にパブリック フォルダーを移行する
+          href: use-batch-migration-to-migrate-public-folders-to-exchange-2013-from-previous-versions-exchange-2013-help.md
+        - name: バッチ移行を使用して、従来のパブリック フォルダーを Office 365 と Exchange Online に移行する
+          href: use-batch-migration-to-migrate-legacy-public-folders-to-office-365-and-exchange-online-exchange-online-help.md
+        - name: バッチ移行を使用して、Exchange 2013 のパブリック フォルダーを Exchange Online に移行する
+          href: use-batch-migration-to-migrate-exchange-2013-public-folders-to-exchange-online-exchange-online-help.md
+          items:
+          - name: Exchange 2013 から Exchange Online へのパブリック フォルダーの移行をロールバックする
+            href: roll-back-a-public-folder-migration-from-exchange-2013-to-exchange-online-exchange-2013-help.md
+        - name: バッチ移行を使用して、Exchange 2010 のパブリック フォルダーを Office 365 グループに移行する
+          href: use-batch-migration-to-migrate-exchange-2010-public-folders-to-office-365-groups-exchange-2013-help.md
+        - name: バッチ移行を使用して、Exchange 2013 のパブリック フォルダーを Office 365 グループに移行する
+          href: use-batch-migration-to-migrate-exchange-2013-public-folders-to-office-365-groups-exchange-2013-help.md
+        - name: パブリック フォルダー メールボックスを作成する
+          href: create-a-public-folder-mailbox-exchange-2013-help.md
+        - name: パブリック フォルダーの作成
+          href: create-a-public-folder-exchange-2013-help.md
+        - name: パブリック フォルダーのメールの有効化またはメールの無効化
+          href: mail-enable-or-mail-disable-a-public-folder-exchange-2013-help.md
+        - name: パブリック フォルダーの階層の更新
+          href: update-the-public-folder-hierarchy-exchange-2013-help.md
+        - name: パブリック フォルダーの削除
+          href: remove-a-public-folder-exchange-2013-help.md
+        - name: Outlook on the web でお気に入りパブリック フォルダーを使用する
+          href: use-favorite-public-folders-in-outlook-on-the-web-exchange-2013-help.md
+        - name: パブリック フォルダー メールボックスを別のメールボックス データベースに移動する
+          href: move-a-public-folder-mailbox-to-a-different-mailbox-database-exchange-2013-help.md
+        - name: パブリック フォルダーを別のパブリック フォルダー メールボックスに移動する
+          href: move-a-public-folder-to-a-different-public-folder-mailbox-exchange-2013-help.md
+        - name: 失敗した移動からパブリック フォルダーとパブリック フォルダー メールボックスを復元する
+          href: restore-public-folders-and-public-folder-mailboxes-from-failed-moves-exchange-2013-help.md
+        - name: パブリック フォルダーおよびパブリック フォルダー アイテムの統計情報の表示
+          href: view-statistics-for-public-folders-and-public-folder-items-exchange-2013-help.md
+    - name: 共有メールボックス
+      href: shared-mailboxes-exchange-2013-help.md
+      items:
+      - name: 共有メールボックスを作成する
+        href: create-a-shared-mailbox-exchange-2013-help.md
+  - name: 電子メール アドレスとアドレス帳
+    href: email-addresses-and-address-books-exchange-2013-help.md
+    items:
+    - name: アドレス帳ポリシー
+      href: address-book-policies-exchange-2013-help.md
+      items:
+      - name: 'シナリオ: アドレス帳ポリシーの展開'
+        href: scenario-deploying-address-book-policies-exchange-2013-help.md
+      - name: アドレス帳ポリシーの手順
+        href: address-book-policy-procedures-exchange-2013-help.md
+        items:
+        - name: アドレス帳ポリシー ルーティング エージェントをインストールおよび構成する
+          href: install-and-configure-the-address-book-policy-routing-agent-exchange-2013-help.md
+        - name: アドレス帳ポリシーの作成
+          href: create-an-address-book-policy-exchange-2013-help.md
+        - name: メール ユーザーへのアドレス帳ポリシーの割り当て
+          href: assign-an-address-book-policy-to-mail-users-exchange-2013-help.md
+        - name: アドレス帳ポリシーの設定の変更
+          href: change-the-settings-of-an-address-book-policy-exchange-2013-help.md
+        - name: アドレス帳ポリシーの削除
+          href: remove-an-address-book-policy-exchange-2013-help.md
+    - name: 詳細テンプレート
+      href: details-templates-exchange-2013-help.md
+      items:
+      - name: 詳細テンプレートのカスタマイズ
+        href: customize-details-templates-exchange-2013-help.md
+      - name: 詳細テンプレートを既定の構成に復元する
+        href: restore-a-details-template-to-the-default-configuration-exchange-2013-help.md
+    - name: 電子メール アドレス ポリシー
+      href: email-address-policies-exchange-2013-help.md
+      items:
+      - name: 電子メール アドレス ポリシーの手順
+        href: email-address-policy-procedures-exchange-2013-help.md
+        items:
+        - name: 電子メール アドレス ポリシーの作成
+          href: create-an-email-address-policy-exchange-2013-help.md
+        - name: 受信者フィルターを使用した電子メール アドレス ポリシーの作成
+          href: create-an-email-address-policy-by-using-recipient-filters-exchange-2013-help.md
+        - name: 電子メール アドレス ポリシーの編集
+          href: edit-an-email-address-policy-exchange-2013-help.md
+        - name: 電子メール アドレス ポリシーの削除
+          href: remove-an-email-address-policy-exchange-2013-help.md
+    - name: オフライン アドレス帳
+      href: offline-address-books-exchange-2013-help.md
+      items:
+      - name: オフライン アドレス帳の手順
+        href: offline-address-book-procedures-exchange-2013-help.md
+        items:
+        - name: オフライン アドレス帳の作成
+          href: create-an-offline-address-book-exchange-2013-help.md
+        - name: オフライン アドレス帳でのアドレス一覧の追加または削除
+          href: add-an-address-list-to-or-remove-an-address-list-from-an-offline-address-book-exchange-2013-help.md
+        - name: 既定のオフライン アドレス帳を変更する
+          href: change-the-default-offline-address-book-exchange-2013-help.md
+        - name: オフライン アドレス帳のダウンロードのために受信者を準備する
+          href: provision-recipients-for-offline-address-book-downloads-exchange-2013-help.md
+        - name: オフライン アドレス帳を削除する
+          href: remove-an-offline-address-book-exchange-2013-help.md
+        - name: オフライン アドレス帳の更新
+          href: update-an-offline-address-book-exchange-2013-help.md
+        - name: オフライン アドレス帳仮想ディレクトリを作成する
+          href: create-an-offline-address-book-virtual-directory-exchange-2013-help.md
+        - name: オフライン アドレス帳の生成スケジュールを変更する
+          href: change-the-offline-address-book-generation-schedule-exchange-2013-help.md
+        - name: オフライン アドレス帳配布のプロパティの構成
+          href: configure-offline-address-book-distribution-properties-exchange-2013-help.md
+    - name: アドレス一覧
+      href: address-lists-exchange-2013-help.md
+      items:
+      - name: アドレス一覧の手順
+        href: address-list-procedures-exchange-2013-help.md
+        items:
+        - name: アドレス一覧を作成する
+          href: create-an-address-list-exchange-2013-help.md
+        - name: アドレス一覧を更新する
+          href: update-an-address-list-exchange-2013-help.md
+        - name: 受信者フィルターを使用したアドレス一覧の作成
+          href: create-an-address-list-by-using-recipient-filters-exchange-2013-help.md
+        - name: アドレス一覧を移動する
+          href: move-an-address-list-exchange-2013-help.md
+        - name: アドレス一覧の削除
+          href: remove-an-address-list-exchange-2013-help.md
+        - name: グローバル アドレス一覧の作成
+          href: create-a-global-address-list-exchange-2013-help.md
+        - name: グローバル アドレス一覧のプロパティを構成する
+          href: configure-global-address-list-properties-exchange-2013-help.md
+        - name: グローバル アドレス一覧を削除する
+          href: remove-a-global-address-list-exchange-2013-help.md
+        - name: グローバル アドレス一覧の更新
+          href: update-a-global-address-list-exchange-2013-help.md
+    - name: 階層型アドレス帳
+      href: hierarchical-address-books-exchange-2013-help.md
+      items:
+      - name: 階層型アドレス帳を有効または無効にする
+        href: enable-or-disable-hierarchical-address-books-exchange-2013-help.md
+  - name: 共有
+    href: sharing-exchange-2013-help.md
+    items:
+    - name: フェデレーション
+      href: federation-exchange-2013-help.md
+      items:
+      - name: フェデレーション信頼のための信頼されたルート証明機関
+        href: trusted-root-certification-authorities-for-federation-trusts-exchange-2013-help.md
+      - name: フェデレーションの手順
+        href: federation-procedures-exchange-2013-help.md
+        items:
+        - name: フェデレーション共有の構成
+          href: configure-federated-sharing-exchange-2013-help.md
+        - name: フェデレーション信頼の構成
+          href: configure-a-federation-trust-exchange-2013-help.md
+        - name: フェデレーション信頼の管理
+          href: manage-a-federation-trust-exchange-2013-help.md
+        - name: フェデレーション信頼の削除
+          href: remove-a-federation-trust-exchange-2013-help.md
+        - name: フェデレーション証明書を更新する
+          href: renew-the-federation-certificate-exchange-2013-help.md
+        - name: Exchange 組織のフェデレーション共有を無効または再度有効にする
+          href: disable-or-re-enable-federated-sharing-for-your-exchange-organization-exchange-2013-help.md
+        - name: Exchange 組織間のフェデレーション共有を構成する
+          href: configuring-federated-sharing-between-exchange-organizations-exchange-2013-help.md
+        - name: Exchange と Exchange Online 組織の間の OAuth 認証の構成
+          href: configure-oauth-authentication-between-exchange-and-exchange-online-organizations-exchange-2013-help.md
+    - name: 組織上の関係
+      href: organization-relationships-exchange-2013-help.md
+      items:
+      - name: 組織の関係を作成する
+        href: create-an-organization-relationship-exchange-2013-help.md
+      - name: 組織の関係の変更
+        href: modify-an-organization-relationship-exchange-2013-help.md
+      - name: 組織の関係を削除する
+        href: remove-an-organization-relationship-exchange-2013-help.md
+    - name: 共有ポリシー
+      href: sharing-policies-exchange-2013-help.md
+      items:
+      - name: 共有ポリシーの作成
+        href: create-a-sharing-policy-exchange-2013-help.md
+      - name: メールボックスに共有ポリシーを適用する
+        href: apply-a-sharing-policy-to-mailboxes-exchange-2013-help.md
+      - name: 共有ポリシーの変更、無効化、削除
+        href: modify-disable-or-remove-a-sharing-policy-exchange-2013-help.md
+      - name: インターネット予定表の公開を有効にする
+        href: enable-internet-calendar-publishing-exchange-2013-help.md
+      - name: インターネット予定表の公開を無効にする
+        href: disable-internet-calendar-publishing-exchange-2013-help.md
+  - name: クライアントとモバイル
+    href: clients-and-mobile-exchange-2013-help.md
+    items:
+    - name: Outlook Anywhere
+      href: outlook-anywhere-exchange-2013-help.md
+      items:
+      - name: Outlook Anywhere の接続のテスト
+        href: test-outlook-anywhere-connectivity-exchange-2013-help.md
+    - name: MAPI over HTTP
+      href: mapi-over-http-exchange-2013-help.md
+    - name: Exchange ActiveSync
+      href: exchange-activesync-exchange-2013-help.md
+      items:
+      - name: ダイレクト プッシュ
+        href: direct-push-exchange-2013-help.md
+      - name: モバイル デバイス メールボックス ポリシー
+        href: mobile-device-mailbox-policies-exchange-2013-help.md
+        items:
+        - name: モバイル メールボックス ポリシーでのユーザーの追加または削除
+          href: add-or-remove-users-from-a-mobile-mailbox-policy-exchange-2013-help.md
+        - name: モバイル デバイス メールボックス ポリシーの作成または変更
+          href: create-or-modify-a-mobile-device-mailbox-policy-exchange-2013-help.md
+        - name: Windows Phone とデバイスでサポートされているモバイル デバイス メールボックス ポリシー
+          href: supported-mobile-device-mailbox-policies-for-windows-phones-and-devices-exchange-2013-help.md
+      - name: モバイル デバイス
+        href: mobile-devices-exchange-2013-help.md
+        items:
+        - name: リモート デバイス ワイプ
+          href: remote-device-wipe-exchange-2013-help.md
+        - name: ユーザーのモバイル デバイス情報の表示
+          href: view-mobile-device-information-for-users-exchange-2013-help.md
+        - name: 携帯電話とタブレットの機能
+          href: mobile-phone-and-tablet-features-exchange-2013-help.md
+        - name: 携帯電話でリモート ワイプを実行する
+          href: perform-a-remote-wipe-on-a-mobile-phone-exchange-2013-help.md
+        - name: 電子メールにアクセスできるように携帯電話を構成する
+          href: configure-mobile-phones-to-access-email-exchange-2013-help.md
+    - name: POP3 と IMAP4
+      href: pop3-and-imap4-in-exchange-server-2013-exchange-2013-help.md
+      items:
+      - name: POP3 サービスの開始および停止
+        href: start-and-stop-the-pop3-services-exchange-2013-help.md
+      - name: IMAP4 サービスの開始および停止
+        href: start-and-stop-the-imap4-services-exchange-2013-help.md
+      - name: POP3 を有効にする
+        href: enable-pop3-in-exchange-2013-exchange-2013-help.md
+      - name: Exchange 2016 で IMAP4 を有効にする
+        href: enable-imap4-in-exchange-2013-exchange-2013-help.md
+      - name: ユーザーの POP3 アクセスを有効または無効にする
+        href: enable-or-disable-pop3-access-for-a-user-exchange-2013-help.md
+      - name: ユーザーの IMAP4 アクセスを有効または無効にする
+        href: enable-or-disable-imap4-access-for-a-user-exchange-2013-help.md
+      - name: POP3 の接続制限を設定する
+        href: set-connection-limits-for-pop3-exchange-2013-help.md
+      - name: IMAP4 の接続の制限を設定する
+        href: set-connection-limits-for-imap4-exchange-2013-help.md
+      - name: POP3 の接続タイムアウト制限を設定する
+        href: set-connection-time-out-limits-for-pop3-exchange-2013-help.md
+      - name: IMAP4 の接続タイムアウト制限を設定する
+        href: set-connection-time-out-limits-for-imap4-exchange-2013-help.md
+      - name: POP3 の予定表オプションを構成する
+        href: configure-calendar-options-for-pop3-exchange-2013-help.md
+      - name: IMAP4 の予定表オプションを構成する
+        href: configure-calendar-options-for-imap4-exchange-2013-help.md
+      - name: POP3 および IMAP4 のメッセージ取得形式オプションを構成する
+        href: configure-pop3-and-imap4-message-retrieval-format-options-exchange-2013-help.md
+      - name: POP3 および IMAP4 アクセスの IP アドレスとポートを構成する
+        href: configure-ip-addresses-and-ports-for-pop3-and-imap4-access-exchange-2013-help.md
+      - name: POP3、IMAP4、SMTP サーバーの設定を Outlook Web App のエンド ユーザーが表示できるようにする
+        href: allow-pop3-imap4-and-smtp-server-settings-to-be-viewed-by-end-users-in-outlook-web-app-exchange-2013-help.md
+      - name: POP3 および IMAP4 のプロトコル ログ出力
+        href: protocol-logging-for-pop3-and-imap4-exchange-2013-help.md
+        items:
+        - name: POP3 および IMAP4 のプロトコル ログ出力の構成
+          href: configure-protocol-logging-for-pop3-and-imap4-exchange-2013-help.md
+    - name: Outlook for iOS and Android
+      href: outlook-for-ios-and-android-exchange-2013-help.md
+      items:
+      - name: Using hybrid Modern Authentication with Outlook for iOS and Android
+        href: using-hybrid-modern-authentication-with-outlook-for-ios-and-android-exchange-2013-help.md
+      - name: Outlook for iOS and Android
+        href: using-basic-authentication-with-outlook-for-ios-and-android-exchange-2013-help.md
+        items:
+        - name: Account setup in Outlook for iOS and Android using basic authentication
+          href: account-setup-in-outlook-for-ios-and-android-using-basic-authentication-exchange-2013-help.md
+        - name: Passwords and Security in Outlook for iOS and Android for Exchange Server
+          href: passwords-and-security-in-outlook-for-ios-and-android-for-exchange-server-exchange-2013-help.md
+        - name: Managing devices for Outlook for iOS and Android for Exchange Server
+          href: managing-devices-for-outlook-for-ios-and-android-for-exchange-server-exchange-2013-help.md
+    - name: クライアント プロトコルの管理
+      href: client-protocol-management-exchange-2013-help.md
+      items:
+      - name: 仮想ディレクトリの管理
+        href: virtual-directory-management-exchange-2013-help.md
+        items:
+        - name: Exchange ActiveSync 仮想ディレクトリの管理タスク
+          href: exchange-activesync-virtual-directory-management-tasks-exchange-2013-help.md
+        - name: Exchange 仮想ディレクトリの既定の設定
+          href: default-settings-for-exchange-virtual-directories-exchange-2013-help.md
+    - name: Outlook Web App
+      href: outlook-web-app-exchange-2013-help.md
+      items:
+      - name: Outlook Web App メールボックス ポリシー
+        href: outlook-web-app-mailbox-policies-exchange-2013-help.md
+        items:
+        - name: Outlook Web App メールボックス ポリシーの手順
+          href: outlook-web-app-mailbox-policy-procedures-exchange-2013-help.md
+          items:
+          - name: Outlook Web App のメールボックス ポリシーの作成
+            href: create-an-outlook-web-app-mailbox-policy-exchange-2013-help.md
+          - name: Outlook Web App のメールボックス ポリシーをメールボックスで適用または削除する
+            href: apply-or-remove-an-outlook-web-app-mailbox-policy-on-a-mailbox-exchange-2013-help.md
+          - name: Exchange から Outlook Web App のメールボックス ポリシーを削除する
+            href: remove-an-outlook-web-app-mailbox-policy-from-exchange-exchange-2013-help.md
+          - name: Outlook Web App メールボックス ポリシーのプロパティの表示または構成
+            href: view-or-configure-outlook-web-app-mailbox-policy-properties-exchange-2013-help.md
+      - name: Outlook Web App と Lync Server を統合する
+        href: integrate-outlook-web-app-with-lync-server-exchange-2013-help.md
+      - name: Outlook Web App 仮想ディレクトリの表示や構成
+        href: view-or-configure-outlook-web-app-virtual-directories-exchange-2013-help.md
+      - name: Outlook Web App の URL を簡略化する
+        href: simplify-the-outlook-web-app-url-exchange-2013-help.md
+      - name: Outlook Web App のテーマの作成
+        href: create-a-theme-for-outlook-web-app-exchange-2013-help.md
+      - name: Outlook Web App サインイン、言語選択、エラー ページをカスタマイズする
+        href: customize-the-outlook-web-app-sign-in-language-selection-and-error-pages-exchange-2013-help.md
+      - name: OWA for Devices のプッシュ通知のプロキシの設定
+        href: configuring-push-notifications-proxying-for-owa-for-devices-exchange-2013-help.md
+      - name: AD FS のクレームベース認証を Outlook Web App および EAC で使用する
+        href: using-ad-fs-claims-based-authentication-with-outlook-web-app-and-eac-exchange-2013-help.md
+      - name: Outlook Web App の Web パーツの使用
+        href: using-outlook-web-app-web-parts-exchange-2013-help.md
+    - name: MailTips
+      href: mailtips-exchange-2013-help.md
+      items:
+      - name: メール ヒントの有効化または無効化
+        href: enable-or-disable-mailtips-exchange-2013-help.md
+      - name: 組織の大きなオーディエンス サイズの構成
+        href: configure-the-large-audience-size-for-your-organization-exchange-2013-help.md
+      - name: 受信者向けのカスタム メール ヒントを構成する
+        href: configure-custom-mailtips-for-recipients-exchange-2013-help.md
+      - name: 組織の関係にまたがるメール ヒント
+        href: mailtips-over-organization-relationships-exchange-2013-help.md
+        items:
+        - name: 組織上の関係のメール ヒントの管理
+          href: manage-mailtips-for-organization-relationships-exchange-2013-help.md
+      - name: グループ メトリックとメール ヒント
+        href: group-metrics-and-mailtips-exchange-2013-help.md
+        items:
+        - name: グループ測定値を構成する
+          href: configure-group-metrics-exchange-2013-help.md
+    - name: Outlook 用アプリ
+      href: add-ins-for-outlook-exchange-2013-help.md
+      items:
+      - name: 組織の Outlook 用アプリをインストールまたは削除する
+        href: install-or-remove-add-ins-for-outlook-for-your-organization-exchange-2013-help.md
+      - name: Outlook 用アプリへのユーザー アクセスを管理する
+        href: manage-user-access-to-add-ins-for-outlook-exchange-online-help.md
+      - name: Outlook 用のアドインをインストールおよび管理できる管理者とユーザーを指定する
+        href: specify-the-administrators-and-users-who-can-install-and-manage-add-ins-for-outlook-exchange-2013-help.md
+    - name: Exchange 2013 での SSL オフロードの構成
+      href: configuring-ssl-offloading-in-exchange-2013-exchange-2013-help.md
+  - name: ユニファイド メッセージング
+    href: unified-messaging-exchange-2013-help.md
+    items:
+    - name: 新しいボイス メール機能
+      href: new-voice-mail-features-exchange-2013-help.md
+      items:
+      - name: ボイスのアーキテクチャの変更
+        href: voice-architecture-changes-exchange-2013-help.md
+      - name: ユニファイド メッセージングでの IPv6 サポート
+        href: ipv6-support-in-unified-messaging-exchange-2013-help.md
+      - name: ボイス メール プレビューの拡張機能
+        href: voice-mail-preview-enhancements-exchange-2013-help.md
+      - name: ユニファイド メッセージングのコマンドレットの更新
+        href: unified-messaging-cmdlet-updates-exchange-2013-help.md
+    - name: ユニファイド メッセージングの計画
+      href: planning-for-unified-messaging-exchange-2013-help.md
+    - name: ボイス メールと UM の展開
+      href: deploying-voice-mail-and-um-exchange-2013-help.md
+      items:
+      - name: Exchange 2013 UM の展開
+        href: deploy-exchange-2013-um-exchange-2013-help.md
+      - name: 'チェックリスト: Exchange 2013 UM の展開'
+        href: checklist-deploy-exchange-2013-um-exchange-2013-help.md
+      - name: Exchange 2010 UM から Exchange 2013 UM へのアップグレード
+        href: upgrade-exchange-2010-um-to-exchange-2013-um-exchange-2013-help.md
+      - name: 'チェックリスト: Exchange 2010 UM から Exchange 2013 UM へのアップグレード'
+        href: checklist-upgrade-exchange-2010-um-to-exchange-2013-um-exchange-2013-help.md
+      - name: Exchange 2007 UM から Exchange 2013 UM へのアップグレード
+        href: upgrade-exchange-2007-um-to-exchange-2013-um-exchange-2013-help.md
+      - name: 'チェックリスト: Exchange 2007 UM から Exchange 2013 UM へのアップグレード'
+        href: checklist-upgrade-exchange-2007-um-to-exchange-2013-um-exchange-2013-help.md
+      - name: Exchange 2013 UM および Lync Server の展開の概要
+        href: deploying-exchange-2013-um-and-lync-server-overview-exchange-2013-help.md
+        items:
+        - name: Lync Server で動作するように UM を構成する
+          href: configure-um-to-work-with-lync-server-exchange-2013-help.md
+        - name: 'チェックリスト: Exchange 2013 UM と Lync Server の統合'
+          href: checklist-integrate-exchange-2013-um-with-lync-server-exchange-2013-help.md
+        - name: Office Communications Server 2007 R2 および Lync Server との共存
+          href: coexistence-with-office-communications-server-2007-r2-and-lync-server-exchange-2013-help.md
+      - name: UM の証明書の展開
+        href: deploying-certificates-for-um-exchange-2013-help.md
+        items:
+        - name: UM の証明書の展開手順
+          href: deploying-certificates-for-um-procedures-exchange-2013-help.md
+          items:
+          - name: UM の証明書を作成する
+            href: create-certificates-for-um-exchange-2013-help.md
+          - name: UM の証明書をインポートまたはエクスポートする
+            href: import-or-export-certificates-for-um-exchange-2013-help.md
+          - name: UM および UM 呼び出しルーター サービスへの証明書の割り当て
+            href: assign-a-certificate-to-the-um-and-um-call-router-services-exchange-2013-help.md
+    - name: UM 言語、プロンプト、および案内応答
+      href: um-languages-prompts-and-greetings-exchange-2013-help.md
+      items:
+      - name: ボイス メールの案内応答、アナウンス、メニュー、およびプロンプト
+        href: voice-mail-greetings-announcements-menus-and-prompts-exchange-2013-help.md
+      - name: UM 言語、プロンプト、および案内応答の手順
+        href: um-languages-prompts-and-greetings-procedures-exchange-2013-help.md
+        items:
+        - name: UM 言語パックをインストールする
+          href: install-a-um-language-pack-exchange-2013-help.md
+        - name: ダイヤル プランの既定言語を設定する
+          href: set-the-default-language-on-a-dial-plan-exchange-2013-help.md
+        - name: 自動応答で使う言語を選択する
+          href: select-the-language-for-an-auto-attendant-exchange-2013-help.md
+        - name: UM 言語パックの削除
+          href: remove-a-um-language-pack-exchange-2013-help.md
+        - name: カスタム案内応答、アナウンス、メニュー、およびプロンプトのインポートとエクスポート
+          href: import-and-export-custom-greetings-announcements-menus-and-prompts-exchange-2013-help.md
+        - name: Exchange 2007 のカスタム音声ガイダンスを Exchange 2013 にインポートする
+          href: import-custom-prompts-from-exchange-2007-to-exchange-2013-exchange-2013-help.md
+        - name: 電話ユーザー インターフェイスでカスタム プロンプト録音を有効にする
+          href: enable-custom-prompt-recording-using-the-telephone-user-interface-exchange-2013-help.md
+    - name: 電話システムの UM との統合
+      href: telephone-system-integration-with-um-exchange-2013-help.md
+      items:
+      - name: テレフォニーの概念とコンポーネント
+        href: telephony-concepts-and-components-exchange-2013-help.md
+      - name: PBX および IP PBX の構成
+        href: pbx-and-ip-pbx-configurations-exchange-2013-help.md
+      - name: UM を電話システムに接続する
+        href: connect-um-to-your-telephone-system-exchange-2013-help.md
+        items:
+        - name: Exchange 2013 のテレフォニー アドバイザー
+          href: telephony-advisor-for-exchange-2013-exchange-2013-help.md
+        - name: サポートされる VoIP ゲートウェイ、IP Pbx、および PBX の構成に関する注意事項
+          href: configuration-notes-for-supported-voip-gateways-ip-pbxs-and-pbxs-exchange-2013-help.md
+        - name: VoIP ゲートウェイ、IP PBX、またはセッション ボーダー コント ローラーを UM に接続する
+          href: connect-a-voip-gateway-ip-pbx-or-session-border-controller-to-um-exchange-2013-help.md
+        - name: UM をサポートされる VoIP ゲートウェイに接続する
+          href: connect-um-to-a-supported-voip-gateway-exchange-2013-help.md
+        - name: VoIP ゲートウェイを PBX と通信するために接続する
+          href: connect-a-voip-gateway-to-communicate-with-a-pbx-exchange-2013-help.md
+        - name: サポートされているセッション ボーダー コントローラーの構成に関する注意事項
+          href: configuration-notes-for-supported-session-border-controllers-exchange-2013-help.md
+    - name: 電話ネットワークへのボイス メール システムの接続
+      href: connect-your-voice-mail-system-to-your-telephone-network-exchange-2013-help.md
+      items:
+      - name: UM ダイヤル プラン
+        href: um-dial-plans-exchange-2013-help.md
+        items:
+        - name: オーディオ コーデック
+          href: audio-codecs-exchange-2013-help.md
+        - name: セカンダリ ダイヤル プラン
+          href: secondary-dial-plans-exchange-2013-help.md
+        - name: UM ダイヤル プラン手順
+          href: um-dial-plan-procedures-exchange-2013-help.md
+          items:
+          - name: UM ダイヤル プランを作成する
+            href: create-a-um-dial-plan-exchange-2013-help.md
+          - name: UM ダイヤル プランの管理
+            href: manage-a-um-dial-plan-exchange-2013-help.md
+          - name: メールボックス サーバーとクライアント アクセス サーバーを SIP URI ダイヤル プランに追加する
+            href: add-mailbox-and-client-access-servers-to-a-sip-uri-dial-plan-exchange-2013-help.md
+          - name: メールボックス サーバーとクライアント アクセス サーバーを SIP URI ダイヤル プランから削除する
+            href: remove-mailbox-and-client-access-servers-from-a-sip-uri-dial-plan-exchange-2013-help.md
+          - name: オーディオ コーデックの変更
+            href: change-the-audio-codec-exchange-2013-help.md
+          - name: 最大通話時間の構成
+            href: configure-the-maximum-call-duration-exchange-2013-help.md
+          - name: 最大録音時間の構成
+            href: configure-the-maximum-recording-duration-exchange-2013-help.md
+          - name: 録音アイドル タイムアウトの値の構成
+            href: configure-the-recording-idle-time-out-value-exchange-2013-help.md
+          - name: VoIP セキュリティ設定の構成
+            href: configure-the-voip-security-setting-exchange-2013-help.md
+          - name: 同じような名前を持つユーザーのダイヤル プランを構成する
+            href: configure-a-dial-plan-for-users-who-have-similar-names-exchange-2013-help.md
+          - name: UM ダイヤル プランを削除する
+            href: delete-a-um-dial-plan-exchange-2013-help.md
+      - name: UM IP ゲートウェイ
+        href: um-ip-gateways-exchange-2013-help.md
+        items:
+        - name: UM IP ゲートウェイ手順
+          href: um-ip-gateway-procedures-exchange-2013-help.md
+          items:
+          - name: UM IP ゲートウェイを作成する
+            href: create-a-um-ip-gateway-exchange-2013-help.md
+          - name: UM IP ゲートウェイの管理
+            href: manage-a-um-ip-gateway-exchange-2013-help.md
+          - name: UM IP ゲートウェイを有効にする
+            href: enable-a-um-ip-gateway-exchange-2013-help.md
+          - name: UM IP ゲートウェイを無効にする
+            href: disable-a-um-ip-gateway-exchange-2013-help.md
+          - name: 完全修飾ドメイン名の構成
+            href: configure-a-fully-qualified-domain-name-exchange-2013-help.md
+          - name: IP アドレスの構成
+            href: configure-the-ip-address-exchange-2013-help.md
+          - name: リスニング ポートの構成
+            href: configure-the-listening-port-exchange-2013-help.md
+          - name: UM IP ゲートウェイを削除する
+            href: delete-a-um-ip-gateway-exchange-2013-help.md
+      - name: UM ハント グループ
+        href: um-hunt-groups-exchange-2013-help.md
+        items:
+        - name: UM ハント グループ手順
+          href: um-hunt-group-procedures-exchange-2013-help.md
+          items:
+          - name: UM ハント グループを作成する
+            href: create-a-um-hunt-group-exchange-2013-help.md
+          - name: UM ハント グループの表示
+            href: view-a-um-hunt-group-exchange-2013-help.md
+          - name: UM ハント グループを削除する
+            href: delete-a-um-hunt-group-exchange-2013-help.md
+      - name: UM サービス
+        href: um-services-exchange-2013-help.md
+        items:
+        - name: UM プロトコル、ポート、およびサービス
+          href: um-protocols-ports-and-services-exchange-2013-help.md
+        - name: UM サービス手順
+          href: um-services-procedures-exchange-2013-help.md
+          items:
+          - name: メールボックス サーバーの UM 設定の管理
+            href: manage-um-settings-on-a-mailbox-server-exchange-2013-help.md
+          - name: クライアント アクセス サーバーの UM 設定管理
+            href: manage-um-settings-on-a-client-access-server-exchange-2013-help.md
+          - name: メールボックス サーバーで通話応答を許可または禁止する
+            href: allow-or-prevent-call-answering-on-a-mailbox-server-exchange-2013-help.md
+          - name: クライアント アクセス サーバーで通話応答を許可または禁止する
+            href: allow-or-prevent-call-answering-on-a-client-access-server-exchange-2013-help.md
+          - name: メールボックス サーバーのスタートアップ モードを構成する
+            href: configure-the-startup-mode-on-a-mailbox-server-exchange-2013-help.md
+          - name: クライアント アクセス サーバーのスタートアップ モードを構成する
+            href: configure-the-startup-mode-on-a-client-access-server-exchange-2013-help.md
+          - name: メールボックス サーバーで着信呼び出し数を構成する
+            href: configure-the-number-of-incoming-calls-on-a-mailbox-server-exchange-2013-help.md
+          - name: Microsoft Exchange Unified Messaging Service を開始する
+            href: start-the-microsoft-exchange-unified-messaging-service-exchange-2013-help.md
+          - name: Microsoft Exchange Unified Messaging Service を停止する
+            href: stop-the-microsoft-exchange-unified-messaging-service-exchange-2013-help.md
+          - name: Microsoft Exchange ユニファイド メッセージング呼び出しルーター サービスを開始する
+            href: start-the-microsoft-exchange-unified-messaging-call-router-service-exchange-2013-help.md
+          - name: Microsoft Exchange ユニファイド メッセージング呼び出しルーター サービスの停止
+            href: stop-the-microsoft-exchange-unified-messaging-call-router-service-exchange-2013-help.md
+          - name: クライアント アクセス サーバーで TCP リスニング ポートを設定する
+            href: set-the-tcp-listening-port-on-a-client-access-server-exchange-2013-help.md
+          - name: クライアント アクセス サーバーで TLS リスニング ポートを設定する
+            href: set-the-tls-listening-port-on-a-client-access-server-exchange-2013-help.md
+    - name: 着信呼び出しへの自動応答とルーティング
+      href: automatically-answer-and-route-incoming-calls-exchange-2013-help.md
+      items:
+      - name: DTMF インターフェイス
+        href: dtmf-interface-exchange-2013-help.md
+      - name: UM 自動応答手順
+        href: um-auto-attendant-procedures-exchange-2013-help.md
+        items:
+        - name: UM 自動応答の設定
+          href: set-up-a-um-auto-attendant-exchange-2013-help.md
+          items:
+          - name: UM 自動応答を作成する
+            href: create-a-um-auto-attendant-exchange-2013-help.md
+          - name: 自動応答の内線番号の追加
+            href: add-an-auto-attendant-extension-number-exchange-2013-help.md
+          - name: 営業時間の構成
+            href: configure-business-hours-exchange-2013-help.md
+          - name: 祝日のスケジュールの作成
+            href: create-a-holiday-schedule-exchange-2013-help.md
+          - name: 会社名を入力する
+            href: enter-a-business-name-exchange-2013-help.md
+          - name: ビジネスの場所を設定する
+            href: set-a-business-location-exchange-2013-help.md
+          - name: タイム ゾーンの構成
+            href: configure-the-time-zone-exchange-2013-help.md
+          - name: カスタマイズされた勤務時間案内応答を有効にする
+            href: enable-a-customized-business-hours-greeting-exchange-2013-help.md
+          - name: カスタマイズされた勤務時間メニュー プロンプトを有効にする
+            href: enable-a-customized-business-hours-menu-prompt-exchange-2013-help.md
+          - name: カスタマイズされた勤務時間外案内応答を有効にする
+            href: enable-a-customized-non-business-hours-greeting-exchange-2013-help.md
+          - name: カスタマイズされた勤務時間外メニュー プロンプトの有効化
+            href: enable-a-customized-non-business-hours-menu-prompt-exchange-2013-help.md
+          - name: 情報アナウンスの有効化
+            href: enable-an-informational-announcement-exchange-2013-help.md
+          - name: メニューのナビゲーションの作成
+            href: create-menu-navigation-exchange-2013-help.md
+          - name: 営業時間のナビゲーション メニューの作成
+            href: create-business-hours-navigation-menus-exchange-2013-help.md
+          - name: 営業時間外のナビゲーション メニューの作成
+            href: create-non-business-hours-navigation-menus-exchange-2013-help.md
+        - name: UM 自動応答の管理
+          href: manage-a-um-auto-attendant-exchange-2013-help.md
+        - name: DTMF フォールバック自動応答の構成
+          href: configure-a-dtmf-fallback-auto-attendant-exchange-2013-help.md
+        - name: UM 自動応答を有効にする
+          href: enable-a-um-auto-attendant-exchange-2013-help.md
+        - name: UM 自動応答を無効にする
+          href: disable-a-um-auto-attendant-exchange-2013-help.md
+        - name: UM 自動応答を削除する
+          href: delete-a-um-auto-attendant-exchange-2013-help.md
+        - name: 自動音声認識を有効または無効にする
+          href: enable-or-disable-automatic-speech-recognition-exchange-2013-help.md
+        - name: 自動応答からの呼び出しの転送を許可または禁止する
+          href: enable-or-prevent-transferring-calls-from-an-auto-attendant-exchange-2013-help.md
+        - name: ユーザーへの音声メッセージの送信を有効または無効にする
+          href: enable-or-disable-sending-voice-messages-to-users-exchange-2013-help.md
+        - name: ディレクトリ参照を有効または無効にする
+          href: enable-or-disable-directory-lookups-exchange-2013-help.md
+        - name: 連絡可能なユーザーのグループを構成する
+          href: configure-the-group-of-users-that-can-be-contacted-exchange-2013-help.md
+        - name: 同じような名前を持つユーザーの自動応答を構成する
+          href: configure-an-auto-attendant-for-users-who-have-similar-names-exchange-2013-help.md
+    - name: ユーザーのボイス メールのセットアップ
+      href: set-up-voice-mail-for-users-exchange-2013-help.md
+      items:
+      - name: UM メールボックス ポリシー
+        href: um-mailbox-policies-exchange-2013-help.md
+        items:
+        - name: UM メールボックス ポリシー手順
+          href: um-mailbox-policy-procedures-exchange-2013-help.md
+          items:
+          - name: UM メールボックス ポリシーの作成
+            href: create-a-um-mailbox-policy-exchange-2013-help.md
+          - name: UM メールボックス ポリシーの管理
+            href: manage-a-um-mailbox-policy-exchange-2013-help.md
+          - name: UM メールボックス ポリシーを削除する
+            href: delete-a-um-mailbox-policy-exchange-2013-help.md
+      - name: ユーザーのボイス メール
+        href: voice-mail-for-users-exchange-2013-help.md
+        items:
+        - name: ボイス メールが有効なユーザーの手順
+          href: voice-mail-enabled-user-procedures-exchange-2013-help.md
+          items:
+          - name: ボイス メール用にユーザーを有効にする
+            href: enable-a-user-for-voice-mail-exchange-2013-help.md
+          - name: ボイス メールが有効なときに送信される電子メール メッセージにテキストを含める
+            href: include-text-with-the-email-message-sent-when-a-user-is-enabled-for-voice-mail-exchange-2013-help.md
+          - name: ユーザーのボイス メール設定の管理
+            href: manage-voice-mail-settings-for-a-user-exchange-2013-help.md
+          - name: UM メールボックス ポリシーの割り当て
+            href: assign-a-um-mailbox-policy-exchange-2013-help.md
+          - name: UM ダイヤル プランの変更
+            href: change-the-um-dial-plan-exchange-2013-help.md
+          - name: UM が有効になっていないユーザーからの呼び出しを有効にする
+            href: enable-calls-from-users-who-aren-t-um-enabled-exchange-2013-help.md
+          - name: UM が有効になっていないユーザーからの呼び出しを無効にする
+            href: disable-calls-from-users-who-aren-t-um-enabled-exchange-2013-help.md
+          - name: 呼び出し ID のない発信者による音声メッセージの録音を許可する
+            href: allow-callers-without-a-caller-id-to-leave-a-voice-message-exchange-2013-help.md
+          - name: 音声メッセージの受信時に送信される電子メール メッセージにテキストを含める
+            href: include-text-with-the-email-message-sent-when-a-voice-message-is-received-exchange-2013-help.md
+          - name: 呼び出し ID のない呼び出し元が音声メッセージを残すことを禁止する
+            href: prevent-callers-without-a-caller-id-from-leaving-a-voice-message-exchange-2013-help.md
+          - name: ユーザーのボイス メールを無効にする
+            href: disable-voice-mail-for-a-user-exchange-2013-help.md
+          - name: SIP アドレスの変更
+            href: change-a-sip-address-exchange-2013-help.md
+          - name: 内線番号の変更
+            href: change-an-extension-number-exchange-2013-help.md
+          - name: SIP アドレスの追加
+            href: add-a-sip-address-exchange-2013-help.md
+          - name: SIP アドレスの削除
+            href: remove-a-sip-address-exchange-2013-help.md
+          - name: 内線番号の追加
+            href: add-an-extension-number-exchange-2013-help.md
+          - name: 内線番号の削除
+            href: remove-an-extension-number-exchange-2013-help.md
+          - name: E.164 番号の変更
+            href: change-an-e-164-number-exchange-2013-help.md
+          - name: E.164 番号の追加
+            href: add-an-e-164-number-exchange-2013-help.md
+          - name: E.164 番号の削除
+            href: remove-an-e-164-number-exchange-2013-help.md
+    - name: クライアント ボイス メール機能をセットアップする
+      href: set-up-client-voice-mail-features-exchange-2013-help.md
+      items:
+      - name: Outlook Voice Access の設定
+        href: setting-up-outlook-voice-access-exchange-2013-help.md
+        items:
+        - name: Outlook Voice Access コマンド
+          href: outlook-voice-access-commands-exchange-2013-help.md
+        - name: Outlook Voice Access によるメニューの操作
+          href: navigating-menus-with-outlook-voice-access-exchange-2013-help.md
+        - name: 電話での再生
+          href: play-on-phone-exchange-2013-help.md
+        - name: Outlook Voice Access 手順
+          href: outlook-voice-access-procedures-exchange-2013-help.md
+          items:
+          - name: ユーザーの Outlook Voice Access を有効または無効にする
+            href: enable-or-disable-outlook-voice-access-for-users-exchange-2013-help.md
+          - name: Outlook Voice Access 番号の構成
+            href: configure-an-outlook-voice-access-number-exchange-2013-help.md
+          - name: Outlook Voice Access ユーザー用に選択した機能を無効にする
+            href: disable-selected-features-for-outlook-voice-access-users-exchange-2013-help.md
+          - name: Outlook Voice Access ユーザーのメールボックス機能を設定する
+            href: set-mailbox-features-for-outlook-voice-access-users-exchange-2013-help.md
+          - name: Outlook Voice Access ユーザー用メールボックスの機能を設定する
+            href: set-mailbox-features-for-an-outlook-voice-access-user-exchange-2013-help.md
+          - name: Outlook Voice Access ユーザーの自動音声認識を有効または無効にする
+            href: enable-or-disable-automatic-speech-recognition-for-an-outlook-voice-access-user-exchange-2013-help.md
+          - name: Outlook Voice Access ユーザーの情報アナウンスを有効にする
+            href: enable-an-informational-announcement-for-outlook-voice-access-users-exchange-2013-help.md
+          - name: Outlook Voice Access ユーザー用にカスタマイズした案内応答を有効にする
+            href: enable-a-customized-greeting-for-outlook-voice-access-users-exchange-2013-help.md
+          - name: Outlook Voice Access ユーザーの電話での再生を有効または無効にする
+            href: enable-or-disable-play-on-phone-for-outlook-voice-access-users-exchange-2013-help.md
+          - name: Outlook Voice Access からの音声メッセージの送信を有効または無効にする
+            href: enable-or-disable-sending-voice-messages-from-outlook-voice-access-exchange-2013-help.md
+          - name: Outlook Voice Access からの呼び出しの転送を許可または禁止する
+            href: enable-or-prevent-transferring-calls-from-outlook-voice-access-exchange-2013-help.md
+          - name: Outlook ボイス アクセス ユーザーが連絡できるユーザーのグループの構成
+            href: configure-the-group-of-users-that-outlook-voice-access-users-can-contact-exchange-2013-help.md
+          - name: Outlook Voice Access ユーザーが検索する主な方法を構成する
+            href: configure-the-primary-way-for-outlook-voice-access-users-to-search-exchange-2013-help.md
+          - name: Outlook Voice Access ユーザーが検索する第 2 の方法を構成する
+            href: configure-the-secondary-way-for-outlook-voice-access-users-to-search-exchange-2013-help.md
+          - name: Outlook Voice Access ユーザーが切断されるまでのサインインの失敗回数を構成する
+            href: configure-the-number-of-sign-in-failures-before-outlook-voice-access-users-are-disconnected-exchange-2013-help.md
+          - name: Outlook Voice Access ユーザーが切断されるまでの入力の失敗回数を構成する
+            href: configure-the-number-of-input-failures-before-outlook-voice-access-users-are-disconnected-exchange-2013-help.md
+          - name: 個人用案内応答の制限を構成する
+            href: configure-the-limit-on-personal-greetings-for-outlook-voice-access-users-exchange-2013-help.md
+      - name: ボイス メール ユーザーの呼び出し転送を許可する
+        href: allow-voice-mail-users-to-forward-calls-exchange-2013-help.md
+        items:
+        - name: 通話転送手順
+          href: forwarding-calls-procedures-exchange-2013-help.md
+          items:
+          - name: ユーザーの通話応答ルールの作成を許可または禁止する
+            href: allow-or-prevent-a-user-from-creating-call-answering-rules-exchange-2013-help.md
+          - name: 同じ UM メールボックス ポリシーのユーザーによる通話応答ルールの作成を許可または禁止する
+            href: allow-or-prevent-users-in-the-same-um-mailbox-policy-from-creating-call-answering-rules-exchange-2013-help.md
+          - name: 通話応答ルールを作成する
+            href: create-a-call-answering-rule-exchange-2013-help.md
+          - name: 通話応答ルールの表示と管理
+            href: view-and-manage-a-call-answering-rule-exchange-2013-help.md
+          - name: ユーザーの通話応答ルールを有効または無効にする
+            href: enable-or-disable-a-call-answering-rule-for-a-user-exchange-2013-help.md
+          - name: ユーザーの通話応答ルールを削除する
+            href: remove-a-call-answering-rule-for-a-user-exchange-2013-help.md
+      - name: ユーザーの通話を許可する
+        href: allow-users-to-make-calls-exchange-2013-help.md
+        items:
+        - name: ダイヤル コード、番号のプレフィックス、および番号の形式
+          href: dial-codes-number-prefixes-and-number-formats-exchange-2013-help.md
+        - name: 呼び出しプロシージャの作成をユーザーに許可する
+          href: allowing-users-to-make-calls-procedures-exchange-2013-help.md
+          items:
+          - name: 送信呼び出しを有効にする
+            href: enable-outgoing-calls-on-um-ip-gateways-exchange-2013-help.md
+          - name: UM IP ゲートウェイで送信呼び出しを無効にする
+            href: disable-outgoing-calls-on-um-ip-gateways-exchange-2013-help.md
+          - name: ダイヤル コードを構成する
+            href: configure-dial-codes-exchange-2013-help.md
+          - name: ユーザーのダイヤル ルールを作成する
+            href: create-dialing-rules-for-users-exchange-2013-help.md
+          - name: ダイヤル ルールを使用して呼び出しを承認する
+            href: authorize-calls-using-dialing-rules-exchange-2013-help.md
+            items:
+            - name: 自動応答の呼び出し元の呼び出しを承認する
+              href: authorize-calls-for-auto-attendant-callers-exchange-2013-help.md
+            - name: ダイヤル プランでユーザーの呼び出しを承認する
+              href: authorize-calls-for-users-in-a-dial-plan-exchange-2013-help.md
+            - name: ユーザー グループの呼び出しを承認する
+              href: authorize-calls-for-a-group-of-users-exchange-2013-help.md
+      - name: ユーザーがボイス メールのトランスクリプトを表示できるようにする
+        href: allow-users-to-see-a-voice-mail-transcript-exchange-2013-help.md
+        items:
+        - name: ボイス メール プレビュー アドバイザー
+          href: voice-mail-preview-advisor-exchange-2013-help.md
+        - name: ボイス メール プレビューの手順
+          href: voice-mail-preview-procedures-exchange-2013-help.md
+          items:
+          - name: ユーザー用にボイス メールのプレビューのパートナー サービスを構成する
+            href: configure-voice-mail-preview-partner-services-for-users-exchange-2013-help.md
+            items:
+            - name: ボイス メール プレビュー パートナーのアドレスを設定する
+              href: set-the-voice-mail-preview-partner-address-exchange-2013-help.md
+            - name: ボイス メール プレビュー パートナーの ID を設定する
+              href: set-the-voice-mail-preview-partner-id-exchange-2013-help.md
+            - name: ボイス メール プレビュー パートナーの最大メッセージ時間を設定する
+              href: set-the-maximum-message-duration-for-a-voice-mail-preview-partner-exchange-2013-help.md
+            - name: ボイス メール プレビュー パートナーの配信遅延の最大値を設定する
+              href: set-the-maximum-delivery-delay-for-a-voice-mail-preview-partner-exchange-2013-help.md
+          - name: ユーザーのボイス メール プレビューを有効にする
+            href: enable-voice-mail-preview-for-users-exchange-2013-help.md
+          - name: ユーザーのボイス メール プレビューを無効にする
+            href: disable-voice-mail-preview-for-users-exchange-2013-help.md
+      - name: ボイス メール ユーザーが FAX を受信できるようにする
+        href: enable-voice-mail-users-to-receive-faxes-exchange-2013-help.md
+        items:
+        - name: Exchange UM の FAX アドバイザー
+          href: fax-advisor-for-exchange-um-exchange-2013-help.md
+        - name: 着信 FAX の設定
+          href: setting-up-incoming-faxing-exchange-2013-help.md
+          items:
+          - name: FAX 送受信の手順
+            href: faxing-procedures-exchange-2013-help.md
+            items:
+            - name: パートナー FAX サーバーの URI を設定して FAX 送受信を許可する
+              href: set-the-partner-fax-server-uri-to-allow-faxing-exchange-2013-help.md
+            - name: FAX メッセージの受信時に送信される電子メール メッセージにテキストを含める
+              href: include-text-with-the-email-message-sent-when-a-fax-message-is-received-exchange-2013-help.md
+            - name: 同じダイヤル プランのユーザーが FAX を受信できるようにする
+              href: allow-users-in-the-same-dial-plan-to-receive-faxes-exchange-2013-help.md
+            - name: 同じダイヤル プランのユーザーが FAX を受信できないようにする
+              href: prevent-users-in-the-same-dial-plan-from-receiving-faxes-exchange-2013-help.md
+            - name: ユーザー グループの FAX 送受信を有効にする
+              href: enable-faxing-for-a-group-of-users-exchange-2013-help.md
+            - name: ユーザー グループの FAX 送受信を無効にする
+              href: disable-faxing-for-a-group-of-users-exchange-2013-help.md
+            - name: ユーザーが FAX を受信できるようにする
+              href: enable-a-user-to-receive-faxes-exchange-2013-help.md
+            - name: ユーザーが FAX を受信できないようにする
+              href: prevent-a-user-from-receiving-faxes-exchange-2013-help.md
+      - name: ボイス メールを保護する
+        href: protect-voice-mail-exchange-2013-help.md
+        items:
+        - name: 保護されているボイス メールの手順
+          href: protected-voice-mail-procedures-exchange-2013-help.md
+          items:
+          - name: 認証されている発信者からの保護されたボイス メールを構成する
+            href: configure-protected-voice-mail-from-authenticated-callers-exchange-2013-help.md
+          - name: 認証されていない発信者からの保護されたボイス メールを構成する
+            href: configure-protected-voice-mail-from-unauthenticated-callers-exchange-2013-help.md
+          - name: 保護された音声メッセージのマルチメディア再生を有効または無効にする
+            href: enable-or-disable-multimedia-playback-of-protected-voice-messages-exchange-2013-help.md
+          - name: Windows Rights Management をサポートしていない電子メール クライアントに表示するテキストを指定する
+            href: specify-the-text-to-display-for-email-clients-that-don-t-support-windows-rights-management-exchange-2013-help.md
+      - name: メッセージ待機インジケーターの許可
+        href: allow-message-waiting-indicator-exchange-2013-help.md
+        items:
+        - name: メッセージ待機インジケーターの許可手順
+          href: allow-message-waiting-indicator-procedures-exchange-2013-help.md
+          items:
+          - name: UM IP ゲートウェイ上でメッセージ待機インジケーター (MWI) を許可する
+            href: allow-message-waiting-indicator-mwi-on-a-um-ip-gateway-exchange-2013-help.md
+          - name: UM IP ゲートウェイでメッセージ待機インジケーター (MWI) を抑制する
+            href: prevent-message-waiting-indicator-mwi-on-a-um-ip-gateway-exchange-2013-help.md
+          - name: ユーザーのメッセージ待機インジケーター (MWI) を有効にする
+            href: enable-message-waiting-indicator-mwi-for-users-exchange-2013-help.md
+          - name: ユーザーのメッセージ待機インジケーター (MWI) を無効にする
+            href: disable-message-waiting-indicator-mwi-for-users-exchange-2013-help.md
+          - name: ユーザーの不在着信通知を有効にする
+            href: enable-missed-call-notifications-for-a-user-exchange-2013-help.md
+          - name: ユーザーに対する不在着信通知を無効にする
+            href: disable-missed-call-notifications-for-a-user-exchange-2013-help.md
+    - name: Outlook Voice Access PIN セキュリティの設定
+      href: set-outlook-voice-access-pin-security-exchange-2013-help.md
+      items:
+      - name: PIN セキュリティ手順
+        href: pin-security-procedures-exchange-2013-help.md
+        items:
+        - name: Outlook Voice Access PIN ポリシーの設定
+          href: set-outlook-voice-access-pin-policies-exchange-2013-help.md
+        - name: ボイス メール PIN のリセット
+          href: reset-a-voice-mail-pin-exchange-2013-help.md
+        - name: ボイス メール PIN 情報を取得する
+          href: retrieve-voice-mail-pin-information-exchange-2013-help.md
+        - name: PIN リセット時に送信される電子メール メッセージにテキストを含める
+          href: include-text-with-the-email-message-sent-when-a-pin-is-reset-exchange-2013-help.md
+        - name: ボイス メールの PIN の最小の長さを設定する
+          href: set-the-minimum-pin-length-for-voice-mail-exchange-2013-help.md
+        - name: ボイス メールの PIN の有効期限を設定する
+          href: set-the-pin-lifetime-for-voice-mail-exchange-2013-help.md
+        - name: リサイクルするまでに使う必要があるボイス メール PIN の数を設定する
+          href: set-the-number-of-previous-voice-mail-pins-to-recycle-exchange-2013-help.md
+        - name: ボイス メールの共通 PIN パターンを無効にする
+          href: disable-common-pin-patterns-for-voice-mail-exchange-2013-help.md
+        - name: ボイス メールの共通 PIN パターンを有効にする
+          href: enable-common-pin-patterns-for-voice-mail-exchange-2013-help.md
+        - name: ボイス メール PIN がリセットされるまでのサインイン失敗回数を設定する
+          href: set-the-number-of-sign-in-failures-before-a-voice-mail-pin-is-reset-exchange-2013-help.md
+        - name: ボイス メール ユーザーがロックアウトされるまでのサインインの失敗回数を設定する
+          href: set-the-number-of-sign-in-failures-before-a-voice-mail-user-is-locked-out-exchange-2013-help.md
+        - name: ボイス メールの PIN なしサインインを有効にする
+          href: enable-pin-less-sign-ins-for-voice-mail-exchange-2013-help.md
+    - name: ボイス メール通話のレポートを実行する
+      href: run-reports-for-voice-mail-calls-exchange-2013-help.md
+      items:
+      - name: UM レポート手順
+        href: um-reports-procedures-exchange-2013-help.md
+        items:
+        - name: 組織でボイス メールの呼び出しを確認する
+          href: review-the-voice-mail-calls-in-your-organization-exchange-2013-help.md
+        - name: ユーザーのボイス メール呼び出しの確認
+          href: review-the-voice-mail-calls-for-a-user-exchange-2013-help.md
+        - name: 組織の音声呼び出しの音質を調査する
+          href: investigate-the-audio-quality-of-voice-calls-in-your-organization-exchange-2013-help.md
+        - name: ユーザーの音声呼び出しの音質の調査
+          href: investigate-the-audio-quality-of-voice-calls-for-a-user-exchange-2013-help.md
+        - name: ボイス メール呼び出しレコードを解釈する
+          href: interpret-voice-mail-call-records-exchange-2013-help.md
+    - name: ボイス メールのテストとトラブルシューティング
+      href: test-and-troubleshoot-voice-mail-exchange-2013-help.md
+      items:
+      - name: UM トラブルシューティング ツールによるテストとトラブルシューティング
+        href: testing-and-troubleshooting-with-the-um-troubleshooting-tool-exchange-2013-help.md
+        items:
+        - name: Exchange UM トラブルシューティング ツールの概要
+          href: learn-about-the-exchange-um-troubleshooting-tool-exchange-2013-help.md
+        - name: Windows 7 または Windows 8 で Exchange UM トラブルシューティング ツールを実行する
+          href: run-the-exchange-um-troubleshooting-tool-on-windows-7-or-windows-8-exchange-2013-help.md
+        - name: Exchange UM トラブルシューティング ツールで使用する資格情報を設定する
+          href: set-the-credentials-to-use-with-the-exchange-um-troubleshooting-tool-exchange-2013-help.md
+        - name: Exchange UM トラブルシューティング ツールをインストールする
+          href: install-the-exchange-um-troubleshooting-tool-exchange-2013-help.md
+      - name: Test-UMConnectivity コマンドレットのテストとトラブルシューティング
+        href: testing-and-troubleshooting-with-the-test-umconnectivity-cmdlet-exchange-2013-help.md
+        items:
+        - name: UM 動作のテスト
+          href: test-um-operation-exchange-2013-help.md
+        - name: VoIP ゲートウェイと PBX への UM 接続をテストする
+          href: test-um-connectivity-to-voip-gateways-and-pbxs-exchange-2013-help.md
+    - name: UM とボイス メールに関する用語
+      href: um-and-voice-mail-terminology-exchange-2013-help.md
+  - name: メールボックスおよびクライアント アクセス サーバー
+    href: mailbox-and-client-access-servers-exchange-2013-help.md
+    items:
+    - name: メールボックス サーバー
+      href: mailbox-server-exchange-2013-help.md
+      items:
+      - name: 管理ストア
+        href: managed-store-exchange-2013-help.md
+        items:
+        - name: 管理ストアの制限
+          href: managed-store-limits-exchange-2013-help.md
+      - name: Exchange 2013 のメールボックス データベースの管理
+        href: manage-mailbox-databases-in-exchange-2013-exchange-2013-help.md
+        items:
+        - name: メールボックスのデータベース用に循環ログを構成する
+          href: configure-circular-logging-for-a-mailbox-database-exchange-2013-help.md
+        - name: Exchange 2013 のページ解放について
+          href: understanding-exchange-2013-page-zeroing-exchange-2013-help.md
+      - name: Exchange Search
+        href: exchange-search-exchange-2013-help.md
+        items:
+        - name: Exchange Search によってインデックス処理されるファイル形式
+          href: file-formats-indexed-by-exchange-search-exchange-2013-help.md
+        - name: Exchange Search によってインデックス処理されるメッセージのプロパティ
+          href: message-properties-indexed-by-exchange-search-exchange-2013-help.md
+        - name: Exchange Search の手順
+          href: exchange-search-procedures-exchange-2013-help.md
+          items:
+          - name: Exchange Search を無効または有効にする
+            href: disable-or-enable-exchange-search-exchange-2013-help.md
+          - name: Exchange Search の問題の診断
+            href: diagnose-exchange-search-issues-exchange-2013-help.md
+          - name: 検索カタログを再シードする
+            href: reseed-the-search-catalog-exchange-2013-help.md
+      - name: Exchange 2013 でのメールボックスの移動
+        href: mailbox-moves-in-exchange-2013-exchange-2013-help.md
+        items:
+        - name: 社内の移動の管理
+          href: manage-on-premises-moves-exchange-2013-help.md
+        - name: Exchange 2010 システム メールボックスの Exchange 2013 への移動
+          href: move-the-exchange-2010-system-mailbox-to-exchange-2013-exchange-2013-help.md
+        - name: メールボックスでフォレスト間の移動要求の準備を行う
+          href: prepare-mailboxes-for-cross-forest-move-requests-exchange-2013-help.md
+          items:
+          - name: シェルの Prepare-MoveRequest.ps1 スクリプトを使用して、フォレスト間のメールボックスの移動を準備する
+            href: prepare-mailboxes-for-cross-forest-moves-using-the-prepare-moverequest-ps1-script-in-the-shell-exchange-2013-help.md
+          - name: サンプル コードを使用してフォレスト間のメールボックス移動を準備する
+            href: prepare-mailboxes-for-cross-forest-moves-using-sample-code-exchange-2013-help.md
+        - name: MRS プロキシ エンドポイントのリモート移動を有効にする
+          href: enable-the-mrs-proxy-endpoint-for-remote-moves-exchange-2013-help.md
+        - name: メールボックス移行用の CSV ファイル
+          href: csv-files-for-mailbox-migration-exchange-2013-help.md
+      - name: メールボックスのインポート要求とエクスポート要求
+        href: mailbox-import-and-export-requests-exchange-2013-help.md
+      - name: Recreating arbitration mailboxes
+        href: recreating-arbitration-mailboxes-exchange-2013-help.md
+      - name: '[回復可能なアイテム] フォルダー'
+        href: recoverable-items-folder-exchange-2013-help.md
+        items:
+        - name: 回復可能なアイテム フォルダーのクリーンアップ
+          href: clean-up-the-recoverable-items-folder-exchange-2013-help.md
+        - name: 削除済みアイテムの保存期間と回復可能なアイテムのクォータを構成する
+          href: configure-deleted-item-retention-and-recoverable-items-quotas-exchange-2013-help.md
+        - name: ユーザーのメールボックス内の削除済みメッセージを復元する
+          href: recover-deleted-messages-in-a-user-s-mailbox-exchange-2013-help.md
+        - name: '[回復可能なアイテム] フォルダーの統計を取得する'
+          href: get-recoverable-items-folder-statistics-exchange-2013-help.md
+    - name: クライアント アクセス サーバー
+      href: client-access-server-exchange-2013-help.md
+      items:
+      - name: Exchange リモート接続アナライザー
+        href: exchange-remote-connectivity-analyzer-exchange-2013-help.md
+        items:
+        - name: モバイル デバイスでの電子メールの送受信の問題を特定する方法 (自動チェック)
+          href: help-identify-my-issue-with-sending-receiving-email-on-a-mobile-device-automatic-checks-exchange-2013-help.md
+        - name: Office Outlook での電子メールの送受信に関する問題を特定する方法 (自動チェック)
+          href: help-identify-my-issue-with-sending-receiving-email-in-office-outlook-automatic-checks-exchange-2013-help.md
+        - name: Azure:自動チェックを使って問題を特定する - DNS レコード
+          href: azure-help-identify-my-issue-with-automatic-checks-dns-records-exchange-2013-help.md
+        - name: '自動チェックを使って問題を特定する: サード パーティ製のツール'
+          href: help-identify-my-issues-with-automatic-checks-3rd-party-tools-exchange-2013-help.md
+        - name: 自動チェックで問題を特定する方法 - Active Directory
+          href: help-identify-my-issue-with-automatic-checks-active-directory-exchange-2013-help.md
+        - name: '自動チェックを使って問題を特定する: ドメインの追加'
+          href: help-idenfity-my-issue-with-automatic-checks-adding-domains-exchange-2013-help.md
+        - name: 自動チェックを使用して問題の特定を支援する - SSO
+          href: help-identify-my-issue-with-automatic-checks-sso-exchange-2013-help.md
+        - name: '自動チェックを使って問題を特定する: クォータ'
+          href: help-identify-my-issue-with-automatic-checks-quota-exchange-2013-help.md
+        - name: '自動チェックを使って問題を特定する: Office の展開'
+          href: help-identify-my-issue-with-automatic-checks-deploying-office-exchange-2013-help.md
+        - name: 自動チェックを使用して問題の特定を支援する - 移行
+          href: help-identify-my-issue-with-automatic-checks-migration-exchange-2013-help.md
+        - name: '自動チェックを使って問題を特定する: ディレクトリ同期'
+          href: help-identify-my-issue-with-automatic-checks-directory-synchronization-exchange-2013-help.md
+      - name: Exchange 2013 クライアント アクセス サーバーの構成
+        href: exchange-2013-client-access-server-configuration-exchange-2013-help.md
+      - name: 自動検出サービス
+        href: autodiscover-service-for-exchange-2013.md
+      - name: 負荷分散
+        href: load-balancing-exchange-2013-help.md
+      - name: 負荷分散されたクライアント アクセス サーバーの Kerberos 認証の構成
+        href: configuring-kerberos-authentication-for-load-balanced-client-access-servers-exchange-2013-help.md
+      - name: シェルでの RollAlternateserviceAccountCredential.ps1 スクリプトの使用
+        href: using-the-rollalternateserviceaccountcredential-ps1-script-in-the-shell-exchange-2013-help.md
+        items:
+        - name: RollAlternateServiceAccountCredential.ps1 スクリプトのトラブルシューティング
+          href: troubleshooting-the-rollalternateserviceaccountcredential-ps1-script-exchange-2013-help.md
+      - name: デジタル証明書と SSL
+        href: digital-certificates-and-ssl-exchange-2013-help.md
+        items:
+        - name: デジタル証明書の要求を作成する
+          href: create-a-digital-certificate-request-exchange-2013-help.md
+        - name: Exchange 2013 証明書管理 UI
+          href: exchange-2013-certificate-management-ui-exchange-2013-help.md
+      - name: クライアント固有のメッセージのサイズ制限を構成する
+        href: configure-client-specific-message-size-limits-exchange-2013-help.md
+      - name: Exchange 2013 の可用性サービス
+        href: availability-service-in-exchange-2013-exchange-2013-help.md
+        items:
+        - name: フォレスト間のトポロジの空き時間情報サービスを構成する
+          href: configure-the-availability-service-for-cross-forest-topologies-exchange-2013-help.md
+  - name: エッジ トランスポート サーバー
+    href: edge-transport-servers-exchange-2013-help.md
+    items:
+    - name: エッジ サブスクリプション
+      href: edge-subscriptions-exchange-2013-help.md
+      items:
+      - name: EdgeSync レプリケーション データ
+        href: edgesync-replication-data-exchange-2013-help.md
+      - name: エッジ サブスクリプション資格情報
+        href: edge-subscription-credentials-exchange-2013-help.md
+      - name: エッジ サブスクリプションを管理する
+        href: manage-edge-subscriptions-exchange-2013-help.md
+      - name: AD LDS の構成を変更する
+        href: modify-ad-lds-configuration-exchange-2013-help.md
+      - name: エッジ トランスポート サーバーのメール フローの手動構成
+        href: manually-configure-edge-transport-server-mail-flow-exchange-2013-help.md
+      - name: 購読済みのエッジ トランスポート サーバーを介してインターネット メール フローを構成する
+        href: configure-internet-mail-flow-through-a-subscribed-edge-transport-server-exchange-2013-help.md
+      - name: EdgeSync を使用せずにエッジ トランスポート サーバー経由のインターネット メール フローを構成する
+        href: configure-internet-mail-flow-through-an-edge-transport-server-without-using-edgesync-exchange-2013-help.md
+      - name: エッジ トランスポート サーバーの計画
+        href: edge-transport-server-planning-exchange-2013-help.md
+    - name: エッジ トランスポート サーバーの複製構成
+      href: edge-transport-server-cloned-configuration-exchange-2013-help.md
+      items:
+      - name: 複製構成を使用してエッジ トランスポート サーバーを構成する
+        href: configure-edge-transport-server-using-cloned-configuration-exchange-2013-help.md
+    - name: Exchange 2013 での Exchange 2010 または 2007 エッジ トランスポート サーバーの使用
+      href: use-an-exchange-2010-or-2007-edge-transport-server-in-exchange-2013-exchange-2013-help.md
+    - name: エッジ トランスポート サーバー上でのアドレス書き換え
+      href: address-rewriting-on-edge-transport-servers-exchange-2013-help.md
+      items:
+      - name: エッジ トランスポート サーバー上でアドレス書き換えを管理する
+        href: manage-address-rewriting-on-edge-transport-servers-exchange-2013-help.md
+      - name: エッジ トランスポート サーバーでのアドレス書き換えエントリのインポート
+        href: import-address-rewrite-entries-on-edge-transport-servers-exchange-2013-help.md
+  - name: 高可用性とサイトの復元
+    href: high-availability-and-site-resilience-exchange-2013-help.md
+    items:
+    - name: 以前のバージョンと比較した高可用性とサイト復元の変更点
+      href: changes-to-high-availability-and-site-resilience-over-previous-versions-exchange-2013-help.md
+    - name: データベース可用性グループ (DAG)
+      href: database-availability-groups-dags-exchange-2013-help.md
+      items:
+      - name: アクティブ マネージャー
+        href: active-manager-exchange-2013-help.md
+      - name: データセンター ライセンス認証調整モード
+        href: datacenter-activation-coordination-mode-exchange-2013-help.md
+      - name: メールボックス データベース コピー
+        href: mailbox-database-copies-exchange-2013-help.md
+      - name: AutoReseed
+        href: autoreseed-exchange-2013-help.md
+    - name: 高可用性とサイトの復元計画
+      href: planning-for-high-availability-and-site-resilience-exchange-2013-help.md
+    - name: 高可用性とサイト復元の展開
+      href: deploying-high-availability-and-site-resilience-exchange-2013-help.md
+    - name: 高可用性とサイト復元の管理
+      href: managing-high-availability-and-site-resilience-exchange-2013-help.md
+      items:
+      - name: データベース可用性グループの管理
+        href: managing-database-availability-groups-exchange-2013-help.md
+        items:
+        - name: データベース可用性グループを作成する
+          href: create-a-database-availability-group-exchange-2013-help.md
+        - name: データベース可用性グループのクラスター名オブジェクトを事前設定する
+          href: pre-stage-the-cluster-name-object-for-a-database-availability-group-exchange-2013-help.md
+        - name: データベース可用性グループのプロパティを構成する
+          href: configure-database-availability-group-properties-exchange-2013-help.md
+        - name: データベース可用性グループのメンバーシップを管理する
+          href: manage-database-availability-group-membership-exchange-2013-help.md
+        - name: データベース可用性グループのネットワークを作成する
+          href: create-a-database-availability-group-network-exchange-2013-help.md
+        - name: データベース可用性グループのネットワーク プロパティを構成する
+          href: configure-database-availability-group-network-properties-exchange-2013-help.md
+        - name: データベース可用性グループの AutoReseed の構成
+          href: configure-autoreseed-for-a-database-availability-group-exchange-2013-help.md
+        - name: データベース可用性グループを削除する
+          href: remove-a-database-availability-group-exchange-2013-help.md
+        - name: DAG ミラーリング監視サーバーとしての Microsoft Azure VM の使用
+          href: using-a-microsoft-azure-vm-as-a-dag-witness-server-exchange-2013-help.md
+      - name: メールボックス データベースのコピーの管理
+        href: managing-mailbox-database-copies-exchange-2013-help.md
+        items:
+        - name: メールボックス データベース コピーを追加する
+          href: add-a-mailbox-database-copy-exchange-2013-help.md
+        - name: メールボックス データベースのコピーのプロパティを構成する
+          href: configure-mailbox-database-copy-properties-exchange-2013-help.md
+        - name: メールボックス データベース コピー用にメールボックス データベース パスを移動する
+          href: move-the-mailbox-database-path-for-a-mailbox-database-copy-exchange-2013-help.md
+        - name: メールボックス データベースのコピーのライセンス認証ポリシーを構成する
+          href: configure-activation-policy-for-a-mailbox-database-copy-exchange-2013-help.md
+        - name: メールボックス データベース コピーの更新
+          href: update-a-mailbox-database-copy-exchange-2013-help.md
+        - name: メールボックス データベース コピーを中断または再開する
+          href: suspend-or-resume-a-mailbox-database-copy-exchange-2013-help.md
+        - name: メールボックス データベース コピーをアクティブにする
+          href: activate-a-mailbox-database-copy-exchange-2013-help.md
+        - name: 遅延メールボックス データベース コピーをアクティブにする
+          href: activate-a-lagged-mailbox-database-copy-exchange-2013-help.md
+        - name: メールボックス データベース コピーを削除する
+          href: remove-a-mailbox-database-copy-exchange-2013-help.md
+      - name: データベース可用性グループの監視
+        href: monitoring-database-availability-groups-exchange-2013-help.md
+      - name: 切り替えとフェールオーバー
+        href: switchovers-and-failovers-exchange-2013-help.md
+        items:
+        - name: データセンターの切り替え
+          href: datacenter-switchovers-exchange-2013-help.md
+        - name: サーバー切り替えを実行する
+          href: perform-a-server-switchover-exchange-2013-help.md
+    - name: バックアップ、復元、および障害回復
+      href: backup-restore-and-disaster-recovery-exchange-2013-help.md
+      items:
+      - name: Windows Server バックアップを使用した Exchange データのバックアップと復元
+        href: using-windows-server-backup-to-back-up-and-restore-exchange-data-exchange-2013-help.md
+        items:
+        - name: Windows Server バックアップを使用した Exchange のバックアップ
+          href: use-windows-server-backup-to-back-up-exchange-exchange-2013-help.md
+        - name: Windows Server バックアップを使用して Exchange のバックアップを復元する
+          href: use-windows-server-backup-to-restore-a-backup-of-exchange-exchange-2013-help.md
+      - name: Exchange Server を回復する
+        href: recover-an-exchange-server-exchange-2013-help.md
+      - name: データベース可用性グループのメンバー サーバーを回復させる
+        href: recover-a-database-availability-group-member-server-exchange-2013-help.md
+      - name: 回復用データベース
+        href: recovery-databases-exchange-2013-help.md
+        items:
+        - name: 回復用データベースを作成する
+          href: create-a-recovery-database-exchange-2013-help.md
+        - name: 回復用データベースを使用してデータを復元する
+          href: restore-data-using-a-recovery-database-exchange-2013-help.md
+      - name: データベースの移植性
+        href: database-portability-exchange-2013-help.md
+        items:
+        - name: データベースの移植性を使用して、メールボックス データベースを移動する
+          href: move-a-mailbox-database-using-database-portability-exchange-2013-help.md
+      - name: ダイヤル トーンの移植性
+        href: dial-tone-portability-exchange-2013-help.md
+        items:
+        - name: ダイヤル トーン回復を実行する
+          href: perform-a-dial-tone-recovery-exchange-2013-help.md
+    - name: 可用性管理
+      href: managed-availability-exchange-2013-help.md
+      items:
+      - name: 正常性セットおよびサーバーの状態の管理
+        href: manage-health-sets-and-server-health-exchange-2013-help.md
+      - name: 可用性管理のオーバーライドを構成する
+        href: configure-managed-availability-overrides-exchange-2013-help.md
+  - name: Exchange 2013 の Exchange 管理者センター
+    href: exchange-admin-center-in-exchange-2013-exchange-2013-help.md
+    items:
+    - name: 'FAQ: Exchange 管理センター'
+      href: faq-exchange-admin-center-exchange-2013-help.md
+    - name: Exchange 管理センターへのアクセスをオフにする
+      href: turn-off-access-to-the-exchange-admin-center-exchange-2013-help.md
+    - name: Exchange 管理センターの内部 URL および外部 URL を検索する
+      href: find-the-internal-and-external-urls-for-the-exchange-admin-center-exchange-2013-help.md
+    - name: Exchange 管理センターのキーボード ショートカット
+      href: keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md
+  - name: サーバーの状態とパフォーマンス
+    href: server-health-and-performance-exchange-2013-help.md
+    items:
+    - name: Exchange Server 2013 のパフォーマンスに関する推奨事項
+      href: exchange-server-2013-performance-recommendations-exchange-2013-help.md
+      items:
+      - name: Exchange 2013 のサイズ変更と構成の推奨事項
+        href: exchange-2013-sizing-and-configuration-recommendations-exchange-2013-help.md
+      - name: Exchange 2013 パフォーマンス カウンター
+        href: exchange-2013-performance-counters-exchange-2013-help.md
+      - name: IIS ログおよび Log Parser Studio レポート
+        href: iis-logs-and-log-parser-studio-reports-exchange-2013-help.md
+    - name: Exchange ワークロード管理
+      href: exchange-workload-management-exchange-2013-help.md
+      items:
+      - name: 特定のユーザーのユーザー調整設定を変更する
+        href: change-user-throttling-settings-for-specific-users-exchange-2013-help.md
+      - name: 組織内のすべてのユーザーのユーザー調整設定を変更する
+        href: change-user-throttling-settings-for-all-users-in-your-organization-exchange-2013-help.md
+  - name: Exchange マニュアルについて
+    href: about-exchange-documentation-exchange-2013-help.md
+    items:
+    - name: 障碍がある方のためのユーザー補助機能
+      href: accessibility-for-people-with-disabilities-exchange-2013-help.md
+    - name: サード パーティの著作権に関する通知
+      href: third-party-copyright-notices-exchange-2013-help.md
