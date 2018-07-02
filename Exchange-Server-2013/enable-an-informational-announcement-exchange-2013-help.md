@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 ユニファイド メッセージング (UM) 自動応答の情報アナウンスを有効にできます。情報アナウンスが有効になっている場合は、勤務時間内または勤務時間外の案内応答の直後に再生されます。既定では、情報アナウンスは構成されていません。情報アナウンスを有効にするには、情報アナウンスとして使用する .wav または .wma ファイルを作成し、このサウンド ファイルを使用するように自動応答を構成します。
 

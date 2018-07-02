@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 UM に対してユーザーを有効にして、そのユーザーを SIP URI ダイヤル プランにリンクすると、2 つの EUM プロキシ アドレスが作成されます。一方のアドレスはユーザーの内線番号を、もう一方のアドレスはユーザーの SIP アドレスを含みます。内線番号は、ユーザーが Outlook Voice Access 番号を呼び出す際に使用されます。
 

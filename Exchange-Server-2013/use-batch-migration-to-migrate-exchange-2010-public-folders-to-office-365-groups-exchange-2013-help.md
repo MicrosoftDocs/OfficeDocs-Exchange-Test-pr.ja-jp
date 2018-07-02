@@ -13,11 +13,11 @@ ms.translationtype: MT
 
  
 
-_**適用先:**Exchange Server 2010, Exchange Server 2013_
+_**適用先:** Exchange Server 2010, Exchange Server 2013_
 
-_**トピックの最終更新日:**2018-04-30_
+_**トピックの最終更新日:** 2018-04-30_
 
-**概要:** Exchange 2010 のパブリック フォルダーを Office 365 グループに移動する方法
+**概要:**  Exchange 2010 のパブリック フォルダーを Office 365 グループに移動する方法
 
 *バッチ移行*というプロセスを通じて、Exchange 2010 のパブリック フォルダーの一部またはすべてを、Office 365 グループに移動することができます。Office 365 グループは、パブリック フォルダーよりも優れた利点を提供する Microsoft の新しいコラボレーション製品です。パブリック フォルダーと Office 365 グループの相違点の概要と、組織が Office 365 グループに切り替えることのメリットとデメリットの根拠については、「[パブリック フォルダーを Office 365 グループに移行する](migrate-your-public-folders-to-office-365-groups-exchange-2013-help.md)」を参照してください。
 
@@ -63,21 +63,21 @@ Office 365 グループへのバッチ移行では、この記事で後述する
 
 
 
-  - **AddMembersToGroups.ps1:** このスクリプトは、元のパブリック フォルダーのアクセス許可エントリに基づいて、Office 365 グループにメンバーおよび所有者を追加します。
+  - **AddMembersToGroups.ps1:**  このスクリプトは、元のパブリック フォルダーのアクセス許可エントリに基づいて、Office 365 グループにメンバーおよび所有者を追加します。
 
-  - **AddMembersToGroups.strings.psd1:** このサポート ファイルはスクリプト `AddMembersToGroups.ps1` が使用します。
+  - **AddMembersToGroups.strings.psd1:**  このサポート ファイルはスクリプト `AddMembersToGroups.ps1` が使用します。
 
-  - **LockAndSavePublicFolderProperties.ps1:** このスクリプトは、パブリック フォルダーを読み取り専用にして変更されないようにし、メール関連のパブリック フォルダーのプロパティ (そのパブリック フォルダーでメールが有効な場合) をターゲット グループに移動します。これにより、パブリック フォルダーからターゲット グループにメールが転送されます。また、このスクリプトは、アクセス許可エントリとメール プロパティを変更前にバックアップします。
+  - **LockAndSavePublicFolderProperties.ps1:**  このスクリプトは、パブリック フォルダーを読み取り専用にして変更されないようにし、メール関連のパブリック フォルダーのプロパティ (そのパブリック フォルダーでメールが有効な場合) をターゲット グループに移動します。これにより、パブリック フォルダーからターゲット グループにメールが転送されます。また、このスクリプトは、アクセス許可エントリとメール プロパティを変更前にバックアップします。
 
-  - **LockAndSavePublicFolderProperties.strings.psd1:** このサポート ファイルはスクリプト `LockAndSavePublicFolderProperties.ps1` が使用します。
+  - **LockAndSavePublicFolderProperties.strings.psd1:**  このサポート ファイルはスクリプト `LockAndSavePublicFolderProperties.ps1` が使用します。
 
-  - **UnlockAndRestorePublicFolderProperties.ps1:** このスクリプトは、`LockandSavePublicFolderProperties.ps1` で作成されたバックアップ ファイルを使用して、パブリック フォルダーのアクセス権とメール プロパティを復元します。
+  - **UnlockAndRestorePublicFolderProperties.ps1:**  このスクリプトは、`LockandSavePublicFolderProperties.ps1` で作成されたバックアップ ファイルを使用して、パブリック フォルダーのアクセス権とメール プロパティを復元します。
 
-  - **UnlockAndRestorePublicFolderProperties.strings.psd1:** このサポート ファイルはスクリプト `UnlockAndRestorePublicFolderProperties.ps1` が使用します。
+  - **UnlockAndRestorePublicFolderProperties.strings.psd1:**  このサポート ファイルはスクリプト `UnlockAndRestorePublicFolderProperties.ps1` が使用します。
 
-  - **WriteLog.ps1:** このスクリプトは、上述の 3 つのスクリプトでログを書き込めるようにします。
+  - **WriteLog.ps1:**  このスクリプトは、上述の 3 つのスクリプトでログを書き込めるようにします。
 
-  - **RetryScriptBlock.ps1:** このスクリプトは、一時的なエラーが発生した場合に、`AddMembersToGroups`、`LockAndSavePublicFolderProperties`、`UnlockAndRestorePublicFolderProperties` スクリプトが特定の動作を再試行できるようにします。
+  - **RetryScriptBlock.ps1:**  このスクリプトは、一時的なエラーが発生した場合に、`AddMembersToGroups`、`LockAndSavePublicFolderProperties`、`UnlockAndRestorePublicFolderProperties` スクリプトが特定の動作を再試行できるようにします。
 
 `AddMembersToGroups.ps1`、`LockAndSavePublicFolderProperties.ps1`、`UnlockAndRestorePublicFolderProperties.ps1`、およびこれらのスクリプトが環境内で実行するタスクの詳細については、この記事の後半の「移行スクリプト」を参照してください。
 
@@ -105,9 +105,9 @@ Office 365 グループへのバッチ移行では、この記事で後述する
 
 .csv ファイルには、次の列が含まれている必要があります。
 
-  - **FolderPath:** 移行するパブリック フォルダーのパスです。
+  - **FolderPath:**  移行するパブリック フォルダーのパスです。
 
-  - **TargetGroupMailbox:** Office 365 のターゲット グループの SMTP アドレスです。次のコマンドを実行して、プライマリ SMTP アドレスを確認できます。
+  - **TargetGroupMailbox:**  Office 365 のターゲット グループの SMTP アドレスです。次のコマンドを実行して、プライマリ SMTP アドレスを確認できます。
     
         Get-UnifiedGroup <alias of the group> | Format-Table PrimarySmtpAddress
 
@@ -282,9 +282,9 @@ Office 365 グループへのバッチ移行では、この記事で後述する
 
 このスクリプトは、移行されるパブリック フォルダーのアクセス許可を読み取り、次のようにメンバーおよび所有者を Office 365 グループに追加します。
 
-  - 次のアクセス許可ロールを持つユーザーは、Office 365 のグループにメンバーとして追加されます。 **アクセス許可ロール:** 所有者, 発行編集者, 編集者, 発行作成者, 作成者
+  - 次のアクセス許可ロールを持つユーザーは、Office 365 のグループにメンバーとして追加されます。 **アクセス許可ロール:**  所有者, 発行編集者, 編集者, 発行作成者, 作成者
 
-  - 上記に加えて、以下の最小アクセス権を持つユーザーも Office 365 のグループにメンバーとして追加されます。 **アクセス権:** ReadItems, CreateItems, FolderVisible, EditOwnedItems, DeleteOwnedItems
+  - 上記に加えて、以下の最小アクセス権を持つユーザーも Office 365 のグループにメンバーとして追加されます。 **アクセス権:**  ReadItems, CreateItems, FolderVisible, EditOwnedItems, DeleteOwnedItems
 
   - アクセス権が「所有者」のユーザーは、所有者としてグループに追加され、その他の有効アクセス権を持つユーザーはメンバーとして追加されます。
 

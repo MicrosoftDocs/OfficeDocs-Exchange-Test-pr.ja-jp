@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server_
+_**適用先:** Exchange Server_
 
-_**トピックの最終更新日:**2013-03-22_
+_**トピックの最終更新日:** 2013-03-22_
 
 Microsoft Exchange Server 2013 セットアップ プログラムが、Exchange 2013 のインストールが試みられているコンピューターが、Active Directory ドメイン コントローラーであることを検出しました。ドメイン コントローラーへの Exchange 2013 のインストールは推奨されていません。
 

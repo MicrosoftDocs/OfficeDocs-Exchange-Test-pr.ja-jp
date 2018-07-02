@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2015-03-09_
+_**トピックの最終更新日:** 2015-03-09_
 
 Microsoft Exchange Server 2013 は、Windows PowerShell コマンドライン インターフェイスのリモート処理を使用して、Exchange を管理しているサーバー/ワークステーションと管理対象の Exchange 2013 を実行しているサーバー間での接続を確立します。Exchange 2013 では、これをリモート Exchange 管理シェルまたはリモート シェルと呼びます。ローカルの Exchange 2013 サーバーを管理している場合でも、リモート シェルを使用して接続を行います。ローカルおよびリモート シェルの詳細については、「[Exchange 2013 で Powershell を使用する (Exchange 管理シェル)](https://technet.microsoft.com/ja-jp/library/bb123778\(v=exchg.150\))」を参照してください。
 

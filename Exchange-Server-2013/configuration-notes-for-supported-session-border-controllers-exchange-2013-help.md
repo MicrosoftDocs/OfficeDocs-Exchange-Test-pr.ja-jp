@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**トピックの最終更新日:**2017-07-25_
+_**トピックの最終更新日:** 2017-07-25_
 
 セッション ボーダー コントローラー (SBC) により、社内テレフォニー ネットワークを専用の公衆 WAN 接続経由で Microsoft データセンターに接続できます。SBC は社内 IP ネットワークのエッジに配置され、Microsoft データセンターの第 2 の SBCに接続されます。
 

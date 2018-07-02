@@ -15,7 +15,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Server 2013_
 
 動的配布グループとは、Microsoft Exchange 組織内で大量の電子メール メッセージおよびその他の情報を効率よく送信するために作成された、メールが有効な Active Directory グループ オブジェクトです。
 

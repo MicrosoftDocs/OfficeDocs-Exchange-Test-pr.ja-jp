@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 Microsoft Exchange ユニファイド メッセージング (UM) を使用すると、組織のニーズに応じて、1 つ以上の UM 自動応答を作成できます。UM ダイヤル プランや UM IP ゲートウェイなど、他のユニファイド メッセージング コンポーネントとは異なり、UM 自動応答の作成は必須ではありません。ただし、自動応答は、組織の内部や外部から電話を掛けてきた人が、組織内に存在するユーザーや部署を見つけて目的の相手や部署に呼び出しを転送できるようにします。ここでは、ユニファイド メッセージングの UM 自動応答機能について説明します。
 

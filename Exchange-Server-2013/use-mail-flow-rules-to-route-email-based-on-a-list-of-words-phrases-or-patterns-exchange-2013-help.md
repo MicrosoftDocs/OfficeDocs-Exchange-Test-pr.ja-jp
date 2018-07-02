@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Online Protection, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Online Protection, Exchange Server 2013_
 
 ユーザーが組織の電子メール ポリシーに準拠できるよう、Exchange トランスポート ルールを使用して、特定の単語またはパターンが含まれている電子メールのルーティング方法を決定できます。単語や語句のリストが短い場合は、Exchange 管理センター を使用できます。リストがより長い場合は、Exchange モジュールを使用して Windows PowerShell でテキスト ファイルからリストを読み取ることもできます。
 

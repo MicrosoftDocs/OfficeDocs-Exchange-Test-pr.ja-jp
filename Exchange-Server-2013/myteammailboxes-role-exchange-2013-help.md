@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2015-03-09_
+_**トピックの最終更新日:** 2015-03-09_
 
 `MyTeamMailboxes` 管理役割では、個々のユーザーがサイト メールボックスを作成してそれを Microsoft SharePoint サイトに接続できます。
 

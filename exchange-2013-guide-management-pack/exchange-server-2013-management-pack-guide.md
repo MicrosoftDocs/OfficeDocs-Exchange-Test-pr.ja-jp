@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**トピックの最終更新日:** 2015-03-09_
+_**トピックの最終更新日:**  2015-03-09_
 
 MicrosoftExchange Server 2013 管理パックは、Exchange 組織の総合的なサービス正常性情報を提供します。
 

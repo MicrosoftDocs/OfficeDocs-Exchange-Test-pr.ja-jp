@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Server 2013_
 
 Microsoft Exchange では、従来のメッセージ分類や既存のトランスポート ルールを含むだけではなくこれらの分類やルールをメッセージ内で見つかった機密情報に関するルールと結合する DLP ポリシーを作成できます。既存のトランスポート ルール フレームワークは、柔軟な制御から厳密な制御まで全体を網羅するメッセージング ポリシーを定義するための豊富な機能を備えています。例:
 

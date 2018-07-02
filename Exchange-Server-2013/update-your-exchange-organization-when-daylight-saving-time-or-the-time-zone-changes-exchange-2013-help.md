@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server, Exchange Server 2010, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Server, Exchange Server 2010, Exchange Server 2013_
 
-_**トピックの最終更新日:**2016-12-09_
+_**トピックの最終更新日:** 2016-12-09_
 
 組織が存在するまたは一部のユーザーが住んでいる国または地域で、夏時間 (DST) を識別するポリシーに変更があった場合、または世界標準時 (UTC) からのローカル時間のオフセットが変更された場合は、それらの変更に対応するために、Microsoft Windows、Microsoft Exchange、Microsoft Outlook、または他のプログラムを更新する必要がある場合があります。
 

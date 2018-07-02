@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2015-03-09_
+_**トピックの最終更新日:** 2015-03-09_
 
 `Edge Subscriptions` 管理役割を使用すると、管理者が組織内の Microsoft Exchange Server 2010 エッジ トランスポート サーバーと Microsoft Exchange Server 2013 メールボックス サーバー間のエッジ同期およびサブスクリプション構成を管理できるようになります。
 

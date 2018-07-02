@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Server 2013_
 
-_**トピックの最終更新日:**2016-08-22_
+_**トピックの最終更新日:** 2016-08-22_
 
 **概要**:これらの手順を使用して、Exchange 2013 組織内の OWA ユーザーが予定表の空き時間情報を外部の組織と共有できるようにします。
 

@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Server 2013_
 
 *メール ヒント*とは、Outlook Web App と Microsoft Outlook 2010 およびそれ以降のバージョンでユーザーが電子メール メッセージの作成中に次の操作を行ったときに情報バーに表示される情報メッセージです。
 

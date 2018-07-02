@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2016-05-26_
+_**トピックの最終更新日:** 2016-05-26_
 
 次に、Microsoft Exchange Server 2010 と同じ組み込みスパム対策機能のほとんどを備えた Microsoft Exchange Server 2013 に対して、クラウドでの Exchange スパム対策保護機能 (Microsoft Exchange Online または Microsoft Exchange Online Protection) を使用する利点を示します。
 

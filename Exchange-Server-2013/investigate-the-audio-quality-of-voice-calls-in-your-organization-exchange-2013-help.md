@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 組織の ユニファイド メッセージング (UM) およびボイス メール メッセージの呼び出しの音質に問題がある場合は、呼び出しの統計レポートを使用すると原因の究明に役立ちます。
 

@@ -13,11 +13,11 @@ ms.translationtype: MT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2016-12-09_
+_**トピックの最終更新日:** 2016-12-09_
 
-**概要:**Exchange 2013 の負荷分散クライアント アクセス サーバーで Kerberos 認証を使用する方法を説明します。
+**概要:** Exchange 2013 の負荷分散クライアント アクセス サーバーで Kerberos 認証を使用する方法を説明します。
 
 負荷分散クライアント アクセス サーバーで Kerberos 認証を使用するには、この記事で説明する構成手順を実行する必要があります。
 
@@ -59,7 +59,7 @@ ASA 資格情報を設定するときに、以下のガイドラインに留意�
     
         New-ADComputer [-Name] <string> [-AccountPassword <SecureString>] [-AllowReversiblePasswordEncryption <System.Nullable[boolean]>] [-Description <string>] [-Enabled <System.Nullable[bool]>]
     
-    **例:**
+    **例:** 
     
         New-ADComputer -Name EXCH2013ASA -AccountPassword (Read-Host 'Enter password' -AsSecureString) -Description 'Alternate Service Account credentials for Exchange' -Enabled:$True -SamAccountName EXCH2013ASA
     
@@ -69,7 +69,7 @@ ASA 資格情報を設定するときに、以下のガイドラインに留意�
     
         Set-ADComputer [-Name] <string> [-add @{<attributename>="<value>"]
     
-    **例:**
+    **例:** 
     
         Set-ADComputer EXCH2013ASA -add @{"msDS-SupportedEncryptionTypes"="28"}
     

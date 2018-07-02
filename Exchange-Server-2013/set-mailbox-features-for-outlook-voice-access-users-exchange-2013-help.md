@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 Outlook Voice Access には、次の 2 つのインターフェイスが含まれています。電話ユーザー インターフェイス (TUI) と音声ユーザー インターフェイス (VUI) です。ユーザーが Exchange 2013 のユニファイド メッセージング (UM) システムを使用してメールボックスにアクセスする場合、UM が有効なユーザーの TUI 設定を構成できます。UM メールボックス ポリシーで UM が有効なユーザーの TUI 設定を変更すると、その UM メールボックス ポリシーに関連付けられているすべてのユーザーにその変更が影響を及ぼします。UM メールボックス ポリシーでは、次の TUI 設定を変更できます。
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2015-03-09_
+_**トピックの最終更新日:** 2015-03-09_
 
 このトピックでは、Microsoft Exchange Server 2013 の RTM (Release To Manufacturing) 版およびそれ以降のバージョンで最もよく使用されるコマンドレットについて説明し、使用法の例を示します。
 

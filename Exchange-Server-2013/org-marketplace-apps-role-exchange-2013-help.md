@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2015-03-09_
+_**トピックの最終更新日:** 2015-03-09_
 
 管理者は、Org Marketplace Apps 管理役割により、組織のアプリを表示して変更し、Microsoft Office ストアからアプリを追加できます。
 

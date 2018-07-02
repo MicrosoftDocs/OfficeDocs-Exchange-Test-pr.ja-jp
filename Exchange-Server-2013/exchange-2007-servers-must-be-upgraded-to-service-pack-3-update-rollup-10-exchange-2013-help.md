@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server_
+_**適用先:** Exchange Server_
 
-_**トピックの最終更新日:**2016-12-09_
+_**トピックの最終更新日:** 2016-12-09_
 
 Microsoft Exchange Server 2013 セットアップは、1 つ以上の Microsoft Exchange Server 2007 サーバーが Exchange Server 2007 Service Pack 3 (SP3) Roll Up 10 (RU10) にアップグレードされていないことを検出したため、続行できません。 Exchange 2013 をインストールする前に、組織のすべての Exchange 2007 サーバーを Exchange 2007 SP3 RU10 にアップグレードする必要があります。 この要件には Exchange 2007 エッジ トランスポート サーバーが含まれます。 詳細については、「[Exchange 2007 から Exchange 2013 へのアップグレード](upgrade-from-exchange-2007-to-exchange-2013-exchange-2013-help.md)」を参照してください。
 

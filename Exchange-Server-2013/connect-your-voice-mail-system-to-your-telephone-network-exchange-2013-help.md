@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 VoIP ゲートウェイ、IP PBX、SIP 対応 PBX、Microsoft Lync Server などの必要なテレフォニー装置をすべて展開した後、テレフォニー デバイスを有効にして組織内のサーバーと通信できるようにするため、ユニファイド メッセージング (UM) コンポーネントをすべて作成する必要があります。
 

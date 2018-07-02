@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2015-04-08_
+_**トピックの最終更新日:** 2015-04-08_
 
 エッジ トランスポート サーバー上では、アドレス書き換えに関連したすべての管理タスクとアドレス書き換えエージェントに対して Exchange 管理シェルを使用します。アドレス書き換えの詳細については、「[エッジ トランスポート サーバー上でのアドレス書き換え](address-rewriting-on-edge-transport-servers-exchange-2013-help.md)」を参照してください。
 

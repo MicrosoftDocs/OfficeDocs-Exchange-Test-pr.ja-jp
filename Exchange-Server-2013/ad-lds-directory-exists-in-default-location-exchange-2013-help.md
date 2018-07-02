@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server_
+_**適用先:** Exchange Server_
 
-_**トピックの最終更新日:**2016-12-09_
+_**トピックの最終更新日:** 2016-12-09_
 
 Active Directory Lightweight Directory Services (AD LDS) のインストールを試みましたが失敗しました。このため、Microsoft Exchange Server 2013 セットアップ プログラムは作業を続行できません。
 

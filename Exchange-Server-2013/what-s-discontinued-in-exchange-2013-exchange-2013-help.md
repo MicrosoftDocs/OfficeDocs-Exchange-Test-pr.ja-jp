@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2016-12-09_
+_**トピックの最終更新日:** 2016-12-09_
 
 ここでは、Microsoft Exchange Server 2013 で削除、サポートが中止、または置き換えられたコンポーネントまたは機能について説明します。
 

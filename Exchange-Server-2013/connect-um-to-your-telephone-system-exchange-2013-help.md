@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**トピックの最終更新日:**2012-11-30_
+_**トピックの最終更新日:** 2012-11-30_
 
 ユニファイド メッセージング (UM) は、音声メッセージングと電子メール メッセージングをさまざまなデバイスからアクセスできる 1 つのメールボックスに結合します。ユーザーは、それらのボイス メール メッセージを電子メールの受信トレイで確認することも、Outlook Voice Access を使用して電話で確認することもできます。
 

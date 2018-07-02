@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 ユニファイド メッセージング (UM) IP ゲートウェイで受信する通話に対し、ユーザーへのボイス メール通知を許可または禁止できます。この設定を有効にすると、UM IP ゲートウェイでユーザーへの SIP NOTIFY メッセージを送受信できます。メッセージ待機インジケーター (MWI) は既定で有効になっており、メッセージ待機通知をユーザーに送信できます。ただし、必要に応じてオフにすることもできます。
 

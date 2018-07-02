@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2016-12-09_
+_**トピックの最終更新日:** 2016-12-09_
 
 Active Directory サイトは、ネットワークの物理面に基づいた論理的な構成コンポーネントです。Active Directory サイトを作成する主な目的は、Active Directory レプリケーション トラフィックの制御が最適化されるように、ネットワーク内のサブネット接続を定義することです。Microsoft Exchange Server 2013 はデータベース可用性グループ (DAG) と Active Directory サイトの両方をルーティング境界として認識し、Exchange 2013 サーバーは Active Directory サイト トポロジに基づいてルーティングを決定します。
 

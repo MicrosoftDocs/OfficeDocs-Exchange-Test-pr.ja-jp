@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2015-04-07_
+_**トピックの最終更新日:** 2015-04-07_
 
 共有アクセス許可を付与されたユーザーは、Microsoft Exchange Server 2013 管理者として Active Directory セキュリティ プリンシパル (たとえばユーザー) を作成し、Exchange 受信者として構成することができます。分割型アクセス許可の場合は、Exchange 管理者と Active Directory 管理者から成るグループどうしの間で管理タスクを分割するのに対し、共有アクセス許可の場合はタスクを分割しません。
 

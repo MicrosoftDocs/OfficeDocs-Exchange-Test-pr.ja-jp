@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Online Protection, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Online Protection, Exchange Server 2013_
 
 組織では、法的またはコンプライアンス要件を満たすために、または特定のビジネス ニーズを実装するために、特定の種類のメッセージのブロックまたは拒否が必要になることがあります。以下に、すべての添付ファイルをブロックするために、Exchange でトランスポート ルールを使用してセットアップできる一般的なシナリオの例を示します。
 

@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Server 2013_
 
 管理者監査ログを検索して、組織、サーバー、および受信者構成の変更者を検出できます。これは、予期しない動作の原因を追跡したり、悪意のある管理者を識別したり、または準拠の要件に適合していることを確認する際に便利です。管理者監査ログの詳細については、「[管理者監査ログ](administrator-audit-logging-exchange-2013-help.md)」を参照してください。
 

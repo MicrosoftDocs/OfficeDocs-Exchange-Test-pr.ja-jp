@@ -15,7 +15,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Server 2013_
 
 Exchange のオフライン アドレス帳 (OAB) 配布ポイントごとに、2 つの URL を構成できます。1 つは、内部の企業ネットワークからのみアクセスできる内部 URL で、もう 1 つは、インターネットからアクセスできる外部 URL です。
 

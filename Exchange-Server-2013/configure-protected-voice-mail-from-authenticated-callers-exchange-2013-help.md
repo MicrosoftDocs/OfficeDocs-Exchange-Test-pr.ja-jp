@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 着信呼び出しに応答してから、暗号化を使用してボイス メール メッセージを保護するかどうかを決めるように、ユニファイド メッセージングを構成できます。音声メッセージが保護されている場合
 

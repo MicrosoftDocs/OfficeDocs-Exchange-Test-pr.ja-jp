@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Server 2013_
 
-_**トピックの最終更新日:**2015-04-17_
+_**トピックの最終更新日:** 2015-04-17_
 
 Exchange Search は、電子メール メッセージの送信者、受信者、メッセージ本文、添付ファイルなど、多くの項目のプロパティをインデックス処理します。
 

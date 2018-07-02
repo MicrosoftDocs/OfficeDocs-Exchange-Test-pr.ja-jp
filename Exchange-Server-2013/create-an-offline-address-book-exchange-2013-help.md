@@ -15,7 +15,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Server 2013_
 
 Exchange Server 2013 のオフライン アドレス帳 (OAB) は、アドレス帳のダウンロードされたコピーであり、Outlook のユーザーがサーバーに接続していないときでも情報にアクセスできます。Exchange 管理者は、オフラインで作業するユーザーが利用できるようにするアドレス帳を決定できます。また、アドレス帳の配布方法 (Web ベースの配布またはパブリック フォルダー配布) を構成することもできます。
 

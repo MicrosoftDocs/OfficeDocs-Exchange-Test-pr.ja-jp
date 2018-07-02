@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server, Exchange Server 2013_
+_**適用先:** Exchange Server, Exchange Server 2013_
 
-_**トピックの最終更新日:**2014-06-19_
+_**トピックの最終更新日:** 2014-06-19_
 
 このトピックでは、Microsoft Exchange Server 2013 セットアップ ウィザードを使用して Exchange 2013 エッジ トランスポート サーバーの役割をコンピューターにインストールする方法について説明します。エッジ トランスポートの役割は、Exchange 2013 Service Pack 1 (SP1) 以降で使用できます。Exchange 2013 の計画および展開の詳細については、「[計画と展開](planning-and-deployment-for-exchange-2013-installation-instructions.md)」を参照してください。
 

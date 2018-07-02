@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2017-08-08_
+_**トピックの最終更新日:** 2017-08-08_
 
 Microsoft Exchange Server 2013 は仮想化環境に展開することができます。ここでは、ハードウェア仮想化ソフトウェア上に Exchange 2013 を展開する、サポートされているシナリオの概要を示します。
 

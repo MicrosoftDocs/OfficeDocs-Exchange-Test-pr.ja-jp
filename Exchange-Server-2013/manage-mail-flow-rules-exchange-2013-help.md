@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Online Protection, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Online Protection, Exchange Server 2013_
 
 メール フロー ルール (トランスポート ルールとも呼ばれます) を使用して、組織を通過するメッセージの特定条件を確認してこれらを処理することができます。ここでは、ルールの作成、コピー、順序の調整、有効化または無効化、削除、インポートまたはエクスポートの方法と、ルールの使用状況を監視する方法について説明します。
 

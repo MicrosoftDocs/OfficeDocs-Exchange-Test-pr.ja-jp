@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 ユーザーの UM を有効にし、内線電話番号ダイヤル プランにリンクすると、ユーザーの内線番号を含む、そのユーザーの EUM プロキシ アドレスが作成されます。ボイス メールをユーザーのメールボックスに送信できるようにするには、使用する UM の内線番号を少なくとも 1 つ定義する必要があります。この内線番号は、ユーザーが Outlook Voice Access 番号を呼び出すときにも使用されます。
 

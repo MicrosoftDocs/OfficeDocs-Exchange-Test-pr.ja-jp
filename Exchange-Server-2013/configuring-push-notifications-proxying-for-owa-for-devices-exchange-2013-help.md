@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Server 2013_
 
-_**トピックの最終更新日:**2016-12-09_
+_**トピックの最終更新日:** 2016-12-09_
 
 Microsoft Exchange 2013 の社内展開のための OWA for Devices (OWA for iPhone および OWA for iPad) のプッシュ通知を有効にすると、ユーザーは、自分の OWA for iPhone および OWA for iPad において、Outlook Web App アイコンで更新プログラムを受け取ることになります。その通知では、ユーザーの受信ボックスで不可視になっているメッセージの数が示されます。プッシュ通知が設定されず有効にもされていない場合、OWA for Devices を持つユーザーにとって、アプリを起動する以外、受信ボックス内に不可視メッセージがあることを知る手段はありません。新しいメッセージが利用可能になると、OWA for Devices バッジがユーザーのデバイス上で更新され、以下のバッジのように表示されます。
 

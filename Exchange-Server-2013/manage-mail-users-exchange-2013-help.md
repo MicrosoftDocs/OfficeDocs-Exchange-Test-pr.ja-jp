@@ -15,7 +15,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Server 2013_
 
 メール ユーザーは、メール連絡先に似ています。どちらも外部電子メール アドレスを持ち、どちらにも Exchange 組織または Exchange Online 組織の外部にいるユーザーに関する情報が含まれ、さらにどちらも共有アドレス帳やその他のアドレス一覧に表示できます。ただし、メール連絡先と異なり、メール ユーザーは Exchange または Office 365 のログオン資格情報を持ち、リソースにアクセスできます。詳細については、「[受信者](recipients-exchange-2013-help.md)」を参照してください。
 

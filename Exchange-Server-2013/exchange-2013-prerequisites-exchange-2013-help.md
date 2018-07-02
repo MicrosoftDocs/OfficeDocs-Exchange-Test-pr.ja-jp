@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2017-03-20_
+_**トピックの最終更新日:** 2017-03-20_
 
 このトピックでは、Microsoft Exchange 2013 メールボックス、クライアント アクセス、およびエッジ トランスポート サーバーの役割で前提条件となる、必須の Windows Server 2012 R2、Windows Server 2012、および Windows Server 2008 R2 with Service Pack 1 (SP1) オペレーティング システムのインストール手順を説明します。また、Windows 8、Windows 8.1、および Windows 7 クライアント コンピューターに Exchange 2013 をインストールするために必要な前提条件についても説明します。
 

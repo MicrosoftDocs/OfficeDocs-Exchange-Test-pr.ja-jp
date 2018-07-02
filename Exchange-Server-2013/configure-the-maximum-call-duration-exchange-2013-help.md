@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 着信呼び出しが通話の途中で有効な内線番号に転送されずに、システムに接続していることができる最大時間 (分単位) を指定できます。大部分の組織では、この値は既定の 30 分に設定する必要があります。この設定は、着信 Outlook Voice Access 呼び出し、組織内部への音声呼び出し、ユニファイド メッセージング (UM) 自動応答への音声呼び出し、および組織外部からの FAX 呼び出しなど、すべての呼び出しに適用されます。
 

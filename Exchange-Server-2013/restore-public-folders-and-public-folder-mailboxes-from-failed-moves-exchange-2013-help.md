@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**トピックの最終更新日:**2013-02-13_
+_**トピックの最終更新日:** 2013-02-13_
 
 パブリック フォルダーまたはパブリック フォルダー メールボックスの移動要求が失敗した場合は、次の条件に当てはまるときに限り、フォルダーまたはメールボックスを復元できます。
 

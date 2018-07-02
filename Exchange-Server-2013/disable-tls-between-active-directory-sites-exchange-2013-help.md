@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2013-02-19_
+_**トピックの最終更新日:** 2013-02-19_
 
 Microsoft Exchange Server 2013 では、SMTP トラフィックを圧縮する WAN 最適化コントローラー (WOC) デバイスが使用されている特定のトポロジのメールボックス サーバー間で SMTP 通信の TLS を無効にすることができます。
 

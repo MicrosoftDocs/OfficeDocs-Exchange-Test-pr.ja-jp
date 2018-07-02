@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Online Protection, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Online Protection, Exchange Server 2013_
 
-_**トピックの最終更新日:**2016-12-09_
+_**トピックの最終更新日:** 2016-12-09_
 
 Microsoft では、すべてのユーザーにとって使いやすい製品とサービスを提供できるよう取り組んでおります。ここでは、障害がある方に Microsoft Exchange と他の Microsoft 製品およびサービスを快適に使用していただくためのキーボード ショートカットについて説明します。
 

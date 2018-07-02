@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 送信呼び出しが無効になっている場合、ユニファイド メッセージング (UM) IP ゲートウェイ経由の送信呼び出しを有効にできます。UM IP ゲートウェイのプロパティで **\[この UM IP ゲートウェイ経由の送信呼び出しを許可する\]** オプションを選択すると、UM IP ゲートウェイが送信呼び出しを受け入れて、VoIP (Voice over IP) ゲートウェイ、セッション開始プロトコル (SIP) 対応の構内交換機 (PBX)、IP PBX、またはセッション ボーダー コントローラー (SBC) に送信するように構成されます。**\[この UM IP ゲートウェイ経由の送信呼び出しを許可する\]** の設定は、UM IP ゲートウェイがユーザーの送信呼び出しを開始できるかどうかを制御し、VoIP ゲートウェイ、SIP 対応 PBX、IP PBX、または SBC からの呼び出し転送または着信呼び出しには影響しません。
 

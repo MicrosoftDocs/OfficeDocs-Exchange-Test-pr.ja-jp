@@ -15,7 +15,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 ユニファイド メッセージング (UM) IP ゲートウェイを作成した後は、各種設定の表示または構成ができます。たとえば、IP アドレスまたは完全修飾ドメイン名 (FQDN) の構成、送信呼び出し設定の構成、およびメッセージ待機インジケーターの有効化または無効化が実行できます。
 

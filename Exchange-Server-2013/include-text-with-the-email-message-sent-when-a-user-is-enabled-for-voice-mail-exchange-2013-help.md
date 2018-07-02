@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 ユーザーのメールボックスでユニファイド メッセージング (UM) ボイス メールが有効になっている場合、ユニファイド メッセージングへのアクセス方法が記載された電子メール メッセージが送信されます。このメッセージには、ユーザーがボイス メール システムに最初にアクセスする際に使用する PIN 情報が含まれます。
 

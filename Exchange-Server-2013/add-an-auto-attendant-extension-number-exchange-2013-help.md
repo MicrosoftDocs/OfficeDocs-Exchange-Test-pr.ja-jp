@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 ユニファイド メッセージング (UM) 自動応答の 1 つまたは複数の内線番号を構成できます。 UM 自動応答に内線番号を追加すると、発信者はその番号を使用して自動応答を呼び出しできます。 また、発信者が自動応答へのアクセスに使用できる内線番号が複数あるために、内線番号の追加が必要になる場合があります。 既定では、自動応答の作成時に内線番号は構成されません。
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Server 2013_
 
-_**トピックの最終更新日:**2015-07-21_
+_**トピックの最終更新日:** 2015-07-21_
 
 MicrosoftExchange Server 2013 および Exchange Online では、Exchange Search に、メッセージの添付ファイルとして含まれる最も一般的な種類のファイル形式をインデックス処理するためのフィルターが組み込まれています。フィルターをインストールして、別の種類のファイルをインデックス処理することもできます。
 

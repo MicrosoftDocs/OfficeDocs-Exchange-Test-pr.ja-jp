@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Server 2013_
 
 Exchange 管理センター (EAC)または Exchange 管理シェルを使用して、Microsoft Exchange の既存のデータ損失防止 (DLP) ポリシーを表示、変更、または削除できます。
 

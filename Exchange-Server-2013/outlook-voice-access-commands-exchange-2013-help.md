@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Server 2013, Exchange Server 2016_
 
 Outlook Voice Access では、ユニファイド メッセージング (UM) の有効なユーザーが、アナログ、デジタル、または携帯電話からメールボックスにアクセスできます。UM が有効なユーザーは、Outlook Voice Access のメニュー システムを使って、電子メールを読む、音声メッセージを聞く、Outlook 予定表を操作する、個人用連絡先にアクセスする、パーソナル オプションを管理する (Outlook Voice Access PIN の構成やボイス メール メッセージの録音など) ことができます。ここでは、Outlook Voice Access コマンドの一覧と、Outlook Voice Access 番号を呼び出してメールボックスにアクセスする場合のコマンドの使用方法を示します。
 

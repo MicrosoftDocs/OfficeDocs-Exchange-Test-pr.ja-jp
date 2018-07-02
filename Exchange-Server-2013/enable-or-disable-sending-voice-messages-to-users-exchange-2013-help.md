@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 発信者がユニファイド メッセージング (UM) 自動応答から音声メッセージをユーザーに送信することを許可または禁止することができます。既定では、このオプションは有効になっており、発信者は UM 自動応答に関連付けられている UM ダイヤル プランのユーザーに音声メッセージを送信することができます。このオプションを無効にすると、自動応答は、システム プロンプトで発信者に音声メッセージを送信するように案内しなくなります。
 

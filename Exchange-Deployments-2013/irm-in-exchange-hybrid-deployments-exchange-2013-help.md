@@ -17,7 +17,7 @@ _<strong>適用先:</strong>Exchange Online, Exchange Server 2013, Exchange Serv
 
 _<strong>トピックの最終更新日:</strong>2016-12-09_
 
-**概要:** Exchange ハイブリッド環境での IRM の機能、および Exchange Online とオンプレミスの Exchange サーバー間で IRM を構成する方法。
+**概要:**  Exchange ハイブリッド環境での IRM の機能、および Exchange Online とオンプレミスの Exchange サーバー間で IRM を構成する方法。
 
 Information Rights Management (IRM) は、電子メール メッセージと添付ファイルをオンラインおよびオフラインで永続的に保護し、機密性の高い情報の漏洩防止を支援します。オンプレミス組織の Exchange と、Office 365 for enterprises の Exchange Online の両方は共に、IRM をサポートしています。ただし、これらの 2 つの実装には違いがあり、Exchange Online 組織ユーザーが IRM を使用できるようにするには、組織内で IRM を構成する必要があります。
 

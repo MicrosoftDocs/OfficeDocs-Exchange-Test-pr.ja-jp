@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Server 2013_
 
 Outlook Web App の機能に対するアクセスを管理する組織レベルのポリシーは、MicrosoftOutlook Web App メールボックス ポリシーで作成します。
 

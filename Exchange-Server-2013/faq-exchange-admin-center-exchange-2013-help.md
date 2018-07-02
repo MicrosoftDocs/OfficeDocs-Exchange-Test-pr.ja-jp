@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2015-03-09_
+_**トピックの最終更新日:** 2015-03-09_
 
 このトピックでは、Microsoft Exchange Server 2013 の新しい Exchange 管理センター (EAC) についてよく寄せられる質問をご紹介します。EAC に関してここに掲載されていない質問がありましたら、メールでお問い合わせください。メールの宛先は以下のとおりです。[Ex2013HelpFeedback@microsoft.com](mailto:ex2013helpfeedback@microsoft.com)。
 

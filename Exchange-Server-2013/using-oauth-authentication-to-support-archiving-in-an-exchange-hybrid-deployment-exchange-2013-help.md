@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2016-12-09_
+_**トピックの最終更新日:** 2016-12-09_
 
 Exchange 2013 ハイブリッド展開で Exchange Online Archiving (EOA) を Exchange Server のために使用する場合、Exchange 2013 Cumulative Update 5 (CU5) にアップグレードした後に、社内組織と Exchange Online 組織との間に OAuth 認証を構成する必要があります。EOA によって、社内メールボックスのあるユーザー用にクラウド ベースのアーカイブを持つことができます。このシナリオでは、社内メールボックス サーバーのメッセージング レコード管理 (MRM) アシスタントがアーカイブ ポリシーを適用して、メッセージをユーザーのメールボックスからユーザーのクラウド ベースのアーカイブに自動的に移動します。Exchange 2013 CU5 では、OAuth 認証が使用されます。
 

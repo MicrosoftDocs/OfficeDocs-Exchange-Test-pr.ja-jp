@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2015-03-09_
+_**トピックの最終更新日:** 2015-03-09_
 
 Autodiscover.Proxy 正常性セットは、クライアント アクセス サーバー (CAS) 上の自動検出プロキシ インフラストラクチャの可用性を監視します。Autodiscover.Proxy 正常性セットは、次の正常性セットに密接に関連しています。
 

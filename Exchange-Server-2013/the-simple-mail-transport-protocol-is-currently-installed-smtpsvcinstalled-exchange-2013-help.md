@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server_
+_**適用先:** Exchange Server_
 
-_**トピックの最終更新日:**2012-06-05_
+_**トピックの最終更新日:** 2012-06-05_
 
 コンピューターに Microsoft Windows Server™ 2003 の SMTP (Simple Mail Transfer Protocol) サービスがインストールされているため、Microsoft® Exchange Server 2007 セットアップ プログラムを続行できません。
 

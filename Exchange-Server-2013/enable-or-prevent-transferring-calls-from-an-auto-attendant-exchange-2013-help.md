@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 発信者が自動応答を通じてユーザーに通話を転送することを許可または禁止できます。このオプションは既定で有効になっており、発信者は、UM 自動応答に関連付けられているユニファイド メッセージング (UM) ダイヤル プラン内の UM が有効なユーザーに通話を転送できます。
 

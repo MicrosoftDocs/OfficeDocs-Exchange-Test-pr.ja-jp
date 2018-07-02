@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 ユニファイド メッセージング (UM) とボイス メールが有効なユーザーに自動音声認識 (ASR) を構成できます。Outlook Voice Access ユーザーのメールボックスで ASR が有効になると、ユーザーは音声コマンドを使用してメールボックス メニューを操作できます。ASR は既定で有効になっています。ASR が無効になると、メニュー間を移動するには、タッチトーンと呼ばれるデュアル トーン多重周波数 (DTMF) 入力を使用する必要があります。
 

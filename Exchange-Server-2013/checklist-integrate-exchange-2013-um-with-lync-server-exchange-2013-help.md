@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Server 2013, Exchange Server 2016_
 
-_**トピックの最終更新日:**2016-12-09_
+_**トピックの最終更新日:** 2016-12-09_
 
 このチェックリストを使用して、ユニファイド メッセージング (UM) および Microsoft Lync Server 2013 をインストールして展開します。このトピックでは、Lync Server 2010 も "Lync Server" と呼びます。ただし、Microsoft Office Communications Server 2007 R2 をユニファイド メッセージングと合わせて展開することもできます。
 

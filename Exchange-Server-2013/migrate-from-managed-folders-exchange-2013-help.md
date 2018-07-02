@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2015-04-07_
+_**トピックの最終更新日:** 2015-04-07_
 
 Microsoft Exchange Server 2013 では、メッセージング レコード管理 (MRM) は保持タグとアイテム保持ポリシーを使用して実行されます。アイテム保持ポリシーは、メールボックスに適用可能な保持タグのグループです。詳細については、「[保持タグおよびアイテム保持ポリシー](retention-tags-and-retention-policies-exchange-2013-help.md)」を参照してください。Exchange Server 2007 で導入された MRM テクノロジである管理フォルダーはサポートされていません。
 

@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Server 2013_
 
 Outlook Web App メールボックス ポリシーを 1 つまたは複数のメールボックスに適用したり、EAC またはシェルを使用して削除したりすることができます。
 

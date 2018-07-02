@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2015-04-07_
+_**トピックの最終更新日:** 2015-04-07_
 
 Microsoft Exchange Server 2013、Microsoft Outlook 2010 以降、および Microsoft Office Outlook Web App では、ユーザーは Information Rights Management (IRM) を使用して自分のメッセージを保護できます。Outlook 2010 クライアントからメッセージが送信される前に、IRM 保護をメッセージに自動的に適用する Outlook 保護ルールを作成できます。また、ルール条件に一致する送信中のメッセージに IRM 保護が適用されるように、トランスポート保護ルールを作成することもできます。トランスポート復号化を使用すると、IRM で保護されたメッセージング コンテンツにアクセスして、メッセージング ポリシーを強制できます。
 

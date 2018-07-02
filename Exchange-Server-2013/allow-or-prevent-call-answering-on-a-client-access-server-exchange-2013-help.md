@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Server 2013, Exchange Server 2016_
 
-_**トピックの最終更新日:**2012-11-18_
+_**トピックの最終更新日:** 2012-11-18_
 
 クライアント アクセス サーバー上の Microsoft Exchange ユニファイド メッセージング呼び出しルーター サービスに対して、新しい呼び出しの応答を許可または禁止できます。既定では、インストール後にクライアント アクセス サーバーは有効な状態になります。音声、ファックス、自動応答、および Outlook Voice Access の着信呼び出しを受け付けるようにクライアント アクセス サーバーを設定する場合は、**Set-ServerComponentState** コマンドレットを使用します。
 

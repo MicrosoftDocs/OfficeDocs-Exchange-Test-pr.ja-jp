@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 ユニファイド メッセージング (UM) メールボックス ポリシーの PIN ポリシーは、ユーザー自身で設定することができます。UM メールボックス ポリシーは、Outlook Voice Access を使用する UM が有効になっているユーザーのセキュリティのレベルを強化するように構成することができます。これは、組織で事前に定義された PIN ポリシーに準拠するようユーザーに要求することで可能になります。
 

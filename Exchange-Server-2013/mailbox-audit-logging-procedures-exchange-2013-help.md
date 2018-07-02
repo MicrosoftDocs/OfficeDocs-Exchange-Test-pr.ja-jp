@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2010-07-16_
+_**トピックの最終更新日:** 2010-07-16_
 
 [メールボックスのメールボックス監査ログを有効または無効にする](enable-or-disable-mailbox-audit-logging-for-a-mailbox-exchange-2013-help.md)
 

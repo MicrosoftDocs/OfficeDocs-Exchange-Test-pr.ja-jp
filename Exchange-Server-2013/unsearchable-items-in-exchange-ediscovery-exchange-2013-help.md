@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Server 2013_
 
 Exchange Server 2013 と Exchange Online のインプレース電子情報開示における検索不能アイテムとは、Exchange Search でインデックス付けができない、または、部分的にしかインデックス付けがされていないメールボックス アイテムです。検索不能アイテムには一般的に、電子メール メッセージに添付された、インデックス付けができないファイルが含まれます。ファイルに検索用のインデックス付けができず、電子メール メッセージに添付すると検索不能アイテムとして返される理由のいくつかを以下に示します。
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2013-05-21_
+_**トピックの最終更新日:** 2013-05-21_
 
 Microsoft Exchange Server 2013 は、Active Directory サイトとデータベース可用性グループ (DAG) をルーティング境界として認識します。ただし Exchange 2013 は引き続き Active Directory サイト トポロジを使用して、さまざまな DAG の Exchange サーバー間、または組織内のサイト間でメッセージを転送する方法を判断します。詳細については、「[メール ルーティング](mail-routing-exchange-2013-help.md)」を参照してください。
 

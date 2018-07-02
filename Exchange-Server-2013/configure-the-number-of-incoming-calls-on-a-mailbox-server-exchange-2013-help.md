@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Server, Exchange Server 2013, Exchange Server 2016_
 
-_**トピックの最終更新日:**2013-02-23_
+_**トピックの最終更新日:** 2013-02-23_
 
 Microsoft Exchange Unified Messaging サービスを実行しているメールボックス サーバーが受け入れる着信同時接続数を構成できます。これには、Outlook Voice Access、通話応答、自動応答、および FAX 呼び出しなどのすべての着信呼び出しが含まれます。メールボックス サーバーでの同時接続数を増やすと、同時呼び出し数を減らした場合よりも多くのシステム リソースが必要になります。低速なコンピューターにユニファイド メッセージングがインストールされている場合は、同時呼び出し数を小さくすることが特に重要です。同時に受け付ける音声呼び出し数の範囲は 0 ～ 200 です。既定の設定は 100 です。
 

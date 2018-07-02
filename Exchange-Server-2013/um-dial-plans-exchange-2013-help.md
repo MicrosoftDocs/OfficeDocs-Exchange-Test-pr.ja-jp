@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 ユニファイド メッセージング (UM) ダイヤル プランは、ユニファイド メッセージングの主要コンポーネントであり、ユニファイド メッセージング ボイス メールをネットワークに正常に展開するために必要なものです。ここでは、UM ダイヤル プランと UM 展開でのその使用方法について説明します。
 

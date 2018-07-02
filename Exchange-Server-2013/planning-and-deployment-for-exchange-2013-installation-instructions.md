@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2016-12-09_
+_**トピックの最終更新日:** 2016-12-09_
 
 Exchange のインストールを行う上でガイダンスが必要ですか。この記事では、Microsoft Exchange Server 2013 の展開を計画するためのガイダンスと展開で必要となる記事へのリンクを提供します。
 

@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 保護されたボイス メール メッセージを受信したユーザーに、電話での再生機能を使用してメッセージを聞かせることができます。または、クライアント ソフトウェアが Rights Management をサポートしない場合、ユーザーは Outlook Voice Access を使用してメッセージを聞く必要があります。
 

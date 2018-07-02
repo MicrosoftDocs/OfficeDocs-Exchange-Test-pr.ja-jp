@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2016-12-09_
+_**トピックの最終更新日:** 2016-12-09_
 
 Microsoft Exchange Server 2013 では、Active Directory を使用して、ディレクトリ情報を格納して Windows と共有します。Exchange 2013 用の Active Directory フォレスト設計は、次に説明するいくつかの点を除き、Exchange Server 2010 に似ています。
 

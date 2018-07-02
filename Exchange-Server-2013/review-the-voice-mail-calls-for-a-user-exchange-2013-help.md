@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 ユーザー呼び出しのログを使用すると、特定のユニファイド メッセージング (UM) ユーザーについて次の情報を表示できます。
 

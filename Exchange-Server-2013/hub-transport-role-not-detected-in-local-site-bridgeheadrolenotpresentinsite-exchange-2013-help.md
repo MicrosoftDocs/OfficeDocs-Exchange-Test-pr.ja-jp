@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server_
+_**適用先:** Exchange Server_
 
-_**トピックの最終更新日:**2012-06-05_
+_**トピックの最終更新日:** 2012-06-05_
 
 Microsoft® Exchange Server 2007 セットアップ プログラムは、ローカルの Active Directory® ディレクトリ サービス サイトで既存のハブ トランスポート サーバーの役割を検出できなかった場合にこの警告を表示します。
 

@@ -15,7 +15,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 ユニファイド メッセージング (UM) 自動応答を作成した後で、さまざまな設定を表示または構成できます。たとえば、自動応答に関連付けられる内線番号を追加、削除、および編集することができます。また、自動応答の自動音声認識 (ASR) を有効または無効にし、勤務時間内用および勤務時間外用に使用する案内応答を変更することもできます。
 

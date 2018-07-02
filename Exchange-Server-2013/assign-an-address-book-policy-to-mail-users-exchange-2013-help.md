@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Server 2013_
 
 アドレス帳ポリシー (ABP) を作成したら、それをメールボックス ユーザーに割り当てる必要があります。 ユーザー アカウントの作成時に、既定の ABP は割り当てられません。 ABP をユーザーに割り当てないと、そのユーザーは Outlook および Outlook Web App によって組織全体のグローバル アドレス一覧 (GAL) にアクセスできるようになります。 詳細については、「[アドレス帳ポリシー](address-book-policies-exchange-2013-help.md)」を参照してください。
 

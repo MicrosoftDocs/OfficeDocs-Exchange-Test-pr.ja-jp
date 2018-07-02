@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2012-10-17_
+_**トピックの最終更新日:** 2012-10-17_
 
 Microsoft Exchange Server 2013 には 15 個の拡張属性があります。 これらの属性を使用すると、従業員 ID や組織単位 (OU) などの受信者についての情報、または既存の属性が存在しないその他のいくつかのカスタム値を追加できます。 これらのカスタム属性には Active Directory 内で **ms-Exch-Extension-Attribute1** ～ **ms-Exch-Extension-Attribute15** というラベルが付いています。 Exchange 管理シェルでは、対応するパラメーターは *CustomAttribute1* ～ *CustomAttribute15* です。 これらの属性は、Exchange コンポーネントでは使用されません。 これらの属性を使用すると、Active Directory スキーマを拡張する必要なく Active Directory データを格納できます。
 

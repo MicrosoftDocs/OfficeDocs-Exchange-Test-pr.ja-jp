@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Server 2013, Exchange Server 2016_
 
-_**トピックの最終更新日:**2016-12-09_
+_**トピックの最終更新日:** 2016-12-09_
 
 ユニファイド メッセージング (UM) を含む Microsoft Exchange 2007 組織を Exchange 2013 ユニファイド メッセージングにアップグレードする場合は、必須の手順の他に、Exchange 2007 UM 展開の一部としてすでに完了している手順もあります。Exchange 2007 でユニファイド メッセージングをサポートするために作成して構成したテレフォニー環境と UM コンポーネントによっては、ボイス オーバー IP (VoIP) ゲートウェイ、IP 構内交換機 (PBX)、従来のまたは SIP 対応 PBX などの追加のテレフォニー環境を展開して、Exchange 2013 UM に必要な追加の UM コンポーネントを構成しなければならない場合があります。
 
@@ -99,7 +99,7 @@ Exchange 2007 組織でセキュリティ保護された SIP またはセキュ�
 
   - 商用サード パーティ証明書
 
-Exchange 2013 をインストールする場合、既定では自己署名証明書が 2 通作成されます:**Microsoft Exchange Server Auth Certificate** および **Microsoft Exchange**です。**Microsoft Exchange** 自己署名証明書は UM によるデータの暗号化に使用できますが、この証明書を UM サービスと UM 呼び出しルーター サービスに割り当てる必要があります。この自己署名証明書は、コピーしてから、VoIP ゲートウェイ、IP PBX、SIP 対応 PBX にインポートできます。ただし、UM と Microsoft Lync Server が統合されている場合は使用できません。
+Exchange 2013 をインストールする場合、既定では自己署名証明書が 2 通作成されます:** Microsoft Exchange Server Auth Certificate** および **Microsoft Exchange**です。**Microsoft Exchange** 自己署名証明書は UM によるデータの暗号化に使用できますが、この証明書を UM サービスと UM 呼び出しルーター サービスに割り当てる必要があります。この自己署名証明書は、コピーしてから、VoIP ゲートウェイ、IP PBX、SIP 対応 PBX にインポートできます。ただし、UM と Microsoft Lync Server が統合されている場合は使用できません。
 
 Exchange 2013 サーバーと、VoIP ゲートウェイ、IP PBX、および SIP 対応 PBX との間で送信されるデータを UM で暗号化できるようにするには、次の手順を実行する必要があります。
 

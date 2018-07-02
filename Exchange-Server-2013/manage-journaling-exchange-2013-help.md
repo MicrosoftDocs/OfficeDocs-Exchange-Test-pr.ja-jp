@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Server 2013_
 
 ジャーナリングは、受信および送信電子メールを記録することで、組織が法的、規則、および組織のコンプライアンス要件に応答するのに役立ちます。このトピックでは、Exchange 2013 および Exchange Online におけるジャーナリングの管理に関連する基本的なタスクを実行する方法を示します。
 

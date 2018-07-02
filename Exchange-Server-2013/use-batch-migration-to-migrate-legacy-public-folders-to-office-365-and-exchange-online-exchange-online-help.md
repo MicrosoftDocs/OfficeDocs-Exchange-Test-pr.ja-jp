@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用先:**Exchange Online, Exchange Server, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Server, Exchange Server 2013_
 
-_**トピックの最終更新日:**2018-03-26_
+_**トピックの最終更新日:** 2018-03-26_
 
 **概要**:以下に示す手順で、Exchange 2007 および Exchange 2010 パブリック フォルダーを Office 365 に移動します。
 

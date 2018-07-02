@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2016-12-09_
+_**トピックの最終更新日:** 2016-12-09_
 
 Microsoft Outlook 保護ルールを使用すると、メッセージを送信する前に Outlook 2010 の「[Active Directory Rights Management サービスの概要](https://technet.microsoft.com/ja-jp/library/hh831364.aspx)」のテンプレートを適用することで、メッセージを Information Rights Management (IRM) で保護できます。Outlook 保護ルールが適用されないようにするには、ルールを無効にします。Outlook 保護ルールを削除すると、Active Directory からルールの定義が削除されます。
 

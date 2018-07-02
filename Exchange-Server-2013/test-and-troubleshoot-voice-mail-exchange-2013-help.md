@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013, Exchange Server 2016_
 
-_**トピックの最終更新日:**2013-06-25_
+_**トピックの最終更新日:** 2013-06-25_
 
 組織でクライアント アクセスおよびメールボックス サーバーをインストールしていた場合、ユニファイド メッセージング (UM) の機能をテストする必要がある場合があります。次に、Exchange 2013 または UM トラブルシューティング ツールに含まれる診断ツールおよびコマンドレットを使用する状況を説明します。
 

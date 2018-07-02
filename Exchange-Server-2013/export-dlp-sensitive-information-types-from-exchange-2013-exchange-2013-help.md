@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Server 2013_
 
 ポリシーをエクスポートし、それらを XML ファイルとして保存し、その XML ファイルを変更すれば、Exchange 管理センター (EAC) または Exchange 管理シェル コマンドレットを使用せずに、DLP ポリシー内の詳細を表示または変更できます。通常は、XML ファイルをその後 Exchange にインポートし直します。これにより、Exchange に依存せずにポリシーを編集することができます。ただし、正しく動作させるには、ポリシーが特定の書式要件 (XML スキーマとも呼ばれる) を満たしている必要があります。
 

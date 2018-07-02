@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:** Exchange Server 2013, Project Server 2013_
+_**適用先:**  Exchange Server 2013, Project Server 2013_
 
-_**トピックの最終更新日:** 2013-02-11_
+_**トピックの最終更新日:**  2013-02-11_
 
 SiteMailbox 正常性セットは、組織内のサイト メールボックスの全体的な状態とアクセス可能性を監視します。
 

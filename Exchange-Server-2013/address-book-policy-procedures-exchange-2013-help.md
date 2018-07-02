@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2012-10-11_
+_**トピックの最終更新日:** 2012-10-11_
 
 [アドレス帳ポリシーの作成](create-an-address-book-policy-exchange-2013-help.md)
 

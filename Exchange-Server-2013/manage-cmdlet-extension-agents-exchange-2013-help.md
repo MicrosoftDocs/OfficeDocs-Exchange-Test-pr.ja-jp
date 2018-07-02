@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2012-11-19_
+_**トピックの最終更新日:** 2012-11-19_
 
 このトピックでは、Microsoft Exchange Server 2013 のコマンドレット拡張エージェントの優先度の有効化、無効化、表示、および変更を行う方法を示します。Exchange 2013 のコマンドレット拡張エージェントの詳細については、「[コマンドレット拡張エージェント](cmdlet-extension-agents-exchange-2013-help.md)」を参照してください。
 

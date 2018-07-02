@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2012-10-05_
+_**トピックの最終更新日:** 2012-10-05_
 
 Exchange Server 2013 の Exchange ActiveSync アプリケーション設定のいくつかは、Exchange ActiveSync 仮想ディレクトリを介して管理できます。 仮想ディレクトリは、インターネット インフォメーション サービス (IIS) が Exchange ActiveSync などの Web アプリケーションへのアクセスを許可するために使用します。 Exchange ActiveSync で管理できる仮想ディレクトリ設定には、認証、セキュリティ、レポート作成などがあります。
 

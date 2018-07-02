@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 [ユーザーの Outlook Voice Access を有効または無効にする](enable-or-disable-outlook-voice-access-for-users-exchange-2013-help.md)
 

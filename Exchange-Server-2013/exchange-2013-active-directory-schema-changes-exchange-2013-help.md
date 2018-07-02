@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2016-05-18_
+_**トピックの最終更新日:** 2016-05-18_
 
 Microsoft Exchange Server 2013 では、Active Directory スキーマの新しいクラスと属性が追加され、既存のクラスと属性が変更されています。ここでは、Exchange 2013 の RTM 版 (Release To Manufacturing)、累積的な更新プログラム、Service Pack のインストール時に、Active Directory スキーマに対して行われる変更を要約します。Active Directory スキーマに対する変更の詳細については, .ldf ファイルを参照してください。.ldf ファイルは、Exchange インストール ファイルの \\amd64\\Setup\\Data\\ ディレクトリにあります。
 

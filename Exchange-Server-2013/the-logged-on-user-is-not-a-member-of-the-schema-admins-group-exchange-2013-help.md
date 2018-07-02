@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server_
+_**適用先:** Exchange Server_
 
-_**トピックの最終更新日:**2014-12-02_
+_**トピックの最終更新日:** 2014-12-02_
 
 Active Directory スキーマ更新プロセスを実行しているユーザー アカウントが Schema Admins グループや Enterprise Admins グループのメンバーでないため、Microsoft Exchange Server 2013 セットアップ プログラムは作業を続行できません。
 

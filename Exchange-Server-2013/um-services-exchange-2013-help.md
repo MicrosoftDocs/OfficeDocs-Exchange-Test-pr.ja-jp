@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Server 2013, Exchange Server 2016_
 
-_**トピックの最終更新日:**2012-11-18_
+_**トピックの最終更新日:** 2012-11-18_
 
 Microsoft Exchange ユニファイド メッセージング呼び出しルーター サービスを実行しているクライアント アクセス サーバーと Microsoft Exchange ユニファイド メッセージング サービスを実行しているメールボックス サーバーを使用して、組織内のユーザーにユニファイド メッセージング （UM）とボイス メール機能を展開できます。
 

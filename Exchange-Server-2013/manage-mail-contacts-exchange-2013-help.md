@@ -15,7 +15,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Server 2013_
 
 メール連絡先とはメールが有効なディレクトリ サービス オブジェクトで、Exchange または Exchange Online 組織外に存在する人または組織に関する情報が含まれます。各メール連絡先には外部電子メール アドレスがあります。メール連絡先の詳細については、「[受信者](recipients-exchange-2013-help.md)」を参照してください。
 

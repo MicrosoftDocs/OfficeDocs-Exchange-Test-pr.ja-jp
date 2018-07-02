@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 Outlook Voice Access の番号に電話をかけるユーザーが、正しくないデータを何回入力すると切断されるかを構成できます。この設定は、ディレクトリ検索を使用する Outlook Voice Access ユーザーと認証されていない発信者の両方に適用されます。
 

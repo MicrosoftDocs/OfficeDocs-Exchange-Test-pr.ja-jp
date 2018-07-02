@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2015-04-07_
+_**トピックの最終更新日:** 2015-04-07_
 
 Exchange 2010 では、Microsoft Exchange システム メールボックスは、管理者監査ログ、電子情報開示の検索用メタデータ、ユニファイド メッセージング データ (メニュー、ダイヤル プラン、カスタム案内応答など) といった全社的なデータの保存に使用される、調停メールボックスです。Microsoft Exchange システム メールボックスの名前は **SystemMailbox {e0dc1c29-89c3-4034-b678-e6c29d823ed9}**。 表示名は **Microsoft Exchange** です。
 

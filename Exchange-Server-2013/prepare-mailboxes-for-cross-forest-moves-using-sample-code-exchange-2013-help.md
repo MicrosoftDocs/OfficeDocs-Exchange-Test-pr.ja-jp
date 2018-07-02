@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2016-12-09_
+_**トピックの最終更新日:** 2016-12-09_
 
 Microsoft Exchange 2013 では、**New-MoveRequest** および **New-MigrationBatch** コマンドレットを使用してメールボックスの移動および移行ができます。Exchange 管理センター (EAC) 経由でメールボックスを移動することもできます。移動元の Exchange フォレストから移動先の Exchange 2010 フォレストにメールボックスを移動できます。
 

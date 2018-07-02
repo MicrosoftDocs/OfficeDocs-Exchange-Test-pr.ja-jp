@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 ユニファイド メッセージング (UM) IP ゲートウェイを作成する前に、使用している VoIP ゲートウェイ、IP PBX、またはセッション ボーダー コントローラー (SBC) 上に IP アドレスまたは完全修飾ドメイン名 (FQDN) をまず設定する必要があります。続いて、UM IP ゲートウェイを作成するときに、IP アドレスまたは FQDN を設定します。IP アドレスまたは FQDN は後で変更できます。
 

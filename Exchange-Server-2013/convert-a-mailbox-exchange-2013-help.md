@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Server 2013_
 
 メールボックスを別の種類のメールボックスに変換する方法は、Exchange 2010 の場合と非常によく似ています。変換を行うには、シェルの Set-Mailbox コマンドレットを使用する必要があります。
 

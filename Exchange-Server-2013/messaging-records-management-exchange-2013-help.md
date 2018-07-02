@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Server 2013_
 
-_**トピックの最終更新日:**2016-02-01_
+_**トピックの最終更新日:** 2016-02-01_
 
 ユーザーは電子メールを毎日送受信しています。管理せずに放置しておくと、日々作成し受信した大量の電子メールがユーザーの生産性に悪影響を与え、組織をリスクにさらす可能性があります。そのため、多くの組織にとって電子メールのライフサイクル管理は必要不可欠です。
 
@@ -47,9 +47,9 @@ Exchange Server 2013 と Exchange Online では、保持タグおよびアイテ
 
 **アーカイブ メールボックスにメッセージを移動**   この方法では、ユーザーのアーカイブ メールボックスにアイテムを移動する MRM ポリシーを実装します。アーカイブ メールボックスは、ユーザーに追加ストレージを提供して、古くてめったにアクセスされないコンテンツを維持できるようにします。アイテムを移動する保持タグは、*アーカイブ ポリシー*とも呼ばれます。同じアイテム保持ポリシー内で、DPT と個人タグを組み合わせてアイテムを移動し、DPT、RPT、および個人タグを組み合せてアイテムを削除できます。アーカイブ ポリシーの詳細については、以下を参照してください。
 
-  - **Exchange Server 2013:** [Exchange 2013 のインプレース アーカイブ](in-place-archiving-in-exchange-2013-exchange-2013-help.md)
+  - **Exchange Server 2013:**  [Exchange 2013 のインプレース アーカイブ](in-place-archiving-in-exchange-2013-exchange-2013-help.md)
 
-  - **Exchange Online:** [Exchange Online のアーカイブ メールボックス](https://technet.microsoft.com/ja-jp/library/dn922147\(v=exchg.150\))
+  - **Exchange Online:**  [Exchange Online のアーカイブ メールボックス](https://technet.microsoft.com/ja-jp/library/dn922147\(v=exchg.150\))
 
 
 > [!NOTE]

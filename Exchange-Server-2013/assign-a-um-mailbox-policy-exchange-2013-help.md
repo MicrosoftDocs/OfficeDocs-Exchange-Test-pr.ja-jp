@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 ユーザーのユニファイド メッセージング（UM）およびボイス メールを有効にする場合は、ユーザーのメールボックスに関連付けられた UM メールボックス ポリシーを選択する必要があります。 ユーザーの UM を有効にした後も、そのユーザーのメールボックスと関連付けられた UM メールボックス ポリシーを変更できます。
 

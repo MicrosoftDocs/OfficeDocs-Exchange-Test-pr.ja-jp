@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Server 2013_
 
 Exchange 管理シェルを使用して、さまざまな組織間のメール ヒントのカスタム設定を構成できます。
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2016-12-09_
+_**トピックの最終更新日:** 2016-12-09_
 
 エッジ トランスポート サーバーは Microsoft Exchange Server 2013 Service Pack 1 (SP1) で使用できます。ただし、境界ネットワークに配備された既存の Exchange Server 2007 または Exchange Server 2010 エッジ トランスポート サーバーは引き続き使用できます。さらに、新規またはアップグレードされた Exchange 2013 組織の境界ネットワークに、新しい Exchange 2007 または Exchange 2010 エッジ トランスポート サーバーをインストールすることができます。
 

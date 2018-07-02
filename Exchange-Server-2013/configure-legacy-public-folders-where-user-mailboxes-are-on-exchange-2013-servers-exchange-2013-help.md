@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用先:**Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Server 2013, Exchange Server 2016_
 
-_**トピックの最終更新日:**2017-03-27_
+_**トピックの最終更新日:** 2017-03-27_
 
 Exchange 2013 または 2016 の Exchange ユーザーが Exchange 2010 のアクセスまたはそれ以前のパブリック フォルダー (従来のパブリック フォルダーとも呼ばれます) を有効にする方法です。
 

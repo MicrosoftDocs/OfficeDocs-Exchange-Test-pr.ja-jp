@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2007, Exchange Server 2010, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Server 2007, Exchange Server 2010, Exchange Server 2013, Exchange Server 2016_
 
-_**トピックの最終更新日:**2018-03-20_
+_**トピックの最終更新日:** 2018-03-20_
 
 この Exchange Server Server のサポート一覧は、サポートされる Microsoft Exchange のバージョンで、任意の構成で使用可能なサポート レベルや必要なコンポーネントに関する情報を Microsoft Exchange 管理者が容易に見つけることができるようにまとめたものです。
 

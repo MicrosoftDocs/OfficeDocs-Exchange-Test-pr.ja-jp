@@ -15,7 +15,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Server 2013_
 
 ユーザー メールボックスを作成した後で、EAC またはシェルを使用して変更や追加プロパティの設定を行えます。
 

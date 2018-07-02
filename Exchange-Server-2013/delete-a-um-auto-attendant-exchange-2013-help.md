@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 ユニファイド メッセージング (UM) 自動応答を削除した後は、UM 自動応答によって応答していた着信呼び出しにオペレーターが応答する必要があります。 UM 自動応答は、既定の UM 自動応答として UM ダイヤル プランと関連付けられている場合は削除できません。
 

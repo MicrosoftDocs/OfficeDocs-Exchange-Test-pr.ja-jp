@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 ユニファイド メッセージング (UM) ダイヤル プランを作成すると、発信者が Outlook Voice Access 番号またはダイヤル プランに関連付けられた UM 自動応答を呼び出すときにユーザーを名前で検索するための第 1 の方法と第 2 の方法を構成できます。発信者は、タッチトーン入力を使用して UM が有効なユーザーを検索できます。
 

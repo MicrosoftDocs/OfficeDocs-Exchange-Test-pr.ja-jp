@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Server 2013_
 
 データ損失防止 (DLP) ポリシー テンプレートを使用して、Microsoft Exchange 2013 の DLP ソリューションを開始することができます。DLP ポリシー テンプレートは、ポリシーのためのモデルです。テンプレートを選択して、独自のカスタマイズされた DLP ポリシーを構築するプロセスを開始できます。DLP ポリシー内で、事業上のデータ損失防止ニーズに合うようルールをカスタマイズできます。Microsoft からいくつかのポリシー テンプレートが提供されていますが、Exchange でデータ損失防止ソリューションを実施する方法は他にもあります。
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Server 2013_
 
-_**トピックの最終更新日:**2014-10-03_
+_**トピックの最終更新日:** 2014-10-03_
 
 Microsoft Exchange Server 2013 で、トランスポート ルールにいくつかの改善が行われました。このトピックでは、主な変更点と機能拡張の一部について概要を説明します。トランスポート ルールの詳細については、「[メール フローやトランスポート ルール](mail-flow-rules-transport-rules-in-exchange-2013-exchange-2013-help.md)」を参照してください。
 

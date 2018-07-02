@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2015-03-09_
+_**トピックの最終更新日:** 2015-03-09_
 
 `TeamMailboxLifecycleApplication` 管理役割は、パートナー アプリケーションがサイト メールボックスのライフサイクル状態を更新できるようにします。
 

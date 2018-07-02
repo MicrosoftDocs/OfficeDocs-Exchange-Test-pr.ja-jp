@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2015-04-08_
+_**トピックの最終更新日:** 2015-04-08_
 
 **ConfigureAdam.ps1** スクリプト ($env:ExchangeInstallPath\\Scripts に配置) を使用すれば、エッジ トランスポート サーバーを Exchange 組織にサブスクライブする前に、エッジ トランスポート サーバー上の既定の Active Directory ライトウェイト ディレクトリ サービス (AD LDS) 構成を変更できます。
 

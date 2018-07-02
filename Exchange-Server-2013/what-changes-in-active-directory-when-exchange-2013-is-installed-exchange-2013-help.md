@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server, Exchange Server 2013_
+_**適用先:** Exchange Server, Exchange Server 2013_
 
-_**トピックの最終更新日:**2014-05-26_
+_**トピックの最終更新日:** 2014-05-26_
 
 Exchange 2013 をインストールすると、Active Directory フォレストとドメインが変更されます。Exchange がこの変更を行うのは、組織内の Exchange サーバー、メールボックス、およびその他の Exchange 関連オブジェクトに関する情報を保存するためです。この変更は、Exchange 2013 セットアップ ウィザードを実行したとき、または、Exchange 2013 コマンドライン セットアップ中に *PrepareSchema* コマンド、*PrepareAD* コマンド、および *PrepareDomains* コマンド (これらのコマンドの使用方法については「[Active Directory とドメインを準備する](prepare-active-directory-and-domains-exchange-2013-help.md)」を参照) を実行したときに実施されます。Exchange が Active Directory に加える変更内容を知りたい場合に、このトピックが役に立ちます。ここでは、Exchange が Active Directory の各準備段階で行う変更内容について説明します。
 

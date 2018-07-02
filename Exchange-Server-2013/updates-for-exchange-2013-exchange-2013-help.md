@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Server, Exchange Server 2013_
 
-_**トピックの最終更新日:**2018-03-20_
+_**トピックの最終更新日:** 2018-03-20_
 
 Microsoft Exchange Server 2013 の更新プロセスがどのように変更されたかについて説明します。また、この記事では、Exchange 2013 の現在と以前のリリースに導入された機能および改良点に関する情報へのリンクも記載しています。
 

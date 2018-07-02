@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2015-03-09_
+_**トピックの最終更新日:** 2015-03-09_
 
 Exchange Server 2013 に含まれている RollAlternateServiceAccountPassword.ps1 スクリプトを使用すると、代替サービス アカウントの資格情報 (ASA 資格情報) を更新して、その更新を指定したクライアント アクセス サーバーに配布できます。
 

@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Server 2013_
 
 ここでは、グローバル アドレス一覧 (GAL) の設定を変更する方法について説明します。
 

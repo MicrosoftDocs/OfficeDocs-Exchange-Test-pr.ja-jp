@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server_
+_**適用先:** Exchange Server_
 
-_**トピックの最終更新日:**2014-12-02_
+_**トピックの最終更新日:** 2014-12-02_
 
 Microsoft Exchange Server 2013 セットアップ プログラムは、現在のアカウントが Active Directory ドメインにログオンしていないことを検出したため、作業を続行できません。Exchange Server 2013 のインストールに必要なアクセス許可を持つ Active Directory アカウントを使用してログインする必要があります。
 

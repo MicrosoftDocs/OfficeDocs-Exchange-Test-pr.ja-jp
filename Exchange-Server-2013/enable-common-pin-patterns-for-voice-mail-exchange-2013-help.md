@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 Outlook Voice Access ユーザーの共通のユニファイド メッセージング (UM) PIN パターンを有効または無効にできます。UM メールボックス ポリシーで共通の PIN パターン設定を有効または無効にする場合、その設定は UM メールボックス ポリシーに関連付けられているUM が有効なユーザーすべてに適用されます。既定では、UM が有効なユーザーは PIN 作成時に共通パターンを使用できません。
 

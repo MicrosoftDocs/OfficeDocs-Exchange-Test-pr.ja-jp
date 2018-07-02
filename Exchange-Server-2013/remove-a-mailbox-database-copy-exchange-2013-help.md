@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2012-11-06_
+_**トピックの最終更新日:** 2012-11-06_
 
 ここでは、メールボックス データベース コピーを削除する手順について説明します。メールボックス データベースの最後のコピーは、これらの手順では削除できません。メールボックス データベース コピーの最後のコピーを削除する手順の詳細については、「[メールボックス データベースを削除する](manage-mailbox-databases-in-exchange-2013-exchange-2013-help.md)」または「[Remove-MailboxDatabase](https://technet.microsoft.com/ja-jp/library/aa997931\(v=exchg.150\))」を参照してください。
 

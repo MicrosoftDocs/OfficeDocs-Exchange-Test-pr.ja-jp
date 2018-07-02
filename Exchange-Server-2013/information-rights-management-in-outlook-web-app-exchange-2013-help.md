@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2016-12-09_
+_**トピックの最終更新日:** 2016-12-09_
 
 インフォメーション ワーカーが電子メールを使用して機密情報をやり取りする機会が増えています。この情報をセキュリティ保護するため、組織は Information Rights Management (IRM) を使用して、メッセージング コンテンツに強力な保護を適用できます。Microsoft Exchange Server 2010 より前では、IRM 保護の使用による効果は Outlook クライアントに限られていました。Exchange Server 2007 では、Microsoft Outlook Web Access ユーザーが IRM 保護されたコンテンツにアクセスできるようになるには、Microsoft Internet Explorer 用 Rights Management アドインをダウンロードする必要があります。
 

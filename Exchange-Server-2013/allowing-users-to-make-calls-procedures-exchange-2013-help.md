@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 [送信呼び出しを有効にする](enable-outgoing-calls-on-um-ip-gateways-exchange-2013-help.md)
 

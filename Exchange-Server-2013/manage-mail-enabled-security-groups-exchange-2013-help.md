@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Server 2013_
 
 メールが有効なセキュリティ グループは、メッセージの配布、および Active Directory 内のリソースへのアクセス許可の付与に使用できます。詳細については、「[受信者](recipients-exchange-2013-help.md)」を参照してください。
 

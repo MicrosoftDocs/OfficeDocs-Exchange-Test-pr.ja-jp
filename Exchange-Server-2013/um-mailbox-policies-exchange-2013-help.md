@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 ユニファイド メッセージング (UM) メールボックス ポリシーは、ユーザーに対して ユニファイド メッセージングを有効にするときに必要です。UM メールボックス ポリシーを作成し、ボイス メール ユーザーのメールボックスの集合に、ポリシーやセキュリティ設定の共通セットを適用します。UM メールボックス ポリシーは、次のような UM 設定を指定するために使用されます。
 

@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 ユニファイド メッセージング (UM) が有効になっている Outlook Voice Acces ユーザーの PIN の最小の長さを構成できます。UM メールボックス ポリシーで構成した PIN 設定は、UM メールボックス ポリシーに関連付けられている、すべての UM が有効なユーザーに適用されます。
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2015-03-09_
+_**トピックの最終更新日:** 2015-03-09_
 
 複数値プロパティとは、複数の値を含むことのできるプロパティです。たとえば、**RecipientFilterConfig** オブジェクトの **BlockedRecipients** プロパティには、次の例のように複数の受信者のアドレスを使用することができます。
 

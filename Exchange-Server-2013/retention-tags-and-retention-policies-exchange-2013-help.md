@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Server 2013_
 
 Microsoft Exchange Server 2013 と Exchange Online では、メッセージング レコード管理 (MRM) が、組織による電子メール ライフサイクルの管理と電子メールおよびその他の通信に関連した法的リスクの軽減に役立ちます。MRM を使用すると、企業ポリシー、政府規制、または法的要件への準拠に必要なメッセージを保持し、法的価値またはビジネス上の価値を持たなくなったコンテンツを削除することがより簡単になります。
 

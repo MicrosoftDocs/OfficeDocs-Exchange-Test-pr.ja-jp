@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2016-12-09_
+_**トピックの最終更新日:** 2016-12-09_
 
 このチェックリストを使用して、Microsoft Exchange Server 2007 から Exchange Server 2013 にアップグレードします。このチェックリストで作業を開始する前に、以下のトピックで説明する概念を理解していることを確認してください。
 

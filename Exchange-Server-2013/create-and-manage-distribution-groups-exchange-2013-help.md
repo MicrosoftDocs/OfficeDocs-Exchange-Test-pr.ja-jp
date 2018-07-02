@@ -15,7 +15,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2016, Office 365_
+_**適用先:** Exchange Online, Exchange Server 2016, Office 365_
 
 Exchange 管理センター (EAC) または Exchange 管理シェルを使用して、Exchange 組織に新しい配布グループを作成、または Active Directory の既存グループのメールを有効化します。
 

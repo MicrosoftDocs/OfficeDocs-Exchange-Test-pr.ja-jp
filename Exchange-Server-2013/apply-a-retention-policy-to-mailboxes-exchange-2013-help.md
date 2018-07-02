@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Server 2013_
 
 アイテム保持ポリシーを使用すると、1 つまたは複数の保持タブをグループ化して、それらをメールボックスに適用してメッセージ保持設定を適用することができます。メールボックスには複数のアイテム保持ポリシーを設定することはできません。
 

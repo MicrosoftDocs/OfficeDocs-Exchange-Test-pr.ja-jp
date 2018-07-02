@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013, Project Server 2013_
+_**適用先:** Exchange Server 2013, Project Server 2013_
 
-_**トピックの最終更新日:**2015-03-09_
+_**トピックの最終更新日:** 2015-03-09_
 
 OAB.Proxy 正常性セットは、クライアント アクセス サーバー (CAS) 上のオフライン アドレス帳 (OAB) プロキシ インフラストラクチャの可用性を監視します。
 

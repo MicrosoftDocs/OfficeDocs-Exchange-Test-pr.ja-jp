@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Server 2013, Exchange Server 2016_
 
 シェルを使用して、ユーザーの 1 つ以上の通話応答ルールを有効または無効にできます。また、Exchange 管理シェル スクリプトで **Enable-UMCallAnsweringRule** または **Disable-UMCallAnsweringRule** コマンドレットを使って、複数のユーザーの 1 つ以上の通話応答ルールを有効または無効にすることもできます。
 

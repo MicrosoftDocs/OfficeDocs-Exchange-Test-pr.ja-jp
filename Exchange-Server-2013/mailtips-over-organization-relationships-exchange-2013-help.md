@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Server 2013_
 
 Microsoft Exchange Server 2013 では、Microsoft Exchange Online 組織や他の Exchange 組織と組織上の関係を構成できます。組織上の関係を確立すると、他の組織との交渉時のユーザー エクスペリエンスを強化できます。たとえば、空き時間情報データの共有、セキュリティ保護されたメッセージ フローの構成、両方の組織間のメッセージ追跡への対応ができます。
 

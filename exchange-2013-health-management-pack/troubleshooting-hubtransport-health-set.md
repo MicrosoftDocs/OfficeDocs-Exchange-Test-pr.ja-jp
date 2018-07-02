@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2015-03-09_
+_**トピックの最終更新日:** 2015-03-09_
 
 **HubTransport** 正常性セットは、組織内のメールのルーティングを担当するメールボックス サーバー上で、トランスポート パイプラインの全体的な正常性を監視します。詳細については、「[メール フロー](https://technet.microsoft.com/ja-jp/library/aa996349\(v=exchg.150\))」を参照してください。
 

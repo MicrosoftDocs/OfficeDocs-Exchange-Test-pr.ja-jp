@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 ダイヤル ルール グループは、ダイヤル ルール エントリで構成されます。ダイヤル ルールは、発信された電話番号を、社内の電話システム (PBX) または IP PBX に送る前に変更するためのものです。ダイヤル ルールには次の 2 つの用途があります。
 

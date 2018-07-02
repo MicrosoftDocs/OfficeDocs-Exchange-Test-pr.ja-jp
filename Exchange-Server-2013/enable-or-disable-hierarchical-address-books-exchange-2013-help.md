@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Server 2013_
 
 Microsoft Outlook 2010 以降でエンド ユーザーが使用できる機能である階層型アドレス帳 (HAB) を構成できます。HAB では、ユーザーは上下関係や管理構造に基づく組織階層を使用して、Exchange 組織の受信者を検索できます。HAB の詳細については、「[階層型アドレス帳](hierarchical-address-books-exchange-2013-help.md)」を参照してください。
 

@@ -15,7 +15,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 **\[新しいメニュー ナビゲーション エントリ\]** ページでは、勤務時間または勤務時間外の自動応答のメイン メニューの音声ガイダンスに 1 つまたは複数のキー マッピングを作成できます。 電話のキーパッドでキーを押したときに実行される操作 (たとえば、内線番号または別の自動応答への通話の転送) を定義できます。
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server_
+_**適用先:** Exchange Server_
 
-_**トピックの最終更新日:**2016-12-15_
+_**トピックの最終更新日:** 2016-12-15_
 
 **ExecutionPolicy** グループ ポリシー オブジェクト (GPO) で以下のポリシーのいずれか、または両方が定義されていることが検出されたため、Microsoft Exchange Server 2013 のセットアップを続行できません。
 

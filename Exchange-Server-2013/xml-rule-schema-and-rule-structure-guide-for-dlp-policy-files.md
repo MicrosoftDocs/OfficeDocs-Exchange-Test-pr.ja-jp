@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Server 2013_
 
 この概要では、データ損失防止 (DLP) ポリシー テンプレート ファイルの XML スキーマ定義のコンポーネントを説明し、さらに XML 形式のポリシー ファイル例も示します。作業を開始する前に、全体的な DLP のアーキテクチャとルール開発プロセスを理解するために役立ちます。詳細については、「[データ損失防止](technical-overview-of-dlp-data-loss-prevention-in-exchange.md)」および「[独自の DLP テンプレートおよび情報の種類の定義](define-your-own-dlp-templates-and-information-types-exchange-2013-help.md)」を参照してください。
 

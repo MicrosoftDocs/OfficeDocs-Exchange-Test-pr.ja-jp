@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2012-10-05_
+_**トピックの最終更新日:** 2012-10-05_
 
 既定では、Microsoft Exchange IMAP4 サービスおよび Microsoft Exchange IMAP4 バックエンド サービスの 2 つの IMAP4 サービスは、MicrosoftExchange Server 2013 を実行するコンピューター上で開始されていません。 電子メール クライアントが IMAP4 を使用して Exchange に接続できるようにするためには、これら 2 つのサービスを開始する必要があります。 これらサービスが実行しているとき、Exchange 2013 はセキュリティで保護されていない IMAP4 クライアントの通信をポート 143 で、SSL (Secure Sockets Layer) を使用する場合はポート 993 で受信します。
 

@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Server 2013_
 
 ポリシーの作成時またはそれ以降いつでも、保持タグをアイテム保持ポリシーに追加できます。保持ポリシーの作成方法 (同時に保持タグを追加する方法を含む) については、「[アイテム保持ポリシーの作成](create-a-retention-policy-exchange-2013-help.md)」を参照してください。
 

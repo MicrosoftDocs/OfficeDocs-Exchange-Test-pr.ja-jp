@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Server 2013_
 
 Microsoft Exchange Server 2013 セットアップでは、既定で証拠開示用メールボックスが作成されます。Exchange Online においても、証拠開示用メールボックスが既定で作成されます。証拠開示用メールボックスは、Exchange 管理センター (EAC) 内の [インプレース電子情報開示 (eDiscovery)](in-place-ediscovery-exchange-2013-help.md) 検索用の対象メールボックスとして使用されます。必要に応じて、追加の証拠開示用メールボックスを作成できます。新しい証拠開示用メールボックスを作成したら、その証拠開示用メールボックスにコピーされる電子情報開示検索結果へのアクセスを可能にするため、該当するユーザーにフルアクセスのアクセス許可を割り当てる必要があります。
 

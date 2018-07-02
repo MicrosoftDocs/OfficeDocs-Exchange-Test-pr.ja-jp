@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Server 2013_
 
-_**トピックの最終更新日:**2016-12-09_
+_**トピックの最終更新日:** 2016-12-09_
 
 Exchange 2013 のみのハイブリッド展開では、ハイブリッド構成ウィザードを使用すると OAuth 認証が構成されます。Exchange 2013/2010 と Exchange 2013/2007 の混在したハイブリッド展開の場合は、Office 365 と社内 Exchange 組織との間の新しいハイブリッド展開の OAuth ベースの認証接続を、ハイブリッド構成ウィザードは構成しません。既定では、これらの展開は引き続きフェデレーション信頼プロセスを使用します。ただし、特定の Exchange 2013 機能は、新しい Exchange OAuth 認証プロトコルを使用してはじめて、組織間で完全に使用できます。
 

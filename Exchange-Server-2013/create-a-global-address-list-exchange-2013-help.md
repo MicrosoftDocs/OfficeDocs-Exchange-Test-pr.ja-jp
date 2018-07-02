@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Server 2013_
 
 グローバル アドレス一覧 (GAL) は、MicrosoftExchange が実装されている組織内のすべてのグループ、ユーザー、連絡先のエントリが含まれているディレクトリです。組織でアドレス帳ポリシーを使用する場合、追加の GAL を作成できます。詳しくは、「[アドレス帳ポリシー](address-book-policies-exchange-2013-help.md)」をご覧ください。
 

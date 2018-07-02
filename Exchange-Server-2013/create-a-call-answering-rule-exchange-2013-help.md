@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Server 2013, Exchange Server 2016_
 
 シェルを使用して、ユーザーの通話応答ルールを 1 つ以上作成できます。 Exchange 管理シェル スクリプト内で **New-UMCallAnsweringRule** コマンドレットを使用して、複数のユーザーの通話応答ルールを作成することもできます。
 

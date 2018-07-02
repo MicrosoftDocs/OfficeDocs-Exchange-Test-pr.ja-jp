@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2014-03-03_
+_**トピックの最終更新日:** 2014-03-03_
 
 Exchange Server 2013 では、他のアプリケーションで OAuth を使用して Exchange への認証を行えます。Exchange 2013 のパートナー アプリケーションとして、アプリケーションを構成する必要があります.
 

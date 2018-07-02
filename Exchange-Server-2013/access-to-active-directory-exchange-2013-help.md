@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2016-12-09_
+_**トピックの最終更新日:** 2016-12-09_
 
 Microsoft Exchange Server 2013 は、すべての構成情報および受信者情報を Active Directory ディレクトリ サービス データベースに格納します。Exchange 2013 を実行しているコンピューターで受信者に関する情報や Exchange 組織の構成に関する情報が必要な場合、Active Directory に対してクエリを実行して情報にアクセスする必要があります。Active Directory が正常に機能するためには、Exchange 2013 サーバーが利用可能である必要があります。
 

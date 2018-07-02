@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 IP アドレスまたは全修飾ドメイン名 (FQDN) を使用してユニファイド メッセージング（UM）IP ゲートウェイを構成できます。UM IP ゲートウェイを作成する場合は、使用している VoIP ゲートウェイ、IP PBX 、またはセッション ボーダー コントローラー (SBC) で構成されている IP アドレスまたは FQDN を定義する必要があります。IP アドレスまたは FQDN は UM IP ゲートウェイの作成後に変更することができます。
 

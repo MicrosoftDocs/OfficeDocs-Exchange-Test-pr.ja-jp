@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 ユニファイド メッセージング (UM) メールボックス ポリシーのボイス メール プレビュー パートナー アドレスは、ユーザー自身で設定することができます。UM メールボックス ポリシーにボイス メール プレビュー パートナー アドレスを設定した後は、メールボックス ポリシーにリンクされている、すべての UM が有効なユーザーに設定が適用されます。
 

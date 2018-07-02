@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2016-12-09_
+_**トピックの最終更新日:** 2016-12-09_
 
 ジャーナル レポート復号を有効にすると、ジャーナリング エージェントが、権利が保護されたメッセージの解読コピーをジャーナル レポートに添付できます。ジャーナル レポートの復号を有効にする前に、[Active Directory Rights Management サービス (AD RMS)](https://technet.microsoft.com/ja-jp/library/hh831364.aspx) サーバーに構成されたスーパー ユーザー グループにフェデレーション配信用メールボックスを追加する必要があります。
 

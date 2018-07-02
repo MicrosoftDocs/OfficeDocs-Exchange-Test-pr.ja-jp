@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server_
+_**適用先:** Exchange Server_
 
-_**トピックの最終更新日:**2014-11-05_
+_**トピックの最終更新日:** 2014-11-05_
 
 ログオン ユーザーが、組織に最初の Exchange 2013 サーバーをインストールするために必要なアカウントのアクセス許可を持っていないため、Microsoft Exchange Server 2013 セットアップ プログラムを続行できません。
 

@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 [組織でボイス メールの呼び出しを確認する](review-the-voice-mail-calls-in-your-organization-exchange-2013-help.md)
 

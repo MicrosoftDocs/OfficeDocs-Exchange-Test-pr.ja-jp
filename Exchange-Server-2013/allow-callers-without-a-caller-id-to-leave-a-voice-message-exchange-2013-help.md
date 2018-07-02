@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 UM が有効なユーザーに対して、匿名発信者からのボイス メール メッセージの受信を許可または禁止することができます。既定では、ユニファイド メッセージング (UM) およびボイス メールが有効になると、ユーザーは呼び出し ID 情報を含まない匿名呼び出しを受信できます。
 

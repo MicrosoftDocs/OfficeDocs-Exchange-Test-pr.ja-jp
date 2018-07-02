@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Server 2013_
 
 ユーザーに Microsoft Exchange Server 2013 のインプレース電子情報開示を使用させる場合は、最初にそのユーザーを "Discovery Management/探索管理" 役割グループに追加して権限を付与する必要があります。Discovery Management 役割グループのメンバーは、Exchange セットアップで作成された探索メールボックスに対してフル アクセスのメールボックス アクセス許可を持っています。
 

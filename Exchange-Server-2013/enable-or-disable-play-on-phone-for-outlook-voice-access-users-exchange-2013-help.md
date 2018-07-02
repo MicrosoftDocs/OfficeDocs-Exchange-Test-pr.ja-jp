@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 ユニファイド メッセージング (UM) メールボックス ポリシーに関連付けられたユーザーに対して、電話での再生機能を有効または無効にできます。このオプションは既定で有効です。ユーザーはどの電話からでもボイス メール メッセージを再生できます。MicrosoftExchange Server 2007 サーバー上にメールボックスがある UM が有効なユーザーはこのオプションを利用できません。
 

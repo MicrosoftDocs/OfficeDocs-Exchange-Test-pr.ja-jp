@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2013-01-28_
+_**トピックの最終更新日:** 2013-01-28_
 
 Microsoft Exchange Server 2013 管理ツールを使用すると、Exchange 組織をリモートから構成および管理できます。Exchange 2013 管理ツールには、Exchange 管理シェルおよび Exchange ツールボックスが含まれます。ここでは、Setup.exe または無人セットアップ モードを使用して Exchange 2013 管理ツールをインストールする方法について説明します。
 

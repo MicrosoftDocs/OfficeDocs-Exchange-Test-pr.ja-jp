@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server_
+_**適用先:** Exchange Server_
 
-_**トピックの最終更新日:**2012-11-12_
+_**トピックの最終更新日:** 2012-11-12_
 
 Microsoft Exchange Server 2013 セットアップ プログラムが、Active Directory ドメイン コントローラー上でセットアップ プログラムの実行が試みられていることと、次のいずれかが該当することを検出しました。
 

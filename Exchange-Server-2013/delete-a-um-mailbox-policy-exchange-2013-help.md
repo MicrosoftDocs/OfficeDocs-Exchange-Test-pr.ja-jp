@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 ユニファイド メッセージング (UM) メールボックス ポリシーを削除すると、その UM メールボックス ポリシーを新しく UM を使用できるようになった受信者に関連付けることができなくなります。UM が有効なメールボックスによって UM メールボックスが参照されている場合は、その UM メールボックス ポリシーを削除できません。また、UM メールボックス ポリシーが UM ダイヤル プランに関連付けられている場合は、その UM ダイヤル プランを削除できません。
 

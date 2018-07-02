@@ -15,7 +15,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 ユニファイド メッセージング (UM) ダイヤル プランを作成後、さまざまな設定を表示および構成できます。たとえば、ボイス オーバー IP (VoIP) のセキュリティ レベル、オーディオ コーデック、ダイヤル制限などを構成できます。UM ダイヤル プランについて構成する設定は、UM メールボックス ポリシー経由で、そのダイヤル プランにリンクされているすべてのユーザーに影響します。
 

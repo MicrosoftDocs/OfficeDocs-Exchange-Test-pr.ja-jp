@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Server 2013_
 
 組織の Microsoft Outlook、Outlook Web App (OWA)、デバイス用 OWA の電子メール ユーザーが機密情報の誤送信をしないように助けるため、*ポリシー ヒント*通知メッセージを含めたデータ損失防止 (DLP) のポリシーを作成できます。ポリシー ヒント通知メッセージは、Microsoft Exchange Server 2010 に導入されたメール ヒントと同様、Outlook でユーザーが電子メール メッセージを作成している際に表示されるメッセージです。ポリシー ヒント通知メッセージが表示されるのは、送信者の電子メール メッセージが何らかの点で適用されている DLP ポリシーに違反している可能性があり、さらに設定した条件に合致したときに送信者に通知するというルールがそのポリシーに組み込まれている場合だけです。データ損失防止に関する概要については、「[データ損失防止](technical-overview-of-dlp-data-loss-prevention-in-exchange.md)」を参照してください。
 

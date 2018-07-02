@@ -15,7 +15,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 ユニファイド メッセージング (UM) ハント グループは、構内交換機 (PBX) または IP PBX のハント グループを示す論理的な表現です。UM ハント グループは、UM IP ゲートウェイと UM ダイヤル プランの間の接続またはリンクとして機能します。
 

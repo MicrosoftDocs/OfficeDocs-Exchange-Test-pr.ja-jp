@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2015-03-09_
+_**トピックの最終更新日:** 2015-03-09_
 
 Microsoft Exchange Server 2013 では、Information Rights Management (IRM) の動作が IRM ログに記録されます。IRM ログを使用することにより、組織内の Exchange 2013 サーバーにある Rights Management Services (RMS) クライアントと Active Directory Rights Management Services (AD RMS) クラスター間のインタラクションを監視してトラブルシューティングできます。
 

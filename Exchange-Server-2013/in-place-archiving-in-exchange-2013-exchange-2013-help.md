@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Server 2013_
 
-_**トピックの最終更新日:**2016-12-09_
+_**トピックの最終更新日:** 2016-12-09_
 
 *インプレース アーカイブ*を使用すると、個人用ストア ファイル (.pst) を使用する必要がなくなり、ユーザーは MicrosoftOutlook 2010 以降および Microsoft OfficeOutlook Web App でアクセスできる*アーカイブ メールボックス*にメッセージを保存することができるようになるため、組織のメッセージング データを管理しやすくなります。
 

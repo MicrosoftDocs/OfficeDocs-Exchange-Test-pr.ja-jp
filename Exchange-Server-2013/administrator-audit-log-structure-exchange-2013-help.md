@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2015-03-09_
+_**トピックの最終更新日:** 2015-03-09_
 
 管理者監査ログには、Exchange 管理シェルおよび Exchange 管理センター (EAC) で実行されたコマンドレットおよびパラメーターがすべて記録されます。管理者監査ログは、EAC で管理者監査ログ レポートを実行したとき、またはシェルで **New-AdminAuditLogSearch** コマンドレットを実行したときに、オンデマンドで作成されます。監査ログの詳細については、「[管理者監査ログ](administrator-audit-logging-exchange-2013-help.md)」を参照してください。
 

@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Server 2013_
 
 [Outlook Web App のメールボックス ポリシーの作成](create-an-outlook-web-app-mailbox-policy-exchange-2013-help.md)
 

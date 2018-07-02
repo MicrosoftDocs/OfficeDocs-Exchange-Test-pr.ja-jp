@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2015-03-09_
+_**トピックの最終更新日:** 2015-03-09_
 
 管理者は `Exchange Virtual Directories` 管理役割を使用して、Microsoft Office Outlook Web App、Microsoft ActiveSync、オフライン アドレス帳 (OAB)、自動検出、Windows PowerShell、および個々のサーバーの Web 管理インターフェイス仮想ディレクトリを管理できます。
 

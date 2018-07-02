@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**トピックの最終更新日:**2013-04-25_
+_**トピックの最終更新日:** 2013-04-25_
 
 ネットワーク上への Microsoft Exchange 2013 ユニファイド メッセージング (UM) を計画および展開する場合は、ユニファイド メッセージングとテレフォニー ネットワークについて理解する必要があります。ここでは、テレフォニー インフラストラクチャの概念とコンポーネントの概要について説明し、Exchange 2013 ユニファイド メッセージングを実行するサーバーを計画および展開するためのヒントを示します。
 

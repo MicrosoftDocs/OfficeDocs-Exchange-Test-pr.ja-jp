@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
 特定のメッセージを確実に受信するには、これらのメッセージが低優先メール機能フォルダーを迂回するための Exchange トランスポート ルールを作成できます。低優先メール機能の詳細については、「[Outlook Web App でクラッター機能を使って優先度の低いメッセージを並べ替える](https://go.microsoft.com/fwlink/p/?linkid=528411)」を参照してください。
 

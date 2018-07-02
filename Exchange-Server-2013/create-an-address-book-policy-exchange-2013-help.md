@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Server 2013_
 
 アドレス帳ポリシー (ABP) によって、ユーザーを特定のグループに分割し、組織のグローバル アドレス一覧 (GAL) をカスタマイズ表示することができます。ABP の作成時には、GAL、オフライン アドレス帳 (OAB)、会議室一覧、1 つ以上のアドレス一覧をポリシーに割り当てます。次に ABP をメールボックス ユーザーに割り当て、カスタマイズされた GAL にメールボックス ユーザーが Outlook と Outlook Web App でアクセスできるようにします。目標は、複数の GAL を必要とする社内組織で GAL セグメンテーションを完成するメカニズムを単純にすることです。ABP について詳しくは、「[アドレス帳ポリシー](address-book-policies-exchange-2013-help.md)」をご覧ください。
 
@@ -41,15 +41,15 @@ ABP に関連する追加の管理タスクについては、「[アドレス帳
 
 この例では、次の設定で ABP を作成します。
 
-  - **名前:** Fabrikam ABP のすべて
+  - **名前:**  Fabrikam ABP のすべて
 
-  - **GAL:** Fabrikam のすべて
+  - **GAL:**  Fabrikam のすべて
 
-  - **OAB:** Fabrikam の OAB のすべて
+  - **OAB:**  Fabrikam の OAB のすべて
 
-  - **会議室一覧:** Fabrikam 会議室のすべて
+  - **会議室一覧:**  Fabrikam 会議室のすべて
 
-  - **アドレス一覧:** Fabrikam のすべて、Fabrikam のメールボックスのすべて、Fabrikam DL のすべて、Fabrikam の連絡先のすべて
+  - **アドレス一覧:**  Fabrikam のすべて、Fabrikam のメールボックスのすべて、Fabrikam DL のすべて、Fabrikam の連絡先のすべて
 
 <!-- end list -->
 

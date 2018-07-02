@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 ユニファイド メッセージング (UM) の自動応答でダイヤルの承認を有効にすることができます。自動応答のダイヤルの承認は、自動応答を呼び出した発信者に対して、国内/地域通話や国際通話、または*アウトダイヤル*を禁止するためのものです。アウトダイヤルとは、UM 自動応答に構成された電話番号に電話を掛けてきたユーザーのためにユニファイド メッセージングが電話を掛けることです。
 

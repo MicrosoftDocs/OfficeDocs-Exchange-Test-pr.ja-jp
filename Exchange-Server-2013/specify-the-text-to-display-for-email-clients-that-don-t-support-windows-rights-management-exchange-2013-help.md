@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 保護されている音声メッセージを受信する際にユーザーに送信されるテキストを指定することは可能ですが、電子メール クライアントは Information Rights Management (IRM) も Windows Rights Management もサポートしていません。
 

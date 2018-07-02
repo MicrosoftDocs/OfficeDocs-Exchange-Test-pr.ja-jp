@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Server 2013_
 
-_**トピックの最終更新日:**2016-12-09_
+_**トピックの最終更新日:** 2016-12-09_
 
 メッセージングのポリシーと準拠を構成するのに必要なアクセス許可は、実行する手順、または実行するコマンドレットによって異なります。メッセージング ポリシーと準拠の詳細については、「[メッセージングのポリシーと準拠](messaging-policy-and-compliance-exchange-2013-help.md)」 を参照してください。
 

@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 Exchange 管理センター (EAC) または Exchange PowerShell を使用して、Outlook 用アドインへのユーザー アクセスを管理できます。
 

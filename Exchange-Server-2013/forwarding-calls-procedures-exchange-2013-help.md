@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 [ユーザーの通話応答ルールの作成を許可または禁止する](allow-or-prevent-a-user-from-creating-call-answering-rules-exchange-2013-help.md)
 

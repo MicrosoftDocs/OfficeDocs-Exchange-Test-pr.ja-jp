@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2010, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2010, Exchange Server 2013, Exchange Server 2016_
 
-_**トピックの最終更新日:**2018-05-22_
+_**トピックの最終更新日:** 2018-05-22_
 
 **概要**:この記事内の手順を使用して、Office 365 と Exchange 2007 または Exchange 2010 オンプレミス展開の間でパブリック フォルダーを同期します。
 

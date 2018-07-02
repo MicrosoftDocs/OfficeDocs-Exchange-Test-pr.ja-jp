@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2016-12-09_
+_**トピックの最終更新日:** 2016-12-09_
 
 *テーマ*は、MicrosoftOutlook Web App が使用する背景色、フォント、強調表示色、アイコン、およびヘッダーを定義します。メディア ファイルとカスケード スタイル シート (css) ファイルの集合がテーマで、これらのファイルは、MicrosoftExchange のインストール ディレクトリ内の \\Client Access\\OWA\\prem\\*version*\\resources\\themes に格納されています。各テーマは、\\themes の独自のサブディレクトリに格納されています。
 

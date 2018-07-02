@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 ユニファイド メッセージング (UM) を正しく展開するには、テレフォニーに関する基本的な概念やテレフォニー コンポーネントを十分に理解しておく必要があります。テレフォニーの基本を理解すると、UM を Exchange 組織に統合できます。基本的な概念およびコンポーネントは、次のとおりです。
 

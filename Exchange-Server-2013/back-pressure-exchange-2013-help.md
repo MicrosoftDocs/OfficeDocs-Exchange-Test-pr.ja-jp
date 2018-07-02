@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2015-03-09_
+_**トピックの最終更新日:** 2015-03-09_
 
 バック プレッシャは、Microsoft Exchange 2013 メールボックス サーバーとエッジ トランスポート サーバーに存在する、Microsoft Exchange トランスポート サービスのシステム リソース監視機能です。
 

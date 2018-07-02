@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Server 2013_
 
 EAC またはシェルを使用して、Exchange 組織から MicrosoftOutlook Web App メールボックス ポリシーを削除できます。
 

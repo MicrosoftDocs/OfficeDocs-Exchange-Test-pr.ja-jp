@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server_
+_**適用先:** Exchange Server_
 
-_**トピックの最終更新日:**2012-11-08_
+_**トピックの最終更新日:** 2012-11-08_
 
 組織に Exchange Server 2010 または Exchange Server 2007 サーバーの役割が存在しないため、Microsoft Exchange Server 2013 セットアップ プログラムはこの警告を表示しました。
 

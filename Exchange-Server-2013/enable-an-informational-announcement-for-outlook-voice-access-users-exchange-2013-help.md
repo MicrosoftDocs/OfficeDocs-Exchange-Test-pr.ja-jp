@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 ユニファイド メッセージング (UM) ダイヤル プランで情報アナウンスを有効にすることができます。情報アナウンスは、案内応答より頻繁に変化する一般的なお知らせまたは企業の準拠ポリシーで必要なお知らせに使用します。
 

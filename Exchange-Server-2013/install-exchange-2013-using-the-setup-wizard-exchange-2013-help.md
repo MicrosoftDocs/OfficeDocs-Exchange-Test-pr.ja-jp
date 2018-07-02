@@ -15,9 +15,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2014-06-19_
+_**トピックの最終更新日:** 2014-06-19_
 
 ここでは、Microsoft Exchange Server 2013 セットアップ ウィザードを使って、Exchange 2013 のメールボックスとクライアント アクセスの役割をコンピューターにインストールする方法について説明します。Exchange 2013 の計画および展開の詳細については、「[計画と展開](planning-and-deployment-for-exchange-2013-installation-instructions.md)」を参照してください。
 

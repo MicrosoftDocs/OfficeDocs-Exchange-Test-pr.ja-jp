@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**トピックの最終更新日:** 2013-04-17_
+_**トピックの最終更新日:**  2013-04-17_
 
 This topic contains the procedures that you can use as a reference when managing the Exchange Server 2013 Management Pack. For procedures related to deployment, see [展開に関連した手順](procedures-related-to-deployment.md).
 

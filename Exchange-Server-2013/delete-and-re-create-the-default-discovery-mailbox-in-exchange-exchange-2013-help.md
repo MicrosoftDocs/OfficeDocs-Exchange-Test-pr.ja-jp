@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Server 2013_
 
 Exchange 管理シェルを使用すれば、既定の探索メールボックスを削除して、それを再作成し、それにアクセス許可を割り当てることができます。
 

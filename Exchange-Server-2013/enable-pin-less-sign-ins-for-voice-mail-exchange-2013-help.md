@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013, Exchange Server 2016_
 
-_**トピックの最終更新日:**2015-04-08_
+_**トピックの最終更新日:** 2015-04-08_
 
 ユーザーが PIN を使用せずにボイス メールにサインインできるように、ユニファイド メッセージング (UM) をセット アップすることができます。既定では、Outlook Voice Access ユーザーは、メールボックスにサインインするときと、ボイス メール、電子メール、予定表、個人用連絡先、ディレクトリ、および個人用オプションにアクセスするときに PIN の入力が要求されます。
 

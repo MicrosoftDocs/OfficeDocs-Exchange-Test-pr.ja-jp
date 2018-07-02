@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 発信者が切断されるまでにサインインの試行を連続して失敗できる回数を指定することができます。この設定には 1 ～ 20 の値を指定できます。この値が小さすぎると、ユーザーがフラストレーションを感じる可能性があります。大部分の組織では、この値は既定の 3 回に設定する必要があります。
 

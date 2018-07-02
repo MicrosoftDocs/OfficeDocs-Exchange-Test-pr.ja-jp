@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2015-03-09_
+_**トピックの最終更新日:** 2015-03-09_
 
 管理者は `Mail Recipient Creation` 管理役割を使用して、組織内でメールボックス、メール ユーザー、メール連絡先、配布グループ、および動的配布グループを作成できます。この役割を `Mail Recipients` 役割と組み合わせ、受信者の作成と管理を有効にすることもできます。詳細については、「["Mail Recipient/メール受信者" 役割](mail-recipients-role-exchange-2013-help.md)」を参照してください。
 

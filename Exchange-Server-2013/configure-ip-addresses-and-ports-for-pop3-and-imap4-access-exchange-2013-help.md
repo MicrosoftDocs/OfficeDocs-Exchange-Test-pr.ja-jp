@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2012-11-28_
+_**トピックの最終更新日:** 2012-11-28_
 
 EAC および シェルを使用して、既定の設定とは異なる IP アドレスおよびポートを使用するように Microsoft Exchange POP3 サービスおよび IMAP4 サービスを構成できます。
 

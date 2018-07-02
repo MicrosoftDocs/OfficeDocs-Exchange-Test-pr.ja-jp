@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Server 2013_
 
 メールボックスの保存機能を有効にすると、該当するメールボックスのアイテム保持ポリシーまたは管理フォルダー メールボックス ポリシーの処理が中断されます。 保存機能は、休暇中や出張中などの状況に対応するためのものです。
 

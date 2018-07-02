@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Server 2013_
 
 テナント管理者は、S/MIME 証明書の検証に使用する仮想証明書コレクションを構成する必要があります。この仮想証明書コレクションは、SST ファイル名拡張子を持つ証明書ストア ファイルの種類としてセットアップされます。SST ファイルには、S/MIME 証明書の検証時に使用されるすべてのルート証明書と中間証明書が含まれます。
 

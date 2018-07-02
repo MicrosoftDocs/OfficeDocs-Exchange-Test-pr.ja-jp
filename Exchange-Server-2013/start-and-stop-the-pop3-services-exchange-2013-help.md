@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2013-03-13_
+_**トピックの最終更新日:** 2013-03-13_
 
 既定では、Microsoft Exchange POP3 サービスと Microsoft Exchange POP3 バックエンド サービスの 2 つの POP3 サービスは、MicrosoftExchange Server 2013 を実行するコンピューター上で開始されていません。電子メール クライアントが POP3 を使用して Exchange に接続できるようにするためには、これら 2 つのサービスを開始する必要があります。これらサービスが実行しているとき、Exchange 2013 はセキュリティで保護されていない POP3 クライアントの通信をポート 110 で、SSL (Secure Sockets Layer) を使用する場合はポート 995 で受信します。
 

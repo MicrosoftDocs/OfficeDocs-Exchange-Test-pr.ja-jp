@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Server 2013_
 
 組織内で複数のオフライン アドレス帳 (OAB) を使用している場合、いくつかの方法で、どの受信者がどの OAB をダウンロードするのかを指定します。
 

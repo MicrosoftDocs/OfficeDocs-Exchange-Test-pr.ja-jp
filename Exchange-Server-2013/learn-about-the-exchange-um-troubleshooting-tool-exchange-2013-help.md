@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**トピックの最終更新日:**2016-12-09_
+_**トピックの最終更新日:** 2016-12-09_
 
 Microsoft Exchange 2010 ユニファイド メッセージング トラブルシューティング ツールは **Test-ExchangeUMCallFlow** という名前の Exchange 管理シェル コマンドレットです。このツールを使用すると、組織内のユニファイド メッセージング (UM) に対して一連の診断テストを実行できます。いずれかのテストが失敗すると、ツールによって、失敗の理由と、問題を解決するために実行可能な解決方法がレポートとして出力されます。UM トラブルシューティング ツールは、Exchange 2010 以降のサーバーでのみ使用できます。
 

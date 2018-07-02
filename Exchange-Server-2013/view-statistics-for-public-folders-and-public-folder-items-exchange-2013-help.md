@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 ここでは、表示名、作成日時、最終変更日時、最終アクセス日時、アイテム サイズなど、パブリック フォルダーの統計情報を取得する方法について説明します。この情報を使用すると、パブリック フォルダーを削除または保持するかを決定できます。
 

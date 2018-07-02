@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 ユニファイド メッセージング (UM) IP ゲートウェイ経由の送信呼び出しを有効または無効にできます。UM IP ゲートウェイのプロパティで **\[この UM IP ゲートウェイ経由の送信呼び出しを許可する\]** チェック ボックスをオフにすると、送信呼び出しを受け入れず、Voice over IP (VoIP) ゲートウェイ、IP PBX、またはセッション ボーダー コントローラー (SBC) に送信しないように UM IP ゲートウェイが構成されます。**\[この UM IP ゲートウェイ経由の送信呼び出しを許可する\]** の設定は、UM IP ゲートウェイがユーザーの送信呼び出しを開始できるかどうかを制御しますが、VoIP ゲートウェイ、IP PBX、または SBC からの呼び出し転送または着信呼び出しには影響しません。
 

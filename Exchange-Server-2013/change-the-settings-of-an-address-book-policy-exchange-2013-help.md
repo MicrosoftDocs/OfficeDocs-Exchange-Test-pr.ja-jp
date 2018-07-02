@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Server 2013_
 
 アドレス帳ポリシー (ABP) を作成したら、名前および割り当てられたグローバル アドレス一覧 (GAL)、オフライン アドレス帳 (OAB)、会議室一覧、およびアドレス一覧を表示または変更することができます。
 

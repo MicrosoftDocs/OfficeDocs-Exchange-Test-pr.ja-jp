@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Server 2013_
 
 監査ログを使用して、管理者が行った特定の変更を追跡して構成上の問題のトラブルシューティングを行ったり、法規制、法令遵守、および訴訟の要件を満たすために役立てたりします。Microsoft Exchange には、次の 2 種類の監査ログが用意されています。
 

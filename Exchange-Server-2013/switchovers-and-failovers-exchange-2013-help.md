@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013 SP1_
+_**適用先:** Exchange Server 2013 SP1_
 
-_**トピックの最終更新日:**2015-12-02_
+_**トピックの最終更新日:** 2015-12-02_
 
 切り替えとフェールオーバーは、Microsoft Exchange Server 2013 における 2 つの停止形式です。
 

@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
 [アイテム保持ポリシーの作成](create-a-retention-policy-exchange-2013-help.md)
 

@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 ここでは、Microsoft または VoIP ゲートウェイ パートナーによって作成およびテストされた構成に関する注意事項へのリンクを示します。Microsoft またはパートナーが新しい VoIP ゲートウェイおよび PBX または IP PBX 構成を使用してユニファイド メッセージングを展開する際、前提条件および構成設定がドキュメント化されます。この情報を使用して構成に関する注意事項が作成されます。
 

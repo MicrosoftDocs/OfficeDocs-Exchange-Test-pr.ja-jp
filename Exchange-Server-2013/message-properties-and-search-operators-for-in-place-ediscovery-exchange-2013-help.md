@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Server 2013_
 
 このトピックでは、Exchange Server 2013 および Exchange Online でインプレース電子情報開示とインプレース保持を使用して検索可能な、Exchange 電子メール メッセージのプロパティについて説明されています。このトピックではまた、電子情報開示の検索結果を絞り込むために使用できる、ブール検索演算子や他の検索クエリ技法についても説明します。
 

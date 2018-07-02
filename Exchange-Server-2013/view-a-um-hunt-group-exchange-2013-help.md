@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 ユニファイド メッセージング (UM) ハント グループのプロパティを表示する場合は、単一の UM ハント グループに関連付けられているプロパティ、または単一の UM IP ゲートウェイに関連付けられているすべての UM ハント グループに関連付けられているプロパティを表示できます。いずれのパラメーターも指定されていない場合は、すべての UM ハント グループが返されます。EAC を使用して、UM ハント グループのプロパティを表示することはできません。シェルを使用する必要があります。
 

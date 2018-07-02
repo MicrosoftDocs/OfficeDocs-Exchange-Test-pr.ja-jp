@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 ユーザーのユニファイド メッセージング (UM) またはボイス メールの PIN のリセット時に、そのユーザーに対して送信される電子メール メッセージにテキストを追加することができます。これは、UM メールボックス ポリシーで、**\[ユーザーの Outlook Voice Access PIN がリセットされたとき\]** ボックスにカスタム テキストを入力することで実行できます。カスタマイズされたテキストには、たとえば UM が有効なユーザー向けのセキュリティ関連情報を含めることができます。
 

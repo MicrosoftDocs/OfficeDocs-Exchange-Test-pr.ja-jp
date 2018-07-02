@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Server 2013_
 
 電子メール転送では、そのメールボックスに送信された電子メール メッセージを組織の内部または外部の別のユーザーのメールボックスに転送するようにメールボックスをセットアップします。
 

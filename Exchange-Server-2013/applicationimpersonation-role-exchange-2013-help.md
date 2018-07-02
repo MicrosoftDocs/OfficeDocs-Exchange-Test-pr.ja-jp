@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2016-11-30_
+_**トピックの最終更新日:** 2016-11-30_
 
 アプリケーションは `ApplicationImpersonation` 管理役割を使用して、組織のユーザーになりすまし、そのユーザーの代わりにタスクを実行することができます。
 

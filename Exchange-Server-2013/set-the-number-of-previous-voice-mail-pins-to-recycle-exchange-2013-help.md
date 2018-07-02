@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 Outlook Voice Access ユーザーが Outlook Voice Access 番号にダイヤルすると、ボイス メール システムによるユーザー認証のための PIN の入力を求められます。認証されると、ユーザーはどの電話からでもメールボックス内のボイス メール、電子メール、予定表、および個人用連絡先情報にアクセスできます。
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2012-10-09_
+_**トピックの最終更新日:** 2012-10-09_
 
 リンクされた管理役割グループを使用すると、外部 Active Directory 内のユニバーサル セキュリティ グループ (USG) のメンバーがリソース Active Directory フォレスト内の Microsoft Exchange Server 2013 組織を管理できるようになります。外部フォレスト内の USG をリンクされた役割グループに関連付けることによって、その USG のメンバーに対して、リンクされた役割グループに割り当てられた管理役割で提供されるアクセス許可が付与されます。リンクされた役割グループの詳細については、「[管理役割グループについて](understanding-management-role-groups-exchange-2013-help.md)」を参照してください。
 

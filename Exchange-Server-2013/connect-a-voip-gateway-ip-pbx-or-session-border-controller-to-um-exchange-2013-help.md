@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**トピックの最終更新日:**2016-12-09_
+_**トピックの最終更新日:** 2016-12-09_
 
 組織のユニファイド メッセージング (UM) を展開する際には、ボイス オーバー IP (VoIP) ゲートウェイと IP 構内交換機 (PBX) を正しく構成する必要があります。ハイブリッド環境に UM を展開する場合は、セッション ボーダー コントローラー (SBC) も正しく構成する必要があります。これを行うには、Microsoft Exchange Unified Messaging 呼び出しルーター サービスを実行しているクライアント アクセス サーバーや Microsoft Exchange Unified Messaging サービスを実行しているメールボックス サーバーと通信する VoIP ゲートウェイ、IP PBX、および SBC のインターフェイスを構成する必要があります。
 

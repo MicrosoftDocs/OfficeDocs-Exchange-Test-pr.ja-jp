@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
 調停メールボックスを削除しようとしたときに次のエラーが発生することがあります。
 

@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2016-12-09_
+_**トピックの最終更新日:** 2016-12-09_
 
 Exchange Server 2013のマイクロソフトの[推奨されるアーキテクチャ](https://blogs.technet.com/b/exchange/archive/2014/04/21/the-preferred-architecture.aspx)では、ネイティブのデータ保護であるExchangeと呼ばれる概念を活用します。Exchangeネイティブのデータ保護では、従来のバックアップを使用せず、メールボックス データを保護するためにネイティブのExchange機能に依存しています。ですが、バックアップを作成する場合は、 Exchangeが含まれていますWindows Serverのバックアップ (WSB) Exchangeデータの Exchange 対応のボリューム シャドウ コピー サービス VSS ベースのバックアップを作成することを可能にするためのプラグインです。Exchange 対応のバックアップを実行するには、WSB 機能がインストールされてが必要です。
 

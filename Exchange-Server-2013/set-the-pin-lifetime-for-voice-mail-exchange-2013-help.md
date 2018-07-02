@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 ユニファイド メッセージング (UM) が有効なユーザーに対して、PIN の有効期限を構成することができます。PIN の有効期限とは、UM が有効な受信者の Outlook Voice Access PIN が有効な期間の最大値です。PIN の有効期限の設定は、UM メールボックス ポリシーで構成され、UM メールボックス ポリシーに関連付けられているすべての UM が有効なユーザーに適用されます。
 

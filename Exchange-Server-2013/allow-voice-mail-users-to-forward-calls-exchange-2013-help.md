@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 通話応答ルール機能は、Exchange 2010 で初めて導入されました。この機能を使用すると、ボイス メールが有効なユーザーは着信呼び出しの処理方法を制御できます。通話応答ルールを着信呼び出しに適用する方法は、受信トレイ ルールを受信電子メール メッセージに適用する方法と似ています。
 

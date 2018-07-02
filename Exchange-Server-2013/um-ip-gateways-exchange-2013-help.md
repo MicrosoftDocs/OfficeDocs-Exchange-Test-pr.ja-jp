@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 ユニファイド メッセージング (UM) IP ゲートウェイは、物理 Voice over IP (VoIP) ゲートウェイ、IP 構内交換機 (PBX)、またはセッション ボーダー コントローラー (SBC) ハードウェア デバイスを表します。VoIP ゲートウェイ、IP PBX、または SBC を使用してボイス メール ユーザーの受信呼び出しへの応答、発信呼び出しの送信を実行するには、UM IP ゲートウェイをディレクトリ サービスに作成する必要があります。
 

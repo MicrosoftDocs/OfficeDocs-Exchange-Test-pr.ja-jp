@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server_
+_**適用先:** Exchange Server_
 
-_**トピックの最終更新日:**2013-02-18_
+_**トピックの最終更新日:** 2013-02-18_
 
 Active Directory ドメイン名前付けコンテキストに重複する Microsoft Exchange システム オブジェクト コンテナーが検出されたため、Microsoft Exchange Server 2013 のセットアップが継続できません。重複した Microsoft Exchange システム オブジェクト コンテナーが検出された場合、セットアップを継続するためには重複したコンテナーを削除する必要があります。重複した Microsoft Exchange System Objects コンテナーが存在する場合は、再び **DomainPrep** を実行しても問題を解決できません。重複した Microsoft Exchange システム オブジェクト コンテナーを識別して削除する必要があります。
 

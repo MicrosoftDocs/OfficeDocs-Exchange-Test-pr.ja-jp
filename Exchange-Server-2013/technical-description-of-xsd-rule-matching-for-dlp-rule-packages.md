@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Server 2013_
 
 このトピックは、自分のカスタム機密情報タイプ ルール パッケージを含むように設計されたデータ損失防止 (DLP) XML ファイル内部でパターンと証拠要素を一致させる手法を説明します。整形式の XML ファイルを作成した後、Microsoft Exchange Server 2013 DLP ソリューションの作成のために、Exchange 管理センター (EAC) または Exchange 管理シェルを使用して、ファイルをインポートできます。ここに示す一致方法を使用するためには、既に DLP XML ファイルを開始している必要があります。自分の DLP テンプレートおよび XML ファイルを定義する詳細については、「[独自の DLP テンプレートおよび情報の種類の定義](define-your-own-dlp-templates-and-information-types-exchange-2013-help.md)」を参照してください。
 

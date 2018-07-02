@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Server 2013_
 
 Microsoft Outlook で S/MIME 暗号化メッセージを送信または返信する場合の操作感は、非暗号化メッセージを使用した場合とよく似ています。Outlook Web App などの電子メール プログラムからの S/MIME 暗号化メッセージの読み取りまたは送信に関する詳細については、「[Outlook を使用して S/MIME 暗号化メッセージを送信または返信する](https://go.microsoft.com/fwlink/p/?linkid=392520)」を参照してください。
 

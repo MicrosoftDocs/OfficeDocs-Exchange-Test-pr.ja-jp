@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2012-10-03_
+_**トピックの最終更新日:** 2012-10-03_
 
 不要になった管理役割を組織から削除できます。 削除できるのは、自分で作成した管理役割だけです。 組み込みの管理役割を削除することはできません。Microsoft Exchange Server 2013 での管理役割の詳細については、「[管理の役割について](understanding-management-roles-exchange-2013-help.md)」を参照してください。
 

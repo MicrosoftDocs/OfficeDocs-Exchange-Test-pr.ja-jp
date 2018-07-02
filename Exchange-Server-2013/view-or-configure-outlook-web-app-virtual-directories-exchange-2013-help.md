@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2013-08-12_
+_**トピックの最終更新日:** 2013-08-12_
 
 EAC またはシェルを使用して、Outlook Web App 仮想ディレクトリのプロパティを表示または構成できます。
 

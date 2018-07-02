@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2017-12-20_
+_**トピックの最終更新日:** 2017-12-20_
 
 Microsoft Exchange Server 2013 では、Microsoft Outlook Web App にいくつかの新機能を追加し、そのデザインを更新しました。
 

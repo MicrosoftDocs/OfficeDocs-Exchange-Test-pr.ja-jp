@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2015-09-10_
+_**トピックの最終更新日:** 2015-09-10_
 
 ここでは、*ContentFilter* パラメーターのフィルター可能なプロパティについて説明します。*ContentFilter* パラメーターは、フィルターに一致するメッセージを .pst ファイルにエクスポートするのに使用します。*ContentFilter* パラメーターは、[New-MailboxExportRequest](https://technet.microsoft.com/ja-jp/library/ff607299\(v=exchg.150\)) コマンドレットで使用されます。
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**トピックの最終更新日:**2015-04-07_
+_**トピックの最終更新日:** 2015-04-07_
 
 Microsoft Exchange Unified Messaging (UM) を使用すると、ボイス メール メッセージをユーザーのメールボックスに配信したり、ユーザーが FAX メッセージを自分のメールボックスで受信できるようにしたりすることができます。UM では、FAX は .tif 拡張子のイメージ ファイルが添付された電子メール メッセージとしてユーザーのメールボックスに送信されます。ユーザーは, .tif 拡張子のイメージ ファイルを開いて表示できるソフトウェア アプリケーションを使用して、添付ファイルを開くことができます。ここでは、FAX の送受信、および UM の FAX 送受信のしくみについて説明します。
 

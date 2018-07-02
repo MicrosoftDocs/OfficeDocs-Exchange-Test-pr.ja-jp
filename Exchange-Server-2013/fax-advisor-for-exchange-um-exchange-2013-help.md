@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 Microsoft ユニファイド メッセージング (UM) は、送信 FAX や FAX ルーティングなどの拡張された FAX 機能のための認定された FAX パートナー ソリューションに依存します。既定では、ユーザーは、着信 FAX メッセージが UM が有効なユーザーに配信されるように構成されていません。Exchange サーバーは、FAX 要求を認定 FAX パートナー ソリューションに送信します。FAX パートナーのサーバーは FAX データを受信し、FAX が.tif 添付ファイルとして含まれている電子メール メッセージ内の受信者のメールボックスにその FAX データを送信します。詳細については、「[ボイス メール ユーザーが FAX を受信できるようにする](enable-voice-mail-users-to-receive-faxes-exchange-2013-help.md)」を参照してください。
 

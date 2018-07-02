@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 Outlook Voice Access ユーザーの PIN をリセットするまでに許容されるサインイン失敗回数は、1 ～ 998 の値の範囲で構成できます。既定は 5 です。PIN をリセットするまでに許容されるサインイン失敗回数は、ユニファイド メッセージング (UM) メールボックス ポリシーで構成され、その UM メールボックス ポリシーに関連付けられているすべての Outlook Voice Access ユーザーに適用されます。
 

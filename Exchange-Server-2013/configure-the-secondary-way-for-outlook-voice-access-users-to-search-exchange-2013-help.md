@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 ダイヤル プランを作成すると、第 1 および第 2 の*名前によるダイヤルの方法*、または発信者が名前を検索できる方法を構成できます。発信者は、Outlook Voice Access 番号に電話を掛けるとき、またはダイヤル プランに関連付けられている UM 自動応答に電話を掛けるときに、これらの名前によるダイヤルの方法を使用して名前を検索し、ユーザーを特定して連絡できます。発信者は、タッチトーン入力を使用して UM が有効なユーザーを検索できます。
 

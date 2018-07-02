@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2014-06-16_
+_**トピックの最終更新日:** 2014-06-16_
 
 データベースの移植性を使用して、同じ組織内の Exchange 2013 メールボックス サーバー間で Microsoft Exchange Server 2013 メールボックス データベースを移動できます。これによって一部の障害シナリオ全体の回復時間を減らすことができます。詳細については、「[データベースの移植性](database-portability-exchange-2013-help.md)」を参照してください。
 

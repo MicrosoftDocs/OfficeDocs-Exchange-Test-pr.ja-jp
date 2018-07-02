@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Server 2013_
 
 EAC またはシェルを使用して、ユーザー メールボックスの Outlook Web App を有効または無効にできます。Outlook Web App が有効な場合、ユーザーは Outlook Web App を使用して電子メールを送信および受信できます。Outlook Web App が無効な場合、メールボックスは電子メール メッセージの受信を続行し、ユーザーは MAPI クライアント (Microsoft Outlook など) や POP 電子メール クライアント または IMAP 電子メール クライアントを使用して、メールボックスにアクセスして電子メールを送信および受信できます。ただし、メールボックスにおいて、これらのクライアントによるアクセスのサポートが有効であることを前提とします。
 

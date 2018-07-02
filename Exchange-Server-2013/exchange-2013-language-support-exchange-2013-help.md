@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Server 2013_
 
-_**トピックの最終更新日:**2013-02-08_
+_**トピックの最終更新日:** 2013-02-08_
 
 Microsoft Exchange Server 2013 では、サーバーとクライアントの両方の言語サポートが強化されています。このトピックでは、Exchange 2013 のサーバーとクライアントの両方に利用可能な言語について示します。
 

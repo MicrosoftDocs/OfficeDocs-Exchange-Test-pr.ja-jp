@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Server 2013, Exchange Server 2016_
 
 ユニファイド メッセージング (UM) ダイヤル プランの既定の言語を設定できます。ユーザーが作成した各ダイヤル プランでは、既定の言語として米国英語 (en-US) が使用されます。米国英語 (en-US) 言語パックは、どのバージョンの MicrosoftExchange Server 2013 にもインストールされ、削除することはできません。
 

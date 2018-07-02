@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2012-10-13_
+_**トピックの最終更新日:** 2012-10-13_
 
 [電子メール アドレス ポリシーの作成](create-an-email-address-policy-exchange-2013-help.md)
 

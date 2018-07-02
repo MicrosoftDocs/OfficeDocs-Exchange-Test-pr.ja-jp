@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2012-10-17_
+_**トピックの最終更新日:** 2012-10-17_
 
 `MyName` 管理役割を使用すると、個々のユーザーは、自分の氏名と "メモ" フィールドを表示、変更することができます。 これは、[MyProfileInformation 役割](myprofileinformation-role-exchange-2013-help.md) 親役割から作成されたカスタムの役割です。
 
