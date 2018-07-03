@@ -221,7 +221,7 @@ Windows 7 の 64 ビット版、Windows 8、または Windows Server 2008 の 64
 
 
 
-  - Windows リモート管理 (WinRM) 2.0 および Windows PowerShell V2 (Windows6.0-KB968930.msu)   マイクロソフト サポート技術情報の文書番号 968930「[Windows Management Framework Core パッケージ (Windows PowerShell 2.0 および WinRM 2.0)](http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=968930)」を参照してください。
+  - Windows リモート管理 (WinRM) 2.0 および Windows PowerShell V2 (Windows6.0-KB968930.msu)   マイクロソフト サポート技術情報の文書番号 968930「[Windows Management Framework Core パッケージ (Windows PowerShell 2.0 および WinRM 2.0)](http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=968930)」を参照してください。
 
   - Microsoft Unified Communications Managed API 2.0 Core ランタイム (UcmaRuntimeWebDownloadX64.msi)。  「[Unified Communications Managed API 2.0 Core ランタイム (64-bit)](https://go.microsoft.com/fwlink/p/?linkid=198175)」を参照してください。
 

@@ -323,7 +323,7 @@ Exchange 2013 組織に IRM を実装するには、展開が次の表に記載�
 <tr class="odd">
 <td><p>AD RMS クラスター</p></td>
 <td><ul>
-<li><p><strong>オペレーティング システム</strong>   Windows Server 2012、Windows Server 2008 R2、または修正プログラム「<a href="http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=973247">Active Directory Rights Management サービスの役割</a>」が適用された Windows Server 2008 SP2 が必要です。</p></li>
+<li><p><strong>オペレーティング システム</strong>   Windows Server 2012、Windows Server 2008 R2、または修正プログラム「<a href="http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=973247">Active Directory Rights Management サービスの役割</a>」が適用された Windows Server 2008 SP2 が必要です。</p></li>
 <li><p><strong>サービス接続ポイント</strong>   Exchange 2010 および AD RMS 対応アプリケーションは、Active Directory に登録されているサービス接続ポイントを使用して、AD RMS クラスターと URL を検出します。AD RMS では、AD RMS セットアップ プログラム内からサービス接続ポイントを登録できます。AD RMS のセットアップに使用されるアカウントが Enterprise Admins セキュリティ グループのメンバーでない場合、サービス接続ポイントの登録はセットアップ後に実行できます。AD RMS のサービス接続ポイントは、Active Directory フォレスト内に 1 つだけ存在します。</p></li>
 <li><p><strong>アクセス許可</strong>   次の対象には、AD RMS サーバー証明パイプライン (AD RMS サーバー上の <code>ServerCertification.asmx</code> ファイル) に対する読み取りと実行のアクセス許可を割り当てる必要があります。</p>
 <ul>
@@ -338,7 +338,7 @@ Exchange 2013 組織に IRM を実装するには、展開が次の表に記載�
 <td><p>Exchange</p></td>
 <td><ul>
 <li><p>Exchange 2010 以降が必要です。</p></li>
-<li><p>「<a href="http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=973136">FIX: .NET Framework 2.0 SP2 ベースのアプリケーションが、非同期の ASP.NET Web サービス要求に対する長さゼロの応答を処理しようとすると、「値を NULL にすることはできません」という ArgumentNullException 例外エラー メッセージが表示される</a>」という修正プログラムが、Microsoft .NET Framework 2.0 SP2 には推奨されます。</p></li>
+<li><p>「<a href="http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=973136">FIX: .NET Framework 2.0 SP2 ベースのアプリケーションが、非同期の ASP.NET Web サービス要求に対する長さゼロの応答を処理しようとすると、「値を NULL にすることはできません」という ArgumentNullException 例外エラー メッセージが表示される</a>」という修正プログラムが、Microsoft .NET Framework 2.0 SP2 には推奨されます。</p></li>
 </ul></td>
 </tr>
 <tr class="odd">

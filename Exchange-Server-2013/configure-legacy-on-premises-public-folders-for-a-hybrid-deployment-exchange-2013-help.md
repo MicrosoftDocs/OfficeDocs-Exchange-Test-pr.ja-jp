@@ -104,7 +104,7 @@ Exchange 2003 パブリック フォルダーでのハイブリッド構成は�
 
 7.  Exchange 2007 では、Exchange 組織管理者または Exchange サーバー管理者の役割を割り当てられる必要があります。さらに、対象サーバーのパブリック フォルダー管理者の役割およびローカルの Administrators グループを割り当てる必要があります。詳細については、「[管理者の役割にユーザーまたはグループを追加する方法](https://go.microsoft.com/fwlink/p/?linkid=81779)」を参照してください。
 
-8.  Windows Server 2008 x64 で Exchange Server 2007 を実行している場合、[Windows PowerShell 2.0 および WinRM 2.0 for Windows Server 2008 x64 Edition](http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=968930) にアップグレードする必要があります。Windows Server 2003 x64 で Exchange Server 2007 を実行している場合、Windows PowerShell 2.0 にアップグレードする必要があります。詳細については、「[Windows Server 2003 x64 Edition 用更新プログラム](https://www.microsoft.com/ja-jp/download/details.aspx?id=10512)」を参照してください。
+8.  Windows Server 2008 x64 で Exchange Server 2007 を実行している場合、[Windows PowerShell 2.0 および WinRM 2.0 for Windows Server 2008 x64 Edition](http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=968930) にアップグレードする必要があります。Windows Server 2003 x64 で Exchange Server 2007 を実行している場合、Windows PowerShell 2.0 にアップグレードする必要があります。詳細については、「[Windows Server 2003 x64 Edition 用更新プログラム](https://www.microsoft.com/ja-jp/download/details.aspx?id=10512)」を参照してください。
 
 9.  複数の場所にまたがってパブリック フォルダーにアクセスするには、Outlook クライアントを 2012 年 11 月以降の Oooklook パブリック更新プログラムにアップグレードする必要があります。
     

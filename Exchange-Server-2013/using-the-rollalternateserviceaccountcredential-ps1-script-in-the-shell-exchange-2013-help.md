@@ -20,13 +20,13 @@ _**トピックの最終更新日:** 2015-03-09_
 Exchange Server 2013 に含まれている RollAlternateServiceAccountPassword.ps1 スクリプトを使用すると、代替サービス アカウントの資格情報 (ASA 資格情報) を更新して、その更新を指定したクライアント アクセス サーバーに配布できます。
 
 
-> [!NOTE]
-> Exchange 管理シェルでは、スクリプトは自動的に読み込まれません。すべてのスクリプトの先頭には "<STRONG>.\</STRONG>" を付ける必要があります。たとえば、RollAlternateServiceAccountPassword.ps1 スクリプトを実行するには、「<CODE>.\RollAlternateServiceAccountPassword.ps1</CODE>」と入力します。
+> [!NOTE]  
+> Exchange 管理シェルでは、スクリプトは自動的に読み込まれません。すべてのスクリプトの先頭には ".\" を付ける必要があります。たとえば、RollAlternateServiceAccountPassword.ps1 スクリプトを実行するには、「<code>.\RollAlternateServiceAccountPassword.ps1</code>」と入力します。
 
 
 
 
-> [!NOTE]
+> [!NOTE]  
 > このスクリプトは英語版のみが提供されます。
 
 
@@ -72,7 +72,7 @@ Exchange Server 2013 に含まれている RollAlternateServiceAccountPassword.p
 継続的にパスワードを管理するためにスケジュールされたタスクを作成するためにスクリプトを使用する場合、*CreateScheduledTask* パラメーターを使用します。このパラメーターには、作成するタスク名の文字列が必要です。
 
 
-> [!NOTE]
+> [!NOTE]  
 > スケジュールされた無人タスクを作成する場合、事前にスクリプトを実行して、有人モードでスクリプトが正常に動作することを確認してください。
 
 
@@ -161,7 +161,7 @@ Exchange Server 2013 に含まれている RollAlternateServiceAccountPassword.p
 <td><p>省略可能</p></td>
 <td><p><em>ToArrayMembers</em> パラメーターは、スクリプトの実行対象として、特定のクライアント アクセス サーバー アレイのすべてのメンバーを指定します。</p>
 
-> [!NOTE]
+> [!NOTE]  
 > <EM>ToArrayMembers</EM> パラメーターまたは <EM>ToSpecificServers</EM> パラメーターを使用する場合は、<EM>Identity</EM> パラメーターを使用してサーバー名またはサーバー アレイ名を指定する必要があります。
 
 
@@ -172,7 +172,7 @@ Exchange Server 2013 に含まれている RollAlternateServiceAccountPassword.p
 <td><p>省略可能</p></td>
 <td><p><em>ToSpecificServers</em> パラメーターは、スクリプトの実行対象として、特定のサーバーを指定します。</p>
 
-> [!NOTE]
+> [!NOTE]  
 > <EM>ToArrayMembers</EM> パラメーターまたは <EM>ToSpecificServers</EM> パラメーターを使用する場合は、<EM>Identity</EM> パラメーターを使用してサーバー名またはサーバー アレイ名を指定する必要があります。
 
 
@@ -203,7 +203,7 @@ Exchange Server 2013 に含まれている RollAlternateServiceAccountPassword.p
 <td><p>省略可能</p></td>
 <td><p><em>CreateScheduledTask</em> パラメーターは、スクリプトに対して、スケジュールされたタスクを作成して ASA 資格情報の更新を実行することを指示します。文字列値は、作成されるスケジュールされたタスクの名前です。</p>
 
-> [!NOTE]
+> [!NOTE]  
 > このスクリプトが保存されるフォルダー内にスクリプトによって .cmd ファイルが作成されます。スケジュールされたタスクは, .cmd ファイルを 3 週間おきに実行します。Windows タスク スケジューラ内で直接タスクを編集し、タスクの実行頻度を変更できます。
 
 

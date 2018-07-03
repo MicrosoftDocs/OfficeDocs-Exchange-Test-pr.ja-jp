@@ -28,7 +28,7 @@ Microsoft Exchange Server 2013 の各種コンポーネントの構成作業を
 3.  ここで、**Get-ManagementRoleAssignment** コマンドレットを実行して、ユーザーに割り当てられている役割グループまたは管理役割を調べ、その機能の管理に必要なアクセス許可があるかどうかを確認します。
     
 
-    > [!NOTE]
+    > [!NOTE]  
     > <STRONG>Get-ManagementRoleAssignment</STRONG> コマンドレットを実行するには、"Role Management/役割管理" 管理役割が割り当てられている必要があります。<STRONG>Get-ManagementRoleAssignment</STRONG> コマンドレットを実行するアクセス許可がない場合は、Exchange 管理者に連絡して、自分に割り当てられている役割グループまたは管理役割を取得してください。
 
 
@@ -36,7 +36,7 @@ Microsoft Exchange Server 2013 の各種コンポーネントの構成作業を
 機能の管理能力を別のユーザーに委任する場合は、「[役割割り当てを委任する](delegate-role-assignments-exchange-2013-help.md)」をご覧ください。
 
 
-> [!NOTE]
+> [!NOTE]  
 > 一部の機能では、管理するサーバーのローカル管理者アクセス許可を持っている必要がある場合があります。これらの機能を管理するには、このサーバーでローカルの Administrators グループのメンバーである必要があります。
 
 
@@ -104,7 +104,7 @@ Microsoft Exchange Server 2013 の各種コンポーネントの構成作業を
 <td><p><a href="organization-management-exchange-2013-help.md">組織の管理</a></p>
 <p><a href="records-management-exchange-2013-help.md">レコードの管理</a></p>
 
-> [!NOTE]
+> [!NOTE]  
 > "View-Only Audit Logs/表示専用監査ログ" 管理役割を手動で管理役割グループに割り当てることもできます。詳細については、「<A href="view-only-audit-logs-role-exchange-2013-help.md">"View-Only Audit Logs/表示専用監査ログ" 役割</A>」を参照してください。
 
 

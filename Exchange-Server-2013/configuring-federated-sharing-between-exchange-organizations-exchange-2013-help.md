@@ -111,7 +111,7 @@ _**トピックの最終更新日:** 2016-12-09_
         
 
         > [!WARNING]
-        > Exchange 2013 組織と Exchange 2003 組織間で空き時間情報の共有が正しく動作するには、<STRONG>OU=EXTERNAL (FYDIBOHF25SPDLT)</STRONG> パブリック フォルダーがパブリック フォルダー階層に存在している必要があります。このフォルダーは、Exchange 2010 セットアップ時に Outlook 2003 サポートのクライアント設定の構成の一部としてパブリック フォルダーを作成するオプションを選択した場合にのみ、Exchange 2003 組織内の Exchange 2010 メールボックス サーバー上に自動的に作成されます。また、このオプションは、その Exchange 2010 メールボックス サーバーが組織内で最初にインストールされるメールボックス サーバーである場合にのみ、セットアップ処理時に表示されます。セットアップ時に <STRONG>OU=EXTERNAL (FYDIBOHF25SPDLT)</STRONG> パブリック フォルダーが作成されなかった場合は、手動でこのフォルダーを作成する必要があります。パブリック フォルダーを作成する方法の詳細については、「<A href="http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=2555008">Microsoft Office 365 for enterprises 環境で Exchange フェデレーションを使用すると発生する空き時間情報 (Free/Busy) に関する問題のトラブルシュート方法</A>」を参照してください。
+        > Exchange 2013 組織と Exchange 2003 組織間で空き時間情報の共有が正しく動作するには、<STRONG>OU=EXTERNAL (FYDIBOHF25SPDLT)</STRONG> パブリック フォルダーがパブリック フォルダー階層に存在している必要があります。このフォルダーは、Exchange 2010 セットアップ時に Outlook 2003 サポートのクライアント設定の構成の一部としてパブリック フォルダーを作成するオプションを選択した場合にのみ、Exchange 2003 組織内の Exchange 2010 メールボックス サーバー上に自動的に作成されます。また、このオプションは、その Exchange 2010 メールボックス サーバーが組織内で最初にインストールされるメールボックス サーバーである場合にのみ、セットアップ処理時に表示されます。セットアップ時に <STRONG>OU=EXTERNAL (FYDIBOHF25SPDLT)</STRONG> パブリック フォルダーが作成されなかった場合は、手動でこのフォルダーを作成する必要があります。パブリック フォルダーを作成する方法の詳細については、「<A href="http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=2555008">Microsoft Office 365 for enterprises 環境で Exchange フェデレーションを使用すると発生する空き時間情報 (Free/Busy) に関する問題のトラブルシュート方法</A>」を参照してください。
 
     
     2.  **フェデレーション委任の構成**。

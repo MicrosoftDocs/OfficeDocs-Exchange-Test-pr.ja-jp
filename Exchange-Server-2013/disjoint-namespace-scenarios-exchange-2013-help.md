@@ -101,7 +101,7 @@ Exchange 2013 サーバーが、不整合であるドメイン コントロー�
 
   - [グループ ポリシーについてよく寄せられる質問 (FAQ)](https://go.microsoft.com/fwlink/p/?linkid=100128)
 
-  - [Windows Server 2003 の DNS 用の新しいグループ ポリシー](http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=294785)
+  - [Windows Server 2003 の DNS 用の新しいグループ ポリシー](http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=294785)
 
   - [グループ ポリシー](https://go.microsoft.com/fwlink/p/?linkid=268043)
 
