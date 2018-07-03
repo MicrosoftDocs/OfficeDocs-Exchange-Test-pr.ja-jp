@@ -35,40 +35,29 @@ Exchange 2013 のデータ損失防止 (DLP) 機能を使用すると、組織�
 
 ## 新しい述語
 
-  -  
-    **AttachmentExtensionMatchesWords**   特定の拡張子を持つ添付ファイルを含むメッセージを検出するために使用します。
+  -  **AttachmentExtensionMatchesWords**   特定の拡張子を持つ添付ファイルを含むメッセージを検出するために使用します。
 
-  -  
-    **AttachmentHasExecutableContent**   実行可能コンテンツ持つ添付ファイルを含むメッセージを検出するために使用します。
+  -  **AttachmentHasExecutableContent**   実行可能コンテンツ持つ添付ファイルを含むメッセージを検出するために使用します。
 
-  -  
-    **HasSenderOverride** 送信者が DLP ポリシー制限を上書きしたメッセージを検出するのに使用します。
+  -  **HasSenderOverride** 送信者が DLP ポリシー制限を上書きしたメッセージを検出するのに使用します。
 
-  -  
-    **MessageContainsDataClassifications**   メッセージ本文といずれかの添付ファイルの機密メッセージを検出するために使用します。使用できるデータ分類の一覧については、「[Exchange での機密情報の種類の検索基準：](what-the-sensitive-information-types-in-exchange-look-for-exchange-online-help.md)」を参照してください。
+  -  **MessageContainsDataClassifications**   メッセージ本文といずれかの添付ファイルの機密メッセージを検出するために使用します。使用できるデータ分類の一覧については、「[Exchange での機密情報の種類の検索基準：](what-the-sensitive-information-types-in-exchange-look-for-exchange-online-help.md)」を参照してください。
 
-  -  
-    **MessageSizeOver**   全体のサイズが指定した制限以上であるメッセージを検出するために使用します。
+  -  **MessageSizeOver**   全体のサイズが指定した制限以上であるメッセージを検出するために使用します。
 
-  -  
-    **SenderIPRanges**   特定の IP アドレス範囲セットから送信されたメッセージを検出するために使用します。
+  -  **SenderIPRanges**   特定の IP アドレス範囲セットから送信されたメッセージを検出するために使用します。
 
 ## 新しいアクション
 
-  -  
-    **GenerateIncidentReport**   指定した SMTP アドレスに送信されるインシデント レポートを生成します。アクションには、次の 2 つのいずれかの値を受け入れる *IncidentReportOriginalMail* と呼ばれるパラメーターもあります。IncludeOriginalMail または DoNotIncludeOriginalMail。
+  -  **GenerateIncidentReport**   指定した SMTP アドレスに送信されるインシデント レポートを生成します。アクションには、次の 2 つのいずれかの値を受け入れる *IncidentReportOriginalMail* と呼ばれるパラメーターもあります。IncludeOriginalMail または DoNotIncludeOriginalMail。
 
-  -  
-    **NotifySender**   DLP ポリシーに反するメッセージの送信者に通知する方法を制御します。送信者にただ単に通知してメッセージを通常どおりにルーティングすることを選択することも、メッセージを拒否して送信者に通知することも選択できます。
+  -  **NotifySender**   DLP ポリシーに反するメッセージの送信者に通知する方法を制御します。送信者にただ単に通知してメッセージを通常どおりにルーティングすることを選択することも、メッセージを拒否して送信者に通知することも選択できます。
 
-  -  
-    **StopRuleProcessing**   メッセージに対して後続するすべてのルールの処理を停止します。
+  -  **StopRuleProcessing**   メッセージに対して後続するすべてのルールの処理を停止します。
 
-  -  
-    **ReportSeverityLevel**   インシデント レポートで指定した重大度レベルを設定します。このアクションの値は、次のとおりです。情報、低、中、高、およびオフ。
+  -  **ReportSeverityLevel**   インシデント レポートで指定した重大度レベルを設定します。このアクションの値は、次のとおりです。情報、低、中、高、およびオフ。
 
-  -  
-    **RouteMessageOutboundRequireTLS**   組織外部にこのメッセージをルーティングするときにトランスポート層セキュリティ (TLS) 暗号化を必要とします。TLS 暗号化をサポートしていない場合、メッセージは拒否され、配信されません。
+  -  **RouteMessageOutboundRequireTLS**   組織外部にこのメッセージをルーティングするときにトランスポート層セキュリティ (TLS) 暗号化を必要とします。TLS 暗号化をサポートしていない場合、メッセージは拒否され、配信されません。
 
 ## トランスポート ルールの他の変更
 

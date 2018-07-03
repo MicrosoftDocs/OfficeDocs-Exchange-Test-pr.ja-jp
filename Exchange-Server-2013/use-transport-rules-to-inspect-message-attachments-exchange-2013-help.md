@@ -72,11 +72,9 @@ Exchange 管理者は、**\[Exchange 管理センター\]** \> **\[メール フ
 
 ここに一覧表示されている条件の Exchange 管理シェル 名は、`TransportRule` コマンドレットを必要とするパラメーターです。
 
-  -  
-    コマンドレットの詳細については、「[New-TransportRule](https://technet.microsoft.com/ja-jp/library/bb125138\(v=exchg.150\))」を参照してください。
+  -  コマンドレットの詳細については、「[New-TransportRule](https://technet.microsoft.com/ja-jp/library/bb125138\(v=exchg.150\))」を参照してください。
 
-  -  
-    これらの条件のプロパティの種類の詳細については、「[Conditions and exceptions for mail flow rules on Mailbox servers](mail-flow-rule-conditions-and-exceptions-predicates-in-exchange-2013-exchange-2013-help.md)」を参照してください。
+  -  これらの条件のプロパティの種類の詳細については、「[Conditions and exceptions for mail flow rules on Mailbox servers](mail-flow-rule-conditions-and-exceptions-predicates-in-exchange-2013-exchange-2013-help.md)」を参照してください。
 
 トランスポート ルールは、サポートされているファイルの種類のコンテンツのみを検査できます。トランスポート ルール エージェントが、サポートされているファイルの種類の一覧にない添付ファイルを検出すると、`AttachmentIsUnsupported` 条件がトリガーされます。サポートされているファイルの種類を次のセクションに一覧表示します。一覧にないファイルは、`AttachmentIsUnsupported` の条件をトリガーします。
 
@@ -213,11 +211,9 @@ Exchange 管理者は、**\[Exchange 管理センター\]** \> **\[メール フ
 
 ここに一覧表示されている条件の Exchange 管理シェル 名は、`TransportRule` コマンドレットを必要とするパラメーターです。
 
-  -  
-    コマンドレットの詳細については、「[New-TransportRule](https://technet.microsoft.com/ja-jp/library/bb125138\(v=exchg.150\))」を参照してください。
+  -  コマンドレットの詳細については、「[New-TransportRule](https://technet.microsoft.com/ja-jp/library/bb125138\(v=exchg.150\))」を参照してください。
 
-  -  
-    これらの条件のプロパティの種類の詳細については、「[Conditions and exceptions for mail flow rules on Mailbox servers](mail-flow-rule-conditions-and-exceptions-predicates-in-exchange-2013-exchange-2013-help.md)」を参照してください。
+  -  これらの条件のプロパティの種類の詳細については、「[Conditions and exceptions for mail flow rules on Mailbox servers](mail-flow-rule-conditions-and-exceptions-predicates-in-exchange-2013-exchange-2013-help.md)」を参照してください。
 
 ## トランスポート ルールによる検査でサポートされている実行可能ファイルの種類
 
