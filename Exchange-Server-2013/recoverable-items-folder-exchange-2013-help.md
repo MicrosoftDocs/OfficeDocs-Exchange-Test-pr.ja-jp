@@ -9,7 +9,7 @@ mtps_version: v=EXCHG.150
 ms.translationtype: HT
 ---
 
-# フォルダー
+# [回復可能なアイテム] フォルダー
 
  
 

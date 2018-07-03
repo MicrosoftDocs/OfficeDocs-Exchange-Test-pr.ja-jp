@@ -9,7 +9,7 @@ mtps_version: v=EXCHG.150
 ms.translationtype: HT
 ---
 
-# フォルダーの統計を取得する
+# [回復可能なアイテム] フォルダーの統計を取得する
 
  
 

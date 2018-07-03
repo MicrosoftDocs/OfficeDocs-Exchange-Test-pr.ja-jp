@@ -9,7 +9,7 @@ mtps_version: v=EXCHG.150
 ms.translationtype: HT
 ---
 
-# プライマリ DNS サフィックスに が存在しない
+# プライマリ DNS サフィックスに [ms.exch.setupreadiness.FqdnMissing] が存在しない
 
  
 
