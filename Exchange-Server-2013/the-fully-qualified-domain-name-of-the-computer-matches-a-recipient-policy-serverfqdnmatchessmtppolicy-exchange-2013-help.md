@@ -55,5 +55,5 @@ Microsoft Exchange セットアップ プログラムを実行するには、Exc
 
 4.  **\[電子メール アドレス\]** タブをクリックし、目的の SMTP アドレスを変更します。
 
-受信者ポリシーの名前付けに関する問題の詳細については、Microsoft サポート技術情報の文書番号 288175「\[XCON\] 受信者ポリシーは組織のサーバーの FQDN とは異なる必要がある (5.4.8 NDR)」([http://go.microsoft.com/fwlink/?linkid=3052\&kbid=288175](http://go.microsoft.com/fwlink/?linkid=3052%26kbid=288175)) を参照してください。
+受信者ポリシーの名前付けに関する問題の詳細については、Microsoft サポート技術情報の文書番号 288175「\[XCON\] 受信者ポリシーは組織のサーバーの FQDN とは異なる必要がある (5.4.8 NDR)」([http://go.microsoft.com/fwlink/?linkid=3052\&kbid=288175](http://go.microsoft.com/fwlink/?linkid=3052&kbid=288175)) を参照してください。
 

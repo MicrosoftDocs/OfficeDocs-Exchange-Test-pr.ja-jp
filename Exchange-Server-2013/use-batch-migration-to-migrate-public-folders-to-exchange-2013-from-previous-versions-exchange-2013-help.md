@@ -75,7 +75,7 @@ Exchange 2003 からパブリック フォルダーを直接移行すること�
 
   - Exchange 2007 では、Exchange 組織の管理役割または Exchange サーバー管理者の役割の割り当てが必要です。さらに、パブリック フォルダー管理者の役割と、対象サーバーに対するローカルの Administrators グループの割り当ても必要です。詳細については、「[管理者の役割にユーザーまたはグループを追加する方法](https://go.microsoft.com/fwlink/p/?linkid=81779)」を参照してください。
 
-  - Exchange 2007 サーバーで [Windows PowerShell 2.0 および WinRM 2.0 for Windows Server 2008 x64 Edition](http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=968930) にアップグレードします。
+  - Exchange 2007 サーバーで [Windows PowerShell 2.0 および WinRM 2.0 for Windows Server 2008 x64 Edition](http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=968930) にアップグレードします。
 
   - 移行する前に、[パブリック フォルダーの制限](limits-for-public-folders-exchange-2013-help.md)を考慮する必要があります。
 

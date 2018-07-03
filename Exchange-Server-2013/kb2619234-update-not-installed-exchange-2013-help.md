@@ -29,7 +29,7 @@ Exchange 2013 セットアップ プログラムは、Outlook Anywhere (以前�
 
 
 
-Microsoft サポート技術情報の記事 KB2619234 ([RPC over HTTP で使用する関連の Cookie/GUID を Windows 7 と Windows Server 2008 R2 の RPC 層でも使用できるようにする修正プログラムが利用できます](https://go.microsoft.com/fwlink/?linkid=3052%26kbid=2619234))
+Microsoft サポート技術情報の記事 KB2619234 ([RPC over HTTP で使用する関連の Cookie/GUID を Windows 7 と Windows Server 2008 R2 の RPC 層でも使用できるようにする修正プログラムが利用できます](https://go.microsoft.com/fwlink/?linkid=3052&kbid=2619234))
 
 問題がある場合は、Exchange のフォーラムで質問してください。 次のフォーラムにアクセスしてください。[Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612)、 [Exchange Online](https://go.microsoft.com/fwlink/p/?linkid=267542)、 または [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkid=285351)。
 

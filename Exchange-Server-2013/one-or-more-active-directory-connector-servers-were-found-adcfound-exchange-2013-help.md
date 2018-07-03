@@ -60,9 +60,9 @@ Exchange 2007 または Exchange 2010 のセットアップ プログラムを�
 
 ADC の詳細については、以下の Microsoft サポート技術情報の文書を参照してください。
 
-  - 文書番号 325300、Active Directory コネクタの概要に関するサポート Web キャスト（[https://go.microsoft.com/fwlink/?linkid=3052\&kbid=325300](https://go.microsoft.com/fwlink/?linkid=3052%26kbid=325300))
+  - 文書番号 325300、Active Directory コネクタの概要に関するサポート Web キャスト（[https://go.microsoft.com/fwlink/?linkid=3052\&kbid=325300](https://go.microsoft.com/fwlink/?linkid=3052&kbid=325300))
 
-  - 文書番号 325221、Microsoft の詳細な Active Directory コネクタに関するサポート Web キャスト （[https://go.microsoft.com/fwlink/?linkid=3052\&kbid=325221](https://go.microsoft.com/fwlink/?linkid=3052%26kbid=325221))
+  - 文書番号 325221、Microsoft の詳細な Active Directory コネクタに関するサポート Web キャスト （[https://go.microsoft.com/fwlink/?linkid=3052\&kbid=325221](https://go.microsoft.com/fwlink/?linkid=3052&kbid=325221))
 
-  - 文書番号 312632「\[HOW TO\] Exchange 2000 Server で Active Directory コネクタをインストールおよび構成する方法」([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=312632](https://go.microsoft.com/fwlink/?linkid=3052%26kbid=312632))
+  - 文書番号 312632「\[HOW TO\] Exchange 2000 Server で Active Directory コネクタをインストールおよび構成する方法」([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=312632](https://go.microsoft.com/fwlink/?linkid=3052&kbid=312632))
 

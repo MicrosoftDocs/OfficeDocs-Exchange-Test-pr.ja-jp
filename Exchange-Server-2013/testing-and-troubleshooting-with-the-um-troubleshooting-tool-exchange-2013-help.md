@@ -47,7 +47,7 @@ Microsoft Exchange 2010 UM トラブルシューティング ツールは **Test
 
   - Windows Vista または Windows Server 2008 コンピューターでツールを実行する場合、Windows Vista x64 および Windows Server 2008 x64 用の Microsoft .NET Framework 3.5 ファミリの更新プログラムを更新します。更新プログラムをダウンロードするには、「[Windows Vista x64 および Windows Server 2008 x64 用 Microsoft .NET Framework 3.5 ファミリの更新プログラム](https://go.microsoft.com/fwlink/p/?linkid=178998)」を参照してください。
 
-  - Windows Windows リモート管理 (WinRM) 2.0 および Windows PowerShell V2 (Windows6.0-KB968930.msu)。詳細については、Microsoft サポート技術情報の文書番号 968930「[Windows 管理フレームワークのコア パッケージ (Windows PowerShell 2.0 および WinRM 2.0)](http://go.microsoft.com/fwlink/?linkid=3052%26kbid=968930)」を参照してください。
+  - Windows Windows リモート管理 (WinRM) 2.0 および Windows PowerShell V2 (Windows6.0-KB968930.msu)。詳細については、Microsoft サポート技術情報の文書番号 968930「[Windows 管理フレームワークのコア パッケージ (Windows PowerShell 2.0 および WinRM 2.0)](http://go.microsoft.com/fwlink/?linkid=3052&kbid=968930)」を参照してください。
 
   - Unified Communications Managed AP1 2.0、コア ランタイム (64 ビット)。   UcmaRuntimeWebDownloadX64.msi のプログラム ファイルをダウンロードするには、「[Unified Communications Managed API 2.0、Core ランタイム (64-bit)](https://go.microsoft.com/fwlink/p/?linkid=198175)」を参照してください。
 

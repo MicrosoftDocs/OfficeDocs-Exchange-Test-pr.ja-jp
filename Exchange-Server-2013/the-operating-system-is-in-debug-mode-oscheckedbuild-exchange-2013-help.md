@@ -41,5 +41,5 @@ Windows デバッグ モードには、Boot.ini ファイルに **/debug** パ�
 
 5.  ファイルを保存して閉じてから、Exchange Server コンピューターを再起動して変更を有効にします。
 
-Boot.ini ファイルで使用できるパラメーターの詳細については、Microsoft サポート技術情報の文書番号 833721「Windows XP および Windows Server 2003 の Boot.ini ファイルで使用可能なスイッチ オプション」([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=833721](https://go.microsoft.com/fwlink/?linkid=3052%26kbid=833721)) を参照してください。
+Boot.ini ファイルで使用できるパラメーターの詳細については、Microsoft サポート技術情報の文書番号 833721「Windows XP および Windows Server 2003 の Boot.ini ファイルで使用可能なスイッチ オプション」([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=833721](https://go.microsoft.com/fwlink/?linkid=3052&kbid=833721)) を参照してください。
 

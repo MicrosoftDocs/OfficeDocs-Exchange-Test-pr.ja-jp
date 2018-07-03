@@ -27,5 +27,5 @@ Exchange 2007 セットアップ プログラムを実行するには、setup �
 
 この問題を解決するには、セットアップ プログラムを再度実行して、**/DomainController: \<***FQDN of thestatically mapped domain controller***\>** パラメーターで静的に割り当てられたドメイン コント ローラーを指定します。
 
-DSAccess およびディレクトリ サービスの検出の詳細については、Microsoft サポート技術情報の文書番号 250570「ディレクトリ サービス サーバーの検出と DSAccess の使用法」([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=250570](https://go.microsoft.com/fwlink/?linkid=3052%26kbid=250570)) を参照してください。
+DSAccess およびディレクトリ サービスの検出の詳細については、Microsoft サポート技術情報の文書番号 250570「ディレクトリ サービス サーバーの検出と DSAccess の使用法」([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=250570](https://go.microsoft.com/fwlink/?linkid=3052&kbid=250570)) を参照してください。
 

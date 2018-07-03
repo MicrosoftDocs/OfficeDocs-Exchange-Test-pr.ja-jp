@@ -54,11 +54,11 @@ Microsoft Exchange セットアップ プログラムを実行するには、既
 
 受信者更新サービスの詳細については、以下の Microsoft サポート技術情報の文書を参照してください。
 
-  - 「受信者更新サービスで受信者ポリシーを適用する方法」([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=328738](https://go.microsoft.com/fwlink/?linkid=3052%26kbid=328738))
+  - 「受信者更新サービスで受信者ポリシーを適用する方法」([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=328738](https://go.microsoft.com/fwlink/?linkid=3052&kbid=328738))
 
-  - 「受信者更新サービスにアドレス一覧を生成させる方法」([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=253828](https://go.microsoft.com/fwlink/?linkid=3052%26kbid=253828))
+  - 「受信者更新サービスにアドレス一覧を生成させる方法」([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=253828](https://go.microsoft.com/fwlink/?linkid=3052&kbid=253828))
 
-  - 「Exchange 受信者更新サービスの進行状況を確認する方法」([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=246127](https://go.microsoft.com/fwlink/?linkid=3052%26kbid=246127))
+  - 「Exchange 受信者更新サービスの進行状況を確認する方法」([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=246127](https://go.microsoft.com/fwlink/?linkid=3052&kbid=246127))
 
-  - 「Exchange 受信者更新サービスで行われるタスク」([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=253770](https://go.microsoft.com/fwlink/?linkid=3052%26kbid=253770))
+  - 「Exchange 受信者更新サービスで行われるタスク」([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=253770](https://go.microsoft.com/fwlink/?linkid=3052&kbid=253770))
 
