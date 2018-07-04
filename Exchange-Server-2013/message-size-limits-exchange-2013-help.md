@@ -117,18 +117,9 @@ Exchange 組織のメッセージ サイズの制限を計画するときには�
 </tr>
 <tr class="odd">
 <td><p>メッセージあたりの最大受信者数</p>
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ126338.note(EXCHG.150).gif" title="メモ" alt="メモ" />メモ:</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td></td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 
 
 </td>
 <td><p>5000</p></td>
