@@ -520,14 +520,11 @@ Exchange 2013 UM にアップグレードする場合は、テレフォニー �
 
 Exchange 2013 UM にアップグレードするプロセスの最後の手順は、着信呼び出し (ユーザーにボイス メールを残したい発信者、Outlook Voice Access に電話をかけた UM が有効なユーザーからの呼び出し、UM 自動応答に電話をかけた発信者からの呼び出しなど) を Exchange 2013 クライアント アクセス サーバーに送信するように VoIP ゲートウェイ、IP PBX、または SIP 対応 PBX を構成することです。これらすべての呼び出しが最初に VoIP ゲートウェイ、IP PBX、または SIP 対応 PBX で受信されてから、Exchange 2013 組織内の Exchange 2013 クライアント アクセス サーバーに転送されます。詳細については、以下のリソースを参照してください。
 
-  -  
-    [UM サービス](um-services-exchange-2013-help.md)
+  -  [UM サービス](um-services-exchange-2013-help.md)
 
-  -  
-    [サポートされる VoIP ゲートウェイ、IP Pbx、および PBX の構成に関する注意事項](configuration-notes-for-supported-voip-gateways-ip-pbxs-and-pbxs-exchange-2013-help.md)
+  -  [サポートされる VoIP ゲートウェイ、IP Pbx、および PBX の構成に関する注意事項](configuration-notes-for-supported-voip-gateways-ip-pbxs-and-pbxs-exchange-2013-help.md)
 
-  -  
-    [Exchange 2013 のテレフォニー アドバイザー](telephony-advisor-for-exchange-2013-exchange-2013-help.md)
+  -  [Exchange 2013 のテレフォニー アドバイザー](telephony-advisor-for-exchange-2013-exchange-2013-help.md)
 
 ## 手順 14:Exchange 2007 ユニファイド メッセージング サーバー上の通話応答を無効にする
 

@@ -124,12 +124,11 @@ _<strong>トピックの最終更新日:</strong>2016-04-29_
 
   - **メッセージ:「サーバー\<サーバー名\>上で、既定の受信コネクタが検出できません」**   次の属性に一覧表示されている Exchange サーバー上の受信コネクタが、IPv4 と IPv6 の両方のプロトコルを TCP ポート 25 でリッスンしていない場合、このメッセージが表示されます。`(Get-HybridConfiguration).ReceivingTransportServers.`
     
-      -  
-        `(Get-HybridConfiguration).ReceivingTransportServers.` の実行時に一覧表示されている Exchange サーバー上の受信コネクタのバインディングが適切であることを確認するには、Exchange 管理シェル で次のコマンドを実行します。
+      -    `(Get-HybridConfiguration).ReceivingTransportServers.` の実行時に一覧表示されている Exchange サーバー上の受信コネクタのバインディングが適切であることを確認するには、Exchange 管理シェル で次のコマンドを実行します。
         
             Get-ReceiveConnector -Server <Server Name> | FT Identity, Bindings
         
-        Exchange サーバーの次のエントリが一覧表示されます: `{[::]:25, 0.0.0.0:25}`
+            Exchange サーバーの次のエントリが一覧表示されます: `{[::]:25, 0.0.0.0:25}`
         
-        このバインディングが表示されない場合、**Set-ReceiveConnector** コマンドレットの *Bindings* パラメータを使って、受信コネクタに追加する必要があります。詳細については、「[Set-ReceiveConnector](https://technet.microsoft.com/ja-jp/library/bb125140\(v=exchg.150\))」を参照してください。
+            このバインディングが表示されない場合、**Set-ReceiveConnector** コマンドレットの *Bindings* パラメータを使って、受信コネクタに追加する必要があります。詳細については、「[Set-ReceiveConnector](https://technet.microsoft.com/ja-jp/library/bb125140\(v=exchg.150\))」を参照してください。
 
