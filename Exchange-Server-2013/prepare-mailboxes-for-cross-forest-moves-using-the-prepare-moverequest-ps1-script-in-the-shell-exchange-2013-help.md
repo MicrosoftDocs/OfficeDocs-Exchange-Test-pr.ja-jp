@@ -13,11 +13,11 @@ ms.translationtype: MT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2017-11-22_
+_**トピックの最終更新日:** 2017-11-22_
 
-**概要:** Exchange 管理シェルの準備-MoveRequest.ps1 スクリプトを使用してフォレスト間のメールボックスの移動とExchange 2013での移行を管理する方法について説明します。
+**概要:**  Exchange 管理シェルの準備-MoveRequest.ps1 スクリプトを使用してフォレスト間のメールボックスの移動とExchange 2013での移行を管理する方法について説明します。
 
 マイクロソフトのExchange 2013には、メールボックスを移動し、 **New-MoveRequest** 、 **New-MigrationBatch**コマンドレットを使用して、移行がサポートされています。Exchange 管理センター (EAC) 経由でメールボックスを移動することもできます。Exchange 2013ターゲット フォレストに、 Exchangeのソース フォレストから、Exchange 2010 または Exchange 2013 メールボックスを移動できます。
 

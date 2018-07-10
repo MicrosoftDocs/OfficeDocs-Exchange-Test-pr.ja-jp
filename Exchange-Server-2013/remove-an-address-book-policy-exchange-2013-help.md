@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Server 2013_
 
 アドレス帳ポリシー (ABP) を削除するには、この手順を使用します。
 

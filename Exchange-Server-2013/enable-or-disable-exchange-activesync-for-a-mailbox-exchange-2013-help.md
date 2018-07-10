@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Server 2013_
 
 EAC またはシェルを使用して、ユーザー メールボックスの Microsoft Exchange ActiveSync を有効または無効にすることができます。Exchange ActiveSync は、モバイル デバイスと Exchange メールボックスを同期できるようにするクライアント プロトコルです。既定では、Exchange ActiveSync は、ユーザー メールボックスの作成時に有効になります。詳細については、「[Exchange ActiveSync](exchange-activesync-exchange-2013-help.md)」を参照してください。
 

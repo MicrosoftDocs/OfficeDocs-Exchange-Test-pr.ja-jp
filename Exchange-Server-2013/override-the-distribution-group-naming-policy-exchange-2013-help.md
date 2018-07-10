@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Server 2013_
 
 配布グループのグループの名前付けポリシーが適用されるのは、ユーザーが作成したグループだけです。 管理者が Exchange 管理センター (EAC) を使用して配布グループを作成した場合は、グループの名前付けポリシーは無視されます。そのグループの名前には、ポリシーは適用されません。
 
@@ -66,10 +66,12 @@ Microsoft Exchange でこのグループが作成されると、*Name* パラメ
 ## 正常な動作を確認する方法
 
 グループの名前付けポリシーを無視する配布グループを正常に作成、または名前変更したことを確認するには、以下のコマンドを実行します。
-
-    Get-DistributionGroup <Name> | FL DisplayName
-
-    Get-OrganizationConfig | FL DistributionGroupNamingPolicy
+```
+Get-DistributionGroup <Name> | FL DisplayName
+```
+```
+Get-OrganizationConfig | FL DistributionGroupNamingPolicy
+```
 
 グループの表示名の形式が組織のグループの名前付けポリシーで強制されるものと異なる場合、正常に完了しています。
 

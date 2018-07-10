@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2016-12-09_
+_**トピックの最終更新日:** 2016-12-09_
 
 ここでは、Exchange リソース フォレストのトポロジに Microsoft Exchange 2013 を展開する方法について説明します。Exchange リソース フォレストは、専用 Exchange フォレストとも呼ばれます。ここでは、既存の Exchange 2013 トポロジが存在しないことを前提としています。
 

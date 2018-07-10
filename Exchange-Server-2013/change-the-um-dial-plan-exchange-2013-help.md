@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 ユニファイド メッセージング (UM) が有効なユーザーを別の UM ダイヤル プランに移動したり、またはユーザーに関連付けられたダイヤル プランを変更したりすることが必要になる場合があります。 たとえば、UM が有効なユーザーを電話の内線番号ダイヤル プランから SIP URI ダイヤル プランに移動する必要がある場合があります。
 

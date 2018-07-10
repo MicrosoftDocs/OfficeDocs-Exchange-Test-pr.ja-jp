@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 **概要**:パブリック フォルダーを設定する方法 (EAC でそれらにアクセス許可を割り当てることを含む)。
 

@@ -53,7 +53,7 @@ _<strong>トピックの最終更新日:</strong>2016-11-11_
     
         Set-OrganizationRelationship -TargetOWAUrl http://cloudowa.contoso.com/owa
     
-    **メモ:**
+    **メモ:** 
     
       - http を使い、https は使いません。
     

@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Online Protection, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Online Protection, Exchange Server 2013_
 
 Exchange のメール フロー ルール (トランスポート ルールとも呼ばれます) を作成するたびに、まずテストしてから有効にする必要があります。テストすると、作成した条件が誤っていて意図を正確に反映していなかったり、予期しない方法で他のルールと相互に影響したりする場合に、想定しない結果になるのを避けることができます。
 

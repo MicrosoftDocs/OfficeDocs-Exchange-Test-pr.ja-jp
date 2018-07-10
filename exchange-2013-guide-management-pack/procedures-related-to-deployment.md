@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**トピックの最終更新日:** 2013-04-17_
+_**トピックの最終更新日:**  2013-04-17_
 
 このセクションでは、Exchange Server 2013 管理パックをインポートする場合の参考用として使用可能な手順について説明します。展開後の処理に関連した手順については、「[Procedures related to post-deployment operation](procedures-related-to-post-deployment-operation.md)」を参照してください。
 

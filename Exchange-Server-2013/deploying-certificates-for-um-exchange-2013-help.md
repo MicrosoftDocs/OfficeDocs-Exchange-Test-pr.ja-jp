@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Server 2013, Exchange Server 2016_
 
-_**トピックの最終更新日:**2013-04-29_
+_**トピックの最終更新日:** 2013-04-29_
 
 相互トランスポート層セキュリティ (相互 TLS) を使用して、ユニファイド メッセージング (UM) で、Microsoft Exchange 2013 サーバー間、VoIP ゲートウェイ、IP PBX、セッション ボーダー コントローラー (SBC) および Microsoft Lync Server で送信されるデータを暗号化することができます。証明書は、証明書の所有者の ID を、情報を電子的に暗号化し署名するために使用される一対の電子鍵 (パブリックとプライベート) にバインドします。
 

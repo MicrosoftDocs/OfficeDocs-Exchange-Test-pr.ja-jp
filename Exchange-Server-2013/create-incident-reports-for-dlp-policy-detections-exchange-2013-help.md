@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Server 2013_
 
-_**トピックの最終更新日:**2015-04-07_
+_**トピックの最終更新日:** 2015-04-07_
 
 Exchange Server 2013 では、DLP ポリシー ルール セット内にインシデント レポートを作成する操作を確立できます。また、レポートの送信先と元のメッセージに対する処理も指定できます。インシデント レポートには、次の情報を含めることができます。
 

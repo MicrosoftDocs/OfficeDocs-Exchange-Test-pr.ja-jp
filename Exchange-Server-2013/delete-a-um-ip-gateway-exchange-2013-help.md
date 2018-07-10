@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 ユニファイド メッセージング (UM) IP ゲートウェイを削除すると、Exchange サーバーはそれ以降、VoIP (Voice over IP) ゲートウェイ、セッション開始プロトコル (SIP) が有効な構内交換機 (PBX)、IP PBX、または UM IP ゲートウェイに関連付けられたセッション ボーダー コントローラー (SBC) からの着信呼び出しを受け付けることができなくなります。
 

@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 既存のユニファイド メッセージング (UM) ダイヤル プランを削除できます。UM ダイヤル プランを削除すると、UM IP ゲートウェイ、UM メールボックス ポリシー、および UM ハント グループに使用できなくなります。UM メールボックス ポリシー、UM 自動応答、UM IP ゲートウェイ、または UM ハント グループに参照されている、もしくは関連付けられた UM ダイヤル プランは削除できません。
 

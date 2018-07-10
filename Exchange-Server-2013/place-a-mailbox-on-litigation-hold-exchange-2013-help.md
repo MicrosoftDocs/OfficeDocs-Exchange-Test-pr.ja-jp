@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Server 2013_
 
 メールボックスを訴訟ホールドの対象にすると、削除済みアイテムと変更されたアイテムの元のバージョンを含む、すべてのメールボックスのコンテンツが保持されます。ユーザーのメールボックスを訴訟ホールドの対象にすると、ユーザーのアーカイブ メールボックス (有効である場合) もホールドの対象になります。削除済みアイテムと変更されたアイテムは、指定した期間またはメールボックスを訴訟ホールドの対象から外すまで、保持されます。[インプレース電子情報開示 (eDiscovery)](in-place-ediscovery-exchange-2013-help.md) 検索で、このようなメールボックスのすべてのアイテムが返されます。
 
@@ -146,17 +146,22 @@ _**適用先:**Exchange Online, Exchange Server 2013_
   - すべてのメールボックスを保持の対象にする上記のコマンドでは、すべてのユーザーのメールボックスを返す受信者フィルターが使用されます。特定のメールボックスを訴訟ホールドの対象とするために、その他の受信者プロパティを使用して、**Set-Mailbox** コマンドレットにパイプ処理できるそれらのメールボックスの一覧を返すことができます。
     
     以下に、**Get-Mailbox** コマンドレットと **Get-Recipient** コマンドレットを使用して、共通のユーザー属性またはメールボックス属性に基づいてメールボックスのサブセットを返す例を示します。これらの例では、関連するメールボックスのプロパティ (*CustomAttributeN* や *Department* など) が入力されていることを想定しています。
-    
-        Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'CustomAttribute15 -eq "OneYearLitigationHold"'
-    
-        Get-Recipient -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'Department -eq "HR"'
-    
-        Get-Recipient -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'PostalCode -eq "98052"'
-    
-        Get-Recipient -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'StateOrProvince -eq "WA"'
-    
-        Get-Mailbox -ResultSize Unlimited -Filter {RecipientTypeDetails -ne "DiscoveryMailbox"}
-    
+    ```
+    Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'CustomAttribute15 -eq "OneYearLitigationHold"'
+    ```
+    ```
+    Get-Recipient -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'Department -eq "HR"'
+    ```
+    ```
+    Get-Recipient -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'PostalCode -eq "98052"'
+    ```
+    ```
+    Get-Recipient -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'StateOrProvince -eq "WA"'
+    ```
+    ```
+    Get-Mailbox -ResultSize Unlimited -Filter {RecipientTypeDetails -ne "DiscoveryMailbox"}
+    ```
+
     フィルターで他のユーザーのメールボックス プロパティを使用して、メールボックスを含めたり、除外したりすることができます。詳細については、「[-Filter パラメーターのフィルター可能なプロパティ](https://technet.microsoft.com/ja-jp/library/bb738155\(v=exchg.150\))」を参照してください。
 
 ページのトップへ

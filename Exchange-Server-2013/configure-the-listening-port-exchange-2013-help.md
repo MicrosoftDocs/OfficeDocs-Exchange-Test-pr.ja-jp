@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 ユニファイド メッセージング (UM) IP ゲートウェイでセッション開始プロトコル (SIP) 要求をリッスンするのに使用する TCP ポートを構成できます。既定では、UM IP ゲートウェイを作成する際に、TCP SIP リスニング ポート番号が 5060 に設定されます。EAC を使用して TCP SIP リスニング ポートを構成または変更することはできません。TCP SIP リスニング ポート番号は、**Set-UMIPGateway** コマンドレットを使用して構成する必要があります。
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2016-12-09_
+_**トピックの最終更新日:** 2016-12-09_
 
 Exchange Server 2013 の Exchange ActiveSync クライアント プロトコルについて説明します。Exchange ActiveSync の機能については、セキュリティ機能、管理できる事項、セキュリティで保護する方法、Windows Phone 7 と同期する際に問題を回避する方法を取り上げます。
 

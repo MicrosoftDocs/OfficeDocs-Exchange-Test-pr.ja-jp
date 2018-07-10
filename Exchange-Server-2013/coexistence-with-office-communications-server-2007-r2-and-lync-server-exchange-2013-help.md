@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Server 2013, Exchange Server 2016_
 
-_**トピックの最終更新日:**2015-03-09_
+_**トピックの最終更新日:** 2015-03-09_
 
 Communications Server 2007 R2 および Lync Server は、インスタント メッセージング (IM)、プレゼンス、マルチパーティ IM を含む、数多くのエンド ユーザー機能を提供します。また、これらのボイス メール機能は、Exchange ユニファイド メッセージング (UM)と統合できます。Lync Server 2010 または 2013 を統合する展開では、ユーザーをエンタープライズ VoIP に対して有効にすることができます。これにより、ボイス メールが有効なユーザーは Lync Server コンポーネントを使用してそのボイス メールにアクセスできます。
 

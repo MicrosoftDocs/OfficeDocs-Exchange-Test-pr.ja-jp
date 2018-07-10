@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 ユニファイド メッセージング (UM) ダイヤル プランでボイス オーバー IP (VoIP) セキュリティを有効にすることができます。既定では、UM ダイヤル プランを作成すると、セキュリティで保護されていないモードまたは暗号化なしが使用されます。Exchange サーバーは、1 つまたは複数の UM および各種 VoIP セキュリティ設定のダイヤル プランの呼び出しに応答できます。Office 365 と Exchange Online で、セキュリティで保護されたモードは必須であり、無効にすることはできません。
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2015-03-09_
+_**トピックの最終更新日:** 2015-03-09_
 
 ユーザーは Microsoft Exchange ActiveSync を使用して、携帯電話、タブレット、および他のポータブル デバイス上の電子メール、予定表、連絡先、およびタスクの情報にアクセスできます。Microsoft Exchange ActiveSync を使用して、署名や自動返信を設定することもできます。さまざまな携帯電話やモバイル デバイスが Exchange ActiveSync で動作します。
 

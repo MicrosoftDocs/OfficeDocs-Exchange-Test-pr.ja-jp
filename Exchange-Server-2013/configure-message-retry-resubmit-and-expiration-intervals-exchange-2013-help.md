@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2014-12-16_
+_**トピックの最終更新日:** 2014-12-16_
 
 Microsoft Exchange Server 2013 では、メールボックス サーバーおよびエッジ トランスポート サーバーのトランスポート サービスで、メッセージの再試行、再送信、および有効期限の間隔を構成できます。これらの設定の詳細については、「[メッセージの再試行、再送信、および有効期限の間隔](message-retry-resubmit-and-expiration-intervals-exchange-2013-help.md)」を参照してください。
 

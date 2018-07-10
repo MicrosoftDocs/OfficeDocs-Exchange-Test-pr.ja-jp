@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 ユニファイド メッセージング (UM) が有効になっていないユーザーからの呼び出しを有効または無効にすることができます。 既定では、認証されていない発信者からの着信呼び出しを、自動応答を通じて UM が有効なユーザーに転送することは許可されます。 このオプションが有効になっていると、組織外のユーザーは、UM が有効なユーザーに対する呼び出しを転送できるようになります。
 

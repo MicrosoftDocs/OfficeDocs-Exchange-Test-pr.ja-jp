@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
 OAB の作成後または OAB 設定の変更後は、OAB 生成 (OABGen) プロセスが完了するまでユーザーはその変更を使用できません。
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2015-03-09_
+_**トピックの最終更新日:** 2015-03-09_
 
 `Organization Transport Settings` 管理役割によって、管理者は組織全体にわたるトランスポート設定を管理できます。これにはシステム メッセージ、Active Directory サイト構成、および Exchange 組織全体のトランスポート構成設定が含まれます。
 

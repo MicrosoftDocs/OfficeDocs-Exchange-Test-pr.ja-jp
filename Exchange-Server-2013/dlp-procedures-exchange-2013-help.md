@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2015-01-07_
+_**トピックの最終更新日:** 2015-01-07_
 
 次の手順を使用して、メッセージング環境でのデータ損失防止 (DLP) ソリューションの使用を開始できます。DLPの概念および目的の詳細については、「[データ損失防止](technical-overview-of-dlp-data-loss-prevention-in-exchange.md)」を参照してください。
 

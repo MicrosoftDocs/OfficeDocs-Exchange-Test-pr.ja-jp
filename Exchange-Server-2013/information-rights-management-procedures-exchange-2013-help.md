@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2013-11-01_
+_**トピックの最終更新日:** 2013-11-01_
 
 [内部メッセージの IRM を有効または無効にする](enable-or-disable-irm-for-internal-messages-exchange-2013-help.md)
 

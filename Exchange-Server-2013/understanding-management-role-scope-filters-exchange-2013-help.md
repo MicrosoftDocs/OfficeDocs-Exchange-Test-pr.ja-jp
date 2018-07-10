@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Server 2013_
 
-_**トピックの最終更新日:**2015-03-09_
+_**トピックの最終更新日:** 2015-03-09_
 
 管理役割スコープ フィルターを使用すると、容易にカスタマイズできる管理スコープを定義できます。スコープ フィルターを使用すると、受信者、データベース、サーバーを区分して、管理者がアクセスする必要があるオブジェクトのみ管理できるようにするスコープを作成できます。スコープ フィルターは、ほぼすべての受信者、データベース、またはサーバー オブジェクトのプロパティを使用できます。
 
@@ -111,7 +111,7 @@ Microsoft Exchange Server 2013 でのフィルター処理カスタム スコー
 <td><p>IT Manager (True)</p></td>
 <td><p>True (<strong>Title</strong> が True と評価されたため)。<strong>City</strong> と <strong>Department</strong> の比較の結果は、破棄されます。<strong>Title</strong> が True と評価され、フィルター クエリ条件が満たされたためです。</p>
 
-> [!NOTE]
+> [!NOTE]  
 > IT Manager は、フィルター クエリに一致します。その理由は、<STRONG>Like</STRONG> 比較演算子が使用されていて、フィルター クエリにワイルドカード文字 (*) が使用されているため、部分文字列に一致するからです。
 
 

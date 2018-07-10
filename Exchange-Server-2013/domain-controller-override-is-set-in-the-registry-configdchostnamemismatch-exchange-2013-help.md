@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server_
+_**適用先:** Exchange Server_
 
-_**トピックの最終更新日:**2016-12-15_
+_**トピックの最終更新日:** 2016-12-15_
 
 このトピックの内容は、Microsoft Exchange Server 2013 向けに更新されていません。まだ更新されていませんが、そのままで Exchange 2013 にも適用できる可能性があります。ヘルプが必要な場合は、以下のコミュニティ リソースを確認してください。
 
@@ -27,5 +27,5 @@ Exchange 2007 セットアップ プログラムを実行するには、setup �
 
 この問題を解決するには、セットアップ プログラムを再度実行して、**/DomainController: \<***FQDN of thestatically mapped domain controller***\>** パラメーターで静的に割り当てられたドメイン コント ローラーを指定します。
 
-DSAccess およびディレクトリ サービスの検出の詳細については、Microsoft サポート技術情報の文書番号 250570「ディレクトリ サービス サーバーの検出と DSAccess の使用法」([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=250570](https://go.microsoft.com/fwlink/?linkid=3052%26kbid=250570)) を参照してください。
+DSAccess およびディレクトリ サービスの検出の詳細については、Microsoft サポート技術情報の文書番号 250570「ディレクトリ サービス サーバーの検出と DSAccess の使用法」([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=250570](https://go.microsoft.com/fwlink/?linkid=3052&kbid=250570)) を参照してください。
 

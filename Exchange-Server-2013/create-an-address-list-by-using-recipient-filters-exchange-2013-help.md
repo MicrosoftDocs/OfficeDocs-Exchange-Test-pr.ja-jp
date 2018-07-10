@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Server 2013_
 
-_**トピックの最終更新日:**2014-12-16_
+_**トピックの最終更新日:** 2014-12-16_
 
 このトピックでは、受信者フィルターを使用してアドレス一覧を作成する方法について説明します。アドレス一覧の詳細については、「[アドレス一覧](address-lists-exchange-2013-help.md)」を参照してください。
 

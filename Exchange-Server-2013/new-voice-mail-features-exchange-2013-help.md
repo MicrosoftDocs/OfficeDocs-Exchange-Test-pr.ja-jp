@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Server 2013, Exchange Server 2016_
 
-_**トピックの最終更新日:**2016-12-09_
+_**トピックの最終更新日:** 2016-12-09_
 
 Microsoft Exchange Server 2013 のユニファイド メッセージング (UM) は、いくつかの機能が拡張され、アーキテクチャが変更されていますが、含まれる機能は Exchange 2010 および Exchange 2007 と同じです。ただし、ユニファイド メッセージングは、独立したサーバーの役割ではなくなりました。Exchange 2013 では、提供される音声関連機能の 1 つのコンポーネントです。
 

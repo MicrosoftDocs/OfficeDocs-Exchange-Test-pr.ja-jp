@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Server 2013_
 
 Exchange Server 2013 と Exchange Online では、アーカイブ ポリシーを使用して、個人 (オンプレミスの) アーカイブまたはクラウドベース アーカイブにメールボックス アイテムを自動的に移動できます。アーカイブ ポリシーは、**\[アーカイブに移動する\]** 保持アクションを使用する保持タグです。
 
@@ -23,9 +23,9 @@ Exchange セットアップは、**既定の MRM ポリシー** というアイ�
 
 アーカイブ関連のその他の管理タスクについては、以下を参照してください。
 
-  - **Exchange Server 2013:** [Exchange 2013 でインプレース アーカイブを管理する](manage-in-place-archives-in-exchange-2013-exchange-2013-help.md)
+  - **Exchange Server 2013:**  [Exchange 2013 でインプレース アーカイブを管理する](manage-in-place-archives-in-exchange-2013-exchange-2013-help.md)
 
-  - **Exchange Online:** [Exchange Online のアーカイブ メールボックスを有効または無効にする](https://technet.microsoft.com/ja-jp/library/jj984357\(v=exchg.150\))
+  - **Exchange Online:**  [Exchange Online のアーカイブ メールボックスを有効または無効にする](https://technet.microsoft.com/ja-jp/library/jj984357\(v=exchg.150\))
 
 
 > [!NOTE]
@@ -61,8 +61,7 @@ Exchange セットアップは、**既定の MRM ポリシー** というアイ�
 
 
 
-3.  
-    
+3.      
     **\[保持タグ\]**で、以下の設定を表示するか変更し、**\[保存\]**をクリックします。
     
       - **\[名前\]**   ページの一番上にあるボックスを使用してタグ名を表示または変更します。

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Server 2013_
 
-_**トピックの最終更新日:**2015-03-09_
+_**トピックの最終更新日:** 2015-03-09_
 
 メッセージを送受信する人とリソースは、常に、メッセージングおよびコラボレーション システムの中心に位置しています。Exchange 組織では、これらの人とリソースを*受信者*と呼びます。受信者は、Microsoft Exchange がメッセージを配信またはルーティングできる、Active Directory 内のメールが有効な任意のオブジェクトです。
 

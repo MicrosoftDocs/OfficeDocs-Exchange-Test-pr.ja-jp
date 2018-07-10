@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 UM 自動応答の **\[会社名\]** ボックスには、会社の名前を入力できます。既定では、会社名は入力されていません。会社名を入力した場合は、発信者がユニファイド メッセージング (UM) 自動応答を呼び出した際に、会社名を使用した既定の案内応答プロンプトが発信者に対して再生されます。
 

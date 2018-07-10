@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2013-09-30_
+_**トピックの最終更新日:** 2013-09-30_
 
 Microsoft Exchange Server 2013 で、*セーフリスト集約機能*とは、Microsoft Outlook と Exchange で共有されるスパム対策機能のことです。この機能は、スパム対策の宛先セーフリスト、差出人セーフリスト、受信拒否リスト、および Outlook ユーザーが構成する連絡先データからデータを収集して、このデータを Exchange のスパム対策エージェントが使用できるようにします。
 

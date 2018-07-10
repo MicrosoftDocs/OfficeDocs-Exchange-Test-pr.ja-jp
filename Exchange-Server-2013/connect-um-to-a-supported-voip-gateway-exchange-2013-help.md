@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Server 2013, Exchange Server 2016_
 
-_**トピックの最終更新日:**2013-04-19_
+_**トピックの最終更新日:** 2013-04-19_
 
 ユニファイド メッセージング (UM) を設定する場合は、Exchange 組織の Microsoft Exchange ユニファイド メッセージング呼び出しルーター サービスを実行しているクライアント アクセス サーバーや Microsoft Exchange ユニファイド メッセージング サービスを実行しているメールボックス サーバーと通信する Voice over IP (VoIP) ゲートウェイ、IP PBX、SIP 対応 PBX、またはセッション ボーダー コントローラー (SBC) をネットワーク上で構成する必要があります。また、VoIP ゲートウェイ、IP PBX、SIP 対応 PBX、または SBC と通信するクライアント アクセス サーバーおよびメールボックス サーバーを構成する必要もあります。
 

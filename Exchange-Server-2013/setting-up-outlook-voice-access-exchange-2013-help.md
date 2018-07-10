@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 Microsoft Outlook Voice Access では、Exchange ユニファイド メッセージング (UM) が有効になっているユーザーは、アナログ電話、デジタル電話、または携帯電話から自分のメールボックスにアクセスできます。
 

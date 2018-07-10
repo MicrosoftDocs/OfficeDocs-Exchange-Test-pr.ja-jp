@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016, Office 365_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016, Office 365_
 
 **概要**:ユーザーによるパブリック フォルダーへのアクセスを可能にする、Outlook 2016 for Mac でサポートされている最新の Exchange トポロジ。
 

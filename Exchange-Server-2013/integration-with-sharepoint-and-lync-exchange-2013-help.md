@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2016-12-09_
+_**トピックの最終更新日:** 2016-12-09_
 
 MicrosoftExchange Server 2013 には、Microsoft SharePoint 2013 および Microsoft Lync 2013 と統合した多くの機能が含まれています。同様に、これらの製品は、サイト メールボックスの使用を可能にする、企業の電子情報開示やコラボレーションなどのシナリオを作成する一連の機能を提供します。
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server_
+_**適用先:** Exchange Server_
 
-_**トピックの最終更新日:**2016-12-09_
+_**トピックの最終更新日:** 2016-12-09_
 
 Microsoft Exchange Server 2013 のセットアップは、現在の Active Directory フォレストのフォレスト機能レベルが Windows Server 2003 ネイティブ以降でないこをと検出したため続行できません。Exchange 2013 をインストールする前に、フォレスト機能レベルを Windows Server 2003 以降に上げる必要があります。
 

@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Server 2013_
 
 データ損失防止 (DLP) ポリシー テンプレートを使用して、Microsoft Exchange 2013 の DLP ソリューションを開始することができます。DLP ポリシー テンプレートは、ポリシーのためのモデルです。テンプレートを選択して、独自のカスタマイズされた DLP ポリシーを構築するプロセスを開始できます。DLP ポリシー内で、事業上のデータ損失防止ニーズに合うようルールをカスタマイズできます。Microsoft からいくつかのポリシー テンプレートが提供されていますが、Exchange でデータ損失防止ソリューションを実施する方法は他にもあります。
 
@@ -45,26 +45,21 @@ Microsoft によって作成された DLP ポリシーを使用する
 
 Exchange 以外に、Microsoft が提供する特定の XML スキーマ定義に合うDLP ポリシー テンプレート ファイルを作成し、そのファイルをシステムにインポートしてこれを基に DLP ポリシーを作成することができます。固有のテンプレート ファイルを作成することにより、Microsoft がまだ提供していない DLP ポリシーのモデルを定義できます。これは、Exchange 管理センターを使用して DLP ポリシーを作成する手順（通常、ポリシー テンプレートが利用可能となった後に発生）とは異なります。Exchange から独立してポリシー テンプレートを作成した場合、これを使用してメッセージのスキャンを行うにはポリシー テンプレートのインポートが必要です。また、Exchange で Microsoft が定義するもの以外に、固有の機密情報の定義を作成できます。DLP ポリシー テンプレート ファイルと分類ルール パッケージには別々の XML スキーマ定義があります。これを開始するには、次の情報を参照してください。
 
-  -  
-    [独自の DLP テンプレートおよび情報の種類の定義](define-your-own-dlp-templates-and-information-types-exchange-2013-help.md)
+  -  [独自の DLP テンプレートおよび情報の種類の定義](define-your-own-dlp-templates-and-information-types-exchange-2013-help.md)
 
-  -  
-    [ファイルからカスタムの DLP ポリシー テンプレートをインポートする](import-a-custom-dlp-policy-template-from-a-file-exchange-2013-help.md)
+  -  [ファイルからカスタムの DLP ポリシー テンプレートをインポートする](import-a-custom-dlp-policy-template-from-a-file-exchange-2013-help.md)
 
 ## 既存のトランスポート ルールに DLP 機能を含める
 
 新しい DLP ポリシーを作成せずに、DLP 検出機能を従来のトランスポート ルールに組み込むことができます。以前のバージョンの Exchange で複雑なルール セットが作成されており、Exchange 2013 にこれらを複製、または機密情報の検出を追加したい場合は、Exchange 管理センターまたは Exchange 管理シェルのトランスポート ルール エディターを使用してこれら 2 つの機能を組み込むことができます。これを開始するには、次の情報を参照してください。
 
-  -  
-    [メール フローやトランスポート ルール](mail-flow-rules-transport-rules-in-exchange-2013-exchange-2013-help.md) (Exchange Server 2013)
+  -  [メール フローやトランスポート ルール](mail-flow-rules-transport-rules-in-exchange-2013-exchange-2013-help.md) (Exchange Server 2013)
 
-  -  
-    [Exchange Online のメール フロー ルール (トランスポート ルール)](https://technet.microsoft.com/ja-jp/library/jj919238\(v=exchg.150\)) (Exchange Online)
+  -  [Exchange Online のメール フロー ルール (トランスポート ルール)](https://technet.microsoft.com/ja-jp/library/jj919238\(v=exchg.150\)) (Exchange Online)
 
-  -  
-    [メール フロー ルールを管理します](manage-mail-flow-rules-exchange-2013-help.md)
+  -  [メール フロー ルールを管理します](manage-mail-flow-rules-exchange-2013-help.md)
     
-    [ポリシーとコンプライアンスのコマンドレット](https://technet.microsoft.com/ja-jp/library/dd298082\(v=exchg.150\))
+  -  [ポリシーとコンプライアンスのコマンドレット](https://technet.microsoft.com/ja-jp/library/dd298082\(v=exchg.150\))
 
 ## Microsoft によって作成された DLP ポリシーを使用する
 

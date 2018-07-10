@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Server 2013, Exchange Server 2016_
 
-_**トピックの最終更新日:**2012-11-16_
+_**トピックの最終更新日:** 2012-11-16_
 
 Microsoft 管理コンソール (MMC) でサービス スナップインを、またはコマンド プロンプトで cmd.exe を使用すると、メールボックス サーバー上で MicrosoftExchange ユニファイド メッセージング サービスを開始できます。既定では、MicrosoftExchange ユニファイド メッセージング サービスは、メールボックス サーバーのインストール後に開始されます。ただし、メールボックス サーバーをオフラインにしていてオンラインに戻す必要がある場合など、MicrosoftExchange ユニファイド メッセージング サービスを手動で再開することが必要になることもあります。
 

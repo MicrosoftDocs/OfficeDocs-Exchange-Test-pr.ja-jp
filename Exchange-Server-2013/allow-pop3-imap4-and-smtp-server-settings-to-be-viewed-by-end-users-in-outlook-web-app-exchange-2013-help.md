@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2012-11-28_
+_**トピックの最終更新日:** 2012-11-28_
 
 POP3 や IMAP4 を使用して MicrosoftExchange Server 2013 メールボックスに接続するユーザーがいる場合、ユーザーは接続するための正しいサーバー設定を知る必要があります。Exchange 2013 の既定のインストール後には、ユーザーは自分の着信 POP3/IMAP4 サーバー設定または送信 SMTP サーバー設定を確認できません。ただし、ユーザーが MicrosoftOutlook Web App を使用して自分の設定を確認できるように、Exchange を構成できます。
 

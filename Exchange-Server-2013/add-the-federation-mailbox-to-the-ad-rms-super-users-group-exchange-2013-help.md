@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2016-12-09_
+_**トピックの最終更新日:** 2016-12-09_
 
 以下の Microsoft Exchange Server 2013 Information Rights Management (IRM) 機能を有効にするには、フェデレーション メールボックス (Exchange 2013 セットアップで作成されるシステム メールボックス) を、組織の [Active Directory Rights Management サービス (AD RMS)](https://technet.microsoft.com/ja-jp/library/hh831364.aspx) クラスターのスーパー ユーザー グループに追加する必要があります。
 

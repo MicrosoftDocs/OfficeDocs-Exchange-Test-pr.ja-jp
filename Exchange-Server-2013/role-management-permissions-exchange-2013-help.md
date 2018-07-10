@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Server 2013_
 
-_**トピックの最終更新日:**2015-03-09_
+_**トピックの最終更新日:** 2015-03-09_
 
 管理役割を構成するタスクの実行に必要なアクセス許可は、実行する手順、または実行するコマンドレットによって異なります。管理役割の詳細については、「[管理の役割について](understanding-management-roles-exchange-2013-help.md)」を参照してください。
 

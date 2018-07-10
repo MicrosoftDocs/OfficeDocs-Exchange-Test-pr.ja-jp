@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 ユニファイド メッセージング (UM) とボイス メール、および UM とボイス メールが有効なユーザーの構成設定を表示または設定できます。たとえば、次の操作を実行できます。
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**トピックの最終更新日:**2016-12-09_
+_**トピックの最終更新日:** 2016-12-09_
 
 Microsoft Exchange 2010 UM トラブルシューティング ツールは **Test-ExchangeUMCallFlow** という名前の Exchange 管理シェル コマンドレットです。このコマンドレットを使用して、通話応答シナリオに特有な構成エラーを診断したり、社内および社内外にまたがる Microsoft Exchange Server 2010 Service Pack 1 (SP1) 以降の UM 展開の両方でボイスメールが適切に機能しているかどうかをテストしたりすることができます。このコマンドレットは、Microsoft Office の Microsoft Lync Server 2010 以降を使用した展開、または Vo IP ゲートウェイ、IP PBX、セッション ボーダー コントローラー (SBC) を使用した UM 展開で使用できます。
 
@@ -47,7 +47,7 @@ Microsoft Exchange 2010 UM トラブルシューティング ツールは **Test
 
   - Windows Vista または Windows Server 2008 コンピューターでツールを実行する場合、Windows Vista x64 および Windows Server 2008 x64 用の Microsoft .NET Framework 3.5 ファミリの更新プログラムを更新します。更新プログラムをダウンロードするには、「[Windows Vista x64 および Windows Server 2008 x64 用 Microsoft .NET Framework 3.5 ファミリの更新プログラム](https://go.microsoft.com/fwlink/p/?linkid=178998)」を参照してください。
 
-  - Windows Windows リモート管理 (WinRM) 2.0 および Windows PowerShell V2 (Windows6.0-KB968930.msu)。詳細については、Microsoft サポート技術情報の文書番号 968930「[Windows 管理フレームワークのコア パッケージ (Windows PowerShell 2.0 および WinRM 2.0)](http://go.microsoft.com/fwlink/?linkid=3052%26kbid=968930)」を参照してください。
+  - Windows Windows リモート管理 (WinRM) 2.0 および Windows PowerShell V2 (Windows6.0-KB968930.msu)。詳細については、Microsoft サポート技術情報の文書番号 968930「[Windows 管理フレームワークのコア パッケージ (Windows PowerShell 2.0 および WinRM 2.0)](http://go.microsoft.com/fwlink/?linkid=3052&kbid=968930)」を参照してください。
 
   - Unified Communications Managed AP1 2.0、コア ランタイム (64 ビット)。   UcmaRuntimeWebDownloadX64.msi のプログラム ファイルをダウンロードするには、「[Unified Communications Managed API 2.0、Core ランタイム (64-bit)](https://go.microsoft.com/fwlink/p/?linkid=198175)」を参照してください。
 

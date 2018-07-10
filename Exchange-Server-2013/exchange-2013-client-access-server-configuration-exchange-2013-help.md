@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2017-07-25_
+_**トピックの最終更新日:** 2017-07-25_
 
 Exchange 2013 クライアント アクセス サーバーをインストールした後、さまざまな構成タスクを実行できます。Exchange 2013 内のクライアント アクセス サーバーはクライアント プロトコルの処理を扱いませんが、仮想ディレクトリ設定および証明書設定など、いくつかの設定をクライアント アクセス サーバーに適用する必要があります。
 
@@ -72,11 +72,13 @@ Exchange 2013 の仮想ディレクトリを構成するには、次のコマン
         Set-OwaVirtualDirectory "<CAS2013>\OWA (Default Web Site)" -ExternalUrl https://mail.contoso.com/OWA
     
     Outlook Web App の仮想ディレクトリを設定したら、コマンド プロンプトで次のコマンドを実行します。
-    
-        Net stop IISAdmin /y
-    
-        Net start W3SVC
-
+      ```
+      Net stop IISAdmin /y
+      ```
+      ```
+      Net start W3SVC
+      ```
+      
 2.  外部 EAC アクセスを構成するには、Exchange 管理シェルで次のコマンドを実行します。
     
         Set-EcpVirtualDirectory "<CAS2013>\ECP (Default Web Site)" -ExternalUrl https://mail.contoso.com/ECP -InternalURL https://mail.contoso.com/ECP 

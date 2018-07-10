@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013, Office 365_
+_**適用先:** Exchange Server 2013, Office 365_
 
-_**トピックの最終更新日:**2012-10-11_
+_**トピックの最終更新日:** 2012-10-11_
 
 ドメインは、電子メール ディレクトリとメールボックスが設定された SMTP 名前空間を表します。Microsoft Exchange Server 2013 組織とやりとりするドメインを構成することにより、さまざまなドメインとの間で電子メールを Exchange で処理する方法を構成できます。
 

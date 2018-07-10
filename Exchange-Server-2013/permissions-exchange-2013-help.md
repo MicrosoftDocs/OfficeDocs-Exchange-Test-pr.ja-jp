@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server, Exchange Server 2013_
+_**適用先:** Exchange Server, Exchange Server 2013_
 
-_**トピックの最終更新日:**2015-03-09_
+_**トピックの最終更新日:** 2015-03-09_
 
 Microsoft Exchange Server 2013 には、役割ベースのアクセス制御 (RBAC) のアクセス許可モデルに基づく多数の定義済みアクセス許可のセットが含まれます。これをそのまま使用することで、管理者やユーザーに対して簡単にアクセス許可を与えることができます。Exchange 2013 のアクセス許可機能を使用できるため、新しい組織を迅速に稼動させることができます。
 

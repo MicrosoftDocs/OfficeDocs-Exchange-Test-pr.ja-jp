@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Server, Exchange Server 2013_
 
-_**トピックの最終更新日:**2015-03-09_
+_**トピックの最終更新日:** 2015-03-09_
 
 Microsoft Exchange Server 2010 および Exchange Server 2007 には複数のサーバーの役割があります。クライアント アクセス、メールボックス、ハブ トランスポート、ユニファイド メッセージング、およびエッジ トランスポート。Exchange Server 2013 では、サーバー役割の数が少なくなり、以前は 5 個でしたが、クライアント アクセス、メールボックス、エッジ トランスポートの 3 個になりました。ユニファイド メッセージングは、Exchange 2013 で提供されている音声関連機能のコンポーネントまたはサブ機能と位置づけられるようになりました。(変更の詳細については、「[Exchange 2013 の新機能](what-s-new-in-exchange-2013-exchange-2013-help.md)」の「Exchange 2013 アーキテクチャ」を参照してください。)
 

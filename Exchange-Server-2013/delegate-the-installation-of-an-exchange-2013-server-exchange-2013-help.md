@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Server, Exchange Server 2013_
 
-_**トピックの最終更新日:**2014-07-31_
+_**トピックの最終更新日:** 2014-07-31_
 
 Exchange Server 2013 によって、Exchange サーバーのインストールを Exchange 2013 組織の管理役割グループのメンバーではないユーザーに委任できます。これは、サーバーをインストールしてセットアップするユーザーと Exchange などのサービスを管理するユーザーが異なるような規模の大きい企業で役立ちます。実行したいことと一致するようであれば、このトピックをお読みください。
 

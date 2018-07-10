@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Server 2013_
 
 Exchange Server 2013 と Exchange Online の DLP ポリシーについて説明し、これらのポリシーに含まれている機能と、それらの機能をテストする方法を示します。また、Exchange の DLP の新機能について説明します。
 

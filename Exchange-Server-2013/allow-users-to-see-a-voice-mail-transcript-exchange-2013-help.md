@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 ボイス メール プレビューは、ユニファイド メッセージング (UM) からボイス メール メッセージを受信する際に使用できる機能です。ボイス メール プレビューによって録音をテキスト形式にできるようになり、既存の UM ボイス メールの機能が向上しました。ボイス メール テキストは、MicrosoftOutlook Web App、Outlook 2010 およびそれ以降のバージョン、およびサポートされるその他の電子メール プログラムの電子メール メッセージに表示されます。詳細については、「[Microsoft の音声認識技術](http://go.microsoft.com/fwlink/p/?linkid=187348)」を参照してください。
 

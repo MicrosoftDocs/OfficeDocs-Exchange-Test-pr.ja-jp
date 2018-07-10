@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2010, Exchange Server 2013_
+_**適用先:** Exchange Server 2010, Exchange Server 2013_
 
-_**トピックの最終更新日:**2018-04-02_
+_**トピックの最終更新日:** 2018-04-02_
 
 **概要**:この記事には、アプリで基本認証が使用される場合の Exchange 2013 オンプレミス環境における iOS および Android 用の Outlook に関する管理者向けのアーキテクチャ情報とセキュリティ情報が記載されています。
 

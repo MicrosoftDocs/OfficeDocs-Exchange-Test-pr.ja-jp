@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 Outlook Voice Access ユーザーから転送された電話またはボイス メール メッセージを受信するユーザーを指定できます。 既定では、**\[このダイヤル プラン内のみ\]** オプションが選択されます。 Outlook Voice Access ユーザーから組織全体のユーザー、既存のUM自動応答、または特定の内線番号への電話を転送したりボイス メッセージを送信できるよう、上記の設定を変更できます。
 

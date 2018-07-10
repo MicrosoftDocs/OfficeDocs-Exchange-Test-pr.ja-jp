@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Server 2013_
 
-_**トピックの最終更新日:**2016-12-09_
+_**トピックの最終更新日:** 2016-12-09_
 
 Microsoft Exchange Server 2013 組織に保持ポリシーを展開するには、このチェックリストを使用します。このチェックリストで作業を開始する前に、以下のトピックの概念精通している必要があります。
 

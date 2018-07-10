@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2014-05-07_
+_**トピックの最終更新日:** 2014-05-07_
 
 既定で、Exchange Search はすべての新規メールボックス データベースで有効になっており、追加の構成は必要ありません。ただし、Exchange Search によるメールボックスの内容のインデックス処理を停止する場合は、個々のメールボックス データベースまたはメールボックス サーバー全体に対して無効にできます。
 
@@ -88,14 +88,17 @@ Exchange Search に関連するその他の管理タスクについては、「[
 **シェルを使用する**
 
 次のコマンドを実行して、Microsoft Exchange Search サービスを停止して無効にします。
-
-    Stop-Service MSExchangeFastSearch
-
-    Set-Service MSExchangeFastSearch -StartupType Disabled
+```
+Stop-Service MSExchangeFastSearch
+```
+```
+Set-Service MSExchangeFastSearch -StartupType Disabled
+```
 
 次のコマンドを実行して、Exchange Search サービスを自動的に起動するように構成してから、サービスを開始します。
-
-    Set-Service MSExchangeFastSearch -StartupType Automatic
-
-    Start-Service MSExchangeFastSearch
-
+```
+Set-Service MSExchangeFastSearch -StartupType Automatic
+```
+```
+Start-Service MSExchangeFastSearch
+```

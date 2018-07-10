@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 Outlook Voice Access には、次の 2 つのインターフェイスが含まれています。電話ユーザー インターフェイス (TUI) と音声ユーザー インターフェイス (VUI) です。既定では、ユーザーが Outlook Voice Access にダイヤルインすると、予定表、電子メール、および個人用連絡先にアクセスし、ディレクトリを検索できます。シェルを使用すると、ユーザーが Outlook Voice Access を使用して自分のメールボックスにアクセスするときに、これらの 1 つ以上の機能にアクセスしないようにできます。ユニファイド メッセージング (UM) メールボックス ポリシーで Outlook Voice Access 機能を変更すると、その UM メールボックス ポリシーに関連付けられているすべてのユーザーにその変更が影響を及ぼします。
 

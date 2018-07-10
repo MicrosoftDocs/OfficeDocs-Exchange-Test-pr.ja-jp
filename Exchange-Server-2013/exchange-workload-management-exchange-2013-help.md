@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Server 2013_
 
-_**トピックの最終更新日:**2014-11-16_
+_**トピックの最終更新日:** 2014-11-16_
 
 Exchange ワークロードとは、Exchange サーバーの機能、プロトコル、または Exchange システム リソース管理のプロセスで明示的に定義されているサービスのことです。Exchange のワークロードはいずれも、CPU、メールボックス データベース操作、Active Directory 要求などのシステム リソースを消費してユーザー要求やバックグラウンドの作業を実行します。Exchange ワークロードには、Outlook Web App、Exchange ActiveSync、メールボックス移行、メールボックス アシスタントなどがあります。
 

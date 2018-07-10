@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2015-03-09_
+_**トピックの最終更新日:** 2015-03-09_
 
 管理者は `Organization Configuration` 管理役割を使用して、組織全体で設定を管理できます。この役割で制御できる組織の構成には、次に示すものなどがあります。
 

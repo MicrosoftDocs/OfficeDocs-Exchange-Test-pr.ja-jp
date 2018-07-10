@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2018-04-19_
+_**トピックの最終更新日:** 2018-04-19_
 
 **概要**:オンプレミスのメールボックスの移動を管理する iOS および Android 用の Outlook のサポートを有効にするために、管理者がハイブリッド先進認証および Enterprise Mobility + Security の各機能を Exchange のオンプレミス メールボックスに展開する方法。
 
@@ -315,17 +315,17 @@ ExpressRoute には、ExpressRoute 接続用のプライベート IP 領域も�
 
   - Azure Active Directory Connect を介したパススルー認証
 
-**Q:** iOS および Android 用の Outlook ではどのような認証メカニズムが使用されていますか。Office 365 に資格情報は格納されますか。
+**Q:**  iOS および Android 用の Outlook ではどのような認証メカニズムが使用されていますか。Office 365 に資格情報は格納されますか。
 
-**A:** iOS および Android 用の Outlook は、Active Directory 認証ライブラリ (ADAL) ベースの認証を使用して、Exchange Online と同期されているオンプレミスのメールボックス データにアクセスします。ADAL 認証はデスクトップ版とモバイル デバイス版の両方の Office アプリで使用され、この認証ではユーザーは Outlook に資格情報を提供する代わりに、Office 365 の ID プロバイダーである Azure Active Directory に直接サインインします。
+**A:**  iOS および Android 用の Outlook は、Active Directory 認証ライブラリ (ADAL) ベースの認証を使用して、Exchange Online と同期されているオンプレミスのメールボックス データにアクセスします。ADAL 認証はデスクトップ版とモバイル デバイス版の両方の Office アプリで使用され、この認証ではユーザーは Outlook に資格情報を提供する代わりに、Office 365 の ID プロバイダーである Azure Active Directory に直接サインインします。
 
 ADAL ベースのサインインにより、ハイブリッド Exchange オンプレミス アカウントに対して OAuth が有効になり、ユーザー資格情報へのアクセスなしで電子メールにアクセスするためのセキュリティで保護されたメカニズムが iOS および Android 用の Outlook に提供されます。サインイン時に、ユーザーは直接 Microsoft クラウドで認証を受け、アクセス トークンを受け取ります。このトークンにより、該当するメールボックスへのアクセス権が iOS および Android 用の Outlook に付与されます。OAuth は、ユーザー資格情報を必要とすることも格納することもなく、Office 365 と Outlook クラウド サービスにアクセスするためのセキュリティで保護されたメカニズムを Outlook に提供します。
 
 詳しくは、「[Outlook for iOS と Outlook for Android の新しいアクセスとセキュリティの制御](https://blogs.office.com/2015/06/10/new-access-and-security-controls-for-outlook-for-ios-and-android/)」を参照してください。
 
-**Q:** iOS および Android 用の Outlook やその他の Microsoft Office モバイル アプリはシングル サインオンをサポートしていますか。
+**Q:**  iOS および Android 用の Outlook やその他の Microsoft Office モバイル アプリはシングル サインオンをサポートしていますか。
 
-**A:** Azure Active Directory 認証ライブラリ (ADAL) を認証に利用するすべての Microsoft アプリでシングル サインオンがサポートされています。さらに、アプリを Microsoft Authenticator または Microsoft ポータル サイト アプリのいずれかと組み合わせて使用する場合にもシングル サインオンがサポートされます。
+**A:**  Azure Active Directory 認証ライブラリ (ADAL) を認証に利用するすべての Microsoft アプリでシングル サインオンがサポートされています。さらに、アプリを Microsoft Authenticator または Microsoft ポータル サイト アプリのいずれかと組み合わせて使用する場合にもシングル サインオンがサポートされます。
 
 次のシナリオでは、トークンを他の Microsoft アプリ (Word モバイルなど) で共有および再利用できます。
 
@@ -335,13 +335,13 @@ ADAL ベースのサインインにより、ハイブリッド Exchange オン�
 
 詳細については、「[iOS で ADAL を使用してクロス アプリ SSO を有効にする方法](https://docs.microsoft.com/ja-jp/azure/active-directory/develop/active-directory-sso-ios)」を参照してください。
 
-**Q:** iOS および Android 用の Outlook で Active Directory Authentication Library (ADAL) によって生成および使用されるトークンの有効期間とは何のことですか。
+**Q:**  iOS および Android 用の Outlook で Active Directory Authentication Library (ADAL) によって生成および使用されるトークンの有効期間とは何のことですか。
 
 **A**:iOS および Android 用の Outlook、Authenticator アプリ、ポータル サイト アプリといった ADAL 対応アプリを通じてオンプレミスのユーザーが認証を受ける場合、複数のトークンが生成されます。最初のアクセス トークンと更新トークンのペアは Exchange Online に同期されるデータにアクセスするために使用され、2 番目のアクセス トークンと更新トークンのペアは、Exchange ActiveSync プロトコル経由でオンプレミスのメールボックスにアクセスするために Exchange Online によって使用されます。アクセス トークンは、リソース (Exchange メッセージ データなど) にアクセスするために使用され、更新トークンは、現在のアクセス トークンの有効期限が切れたときに新しいアクセス トークンまたは更新トークンのペアを取得するために使用されます。
 
 既定では、アクセス トークンの有効期間は 1 時間、更新トークンの有効期間は 14 日間です。これらの値は調整できます。詳細については、「[Azure Active Directory における構成可能なトークンの有効期間](https://docs.microsoft.com/azure/active-directory/active-directory-configurable-token-lifetimes)」を参照してください。これらの有効期間を短縮することを選択した場合、iOS および Android 用の Outlook のパフォーマンスも低下することにご注意ください。これは、有効期間が短くなると、アプリケーションが新しいアクセス トークンを取得しなければならない回数が増えるためです。
 
-**Q:** ユーザーのパスワードが変更されると、アクセス トークンはどうなりますか。
+**Q:**  ユーザーのパスワードが変更されると、アクセス トークンはどうなりますか。
 
 **A**:以前に付与されたアクセス トークンは、期限が切れるまで有効です。認証で利用する ID モデルは、パスワードの有効期限の処理方法に影響を及ぼします。次の 3 つのシナリオがあります。
 

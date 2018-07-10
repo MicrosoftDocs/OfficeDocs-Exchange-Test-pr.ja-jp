@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 Outlook Voice Access ユーザーがメールボックスからロックアウトされるまでに許容されるサインインの失敗回数を構成することができます。ボイス メール ユーザーがロックアウトされるまでに許容されるサインインの失敗回数は、ユニファイド メッセージング (UM) メールボックス ポリシーで構成され、UM メールボックス ポリシーに関連付けられている UM が有効なすべてのユーザーに適用されます。既定では、15 に設定されています。
 

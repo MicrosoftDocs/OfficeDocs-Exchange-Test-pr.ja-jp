@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Server 2013_
 
 組織では、法的またはコンプライアンス要件を満たすために、または特定のビジネス ワークフローを実装するために特定の種類のメッセージの承認が必要になることがあります。以下に、Exchange を使用してセットアップできる一般的なシナリオの例を示します。
 

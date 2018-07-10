@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2017-03-27_
+_**トピックの最終更新日:** 2017-03-27_
 
 このトピックでは、Exchange Server 2013 のパブリック フォルダーについてよくある質問を一覧にまとめました。パブリック フォルダーの詳細については、「[パブリック フォルダー](public-folders-exchange-2013-help.md)」を参照してください。
 

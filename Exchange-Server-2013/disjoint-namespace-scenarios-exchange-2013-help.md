@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2016-12-09_
+_**トピックの最終更新日:** 2016-12-09_
 
 ここでは、不整合の名前空間の概念と、名前空間に不整合があるドメイン内に Microsoft Exchange 2013 を展開するためのシナリオに関する情報を示します。
 
@@ -101,7 +101,7 @@ Exchange 2013 サーバーが、不整合であるドメイン コントロー�
 
   - [グループ ポリシーについてよく寄せられる質問 (FAQ)](https://go.microsoft.com/fwlink/p/?linkid=100128)
 
-  - [Windows Server 2003 の DNS 用の新しいグループ ポリシー](http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=294785)
+  - [Windows Server 2003 の DNS 用の新しいグループ ポリシー](http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=294785)
 
   - [グループ ポリシー](https://go.microsoft.com/fwlink/p/?linkid=268043)
 

@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 音声メッセージを録音するとき、通話を終了するまでにシステムで許可する無音の秒数を指定できます。大部分の組織では、この値は既定の 5 秒に設定してください。
 

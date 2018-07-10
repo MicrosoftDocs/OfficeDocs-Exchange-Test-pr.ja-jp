@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 ユニファイド メッセージング (UM) ユーザーを電話でボイス メール システムに接続すると、ユーザーは Outlook Voice Access を使用してメニュー システムを移動します。ユーザーがボイス メール システムにアクセスする前に、システムにより PIN の入力を指示するプロンプトが表示されます。管理者は、PIN の設定と要件を構成し、PIN の管理タスクを実行することができます。ユーザーのボイス メールが有効となり、PIN が生成されると、ユーザーの PIN は暗号化されてユーザーのメールボックスに格納されます。
 

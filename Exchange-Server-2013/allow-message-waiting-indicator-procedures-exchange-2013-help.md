@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Server 2013, Exchange Server 2016_
 
 [UM IP ゲートウェイ上でメッセージ待機インジケーター (MWI) を許可する](allow-message-waiting-indicator-mwi-on-a-um-ip-gateway-exchange-2013-help.md)
 

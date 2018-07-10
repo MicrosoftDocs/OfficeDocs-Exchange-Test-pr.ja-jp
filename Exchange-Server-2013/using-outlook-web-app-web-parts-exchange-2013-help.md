@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2015-07-31_
+_**トピックの最終更新日:** 2015-07-31_
 
 MicrosoftOfficeOutlook Web App の Web パーツを使用して、開くメールボックス、そのメールボックスの中で開くフォルダー、使用するコンテンツ ビューを指定できます。
 
@@ -169,13 +169,13 @@ Outlook Web App の Web パーツは、Web ブラウザーで手動で入力す�
 
 次の例では、Outlook Web App の一般的なビューに直接アクセスする方法を示します。
 
-  - **受信トレイ:** https://*\<server name\>*/owa/?cmd=contents\&module=inbox
+  - **受信トレイ:**  https://*\<server name\>*/owa/?cmd=contents\&module=inbox
 
-  - **予定表 (今日):**https://*\<server name\>*/owa/?cmd=contents\&module=calendar\&exsvurl=1
+  - **予定表 (今日):** https://*\<server name\>*/owa/?cmd=contents\&module=calendar\&exsvurl=1
 
-  - **予定表 (週):** https://*\<server name\>*/owa/?cmd=contents\&module=calendar\&view=weekly\&exsvurl=1
+  - **予定表 (週):**  https://*\<server name\>*/owa/?cmd=contents\&module=calendar\&view=weekly\&exsvurl=1
 
-  - **予定表 (月):** https://*\<server name\>*/owa/?cmd=contents\&module=calendar\&view=monthly\&exsvurl=1
+  - **予定表 (月):**  https://*\<server name\>*/owa/?cmd=contents\&module=calendar\&view=monthly\&exsvurl=1
 
 ## 詳細情報
 

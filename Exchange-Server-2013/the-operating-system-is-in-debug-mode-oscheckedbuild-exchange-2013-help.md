@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server_
+_**適用先:** Exchange Server_
 
-_**トピックの最終更新日:**2016-12-15_
+_**トピックの最終更新日:** 2016-12-15_
 
 このトピックの内容は、Microsoft Exchange Server 2013 向けに更新されていません。まだ更新されていませんが、そのままで Exchange 2013 にも適用できる可能性があります。ヘルプが必要な場合は、以下のコミュニティ リソースを確認してください。
 
@@ -41,5 +41,5 @@ Windows デバッグ モードには、Boot.ini ファイルに **/debug** パ�
 
 5.  ファイルを保存して閉じてから、Exchange Server コンピューターを再起動して変更を有効にします。
 
-Boot.ini ファイルで使用できるパラメーターの詳細については、Microsoft サポート技術情報の文書番号 833721「Windows XP および Windows Server 2003 の Boot.ini ファイルで使用可能なスイッチ オプション」([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=833721](https://go.microsoft.com/fwlink/?linkid=3052%26kbid=833721)) を参照してください。
+Boot.ini ファイルで使用できるパラメーターの詳細については、Microsoft サポート技術情報の文書番号 833721「Windows XP および Windows Server 2003 の Boot.ini ファイルで使用可能なスイッチ オプション」([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=833721](https://go.microsoft.com/fwlink/?linkid=3052&kbid=833721)) を参照してください。
 

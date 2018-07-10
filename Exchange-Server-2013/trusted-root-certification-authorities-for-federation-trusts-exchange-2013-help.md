@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2017-07-26_
+_**トピックの最終更新日:** 2017-07-26_
 
 Microsoft Exchange Server 2013 組織と [Azure Active Directory 認証システム](https://go.microsoft.com/fwlink/p/?linkid=135986)の間でフェデレーション信頼を確立するには、デジタル証明書を、信頼の作成に使用する Exchange サーバーにインストールする必要があります。自己署名証明書を使用することを強くお勧めします。自己署名証明書は、Exchange 管理センター (EAC) で **\[フェデレーションの信頼を有効にする\]** ウィザードを使用すると、自動的に作成されインストールされます。
 

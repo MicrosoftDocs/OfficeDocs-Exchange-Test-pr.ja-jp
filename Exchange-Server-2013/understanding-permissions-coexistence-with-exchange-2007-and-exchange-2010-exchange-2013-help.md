@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013_
+_**適用先:** Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013_
 
-_**トピックの最終更新日:**2015-04-07_
+_**トピックの最終更新日:** 2015-04-07_
 
 Microsoft Exchange Server 2013 を既存の Microsoft Exchange Server 2010 組織または Microsoft Exchange Server 2007 組織にインストールする場合は、新しい組織でアクセス許可がどのように機能するかを理解しておく必要があります。自分の組織に該当するセクションをお読みください。
 

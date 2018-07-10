@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用先:**Exchange Online, Exchange Online Protection, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Online Protection, Exchange Server 2013_
 
-_**トピックの最終更新日:**2016-05-03_
+_**トピックの最終更新日:** 2016-05-03_
 
 Microsoft Exchange Online Protection (EOP)、Microsoft Exchange Online、および Microsoft Exchange 2013 では、Exchange 管理センター (EAC) を使用して*管理者監査ログ*のエントリを検索および表示できます。管理者監査ログには、管理者や管理者特権を割り当てられたユーザーが実行する、Exchange 管理シェル コマンドレットに基づく特定の操作が記録されます。管理者監査ログのエントリは、実行されたコマンドレット、使われたパラメーター、コマンドレットを実行したユーザー、および影響を受けたオブジェクトに関する情報を提供します。
 

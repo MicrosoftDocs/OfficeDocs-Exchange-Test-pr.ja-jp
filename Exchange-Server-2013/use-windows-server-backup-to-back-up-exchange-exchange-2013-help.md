@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2014-06-18_
+_**トピックの最終更新日:** 2014-06-18_
 
 Windows Server Backup を使用して、Exchange データベースのバックアップと復元を行うことができます。Exchange には、ボリューム シャドウ コピー サービス (VSS) ベースで Exchange のデータのバックアップを作成できる Windows Server Backup のプラグインが組み込まれています。
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Server, Exchange Server 2013_
 
-_**トピックの最終更新日:**2016-12-09_
+_**トピックの最終更新日:** 2016-12-09_
 
 Microsoft Exchange Server 2013 におけるメールボックス サーバーの役割の記憶域オプションと要件を理解することは、メールボックス サーバー記憶域設計ソリューションにとって重要な部分です。
 
@@ -109,7 +109,7 @@ Exchange データの格納用に Exchange が使用する記憶域はすべて
 </ul></td>
 <td><p>Windows Server 2008 および Windows Server 2008 R2 用の 512 バイト セクターのディスクのみサポートされています。また、以下の条件で Windows Server 2008 R2 では 512e ディスクもサポートされています。</p>
 <ul>
-<li><p><a href="https://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=982018">Microsoft サポート技術情報の文書番号 982018</a>「Windows 7 および Windows Server 2008 R2 と Advanced Format Disk の互換性を向上させる更新プログラムを入手できます」で説明されている修正プログラム。</p></li>
+<li><p><a href="https://go.microsoft.com/fwlink/p/?linkid=3052&kbid=982018">Microsoft サポート技術情報の文書番号 982018</a>「Windows 7 および Windows Server 2008 R2 と Advanced Format Disk の互換性を向上させる更新プログラムを入手できます」で説明されている修正プログラム。</p></li>
 <li><p>Windows Server 2008 R2 Service Pack 1 (SP1) と Exchange Server 2010 SP1.</p></li>
 </ul>
 <p>Exchange 2013 以降では、ネイティブの 4 キロバイト (KB) セクター ディスクと 512e ディスクをサポートしています。サポートには、データベースのすべてのコピーが同じ物理ディスク タイプ上にある必要があります。たとえば、あるデータベースの 1 つのコピーが 512 バイト セクターのディスク上にあり、同じデータベースのもう 1 つのコピーが 512e ディスクまたは 4K ディスク上にある場合、その構成はサポートされません。</p>
@@ -126,7 +126,7 @@ Exchange データの格納用に Exchange が使用する記憶域はすべて
 </ul></td>
 <td><p>Windows Server 2008 および Windows Server 2008 R2 用の 512 バイト セクターのディスクのみサポートされています。また、以下の条件で Windows Server 2008 R2 では 512e ディスクもサポートされています。</p>
 <ul>
-<li><p><a href="https://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=982018">Microsoft サポート技術情報の文書番号 982018</a>「Windows 7 および Windows Server 2008 R2 と Advanced Format Disk の互換性を向上させる更新プログラムを入手できます」で説明されている修正プログラム。</p></li>
+<li><p><a href="https://go.microsoft.com/fwlink/p/?linkid=3052&kbid=982018">Microsoft サポート技術情報の文書番号 982018</a>「Windows 7 および Windows Server 2008 R2 と Advanced Format Disk の互換性を向上させる更新プログラムを入手できます」で説明されている修正プログラム。</p></li>
 <li><p>Windows Server 2008 R2 Service Pack 1 (SP1) と Exchange Server 2010 SP1.</p></li>
 </ul>
 <p>Exchange 2013 以降では、ネイティブの 4 キロバイト (KB) セクター ディスクと 512e ディスクをサポートしています。サポートには、データベースのすべてのコピーが同じ物理ディスク タイプ上にある必要があります。たとえば、あるデータベースの 1 つのコピーが 512 バイト セクターのディスク上にあり、同じデータベースのもう 1 つのコピーが 512e ディスクまたは 4K ディスク上にある場合、その構成はサポートされません。</p>
@@ -143,7 +143,7 @@ Exchange データの格納用に Exchange が使用する記憶域はすべて
 </ul></td>
 <td><p>Windows Server 2008 および Windows Server 2008 R2 用の 512 バイト セクターのディスクのみサポートされています。また、以下の条件で Windows Server 2008 R2 では 512e ディスクもサポートされています。</p>
 <ul>
-<li><p><a href="https://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=982018">Microsoft サポート技術情報の文書番号 982018</a>「Windows 7 および Windows Server 2008 R2 と Advanced Format Disk の互換性を向上させる更新プログラムを入手できます」で説明されている修正プログラム。</p></li>
+<li><p><a href="https://go.microsoft.com/fwlink/p/?linkid=3052&kbid=982018">Microsoft サポート技術情報の文書番号 982018</a>「Windows 7 および Windows Server 2008 R2 と Advanced Format Disk の互換性を向上させる更新プログラムを入手できます」で説明されている修正プログラム。</p></li>
 <li><p>Windows Server 2008 R2 Service Pack 1 (SP1) と Exchange Server 2010 SP1.</p></li>
 </ul>
 <p>Exchange 2013 以降では、ネイティブの 4 キロバイト (KB) セクター ディスクと 512e ディスクをサポートしています。サポートには、データベースのすべてのコピーが同じ物理ディスク タイプ上にある必要があります。たとえば、あるデータベースの 1 つのコピーが 512 バイト セクターのディスク上にあり、同じデータベースのもう 1 つのコピーが 512e ディスクまたは 4K ディスク上にある場合、その構成はサポートされません。</p>
@@ -159,7 +159,7 @@ Exchange データの格納用に Exchange が使用する記憶域はすべて
 </ul></td>
 <td><p>Windows Server 2008 および Windows Server 2008 R2 用の 512 バイト セクターのディスクのみサポートされています。また、以下の条件で Windows Server 2008 R2 では 512e ディスクもサポートされています。</p>
 <ul>
-<li><p><a href="https://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=982018">Microsoft サポート技術情報の文書番号 982018</a>「Windows 7 および Windows Server 2008 R2 と Advanced Format Disk の互換性を向上させる更新プログラムを入手できます」で説明されている修正プログラム。</p></li>
+<li><p><a href="https://go.microsoft.com/fwlink/p/?linkid=3052&kbid=982018">Microsoft サポート技術情報の文書番号 982018</a>「Windows 7 および Windows Server 2008 R2 と Advanced Format Disk の互換性を向上させる更新プログラムを入手できます」で説明されている修正プログラム。</p></li>
 <li><p>Windows Server 2008 R2 Service Pack 1 (SP1) と Exchange Server 2010 SP1.</p></li>
 </ul>
 <p>Exchange 2013 以降では、ネイティブの 4 キロバイト (KB) セクター ディスクと 512e ディスクをサポートしています。サポートには、データベースのすべてのコピーが同じ物理ディスク タイプ上にある必要があります。たとえば、あるデータベースの 1 つのコピーが 512 バイト セクターのディスク上にあり、同じデータベースのもう 1 つのコピーが 512e ディスクまたは 4K ディスク上にある場合、その構成はサポートされません。</p>
@@ -695,7 +695,7 @@ Exchange の観点からは、JBOD の使用は、データベースおよびそ
 <td><p>Windows BitLocker (ボリューム暗号化)</p></td>
 <td><p>Windows BitLocker は、Windows Server 2008 のデータ保護機能です。BitLocker は、紛失したり盗難にあったコンピューターからデータが盗まれたり漏えいしたりしないように保護し、コンピューターを使用停止するときに、より安全にデータを削除できるようにします。</p></td>
 <td><p>サポート:すべての Exchange データベースとログ ファイル。</p></td>
-<td><p>サポート:すべての Exchange データベースとログ ファイル。Windows フェールオーバー クラスターには Windows Server 2008 R2 または Windows Server 2008 R2 SP1 および以下の修正プログラムが必要:「<a href="http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=2446607">コンピューターがフェールオーバー クラスター ノードの場合、Windows Server 2008 R2 のディスク ボリュームで BitLocker を有効にできません</a>」が必要です。以前のバージョンの Windows を実行している Windows フェールオーバー クラスターでは、BitLocker が有効な Exchange ボリュームをサポートしません。</p>
+<td><p>サポート:すべての Exchange データベースとログ ファイル。Windows フェールオーバー クラスターには Windows Server 2008 R2 または Windows Server 2008 R2 SP1 および以下の修正プログラムが必要:「<a href="http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=2446607">コンピューターがフェールオーバー クラスター ノードの場合、Windows Server 2008 R2 のディスク ボリュームで BitLocker を有効にできません</a>」が必要です。以前のバージョンの Windows を実行している Windows フェールオーバー クラスターでは、BitLocker が有効な Exchange ボリュームをサポートしません。</p>
 <p>Windows 7 BitLocker 暗号化の詳細については、「<a href="https://go.microsoft.com/fwlink/p/?linkid=220898">Windows 7 の BitLocker ドライブの暗号化:よく寄せられる質問</a>」をご覧ください。</p></td>
 </tr>
 <tr class="odd">

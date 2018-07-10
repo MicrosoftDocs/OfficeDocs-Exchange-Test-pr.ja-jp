@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server, Exchange Server 2010, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Server, Exchange Server 2010, Exchange Server 2013_
 
-_**トピックの最終更新日:**2016-12-09_
+_**トピックの最終更新日:** 2016-12-09_
 
 組織が存在するまたは一部のユーザーが住んでいる国または地域で、夏時間 (DST) を識別するポリシーに変更があった場合、または世界標準時 (UTC) からのローカル時間のオフセットが変更された場合は、それらの変更に対応するために、Microsoft Windows、Microsoft Exchange、Microsoft Outlook、または他のプログラムを更新する必要がある場合があります。
 
@@ -31,7 +31,7 @@ _**トピックの最終更新日:**2016-12-09_
 
 Office 365 認証システムは DST またはタイム ゾーンの変更時に更新されるため、すべての Office 365 クライアント コンピューターを更新する必要があります。更新をしない場合、接続の問題が発生する場合があります。
 
-  - すべてのクライアントおよびデスクトップ コンピューターに Windows DST 更新プログラムがインストールされていることをご確認ください。詳細については、「[Microsoft Windows オペレーティング システムで夏時間を構成する方法](http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=914387)」を参照してください。
+  - すべてのクライアントおよびデスクトップ コンピューターに Windows DST 更新プログラムがインストールされていることをご確認ください。詳細については、「[Microsoft Windows オペレーティング システムで夏時間を構成する方法](http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=914387)」を参照してください。
 
 ## 手順 2: すべてのサーバーに Windows DST 更新プログラムをインストールします
 
@@ -47,7 +47,7 @@ Office 365 認証システムは DST またはタイム ゾーンの変更時に
 
 2.  コンピューターを更新する必要があるユーザーにメッセージを送信し、適切なツールへのリンクを提供します。
 
-次の表は、ユーザーが [Exchange 予定表更新ツール](http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=930879)または [Microsoft Office Outlook 用タイム ゾーン データ更新ツール](http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=931667)を実行する必要がある時期を示します。組織のサーバーがどのバージョンを実行しているかを確認し、次にユーザーが実行しているクライアント プログラムを確認します。
+次の表は、ユーザーが [Exchange 予定表更新ツール](http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=930879)または [Microsoft Office Outlook 用タイム ゾーン データ更新ツール](http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=931667)を実行する必要がある時期を示します。組織のサーバーがどのバージョンを実行しているかを確認し、次にユーザーが実行しているクライアント プログラムを確認します。
 
 
 <table>
@@ -69,45 +69,45 @@ Office 365 認証システムは DST またはタイム ゾーンの変更時に
 </tr>
 <tr class="odd">
 <td><p><strong>社内の Exchange 2003</strong></p></td>
-<td><p><a href="http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=930879">Exchange 予定表更新ツール</a>または</p>
-<p><a href="http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=931667">Microsoft Office Outlook 用タイム ゾーン データ更新ツール</a></p></td>
+<td><p><a href="http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=930879">Exchange 予定表更新ツール</a>または</p>
+<p><a href="http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=931667">Microsoft Office Outlook 用タイム ゾーン データ更新ツール</a></p></td>
 <td><p>操作は不要</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>社内の Exchange 2007</strong></p></td>
-<td><p><a href="http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=930879">Exchange 予定表更新ツール</a>または</p>
-<p><a href="http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=931667">Microsoft Office Outlook 用タイム ゾーン データ更新ツール</a></p></td>
+<td><p><a href="http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=930879">Exchange 予定表更新ツール</a>または</p>
+<p><a href="http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=931667">Microsoft Office Outlook 用タイム ゾーン データ更新ツール</a></p></td>
 <td><p>操作は不要</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>社内の Exchange 2010</strong></p></td>
-<td><p><a href="http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=930879">Exchange 予定表更新ツール</a>または</p>
-<p><a href="http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=931667">Microsoft Office Outlook 用タイム ゾーン データ更新ツール</a></p></td>
+<td><p><a href="http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=930879">Exchange 予定表更新ツール</a>または</p>
+<p><a href="http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=931667">Microsoft Office Outlook 用タイム ゾーン データ更新ツール</a></p></td>
 <td><p>操作は不要</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Exchange 2013 オンプレミス</strong></p></td>
-<td><p><a href="http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=931667">Microsoft Office Outlook 用タイム ゾーン データ更新ツール</a></p></td>
+<td><p><a href="http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=931667">Microsoft Office Outlook 用タイム ゾーン データ更新ツール</a></p></td>
 <td><p>操作は不要</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>BPOS-S (Exchange 2007)</strong></p></td>
-<td><p><a href="http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=931667">Microsoft Office Outlook 用タイム ゾーン データ更新ツール</a></p></td>
+<td><p><a href="http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=931667">Microsoft Office Outlook 用タイム ゾーン データ更新ツール</a></p></td>
 <td><p>操作は不要</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>BPOS-S (Exchange 2010)</strong></p></td>
-<td><p><a href="http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=931667">Microsoft Office Outlook 用タイム ゾーン データ更新ツール</a></p></td>
+<td><p><a href="http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=931667">Microsoft Office Outlook 用タイム ゾーン データ更新ツール</a></p></td>
 <td><p>操作は不要</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Office 365 (Exchange 2010)</strong></p></td>
-<td><p><a href="http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=931667">Microsoft Office Outlook 用タイム ゾーン データ更新ツール</a> (Outlook 2003 はサポート対象外)</p></td>
+<td><p><a href="http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=931667">Microsoft Office Outlook 用タイム ゾーン データ更新ツール</a> (Outlook 2003 はサポート対象外)</p></td>
 <td><p>操作不要</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Office 365 (Exchange 2013)</strong></p></td>
-<td><p><a href="http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=931667">Microsoft Office Outlook 用タイム ゾーン データ更新ツール</a> (Outlook 2003 はサポート対象外)</p></td>
+<td><p><a href="http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=931667">Microsoft Office Outlook 用タイム ゾーン データ更新ツール</a> (Outlook 2003 はサポート対象外)</p></td>
 <td><p>操作不要</p></td>
 </tr>
 <tr class="odd">

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Server 2013, Exchange Server 2016_
 
-_**トピックの最終更新日:**2012-11-18_
+_**トピックの最終更新日:** 2012-11-18_
 
 メールボックス サーバー上の Microsoft Exchange Unified Messaging サービスが新しい呼び出しに応答することを許可したり、応答を禁止したりすることができます。既定では、メールボックス サーバーは、インストール後に有効な状態になります。メールボックス サーバーが着信音声、FAX、自動応答、および Outlook Voice Access 呼び出しを受け入れるように設定する場合、**Set-ServerComponentState** コマンドレットを使用します。
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2012-09-23_
+_**トピックの最終更新日:** 2012-09-23_
 
 [受信コネクタを作成してインターネットからの電子メールを受信する](create-a-receive-connector-to-receive-email-from-the-internet-exchange-2013-help.md)
 

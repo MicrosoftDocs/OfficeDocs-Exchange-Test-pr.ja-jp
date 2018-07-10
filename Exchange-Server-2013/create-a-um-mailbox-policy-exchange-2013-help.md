@@ -15,7 +15,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 ユニファイド メッセージング (UM) メールボックス ポリシーを作成すると、PIN のポリシー設定やダイヤル制限などの共通の UM ポリシー設定を、UM が有効なメールボックスの集合に適用することができます。UM メールボックス ポリシーでは、UM が有効なユーザーを UM ダイヤル プランにリンクして、UM が有効なメールボックスの集合に、ポリシーやセキュリティ設定の共通セットを適用します。UM が有効なユーザーに対して UM 構成設定を適用および標準化する場合に便利です。
 

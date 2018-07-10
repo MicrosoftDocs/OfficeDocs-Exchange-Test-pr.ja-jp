@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Server 2013, Exchange Server 2016_
 
-_**トピックの最終更新日:**2013-04-09_
+_**トピックの最終更新日:** 2013-04-09_
 
 Microsoft Exchange ユニファイド メッセージング呼び出しルーター サービスを実行しているクライアント アクセス サーバー上では、SIP 要求を待機する TCP ポートを構成できます。既定では、クライアント アクセス サーバーをインストールすると、SIP TCP リスニング ポート番号は 5060 に設定され、クライアント アクセス サーバーは TCP モードで起動します。SIP TCP リスニング ポートは、EAC を使用して構成することはできません。SIP TCP リスニング ポート番号は、**Set-UMCallRouterSettings** コマンドレットを使用して構成する必要があります。
 

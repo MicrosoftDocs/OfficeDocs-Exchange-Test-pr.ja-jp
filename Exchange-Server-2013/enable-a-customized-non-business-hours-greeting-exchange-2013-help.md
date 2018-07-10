@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 ユニファイド メッセージング (UM) 自動応答での勤務時間外のカスタマイズした案内応答を有効にできます。勤務時間外の案内応答は、UM 自動応答が勤務時間外に呼び出しに応答するときに、発信者が最初に耳にするものです。この案内応答には、カスタマイズが必要になるでしょう。
 

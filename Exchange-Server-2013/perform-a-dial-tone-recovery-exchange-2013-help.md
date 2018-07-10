@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2014-06-27_
+_**トピックの最終更新日:** 2014-06-27_
 
 ダイヤル トーン ポータビリティを使用することで、ユーザーは、自分のメールボックスが復元中または修復中の場合に、電子メールの送受信用に一時メールボックスを持つことができます。一時メールボックスは、同じ Exchange 2013 メールボックス サーバー上、または組織内の他のExchange 2013 メールボックス サーバー上に持つことができます。ダイヤル トーン ポータビリティを使用する処理のことをダイヤル トーン復旧と呼びます。この処理では、メールボックス サーバー上に、障害が発生したデータベースを代替する空のデータベースが作成されます。詳細については、「[ダイヤル トーンの移植性](dial-tone-portability-exchange-2013-help.md)」を参照してください。
 
@@ -85,10 +85,12 @@ _**トピックの最終更新日:**2014-06-27_
         Mount-Database -Identity RDB1
 
 13. この例の方法で、[Get-Mailbox](https://technet.microsoft.com/ja-jp/library/bb123685\(v=exchg.150\)) および [New-MailboxRestoreRequest](https://technet.microsoft.com/ja-jp/library/ff829875\(v=exchg.150\)) コマンドレットを使用して、RDB からデータをエクスポートし、それを復旧したデータベースにインポートします。これにおり、ダイヤル トーン データベースを使用して送受信されたすべてのメッセージが運用データベースにインポートされます。
-    
-        $mailboxes = Get-Mailbox -Database DTDB1
-    
-        $mailboxes | %{ New-MailboxRestoreRequest -SourceStoreMailbox $_.ExchangeGuid -SourceDatabase RDB1 -TargetMailbox $_ }
+```
+$mailboxes = Get-Mailbox -Database DTDB1
+```
+```
+$mailboxes | %{ New-MailboxRestoreRequest -SourceStoreMailbox $_.ExchangeGuid -SourceDatabase RDB1 -TargetMailbox $_ }
+```
 
 14. 復旧操作が完了したら、この例の方法で RDB をマウント解除して削除します。
     

@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Server 2013_
 
 Exchange は、Exchange Online および社内の Exchange 組織にアイテム保持ポリシー "Default MRM Policy" を作成します。このポリシーは、Exchange Online の新しいユーザーに自動的に適用されます。社内組織では、メールボックスのアーカイブを作成するときに、ポリシーが適用されます。いつでも、ユーザーに適用されるアイテム保持ポリシーを変更できます。
 

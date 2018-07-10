@@ -15,9 +15,9 @@ ms.translationtype: MT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Server 2013_
 
-_**トピックの最終更新日:**2014-02-24_
+_**トピックの最終更新日:** 2014-02-24_
 
 パブリック フォルダーは、共有アクセスのために設計された、情報を収集、整理してワークグループや組織内の他のユーザーと共有するための容易かつ効果的な方法です。
 
@@ -93,13 +93,15 @@ EAC を使用してパブリック フォルダーを作成する場合、パブ
   - EAC で、**\[最新の情報に更新\]** をクリックし、パブリック フォルダーの一覧を更新します。一覧に新しいパブリック フォルダーが表示されます。
 
   - シェルで、次のいずれかのコマンドを実行します。
-    
-        Get-PublicFolder -Identity \Marketing\2013\Reports | Format-List
-    
-        Get-PublicFolder -Identity \Marketing\2013 -GetChildren
-    
-        Get-PublicFolder -Recurse
-
+    ```
+    Get-PublicFolder -Identity \Marketing\2013\Reports | Format-List
+    ```
+    ```
+    Get-PublicFolder -Identity \Marketing\2013 -GetChildren
+    ```
+    ```
+    Get-PublicFolder -Recurse
+    ```
 
 > [!TIP]
 > 問題がある場合は、Exchange のフォーラムで質問してください。 次のフォーラムにアクセスしてください。<A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>、 <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>、 または <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>。

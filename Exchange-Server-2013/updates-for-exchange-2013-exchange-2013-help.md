@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Server, Exchange Server 2013_
 
-_**トピックの最終更新日:**2018-03-20_
+_**トピックの最終更新日:** 2018-03-20_
 
 Microsoft Exchange Server 2013 の更新プロセスがどのように変更されたかについて説明します。また、この記事では、Exchange 2013 の現在と以前のリリースに導入された機能および改良点に関する情報へのリンクも記載しています。
 
@@ -52,7 +52,7 @@ Exchange 2013 の最新バージョンを取得するには、[Microsoft Exchang
 </tr>
 <tr class="even">
 <td><p>Exchange 2013 CU18</p></td>
-<td><p><a href="https://go.microsoft.com/fwlink/p/?linkid=858936%0d%0a">リリース: 2017 年 9 月 Exchange の四半期ごとの更新プログラム</a></p></td>
+<td><p><a href="https://go.microsoft.com/fwlink/p/?linkid=858936">リリース: 2017 年 9 月 Exchange の四半期ごとの更新プログラム</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>Exchange 2013 CU17</p></td>

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2017-03-28_
+_**トピックの最終更新日:** 2017-03-28_
 
 Microsoft 管理コンソール (MMC) または Exchange 管理シェル (EMS) を使用して、Exchange 2016 で POP3 クライアント接続を有効にする方法について説明します。
 

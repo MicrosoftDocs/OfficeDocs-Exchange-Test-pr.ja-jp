@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 メールボックス プロパティを構成することによって、個々のユーザーが通話応答ルールを作成および管理できるようにするかどうかを指定できます。既定では、ユーザーは通話応答ルールを作成できます。
 

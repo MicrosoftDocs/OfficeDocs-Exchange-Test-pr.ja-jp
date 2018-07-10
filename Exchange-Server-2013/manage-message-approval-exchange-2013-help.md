@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Server 2013_
 
 配信する前に、メッセージをもう一度確認したほうが効果的な場合があります。Exchange 管理者はこの処理をセットアップできます。この処理は*モデレート*と呼ばれ、承認者は*モデレーター*と呼ばれます。承認を必要とするメッセージに応じて、次の 2 つの方法のいずれかを使用できます。
 

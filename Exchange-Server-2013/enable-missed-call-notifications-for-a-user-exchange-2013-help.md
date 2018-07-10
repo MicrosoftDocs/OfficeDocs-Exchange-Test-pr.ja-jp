@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 シェルまたは EAC を使用して、ユニファイド メッセージング (UM) メールボックス ポリシーで不在着信通知を有効または無効にすることができます。不在着信通知とは、ユーザーが着信呼び出しに応答せず、発信者が音声メッセージを残さなかった場合にユーザーに送信される電子メール メッセージです。この電子メール メッセージは、ユーザーに残される音声メッセージを含むメッセージとは異なります。
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2015-04-07_
+_**トピックの最終更新日:** 2015-04-07_
 
 分割型アクセス許可を使用すると、Active Directory 管理者や Microsoft Exchange Server 2013 管理者などの異なる 2 つのグループが、それらのグループのサービス、オブジェクト、属性をそれぞれで管理できるようになります。Active Directory 管理者は、Active Directory フォレストにアクセスするためのアクセス許可を提供するセキュリティ プリンシパル (ユーザーなど) を管理し、Exchange 管理者は、Active Directory オブジェクトの Exchange 関連属性と Exchange 固有のオブジェクトの作成および管理を管理します。
 

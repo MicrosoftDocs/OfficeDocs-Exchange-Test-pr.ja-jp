@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Server 2013_
 
 既定では、メールボックス サーバーの役割をインストールすると、"既定のオフライン アドレス帳" という名前の Web ベースの既定のオフライン アドレス帳 (OAB) が作成されます。既定の OAB として、Exchange 組織内の任意の OAB を設定できます。この新しい既定の OAB は、新たに作成されるすべてのメールボックス データベースに関連付けられます。既定の OAB は組織内で 1 つしか設定できません。既定の OAB を削除しても、MicrosoftExchange によって別の OAB が既定として自動的に割り当てられることはありません。手動で、別の OAB を既定として指定する必要があります。
 

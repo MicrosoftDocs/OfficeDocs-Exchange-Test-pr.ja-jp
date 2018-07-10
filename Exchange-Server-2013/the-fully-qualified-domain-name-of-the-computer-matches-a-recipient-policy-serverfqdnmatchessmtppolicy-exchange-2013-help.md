@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server_
+_**適用先:** Exchange Server_
 
-_**トピックの最終更新日:**2016-12-09_
+_**トピックの最終更新日:** 2016-12-09_
 
 このトピックの内容は、Microsoft Exchange Server 2013 向けに更新されていません。まだ更新されていませんが、そのままで Exchange 2013 にも適用できる可能性があります。ヘルプが必要な場合は、以下のコミュニティ リソースを確認してください。
 
@@ -55,5 +55,5 @@ Microsoft Exchange セットアップ プログラムを実行するには、Exc
 
 4.  **\[電子メール アドレス\]** タブをクリックし、目的の SMTP アドレスを変更します。
 
-受信者ポリシーの名前付けに関する問題の詳細については、Microsoft サポート技術情報の文書番号 288175「\[XCON\] 受信者ポリシーは組織のサーバーの FQDN とは異なる必要がある (5.4.8 NDR)」([http://go.microsoft.com/fwlink/?linkid=3052\&kbid=288175](http://go.microsoft.com/fwlink/?linkid=3052%26kbid=288175)) を参照してください。
+受信者ポリシーの名前付けに関する問題の詳細については、Microsoft サポート技術情報の文書番号 288175「\[XCON\] 受信者ポリシーは組織のサーバーの FQDN とは異なる必要がある (5.4.8 NDR)」([http://go.microsoft.com/fwlink/?linkid=3052\&kbid=288175](http://go.microsoft.com/fwlink/?linkid=3052&kbid=288175)) を参照してください。
 

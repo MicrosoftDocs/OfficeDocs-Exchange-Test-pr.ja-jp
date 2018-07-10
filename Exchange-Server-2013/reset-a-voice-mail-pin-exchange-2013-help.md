@@ -15,7 +15,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 ユニファイド メッセージング (UM) が有効なボイス メール ユーザーが Outlook Voice Access 使用時に、正しくない PIN を使用して何回かサインインしようとしたためにメールボックスからロックアウトされた場合や、PIN を忘れてしまった場合、以下のいずれかの手順を実行してユーザーの PIN をリセットできます。ユーザーの Outlook Voice Access PIN をリセットした場合、PIN を自動的に生成するように UM を構成することも、PIN を手動で指定することもできます。新しい PIN は電子メールでユーザーに送信されます。PIN に関する追加のオプションを設定して、ユーザーが初めてサインインしたときに PIN を再設定するよう求めることもできます。また、ユーザーは自分の UM PIN を Outlook や Outlook Web App で再設定できます。
 

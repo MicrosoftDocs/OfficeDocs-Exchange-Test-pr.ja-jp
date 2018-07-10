@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2012-09-24_
+_**トピックの最終更新日:** 2012-09-24_
 
 MicrosoftExchange ActiveSync に対応するモバイル デバイスを使用すると、ユーザーはいつでも、どこからでも自分の Microsoft Exchange メールボックス データのほぼすべてにアクセスできます。 多種多様な携帯電話およびモバイル デバイスが Exchange ActiveSync に対応しています。 これらには、Windows Phone、Nokia 携帯電話、Android フォンおよびタブレット、Apple iPhone、iPod、iPad があります。
 

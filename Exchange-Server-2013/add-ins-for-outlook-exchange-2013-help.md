@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 **概要**:Windows コンピューターや Macintosh コンピューター用、またはモバイル デバイス用の Outlook、Outlook Web App、Outlook on the web で機能する、Outlook 用アドインの概要です。
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013, Project Server 2013_
+_**適用先:** Exchange Server 2013, Project Server 2013_
 
-_**トピックの最終更新日:**2015-03-09_
+_**トピックの最終更新日:** 2015-03-09_
 
 Exchange Web サービス (EWS) 正常性セットは、EWS サービスの全体的な状態を監視します。EWS 正常性セットは、次の正常性セットに密接に関連しています。
 

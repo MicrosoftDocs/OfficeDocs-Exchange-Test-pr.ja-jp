@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Server 2013_
 
 動的配布グループは、定義済みの受信者セットではなく特定の受信者フィルターに基づいたメンバーシップの配布グループです。MicrosoftExchange には、動的配布グループの受信者フィルターを簡単に作成できるように既定のフィルターが用意されています。*既定のフィルター*は、よく使用されるフィルターです。このフィルターを使用すると、さまざまな受信者フィルター処理の条件を満たすことができます。動的配布グループに含める受信者の種類を指定できます。また、受信者が満たす必要のある条件の一覧を指定することもできます。シェルを使用して、既定のフィルターを使用する動的配布グループの受信者の一覧をプレビューできます。
 
@@ -36,10 +36,12 @@ _**適用先:**Exchange Online, Exchange Server 2013_
 ## シェルを使用して動的配布グループのメンバーの一覧をプレビューする
 
 この例では、Full Time Employees という動的配布グループのメンバーの一覧を返します。最初のコマンドは、動的配布グループ オブジェクトを変数 `$FTE` に格納します。2 番目のコマンドは、**Get-Recipient** コマンドレットを使用して、動的配布グループに定義されている条件に一致する受信者を一覧表示します。
-
-    $FTE = Get-DynamicDistributionGroup "Full Time Employees"
-
-    Get-Recipient -RecipientPreviewFilter $FTE.RecipientFilter -OrganizationalUnit $FTE.RecipientContainer
+  ```
+  $FTE = Get-DynamicDistributionGroup "Full Time Employees"
+  ```
+  ```
+  Get-Recipient -RecipientPreviewFilter $FTE.RecipientFilter -OrganizationalUnit $FTE.RecipientContainer
+  ```
 
 構文およびパラメーターの詳細については、「[Get-DynamicDistributionGroup](https://technet.microsoft.com/ja-jp/library/bb124762\(v=exchg.150\))」と「[Get-Recipient](https://technet.microsoft.com/ja-jp/library/aa996921\(v=exchg.150\))」を参照してください。
 

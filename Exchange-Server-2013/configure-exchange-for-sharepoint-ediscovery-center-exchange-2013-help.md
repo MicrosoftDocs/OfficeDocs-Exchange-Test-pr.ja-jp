@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2016-12-09_
+_**トピックの最終更新日:** 2016-12-09_
 
 Microsoft Exchange Server 2013 には、*パートナー アプリケーション*と呼ばれる、Microsoft SharePoint Server 2013 および Microsoft Lync Server 2013 と連携動作する機能が含まれています。これらのパートナー アプリケーションがお互いのリソースにアクセスできるようにするには、サーバー間認証を構成する必要があります。
 

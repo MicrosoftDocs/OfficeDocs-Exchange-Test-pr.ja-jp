@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2016-12-09_
+_**トピックの最終更新日:** 2016-12-09_
 
 Microsoft Exchange 2013 では、**New-MoveRequest** および **New-MigrationBatch** コマンドレットを使用してメールボックスの移動および移行ができます。Exchange 管理センター (EAC) 経由でメールボックスを移動することもできます。移動元の Exchange フォレストから移動先の Exchange 2010 フォレストにメールボックスを移動できます。
 
@@ -27,7 +27,7 @@ Microsoft Exchange 2013 では、**New-MoveRequest** および **New-MigrationBa
 
   - Microsoft ダウンロード センターの「[メールボックスのオンライン移動の準備](https://go.microsoft.com/fwlink/p/?linkid=177882)」ページからサンプル コードをダウンロードします。
 
-  - サンプル コードを実行するには、ILM 2007 Feature Pack 1 Service Pack 1 (SP1) が必要です。Feature Pack をダウンロードするには、Microsoft サポート技術情報の文書番号 977791「[Service Pack 1 (ビルド 3.3.1139.2) アイデンティティのライフサイクル Manager 2007 機能 Pack 1 用には](http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=977791)」を参照してください。
+  - サンプル コードを実行するには、ILM 2007 Feature Pack 1 Service Pack 1 (SP1) が必要です。Feature Pack をダウンロードするには、Microsoft サポート技術情報の文書番号 977791「[Service Pack 1 (ビルド 3.3.1139.2) アイデンティティのライフサイクル Manager 2007 機能 Pack 1 用には](http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=977791)」を参照してください。
 
   - 次のものも必要です。
     

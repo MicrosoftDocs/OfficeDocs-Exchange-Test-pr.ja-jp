@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server_
+_**適用先:** Exchange Server_
 
-_**トピックの最終更新日:**2016-12-09_
+_**トピックの最終更新日:** 2016-12-09_
 
 Exchange 2000 Server または Exchange Server 2003 を実行している 1 台以上のコンピューターが Active Directory フォレストで検出されたため、Microsoft Exchange Server 2013 は処理を継続できません。Exchange 2013 をインストールするには、その前に、すべての Exchange 2000 と Exchange 2003 サーバーをフォレストから削除する必要があります。メールボックス、パブリック フォルダー、および他のすべての Exchange オブジェクトやコンポーネントを Exchange Server 2007 または Exchange Server 2010 のいずれかにアップグレードする必要があります。Exchange 2000 または Exchange 2003 から直接 Exchange 2013 にアップグレードすることはできません。
 

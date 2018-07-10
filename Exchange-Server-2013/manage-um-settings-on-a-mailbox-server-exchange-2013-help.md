@@ -15,9 +15,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Server 2013, Exchange Server 2016_
 
-_**トピックの最終更新日:**2013-02-11_
+_**トピックの最終更新日:** 2013-02-11_
 
 Microsoft Exchange ユニファイド メッセージング サービスを実行しているメールボックス サーバーをインストールしたら、同時呼び出し数、TCP およびトランスポート層セキュリティ (TLS) のリスニング ポート、状態、UM スタートアップ モードを含むいくつかのオプションを構成できます。
 

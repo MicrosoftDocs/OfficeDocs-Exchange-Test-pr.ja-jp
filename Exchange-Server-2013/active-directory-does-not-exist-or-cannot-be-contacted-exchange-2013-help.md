@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server_
+_**適用先:** Exchange Server_
 
-_**トピックの最終更新日:**2016-12-09_
+_**トピックの最終更新日:** 2016-12-09_
 
 有効な Active Directory ディレクトリ サービス サイトと連絡できないため、Microsoft Exchange Server 2013 セットアップ プログラムは作業を続行できません。セットアップ プログラムは、Exchange がインストールされているサーバーが Active Directory で構成名前付けコンテキストを検出できることを要求します。
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013_
+_**適用先:** Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013_
 
-_**トピックの最終更新日:**2013-08-13_
+_**トピックの最終更新日:** 2013-08-13_
 
 メールボックス、またはメールが有効な既存のユーザーを作成または移動する場合、そのメールボックスはメールボックス データベースに格納されている必要があります。Microsoft Exchange Server 2013 では、メールボックスの自動配布を使用して Exchange にデータベースを選択させるオプションがあります。
 

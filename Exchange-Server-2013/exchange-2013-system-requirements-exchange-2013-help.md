@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2016-12-09_
+_**トピックの最終更新日:** 2016-12-09_
 
 Exchange 2013 をインストールする前に確認しておく必要がある Exchange 2013 の要件について説明します。たとえば、ハードウェア、ネットワーク、およびオペレーティング システムの要件について説明します。
 
@@ -155,7 +155,7 @@ Exchange 2013 は、最新バージョンの Office 365 にアップグレード
 <li><p>単一ラベルのドメイン</p></li>
 <li><p>不整合</p></li>
 </ul>
-<p>Exchange でサポートされる DNS 名前空間の詳細については、Microsoft サポート技術情報の記事 2269838「<a href="http://go.microsoft.com/fwlink/?linkid=3052%26kbid=2269838">単一ラベルのドメイン、不整合の名前空間、および非連続の名前空間と Microsoft Exchange の互換性</a>」を参照してください。</p></td>
+<p>Exchange でサポートされる DNS 名前空間の詳細については、Microsoft サポート技術情報の記事 2269838「<a href="http://go.microsoft.com/fwlink/?linkid=3052&kbid=2269838">単一ラベルのドメイン、不整合の名前空間、および非連続の名前空間と Microsoft Exchange の互換性</a>」を参照してください。</p></td>
 </tr>
 <tr class="even">
 <td><p>IPv6 サポート</p></td>
@@ -175,7 +175,7 @@ Exchange 2013 は、最新バージョンの Office 365 にアップグレード
 
 
 > [!NOTE]
-> 複数ドメイン環境で、Active Directory 言語ロケールを日本語に設定している Windows Server 2008 ドメイン コントローラーで、受信レプリケーション中にオブジェクトに格納される属性をサーバーが受信できない場合があります。詳細については、Microsoft サポート技術情報の文書番号 949189「<A href="http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=949189">日本語言語ロケールで構成されている Windows Server 2008 ドメイン コントローラーが受信レプリケーション中にオブジェクトの属性に更新を適用できない場合がある</A>」を参照してください。
+> 複数ドメイン環境で、Active Directory 言語ロケールを日本語に設定している Windows Server 2008 ドメイン コントローラーで、受信レプリケーション中にオブジェクトに格納される属性をサーバーが受信できない場合があります。詳細については、Microsoft サポート技術情報の文書番号 949189「<A href="http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=949189">日本語言語ロケールで構成されている Windows Server 2008 ドメイン コントローラーが受信レプリケーション中にオブジェクトの属性に更新を適用できない場合がある</A>」を参照してください。
 
 
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2013-02-04_
+_**トピックの最終更新日:** 2013-02-04_
 
 Exchange 管理センター (EAC) は Exchange Server 2013 の Web ベースの管理コンソールであるため、Web ブラウザーの ECP 仮想ディレクトリの URL を使用してこれにアクセスします。このトピックでは、ECP 仮想ディレクトリの URL を見つける方法を説明します。
 

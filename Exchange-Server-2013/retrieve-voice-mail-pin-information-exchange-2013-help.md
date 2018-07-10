@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 ユニファイド メッセージング (UM) が有効になっているユーザーの PIN 情報を取得できます。ユーザーに対して UM が有効にされ、PIN が生成または作成されると、PIN が暗号化されてユーザーのメールボックスに保存されます。
 

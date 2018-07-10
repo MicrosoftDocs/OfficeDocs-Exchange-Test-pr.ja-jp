@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 電話ユーザー インターフェイス (TUI) 設定は、ユーザーが Outlook Voice Access を使用してユニファイド メッセージング (UM) システムにアクセスする場合に使用されます。UM が有効なユーザーの TUI 構成設定を変更する場合は、その UM が有効なユーザーのメールボックスでプロパティとその値を変更します。
 

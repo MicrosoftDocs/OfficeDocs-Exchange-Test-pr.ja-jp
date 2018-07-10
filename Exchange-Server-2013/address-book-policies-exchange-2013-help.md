@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Server 2013_
 
 グローバル アドレス一覧を特定のグループに分割して、Outlook および Outlook Web App でカスタマイズされた GAL を作成する方法について説明します。
 

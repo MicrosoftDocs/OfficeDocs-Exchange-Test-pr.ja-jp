@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2012-10-03_
+_**トピックの最終更新日:** 2012-10-03_
 
 管理役割割り当ては、管理役割を役割担当者に割り当てます。Microsoft Exchange Server 2013 での管理役割の割り当ての詳細については、「[管理役割の割り当てについて](understanding-management-role-assignments-exchange-2013-help.md)」を参照してください。
 

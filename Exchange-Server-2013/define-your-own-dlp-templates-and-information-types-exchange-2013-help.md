@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Server 2013_
 
 データ損失防止 (DLP)ポリシー テンプレートを、Microsoft Exchange Server 2013 からは切り離して XML ファイルとして開発し、Exchange 管理センターまたは Exchange 管理シェルを使用してインポートできます。ここでは、DLP ソリューション内部で使用するための DLP XML ファイルの作成とチューニングのプロセスおよび詳細について説明します。Exchange 管理センターから既存の DLP ポリシー テンプレートを使用してただちに作業を開始しルールをトランスポートしてメッセージをスキャンする方法が提供されているため、独自の DLP XML ファイルの開発は必須ではありません。
 

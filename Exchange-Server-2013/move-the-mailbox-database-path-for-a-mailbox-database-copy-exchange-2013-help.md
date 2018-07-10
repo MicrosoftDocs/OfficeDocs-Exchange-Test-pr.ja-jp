@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2014-05-07_
+_**トピックの最終更新日:** 2014-05-07_
 
 メールボックス データベースを作成した後、EAC またはシェルを使用して、そのデータベースを別のボリューム、フォルダー、場所、またはパスに移動できます。レプリケートされないメールボックス データベースのデータベース パスを移動する方法の詳細な手順については、「[Move a mailbox database path](manage-mailbox-databases-in-exchange-2013-exchange-2013-help.md)」を参照してください。
 

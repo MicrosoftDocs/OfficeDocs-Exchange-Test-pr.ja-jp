@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2015-03-09_
+_**トピックの最終更新日:** 2015-03-09_
 
 エッジ トランスポート サーバーは攻撃の対象となる範囲を最小限にするために、インターネットに直接接続されたすべてのメール フローを処理し、Exchange 組織に SMTP 中継およびスマート ホスト サービスを提供します。メッセージ保護およびセキュリティの追加層は、組織の境界ネットワーク内のエッジ トランスポート サーバー上で稼働する一連のエージェントによって提供されます。これらのエージェントでは、ウイルスやスパムを防御し、メッセージ フローを制御するトランスポート ルールを適用する機能がサポートされています。
 
@@ -120,7 +120,7 @@ ESRA アカウントの詳細、およびこのアカウントを使用して Ed
     New-EdgeSubscription -FileData ([byte[]]$(Get-Content -Path "C:\EdgeSubscriptionInfo.xml" -Encoding Byte -ReadCount 0)) -CreateInternetSendConnector $true -CreateInboundSendConnector $true -Site "Default-First-Site-Name" 
 
 
-> [!NOTE]
+> [!NOTE]  
 > <EM>CreateInternetSendConnector</EM> および <EM>CreateInboundSendConnector</EM> パラメーターの既定値は、いずれも <CODE>$true</CODE> です。これらは、例示のみを目的としています。
 
 
@@ -130,7 +130,7 @@ ESRA アカウントの詳細、およびこのアカウントを使用して Ed
     New-EdgeSubscription -FileName "C:\EdgeSubscriptionInfo.xml"
 
 
-> [!NOTE]
+> [!NOTE]  
 > エッジ トランスポート サーバーで <STRONG>New-EdgeSubscription</STRONG> コマンドレットを実行するとき、エッジ トランスポート サーバー上で無効になるコマンドおよび上書きされる構成の確認メッセージが表示されます。この確認を省略するには、<EM>Force</EM> パラメーターを使用する必要があります。このパラメーターは、<STRONG>New-EdgeSubscription</STRONG> コマンドレットをスクリプトで使用するときに便利です。また、<EM>Force</EM> パラメーターは、エッジ トランスポート サーバーを再サブスクライブする際にファイルを作成し、同じ名前の既存ファイルを上書きするためにも使用します。
 
 
@@ -229,7 +229,7 @@ ESRA アカウントの詳細、およびこのアカウントを使用して Ed
 <td><p><em>SourceTransportServers</em></p></td>
 <td><p>&lt;<em>エッジ サブスクリプションの名前</em>&gt;</p>
 
-> [!NOTE]
+> [!NOTE]  
 > エッジ サブスクリプションの名前は、購読済みのエッジ トランスポート サーバーの名前と同じです。
 
 
@@ -314,13 +314,13 @@ EdgeSync は、メールボックス サーバーからエッジ トランスポ
 ロックとリースを使用するこの方法により、EdgeSync サービスの複数のインスタンスが同じエッジ トランスポート サーバーに同時にデータをプッシュしないようにします。
 
 
-> [!NOTE]
+> [!NOTE]  
 > サブスクライブ先の Active Directory サイトで Exchange 2010 または Exchange&nbsp;2007 メールボックス サーバーも使用している場合は、常に Exchange 2013 メールボックス サーバーが優先してレプリケーションを実行します。
 
 
 
 
-> [!NOTE]
+> [!NOTE]  
 > エッジ トランスポート サーバーを Active Directory サイトにサブスクライブすると、その時点でその Active Directory サイトにインストールされているすべてのメールボックス サーバーが、EdgeSync 同期プロセスに参加できるようになります。これらのサーバーのいずれかが削除されても、残りのメールボックス サーバーで実行されている EdgeSync サービスがデータ同期プロセスを続行します。ただし、Active Directory サイトに新しいメールボックス サーバーをインストールした場合、それらの新規サーバーは EdgeSync 同期プロセスに自動的には参加しません。新規メールボックス サーバーを EdgeSync 同期プロセスに参加させるには、エッジ トランスポート サーバーを再度サブスクライブする必要があります。
 
 

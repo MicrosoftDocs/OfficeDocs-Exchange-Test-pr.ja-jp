@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Server 2013_
 
 [オフライン アドレス帳の作成](create-an-offline-address-book-exchange-2013-help.md)
 

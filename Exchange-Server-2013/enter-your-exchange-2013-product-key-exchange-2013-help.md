@@ -15,9 +15,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2016-12-09_
+_**トピックの最終更新日:** 2016-12-09_
 
 プロダクト キーは、購入した Exchange Server 2013 が Standard Edition ライセンスか Enterprise Edition ライセンスかを示します。購入したプロダクト キーが Enterprise Edition ライセンスの場合は、Standard Edition ライセンスで使用可能なすべてに加えて、サーバーあたり 6 つ以上のデータベースをマウントできます。Exchange ライセンスの詳細については、「[Exchange 2013: エディションとバージョン](exchange-2013-editions-and-versions-exchange-2013-help.md)」を参照してください。
 

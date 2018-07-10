@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 テレフォニー ネットワークに接続または Microsoft Lync Server を Exchange ユニファイド メッセージング (UM) と統合して、必要な UM コンポーネントを作成および構成した後、ユーザー用にボイス メールを設定する必要があります。
 

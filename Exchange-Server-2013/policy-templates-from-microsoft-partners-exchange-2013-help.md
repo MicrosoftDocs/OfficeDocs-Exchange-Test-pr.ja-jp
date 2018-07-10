@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Server 2013_
 
 データ損失防止 (DLP) 機能を使用すると、機密情報の複数カテゴリを特定および監視できます。DLP ポリシーを構成するときは、Microsoft Exchange 外のソースのファイルをインポートし、DLP ポリシー テンプレートとして使用することが可能です。Microsoft のパートナー企業は、このような種類のテンプレートを開発して配布できます。このトピックのリンクは今後更新され、そのような企業が利用可能になった段階で検索できるようになります。
 

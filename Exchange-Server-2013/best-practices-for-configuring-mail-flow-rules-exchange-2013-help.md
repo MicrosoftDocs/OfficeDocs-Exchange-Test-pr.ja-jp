@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用先:**Exchange Online, Exchange Online Protection, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Online Protection, Exchange Server 2013_
 
-_**トピックの最終更新日:**2016-12-09_
+_**トピックの最終更新日:** 2016-12-09_
 
 Exchange トランスポート ルールに関する以下のベスト プラクティス推奨に従って、一般的な構成エラーを防いでください。各推奨事項は、例と詳細な手順を示すトピックにリンクしています。
 

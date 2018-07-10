@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Online Protection, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Online Protection, Exchange Server 2013_
 
-_**トピックの最終更新日:**2016-12-09_
+_**トピックの最終更新日:** 2016-12-09_
 
 Microsoft では、すべてのユーザーにとって使いやすい製品とサービスを提供できるよう取り組んでおります。ここでは、障害がある方に Microsoft Exchange と他の Microsoft 製品およびサービスを快適に使用していただくためのキーボード ショートカットについて説明します。
 
@@ -45,7 +45,7 @@ Exchange 管理センター (EAC) のキーボード ショートカットを使
 <td><p>EAC でドロップダウン メニューの項目間を移動する</p></td>
 <td><p>上下の方向キー</p>
 
-> [!NOTE]
+> [!NOTE]  
 > この場合、メニュー項目間を移動するために、Tab および Shift + Tab は使用できません。
 
 
@@ -55,7 +55,7 @@ Exchange 管理センター (EAC) のキーボード ショートカットを使
 <td><p>リスト内の項目間を移動する。</p></td>
 <td><p>上下の方向キー、および Home、End、Page Up、Page Down の各キー。</p>
 
-> [!NOTE]
+> [!NOTE]  
 > また、上下左右の方向キーを使用すると、オプション ボタン間または関連チェックボックスのグループ内で移動できます。
 
 

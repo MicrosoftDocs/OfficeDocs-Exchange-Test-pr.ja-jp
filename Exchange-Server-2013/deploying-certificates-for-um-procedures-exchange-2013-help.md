@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Server 2013, Exchange Server 2016_
 
-_**トピックの最終更新日:**2013-04-19_
+_**トピックの最終更新日:** 2013-04-19_
 
 [UM の証明書を作成する](create-certificates-for-um-exchange-2013-help.md)
 

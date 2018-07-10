@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 組織で使用しなくなったパブリック フォルダーを削除する必要があります。削除する必要があるパブリック フォルダーを特定するには、「[パブリック フォルダーおよびパブリック フォルダー アイテムの統計情報の表示](view-statistics-for-public-folders-and-public-folder-items-exchange-2013-help.md)」を参照してください。
 

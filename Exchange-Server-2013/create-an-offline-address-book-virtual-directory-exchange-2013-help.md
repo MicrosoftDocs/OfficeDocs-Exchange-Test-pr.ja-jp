@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
 OAB 仮想ディレクトリは、OAB の分散です。 既定では、Microsoft Exchange Server 2013 がインストールされると、インターネット インフォメーション サービス (IIS) の既定の内部 Web サイトに OAB という名前の新しい仮想ディレクトリが作成されます。 組織のファイアウォールの外部から Microsoft Outlook に接続するクライアント側のユーザーがいる場合は、外部の Web サイトを追加できます。 また、シェルで **New-OABVirtualDirectory** コマンドレットを実行すると、ローカルの Exchange サーバー上の既定の IIS Web サイトに OAB という名前の新しい仮想ディレクトリが作成されます。
 

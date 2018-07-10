@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013 SP1_
+_**適用先:** Exchange Online, Exchange Server 2013 SP1_
 
-_**トピックの最終更新日:**2013-12-02_
+_**トピックの最終更新日:** 2013-12-02_
 
 組み込みの正常性をレポートするコマンドレットを使用して、可用性管理に関連した以下のようなさまざまなタスクを実行できます。
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2015-04-08_
+_**トピックの最終更新日:** 2015-04-08_
 
 既定では、Microsoft Exchange Server 2013 は Active Directory の IP サイト リンク オブジェクトを参照することにより、最小コストのルーティング パスを決定できます。ただし、Active Directory IP サイト リンクのコストおよびトラフィック フロー パターンが、Exchange でのメールのルーティングに最適ではないと判断される場合は、Exchange によってのみ使用される Active Directory の設定を構成して、メール フローを最適化できます。
 

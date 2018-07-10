@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 ボイス メール メッセージが届いたら、ユーザーはコンピューターのスピーカーやヘッドフォンでボイス メール メッセージを聞くか、電話での再生機能を使用するかを選択できます。電話での再生機能は Microsoft Outlook と Outlook Web App に付属しており、この機能の設定は **\[ボイス メール\]** オプションの **\[電話での再生\]** セクションで行えます。このトピックでは、ユニファイド メッセージング (UM) が有効なユーザーが電話での再生機能を使用する方法について説明します。
 

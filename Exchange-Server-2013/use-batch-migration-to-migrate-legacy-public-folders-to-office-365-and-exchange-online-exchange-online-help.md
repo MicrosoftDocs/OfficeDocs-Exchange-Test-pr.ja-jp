@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用先:**Exchange Online, Exchange Server, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Server, Exchange Server 2013_
 
-_**トピックの最終更新日:**2018-03-26_
+_**トピックの最終更新日:** 2018-03-26_
 
 **概要**:以下に示す手順で、Exchange 2007 および Exchange 2010 パブリック フォルダーを Office 365 に移動します。
 
@@ -77,7 +77,7 @@ Exchange 2003 からパブリック フォルダーを直接移行すること�
 
   - Exchange 2007 では、Exchange 組織の管理役割または Exchange サーバー管理者の役割の割り当てが必要です。さらに、パブリック フォルダー管理者の役割と、対象サーバーに対するローカルの Administrators グループの割り当ても必要です。詳細については、「[管理者の役割にユーザーまたはグループを追加する方法](https://go.microsoft.com/fwlink/p/?linkid=81779)」を参照してください。
 
-  - Exchange 2007 サーバーで [Windows PowerShell 2.0 および WinRM 2.0 for Windows Server 2008 x64 Edition](http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=968930) にアップグレードします。
+  - Exchange 2007 サーバーで [Windows PowerShell 2.0 および WinRM 2.0 for Windows Server 2008 x64 Edition](http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=968930) にアップグレードします。
 
   - 組織内のパブリック フォルダーのサイズが 2 GB を超えている場合は、移行する前に、そのフォルダーの内容を削除するか、複数のパブリック フォルダーに分割することをお勧めします。この 2 つのオプションがどちらも実行できない場合、パブリック フォルダーを Office 365 および Exchange Online に移動しないことをお勧めします。
 

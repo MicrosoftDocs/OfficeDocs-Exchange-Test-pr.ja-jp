@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 ユニファイド メッセージング (UM) 呼び出しの音質に問題があるという報告をユーザーから受けた場合は、原因の究明にユーザー呼び出しのログ レポートを使用できます。
 

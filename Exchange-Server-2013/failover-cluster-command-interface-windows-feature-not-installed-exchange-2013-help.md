@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server_
+_**適用先:** Exchange Server_
 
-_**トピックの最終更新日:**2014-12-03_
+_**トピックの最終更新日:** 2014-12-03_
 
 ローカル コンピューターに必要な Windows 機能がないため、Microsoft Exchange Server 2013 のセットアップを続行できません。Exchange 2013 を続行する前に、この Windows 機能をインストールする必要があります。
 

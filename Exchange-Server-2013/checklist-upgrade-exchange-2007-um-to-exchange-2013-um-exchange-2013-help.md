@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Server 2013, Exchange Server 2016_
 
-_**トピックの最終更新日:**2016-12-09_
+_**トピックの最終更新日:** 2016-12-09_
 
 このチェックリストは、Exchange 2007 ユニファイド メッセージング (UM) から Exchange 2013 UM へのアップグレードに役立ちます。Exchange 2007 組織と UM 展開を Exchange 2013 にアップグレードする際に、必ずこの情報を参照してください。Exchange 2013 UM にアップグレードする詳細な手順については、「[Exchange 2007 UM から Exchange 2013 UM へのアップグレード](upgrade-exchange-2007-um-to-exchange-2013-um-exchange-2013-help.md)」を参照してください。
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2015-04-08_
+_**トピックの最終更新日:** 2015-04-08_
 
 *SMTP バナー*とは、リモートの SMTP メッセージング サーバーが、Microsoft Exchange Server 2013 を実行しているコンピューター上に構成されている受信コネクタに接続したときに受信する SMTP 接続応答です。
 

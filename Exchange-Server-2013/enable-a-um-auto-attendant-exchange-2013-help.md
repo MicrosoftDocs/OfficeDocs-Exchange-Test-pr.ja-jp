@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 既定では、ユニファイド メッセージング (UM) 自動応答を作成すると、UM 自動応答は無効な状態に設定されます。UM 自動応答を作成すると、その状態を、着信呼び出しに応答できる状態に変更できます。
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2015-03-09_
+_**トピックの最終更新日:** 2015-03-09_
 
 受信者を管理するタスクの実行に必要なアクセス許可は、実行する手順、または実行するコマンドレットによって異なります。
 
@@ -28,7 +28,7 @@ _**トピックの最終更新日:**2015-03-09_
 3.  ここで、**Get-ManagementRoleAssignment** コマンドレットを実行して、ユーザーに割り当てられている役割グループまたは管理役割を調べ、その機能の管理に必要なアクセス許可があるかどうかを確認します。
     
 
-    > [!NOTE]
+    > [!NOTE]  
     > <STRONG>Get-ManagementRoleAssignment</STRONG> コマンドレットを実行するには、"Role Management/役割管理" 管理役割が割り当てられている必要があります。<STRONG>Get-ManagementRoleAssignment</STRONG> コマンドレットを実行するアクセス許可がない場合は、Exchange 管理者に連絡して、自分に割り当てられている役割グループまたは管理役割を取得してください。
 
 
@@ -78,7 +78,7 @@ _**トピックの最終更新日:**2015-03-09_
 <p><a href="view-only-organization-management-exchange-2013-help.md">表示限定の組織管理</a></p>
 <p>&quot;Support Diagnostics/サポート診断&quot; 役割</p>
 
-> [!NOTE]
+> [!NOTE]  
 > "Support Diagnostics/サポート診断" 役割は、役割グループに割り当てられていません。詳細については、「<A href="add-a-role-to-a-user-or-usg-exchange-2013-help.md">ユーザーまたは USG に役割を追加する</A>」を参照してください。
 
 
@@ -93,7 +93,7 @@ _**トピックの最終更新日:**2015-03-09_
 <td><p>インポート エクスポート</p></td>
 <td><p>&quot;Mailbox Import Export/メールボックスのインポートとエクスポート&quot; 役割</p>
 
-> [!NOTE]
+> [!NOTE]  
 > "Mailbox Import Export/メールボックスのインポートとエクスポート" 役割は、役割グループに割り当てられていません。詳細については、「<A href="mailbox-import-export-role-exchange-2013-help.md">"Mailbox Import Export/メールボックスのインポートとエクスポート" 役割</A>」を参照してください。
 
 

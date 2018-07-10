@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2012-11-16_
+_**トピックの最終更新日:** 2012-11-16_
 
 Microsoft Exchange Server 2013 では、Exchange Search が IRM 保護メッセージをインデックス処理できるように Information Rights Management (IRM) を構成できます。
 

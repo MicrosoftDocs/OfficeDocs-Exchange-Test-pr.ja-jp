@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 ユニファイド メッセージング (UM) メールボックス ポリシーに関連付けられた UM が有効なユーザーに対して、Outlook Voice Access へのアクセスを有効または無効にすることができます。Outlook Voice Access とは、UM が有効であるユーザーが電話経由でメールボックスにアクセスするのに使用する機能のことです。既定では、この設定は有効になっています。
 

@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 祝日やその他の行事のために組織が休業する日付と時刻を定義できます。指定した開始日から終了日までの期間、ユニファイド メッセージング (UM) 自動応答に接続された発信者には、祝日のスケジュールを構成したときに指定した祝日の案内応答が再生されます。指定した祝日の案内応答が再生された後、勤務時間外の案内応答とメニュー プロンプトが発信者のために再生されます。
 

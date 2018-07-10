@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Server 2013_
 
-_**トピックの最終更新日:**2016-12-09_
+_**トピックの最終更新日:** 2016-12-09_
 
 メッセージングのポリシーと準拠を構成するのに必要なアクセス許可は、実行する手順、または実行するコマンドレットによって異なります。メッセージング ポリシーと準拠の詳細については、「[メッセージングのポリシーと準拠](messaging-policy-and-compliance-exchange-2013-help.md)」 を参照してください。
 
@@ -28,7 +28,7 @@ _**トピックの最終更新日:**2016-12-09_
 3.  ここで、**Get-ManagementRoleAssignment** コマンドレットを実行して、ユーザーに割り当てられている役割グループまたは管理役割を調べ、その機能の管理に必要なアクセス許可があるかどうかを確認します。
     
 
-    > [!NOTE]
+    > [!NOTE]  
     > <STRONG>Get-ManagementRoleAssignment</STRONG> コマンドレットを実行するには、"Role Management/役割管理" 管理役割が割り当てられている必要があります。<STRONG>Get-ManagementRoleAssignment</STRONG> コマンドレットを実行するアクセス許可がない場合は、Exchange 管理者に連絡して、自分に割り当てられている役割グループまたは管理役割を取得してください。
 
 
@@ -36,7 +36,7 @@ _**トピックの最終更新日:**2016-12-09_
 機能の管理能力を別のユーザーに委任する場合は、「[役割割り当てを委任する](delegate-role-assignments-exchange-2013-help.md)」をご覧ください。
 
 
-> [!NOTE]
+> [!NOTE]  
 > 管理する機能の一部がエッジ トランスポート サーバー上にある場合があります。エッジ トランスポート サーバー上で機能を管理するには、管理するエッジ トランスポート サーバー上でローカルの Administrators グループのメンバーになる必要があります。エッジ トランスポート サーバーは、役割ベースのアクセス制御 (RBAC) を使用しません。エッジ トランスポート サーバー上で管理できる機能については、以下の表の [必要なアクセス許可] 列にエッジ トランスポートのローカル管理者と記載されています。
 
 
@@ -78,7 +78,7 @@ _**トピックの最終更新日:**2016-12-09_
 <td><p><a href="discovery-management-exchange-2013-help.md">検出の管理</a> <strong>および</strong></p>
 <p><a href="mailbox-import-export-role-exchange-2013-help.md">&quot;Mailbox Import Export/メールボックスのインポートとエクスポート&quot; 役割</a></p>
 
-> [!NOTE]
+> [!NOTE]  
 > 既定では、"Mailbox Import Export/メールボックスのインポートとエクスポート" 役割は、どの役割グループにも割り当てられていません。管理の役割は、組み込みまたはカスタムの役割グループ、ユーザー、またはユニバーサル セキュリティ グループに割り当てることができます。役割を役割グループに割り当てることをお勧めします。詳細については、「<A href="add-a-role-to-a-user-or-usg-exchange-2013-help.md">ユーザーまたは USG に役割を追加する</A>」を参照してください。
 
 
@@ -113,7 +113,7 @@ _**トピックの最終更新日:**2016-12-09_
 <td><p>インプレース電子情報開示 (eDiscovery)</p></td>
 <td><p><a href="discovery-management-exchange-2013-help.md">検出の管理</a></p>
 
-> [!NOTE]
+> [!NOTE]  
 > 既定では、"Discovery Management/検出の管理" 役割グループにはメンバーが存在しません。管理者を含むユーザーには、メールボックスを検索するのに必要なアクセス許可がありません。詳細については、「<A href="assign-ediscovery-permissions-in-exchange-exchange-2013-help.md">Exchange の電子情報開示のアクセス許可を割り当てる</A>」を参照してください。
 
 
@@ -124,7 +124,7 @@ _**トピックの最終更新日:**2016-12-09_
 <td><p><a href="discovery-management-exchange-2013-help.md">検出の管理</a></p>
 <p><a href="organization-management-exchange-2013-help.md">組織の管理</a></p>
 
-> [!IMPORTANT]
+> [!IMPORTANT]  
 > クエリベースのインプレース保持を作成するには、ユーザーにメールボックス検索役割および訴訟ホールド役割が直接割り当てられているか、または両方の役割が割り当てられている役割グループのメンバーシップを通じて割り当てられている必要があります。すべてのメールボックス アイテムを保持するインプレース保持をクエリを使用しないで作成するには、ユーザーに訴訟ホールド役割が割り当てられている必要があります。探索管理役割グループには、両方の役割が割り当てられます。<BR>Organization Management 役割グループには、訴訟ホールド役割が割り当てられます。Organization Management 役割グループのメンバーは、メールボックス内のすべてのアイテムにインプレース保持を配置できますが、クエリベースのインプレース保持は作成できません。
 
 

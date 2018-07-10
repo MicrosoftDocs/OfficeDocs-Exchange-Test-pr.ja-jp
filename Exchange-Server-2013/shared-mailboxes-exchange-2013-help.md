@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2015-06-04_
+_**トピックの最終更新日:** 2015-06-04_
 
 Microsoft Exchange Server 2013 の Exchange 共有メールボックスについて説明し、これを利用するべき理由と、委任されたメールボックスを Exchange 共有メールボックスに変更する手順を示します。
 

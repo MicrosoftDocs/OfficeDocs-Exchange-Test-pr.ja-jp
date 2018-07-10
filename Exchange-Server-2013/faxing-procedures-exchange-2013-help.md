@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 [パートナー FAX サーバーの URI を設定して FAX 送受信を許可する](set-the-partner-fax-server-uri-to-allow-faxing-exchange-2013-help.md)
 

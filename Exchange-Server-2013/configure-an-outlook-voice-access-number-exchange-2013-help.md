@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 Outlook Voice Access 番号を使用すると、ユニファイド メッセージング (UM) とボイス メールが有効なユーザーが Outlook Voice Access を使用して自分のメールボックスにアクセスできます。ダイヤル プランに Outlook Voice Access またはサブスクライバー アクセス番号を構成すると、UM が有効なユーザーはその番号にアクセスして、メールボックスにサインインして、自分の電子メール、ボイス メール、予定表、および個人用連絡先情報にアクセスすることができます。
 

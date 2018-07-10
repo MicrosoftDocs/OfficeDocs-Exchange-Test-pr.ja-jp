@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2015-03-09_
+_**トピックの最終更新日:** 2015-03-09_
 
 `POP3 and IMAP4 Protocols` 管理役割を割り当てられた管理者は、POP3 および IMAP4 の構成 (たとえば、個々のサーバー上の認証や接続設定) を管理することができます。
 

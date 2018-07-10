@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2015-01-14_
+_**トピックの最終更新日:** 2015-01-14_
 
 ここでは、RollAlternateServiceAccountPassword.ps1 スクリプトを使用した場合に発生しうるエラーについて、ソリューションと情報を提供します。
 

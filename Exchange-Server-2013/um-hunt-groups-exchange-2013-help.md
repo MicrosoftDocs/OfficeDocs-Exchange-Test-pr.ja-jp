@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 テレフォニー ハント グループを使用すると、電話呼び出しを 1 つの番号から複数の内線または電話番号に分散できます。ユニファイド メッセージング (UM) では、UM ハント グループによって、テレフォニー ハント グループを論理的に表し、UM IP ゲートウェイを UM ダイヤル プランにリンクします。
 

@@ -9,13 +9,13 @@ mtps_version: v=EXCHG.150
 ms.translationtype: HT
 ---
 
-# プライマリ DNS サフィックスに が存在しない
+# プライマリ DNS サフィックスに [ms.exch.setupreadiness.FqdnMissing] が存在しない
 
  
 
-_**適用先:**Exchange Server_
+_**適用先:** Exchange Server_
 
-_**トピックの最終更新日:**2014-01-15_
+_**トピックの最終更新日:** 2014-01-15_
 
 Microsoft Exchange Server 2013 セットアップは、Exchange をインストールしているコンピューターのプライマリ ドメイン ネーム システム (DNS) サフィックスが構成されていないために続行できません。
 

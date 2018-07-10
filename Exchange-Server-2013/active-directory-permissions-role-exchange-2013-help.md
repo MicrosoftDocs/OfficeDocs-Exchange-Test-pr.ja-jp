@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2015-03-09_
+_**トピックの最終更新日:** 2015-03-09_
 
 `Active Directory Permissions` 管理役割により、管理者は組織内で Active Directory のアクセス許可を構成できます。Active Directory アクセス許可、またはアクセス制御リスト (ACL) を使用する機能に含まれるのは、トランスポート受信コネクタと送信コネクタ、およびメールボックスに対する送信者アクセス許可と代理送信アクセス許可です。
 

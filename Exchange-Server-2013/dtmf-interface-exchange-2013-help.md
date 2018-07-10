@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 ユニファイド メッセージング (UM) では、発信者がデュアル トーン多重周波数 (DTMF) (タッチトーンとも呼ばれます) や音声入力を使用してシステムを操作することができます。発信者が使用できる方法は、UM ダイヤル プランや自動応答の構成方法によって異なります。
 

@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 ユニファイド メッセージング (UM) ダイヤル プランとリンクされている UM が有効なユーザーが FAX メッセージを受信しないようにすることができます。既定では、ユニファイド メッセージングが有効で、UM ダイヤル プランとリンクされているユーザーは、FAX メッセージを受信することができます。ただし、特定の UM ダイヤル プランに関連付けられているユーザーが FAX を受信できないようにする必要がある場合もあります。
 

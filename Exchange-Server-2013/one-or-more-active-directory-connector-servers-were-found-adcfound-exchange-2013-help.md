@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server_
+_**適用先:** Exchange Server_
 
-_**トピックの最終更新日:**2016-12-15_
+_**トピックの最終更新日:** 2016-12-15_
 
 このトピックの内容は、Microsoft Exchange Server 2013 向けに更新されていません。まだ更新されていませんが、そのままで Exchange 2013 にも適用できる可能性があります。ヘルプが必要な場合は、以下のコミュニティ リソースを確認してください。
 
@@ -60,9 +60,9 @@ Exchange 2007 または Exchange 2010 のセットアップ プログラムを�
 
 ADC の詳細については、以下の Microsoft サポート技術情報の文書を参照してください。
 
-  - 文書番号 325300、Active Directory コネクタの概要に関するサポート Web キャスト（[https://go.microsoft.com/fwlink/?linkid=3052\&kbid=325300](https://go.microsoft.com/fwlink/?linkid=3052%26kbid=325300))
+  - 文書番号 325300、Active Directory コネクタの概要に関するサポート Web キャスト（[https://go.microsoft.com/fwlink/?linkid=3052\&kbid=325300](https://go.microsoft.com/fwlink/?linkid=3052&kbid=325300))
 
-  - 文書番号 325221、Microsoft の詳細な Active Directory コネクタに関するサポート Web キャスト （[https://go.microsoft.com/fwlink/?linkid=3052\&kbid=325221](https://go.microsoft.com/fwlink/?linkid=3052%26kbid=325221))
+  - 文書番号 325221、Microsoft の詳細な Active Directory コネクタに関するサポート Web キャスト （[https://go.microsoft.com/fwlink/?linkid=3052\&kbid=325221](https://go.microsoft.com/fwlink/?linkid=3052&kbid=325221))
 
-  - 文書番号 312632「\[HOW TO\] Exchange 2000 Server で Active Directory コネクタをインストールおよび構成する方法」([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=312632](https://go.microsoft.com/fwlink/?linkid=3052%26kbid=312632))
+  - 文書番号 312632「\[HOW TO\] Exchange 2000 Server で Active Directory コネクタをインストールおよび構成する方法」([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=312632](https://go.microsoft.com/fwlink/?linkid=3052&kbid=312632))
 

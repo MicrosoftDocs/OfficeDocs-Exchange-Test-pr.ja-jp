@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 ユニファイド メッセージング (UM) 自動応答で勤務地を指定し、発信者のために勤務地が再生されるようにすることができます。既定では、勤務地は入力されていません。
 

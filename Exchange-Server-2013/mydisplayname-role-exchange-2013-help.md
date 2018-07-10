@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2012-10-17_
+_**トピックの最終更新日:** 2012-10-17_
 
 `MyDisplayName` 管理役割により、個々のユーザーが自分の表示名を表示および変更できます。 これは、親役割 [MyProfileInformation 役割](myprofileinformation-role-exchange-2013-help.md) から作成されるカスタムの役割です。
 

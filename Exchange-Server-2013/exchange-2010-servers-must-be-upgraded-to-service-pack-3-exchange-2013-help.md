@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server_
+_**適用先:** Exchange Server_
 
-_**トピックの最終更新日:**2014-11-05_
+_**トピックの最終更新日:** 2014-11-05_
 
 Microsoft Exchange Server 2013 セットアップは、1 つ以上の Microsoft Exchange Server 2010 サーバーが Exchange Server 2010 の Service Pack 3 (SP3) にアップグレードされていないことを検出したため続行できません。Exchange 2013 のインストール前に、組織のすべての Exchange 2010 サーバーを Exchange 2010 SP3 にアップグレードする必要があります。この要件には Exchange 2010 エッジ トランスポート サーバーが含まれます。詳細については、「[Exchange 2010 から Exchange 2013 へのアップグレード](upgrade-from-exchange-2010-to-exchange-2013-exchange-2013-help.md)」を参照してください。
 

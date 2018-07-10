@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Server 2013_
 
 Exchange 管理センター または Exchange 管理シェル を使用して、ユーザー メールボックスの MAPI を有効または無効にできます。MAPI を有効にすると、Outlook や他の MAPI 電子メール クライアントによるユーザーのメールボックスへのアクセスが可能になります。MAPI を無効にすると、Outlook や他の MAPI クライアントによるアクセスは行えません。ただし、メールボックスは電子メール メッセージの受信を続行します。また、これらのクライアントによるアクセスのサポートがメールボックスで有効になっている場合、ユーザーは Outlook Web App、POP 電子メール クライアント、IMAP クライアントを使用してメールボックスにアクセスし、電子メールを送信および受信できます。
 

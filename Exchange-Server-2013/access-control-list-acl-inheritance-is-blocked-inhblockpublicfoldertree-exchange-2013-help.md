@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server_
+_**適用先:** Exchange Server_
 
-_**トピックの最終更新日:**2015-03-09_
+_**トピックの最終更新日:** 2015-03-09_
 
 このトピックの内容は、Microsoft Exchange Server 2013 向けに更新されていません。まだ更新されていませんが、そのままで Exchange 2013 にも適用できる可能性があります。ヘルプが必要な場合は、以下のコミュニティ リソースを確認してください。
 
@@ -103,7 +103,7 @@ Exchange セットアップ プログラムでは、次の Exchange オブジェ
 <li><p><strong>[セキュリティ]</strong> タブをクリックし、<strong>[詳細設定]</strong> をクリックします。</p></li>
 <li><p><strong>[親からの継承可能なアクセス許可をこのオブジェクトとすべての子オブジェクトに伝達できるようにします]</strong> を選択して、アクセス許可の継承を再度有効にします。</p></li>
 <li><p><strong>[OK]</strong> を 2 回クリックして、変更を適用します。</p></li>
-<li><p>Active Directory レプリケーションにより変更が伝達されるまで待つか、またはマイクロソフト サポート技術情報の記事 232072「Active Directory ダイレクト複製パートナー間での複製の開始」(<a href="http://go.microsoft.com/fwlink/?linkid=3052%26kbid=232072" class="uri">http://go.microsoft.com/fwlink/?linkid=3052&amp;kbid=232072</a>) の説明に従って強制的に Active Directory レプリケーションを行います。</p></li>
+<li><p>Active Directory レプリケーションにより変更が伝達されるまで待つか、またはマイクロソフト サポート技術情報の記事 232072「Active Directory ダイレクト複製パートナー間での複製の開始」(<a href="http://go.microsoft.com/fwlink/?linkid=3052&kbid=232072" class="uri">http://go.microsoft.com/fwlink/?linkid=3052&amp;kbid=232072</a>) の説明に従って強制的に Active Directory レプリケーションを行います。</p></li>
 </ol></td>
 </tr>
 </tbody>

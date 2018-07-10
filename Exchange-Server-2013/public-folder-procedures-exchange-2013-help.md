@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Server 2013_
 
-_**トピックの最終更新日:**2017-08-02_
+_**トピックの最終更新日:** 2017-08-02_
 
 **概要**:これらの記事の 1 つ以上を使ってパブリック フォルダーの作成と管理を行います。
 

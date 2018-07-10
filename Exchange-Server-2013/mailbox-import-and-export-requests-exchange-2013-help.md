@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2015-04-07_
+_**トピックの最終更新日:** 2015-04-07_
 
 Exchange 管理シェルの **MailboxImportRequest** または **MailboxExportRequest** のコマンドレット セットで pst ファイルにデータのインポートやエクスポートができます。メールボックスのインポートまたはエクスポート要求を開始すると、Microsoft Exchange メールボックス レプリケーション サービス (MRS) によってこのプロセスが非同期的に実行されます。MRS はすべての Exchange 2010 クライアント アクセス サーバーに常駐し、メールボックスの移動と, .pst ファイルのインポートとエクスポートを担当するサービスです。
 

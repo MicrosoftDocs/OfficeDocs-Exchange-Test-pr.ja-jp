@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013 SP1_
+_**適用先:** Exchange Server 2013 SP1_
 
-_**トピックの最終更新日:**2015-03-09_
+_**トピックの最終更新日:** 2015-03-09_
 
 EAC またはシェルを使用して、Exchange 2013 のメールボックスを無効または削除することができます。メールボックスを無効または削除した場合、Exchange はメールボックス データベースでメールボックスを保持しつつ、メールボックスを無効な状態に切り替えます。無効化および削除したメールボックスは、削除済みメールボックスの保持期間 (既定で 30 日) が経過するまで、メールボックス データベース内に保持されます。保持期間を過ぎると、メールボックスは完全に削除されます。
 
@@ -138,12 +138,15 @@ Exchange Online のメールボックスを削除する必要がある場合は�
 このコマンドを実行すると、メールボックスを無効にすることを確認するメッセージが表示されます。
 
 次にメールボックスを無効にするコマンドの例を示します。
-
-    Disable-Mailbox danj
-
-    Disable-Mailbox "Conf Room 31/1234 (12)"
-
-    Disable-Mailbox sharedmbx@contoso.com
+```
+Disable-Mailbox danj
+```
+```
+Disable-Mailbox "Conf Room 31/1234 (12)"
+```
+```
+Disable-Mailbox sharedmbx@contoso.com
+```
 
 ## 正常な動作を確認する方法
 
@@ -196,12 +199,15 @@ Exchange Online のメールボックスを削除する必要がある場合は�
 このコマンドを実行すると、メールボックスと対応する Active Directory ユーザー アカウントを削除することを確認するメッセージが表示されます。
 
 次にメールボックスを削除するコマンドの例を示します。
-
-    Remove-Mailbox pilarp@contoso.com
-
-    Remove-Mailbox "Fleet Van (16)"
-
-    Remove-Mailbox corpprint
+```
+Remove-Mailbox pilarp@contoso.com
+```
+```
+Remove-Mailbox "Fleet Van (16)"
+```
+```
+Remove-Mailbox corpprint
+```
 
 ## 正常な動作を確認する方法
 

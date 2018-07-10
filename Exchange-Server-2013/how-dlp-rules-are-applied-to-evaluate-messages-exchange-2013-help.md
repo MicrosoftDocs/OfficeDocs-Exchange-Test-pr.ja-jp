@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Server 2013_
 
 秘匿性の高い情報のルールを Microsoft Exchange データ損失対策 (DLP) ポリシーに設定して、電子メール メッセージの固有のデータを検出します。このトピックによって、これらのルールが適用される方法とメッセージが評価される方法が理解できるようになります。ルールが実施される方法を理解すれば、電子メール ユーザーのワークフローの中断を回避したり、高精度の DLP 検出を実現したりすることができます。例として、Microsoft が提供するクレジット カード情報ルールを使用します。トランスポート ルールまたは DLP ポリシーを有効にした場合、Exchange トランスポート ルール エージェントは、ユーザーが送信したすべてのメッセージに対して、作成したルール セットと比較します。
 
@@ -144,10 +144,12 @@ Microsoft が設定したこのルールでは、ルールにマッチするた�
 ```
 
 この記事にあるクレジット カードの説明は、その他の秘匿性の高い情報ルールに展開することもできます。Exchangeで Microsoft が提供するルールの完全なリストを表示するには、Exchange 管理シェルで [Get-ClassificationRuleCollection](https://technet.microsoft.com/ja-jp/library/jj218696\(v=exchg.150\)) コマンドレットを次のように使用します。
-
-    $rule_collection = Get-ClassificationRuleCollection
-
-    $rule_collection[0].SerializedClassificationRuleCollection | Set-Content oob_classifications.xml -Encoding byte
+```
+$rule_collection = Get-ClassificationRuleCollection
+```
+```
+$rule_collection[0].SerializedClassificationRuleCollection | Set-Content oob_classifications.xml -Encoding byte
+```
 
 ## 詳細情報
 

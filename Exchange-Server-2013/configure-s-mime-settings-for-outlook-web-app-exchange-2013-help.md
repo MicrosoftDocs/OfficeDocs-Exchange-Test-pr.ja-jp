@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Server 2013_
 
 Exchange 2013 と Exchange Online の両方の組織管理者は、S/MIME 保護メッセージの送受信が可能になるように、Outlook Web App をセット アップできます。Exchange 管理シェル インターフェイスによってこの機能を管理するには、`SMIMEConfig` コマンドレットを使用します。
 

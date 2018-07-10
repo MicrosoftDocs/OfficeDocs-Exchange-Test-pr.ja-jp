@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**トピックの最終更新日:**2017-07-25_
+_**トピックの最終更新日:** 2017-07-25_
 
 ユニファイド メッセージング (UM) では、Microsoft Exchange を組織の既存のテレフォニー システムに統合する必要があります。展開を成功させるには、既存のテレフォニー インフラストラクチャを慎重に分析し、ユニファイド メッセージングを展開するための正しい計画手順を実行する必要があります。
 

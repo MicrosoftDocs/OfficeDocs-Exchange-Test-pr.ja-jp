@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用先:**Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Server 2013, Exchange Server 2016_
 
-_**トピックの最終更新日:**2017-03-27_
+_**トピックの最終更新日:** 2017-03-27_
 
 Exchange 2013 または 2016 の Exchange ユーザーが Exchange 2010 のアクセスまたはそれ以前のパブリック フォルダー (従来のパブリック フォルダーとも呼ばれます) を有効にする方法です。
 
@@ -56,10 +56,12 @@ Exchange Server 2013 や 2016 の Exchange Server 上にメールボックスの
 
 
 3.  新しいメールボックス データベース内にプロキシ メールボックスを作成し、アドレス帳でこのメールボックスを非表示にします。このメールボックスの SMTP は自動検出によって *DefaultPublicFolderMailbox* SMTP として返されます。この SMTP を解決することで、クライアントは従来の Exchange サーバーに接続して、パブリック フォルダーにアクセスできます。
-    
-        New-Mailbox -Name <PFMailbox1> -Database <NewMDBforPFs> 
-    
-        Set-Mailbox -Identity <PFMailbox1> -HiddenFromAddressListsEnabled $true
+    ```
+    New-Mailbox -Name <PFMailbox1> -Database <NewMDBforPFs> 
+    ```
+    ```
+    Set-Mailbox -Identity <PFMailbox1> -HiddenFromAddressListsEnabled $true
+    ```
 
 4.  Exchange 2010 では、プロキシ パブリック フォルダー メールボックスを返すように、自動検出を有効にします。この手順は Exchange 2007 には必要ありません。
     

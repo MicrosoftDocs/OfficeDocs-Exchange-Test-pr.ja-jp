@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 階層シンクロナイザーおよびメールボックス アシスタントを手動で実行する場合にのみ、パブリック フォルダーの階層を更新する必要があります。これらは両方とも、組織のパブリック フォルダー メールボックスのそれぞれにおいて少なくとも 24 時間に 1 回実行されます。階層シンクロナイザーは、Microsoft Outlook または Microsoft Exchange Web Services クライアントを通してユーザーがセカンダリ メールボックスにログオンしている場合に、15 分おきに実行されます。
 

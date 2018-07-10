@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Server 2013_
 
 Windows Phone などの携帯電話を構成して、MicrosoftExchange ActiveSync を使用することができます。組織内の各携帯電話についてこの手順を実行する必要があります。
 

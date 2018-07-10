@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Server 2013_
 
 Outlook Web App メールボックス ポリシーを作成後、Outlook Web App 内のユーザーに使用可能な、さまざまな機能制御用のオプションを構成できます。たとえば、受信トレイのルールの有効、無効を設定したり、添付ファイルで使用できるファイルの種類の一覧を作成できたりします。
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**トピックの最終更新日:**2016-12-09_
+_**トピックの最終更新日:** 2016-12-09_
 
 従来の PBX (Private Branch eXchange) および IP PBX テレフォニー システムの一部では、発信者はボイス メール メッセージをプライベートとしてマークし、そのメッセージの受信者がそれを他のユーザーに転送しないようにすることができます。統合ボイス メール システムの場合、複数の方法で音声メッセージにアクセスできるため、目的の相手以外の人にプライベートの音声メッセージが再生されないようにするのが難しくなります。
 

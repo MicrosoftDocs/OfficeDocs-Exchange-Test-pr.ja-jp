@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2015-03-09_
+_**トピックの最終更新日:** 2015-03-09_
 
 `Security Group Creation and Membership` 管理役割により、管理者が組織内のユニバーサル セキュリティ グループ (USG) とそれらのメンバーシップを作成および管理できるようになります。
 

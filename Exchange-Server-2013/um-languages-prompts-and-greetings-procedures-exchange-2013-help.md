@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Server 2013, Exchange Server 2016_
 
-_**トピックの最終更新日:**2013-04-17_
+_**トピックの最終更新日:** 2013-04-17_
 
 [UM 言語パックをインストールする](install-a-um-language-pack-exchange-2013-help.md)
 

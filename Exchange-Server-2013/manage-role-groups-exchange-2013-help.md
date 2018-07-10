@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Server 2013_
 
-_**トピックの最終更新日:**2012-10-08_
+_**トピックの最終更新日:** 2012-10-08_
 
 このトピックでは、Microsoft Exchange Server 2013 で管理役割グループを追加、削除、コピー、および表示する方法を示します。また、役割グループに管理役割を追加、削除および一覧表示したり、役割グループの管理スコープや代理人を変更する方法も示します。Exchange 2013 の役割グループの詳細については、「[管理役割グループについて](understanding-management-role-groups-exchange-2013-help.md)」を参照してください。
 

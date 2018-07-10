@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Server 2013_
 
-_**トピックの最終更新日:**2012-10-09_
+_**トピックの最終更新日:** 2012-10-09_
 
 エンド ユーザーから成るグループに割り当てるアクセス許可をカスタマイズする場合は、新しいカスタム管理役割の割り当てポリシーを作成します。作成する割り当てポリシーは、エンド ユーザー固有の要件に合わせてカスタマイズできます。Microsoft Exchange Server 2013 での割り当てポリシーの詳細については、「[管理役割の割り当てポリシーについて](understanding-management-role-assignment-policies-exchange-2013-help.md)」を参照してください。
 

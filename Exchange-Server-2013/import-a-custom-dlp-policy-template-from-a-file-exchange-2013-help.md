@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Server 2013_
 
 DLP ポリシーを通じて機密情報を管理するには、ポリシー情報設定を含むファイルをインポートします。DLP ポリシー テンプレートは、XML ファイルとして Exchange とは独立して開発できます。ただし、ポリシーが正しく動作するために特定の形式要件を満たす必要があります。または、前のバージョンの Exchange からエクスポートしたポリシーを Microsoft Exchange Server 2013 にインポートすることもできます。
 

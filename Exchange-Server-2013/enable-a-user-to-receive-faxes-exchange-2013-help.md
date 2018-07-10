@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 ユニファイド メッセージング (UM) ユーザーの FAX 受信を有効にできます。既定では、ユーザーのユニファイド メッセージングを有効にした場合、そのユーザーにリンクされた UM メールボックス ポリシーで FAX 送受信を有効にし、FAX パートナーの URI を構成することで、そのユーザーが FAX を受信できるようになります。UM ダイヤル プラン、UM メールボックス ポリシー、または UM が有効なユーザーのメールボックスで、FAX を有効または無効にできます。
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013, Exchange Server 2016_
 
-_**トピックの最終更新日:**2013-06-25_
+_**トピックの最終更新日:** 2013-06-25_
 
 ここではシェルを使用して、ボイス メール システムの動作をテストする方法について説明します。次の手順を実行すると、Microsoft Exchange のユニファイド メッセージング サービスが動作するメールボックス サーバーが、診断セッション開始プロトコル (SIP) の診断呼び出しを開始し、UM サーバーの稼働状態の変数を返します。
 

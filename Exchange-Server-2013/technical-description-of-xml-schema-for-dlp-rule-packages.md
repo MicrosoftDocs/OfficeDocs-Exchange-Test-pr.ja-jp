@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Server 2013_
 
 このトピックの XML スキーマとガイダンスは、分類ルール パッケージにおいて、機密情報の種類を定義する基礎的なデータ損失防止（DLP） XML ファイルの作成を開始するのに役立ちます。適切な形式の XML ファイルを作成した後、Exchange 管理センターまたは Exchange 管理シェルを使用して XML ファイルをインポートし、Microsoft Exchange Server 2013 DLP ソリューションの作成に役立てることができます。カスタム DLP ポリシー テンプレートである XML ファイルには、分類ルール パッケージである XML を含めることができます。DLP テンプレートを XML ファイルとして定義する方法の概要については、「[独自の DLP テンプレートおよび情報の種類の定義](define-your-own-dlp-templates-and-information-types-exchange-2013-help.md)」を参照してください。
 

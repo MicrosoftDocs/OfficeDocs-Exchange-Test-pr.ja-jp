@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Server 2013_
 
 Exchange Online および Exchange Server 2013 では、メールのライフ サイクルを管理するアイテム保持ポリシーを使用できます。アイテム保持ポリシーは、保持タグを作成して、それらをアイテム保持ポリシーに適用し、そのポリシーをメールボックス ユーザーに適用することで適用されます。
 

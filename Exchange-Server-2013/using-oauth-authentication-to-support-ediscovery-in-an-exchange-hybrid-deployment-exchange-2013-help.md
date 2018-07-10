@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Server 2013_
 
-_**トピックの最終更新日:**2016-12-09_
+_**トピックの最終更新日:** 2016-12-09_
 
 Exchange 2013 ハイブリッド組織で社内外にまたがる電子情報開示検索を正常に行うには、社内の Exchange と Exchange Online 組織間で OAuth (Open Authorization) 認証を構成する必要があります。これにより、社内およびクラウド ベースのメールボックスの検索に、インプレース電子情報開示を使用できるようになります。OAuth 認証は、Exchange ハイブリッド展開で以下の電子情報開示シナリオをサポートします。
 

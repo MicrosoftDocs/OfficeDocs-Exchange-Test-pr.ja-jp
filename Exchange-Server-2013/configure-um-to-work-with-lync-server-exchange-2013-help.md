@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Server 2013, Exchange Server 2016_
 
-_**トピックの最終更新日:**2013-06-11_
+_**トピックの最終更新日:** 2013-06-11_
 
 Microsoft Lync Server を Exchange ユニファイド メッセージング (UM) と統合しているときは、ExchUcUtil.ps1 スクリプトをシェルで実行する必要があります。ExchUcUtil.ps1 スクリプトは次の処理を行います。
 

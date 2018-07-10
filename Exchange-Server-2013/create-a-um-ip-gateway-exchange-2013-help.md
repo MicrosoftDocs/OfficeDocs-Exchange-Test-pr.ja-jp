@@ -15,7 +15,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 ユニファイド メッセージング (UM) IP ゲートウェイを作成すると、新しい VoIP (Voice over IP) ゲートウェイ、セッション開始プロトコル (SIP) が有効な構内交換機 (PBX) メールボックス サーバー、IP PBX、またはセッション ボーダー コントローラー (SBC) に接続するための Exchange サーバーが有効になります。UM IP ゲートウェイを作成したら直ちに新しい UM ハント グループを作成し、UM IP ゲートウェイにその UM ハント グループを関連付ける必要があります。1 つ以上の UM ハント グループを作成すると、UM IP ゲートウェイを 1 つ以上の UM ダイヤル プランに関連付けることができます。
 

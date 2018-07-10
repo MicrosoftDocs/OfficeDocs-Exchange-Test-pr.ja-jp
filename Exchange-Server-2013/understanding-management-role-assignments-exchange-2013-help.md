@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Server 2013_
 
-_**トピックの最終更新日:**2012-10-04_
+_**トピックの最終更新日:** 2012-10-04_
 
 *管理役割の割り当て*は、Microsoft Exchange Server 2013 の役割ベースのアクセス制御 (RBAC) というアクセス許可モデルに属する概念で、管理役割と役割の被割り当て者とを結び付けます。 *役割の被割り当て者*は、役割グループ、役割割り当てポリシー、ユーザー、ユニバーサル セキュリティ グループ (USG) のいずれかです。 役割を有効にするには、役割を被割り当て者に割り当てる必要があります。RBAC の詳細については、「[役割ベースのアクセス制御について](understanding-role-based-access-control-exchange-2013-help.md)」を参照してください。
 

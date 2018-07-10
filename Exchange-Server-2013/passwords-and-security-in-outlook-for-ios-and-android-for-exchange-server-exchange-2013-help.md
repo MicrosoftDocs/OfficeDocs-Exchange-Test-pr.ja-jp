@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用先:**Exchange Server 2010, Exchange Server 2013_
+_**適用先:** Exchange Server 2010, Exchange Server 2013_
 
-_**トピックの最終更新日:**2018-04-01_
+_**トピックの最終更新日:** 2018-04-01_
 
 **概要**:この記事では、Exchange Server を使った iOS および Android 用の Outlook でパスワードとセキュリティがどのように機能するかについて取り上げます。
 

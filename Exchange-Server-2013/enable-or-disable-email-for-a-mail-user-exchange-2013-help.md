@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Server 2013_
 
-_**トピックの最終更新日:**2012-11-14_
+_**トピックの最終更新日:** 2012-11-14_
 
 Exchange 組織内で既存のメール ユーザーの電子メールを無効にすることができます。特定のメール ユーザーの電子メールを無効にすると、Exchange と組織のアドレス帳からメール ユーザーが削除されます。メール ユーザーが配布グループのメンバーになっている場合、削除されたユーザーは配布グループ宛に送信されたメールを受信しません。また、Exchange の属性は Active Directory のユーザー オブジェクトから削除されます。ただし、ユーザー オブジェクトと Exchange 以外の属性 (連絡先や組織情報など) は Active Directory 内に残ります。
 

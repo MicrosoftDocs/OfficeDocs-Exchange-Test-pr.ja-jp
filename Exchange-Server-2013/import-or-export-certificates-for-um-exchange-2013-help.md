@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Server 2013, Exchange Server 2016_
 
-_**トピックの最終更新日:**2013-12-18_
+_**トピックの最終更新日:** 2013-12-18_
 
 EAC またはシェルを使って、自己署名型内部公開キー基盤 (PKI) またはサードパーティーの商用証明書をインポートまたはエクスポートすることができます。ユニファイド メッセージング (UM) の場合、Microsoft Exchange ユニファイド メッセージング サービスと Microsoft Exchange ユニファイド メッセージング呼び出しルータ サービスに対して、上記証明書のいずれかを使用できます。両方のサービスに対して同じ証明書を使うことも、サービスごとに異なる証明書を使うこともできます。
 
@@ -78,10 +78,12 @@ Exchange 用の証明書のインポートは、以下の場合に便利なこ�
 3.  ユーザー名とパスワードを入力した後、証明書をファイルへ出力する。
 
 <!-- end list -->
-
-    $file = Get-ExchangeCertificate -DomainName umcorp.northwindtraders.com | Export-ExchangeCertificate -BinaryEncoded:$true -Password (Get-Credential).password
-
-    Set-Content -Path "d:\umcerts\selfsigned.pfx" -Value $file.FileData =Encoding Byte
+  ```
+  $file = Get-ExchangeCertificate -DomainName umcorp.northwindtraders.com | Export-ExchangeCertificate -BinaryEncoded:$true -Password (Get-Credential).password
+  ```
+  ```
+  Set-Content -Path "d:\umcerts\selfsigned.pfx" -Value $file.FileData =Encoding Byte
+  ```
 
 ## EAC を使用して証明書をインポートする
 

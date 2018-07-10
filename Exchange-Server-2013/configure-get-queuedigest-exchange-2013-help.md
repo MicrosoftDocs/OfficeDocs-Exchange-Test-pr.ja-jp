@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2014-12-16_
+_**トピックの最終更新日:** 2014-12-16_
 
 **Get-QueueDigest** コマンドレットでは、単一のコマンドにより、Exchange 組織内の一部またはすべてのキューの情報を表示できます。
 

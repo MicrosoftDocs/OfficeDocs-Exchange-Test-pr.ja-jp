@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 ユニファイド メッセージング (UM) が有効なユーザーに対して着信呼び出しおよび発信呼び出しをダイヤルするために、UM で使用するダイヤル コード、番号プレフィックス、および番号形式を構成できます。ほとんどの場合、現在テレフォニー ネットワークで構成されているダイヤル コード、プレフィックス、および番号形式でダイヤル プランを構成します。
 

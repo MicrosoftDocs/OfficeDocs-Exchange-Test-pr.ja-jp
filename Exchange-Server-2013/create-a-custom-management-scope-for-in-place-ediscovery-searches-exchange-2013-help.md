@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Server 2013_
 
 カスタム管理スコープを使用すれば、特定の人物またはグループに、インプレース電子情報開示を使用した Exchange 2013 組織または Exchange Online 組織内のメールボックスのサブセットの検索を許可することができます。たとえば、探索マネージャーが特定の場所または部門のユーザーのメールボックスしか検索できないようにする場合を考えます。これは、カスタム管理スコープを作成することによって実現できます。このカスタム管理スコープでは、検索可能なメールボックスを制御するための受信者フィルターが使用されます。受信者フィルター スコープでは、受信者の種類またはその他の受信者プロパティに基づいて特定の受信者を絞り込むためのフィルターが使用されます。
 
@@ -136,30 +136,39 @@ EAC を使用して、配布グループにメンバーを追加することも�
       - 組織の共有アドレス帳で配布グループを非表示にします。グループの作成後に、EAC または **Set-DistributionGroup** コマンドレットを使用します。シェルを使用する場合は、`HiddenFromAddressListsEnabled $true` 構文を使用します。
     
     次の例では、最初のコマンドがクローズド メンバーシップとモデレートが有効になっている配布グループを作成します。2 番目のコマンドが共有アドレス帳でグループを非表示にします。
-    
-        New-DistributionGroup -Name "Vancouver Users eDiscovery Scope" -Alias VancouverUserseDiscovery -MemberJoinRestriction closed -MemberDepartRestriction closed -ModerationEnabled $true
-    
-        Set-DistributionGroup "Vancouver Users eDiscovery Scope" -HiddenFromAddressListsEnabled $true
-    
+    ```
+    New-DistributionGroup -Name "Vancouver Users eDiscovery Scope" -Alias VancouverUserseDiscovery -MemberJoinRestriction closed -MemberDepartRestriction closed -ModerationEnabled $true
+    ```
+    ```
+    Set-DistributionGroup "Vancouver Users eDiscovery Scope" -HiddenFromAddressListsEnabled $true
+    ```
+
     配布グループの作成と管理の詳細については、「[配布グループの作成と管理](create-and-manage-distribution-groups-exchange-2013-help.md)」を参照してください。
 
   - 電子情報開示に使用されるカスタム管理スコープ用の受信者フィルターとして使用できるのは配布グループ メンバーシップのみですが、他の受信者プロパティを使用してその配布グループにユーザーを追加することができます。ここで、**Get-Mailbox** コマンドレットと **Get-Recipient** コマンドレットを使用して、共通のユーザー属性またはメールボックス属性に基づいて特定のユーザー グループを返す例を示します。
-    
-        Get-Recipient -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'Department -eq "HR"'
-    
-        Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'CustomAttribute15 -eq "VancouverSubsidiary"'
-    
-        Get-Recipient -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'PostalCode -eq "98052"'
-    
-        Get-Recipient -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'StateOrProvince -eq "WA"'
-    
-        Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize unlimited -OrganizationalUnit "namsr01a002.sdf.exchangelabs.com/Microsoft Exchange Hosted Organizations/contoso.onmicrosoft.com"
+    ```
+    Get-Recipient -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'Department -eq "HR"'
+    ```
+    ```
+    Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'CustomAttribute15 -eq "VancouverSubsidiary"'
+    ```
+    ```
+    Get-Recipient -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'PostalCode -eq "98052"'
+    ```
+    ```
+    Get-Recipient -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'StateOrProvince -eq "WA"'
+    ```
+    ```
+    Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize unlimited -OrganizationalUnit "namsr01a002.sdf.exchangelabs.com/Microsoft Exchange Hosted Organizations/contoso.onmicrosoft.com"
+    ```
 
   - 前述の例を使用して、配布グループにユーザー グループを追加するための **Add-DistributionGroupMember** コマンドレットに使用可能な変数を作成することができます。次の例では、最初のコマンドが、ユーザー アカウント内の *Department* プロパティに **Vancouver** の値が設定されたすべてのユーザー メールボックスを含む変数を作成します。2 番目のコマンドがこれらのユーザーを Vancouver Users 配布グループに追加します。
-    
-        $members = Get-Recipient -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'Department -eq "Vancouver"'
-    
-        $members | ForEach {Add-DistributionGroupMember "Ottawa Users" -Member $_.Name}
+    ```
+    $members = Get-Recipient -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'Department -eq "Vancouver"'
+    ```
+    ```
+    $members | ForEach {Add-DistributionGroupMember "Ottawa Users" -Member $_.Name}
+    ```
 
   - **Add-RoleGroupMember** コマンドレットを使用して、電子情報開示検索の範囲指定に使用される既存の役割グループにメンバーを追加できます。たとえば、次のコマンドは、Ottawa Discovery Management 役割グループにユーザー admin@ottawa.contoso.com を追加します。
     

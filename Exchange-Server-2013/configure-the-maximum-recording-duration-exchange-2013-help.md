@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 発信者がボイス メール メッセージを残すとき、各音声録音に使用できる最大時間 (分単位) を指定できます。この値には 1 ～ 100 の値を設定できます。ほとんどの組織では、この値は既定の 20 分に設定してください。この値が小さすぎると、音声メッセージが終わる前に切断される可能性があります。この値が大きすぎると、ユーザーが受信トレイに長い音声メッセージを保存することになります。
 

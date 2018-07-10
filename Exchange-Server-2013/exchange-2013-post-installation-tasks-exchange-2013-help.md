@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2015-03-09_
+_**トピックの最終更新日:** 2015-03-09_
 
 Microsoft Exchange Server 2013 のインストールを完了した後には、新しい Exchange 2013 組織の構成に役立つ次のトピックを参照してください。
 

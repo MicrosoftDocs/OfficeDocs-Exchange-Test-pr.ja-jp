@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Server 2013_
 
-_**トピックの最終更新日:**2015-03-09_
+_**トピックの最終更新日:** 2015-03-09_
 
 Exchange 組織から外部に送信されるメッセージでは、トランスポート ニュートラル カプセル化形式 (TNEF) を維持するか削除するかを指定できます。TNEF は、Outlook リッチ テキスト形式または Exchange リッチ テキスト形式とも呼ばれ、MAPI メッセージのプロパティをカプセル化する Microsoft 固有の形式です。MicrosoftOutlook のすべてのバージョンは、TNEF を完全に理解できます。Outlook Web App は TNEF を MAPI に変換し、書式設定されたメッセージを表示します。ただし、TNEF を認識できない他の電子メール クライアントでは、通常、TNEF 形式のメッセージは、Winmail.dat または Win.dat という添付ファイルを持つテキスト形式のメッセージとして表示されます。
 

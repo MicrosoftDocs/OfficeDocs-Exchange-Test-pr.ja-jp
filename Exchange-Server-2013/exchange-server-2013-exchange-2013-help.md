@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2016-12-09_
+_**トピックの最終更新日:** 2016-12-09_
 
 Microsoft Exchange Server 2013 へようこそ\!今すぐ使用を開始されたいとは思いますが、Exchange 2013 での作業およびこのコンテンツの使用を開始する前に、いくつかの注意点があります。
 

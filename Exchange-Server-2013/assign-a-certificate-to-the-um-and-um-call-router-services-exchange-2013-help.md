@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Server 2013, Exchange Server 2016_
 
-_**トピックの最終更新日:**2013-04-29_
+_**トピックの最終更新日:** 2013-04-29_
 
 EAC またはシェルを使って特定の Exchange サービスに対して、自己署名型内部公開キー基盤 (PKI) またはサードパーティーの商用証明書を割り当てることができます。**New-ExchangeCertificate** コマンドレットで *Services* パラメーターを使って Exchange サービスに証明書を割り当てた場合、Exchange サービスに証明書を割り当てるように求められます。EAC を使って証明書を作成した場合、Exchange 証明書の新規作成ウィザードから、Exchange サービスに証明書を割り当てるように求められることはありません。証明書のプロパティを編集し、証明書を割り当てるサービスを選択して証明書を割り当てる必要があります。
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Server, Exchange Server 2013_
 
-_**トピックの最終更新日:**2015-09-04_
+_**トピックの最終更新日:** 2015-09-04_
 
 Microsoft Exchange Server 2013 がインストールされている場合、それを最新の Exchange 2013 累積更新プログラムまたは Service Pack にアップグレードできます。Exchange 2013 セットアップ ウィザードを使用すると、Exchange 2013 の現在のバージョンをアップグレードできます。最新の Exchange 2013 累積更新プログラムまたは Service Pack の詳細については、「[Exchange 2013 の更新プログラム](updates-for-exchange-2013-exchange-2013-help.md)」を参照してください。Exchange 2013 の詳細については、「[Exchange 2013 の新機能](what-s-new-in-exchange-2013-exchange-2013-help.md)」を参照してください。
 

@@ -15,7 +15,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 ユニファイド メッセージング (UM) ダイヤル プランには、テレフォニー ネットワークに関連する構成情報が含まれています。UM ダイヤル プランによって、ボイス メールが有効なユーザーの内線電話番号からメールボックスへのリンクが確立されます。UM ダイヤル プランを作成するときに、内線番号の桁数、URI (Uniform Resource Identifier) タイプ、およびダイヤル プランの VoIP (Voice over IP) セキュリティ設定を構成できます。
 

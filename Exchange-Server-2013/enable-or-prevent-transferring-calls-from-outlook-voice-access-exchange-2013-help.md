@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 Outlook Voice Access のユーザーがユニファイド メッセージング (UM) ダイヤル プランに関連付けられているユーザーに電話を転送することを許可または禁止できます。既定では、上記のオプションと **\[ユーザーの電話を呼び出さずに音声メッセージを残す\]** オプションがともに有効になっています。そのため、Outlook Voice Access のユーザーは同じ UM ダイヤル プランの ユーザーに電話を転送したり音声メッセージを残したりすることができます。この設定が適用されるのは、PIN を入力して承認された Outlook Voice Access ユーザーのみです。
 

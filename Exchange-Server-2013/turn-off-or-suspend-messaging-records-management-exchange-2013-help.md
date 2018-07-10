@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013_
+_**適用先:** Exchange Server 2010 Service Pack 2 (SP2), Exchange Server 2013_
 
-_**トピックの最終更新日:**2013-02-14_
+_**トピックの最終更新日:** 2013-02-14_
 
 個々の要件、IT 要件、またはビジネス要件を満たすため、個々のユーザーまたはメールボックス サーバーのメッセージング レコード管理 (MRM) を無効にするか、一時的に中断することが必要となる場合があります。次のような理由によって、MRM を無効にしたり、中断したりする必要性が生じます。
 

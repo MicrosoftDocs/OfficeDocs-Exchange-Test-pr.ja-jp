@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 ユニファイド メッセージング (UM) ハント グループを削除すると、UM ハント グループに関連付けられていた UM IP ゲートウェイは着信呼び出しへサービスの提供や応答を停止します。UM ハント グループの削除によって、構成済みのハント グループが存在しない状態で UM IP ゲートウェイが残された場合、UM IP ゲートウェイは UM 呼び出しを処理できなくなります。
 

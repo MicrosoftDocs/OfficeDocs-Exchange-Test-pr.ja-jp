@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 呼び出しの統計レポートを使用して、組織内の Exchange サーバーによって処理された着信呼び出しの種類と状態に関する情報を表示できます。このレポートには、組織のユニファイド メッセージング (UM) によって転送または発信された呼び出しに関する統計情報が示されます。この情報を使用して、容量プランニングの利用状況の追跡、可用性と UM の音質の監視とトラブルシューティング、および失敗した呼び出しのトラブルシューティングを行えます。
 

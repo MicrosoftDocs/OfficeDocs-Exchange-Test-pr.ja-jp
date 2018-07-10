@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 ユニファイド メッセージング (UM) メールボックス ポリシーに関連付けられているユーザーによる通話応答ルールの構成を許可または禁止することができます。UM ダイヤル プランで通話応答ルールの構成オプションが無効になっている場合、UM メールボックス ポリシーに関連付けられた UM が有効であるユーザーは、通話応答ルール機能を使用できません。既定の設定は有効です。
 

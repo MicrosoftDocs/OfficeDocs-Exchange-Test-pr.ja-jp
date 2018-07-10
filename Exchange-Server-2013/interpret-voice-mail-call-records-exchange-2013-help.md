@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 特定の日に Exchange サーバーによって処理された呼び出しの詳細情報を表示するには、呼び出しの統計のレポートからその日の呼び出しデータをエクスポートします。過去 90 日分のデータを利用できる毎日の呼び出しデータを使用すると、音質や拒否された呼び出しに関する問題を診断したり、組織内の Exchange サーバーに関する監査やレポートの情報を提供したりできます。
 

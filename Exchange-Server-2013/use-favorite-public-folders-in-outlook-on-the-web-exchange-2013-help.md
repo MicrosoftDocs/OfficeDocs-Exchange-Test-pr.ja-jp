@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Server 2013, Exchange Server 2016_
 
 組織内のユーザーは、Outlook クライアントでパブリック フォルダーを **\[お気に入り\]** フォルダーに追加できます。その後、組織のポリシーによっては、Web 上の Outlook を使用して同じパブリック フォルダーをユーザーのお気に入りに追加したり、Web 上の Outlook で特定の機能 (ユーザーが Outlook クライアントで使用する機能) を実行することができます。
 

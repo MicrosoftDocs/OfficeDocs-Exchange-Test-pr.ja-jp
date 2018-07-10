@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2015-04-07_
+_**トピックの最終更新日:** 2015-04-07_
 
 Microsoft Exchange Server 2013 オブジェクトおよび Active Directory オブジェクトの管理を分割している組織は、*分割型アクセス許可*と呼ばれるモデルを使用します。組織
 

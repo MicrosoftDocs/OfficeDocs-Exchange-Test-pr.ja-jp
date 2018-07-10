@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2014-02-15_
+_**トピックの最終更新日:** 2014-02-15_
 
 ポリシーの共有によって、Exchange 組織の個人ユーザーは予定表の空き時間情報を他のフェデレーション Exchange 組織、非フェデレーション Exchange 組織、および個々のインターネット ユーザーと共有できます。通常の運用過程で、共有ルールの変更、空き時間アクセス レベルの変更、共有ポリシーの一時的無効化、共有ポリシーの完全削除など、いくつかの共有ポリシー プロパティを変更する必要がある場合があります。
 
@@ -102,10 +102,12 @@ _**トピックの最終更新日:**2014-02-15_
         Set-SharingPolicy -Identity "Contoso" -Enabled $False
 
   - 最初の例では、Contoso という共有ポリシーを削除しています。2 つ目の例では、Contoso という共有ポリシーを削除し、ポリシーを削除する際の確認メッセージが表示されないようにしています。
-    
-        Remove-SharingPolicy -Identity Contoso
-    
-        Remove-SharingPolicy -Identity Contoso -Confirm
+      ```
+      Remove-SharingPolicy -Identity Contoso
+      ```
+      ```
+      Remove-SharingPolicy -Identity Contoso -Confirm
+      ```
 
 構文およびパラメーターの詳細については、「[Set-SharingPolicy](https://technet.microsoft.com/ja-jp/library/dd297931\(v=exchg.150\))」と「[Remove-SharingPolicy](https://technet.microsoft.com/ja-jp/library/dd351071\(v=exchg.150\))」を参照してください。
 

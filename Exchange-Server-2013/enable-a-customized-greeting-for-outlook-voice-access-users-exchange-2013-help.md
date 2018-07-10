@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 既定では、各ユニファイド メッセージング (UM) ダイヤル プランでは、発信者に再生される案内応答として標準の .wav ファイルが使用されます。これらの発信者には、構成されている Outlook Voice Acces 番号にダイヤルインする Outlook Voice Access ユーザーも含まれます。ただし、案内応答の .wav ファイルまたは .wma ファイルを作成し、そのファイルを UM ダイヤル プランで有効にできます。
 

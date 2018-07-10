@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 既定では、ユーザーは送信呼び出しを配置することはできません。ユーザーが実行できる呼び出しの種類を指定するには、まず、ダイヤル ルールを作成してから、それらのダイヤル ルールのグループを UM ダイヤル プラン、UM メールボックス ポリシー、または UM 自動応答で承認します。ダイヤル ルール グループを承認するには、UM ダイヤル プランでダイヤル ルールを定義する必要があります。詳細については、「[ユーザーのダイヤル ルールを作成する](create-dialing-rules-for-users-exchange-2013-help.md)」を参照してください。
 

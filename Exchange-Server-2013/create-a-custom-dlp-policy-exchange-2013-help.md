@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Server 2013_
 
 カスタム データ損失防止 (DLP) ポリシーを使用すると、既存の DLP テンプレートでは対応できない組織の特定のニーズを満たす条件、ルール、および操作を確立できます。
 

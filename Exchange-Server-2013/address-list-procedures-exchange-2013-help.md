@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2012-10-12_
+_**トピックの最終更新日:** 2012-10-12_
 
 [アドレス一覧を作成する](create-an-address-list-exchange-2013-help.md)
 

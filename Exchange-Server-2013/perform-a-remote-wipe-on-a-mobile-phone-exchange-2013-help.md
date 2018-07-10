@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Server 2013_
 
 ユーザーは、会社の機密情報をポケットに入れて毎日持ち歩いています。そのうちの 1 人が携帯電話を紛失すれば、データは他人の手に渡ってしまう可能性があります。ユーザーの 1 人が携帯電話を紛失した場合、Exchange 管理センター (EAC) または Exchange 管理シェルを使用して、その電話から会社とユーザーに関するすべての情報を完全に消去することができます。
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2016-12-09_
+_**トピックの最終更新日:** 2016-12-09_
 
 Microsoft Exchange 2013 の Exchange 自動検出サービスについて説明します。Exchange 自動検出サービスが実行する操作の内容と仕組みのほか、展開オプションについて取り上げます。
 

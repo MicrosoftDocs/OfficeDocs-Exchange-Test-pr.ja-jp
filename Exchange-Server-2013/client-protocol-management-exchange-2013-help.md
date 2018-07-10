@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2015-03-09_
+_**トピックの最終更新日:** 2015-03-09_
 
 Exchange ActiveSync、Outlook Web App、POP3、IMAP4、自動検出サービス、Exchange Web サービス、および空き時間情報サービスのクライアント プロトコルの管理は、次の 3 つの異なる領域で行われます。Exchange 管理センター (EAC)、Exchange 管理シェル、およびインターネット インフォメーション サービス (IIS) マネージャー。各場所で管理される設定は、クライアント プロトコルごとに異なります。
 

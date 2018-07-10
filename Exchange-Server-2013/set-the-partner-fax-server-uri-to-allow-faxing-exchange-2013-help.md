@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 ユニファイド メッセージング (UM) メールボックス ポリシーに関連付けられているユーザーに対して、着信 FAX を有効または無効にできます。既定では、ユーザーの UM を有効にしても、UM メールボックス ポリシーで着信 FAX を有効にして、パートナー FAX サーバーの URI を指定するまで、ユーザーは FAX メッセージを受信できません。UM メールボックス ポリシーで URI が構成されていても、UM ダイヤル プランまたは個々のユーザーで着信 FAX を許可するオプションが無効になっていると、UM メールボックス ポリシーにリンクされている UM が有効なユーザーは FAX を受信できません。
 

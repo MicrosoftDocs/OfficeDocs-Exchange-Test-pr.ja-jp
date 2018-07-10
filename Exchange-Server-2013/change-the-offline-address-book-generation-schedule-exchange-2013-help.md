@@ -15,9 +15,9 @@ ms.translationtype: MT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2012-12-05_
+_**トピックの最終更新日:** 2012-12-05_
 
 オフライン アドレス帳 (OAB) はダウンロードしたアドレス帳のコピーであり、Outlook ユーザーはサーバーに接続していないときでもアドレス帳の情報にアクセスできます。Set-MailboxServer コマンドレットで *OABGeneratorWorkCycle* パラメーターと *OABGeneratorWorkCycleCheckpoint* パラメーターを使用して、OAB を生成する頻度を構成できます。
 

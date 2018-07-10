@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2015-03-09_
+_**トピックの最終更新日:** 2015-03-09_
 
 Microsoft Exchange Server 2013 のメールボックスの情報へのアクセスに使用できるさまざまなクライアントがあります。これらのクライアントには、デスクトップ プログラム (Microsoft Outlook、Outlook Web App など) およびモバイル クライアント (携帯電話、タブレット、その他のモバイル デバイスなどの) が含まれます。これらの各クライアントでは、さまざまな機能を使用できます。
 
@@ -51,7 +51,7 @@ Microsoft Exchange Server 2013 のメールボックスの情報へのアクセ�
 <td><p>ユーザーが Exchange 2013 メールにアクセスする方法について学習するには、POP3 か IMAP4 を使用する電子メール プログラムを使用してください。</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="https://technet.microsoft.com/ja-jp/library/jj150495(v=exchg.150)">Office Web Apps サーバーの統合</a></p></td>
+<td><p>Office Web Apps サーバーの統合</p></td>
 <td><p>Microsoft Office Web Apps Server の統合により、Outlook Web App のリッチ添付ファイル プレビュー機能を提供する方法の詳細。</p></td>
 </tr>
 <tr class="odd">

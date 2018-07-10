@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 ユニファイド メッセージング (UM) メールボックス ポリシーでダイヤルの承認を有効にできます。メールボックス ポリシーのダイヤルの承認を使用して、UM メールボックス ポリシーにリンクされている認証済みの Outlook Voice Access ユーザーによる国内/地域通話または国際電話、もしくは*アウトダイヤル*を禁止できます。アウトダイヤルとは、UM ダイヤル プランで構成された Outlook Voice Access 電話番号に電話を掛けてきたユーザーのためにユニファイド メッセージングが電話を掛けることです。UM メールボックス ポリシーで設定を構成した場合、その設定は、UM メールボックス ポリシーに関連付けられているすべての UM が有効なユーザーに適用されます。
 

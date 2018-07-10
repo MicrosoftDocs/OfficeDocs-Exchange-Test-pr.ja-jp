@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Server 2013, Exchange Server 2016_
 
-_**トピックの最終更新日:**2016-12-09_
+_**トピックの最終更新日:** 2016-12-09_
 
 ユニファイド メッセージング (UM) を含む Microsoft Exchange 2007 組織を Exchange 2013 ユニファイド メッセージングにアップグレードする場合は、必須の手順の他に、Exchange 2007 UM 展開の一部としてすでに完了している手順もあります。Exchange 2007 でユニファイド メッセージングをサポートするために作成して構成したテレフォニー環境と UM コンポーネントによっては、ボイス オーバー IP (VoIP) ゲートウェイ、IP 構内交換機 (PBX)、従来のまたは SIP 対応 PBX などの追加のテレフォニー環境を展開して、Exchange 2013 UM に必要な追加の UM コンポーネントを構成しなければならない場合があります。
 
@@ -99,7 +99,7 @@ Exchange 2007 組織でセキュリティ保護された SIP またはセキュ�
 
   - 商用サード パーティ証明書
 
-Exchange 2013 をインストールする場合、既定では自己署名証明書が 2 通作成されます:**Microsoft Exchange Server Auth Certificate** および **Microsoft Exchange**です。**Microsoft Exchange** 自己署名証明書は UM によるデータの暗号化に使用できますが、この証明書を UM サービスと UM 呼び出しルーター サービスに割り当てる必要があります。この自己署名証明書は、コピーしてから、VoIP ゲートウェイ、IP PBX、SIP 対応 PBX にインポートできます。ただし、UM と Microsoft Lync Server が統合されている場合は使用できません。
+Exchange 2013 をインストールする場合、既定では自己署名証明書が 2 通作成されます:** Microsoft Exchange Server Auth Certificate** および **Microsoft Exchange**です。**Microsoft Exchange** 自己署名証明書は UM によるデータの暗号化に使用できますが、この証明書を UM サービスと UM 呼び出しルーター サービスに割り当てる必要があります。この自己署名証明書は、コピーしてから、VoIP ゲートウェイ、IP PBX、SIP 対応 PBX にインポートできます。ただし、UM と Microsoft Lync Server が統合されている場合は使用できません。
 
 Exchange 2013 サーバーと、VoIP ゲートウェイ、IP PBX、および SIP 対応 PBX との間で送信されるデータを UM で暗号化できるようにするには、次の手順を実行する必要があります。
 
@@ -338,8 +338,7 @@ UM IP ゲートウェイと UM ハント グループの組み合わせにより
 
 必要に応じて、次のように、EAC を使用して UM 自動応答を作成できます。
 
-1.  
-    
+1.      
     EAC で、**\[ユニファイド メッセージング\]** \> **\[UM ダイヤル プラン\]** に移動します。自動応答を追加する UM ダイヤル プランを選択してから、**\[編集\]**![編集アイコン](images/Bb124582.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "編集アイコン") をクリックします。
 
 2.  **\[UM ダイヤル プラン\]** ページの **\[UM 自動応答\]** で、**\[追加\]**![\[追加\] アイコン](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "[追加] アイコン") をクリックします。
@@ -520,14 +519,11 @@ Exchange 2013 UM にアップグレードする場合は、テレフォニー �
 
 Exchange 2013 UM にアップグレードするプロセスの最後の手順は、着信呼び出し (ユーザーにボイス メールを残したい発信者、Outlook Voice Access に電話をかけた UM が有効なユーザーからの呼び出し、UM 自動応答に電話をかけた発信者からの呼び出しなど) を Exchange 2013 クライアント アクセス サーバーに送信するように VoIP ゲートウェイ、IP PBX、または SIP 対応 PBX を構成することです。これらすべての呼び出しが最初に VoIP ゲートウェイ、IP PBX、または SIP 対応 PBX で受信されてから、Exchange 2013 組織内の Exchange 2013 クライアント アクセス サーバーに転送されます。詳細については、以下のリソースを参照してください。
 
-  -  
-    [UM サービス](um-services-exchange-2013-help.md)
+  -  [UM サービス](um-services-exchange-2013-help.md)
 
-  -  
-    [サポートされる VoIP ゲートウェイ、IP Pbx、および PBX の構成に関する注意事項](configuration-notes-for-supported-voip-gateways-ip-pbxs-and-pbxs-exchange-2013-help.md)
+  -  [サポートされる VoIP ゲートウェイ、IP Pbx、および PBX の構成に関する注意事項](configuration-notes-for-supported-voip-gateways-ip-pbxs-and-pbxs-exchange-2013-help.md)
 
-  -  
-    [Exchange 2013 のテレフォニー アドバイザー](telephony-advisor-for-exchange-2013-exchange-2013-help.md)
+  -  [Exchange 2013 のテレフォニー アドバイザー](telephony-advisor-for-exchange-2013-exchange-2013-help.md)
 
 ## 手順 14:Exchange 2007 ユニファイド メッセージング サーバー上の通話応答を無効にする
 

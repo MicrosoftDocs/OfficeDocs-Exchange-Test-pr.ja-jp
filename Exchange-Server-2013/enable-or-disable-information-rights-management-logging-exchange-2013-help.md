@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2012-10-12_
+_**トピックの最終更新日:** 2012-10-12_
 
 Exchange Server 2013 では、Information Rights Management (IRM) ログを利用して IRM の操作の監視およびトラブルシューティングを行うことができます。 既定では、IRM のログ出力は有効になっています。
 

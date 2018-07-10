@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Server 2013_
 
-_**トピックの最終更新日:**2012-10-12_
+_**トピックの最終更新日:** 2012-10-12_
 
 Microsoft Exchange Server 2013 のアクセス許可は、役割ベースのアクセス制御 (RBAC) アクセス許可モデルを使用して管理されます。次のトピックは、Exchange 2013 の各機能分野に関連付けられた機能の管理に必要な役割グループを明らかにします。
 

@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Server 2013_
 
 Outlook Web App メールボックス ポリシーを作成して、ポリシー設定の共通セットを適用することができます。Outlook Web App メールボックス ポリシーは、添付ファイルの設定など、特定のユーザー グループに対して設定を適用するときや、設定を標準化するときに便利です。
 

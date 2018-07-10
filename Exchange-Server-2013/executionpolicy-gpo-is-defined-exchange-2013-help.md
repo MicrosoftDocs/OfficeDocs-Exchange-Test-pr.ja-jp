@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server_
+_**適用先:** Exchange Server_
 
-_**トピックの最終更新日:**2016-12-15_
+_**トピックの最終更新日:** 2016-12-15_
 
 **ExecutionPolicy** グループ ポリシー オブジェクト (GPO) で以下のポリシーのいずれか、または両方が定義されていることが検出されたため、Microsoft Exchange Server 2013 のセットアップを続行できません。
 
@@ -29,7 +29,7 @@ Exchange 2013 のセットアップを実行すると、Exchange が停止し、
 
 セットアップを続行できるようにするには、**ExecutionPolicy** GPO の**MachinePolicy** または **UserPolicy** の定義を一時的に除去する必要があります。
 
-**ExecutionPolicy** GPO の**MachinePolicy** または **UserPolicy** の定義を除去する方法については、「[Microsoft サポート技術情報の文書番号 KB981474](https://go.microsoft.com/fwlink/?linkid=3052%26kbid=981474)」を参照してください。
+**ExecutionPolicy** GPO の**MachinePolicy** または **UserPolicy** の定義を除去する方法については、「[Microsoft サポート技術情報の文書番号 KB981474](https://go.microsoft.com/fwlink/?linkid=3052&kbid=981474)」を参照してください。
 
 
 > [!NOTE]

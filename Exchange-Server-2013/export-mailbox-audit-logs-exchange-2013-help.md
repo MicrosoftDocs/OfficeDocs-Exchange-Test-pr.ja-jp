@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Server 2013_
 
 メールボックスでメールボックス監査が有効になっている場合、所有者以外のユーザーがそのメールボックスにアクセスするたびに、*メールボックス監査ログ*に情報が記録されます。各ログ エントリには、メールボックスにアクセスしたユーザーとアクセスの日時、所有者以外のユーザーが実行した操作、およびその操作が成功したかどうかの情報が含まれています。既定では、メールボックス監査ログのエントリは 90 日間保持されます。メールボックス監査ログを使用すると、所有者以外のユーザーがメールボックスにアクセスしたかどうかを確認できます。
 
@@ -62,10 +62,12 @@ _**適用先:**Exchange Online, Exchange Server 2013_
     Set-Mailbox <Identity> -AuditEnabled $true
 
 組織のすべてのユーザー メールボックスでメールボックス監査を有効にするには、次のコマンドを実行します。
-
-    $UserMailboxes = Get-mailbox -Filter {(RecipientTypeDetails -eq 'UserMailbox')}
-
-    $UserMailboxes | ForEach {Set-Mailbox $_.Identity -AuditEnabled $true}
+```
+$UserMailboxes = Get-mailbox -Filter {(RecipientTypeDetails -eq 'UserMailbox')}
+```
+```
+$UserMailboxes | ForEach {Set-Mailbox $_.Identity -AuditEnabled $true}
+```
 
 ## 手順 2:XML 添付ファイルを許可するように Outlook Web App を構成する
 

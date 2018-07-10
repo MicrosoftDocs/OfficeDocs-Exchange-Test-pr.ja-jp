@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2016-12-09_
+_**トピックの最終更新日:** 2016-12-09_
 
 ここでは、Microsoft Forefront Identity Manager 2010 R2 SP1 を使用してフォレスト間トポロジに Exchange 2013 を展開する方法を説明します。フォレスト間のトポロジで Exchange 2013 を展開するには、ユーザーがフォレスト間でアドレスや使用可能なデータを確認できるように、最初に各フォレストに Exchange 2013 をインストールしてから、フォレストを接続する必要があります。
 
@@ -37,7 +37,7 @@ Exchange 2013 で次の手順を実行するには、以下の点を確認して
 
   - Windows リモート管理が、Windows Update によってインストールされていないことを確認します。
 
-  - Windows PowerShell と Windows リモート管理をインストールします。詳細については、Microsoft サポート技術情報の文書番号 968930「[Windows 管理フレームワークのコア パッケージ (Windows PowerShell 2.0 および WinRM 2.0)](http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=968930)」を参照してください。
+  - Windows PowerShell と Windows リモート管理をインストールします。詳細については、Microsoft サポート技術情報の文書番号 968930「[Windows 管理フレームワークのコア パッケージ (Windows PowerShell 2.0 および WinRM 2.0)](http://go.microsoft.com/fwlink/p/?linkid=3052&kbid=968930)」を参照してください。
 
   - Forefront Identity Manager 2010 R2 SP1 をダウンロードします。「[Microsoft Forefront Identity Manager 2010 R2 SP1 のダウンロード](https://go.microsoft.com/fwlink/p/?linkid=279868)」を参照してください。
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Server, Exchange Server 2013_
 
-_**トピックの最終更新日:**2016-12-09_
+_**トピックの最終更新日:** 2016-12-09_
 
 Exchange Server 展開アシスタントは、Microsoft Exchange Server 2016 と Exchange Server 2013 の展開に役立つ Web ベースのツールです。展開アシスタントによって使用環境に関するいくつかの点が確認され、展開を簡単に実行するためのカスタム チェックリストおよび手順が生成されます。展開アシスタントにアクセスするには、「[Exchange Server 展開アシスタント](https://go.microsoft.com/fwlink/p/?linkid=277105)」を参照してください。
 

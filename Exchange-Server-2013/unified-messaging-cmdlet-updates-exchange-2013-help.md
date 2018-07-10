@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Server 2013, Exchange Server 2016_
 
-_**トピックの最終更新日:**2015-03-09_
+_**トピックの最終更新日:** 2015-03-09_
 
 Exchange Server 2010 に存在したユニファイド メッセージング (UM) コマンドレットの多くは Exchange Server 2013 に持ち込まれていますが、これらのコマンドレットの一部が変更されています。さらに、Exchange 2013 には新しいコマンドレットも追加されました。
 

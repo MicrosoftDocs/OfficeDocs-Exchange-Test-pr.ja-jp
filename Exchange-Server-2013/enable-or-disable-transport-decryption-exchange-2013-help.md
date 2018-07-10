@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Server 2013_
 
-_**トピックの最終更新日:**2016-12-09_
+_**トピックの最終更新日:** 2016-12-09_
 
 トランスポート復号化を有効にすると、Microsoft Exchange Server 2013 メールボックス サーバー上のトランスポート ルール エージェントが、Information Rights Management (IRM) で保護されたメッセージ内のコンテンツにアクセスできるようになります。結果として、他のトランスポート エージェントがメッセージ コンテンツにアクセスして、変更を行う可能性があります。たとえば、トランスポート ルール エージェントは、メッセージ コンテンツを検査し、トランスポート ルール (免責条項をメッセージに適用するルールなど) を適用する必要がある場合があります。IRM で保護されたメッセージを正常に復号化するには、[Active Directory Rights Management サービス (AD RMS)](https://technet.microsoft.com/ja-jp/library/hh831364.aspx) サーバー上で構成されているスーパー ユーザー グループにフェデレーション配信メールボックスを追加する必要があります。
 

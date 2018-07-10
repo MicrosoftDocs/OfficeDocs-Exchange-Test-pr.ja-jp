@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 ユニファイド メッセージング (UM) ダイヤル プランでダイヤルの承認を有効にできます。ダイヤル プランのダイヤルの承認を使用して、認証されていない Outlook Voice Access ユーザーによる国内/地域通話または国際電話、もしくは*アウトダイヤル*を禁止できます。アウトダイヤルとは、UM ダイヤル プランで構成された Outlook Voice Access 電話番号に電話を掛けてきたユーザーのためにユニファイド メッセージングが電話を掛けることです。UM ダイヤル プランの設定を構成すると、その設定は、Outlook Voice Access の番号に電話を掛ける認証されていないすべてのユーザーに適用されます。
 

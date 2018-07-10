@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 ボイス メール プレビュー機能が無効になっている場合は、ユニファイド メッセージング (UM) メールボックス ポリシーに関連付けられているユーザーに対して有効にすることができます。この設定を有効にすることで、ユーザーは電子メールやテキスト メッセージのメッセージ本文にあるボイス メール メッセージのテキストを受信できるようになります。既定の設定は有効です。
 

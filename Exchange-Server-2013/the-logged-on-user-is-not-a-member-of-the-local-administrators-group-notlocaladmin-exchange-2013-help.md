@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server_
+_**適用先:** Exchange Server_
 
-_**トピックの最終更新日:**2012-06-05_
+_**トピックの最終更新日:** 2012-06-05_
 
 ログオン ユーザーがローカル コンピューターの Administrators グループのメンバーではないため、Microsoft® Exchange Server 2007 セットアップ プログラムを続行できません。
 

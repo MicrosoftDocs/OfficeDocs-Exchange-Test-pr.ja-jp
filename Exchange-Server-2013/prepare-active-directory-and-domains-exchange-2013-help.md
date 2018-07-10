@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2016-12-09_
+_**トピックの最終更新日:** 2016-12-09_
 
 Microsoft Exchange Server 2013 をインストールする前に、Active Directory フォレストおよびそのドメインを準備する必要があります。Exchange では、ユーザーのメールボックスおよび組織内の Exchange サーバーの構成に関する情報を格納できるように Active Directory を準備する必要があります。Active Directory フォレストまたはドメインについてあまり理解していない場合、「[Active Directory ドメイン サービスの概要](https://go.microsoft.com/fwlink/p/?linkid=399226)」を参照してください。
 

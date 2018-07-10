@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2014-05-07_
+_**トピックの最終更新日:** 2014-05-07_
 
 Microsoft Exchange Server 2013 では、Exchange ツールボックスのキュー ビューアーまたは Exchange 管理シェルを使用して、キューに登録されたメッセージを管理できます。Exchange 管理シェルでのメッセージ管理コマンドレットの使用の詳細については、「[Exchange 管理シェルを使用してキューを管理する](use-the-exchange-management-shell-to-manage-queues-exchange-2013-help.md)」を参照してください。
 

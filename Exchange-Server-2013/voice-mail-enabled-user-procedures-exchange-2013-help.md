@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 [ボイス メール用にユーザーを有効にする](enable-a-user-for-voice-mail-exchange-2013-help.md)
 

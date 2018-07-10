@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2016-12-09_
+_**トピックの最終更新日:** 2016-12-09_
 
 情報作業者は毎日、電子メールで機密情報をやり取りしています。これには財務報告書や財務データ、顧客や従業員の情報、機密製品情報や仕様などが含まれます。Microsoft Exchange Server 2013、Microsoft Outlook、および Microsoft OfficeOutlook Web App では、ユーザーは Active Directory Rights Management サービス (AD RMS) 権利ポリシー テンプレートを適用することで、Information Rights Management (IRM) 保護をメッセージに適用できます。これには、組織内で AD RMS を展開することが必要です。AD RMS の詳細については、「[Active Directory Rights Management サービス](https://go.microsoft.com/fwlink/p/?linkid=129823)」を参照してください。
 

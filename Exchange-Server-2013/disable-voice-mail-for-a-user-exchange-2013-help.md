@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 UM が有効なユーザーのユニファイド メッセージング (UM) を無効にすることができます。 これを行うと、ユーザーは Exchange 2013 のボイス メール機能を使用できなくなります。 必要な場合は、ユーザーの UM を無効にする際に、そのユーザーの UM 設定を維持できます。
 

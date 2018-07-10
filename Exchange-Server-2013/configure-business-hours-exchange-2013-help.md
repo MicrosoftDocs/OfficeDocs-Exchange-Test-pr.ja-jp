@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 ユニファイド メッセージング (UM) 自動応答の勤務時間を構成する場合は、組織の勤務時間である 1 日の時間帯、勤務時間内用案内応答、および自動応答で構成されている内線番号を呼び出したときに発信者に再生されるメニューの音声ガイダンスを定義します。発信者が、定義済みの勤務時間以外の時間帯に自動応答に接続された場合は、勤務時間外の音声ガイダンスと案内応答が再生されます。
 

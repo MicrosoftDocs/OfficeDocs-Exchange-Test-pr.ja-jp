@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 ユニファイド メッセージング (UM) メールボックス ポリシーで、ボイス メール プレビュー パートナーの配信遅延の最大値を設定できます。配信遅延の最大値を設定すると、その UM メールボックス ポリシーにリンクされている UM が有効なすべてのユーザーに設定が適用されます。
 

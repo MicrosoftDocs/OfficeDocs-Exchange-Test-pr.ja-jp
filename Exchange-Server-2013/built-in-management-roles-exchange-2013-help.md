@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2012-08-21_
+_**トピックの最終更新日:** 2012-08-21_
 
 Microsoft Exchange Server 2013 には、既定で多くの管理役割が含まれています。次の役割は、さまざまな組み合わせで管理役割グループまたは管理役割割り当てポリシーに割り当てられ、Exchange 2013 によって提供される機能を管理および使用するためのアクセス許可を付与します。役割の詳細については、「[管理の役割について](understanding-management-roles-exchange-2013-help.md)」を参照してください。
 

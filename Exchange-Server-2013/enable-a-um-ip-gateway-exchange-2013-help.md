@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 既定では、ユニファイド メッセージング (UM) IP ゲートウェイを作成すると、状態の設定は有効になります。ただし、UM IP ゲートウェイをオフラインにして着信呼び出しと送信呼び出しの受け付けを禁止するために UM IP ゲートウェイを無効にしなければならない場合もあります。UM IP ゲートウェイを作成すると、状態変数を有効または無効に設定して、その動作や機能を制御できます。
 

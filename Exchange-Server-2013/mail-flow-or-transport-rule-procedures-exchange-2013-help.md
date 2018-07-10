@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server, Exchange Server 2013_
+_**適用先:** Exchange Server, Exchange Server 2013_
 
-_**トピックの最終更新日:**2015-04-13_
+_**トピックの最終更新日:** 2015-04-13_
 
 次の手順に従って、トランスポート ルールの使用を開始することができます。トランスポート ルールの概念と目的については、「[メール フローやトランスポート ルール](mail-flow-rules-transport-rules-in-exchange-2013-exchange-2013-help.md)」を参照してください。
 

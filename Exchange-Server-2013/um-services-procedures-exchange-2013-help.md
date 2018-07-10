@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Server 2013, Exchange Server 2016_
 
-_**トピックの最終更新日:**2013-02-15_
+_**トピックの最終更新日:** 2013-02-15_
 
 [メールボックス サーバーの UM 設定の管理](manage-um-settings-on-a-mailbox-server-exchange-2013-help.md)
 

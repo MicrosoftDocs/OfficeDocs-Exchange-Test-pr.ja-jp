@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2015-11-12_
+_**トピックの最終更新日:** 2015-11-12_
 
 高可用性を構成するのに必要なアクセス許可は、実行する手順、または実行するコマンドレットによって異なります。高可用性の詳細については、「[高可用性とサイトの復元](high-availability-and-site-resilience-exchange-2013-help.md)」を参照してください。
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2012-10-17_
+_**トピックの最終更新日:** 2012-10-17_
 
 `MyMobileInformation` 管理役割により、個々のユーザーは、自分の携帯電話とポケットベルの番号を表示および変更することができます。 これは、親役割 [MyContactInformation 役割](mycontactinformation-role-exchange-2013-help.md) から作成されるカスタムの役割です。
 

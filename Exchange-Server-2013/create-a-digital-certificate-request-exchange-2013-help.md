@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2013-02-21_
+_**トピックの最終更新日:** 2013-02-21_
 
 Exchange Server 2013 では、EAC またはシェルを使用して証明書を管理できます。EAC には新しい証明書管理ユーザー インターフェイスが含まれています。この新しい UI を通じて、新しい証明書の作成、既存の証明書の編集、または証明書の削除を実行できます。
 
@@ -62,10 +62,12 @@ Exchange Server 2013 では、EAC またはシェルを使用して証明書を�
 ## シェルを使用して新しい証明書要求を作成する
 
 次のコマンドを実行します。
-
-    $reqfile = New-ExchangeCertificate -GenerateRequest -SubjectName "C=US,o=Contoso,cn=contosotocert" -DomainName "contoso.com" -PrivateKeyExportable $true
-
-    $reqfile | out-file c:\certreq.txt
+  ```
+  $reqfile = New-ExchangeCertificate -GenerateRequest -SubjectName "C=US,o=Contoso,cn=contosotocert" -DomainName "contoso.com" -PrivateKeyExportable $true
+  ```
+  ```
+  $reqfile | out-file c:\certreq.txt
+  ```
 
 ## 正常な動作を確認する方法
 

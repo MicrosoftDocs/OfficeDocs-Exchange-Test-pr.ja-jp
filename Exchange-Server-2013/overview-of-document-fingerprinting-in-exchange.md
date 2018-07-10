@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Server 2013_
 
 組織内のインフォメーション ワーカーは、日常的にさまざまな種類の機密情報を処理します。*ドキュメント フィンガープリンティング*は、組織全体で使用される標準フォームを特定することによってこの情報の保護を容易にします。このトピックでは、ドキュメント フィンガープリンティングの背後にある概念について説明します。ドキュメント フィンガープリントの作成方法については、「[ドキュメント フィンガープリンティングを使用してフォーム データを保護する](protect-form-data-with-document-fingerprinting-exchange-2013-help.md)」を参照してください。
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2015-03-09_
+_**トピックの最終更新日:** 2015-03-09_
 
 エッジ トランスポート サーバーを展開しても、Active Directory にはアクセスしません。受信者の参照やセーフリスト集約タスクを実行したり、相互認証トランスポート層セキュリティ (MTLS) を使用してドメイン セキュリティを実装したりするには、エッジ トランスポート サーバーで Active Directory のデータが必要になります。このデータは、EdgeSync を使用してエッジ トランスポート サーバーにレプリケートされます。エッジ トランスポート サーバーは、レプリケートされた情報すべてを Active Directory Lightweight Directory Services (AD LDS) に格納します。
 

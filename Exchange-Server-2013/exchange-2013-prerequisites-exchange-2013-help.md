@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2017-03-20_
+_**トピックの最終更新日:** 2017-03-20_
 
 このトピックでは、Microsoft Exchange 2013 メールボックス、クライアント アクセス、およびエッジ トランスポート サーバーの役割で前提条件となる、必須の Windows Server 2012 R2、Windows Server 2012、および Windows Server 2008 R2 with Service Pack 1 (SP1) オペレーティング システムのインストール手順を説明します。また、Windows 8、Windows 8.1、および Windows 7 クライアント コンピューターに Exchange 2013 をインストールするために必要な前提条件についても説明します。
 
@@ -191,11 +191,11 @@ Exchange 2013 を Windows Server 2008 R2 SP1 コンピューター上にイン�
 
 3.  [Microsoft Unified Communications Managed API 4.0 コア ランタイム 64 ビット](https://go.microsoft.com/fwlink/p/?linkid=258269)
 
-4.  [Microsoft サポート技術情報の記事 KB974405 (Windows Identity Foundation)](http://go.microsoft.com/fwlink/?linkid=3052%26kbid=974405)
+4.  [Microsoft サポート技術情報の記事 KB974405 (Windows Identity Foundation)](http://go.microsoft.com/fwlink/?linkid=3052&kbid=974405)
 
-5.  [サポート技術情報の記事 KB2619234 (RPC over HTTP で使用する関連の Cookie/GUID を Windows 7 および Windows Server 2008 R2 の RPC 層でも使用できるようにする)](http://go.microsoft.com/fwlink/?linkid=3052%26kbid=2619234)
+5.  [サポート技術情報の記事 KB2619234 (RPC over HTTP で使用する関連の Cookie/GUID を Windows 7 および Windows Server 2008 R2 の RPC 層でも使用できるようにする)](http://go.microsoft.com/fwlink/?linkid=3052&kbid=2619234)
 
-6.  [サポート技術情報の記事 KB2533623 (安全でないライブラリの読み込みにより、リモートでコードが実行される)](http://go.microsoft.com/fwlink/?linkid=3052%26kbid=2533623)
+6.  [サポート技術情報の記事 KB2533623 (安全でないライブラリの読み込みにより、リモートでコードが実行される)](http://go.microsoft.com/fwlink/?linkid=3052&kbid=2533623)
     
 
     > [!NOTE]
@@ -251,7 +251,7 @@ Exchange 管理ツールをインストールするドメイン参加済みの W
 
 2.  [Windows Management Framework 4.0](https://go.microsoft.com/fwlink/p/?linkid=390234)
 
-3.  [サポート技術情報の記事 KB974405 (Windows Identity Foundation)](http://go.microsoft.com/fwlink/?linkid=3052%26kbid=974405)
+3.  [サポート技術情報の記事 KB974405 (Windows Identity Foundation)](http://go.microsoft.com/fwlink/?linkid=3052&kbid=974405)
 
 ## Windows 8 と Windows 8.1 の前提条件 (管理ツールのみ)
 

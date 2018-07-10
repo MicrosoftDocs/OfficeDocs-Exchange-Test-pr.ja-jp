@@ -13,24 +13,14 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Server 2013, Exchange Server 2016_
 
-_**トピックの最終更新日:**2016-12-09_
+_**トピックの最終更新日:** 2016-12-09_
 
 このチェックリストを使用して、ユニファイド メッセージング (UM) および Microsoft Lync Server 2013 をインストールして展開します。このトピックでは、Lync Server 2010 も "Lync Server" と呼びます。ただし、Microsoft Office Communications Server 2007 R2 をユニファイド メッセージングと合わせて展開することもできます。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ126338.note(EXCHG.150).gif" title="メモ" alt="メモ" />メモ:</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td></td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 
 
 
 このチェックリストを使用して作業を開始する前に、次のトピックで説明されている概念を理解している必要があります。
@@ -73,7 +63,7 @@ Lync Server 用に実行が必要なタスクの実行方法の詳細につい�
 <td><p>Microsoft Lync Server 2013 および Microsoft Exchange Server 2013 を統合する前提条件を確認します。</p></td>
 <td><p><a href="https://go.microsoft.com/fwlink/p/?linkid=282082">Skype for Business と Exchange の統合の計画</a></p>
 
-> [!TIP]
+> [!TIP]  
 > Exchange 2013 と Lync Server 2010 および 2013 には、インストール時にインストールされる Unified Communications Managed API (UCMA) 4.0 Runtime が必要です。UCMA 4.0 に関する情報をダウンロードして確認するには、「<A href="https://go.microsoft.com/fwlink/p/?linkid=258269">Unified Communications Managed API 4.0 Runtime</A>」を参照してください。
 
 

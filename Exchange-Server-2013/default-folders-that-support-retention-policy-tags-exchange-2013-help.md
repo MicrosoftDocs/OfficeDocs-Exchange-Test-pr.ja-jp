@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013_
+_**適用先:** Exchange Online, Exchange Server 2013_
 
 電子メールのライフサイクルを管理するには、[保持タグおよびアイテム保持ポリシー](retention-tags-and-retention-policies-exchange-2013-help.md)を使用することができます。アイテム保持ポリシーには保持タグが含まれおり、それらの設定を使用すると、メッセージを自動的にアーカイブに移動するタイミングや、自動的に削除するタイミングを指定できます。
 

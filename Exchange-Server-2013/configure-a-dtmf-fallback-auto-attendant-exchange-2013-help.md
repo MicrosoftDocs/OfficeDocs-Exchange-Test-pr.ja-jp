@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 デュアルトーン多重周波数 (DTMF) フォールバック自動応答に対応した、音声認識が有効なユニファイド メッセージング (UM) 自動応答を構成できます。 DTMF フォールバック自動応答は、UM 音声認識自動応答が発信者から提供された音声入力を理解または認識できないときに使用されます。 DTMF フォールバック自動応答が構成されている場合、発信者はタッチトーン入力とも呼ばれる DTMF 入力を使用して自動応答メニュー システム内を移動したり、ユーザーの名前を綴ったり、独自のメニュー音声ガイダンスを使用したりする必要があります。 DTMF フォールバック自動応答が構成されておらず、システムが発信者の発言内容を理解できないため最大音声入力数を超える場合は、システムは次のプロンプトを返します。「Sorry, I couldn't help.Please call back later.」
 

@@ -13,11 +13,11 @@ ms.translationtype: MT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2017-11-22_
+_**トピックの最終更新日:** 2017-11-22_
 
-**概要:** Exchange 2013でフォレスト間の移動用のメールボックスを準備する方法について説明します。
+**概要:**  Exchange 2013でフォレスト間の移動用のメールボックスを準備する方法について説明します。
 
 メールボックスを移動し、Exchange 管理シェルを使用して、移行をサポートしている Microsoft Exchange 2013**New-MoveRequest**と**New-MigrationBatch**のコマンドレットでは具体的には。Exchange 管理センター (EAC) 経由でメールボックスを移動することもできます。2013 の Exchange フォレストに Exchange 2010 と Exchange 2013 メールボックスを移動することに注意してください。
 

@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
 インプレース電子情報開示検索を作成すれば、EAC を使用して結果を探索メールボックスにコピーすることができます。シェルを使用して、**New-MailboxSearch** コマンドレットを使用して作成された電子情報開示検索を開始することもできます。これにより、検索の作成時に指定された探索メールボックスに結果がコピーされます。
 
@@ -82,10 +82,12 @@ _**適用先:**Exchange Server 2013_
     New-MailboxSearch "FY13 Q2 Financial Results" -StartDate "04/01/2013" -EndDate "06/30/2013" -SourceMailboxes "DG-Finance" -SearchQuery '"Financial" AND "Fabrikam"' -EstimateOnly -IncludeUnsearchableItems
 
 この検索の結果を探索メールボックスにコピーするには、次のコマンドを実行します。
-
-    Set-MailboxSearch "FY13 Q2 Financial Results" -EstimateOnly $false -TargetMailbox "Discovery Search Mailbox"
-
-    Start-MailboxSearch "FY13 Q2 Financial Results"
+  ```
+  Set-MailboxSearch "FY13 Q2 Financial Results" -EstimateOnly $false -TargetMailbox "Discovery Search Mailbox"
+  ```
+  ```
+  Start-MailboxSearch "FY13 Q2 Financial Results"
+  ```
 
 ## 検索結果のコピーに関する詳細情報
 
