@@ -78,10 +78,12 @@ Exchange 用の証明書のインポートは、以下の場合に便利なこ�
 3.  ユーザー名とパスワードを入力した後、証明書をファイルへ出力する。
 
 <!-- end list -->
-
-    $file = Get-ExchangeCertificate -DomainName umcorp.northwindtraders.com | Export-ExchangeCertificate -BinaryEncoded:$true -Password (Get-Credential).password
-
-    Set-Content -Path "d:\umcerts\selfsigned.pfx" -Value $file.FileData =Encoding Byte
+  ```
+  $file = Get-ExchangeCertificate -DomainName umcorp.northwindtraders.com | Export-ExchangeCertificate -BinaryEncoded:$true -Password (Get-Credential).password
+  ```
+  ```
+  Set-Content -Path "d:\umcerts\selfsigned.pfx" -Value $file.FileData =Encoding Byte
+  ```
 
 ## EAC を使用して証明書をインポートする
 

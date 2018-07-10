@@ -82,10 +82,12 @@ _**適用先:** Exchange Server 2013_
     New-MailboxSearch "FY13 Q2 Financial Results" -StartDate "04/01/2013" -EndDate "06/30/2013" -SourceMailboxes "DG-Finance" -SearchQuery '"Financial" AND "Fabrikam"' -EstimateOnly -IncludeUnsearchableItems
 
 この検索の結果を探索メールボックスにコピーするには、次のコマンドを実行します。
-
-    Set-MailboxSearch "FY13 Q2 Financial Results" -EstimateOnly $false -TargetMailbox "Discovery Search Mailbox"
-
-    Start-MailboxSearch "FY13 Q2 Financial Results"
+  ```
+  Set-MailboxSearch "FY13 Q2 Financial Results" -EstimateOnly $false -TargetMailbox "Discovery Search Mailbox"
+  ```
+  ```
+  Start-MailboxSearch "FY13 Q2 Financial Results"
+  ```
 
 ## 検索結果のコピーに関する詳細情報
 

@@ -72,11 +72,13 @@ Exchange 2013 の仮想ディレクトリを構成するには、次のコマン
         Set-OwaVirtualDirectory "<CAS2013>\OWA (Default Web Site)" -ExternalUrl https://mail.contoso.com/OWA
     
     Outlook Web App の仮想ディレクトリを設定したら、コマンド プロンプトで次のコマンドを実行します。
-    
-        Net stop IISAdmin /y
-    
-        Net start W3SVC
-
+      ```
+      Net stop IISAdmin /y
+      ```
+      ```
+      Net start W3SVC
+      ```
+      
 2.  外部 EAC アクセスを構成するには、Exchange 管理シェルで次のコマンドを実行します。
     
         Set-EcpVirtualDirectory "<CAS2013>\ECP (Default Web Site)" -ExternalUrl https://mail.contoso.com/ECP -InternalURL https://mail.contoso.com/ECP 

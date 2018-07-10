@@ -85,10 +85,12 @@ _**トピックの最終更新日:** 2014-06-27_
         Mount-Database -Identity RDB1
 
 13. この例の方法で、[Get-Mailbox](https://technet.microsoft.com/ja-jp/library/bb123685\(v=exchg.150\)) および [New-MailboxRestoreRequest](https://technet.microsoft.com/ja-jp/library/ff829875\(v=exchg.150\)) コマンドレットを使用して、RDB からデータをエクスポートし、それを復旧したデータベースにインポートします。これにおり、ダイヤル トーン データベースを使用して送受信されたすべてのメッセージが運用データベースにインポートされます。
-    
-        $mailboxes = Get-Mailbox -Database DTDB1
-    
-        $mailboxes | %{ New-MailboxRestoreRequest -SourceStoreMailbox $_.ExchangeGuid -SourceDatabase RDB1 -TargetMailbox $_ }
+```
+$mailboxes = Get-Mailbox -Database DTDB1
+```
+```
+$mailboxes | %{ New-MailboxRestoreRequest -SourceStoreMailbox $_.ExchangeGuid -SourceDatabase RDB1 -TargetMailbox $_ }
+```
 
 14. 復旧操作が完了したら、この例の方法で RDB をマウント解除して削除します。
     

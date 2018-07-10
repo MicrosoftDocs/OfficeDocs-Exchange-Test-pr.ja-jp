@@ -109,11 +109,13 @@ Exchange Server 2013 および Exchange Online では、インプレース電子
 4.  検索のテストを終了したら、シェルまたは EAC を使用して、検索結果をコピー先の証拠開示用メールボックスにコピーします。
     
       - **シェルの使用:**  次のコマンドを実行して、検索結果をコピーします。検索結果をコピーするには、その前に *EstimateOnly* スイッチを削除する必要があります。
-        
-            Set-MailboxSearch "Search results from 2010" -EstimateOnly $false
-        
-            Start-MailboxSearch "Search results from 2010"
-    
+      ```
+      Set-MailboxSearch "Search results from 2010" -EstimateOnly $false
+      ```
+      ```
+      Start-MailboxSearch "Search results from 2010"
+      ```
+
       - **EAC の使用:**  **\[コンプライアンス管理\]** \> **\[インプレースの電子情報開示と保持\]** に移動します。検索を選択し、**\[検索\]**![\[検索\] アイコン](images/Dn624163.773574d0-9b92-4cab-9f6b-81532c7418b9(EXCHG.150).gif "[検索] アイコン") をクリックして **\[検索結果のコピー\]** をクリックします。
     
     詳細については、「[電子情報開示検索結果を探索メールボックスにコピーする](copy-ediscovery-search-results-to-a-discovery-mailbox-exchange-2013-help.md)」を参照してください。

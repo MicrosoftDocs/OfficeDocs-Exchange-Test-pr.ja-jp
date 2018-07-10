@@ -138,12 +138,15 @@ Exchange Online のメールボックスを削除する必要がある場合は�
 このコマンドを実行すると、メールボックスを無効にすることを確認するメッセージが表示されます。
 
 次にメールボックスを無効にするコマンドの例を示します。
-
-    Disable-Mailbox danj
-
-    Disable-Mailbox "Conf Room 31/1234 (12)"
-
-    Disable-Mailbox sharedmbx@contoso.com
+```
+Disable-Mailbox danj
+```
+```
+Disable-Mailbox "Conf Room 31/1234 (12)"
+```
+```
+Disable-Mailbox sharedmbx@contoso.com
+```
 
 ## 正常な動作を確認する方法
 
@@ -196,12 +199,15 @@ Exchange Online のメールボックスを削除する必要がある場合は�
 このコマンドを実行すると、メールボックスと対応する Active Directory ユーザー アカウントを削除することを確認するメッセージが表示されます。
 
 次にメールボックスを削除するコマンドの例を示します。
-
-    Remove-Mailbox pilarp@contoso.com
-
-    Remove-Mailbox "Fleet Van (16)"
-
-    Remove-Mailbox corpprint
+```
+Remove-Mailbox pilarp@contoso.com
+```
+```
+Remove-Mailbox "Fleet Van (16)"
+```
+```
+Remove-Mailbox corpprint
+```
 
 ## 正常な動作を確認する方法
 

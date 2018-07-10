@@ -59,7 +59,7 @@ Exchange 以外に、Microsoft が提供する特定の XML スキーマ定義�
 
   -  [メール フロー ルールを管理します](manage-mail-flow-rules-exchange-2013-help.md)
     
-    [ポリシーとコンプライアンスのコマンドレット](https://technet.microsoft.com/ja-jp/library/dd298082\(v=exchg.150\))
+  -  [ポリシーとコンプライアンスのコマンドレット](https://technet.microsoft.com/ja-jp/library/dd298082\(v=exchg.150\))
 
 ## Microsoft によって作成された DLP ポリシーを使用する
 

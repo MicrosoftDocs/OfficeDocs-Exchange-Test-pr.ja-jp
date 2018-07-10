@@ -102,10 +102,12 @@ Exchange 管理センター (EAC) または Exchange PowerShell を使用して�
 アドインの使用を特定のユーザーに限定するには、EAC は使用できません。Exchange 管理シェルまたは Exchange Online PowerShell だけを使用できます。
 
 この例では、架空の **AppId** 値 `ac83a9d5-5af2-446f-956a-c583adc94d5e` が設定されている LinkedIn アドインを、Marketing という名前の配布グループに限定します。
-
-    $a = Get-DistributionGroupMember Marketing
-
-    Set-App -Identity ac83a9d5-5af2-446f-956a-c583adc94d5e -OrganizationApp -ProvidedTo SpecificUsers -UserList $a.Identity -DefaultStateForUser Enabled
+```
+$a = Get-DistributionGroupMember Marketing
+```
+```
+Set-App -Identity ac83a9d5-5af2-446f-956a-c583adc94d5e -OrganizationApp -ProvidedTo SpecificUsers -UserList $a.Identity -DefaultStateForUser Enabled
+```
 
 構文およびパラメーターの詳細については、「[Set-App](https://technet.microsoft.com/ja-jp/library/jj218630\(v=exchg.150\))」を参照してください。
 

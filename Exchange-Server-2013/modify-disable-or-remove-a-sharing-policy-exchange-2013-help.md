@@ -102,10 +102,12 @@ _**トピックの最終更新日:** 2014-02-15_
         Set-SharingPolicy -Identity "Contoso" -Enabled $False
 
   - 最初の例では、Contoso という共有ポリシーを削除しています。2 つ目の例では、Contoso という共有ポリシーを削除し、ポリシーを削除する際の確認メッセージが表示されないようにしています。
-    
-        Remove-SharingPolicy -Identity Contoso
-    
-        Remove-SharingPolicy -Identity Contoso -Confirm
+      ```
+      Remove-SharingPolicy -Identity Contoso
+      ```
+      ```
+      Remove-SharingPolicy -Identity Contoso -Confirm
+      ```
 
 構文およびパラメーターの詳細については、「[Set-SharingPolicy](https://technet.microsoft.com/ja-jp/library/dd297931\(v=exchg.150\))」と「[Remove-SharingPolicy](https://technet.microsoft.com/ja-jp/library/dd351071\(v=exchg.150\))」を参照してください。
 

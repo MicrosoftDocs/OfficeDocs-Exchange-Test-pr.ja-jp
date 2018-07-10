@@ -62,10 +62,12 @@ _**適用先:** Exchange Online, Exchange Server 2013_
     Set-Mailbox <Identity> -AuditEnabled $true
 
 組織のすべてのユーザー メールボックスでメールボックス監査を有効にするには、次のコマンドを実行します。
-
-    $UserMailboxes = Get-mailbox -Filter {(RecipientTypeDetails -eq 'UserMailbox')}
-
-    $UserMailboxes | ForEach {Set-Mailbox $_.Identity -AuditEnabled $true}
+```
+$UserMailboxes = Get-mailbox -Filter {(RecipientTypeDetails -eq 'UserMailbox')}
+```
+```
+$UserMailboxes | ForEach {Set-Mailbox $_.Identity -AuditEnabled $true}
+```
 
 ## 手順 2:XML 添付ファイルを許可するように Outlook Web App を構成する
 

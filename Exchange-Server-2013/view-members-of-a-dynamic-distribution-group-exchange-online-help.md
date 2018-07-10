@@ -36,10 +36,12 @@ _**適用先:** Exchange Online, Exchange Server 2013_
 ## シェルを使用して動的配布グループのメンバーの一覧をプレビューする
 
 この例では、Full Time Employees という動的配布グループのメンバーの一覧を返します。最初のコマンドは、動的配布グループ オブジェクトを変数 `$FTE` に格納します。2 番目のコマンドは、**Get-Recipient** コマンドレットを使用して、動的配布グループに定義されている条件に一致する受信者を一覧表示します。
-
-    $FTE = Get-DynamicDistributionGroup "Full Time Employees"
-
-    Get-Recipient -RecipientPreviewFilter $FTE.RecipientFilter -OrganizationalUnit $FTE.RecipientContainer
+  ```
+  $FTE = Get-DynamicDistributionGroup "Full Time Employees"
+  ```
+  ```
+  Get-Recipient -RecipientPreviewFilter $FTE.RecipientFilter -OrganizationalUnit $FTE.RecipientContainer
+  ```
 
 構文およびパラメーターの詳細については、「[Get-DynamicDistributionGroup](https://technet.microsoft.com/ja-jp/library/bb124762\(v=exchg.150\))」と「[Get-Recipient](https://technet.microsoft.com/ja-jp/library/aa996921\(v=exchg.150\))」を参照してください。
 

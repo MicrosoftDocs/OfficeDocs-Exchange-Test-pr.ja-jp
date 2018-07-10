@@ -143,11 +143,12 @@ Exchange 2003 パブリック フォルダーでのハイブリッド構成は�
 
 
 3.  新しいメールボックス データベース内にプロキシ メールボックスを作成し、アドレス帳でこのメールボックスを非表示にします。このメールボックスの SMTP は自動検出によって *DefaultPublicFolderMailbox* SMTP として返されます。この SMTP を解決することで、クライアントは従来の Exchange サーバーに接続して、パブリック フォルダーにアクセスできます。
-    
-        New-Mailbox -Name <PFMailbox1> -Database <NewMDBforPFs>
-    
-        Set-Mailbox -Identity <PFMailbox1> -HiddenFromAddressListsEnabled $true
-
+    ```
+    New-Mailbox -Name <PFMailbox1> -Database <NewMDBforPFs>
+    ```
+    ```
+    Set-Mailbox -Identity <PFMailbox1> -HiddenFromAddressListsEnabled $true
+    ```
 4.  Exchange 2010 では、プロキシ パブリック フォルダー メールボックスを返すように、自動検出を有効にします。この手順は Exchange 2007 には必要ありません。
     
         Set-MailboxDatabase <NewMDBforPFs> -RPCClientAccessServer <PFServerName_with_CASRole>

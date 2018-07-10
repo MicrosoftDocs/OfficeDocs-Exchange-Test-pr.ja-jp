@@ -121,14 +121,18 @@ DAG に関連する追加の管理タスクについては、「[データベー
 ## 手順 5: データベース フォルダーを作成する
 
 次に、ルート パス C:\\ExchangeDatabases の下にデータベース ディレクトリを作成します。この例では、各ボリューム上に 4 つのデータベースが存在するストレージ構成のディレクトリの作成方法を示します。
-
-    md c:\ExchangeDatabases\db001
-
-    md c:\ExchangeDatabases\db002
-
-    md c:\ExchangeDatabases\db003
-
-    md c:\ExchangeDatabases\db004
+```
+md c:\ExchangeDatabases\db001
+```
+```
+md c:\ExchangeDatabases\db002
+```
+```
+md c:\ExchangeDatabases\db003
+```
+```
+md c:\ExchangeDatabases\db004
+```
 
 ## このステップの検証方法
 
@@ -161,22 +165,30 @@ C:\\\< *DatabaseFolderName*\>\\*DatabaseName*\\\<*DatabaseName*\>.db
 C:\\\< *DatabaseFolderName*\>\\*DatabaseName*\\\<*DatabaseName*\>.log
 
 この例では、ボリューム 1 に保存される 4 つのデータベース用のディレクトリを作成する方法を示します。
-
-    md c:\ExchangeDatabases\db001\db001.db
-
-    md c:\ExchangeDatabases\db001\db001.log
-
-    md c:\ExchangeDatabases\db002\db002.db
-
-    md c:\ExchangeDatabases\db002\db002.log
-
-    md c:\ExchangeDatabases\db003\db003.db
-
-    md c:\ExchangeDatabases\db003\db003.log
-
-    md c:\ExchangeDatabases\db004\db004.db
-
-    md c:\ExchangeDatabases\db004\db004.log
+```
+md c:\ExchangeDatabases\db001\db001.db
+```
+```
+md c:\ExchangeDatabases\db001\db001.log
+```
+```
+md c:\ExchangeDatabases\db002\db002.db
+```
+```
+md c:\ExchangeDatabases\db002\db002.log
+```
+```
+md c:\ExchangeDatabases\db003\db003.db
+```
+```
+md c:\ExchangeDatabases\db003\db003.log
+```
+```
+md c:\ExchangeDatabases\db004\db004.db
+```
+```
+md c:\ExchangeDatabases\db004\db004.log
+```
 
 すべてのボリューム上のデータベースについて、上記のコマンドを繰り返します。
 
@@ -211,8 +223,9 @@ DAG に AutoReseed が構成されたことを確認するには、次の手順�
         Get-DatabaseAvailabilityGroup DAG1 | Format-List *auto*
 
 2.  ディレクトリ構造が正しく構成されていることを確認するには、次のコマンドを実行します (既定のパスは以下のとおりです。必要に応じて、パスを使用しているパスに置き換えてください)。
-    
-        Dir c:\ExchangeDatabases /s
-    
-        Dir c:\ExchangeVolumes /s
-
+    ```
+    Dir c:\ExchangeDatabases /s
+    ```
+    ```
+    Dir c:\ExchangeVolumes /s
+    ```

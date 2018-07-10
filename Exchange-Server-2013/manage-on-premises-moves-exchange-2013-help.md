@@ -106,10 +106,12 @@ EAC にログ インし、以下の手順を実行します。
 ## シェルを使用してバッチ移動要求を作成する
 
 この例では、ローカル移動の移行バッチを作成します。ここでは、指定した .csv ファイル内のメールボックスが、別のメールボックス データベースに移動されます。この .csv ファイルには、移動するメールボックスの電子メール アドレスが 1 列に格納されています。この列のヘッダーは、**EmailAddress** という名前にする必要があります。この例の移行バッチは、**Start-MigrationBatch** コマンドレットまたは Exchange 管理センター (EAC) を使用して手動で開始する必要があります。または、*AutoStart* パラメーターを使用して移行バッチを自動で開始することもできます。
-
-    New-MigrationBatch -Local -Name LocalMove1 -CSVData ([System.IO.File]::ReadAllBytes("C:\Users\Administrator\Desktop\LocalMove1.csv")) -TargetDatabases MBXDB2 -TimeZone "Pacific Standard Time"
-
-    Start-MigrationBatch -Identity LocalMove1
+```
+New-MigrationBatch -Local -Name LocalMove1 -CSVData ([System.IO.File]::ReadAllBytes("C:\Users\Administrator\Desktop\LocalMove1.csv")) -TargetDatabases MBXDB2 -TimeZone "Pacific Standard Time"
+```
+```
+Start-MigrationBatch -Identity LocalMove1
+```
 
 構文およびパラメーターの詳細については、「[New-MigrationBatch](https://technet.microsoft.com/ja-jp/library/jj219166\(v=exchg.150\))」と「[Start-MigrationBatch](https://technet.microsoft.com/ja-jp/library/jj219165\(v=exchg.150\))」を参照してください。
 

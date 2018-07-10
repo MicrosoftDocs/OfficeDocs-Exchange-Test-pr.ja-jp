@@ -144,10 +144,12 @@ Microsoft が設定したこのルールでは、ルールにマッチするた�
 ```
 
 この記事にあるクレジット カードの説明は、その他の秘匿性の高い情報ルールに展開することもできます。Exchangeで Microsoft が提供するルールの完全なリストを表示するには、Exchange 管理シェルで [Get-ClassificationRuleCollection](https://technet.microsoft.com/ja-jp/library/jj218696\(v=exchg.150\)) コマンドレットを次のように使用します。
-
-    $rule_collection = Get-ClassificationRuleCollection
-
-    $rule_collection[0].SerializedClassificationRuleCollection | Set-Content oob_classifications.xml -Encoding byte
+```
+$rule_collection = Get-ClassificationRuleCollection
+```
+```
+$rule_collection[0].SerializedClassificationRuleCollection | Set-Content oob_classifications.xml -Encoding byte
+```
 
 ## 詳細情報
 

@@ -50,10 +50,12 @@ _**トピックの最終更新日:** 2014-08-05_
     Set-ThrottlingPolicyAssociation -Identity tonysmith -ThrottlingPolicy ITStaffPolicy
 
 ユーザーとポリシーの関連付けに **Set-ThrottlingPolicyAssociation** コマンドレットを使用する必要はありません。次のコマンドは、tonysmith を調整ポリシー ITStaffPolicy に関連付ける別の方法を表します。
-
-    $b = Get-ThrottlingPolicy ITStaffPolicy
-
-    Set-Mailbox -Identity tonysmith -ThrottlingPolicy $b
+```
+$b = Get-ThrottlingPolicy ITStaffPolicy
+```
+```
+Set-Mailbox -Identity tonysmith -ThrottlingPolicy $b
+```
 
 構文およびパラメーターの詳細については、「[New-ThrottlingPolicy](https://technet.microsoft.com/ja-jp/library/dd351045\(v=exchg.150\))」と「[Set-ThrottlingPolicyAssociation](https://technet.microsoft.com/ja-jp/library/ff459231\(v=exchg.150\))」を参照してください。
 

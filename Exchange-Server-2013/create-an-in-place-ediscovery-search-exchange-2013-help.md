@@ -165,12 +165,15 @@ _**適用先:** Exchange Online, Exchange Server 2013_
 *EstimateOnly* スイッチを使用して、検索結果の推定だけを返し、探索メールボックスに結果をコピーしないようにできます。推定だけの検索は、**Start-MailboxSearch** コマンドレットを使用して開始する必要があります。その後、**Get-MailboxSearch** コマンドレットを使用して、推定の検索結果を取得できます。
 
 たとえば、次のコマンドを実行して新しい電子情報開示検索を作成してから、検索結果の推定を表示できます。
-
-    New-MailboxSearch "FY13 Q2 Financial Results" -StartDate "04/01/2013" -EndDate "06/30/2013" -SourceMailboxes "DG-Finance" -SearchQuery '"Financial" AND "Fabrikam"' -EstimateOnly -IncludeKeywordStatistics
-
-    Start-MailboxSearch "FY13 Q2 Financial Results"
-
-    Get-MailboxSearch "FY13 Q2 Financial Results"
+```
+New-MailboxSearch "FY13 Q2 Financial Results" -StartDate "04/01/2013" -EndDate "06/30/2013" -SourceMailboxes "DG-Finance" -SearchQuery '"Financial" AND "Fabrikam"' -EstimateOnly -IncludeKeywordStatistics
+```
+```
+Start-MailboxSearch "FY13 Q2 Financial Results"
+```
+```
+Get-MailboxSearch "FY13 Q2 Financial Results"
+```
 
 前の例の推定検索結果に関する特定の情報を表示するには、次のコマンドを実行できます。
 

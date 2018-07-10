@@ -271,10 +271,13 @@ Active Directory フェデレーション サービスを構成するには、�
 12. **\[結果\]** ページで、結果を確認し、構成が正常に完了したことをチェックしてから、**\[フェデレーション サービス展開を完了するために必要な次の手順\]** をクリックします。
 
 Windowsの次の PowerShell コマンドは、上記の手順と同じです。
-
-    Import-Module ADFS
-
-    Install-AdfsFarm -CertificateThumbprint 0E0C205D252002D535F6D32026B6AB074FB840E7 -FederationServiceDisplayName "Contoso Corporation" -FederationServiceName adfs.contoso.com -GroupServiceAccountIdentifier "contoso\FSgmsa`$"
+    
+```
+Import-Module ADFS
+```
+```
+Install-AdfsFarm -CertificateThumbprint 0E0C205D252002D535F6D32026B6AB074FB840E7 -FederationServiceDisplayName "Contoso Corporation" -FederationServiceName adfs.contoso.com -GroupServiceAccountIdentifier "contoso\FSgmsa`$"
+```
 
 詳細と構文については、「[Install-AdfsFarm](https://go.microsoft.com/fwlink/?linkid=392704)」を参照してください。
 

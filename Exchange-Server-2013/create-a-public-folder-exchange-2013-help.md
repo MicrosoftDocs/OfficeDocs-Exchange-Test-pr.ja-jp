@@ -93,13 +93,15 @@ EAC を使用してパブリック フォルダーを作成する場合、パブ
   - EAC で、**\[最新の情報に更新\]** をクリックし、パブリック フォルダーの一覧を更新します。一覧に新しいパブリック フォルダーが表示されます。
 
   - シェルで、次のいずれかのコマンドを実行します。
-    
-        Get-PublicFolder -Identity \Marketing\2013\Reports | Format-List
-    
-        Get-PublicFolder -Identity \Marketing\2013 -GetChildren
-    
-        Get-PublicFolder -Recurse
-
+    ```
+    Get-PublicFolder -Identity \Marketing\2013\Reports | Format-List
+    ```
+    ```
+    Get-PublicFolder -Identity \Marketing\2013 -GetChildren
+    ```
+    ```
+    Get-PublicFolder -Recurse
+    ```
 
 > [!TIP]
 > 問題がある場合は、Exchange のフォーラムで質問してください。 次のフォーラムにアクセスしてください。<A href="https://go.microsoft.com/fwlink/p/?linkid=60612">Exchange Server</A>、 <A href="https://go.microsoft.com/fwlink/p/?linkid=267542">Exchange Online</A>、 または <A href="https://go.microsoft.com/fwlink/p/?linkid=285351">Exchange Online Protection</A>。

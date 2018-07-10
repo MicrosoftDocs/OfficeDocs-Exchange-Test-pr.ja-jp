@@ -88,14 +88,17 @@ Exchange Search に関連するその他の管理タスクについては、「[
 **シェルを使用する**
 
 次のコマンドを実行して、Microsoft Exchange Search サービスを停止して無効にします。
-
-    Stop-Service MSExchangeFastSearch
-
-    Set-Service MSExchangeFastSearch -StartupType Disabled
+```
+Stop-Service MSExchangeFastSearch
+```
+```
+Set-Service MSExchangeFastSearch -StartupType Disabled
+```
 
 次のコマンドを実行して、Exchange Search サービスを自動的に起動するように構成してから、サービスを開始します。
-
-    Set-Service MSExchangeFastSearch -StartupType Automatic
-
-    Start-Service MSExchangeFastSearch
-
+```
+Set-Service MSExchangeFastSearch -StartupType Automatic
+```
+```
+Start-Service MSExchangeFastSearch
+```
