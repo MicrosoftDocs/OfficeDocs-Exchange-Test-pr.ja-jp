@@ -11,7 +11,7 @@ ms.translationtype: HT
 
 # トラブルシューティングに Exchange Server 2013 管理パックを使用する
 
- 
+ 
 
 _**トピックの最終更新日:**  2013-04-09_
 
@@ -26,41 +26,41 @@ Rob はそのサーバーをダブルクリックして、**\[正常性エクス
 ![CAS サーバーの障害における正常性セットの詳細](images/Dn195913.8e4d05a6-9128-40d8-b262-e60e9affc973(EXCHG.150).png "CAS サーバーの障害における正常性セットの詳細")
 
 外部技術情報リソースの下に表示されているリンクをクリックすると、「[OWA.Proxy 正常性セットのトラブルシューティング](https://technet.microsoft.com/ja-jp/library/jj737712\(v=exchg.150\))」が表示されます。この記事から、最初にやるべきことは問題がまだ存在しているかを確認することだとわかります。指示に従って次のコマンドを実行して、シェル内の OWA.Proxy プロキシ正常性セットの現在の状態を確認します。
-
+```Powershell
     Get-ServerHealth Server1.contoso.com | ?{$_.HealthSetName -eq "OWA.Proxy"}
-
+```
 このコマンドを実行すると、次の出力が得られます。
-
+```Powershell
     Server          State           Name                 TargetResource       HealthSetName   AlertValue ServerComp
                                                                                                          onent
     ------          -----           ----                 --------------       -------------   ---------- ----------
     Server1         Online          OWAProxyTestMonitor  MSExchangeOWAAppPool OWA.Proxy       Unhealthy  OwaProxy
     Server1         Online          OWAProxyTestMonitor  MSExchangeOWACale... OWA.Proxy       Healthy    OwaProxy
-
+```
 Rob は問題が OWA アプリケーション プールにあることを確認しました。次の手順は、正常状態にないモニターに関連するプローブを再実行することです。「OWA.Proxy 正常性セットのトラブルシューティング」の表を使って、再実行しなければならないプローブが OWAProxyTestProbe であることを特定します。次のコマンドを実行します。
-
+```Powershell
     Invoke-MonitoringProbe OWA.Proxy\OWAProxyTestProbe -Server Server1.contoso.com | Format-List
-
+```
 ResultType の値の出力をスキャンして、プローブに障害があることを確認します。
-
+```Powershell
     ResultType : Failed
-
+```
 記事の「OWAProxyTestMonitor の回復操作」セクションに進みます。IIS マネージャーを使って Server1 に接続し、IIS Server で MSExchangeOWAAppPool が実行されているかを確認します。実行されていることを確認した後、次の手順で MSExchangeOWAAppPool をリサイクルするように指示されます。
-
+```Powershell
     C:\Windows\System32\Inetsrv\Appcmd recycle APPPOOL MSExchangeOWAAppPool
-
+```
 MSExchangeOWAAppPool が正常にリサイクルされたことを確認した後、Invoke-MonitoringProbe コマンドレットを使用してプローブを再実行し、問題がまだ存在しているかを確認します。今度は結果は問題なしでした。次のコマンドを実行して、以前のように、正常性セットによって **\[正常\]** な状態が報告されることを確認します。
-
+```Powershell
     Get-ServerHealth Server1.contoso.com | ?{$_.HealthSetName -eq "OWA.Proxy"}
-
+```
 今回は、問題が解決したことがわかりました。
-
+```Powershell
     Server          State           Name                 TargetResource       HealthSetName   AlertValue ServerComp
                                                                                                          onent
     ------          -----           ----                 --------------       -------------   ---------- ----------
     Server1         Online          OWAProxyTestMonitor  MSExchangeOWAAppPool OWA.Proxy       Healthy    OwaProxy
     Server1         Online          OWAProxyTestMonitor  MSExchangeOWACale... OWA.Proxy       Healthy    OwaProxy
-
+```
 SCOM コンソールに戻り、問題が解決したことを確認します。
 
 ![サーバーの正常性](images/Dn195908.c863be83-fc4b-4daf-a18b-27b1aae15b1d(EXCHG.150).png "サーバーの正常性")
