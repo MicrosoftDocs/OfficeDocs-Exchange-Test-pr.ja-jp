@@ -1059,13 +1059,11 @@ Exchange のデータ損失防止 (DLP) には、DLP ポリシーですぐに使
 <td><p>形式</p></td>
 <td><p>Registro Geral (従来の形式)</p>
 <dl>
-<dt><span></span></dt>
 <dd><p>9 桁の数字</p>
 </dd>
 </dl>
 <p>Registro de Identidade (RIC) (現在の形式)</p>
 <dl>
-<dt><span></span></dt>
 <dd><p>11 桁の数字</p>
 </dd>
 </dl></td>
@@ -3654,13 +3652,11 @@ Exchange のデータ損失防止 (DLP) には、DLP ポリシーですぐに使
 <td><p>形式</p></td>
 <td><p>2010 年 11 月 1 日以降</p>
 <dl>
-<dt><span></span></dt>
 <dd><p>9 桁の文字と数字</p>
 </dd>
 </dl>
 <p>1987 年 4 月 1 日～ 2010 年 10 月 31 日</p>
 <dl>
-<dt><span></span></dt>
 <dd><p>10 桁の数字</p>
 </dd>
 </dl></td>
@@ -4252,7 +4248,6 @@ Exchange のデータ損失防止 (DLP) には、DLP ポリシーですぐに使
 </ul>
 <p>各国の形式は多少異なります。IBAN 機密情報の型は、次の 60 か国をカバーしています。</p>
 <dl>
-<dt><span></span></dt>
 <dd><p>ad、ae、al、at、az、ba、be、bg、bh、ch、cr、cy、cz、de、dk、do、ee、es、fi、fo、fr、gb、ge、gi、gl、gr、hr、hu、ie、il、is、it、kw、kz、lb、li、lt、lu、lv、mc、md、me、mk、mr、mt、mu、nl、no、pl、pt、ro、rs、sa、se、si、sk、sm、tn、tr、vg</p>
 </dd>
 </dl></td>
@@ -4392,13 +4387,11 @@ Exchange のデータ損失防止 (DLP) には、DLP ポリシーですぐに使
 <td><p>形式</p></td>
 <td><p>従来の形式 (2012 年 12 月 31日まで)</p>
 <dl>
-<dt><span></span></dt>
 <dd><p>7 桁の数字の後に 1 ～ 2 桁の文字</p>
 </dd>
 </dl>
 <p>現在の形式 (2013年 1 月 1 日以降)</p>
 <dl>
-<dt><span></span></dt>
 <dd><p>7 桁の数字の後に 2 桁の文字</p>
 </dd>
 </dl></td>
@@ -6494,13 +6487,11 @@ Exchange のデータ損失防止 (DLP) には、DLP ポリシーですぐに使
 <td><p>形式</p></td>
 <td><p>バイオメトリック パスポート番号</p>
 <dl>
-<dt><span></span></dt>
 <dd><p>9 桁の数字</p>
 </dd>
 </dl>
 <p>非バイオメトリック パスポート番号</p>
 <dl>
-<dt><span></span></dt>
 <dd><p>9 桁の数字</p>
 </dd>
 </dl></td>
