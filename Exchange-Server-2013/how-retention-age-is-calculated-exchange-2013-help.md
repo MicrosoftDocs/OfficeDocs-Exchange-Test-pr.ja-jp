@@ -92,7 +92,7 @@ _**適用先:** Exchange Online, Exchange Server 2013_
 <ol>
 <li><p>非定期のタスクは、その <code>message-received date</code> (あれば) に従って期限が切れます。</p></li>
 <li><p>非定期のタスクに <code>message-received date</code> がない場合は、その <code>message-creation date</code> に従って期限が切れます。</p></li>
-<li><p>非定期のタスクに <code>message-received date</code> も <code></code><code>message-creation date</code> もない場合は、期限は切れません。</p></li>
+<li><p>非定期のタスクに <code>message-received date</code> も <code>message-creation date</code> もない場合は、期限は切れません。</p></li>
 </ol></li>
 <li><p>定期的なタスクは、最後の <code>end date</code> に従って期限が切れます。定期的なタスクに <code>end date</code> がない場合は、期限は切れません。</p></li>
 <li><p>再生成するタスク (タスクが完了してから一定期間後に再生成する定期的なタスク) は期限が切れません。</p></li>
