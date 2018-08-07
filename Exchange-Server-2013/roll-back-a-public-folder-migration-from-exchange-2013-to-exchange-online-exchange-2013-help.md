@@ -1,5 +1,5 @@
 ﻿---
-title: 'Exchange 2013 から Exchange Online へのパブリック フォルダーの移行をロールバックする: Exchange Online Help'
+title: 'Exchange 2013 から Exchange Online へのパブリック フォルダーの移行をロールバックする'
 TOCTitle: Exchange 2013 から Exchange Online へのパブリック フォルダーの移行をロールバックする
 ms:assetid: bcd54aa0-aa45-4c68-b504-1475842d4b96
 ms:mtpsurl: https://technet.microsoft.com/ja-jp/library/Mt798259(v=EXCHG.150)

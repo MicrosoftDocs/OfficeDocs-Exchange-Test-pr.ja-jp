@@ -1,5 +1,5 @@
 ﻿---
-title: 'ローカル コンピューターがグループ メンバーシップを拡張する責任を担う_ServerIsDynamicGroupExpansionServer: Exchange 2013 Help'
+title: 'ローカル コンピューターがグループ メンバーシップを拡張する責任を担う'
 TOCTitle: ローカル コンピューターがグループ メンバーシップを拡張する責任を担う_ServerIsDynamicGroupExpansionServer
 ms:assetid: f6fdd8e1-fda1-45be-b8a2-0d356dbe7d83
 ms:mtpsurl: https://technet.microsoft.com/ja-jp/library/ms.exch.setupreadiness.serverisdynamicgroupexpansionserver(v=EXCHG.150)

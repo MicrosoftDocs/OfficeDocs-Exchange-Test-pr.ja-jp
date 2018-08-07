@@ -1,5 +1,5 @@
 ﻿---
-title: 'スキーマ マスターが Windows Server 2003 Service Pack 1 以上を実行していない_DomainControllerIsOutOfSite: Exchange 2013 Help'
+title: 'スキーマ マスターが Windows Server 2003 Service Pack 1 以上を実行していない'
 TOCTitle: スキーマ マスターが Windows Server 2003 Service Pack 1 以上を実行していない_DomainControllerIsOutOfSite
 ms:assetid: 5edbe0b8-7610-4a52-aaaa-38c6a99e7e53
 ms:mtpsurl: https://technet.microsoft.com/ja-jp/library/ms.exch.setupreadiness.domaincontrollerisoutofsite(v=EXCHG.150)

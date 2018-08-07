@@ -1,5 +1,5 @@
 ﻿---
-title: 'Windows Rights Management をサポートしていない電子メール クライアントに表示するテキストを指定する: Exchange Online Help'
+title: 'Windows Rights Management をサポートしていない電子メール クライアントに表示するテキストを指定する'
 TOCTitle: Windows Rights Management をサポートしていない電子メール クライアントに表示するテキストを指定する
 ms:assetid: a9b2238a-b534-469c-a0c3-2768bc3d005b
 ms:mtpsurl: https://technet.microsoft.com/ja-jp/library/Ee423552(v=EXCHG.150)

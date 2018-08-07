@@ -1,5 +1,5 @@
 ﻿---
-title: "\"Security Group Creation and Membership/セキュリティ グループの作成とメンバーシップ\" 役割: Exchange 2013 Help"
+title: 'Security Group Creation and Membership/セキュリティ グループの作成とメンバーシップ 役割'
 TOCTitle: "\"Security Group Creation and Membership/セキュリティ グループの作成とメンバーシップ\" 役割"
 ms:assetid: 257eb517-339f-4895-9e08-f772408a41cf
 ms:mtpsurl: https://technet.microsoft.com/ja-jp/library/Dd876860(v=EXCHG.150)

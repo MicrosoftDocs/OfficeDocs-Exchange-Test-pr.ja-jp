@@ -1,5 +1,5 @@
 ﻿---
-title: 'Active Directory 分割アクセス許可を使用する場合、ドメイン コントローラーへのインストールはサポートされていない: Exchange 2013 Help'
+title: 'Active Directory 分割アクセス許可を使用する場合、ドメイン コントローラーへのインストールはサポートされていない'
 TOCTitle: Active Directory 分割アクセス許可を使用する場合、ドメイン コントローラーへのインストールはサポートされていない
 ms:assetid: 977e3758-5e09-40a2-80c1-fe344b1d8a2a
 ms:mtpsurl: https://technet.microsoft.com/ja-jp/library/ms.exch.setupreadiness.installondcinadsplitpermissionmode(v=EXCHG.150)

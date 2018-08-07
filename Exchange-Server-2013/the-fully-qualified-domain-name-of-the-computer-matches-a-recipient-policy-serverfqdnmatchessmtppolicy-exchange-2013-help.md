@@ -1,5 +1,5 @@
 ﻿---
-title: 'コンピューターの完全修飾ドメイン名と受信者ポリシーが一致している_ServerFQDNMatchesSMTPPolicy: Exchange 2013 Help'
+title: 'コンピューターの完全修飾ドメイン名と受信者ポリシーが一致している'
 TOCTitle: コンピューターの完全修飾ドメイン名と受信者ポリシーが一致している_ServerFQDNMatchesSMTPPolicy
 ms:assetid: f3ea61f8-1788-4cbf-814e-f7c088c1ac47
 ms:mtpsurl: https://technet.microsoft.com/ja-jp/library/ms.exch.setupreadiness.serverfqdnmatchessmtppolicy(v=EXCHG.150)

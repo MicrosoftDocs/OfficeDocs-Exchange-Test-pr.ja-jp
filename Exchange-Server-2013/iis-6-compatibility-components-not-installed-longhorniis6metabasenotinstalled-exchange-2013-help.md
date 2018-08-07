@@ -1,5 +1,5 @@
 ﻿---
-title: 'IIS 6 互換性コンポーネントがインストールされていない_LonghornIIS6MetabaseNotInstalled: Exchange 2013 Help'
+title: 'IIS 6 互換性コンポーネントがインストールされていない'
 TOCTitle: IIS 6 互換性コンポーネントがインストールされていない_LonghornIIS6MetabaseNotInstalled
 ms:assetid: 0bd52987-d3cc-496c-ac8c-d35591405195
 ms:mtpsurl: https://technet.microsoft.com/ja-jp/library/ms.exch.setupreadiness.longhorniis6metabasenotinstalled(v=EXCHG.150)

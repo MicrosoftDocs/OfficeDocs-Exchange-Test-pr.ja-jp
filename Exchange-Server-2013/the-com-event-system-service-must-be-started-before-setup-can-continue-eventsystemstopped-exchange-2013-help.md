@@ -1,5 +1,5 @@
 ﻿---
-title: 'セットアップを続行するために COM+ イベント システム サービスを開始する必要がある_EventSystemStopped: Exchange 2013 Help'
+title: 'セットアップを続行するために COM+ イベント システム サービスを開始する必要がある'
 TOCTitle: セットアップを続行するために COM+ イベント システム サービスを開始する必要がある_EventSystemStopped
 ms:assetid: 3b8d2ba3-87fb-4749-b4d1-5dfec97e1ca4
 ms:mtpsurl: https://technet.microsoft.com/ja-jp/library/ms.exch.setupreadiness.eventsystemstopped(v=EXCHG.150)

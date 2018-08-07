@@ -1,5 +1,5 @@
 ﻿---
-title: 'クライアント アクセス サーバーで Information Rights Management を有効または無効にする: Exchange 2013 Help'
+title: 'クライアント アクセス サーバーで Information Rights Management を有効または無効にする'
 TOCTitle: クライアント アクセス サーバーで Information Rights Management を有効または無効にする
 ms:assetid: c7ce069b-a572-4755-90a3-7105472e4c83
 ms:mtpsurl: https://technet.microsoft.com/ja-jp/library/Dd876938(v=EXCHG.150)

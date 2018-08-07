@@ -1,5 +1,5 @@
 ﻿---
-title: 'POP3、IMAP4、SMTP サーバーの設定を Outlook Web App のエンド ユーザーが表示できるようにする: Exchange 2013 Help'
+title: 'POP3、IMAP4、SMTP サーバーの設定を Outlook Web App のエンド ユーザーが表示できるようにする'
 TOCTitle: POP3、IMAP4、SMTP サーバーの設定を Outlook Web App のエンド ユーザーが表示できるようにする
 ms:assetid: bd22bf7e-3bf7-45e6-8790-919b780166f6
 ms:mtpsurl: https://technet.microsoft.com/ja-jp/library/Gg298947(v=EXCHG.150)
