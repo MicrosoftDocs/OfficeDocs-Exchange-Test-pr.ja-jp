@@ -1,5 +1,5 @@
 ﻿---
-title: 'Exchange Server 2013 と比較した Exchange Online Protection のスパム対策機能のメリット: Exchange 2013 Help'
+title: 'Exchange Server 2013 と比較した Exchange Online Protection のスパム対策機能のメリット'
 TOCTitle: Exchange Server 2013 と比較した Exchange Online Protection のスパム対策機能のメリット
 ms:assetid: 00e37a3c-3fbc-488f-bdad-d52a3c80fd72
 ms:mtpsurl: https://technet.microsoft.com/ja-jp/library/JJ673032(v=EXCHG.150)

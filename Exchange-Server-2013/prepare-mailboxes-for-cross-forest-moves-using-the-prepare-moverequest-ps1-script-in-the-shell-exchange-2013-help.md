@@ -1,5 +1,5 @@
 ﻿---
-title: 'シェルの Prepare-MoveRequest.ps1 スクリプトを使用して、フォレスト間のメールボックスの移動を準備する: Exchange 2013 Help'
+title: 'シェルの Prepare-MoveRequest.ps1 スクリプトを使用して、フォレスト間のメールボックスの移動を準備する'
 TOCTitle: シェルの Prepare-MoveRequest.ps1 スクリプトを使用して、フォレスト間のメールボックスの移動を準備する
 ms:assetid: 2cea59fb-69b7-4a2f-833f-de4d93cf1810
 ms:mtpsurl: https://technet.microsoft.com/ja-jp/library/Ee861103(v=EXCHG.150)

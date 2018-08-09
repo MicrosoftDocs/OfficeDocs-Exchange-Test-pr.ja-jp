@@ -1,5 +1,5 @@
 ﻿---
-title: 'Exchange 2013 での Exchange 2010 または 2007 エッジ トランスポート サーバーの使用: Exchange 2013 Help'
+title: 'Exchange 2013 での Exchange 2010 または 2007 エッジ トランスポート サーバーの使用'
 TOCTitle: Exchange 2013 での Exchange 2010 または 2007 エッジ トランスポート サーバーの使用
 ms:assetid: ce99b4bd-868c-4767-9009-e22c17ac0ac7
 ms:mtpsurl: https://technet.microsoft.com/ja-jp/library/JJ150569(v=EXCHG.150)

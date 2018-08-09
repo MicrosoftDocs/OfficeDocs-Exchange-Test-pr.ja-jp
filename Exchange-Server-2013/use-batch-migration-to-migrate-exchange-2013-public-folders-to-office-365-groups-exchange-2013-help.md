@@ -1,5 +1,5 @@
 ﻿---
-title: 'バッチ移行を使用して、Exchange 2013 のパブリック フォルダーを Office 365 グループに移行する: Exchange 2013 Help'
+title: 'バッチ移行を使用して、Exchange 2013 のパブリック フォルダーを Office 365 グループに移行する'
 TOCTitle: バッチ移行を使用して、Exchange 2013 のパブリック フォルダーを Office 365 グループに移行する
 ms:assetid: 1d800576-957d-4916-ae2a-55c08ca75be1
 ms:mtpsurl: https://technet.microsoft.com/ja-jp/library/Mt843873(v=EXCHG.150)

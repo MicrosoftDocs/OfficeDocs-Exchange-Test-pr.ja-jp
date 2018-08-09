@@ -1,5 +1,5 @@
 ﻿---
-title: 'バッチ移行を使用して、従来のパブリック フォルダーを Office 365 と Exchange Online に移行する: Exchange 2013 Help'
+title: 'バッチ移行を使用して、従来のパブリック フォルダーを Office 365 と Exchange Online に移行する'
 TOCTitle: バッチ移行を使用して、従来のパブリック フォルダーを Office 365 と Exchange Online に移行する
 ms:assetid: e8ab9309-7d12-4f02-bfc4-14e61a373958
 ms:mtpsurl: https://technet.microsoft.com/ja-jp/library/Dn874017(v=EXCHG.150)

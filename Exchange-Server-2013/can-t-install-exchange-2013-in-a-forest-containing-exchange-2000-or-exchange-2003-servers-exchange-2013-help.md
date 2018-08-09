@@ -1,5 +1,5 @@
 ﻿---
-title: 'Exchange 2000 または Exchange 2003 サーバーが含まれているフォレストで Exchange 2013 をインストールできない: Exchange 2013 Help'
+title: 'Exchange 2000 または Exchange 2003 サーバーが含まれているフォレストで Exchange 2013 をインストールできない'
 TOCTitle: Exchange 2000 または Exchange 2003 サーバーが含まれているフォレストで Exchange 2013 をインストールできない
 ms:assetid: a115b182-cbd2-4d31-aa0e-375240939301
 ms:mtpsurl: https://technet.microsoft.com/ja-jp/library/ms.exch.setupreadiness.exchange2000or2003presentinorg(v=EXCHG.150)

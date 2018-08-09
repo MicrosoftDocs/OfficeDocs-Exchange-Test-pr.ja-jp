@@ -1,5 +1,5 @@
 ﻿---
-title: 'World Wide Web Publishing Service が無効または見つからない_ShouldReRunSetupForW3SVC: Exchange 2013 Help'
+title: 'World Wide Web 発行サービスが無効または見つからない'
 TOCTitle: World Wide Web Publishing Service が無効または見つからない_ShouldReRunSetupForW3SVC
 ms:assetid: f1815a6d-d16b-4271-9fab-84087465529e
 ms:mtpsurl: https://technet.microsoft.com/ja-jp/library/ms.exch.setupreadiness.shouldrerunsetupforw3svc(v=EXCHG.150)
