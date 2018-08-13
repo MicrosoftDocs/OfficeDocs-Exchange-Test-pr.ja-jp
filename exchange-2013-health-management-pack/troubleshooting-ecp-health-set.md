@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013, Project Server 2013_
+_**適用先:** Exchange Server 2013, Project Server 2013_
 
-_**トピックの最終更新日:**2015-03-09_
+_**トピックの最終更新日:** 2015-03-09_
 
 Exchange コントロール パネル (ECP) 正常性セットは、Exchange 管理センター (EAC) および Outlook Web App (OWA) ユーザー設定サービスの全体的な状態を監視します。ECP 正常性セットは、次の正常性セットに密接に関連しています。
 

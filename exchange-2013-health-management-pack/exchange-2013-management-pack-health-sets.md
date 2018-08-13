@@ -13,7 +13,7 @@ ms.translationtype: HT
 
  
 
-_**トピックの最終更新日:**2013-05-17_
+_**トピックの最終更新日:** 2013-05-17_
 
 Exchange Server 2013 管理パックは Microsoft Exchange Server 2013 の Managed Availability 機能に依存します。Managed Availability では、Exchange Server 2013 の各コンポーネントが、プローブ、モニター、およびレスポンダーを使用して自身を監視します。Managed Availability を実装するコンポーネントは、*正常性セット*と呼ばれます。Exchange 2013 で使用可能なすべての正常性セットのトラブルシューティング ガイダンスは次のとおりです。
 

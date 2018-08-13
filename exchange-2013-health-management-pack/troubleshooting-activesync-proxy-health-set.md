@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2014-09-22_
+_**トピックの最終更新日:** 2014-09-22_
 
 ActiveSync.Proxy 正常性セットは、クライアント アクセス サーバー (CAS) 上の Exchange ActiveSync インフラストラクチャの状態を監視します。ActiveSync.Proxy 正常性セットが正常でないことを示す警告を受け取った場合、それが示すのは、警告内に示された CAS 上の Exchange ActiveSync コンポーネントに影響する可能性がある問題です。
 

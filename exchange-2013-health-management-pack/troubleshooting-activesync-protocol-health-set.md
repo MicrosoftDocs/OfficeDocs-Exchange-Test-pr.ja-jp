@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2013-02-06_
+_**トピックの最終更新日:** 2013-02-06_
 
 ActiveSync.Protocol 正常性セットは、メールボックス サーバー上の Exchange ActiveSync 通信プロトコルの全体的な状態を監視します。ActiveSync.Protocol 正常性セットが正常でないことを示す警告を受け取った場合、それが示すのは、警告内に示されたメールボックス サーバー上の ActiveSync コンポーネントに影響する可能性がある問題です。
 

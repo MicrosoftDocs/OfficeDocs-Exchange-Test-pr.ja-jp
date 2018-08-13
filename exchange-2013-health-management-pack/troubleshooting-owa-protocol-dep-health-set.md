@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013, Project Server 2013_
+_**適用先:** Exchange Server 2013, Project Server 2013_
 
-_**トピックの最終更新日:**2015-11-10_
+_**トピックの最終更新日:** 2015-11-10_
 
 **OWA.Protocol.DEP** 正常性セットは、Lync 2013 と Exchange 2013 の間で統合された、Outlook Web App でのインスタント メッセージング (IM) の全体的な正常性を監視します。Outlook Web App でインスタント メッセージングを有効にする方法について詳しくは、「[Microsoft Lync Server 2013 および Microsoft Outlook Web App 2013 の統合](http://go.microsoft.com/fwlink/p/?linkid=280418)」を参照してください。
 

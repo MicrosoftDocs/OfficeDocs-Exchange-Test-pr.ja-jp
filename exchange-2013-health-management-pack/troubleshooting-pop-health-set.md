@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_**適用先:** Exchange Server 2013_
 
-_**トピックの最終更新日:**2015-03-09_
+_**トピックの最終更新日:** 2015-03-09_
 
 POP 正常性セットは、Microsoft Exchange POP3 サービスおよび POP3 クライアント接続性の全体的な状態と可用性を監視します。POP 正常性セットは、次の正常性セットに密接に関連しています。
 
