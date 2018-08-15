@@ -118,6 +118,9 @@ Exchange 組織のメッセージ サイズの制限を計画するときには�
 <tr class="odd">
 <td><p>メッセージあたりの最大受信者数</p>
 
+> [!NOTE]  
+> <p>&nbsp;</p>
+
 </td>
 <td><p>5000</p></td>
 <td><p>コマンドレット: <strong>Set-TransportConfig</strong></p>
