@@ -116,5 +116,5 @@ Exchange Search がコンテンツ インデックス カタログを再シー�
 
     Get-MailboxDatabaseCopyStatus | FL Name,*Index*
 
-検索カタログの再シードが進行中である場合、*ContentIndexState* プロパティの値は **\[クロール\]** になります。再シードが完了したら、この値は **\[正常\]** に変更されます。
+検索カタログの再シードが進行中である場合、*ContentIndexState* プロパティの値は <strong>クロール</strong> になります。再シードが完了したら、この値は <strong>正常</strong> に変更されます。
 

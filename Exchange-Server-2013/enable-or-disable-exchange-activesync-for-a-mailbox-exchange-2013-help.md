@@ -35,21 +35,21 @@ EAC またはシェルを使用して、ユーザー メールボックスの Mi
 
 ## EAC を使用して Exchange ActiveSync を有効または無効にする
 
-1.  EAC で、**\[受信者\]** \> **\[メールボックス\]**に移動します。
+1.  EAC で、<strong>受信者</strong> \> <strong>メールボックス</strong>に移動します。
 
-2.  ユーザー メールボックス リストで、Exchange ActiveSync を有効または無効にするメールボックスをクリックし、**\[編集\]**![編集アイコン](images/Bb124582.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "編集アイコン")をクリックします。
+2.  ユーザー メールボックス リストで、Exchange ActiveSync を有効または無効にするメールボックスをクリックし、<strong>編集</strong>![編集アイコン](images/Bb124582.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "編集アイコン")をクリックします。
 
-3.  メールボックスのプロパティ ページで、**\[メールボックスの機能\]** をクリックします。
+3.  メールボックスのプロパティ ページで、<strong>メールボックスの機能</strong> をクリックします。
 
-4.  **\[モバイル デバイス\]** で、以下のいずれか 1 つの操作を行います。
+4.  <strong>モバイル デバイス</strong> で、以下のいずれか 1 つの操作を行います。
     
-      - Exchange ActiveSync を無効にするには、**\[Exchange ActiveSync を無効にする\]** をクリックします。
+      - Exchange ActiveSync を無効にするには、<strong>Exchange ActiveSync を無効にする</strong> をクリックします。
         
-        Exchange ActiveSync を無効にするかどうかを確認する警告が表示されます。**\[はい\]** をクリックします。
+        Exchange ActiveSync を無効にするかどうかを確認する警告が表示されます。<strong>はい</strong> をクリックします。
     
-      - Exchange ActiveSync を有効にするには、**\[Exchange ActiveSync を有効にする\]** をクリックします。
+      - Exchange ActiveSync を有効にするには、<strong>Exchange ActiveSync を有効にする</strong> をクリックします。
 
-5.  **\[保存\]** をクリックして変更を保存します。
+5.  <strong>保存</strong> をクリックして変更を保存します。
 
 
 > [!NOTE]
@@ -73,11 +73,11 @@ EAC またはシェルを使用して、ユーザー メールボックスの Mi
 
 ユーザーのメールボックスの Exchange ActiveSync が正常に有効または無効にされたことを確認するには、次のいずれかを実行します。
 
-  - EAC で、**\[受信者\]** \> **\[メールボックス\]** の順に移動し、メールボックスをクリックし、**\[編集\]**![編集アイコン](images/Bb124582.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "編集アイコン") をクリックします。
+  - EAC で、<strong>受信者</strong> \> <strong>メールボックス</strong> の順に移動し、メールボックスをクリックし、<strong>編集</strong>![編集アイコン](images/Bb124582.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "編集アイコン") をクリックします。
 
-  - メールボックスのプロパティ ページで、**\[メールボックスの機能\]** をクリックします。
+  - メールボックスのプロパティ ページで、<strong>メールボックスの機能</strong> をクリックします。
 
-  - **\[モバイル デバイス\]** で、Exchange ActiveSync が有効か無効かを確認します。
+  - <strong>モバイル デバイス</strong> で、Exchange ActiveSync が有効か無効かを確認します。
 
 または
 

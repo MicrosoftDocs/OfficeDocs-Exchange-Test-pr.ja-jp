@@ -35,7 +35,7 @@ DAG に関連する他の管理タスクについては、「[データベース
     
     2.  次の場所に移動します。**CN=ExServerName,CN=Servers,CN=First Administrative Group,CN=Administrative Groups,CN=ExOrg Name,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=DomainName,CN=Com**
     
-    3.  Exchange サーバー オブジェクトを右クリックし、**\[プロパティ\]** をクリックします。
+    3.  Exchange サーバー オブジェクトを右クリックし、<strong>プロパティ</strong> をクリックします。
     
     4.  **msExchInstallPath** 属性を探します。この属性には、現在のインストール パスが格納されます。
 

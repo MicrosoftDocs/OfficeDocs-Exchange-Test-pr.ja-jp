@@ -130,7 +130,7 @@ Exchange Server 2013 に含まれている RollAlternateServiceAccountPassword.p
 </table>
 
 
-スクリプトをスケジュールされたタスクとして実行する場合、タスクの実行結果は、Exchange サーバーの **\[Logging\]** フォルダー内の、\[**RollAlternateServiceAccountPassword**\] という名前のサブフォルダーにログ記録されます。
+スクリプトをスケジュールされたタスクとして実行する場合、タスクの実行結果は、Exchange サーバーの <strong>Logging</strong> フォルダー内の、\[**RollAlternateServiceAccountPassword**\] という名前のサブフォルダーにログ記録されます。
 
 ログを使用して、タスクが正常に実行されたことを確認できます。
 

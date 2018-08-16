@@ -299,7 +299,7 @@ ExpressRoute には、ExpressRoute 接続用のプライベート IP 領域も�
 
 **Q**:iOS および Android 用の Outlook にメール アカウントが正常に追加されたか、どうすれば確認できますか。
 
-**A**:ハイブリッド先進認証を介して追加されたオンプレミスのメールボックスには、iOS および Android 用の Outlook のアカウント設定で、以下の例に示すような **\[Exchange (ハイブリッド)\]** というラベルが付けられます。
+**A**:ハイブリッド先進認証を介して追加されたオンプレミスのメールボックスには、iOS および Android 用の Outlook のアカウント設定で、以下の例に示すような <strong>Exchange (ハイブリッド)</strong> というラベルが付けられます。
 
 ![ハイブリッド先進認証のために構成された iOS および Android 用の Outlook のアカウントの例](images/Mt846639.79887a65-e5e1-4501-a274-008393dbb6c9(EXCHG.150).png "ハイブリッド先進認証のために構成された iOS および Android 用の Outlook のアカウントの例")
 

@@ -61,7 +61,7 @@ UM 自動応答に関連する追加の管理タスクについては、「[UM �
 
 ## MigrateUMCustomPrompts.ps1 シェルを使用して、UM ダイヤル プランおよび自動応答用のすべてのカスタム音声ガイダンスのコピーを移行する
 
-1.  **\[スタート\]** \> **\[すべてのプログラム\]** \> **\[Microsoft Exchange Server 2013\]** \> **\[Exchange 管理シェル\]** を順にクリックします。
+1.  <strong>スタート</strong> \> <strong>すべてのプログラム</strong> \> <strong>Microsoft Exchange Server 2013</strong> \> <strong>Exchange 管理シェル</strong> を順にクリックします。
 
 2.  シェルのプロンプトで、スクリプトへのパスを入力します。たとえば、「**cd "D:\\Program Files\\Microsoft\\Exchange Server\\V15\\Scripts"**」と入力してから、Enter を押します。
 

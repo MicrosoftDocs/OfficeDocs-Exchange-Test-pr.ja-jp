@@ -29,9 +29,9 @@ Microsoft Exchange Server 2013 では、送信コネクタが受信側サーバ�
 
 ## 送信コネクタの種類の選択
 
-通常、送信コネクタは Exchange 管理センター (EAC) の **\[メール フロー\]** セクションで作成します。 新規の送信コネクタを作成する場合、接続シナリオに適した、使用可能な **\[種類\]** を選択します。 種類によって、コネクタに割り当てる既定のアクセス許可セットが決定され、決定されたアクセス許可が、信頼されるセキュリティ プリンシパルに与えられます。 セキュリティ プリンシパルには、ユーザー、コンピューター、およびセキュリティ グループが含まれます。
+通常、送信コネクタは Exchange 管理センター (EAC) の <strong>メール フロー</strong> セクションで作成します。 新規の送信コネクタを作成する場合、接続シナリオに適した、使用可能な <strong>種類</strong> を選択します。 種類によって、コネクタに割り当てる既定のアクセス許可セットが決定され、決定されたアクセス許可が、信頼されるセキュリティ プリンシパルに与えられます。 セキュリティ プリンシパルには、ユーザー、コンピューター、およびセキュリティ グループが含まれます。
 
-特定の **\[種類\]** の選択を説明する手順には、[送信コネクタを作成し送信電子メールをスマート ホスト経由でルーティングする](create-a-send-connector-to-route-outbound-email-through-a-smart-host-exchange-2013-help.md) および [送信コネクタを作成し、TLS (トランスポート層セキュリティ) を適用した状態でパートナーに電子メールを送信する](create-a-send-connector-to-send-email-to-a-partner-with-transport-layer-security-tls-applied-exchange-2013-help.md) が含まれます。
+特定の <strong>種類</strong> の選択を説明する手順には、[送信コネクタを作成し送信電子メールをスマート ホスト経由でルーティングする](create-a-send-connector-to-route-outbound-email-through-a-smart-host-exchange-2013-help.md) および [送信コネクタを作成し、TLS (トランスポート層セキュリティ) を適用した状態でパートナーに電子メールを送信する](create-a-send-connector-to-send-email-to-a-partner-with-transport-layer-security-tls-applied-exchange-2013-help.md) が含まれます。
 
 EAC に Exchange 管理シェルを使用したい場合には、[New-SendConnector](https://technet.microsoft.com/ja-jp/library/aa998936\(v=exchg.150\)) コマンドレットを使用して送信コネクタを作成し、種類を指定することができます。
 

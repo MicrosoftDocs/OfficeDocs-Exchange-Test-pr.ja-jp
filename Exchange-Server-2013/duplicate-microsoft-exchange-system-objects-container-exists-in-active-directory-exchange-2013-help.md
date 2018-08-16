@@ -23,17 +23,17 @@ Active Directory ドメイン名前付けコンテキストに重複する Micro
 
 1.  管理者の資格情報を使用してドメイン コントローラーにログオンします。
 
-2.  **\[管理ツール\]** で、**\[Active Directory ユーザーとコンピューター\]** をクリックします。
+2.  <strong>管理ツール</strong> で、<strong>Active Directory ユーザーとコンピューター</strong> をクリックします。
 
-3.  **\[Active Directory ユーザーとコンピューター\]** 管理コンソール ウィンドウで、ツールバー メニューから **\[表示\]** をクリックし、**\[高度な機能\]** を選択します。
+3.  <strong>Active Directory ユーザーとコンピューター</strong> 管理コンソール ウィンドウで、ツールバー メニューから <strong>表示</strong> をクリックし、<strong>高度な機能</strong> を選択します。
 
 4.  重複した Microsoft Exchange システム オブジェクト コンテナーを特定します。
 
 5.  重複した Microsoft Exchange システム オブジェクト コンテナーに有効な Active Directory オブジェクトが含まれないことを確認します。
 
-6.  重複した Microsoft Exchange システム オブジェクト コンテナーを右クリックし、**\[削除\]** をクリックします。
+6.  重複した Microsoft Exchange システム オブジェクト コンテナーを右クリックし、<strong>削除</strong> をクリックします。
 
-7.  Active Directory ダイアログ ボックスで **\[はい\]** をクリックして削除を確認します。
+7.  Active Directory ダイアログ ボックスで <strong>はい</strong> をクリックして削除を確認します。
 
 
 > [!NOTE]

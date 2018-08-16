@@ -49,17 +49,24 @@ _**トピックの最終更新日:** 2013-12-02_
 
 次のコマンドのいずれかを実行し、Exchange 2013 を稼働しているサーバーの正常性セットと正常性情報を表示します。
 
-    Get-HealthReport -Identity <ServerName>
-
-    Get-ServerHealth -Identity <ServerName> | Format-Table Server,CurrentHealthSetState,Name,HealthSetName,AlertValue,HealthGroupName -Auto
+```
+Get-HealthReport -Identity <ServerName>
+```
+```
+Get-ServerHealth -Identity <ServerName> | Format-Table Server,CurrentHealthSetState,Name,HealthSetName,AlertValue,HealthGroupName -Auto
+```
 
 次のコマンドのいずれかを実行し、Exchange 2013 を稼働しているサーバーまたはデータベース可用性グループの正常性セットを表示します。
 
-    Get-ExchangeServer | Get-HealthReport -RollupGroup
-
-    Get-ExchangeServer | Get-HealthReport -RollupGroup -HealthSetName <HealthSet>
-
-    (Get-DatabaseAvailabiltyGroup <DAGName>).Servers | Get-HealthReport -RollupGroup
+```
+Get-ExchangeServer | Get-HealthReport -RollupGroup
+```
+```
+Get-ExchangeServer | Get-HealthReport -RollupGroup -HealthSetName <HealthSet>
+```
+```
+(Get-DatabaseAvailabiltyGroup <DAGName>).Servers | Get-HealthReport -RollupGroup
+```
 
 ## 正常性セットの一覧の表示
 

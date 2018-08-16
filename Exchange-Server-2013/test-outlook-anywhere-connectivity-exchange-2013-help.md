@@ -55,15 +55,15 @@ Outlook Anywhere に関連する追加の管理タスクについては、「[Ou
 
 Exchange リモート接続アナライザー (ExRCA) は、Exchange の各種プロトコルによる接続をテストするための Web ベースのツールです。ExRCA には[こちら](https://go.microsoft.com/fwlink/p/?linkid=167905)からアクセスすることができます。
 
-1.  ExRCA の Web サイトでは、**\[Microsoft Office Outlook 接続テスト\]** で **\[Outlook Anywhere\]** を選択し、そのページの下部にある \[次へ\] を選択します。
+1.  ExRCA の Web サイトでは、<strong>Microsoft Office Outlook 接続テスト</strong> で <strong>Outlook Anywhere</strong> を選択し、そのページの下部にある \[次へ\] を選択します。
 
 2.  次の画面で、電子メール アドレス、ドメイン、ユーザー名、パスワードなどの必須情報を入力します。
 
 3.  自動検出を使用してサーバー設定を検出するか、手動でサーバー設定を指定するかを選択します。
 
-4.  免責事項を確認した上で承認し、検証コードを入力して **\[検証\]** を選択します。
+4.  免責事項を確認した上で承認し、検証コードを入力して <strong>検証</strong> を選択します。
 
-5.  **\[テストの実行\]** を選択します。
+5.  <strong>テストの実行</strong> を選択します。
 
 ## 正常な動作を確認する方法
 

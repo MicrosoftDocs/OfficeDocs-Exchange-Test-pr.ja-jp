@@ -104,7 +104,7 @@ _**適用先:** Exchange Online, Exchange Server 2013_
 
 保持タグと保持ポリシーを正常にインポートしたことを確認するには、以下を実行します。
 
-1.  EAC で **\[コンプライアンス管理\]** \> **\[保持タグ\]** の順に移動し、保持タグが正常にインポートされていることを確認します。**\[コンプライアンス管理\]** \> **\[アイテム保持ポリシー\]** の順に移動し、アイテム保持ポリシーが正常にインポートされていることを確認します。
+1.  EAC で <strong>コンプライアンス管理</strong> \> <strong>保持タグ</strong> の順に移動し、保持タグが正常にインポートされていることを確認します。<strong>コンプライアンス管理</strong> \> <strong>アイテム保持ポリシー</strong> の順に移動し、アイテム保持ポリシーが正常にインポートされていることを確認します。
 
 2.  **Get-RetentionPolicy** コマンドレットと **Get-RetentionPolicyTag** コマンドレットを使用し、タグとポリシーが作成されていることを確認します。保持タグとアイテム保持ポリシーの取得方法の例については、「[Get-RetentionPolicyTag](https://technet.microsoft.com/ja-jp/library/dd298009\(v=exchg.150\))」と「[Get-RetentionPolicy](https://technet.microsoft.com/ja-jp/library/dd298086\(v=exchg.150\))」の例をご確認ください。
 

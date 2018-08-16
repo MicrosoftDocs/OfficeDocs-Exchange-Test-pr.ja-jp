@@ -161,7 +161,7 @@ POP3 および IMAP4 のクライアント アクセスを有効にしたら、�
     
     この設定の適用後、IIS を再起動する必要があります。
 
-**Set-POPSettings**、**Set-IMAPSettings**、および**Set-ReceiveConnector** コマンドレットを実行して既定の設定を変更すると、ユーザーは **\[設定\]** \> **\[オプション\]** \> **\[アカウント\]** \> **\[マイ アカウント\]** \> **\[POP または IMAP アクセスの設定\]** をクリックして、Outlook Web App で自分の外部 POP、IMAP、および SMTP サーバーの設定を確認できます。
+**Set-POPSettings**、**Set-IMAPSettings**、および**Set-ReceiveConnector** コマンドレットを実行して既定の設定を変更すると、ユーザーは <strong>設定</strong> \> <strong>オプション</strong> \> <strong>アカウント</strong> \> <strong>マイ アカウント</strong> \> <strong>POP または IMAP アクセスの設定</strong> をクリックして、Outlook Web App で自分の外部 POP、IMAP、および SMTP サーバーの設定を確認できます。
 
 **サーバーにメッセージのコピーを残す**
 

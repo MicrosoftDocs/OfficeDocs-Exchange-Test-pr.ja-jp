@@ -181,7 +181,7 @@ Outlook Web App サービスは、次のプローブとモニターを使用し�
     
         Set-ExchangeServer -Identity "ServerName" -MonitoringGroup "Primary"
 
-9.  IIS マネージャーで **\[アプリケーション プール\]** をクリックし、Exchange 管理シェル から次のコマンドを実行して、**MSExchangeOWAAppPool** アプリケーション プールをリサイクルします。
+9.  IIS マネージャーで <strong>アプリケーション プール</strong> をクリックし、Exchange 管理シェル から次のコマンドを実行して、**MSExchangeOWAAppPool** アプリケーション プールをリサイクルします。
     
         %SystemRoot%\System32\inetsrv\Appcmd recycle MSExchangeOWAAppPool
 
@@ -197,7 +197,7 @@ Outlook Web App サービスは、次のプローブとモニターを使用し�
 
 14. サーバーが再起動したら、関連するプローブを再実行します (「問題がまだ存在していることを確認する」セクションの手順 2c を参照)。
 
-15. プローブがまだ失敗する場合、この問題の解決にサポートが必要なこともあります。この問題を解決するには、Microsoft のサポート担当者にお問い合わせください。Microsoft のサポート担当者に問い合わせるには、「[Exchange Server サポート ページ](http://go.microsoft.com/fwlink/p/?linkid=180809)」にアクセスしてください。ナビゲーション ウィンドウで、**\[サポート オプションとリソース\]** をクリックし、**\[テクニカル サポートを利用する\]** に表示されるいずれかのオプションを使用して、Microsoft のサポート担当者に問い合わせます。組織には Microsoft 製品サポート サービスに直接問い合わせるための特定の手順がある場合があるので、組織のガイドラインを最初に必ず確認してください。
+15. プローブがまだ失敗する場合、この問題の解決にサポートが必要なこともあります。この問題を解決するには、Microsoft のサポート担当者にお問い合わせください。Microsoft のサポート担当者に問い合わせるには、「[Exchange Server サポート ページ](http://go.microsoft.com/fwlink/p/?linkid=180809)」にアクセスしてください。ナビゲーション ウィンドウで、<strong>サポート オプションとリソース</strong> をクリックし、<strong>テクニカル サポートを利用する</strong> に表示されるいずれかのオプションを使用して、Microsoft のサポート担当者に問い合わせます。組織には Microsoft 製品サポート サービスに直接問い合わせるための特定の手順がある場合があるので、組織のガイドラインを最初に必ず確認してください。
 
 ## 詳細情報
 

@@ -221,24 +221,27 @@ regex 要素には、対応するエンティティまたはアフィニティ �
     任意の子 Match 要素の完全サブセットと一致する
 
 <!-- end list -->
-
-    <Any minMatches="3" maxMatches="3">
-        <Match idRef="USDate" />
-        <Match idRef="USAddress" />
-        <Match idRef="Name" />
-    </Any>
-
-    <Any maxMatches="0">
-        <Match idRef="USDate" />
-        <Match idRef="USAddress" />
-        <Match idRef="Name" />
-    </Any>
-
-    <Any minMatches="1" maxMatches="1">
-        <Match idRef="USDate" />
-        <Match idRef="USAddress" />
-        <Match idRef="Name" />
-    </Any>
+```
+<Any minMatches="3" maxMatches="3">
+    <Match idRef="USDate" />
+    <Match idRef="USAddress" />
+    <Match idRef="Name" />
+</Any>
+```
+```
+<Any maxMatches="0">
+    <Match idRef="USDate" />
+    <Match idRef="USAddress" />
+    <Match idRef="Name" />
+</Any>
+```
+```
+<Any minMatches="1" maxMatches="1">
+    <Match idRef="USDate" />
+    <Match idRef="USAddress" />
+    <Match idRef="Name" />
+</Any>
+```
 
 ## より多くの証拠で信頼レベルを上げる
 

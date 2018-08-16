@@ -138,26 +138,26 @@ _**トピックの最終更新日:** 2016-12-09_
         
         Exchange 2003 サーバー上で次の手順を完了します。
         
-          - Exchange システム マネージャーのコンソール ツリーで、**\[管理グループ\]** \> **\[最初の管理グループ\]** \> **\[サーバー\]** に移動します。
+          - Exchange システム マネージャーのコンソール ツリーで、<strong>管理グループ</strong> \> <strong>最初の管理グループ</strong> \> <strong>サーバー</strong> に移動します。
         
-          - Exchange 2003 サーバーを選択し、**\[最初のストレージ グループ\]** \> **\[パブリック フォルダー ストア\]** \> **\[パブリック フォルダー\]** \> **\[Schedule+ FREE BUSY\]** に移動します。
+          - Exchange 2003 サーバーを選択し、<strong>最初のストレージ グループ</strong> \> <strong>パブリック フォルダー ストア</strong> \> <strong>パブリック フォルダー</strong> \> <strong>Schedule+ FREE BUSY</strong> に移動します。
         
-          - 操作ウィンドウで、**\[最初の管理グループ\]** として **\[OU=EXTERNAL (FYDIBOHF25SPDLT)\]** フォルダーを選択します。
+          - 操作ウィンドウで、<strong>最初の管理グループ</strong> として <strong>OU=EXTERNAL (FYDIBOHF25SPDLT)</strong> フォルダーを選択します。
         
-          - **\[OU=EXTERNAL (FYDIBOHF25SPDLT)\]** フォルダーを右クリックして、**\[プロパティ\]** をクリックします。
+          - <strong>OU=EXTERNAL (FYDIBOHF25SPDLT)</strong> フォルダーを右クリックして、<strong>プロパティ</strong> をクリックします。
         
-          - **\[OU=EXTERNAL (FYDIBOHF25SPDLT) のプロパティ\]** で、**\[レプリケーション\]**\] タブを選択します。
+          - <strong>OU=EXTERNAL (FYDIBOHF25SPDLT) のプロパティ</strong> で、<strong>レプリケーション</strong>\] タブを選択します。
         
-          - **OU=EXTERNAL (FYDIBOHF25SPDLT)** フォルダーを Exchange 2010 クライアント アクセス/メールボックス サーバーにレプリケートするには、**\[追加\]** をクリックします。
+          - **OU=EXTERNAL (FYDIBOHF25SPDLT)** フォルダーを Exchange 2010 クライアント アクセス/メールボックス サーバーにレプリケートするには、<strong>追加</strong> をクリックします。
         
-          - **\[パブリック フォルダー ストアの選択\]** で、Exchange 2010 クライアント アクセス/メールボックス サーバーの **\[パブリック フォルダー データベース\]** を選択し、**\[OK\]** をクリックします。
+          - <strong>パブリック フォルダー ストアの選択</strong> で、Exchange 2010 クライアント アクセス/メールボックス サーバーの <strong>パブリック フォルダー データベース</strong> を選択し、<strong>OK</strong> をクリックします。
             
 
             > [!NOTE]
             > 既定では、Exchange では、パブリック フォルダー データベースで設定されているレプリケーション スケジュールを使用します。
 
         
-          - **\[OK\]** をクリックして **\[OU=EXTERNAL (FYDIBOHF25SPDLT) のプロパティ\]**\] を閉じ、変更を保存します。
+          - <strong>OK</strong> をクリックして <strong>OU=EXTERNAL (FYDIBOHF25SPDLT) のプロパティ</strong>\] を閉じ、変更を保存します。
         
           - **OU=Exchange Administrative Group (FYDIBOHF23SPDLT)** フォルダーについても、上記と同じ手順を実行します。
             

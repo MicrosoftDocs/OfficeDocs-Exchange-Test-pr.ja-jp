@@ -119,7 +119,7 @@ UM ダイヤル プランを作成したら、少なくとも 1 つの Outlook V
 
 既定では、UM ダイヤル プランの作成時に、構成される Outlook Voice Access 番号はありません。ユーザーが Outlook Voice Access 機能を使用できるようにするには、少なくとも 1 つの電話番号または内線番号を構成する必要があります。Outlook Voice Access 番号に使用する英数字の桁数は、20 を超えることはできません。ダイヤル プランでこの番号を構成すると、この番号は Microsoft Outlook および Outlook Web App のボイス メール オプションに表示されます。
 
-UM ダイヤル プランの **\[Outlook Voice Access 番号\]** ボックスで、ユーザーが Outlook Voice Access を使用してボイス メール システムにアクセスするために呼び出す電話番号または内線番号を追加できます。ほとんどの場合、内線番号または外線番号を入力します。しかし、このフィールドには英数字を入力できるため、IP PBX、SIP が有効な PBX、Office Communications Server 2007 R2、または Microsoft Lync Server を使用している場合、SIP URI を使用できます。
+UM ダイヤル プランの <strong>Outlook Voice Access 番号</strong> ボックスで、ユーザーが Outlook Voice Access を使用してボイス メール システムにアクセスするために呼び出す電話番号または内線番号を追加できます。ほとんどの場合、内線番号または外線番号を入力します。しかし、このフィールドには英数字を入力できるため、IP PBX、SIP が有効な PBX、Office Communications Server 2007 R2、または Microsoft Lync Server を使用している場合、SIP URI を使用できます。
 
 組織のニーズに合わせて、1 つまたは複数の Outlook Voice Access 番号を構成できます。1 つの UM ダイヤル プランに 1 つの Outlook Voice Access 番号を構成したり、1 つの UM ダイヤル プランに複数の Outlook Voice Access 番号を含めたりすることができます。ただし、1 つの Outlook Voice Access 番号が複数の UM ダイヤル プランにまたがることはできません。
 

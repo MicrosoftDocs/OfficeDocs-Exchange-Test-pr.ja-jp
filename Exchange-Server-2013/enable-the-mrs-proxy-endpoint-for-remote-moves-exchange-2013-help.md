@@ -53,15 +53,15 @@ MRS プロキシ エンドポイントを有効にするクライアント ア�
 
 ## EAC を使用して MRS プロキシ エンドポイントを有効にする
 
-1.  EAC で、**\[受信者\]** \> **\[サーバー\]** \> **\[仮想ディレクトリ\]** と移動します。
+1.  EAC で、<strong>受信者</strong> \> <strong>サーバー</strong> \> <strong>仮想ディレクトリ</strong> と移動します。
 
-2.  **\[サーバーの選択\]** ドロップダウン リストで、MRS プロキシ エンドポイントを有効にするクライアント アクセス サーバーの名前を選択します。または、**\[すべてのサーバー\]** を選択して、組織内のすべてのクライアント アクセス サーバーの仮想ディレクトリを表示します。
+2.  <strong>サーバーの選択</strong> ドロップダウン リストで、MRS プロキシ エンドポイントを有効にするクライアント アクセス サーバーの名前を選択します。または、<strong>すべてのサーバー</strong> を選択して、組織内のすべてのクライアント アクセス サーバーの仮想ディレクトリを表示します。
 
-3.  **\[種類の選択\]** ドロップダウン リストで **\[EWS\]** を選択して、選択したサーバーの Exchange Web Service (EWS) 仮想ディレクトリを表示します。
+3.  <strong>種類の選択</strong> ドロップダウン リストで <strong>EWS</strong> を選択して、選択したサーバーの Exchange Web Service (EWS) 仮想ディレクトリを表示します。
 
-4.  仮想ディレクトリの一覧で、構成するクライアント アクセス サーバーの **\[EWS (既定の Web サイト)\]** をクリックして **\[編集\]**![編集アイコン](images/Bb124582.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "編集アイコン") をクリックします。
+4.  仮想ディレクトリの一覧で、構成するクライアント アクセス サーバーの <strong>EWS (既定の Web サイト)</strong> をクリックして <strong>編集</strong>![編集アイコン](images/Bb124582.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "編集アイコン") をクリックします。
 
-5.  **\[EWS (既定の Web サイト)\]** プロパティ ページの **\[MRS プロキシ有効\]** チェックボックスをオンにして、**\[保存\]** をクリックします。
+5.  <strong>EWS (既定の Web サイト)</strong> プロパティ ページの <strong>MRS プロキシ有効</strong> チェックボックスをオンにして、<strong>保存</strong> をクリックします。
 
 ## シェルを使用して MRS プロキシ エンドポイントを有効にする
 
@@ -83,11 +83,11 @@ MRS プロキシ エンドポイントを有効にするクライアント ア�
 
 MRS プロキシ エンドポイントが正常に有効になったことを確認するには、次のいずれかの手順を実行します。
 
-1.  EAC で、**\[受信者\]** \> **\[サーバー\]** \> **\[仮想ディレクトリ\]** と移動します。
+1.  EAC で、<strong>受信者</strong> \> <strong>サーバー</strong> \> <strong>仮想ディレクトリ</strong> と移動します。
 
-2.  仮想ディレクトリの一覧で **\[EWS (既定の Web サイト)\]** をクリックして、詳細ウィンドウで MRS プロキシ エンドポイントが有効なことを確認します。
+2.  仮想ディレクトリの一覧で <strong>EWS (既定の Web サイト)</strong> をクリックして、詳細ウィンドウで MRS プロキシ エンドポイントが有効なことを確認します。
     
-    または、**\[編集\]**![編集アイコン](images/Bb124582.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "編集アイコン") をクリックして、**\[EWS (既定の Web サイト)\]** プロパティ ページを表示して、**\[MRS プロキシ有効\]** チェック ボックスがオンであることを確認することもできます。
+    または、<strong>編集</strong>![編集アイコン](images/Bb124582.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "編集アイコン") をクリックして、<strong>EWS (既定の Web サイト)</strong> プロパティ ページを表示して、<strong>MRS プロキシ有効</strong> チェック ボックスがオンであることを確認することもできます。
 
 または
 
@@ -101,9 +101,12 @@ MRS プロキシ エンドポイントが有効に設定されているかどう
 
 次の例では、corp.contoso.com フォレスト内のサーバーとの通信をテストします。
 
-    $Credentials = Get-Credential
-
-    Test-MigrationServerAvailability -ExchangeRemoteMove -Autodiscover -EmailAddress administrator@corp.contoso.com -Credentials $Credentials
+```
+$Credentials = Get-Credential
+```
+```
+Test-MigrationServerAvailability -ExchangeRemoteMove -Autodiscover -EmailAddress administrator@corp.contoso.com -Credentials $Credentials
+```
 
 このコマンドを正常に実行するには、MRS プロキシ エンドポイントを有効にする必要があります。
 

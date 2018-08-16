@@ -45,15 +45,15 @@ POP3 および IMAP4 を設定する方法の詳細については、「[Exchang
 
 メールボックス サーバーの役割を実行しているコンピューター上:
 
-1.  **\[サービス\]** スナップインのコンソール ツリーで、**\[サービス (ローカル)\]** をクリックします。
+1.  <strong>サービス</strong> スナップインのコンソール ツリーで、<strong>サービス (ローカル)</strong> をクリックします。
 
-2.  結果ウィンドウで、**\[Microsoft Exchange IMAP4\]** を右クリックし、**\[プロパティ\]** をクリックします。
+2.  結果ウィンドウで、<strong>Microsoft Exchange IMAP4</strong> を右クリックし、<strong>プロパティ</strong> をクリックします。
 
-3.  結果ウィンドウで、**\[Microsoft Exchange IMAP4 Backend\]** を右クリックし、**\[プロパティ\]** をクリックします。
+3.  結果ウィンドウで、<strong>Microsoft Exchange IMAP4 Backend</strong> を右クリックし、<strong>プロパティ</strong> をクリックします。
 
-4.  **\[全般\]** タブの **\[スタートアップの種類\]** で **\[自動\]** を選択し、**\[適用\]** をクリックします。
+4.  <strong>全般</strong> タブの <strong>スタートアップの種類</strong> で <strong>自動</strong> を選択し、<strong>適用</strong> をクリックします。
 
-5.  **\[サービスの状態\]** の下の **\[開始\]** をクリックし、**\[OK\]** をクリックします。
+5.  <strong>サービスの状態</strong> の下の <strong>開始</strong> をクリックし、<strong>OK</strong> をクリックします。
 
 ## Exchange 管理シェル を使用して IMAP4 を有効にする
 
@@ -77,5 +77,5 @@ POP3 および IMAP4 を設定する方法の詳細については、「[Exchang
 
 ## 正常な動作を確認する方法
 
-Exchange 2016 メールボックス サーバーで、Windows タスク マネージャーを開きます。**\[サービス\]** タブで、IMAP4 が有効になっていれば **\[MSExchangeIMAP4\]** と **\[MSExchangeIMAP4BE\]** の状態が **\[実行中\]** となります。
+Exchange 2016 メールボックス サーバーで、Windows タスク マネージャーを開きます。<strong>サービス</strong> タブで、IMAP4 が有効になっていれば <strong>MSExchangeIMAP4</strong> と <strong>MSExchangeIMAP4BE</strong> の状態が <strong>実行中</strong> となります。
 

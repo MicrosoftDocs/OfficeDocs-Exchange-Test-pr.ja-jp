@@ -17,7 +17,7 @@ _**適用先:** Exchange Server 2013_
 
 _**トピックの最終更新日:** 2017-07-26_
 
-Microsoft Exchange Server 2013 組織と [Azure Active Directory 認証システム](https://go.microsoft.com/fwlink/p/?linkid=135986)の間でフェデレーション信頼を確立するには、デジタル証明書を、信頼の作成に使用する Exchange サーバーにインストールする必要があります。自己署名証明書を使用することを強くお勧めします。自己署名証明書は、Exchange 管理センター (EAC) で **\[フェデレーションの信頼を有効にする\]** ウィザードを使用すると、自動的に作成されインストールされます。
+Microsoft Exchange Server 2013 組織と [Azure Active Directory 認証システム](https://go.microsoft.com/fwlink/p/?linkid=135986)の間でフェデレーション信頼を確立するには、デジタル証明書を、信頼の作成に使用する Exchange サーバーにインストールする必要があります。自己署名証明書を使用することを強くお勧めします。自己署名証明書は、Exchange 管理センター (EAC) で <strong>フェデレーションの信頼を有効にする</strong> ウィザードを使用すると、自動的に作成されインストールされます。
 
 推奨する自己署名証明書を使用しない場合は、Microsoft によって信頼されている証明機関 (CA) からの X.509 SSL (Secure Sockets Layer) 証明書を要求してインストールする必要があります。他の CA により発行された証明書であっても Azure AD 認証システムとのフェデレーション信頼を確立するのに使用できますが、これまでに Microsoft により認定されたものはありません。
 

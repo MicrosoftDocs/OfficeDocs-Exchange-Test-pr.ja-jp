@@ -43,11 +43,11 @@ FAX に関するその他の管理タスクについては、「[FAX 送受信�
 
 ## EAC を使用して FAX パートナーの URI を設定する
 
-1.  EAC で、**\[ユニファイド メッセージング\]** \> **\[UM ダイヤル プラン\]** に移動します。リスト ビューで変更したい UM ダイアル プランを選択し、**\[編集\]**![編集アイコン](images/Bb124582.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "編集アイコン").
+1.  EAC で、<strong>ユニファイド メッセージング</strong> \> <strong>UM ダイヤル プラン</strong> に移動します。リスト ビューで変更したい UM ダイアル プランを選択し、<strong>編集</strong>![編集アイコン](images/Bb124582.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "編集アイコン").
 
-2.  **\[UM ダイヤル プラン\]** ページの **\[UM メールボックス ポリシー\]** で、変更するポリシーを選択し、**\[編集\]**![編集アイコン](images/Bb124582.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "編集アイコン") をクリックします。
+2.  <strong>UM ダイヤル プラン</strong> ページの <strong>UM メールボックス ポリシー</strong> で、変更するポリシーを選択し、<strong>編集</strong>![編集アイコン](images/Bb124582.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "編集アイコン") をクリックします。
 
-3.  **\[UM メールボックス ポリシー\]** ページの **\[全般\]** にある **\[パートナー FAX サーバーの URI\]** ボックスに、TCP または TLS の URI を入力します。たとえば、*sip:faxserver1.contoso.com:5060;transport=tcp* または*sip:faxserver2.contoso.com:5061;transport=tls*
+3.  <strong>UM メールボックス ポリシー</strong> ページの <strong>全般</strong> にある <strong>パートナー FAX サーバーの URI</strong> ボックスに、TCP または TLS の URI を入力します。たとえば、*sip:faxserver1.contoso.com:5060;transport=tcp* または*sip:faxserver2.contoso.com:5061;transport=tls*
     
 
     > [!NOTE]
@@ -55,7 +55,7 @@ FAX に関するその他の管理タスクについては、「[FAX 送受信�
 
 
 
-4.  **\[保存\]** をクリックして変更を保存します。
+4.  <strong>保存</strong> をクリックして変更を保存します。
 
 ## シェルを使用して FAX パートナーの URI を設定する
 

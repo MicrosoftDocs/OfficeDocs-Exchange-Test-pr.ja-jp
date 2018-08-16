@@ -232,11 +232,11 @@ UM ダイヤル プランで作成したダイヤル情報グループは、以�
     
         Set-UMDialPlan -Identity MyUMDialPlan -AllowedInCountryOrRegionGroups MyAllowedDialRuleGroup
 
-  - **1 つまたは複数の UM メールボックス ポリシー   **UM メールボックス ポリシーに構成されている設定は、UM メールボックス ポリシーに関連付けられているすべてのユーザーに適用されます。UM メールボックス ポリシーに構成されている設定は、Outlook Voice Access 番号を呼び出してメールボックスにサインインしたユーザーに適用されます。「`MyAllowedDialRuleGroup`」の名前の付いた国内/地域内ダイヤル ルール グループを 1 つの UM メールボックス ポリシーに適用するには、次のように、EAC の UM メールボックス ポリシーの **\[ダイヤルの承認\]** ページを使用するか、シェルの **Set-UMMailboxPolicy** コマンドレットを使用します。
+  - **1 つまたは複数の UM メールボックス ポリシー   **UM メールボックス ポリシーに構成されている設定は、UM メールボックス ポリシーに関連付けられているすべてのユーザーに適用されます。UM メールボックス ポリシーに構成されている設定は、Outlook Voice Access 番号を呼び出してメールボックスにサインインしたユーザーに適用されます。「`MyAllowedDialRuleGroup`」の名前の付いた国内/地域内ダイヤル ルール グループを 1 つの UM メールボックス ポリシーに適用するには、次のように、EAC の UM メールボックス ポリシーの <strong>ダイヤルの承認</strong> ページを使用するか、シェルの **Set-UMMailboxPolicy** コマンドレットを使用します。
     
         Set-UMMailboxPolicy -Identity MyUMMailboxPolicy -AllowedInCountryOrRegionGroups MyAllowedDialRuleGroup
 
-  - **UM ダイヤル プランに関連付けられている 1 つまたは複数の自動応答**これは、UM 自動応答に呼び出しを行うすべてのユーザーに適用されます。「`MyAllowedDialRuleGroup`」という名前の付いた国内/地域内ダイヤル情報グループを 1 つの UM 自動応答に適用するには、次のように、EAC の自動応答の **\[ダイヤルの承認\]** ページを使用するか、シェルの **Set-UMAutoAttendant** コマンドレットを使用します。
+  - **UM ダイヤル プランに関連付けられている 1 つまたは複数の自動応答**これは、UM 自動応答に呼び出しを行うすべてのユーザーに適用されます。「`MyAllowedDialRuleGroup`」という名前の付いた国内/地域内ダイヤル情報グループを 1 つの UM 自動応答に適用するには、次のように、EAC の自動応答の <strong>ダイヤルの承認</strong> ページを使用するか、シェルの **Set-UMAutoAttendant** コマンドレットを使用します。
     
         Set-UMAutoAttendant -Identity MyUMAutoAttendant -AllowedInCountryOrRegionGroups MyAllowedDialRuleGroup
 

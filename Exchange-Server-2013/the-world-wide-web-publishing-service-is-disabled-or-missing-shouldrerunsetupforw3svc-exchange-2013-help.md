@@ -25,35 +25,35 @@ Exchange 2007 セットアップ プログラムを実行するには、Microso
 
 **World Wide Web Publishing サービスがインストールされ、無効以外の状態になっていることを確認するには、次の操作を行います。**
 
-1.  デスクトップの **\[マイ コンピューター\]** を右クリックし、**\[管理\]** をクリックします。
+1.  デスクトップの <strong>マイ コンピューター</strong> を右クリックし、<strong>管理</strong> をクリックします。
 
-2.  **\[サービスとアプリケーション\]** ノードを展開し、**\[サービス\]** ノードをクリックします。
+2.  <strong>サービスとアプリケーション</strong> ノードを展開し、<strong>サービス</strong> ノードをクリックします。
 
-3.  右側のペインで、**\[World Wide Web Publishing Service\]** を見つけます。
+3.  右側のペインで、<strong>World Wide Web Publishing Service</strong> を見つけます。
     
-    インストールされているサービスの一覧に **\[World Wide Web Publishing Service\]** が表示されない場合は、以下の手順を実行してインストールします。
+    インストールされているサービスの一覧に <strong>World Wide Web Publishing Service</strong> が表示されない場合は、以下の手順を実行してインストールします。
 
-4.  **\[World Wide Web Publishing Service\]** が表示されても、状態が **\[開始\]** になっていない場合は、以下の手順を実行して開始します。
+4.  <strong>World Wide Web Publishing Service</strong> が表示されても、状態が <strong>開始</strong> になっていない場合は、以下の手順を実行して開始します。
 
-5.  **\[World Wide Web Publishing Service\]** を右クリックし、**\[プロパティ\]** をクリックします。
+5.  <strong>World Wide Web Publishing Service</strong> を右クリックし、<strong>プロパティ</strong> をクリックします。
 
-6.  **\[スタートアップの種類\]** が **\[自動\]** に設定され、**\[サービスの状態\]** が **\[開始\]** に設定されていることを確認します。
+6.  <strong>スタートアップの種類</strong> が <strong>自動</strong> に設定され、<strong>サービスの状態</strong> が <strong>開始</strong> に設定されていることを確認します。
 
-7.  **\[適用\]** をクリックし、**\[OK\]** をクリックします。
+7.  <strong>適用</strong> をクリックし、<strong>OK</strong> をクリックします。
 
 **World Wide Web Publishing サービスをインストールするには、次の操作を行います。**
 
-1.  **\[スタート\]** ボタンをクリックし、**\[設定\]** をポイントします。次に、**\[コントロール パネル\]** をポイントし、**\[プログラムの追加と削除\]** をクリックします。
+1.  <strong>スタート</strong> ボタンをクリックし、<strong>設定</strong> をポイントします。次に、<strong>コントロール パネル</strong> をポイントし、<strong>プログラムの追加と削除</strong> をクリックします。
 
-2.  **\[Windows コンポーネントの追加と削除\]** をクリックします。
+2.  <strong>Windows コンポーネントの追加と削除</strong> をクリックします。
 
-3.  **\[コンポーネント\]** ボックスの一覧で、**\[アプリケーション サーバー\]** チェック ボックスをオンにし、**\[詳細\]** をクリックします。
+3.  <strong>コンポーネント</strong> ボックスの一覧で、<strong>アプリケーション サーバー</strong> チェック ボックスをオンにし、<strong>詳細</strong> をクリックします。
 
-4.  **\[インターネット インフォメーション サービス マネージャー\]** を選択し、**\[詳細\]** をクリックします。
+4.  <strong>インターネット インフォメーション サービス マネージャー</strong> を選択し、<strong>詳細</strong> をクリックします。
 
-5.  **\[WWW (World Wide Web) サービス\]** を選択し、チェック ボックスをオンにします。
+5.  <strong>WWW (World Wide Web) サービス</strong> を選択し、チェック ボックスをオンにします。
 
-6.  **\[OK\]** を 2 回クリックして **\[コンポーネント\]** ボックスの一覧に戻り、**\[次へ\]** をクリックします。
+6.  <strong>OK</strong> を 2 回クリックして <strong>コンポーネント</strong> ボックスの一覧に戻り、<strong>次へ</strong> をクリックします。
 
-7.  IIS サービスがインストールされたら、**\[完了\]** をクリックします。
+7.  IIS サービスがインストールされたら、<strong>完了</strong> をクリックします。
 

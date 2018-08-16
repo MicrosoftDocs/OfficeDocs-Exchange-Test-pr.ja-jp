@@ -104,9 +104,9 @@ MRS サービスは、次のプローブとモニターを使用して監視さ�
 
 これは、メールボックスがロックされていることを示します。メールボックスをロック解除するには、次のコマンドを実行します。
 
-    New-MailboxRepairRequest -CorruptionType LockedMoveTarget -Identity <mailboxIdentity> [-Archive]
+    New-MailboxRepairRequest -CorruptionType LockedMoveTarget -Identity <mailboxIdentity> [-Archive]**
 
-**注**   このコマンドの \<*mailboxIdentity*\> は、電子メールのメッセージで提示された **MailboxIdentity** に置き換えてください。メールボックスがアーカイブ メールボックスの場合は、**–Archive** フラグも指定する必要があります。メールボックスがプライマリ メールボックスかアーカイブ メールボックスかは、警告の **MailboxGuid** フィールドで確認できます。
+注**   このコマンドの \<*mailboxIdentity*\> は、電子メールのメッセージで提示された **MailboxIdentity** に置き換えてください。メールボックスがアーカイブ メールボックスの場合は、**–Archive** フラグも指定する必要があります。メールボックスがプライマリ メールボックスかアーカイブ メールボックスかは、警告の **MailboxGuid** フィールドで確認できます。
 
 **破損した移行ジョブ**
 
@@ -132,7 +132,7 @@ MRS サービスは、次のプローブとモニターを使用して監視さ�
 
 *Notification thrown by MailboxMigration at 9/7/2012 9:08:32 PM. Details: Diagnostic Information: ProcessCacheEntry: First Organization :: /o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=e80fc128879e452ebc882f6bca7007fa-Migration.8*
 
-この問題を解決するには、移行を再試行する必要があります。そのためには、次のコマンドを実行するか、Exchange 管理センター (EAC) の **\[開始\]** ボタンを押します。
+この問題を解決するには、移行を再試行する必要があります。そのためには、次のコマンドを実行するか、Exchange 管理センター (EAC) の <strong>開始</strong> ボタンを押します。
 
     Call start-migrationbatch -Identity batchName
 
@@ -194,7 +194,7 @@ MSExchangeMailboxReplication サービスがキューのスキャンに失敗す
 
 1.  IIS マネージャーを起動し、問題を報告しているサーバーに接続して、**MSExchangeServicesAppPool** アプリケーション プールが実行されていることを確認します。
 
-2.  IIS マネージャーで **\[アプリケーション プール\]** をクリックし、シェルから次のコマンドを実行して、**MSExchangeServicesAppPool** アプリケーション プールをリサイクルします。
+2.  IIS マネージャーで <strong>アプリケーション プール</strong> をクリックし、シェルから次のコマンドを実行して、**MSExchangeServicesAppPool** アプリケーション プールをリサイクルします。
     
         %SystemRoot%\System32\inetsrv\Appcmd recycle MSExchangeServicesAppPool
 
@@ -210,7 +210,7 @@ MSExchangeMailboxReplication サービスがキューのスキャンに失敗す
 
 7.  サーバーが再起動したら、関連するプローブを再実行します (「問題がまだ存在していることを確認する」セクションの手順 2c を参照)。
 
-8.  プローブがまだ失敗する場合、この問題の解決にサポートが必要なこともあります。この問題を解決するには、Microsoft のサポート担当者にお問い合わせください。Microsoft のサポート担当者に問い合わせるには、「[Exchange Server サポート ページ](http://go.microsoft.com/fwlink/p/?linkid=180809)」にアクセスしてください。ナビゲーション ウィンドウで、**\[サポート オプションとリソース\]** をクリックし、**\[テクニカル サポートを利用する\]** に表示されるいずれかのオプションを使用して、Microsoft のサポート担当者に問い合わせます。組織には Microsoft 製品サポート サービスに直接問い合わせるための特定の手順がある場合があるので、組織のガイドラインを最初に必ず確認してください。
+8.  プローブがまだ失敗する場合、この問題の解決にサポートが必要なこともあります。この問題を解決するには、Microsoft のサポート担当者にお問い合わせください。Microsoft のサポート担当者に問い合わせるには、「[Exchange Server サポート ページ](http://go.microsoft.com/fwlink/p/?linkid=180809)」にアクセスしてください。ナビゲーション ウィンドウで、<strong>サポート オプションとリソース</strong> をクリックし、<strong>テクニカル サポートを利用する</strong> に表示されるいずれかのオプションを使用して、Microsoft のサポート担当者に問い合わせます。組織には Microsoft 製品サポート サービスに直接問い合わせるための特定の手順がある場合があるので、組織のガイドラインを最初に必ず確認してください。
 
 ## 詳細情報
 

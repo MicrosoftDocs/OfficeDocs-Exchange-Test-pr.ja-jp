@@ -29,7 +29,7 @@ SiteMailbox 監視システムは、バックグラウンド同期サービス�
 
   - **Update-SiteMailbox** コマンドを実行する
 
-  - Outlook Web App の \[オプション\] ウィンドウを開き、選択したサイト メールボックスの **\[同期の状態\]** ページの **\[同期の開始\]** ボタンをクリックする
+  - Outlook Web App の \[オプション\] ウィンドウを開き、選択したサイト メールボックスの <strong>同期の状態</strong> ページの <strong>同期の開始</strong> ボタンをクリックする
 
 Update-SiteMailbox コマンドレットの詳細については、「[Update-SiteMailbox](https://technet.microsoft.com/ja-jp/library/jj218690\(v=exchg.150\))」を参照してください。
 

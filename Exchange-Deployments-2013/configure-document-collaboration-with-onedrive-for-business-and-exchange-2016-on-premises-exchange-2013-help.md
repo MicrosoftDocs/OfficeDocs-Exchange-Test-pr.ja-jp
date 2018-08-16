@@ -75,7 +75,7 @@ Office 365 では、新しい添付オプションが利用可能になってい
 
 
 
-  - ユーザーには、適切なライセンスが必要です。OneDrive for Business アカウントのユーザーは、SharePoint Online または OneDrive for Business のライセンスを取得する必要があります。ユーザーのライセンスは、Office 365 ポータルでユーザーを選択し、**\[編集\]** ボタンをクリックすると検証できます。
+  - ユーザーには、適切なライセンスが必要です。OneDrive for Business アカウントのユーザーは、SharePoint Online または OneDrive for Business のライセンスを取得する必要があります。ユーザーのライセンスは、Office 365 ポータルでユーザーを選択し、<strong>編集</strong> ボタンをクリックすると検証できます。
     
 
     > [!NOTE]

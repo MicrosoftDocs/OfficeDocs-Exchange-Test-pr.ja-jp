@@ -15,7 +15,7 @@ ms.translationtype: HT
 
 _**トピックの最終更新日:**  2013-04-08_
 
-Exchange Server 2013 管理パックによって、SCOM コンソールの **\[監視\]** セクションにコンテナーが追加されます。この Exchange Server 2013 コンテナーを展開すると、その下には次のように 3 つの表示だけがあります。
+Exchange Server 2013 管理パックによって、SCOM コンソールの <strong>監視</strong> セクションにコンテナーが追加されます。この Exchange Server 2013 コンテナーを展開すると、その下には次のように 3 つの表示だけがあります。
 
 ![Exchange 2013 Management Pack のコンテナー](images/Dn195908.253b4ec5-2103-4b0c-a22e-5ebd24d08600(EXCHG.150).png "Exchange 2013 Management Pack のコンテナー")
 
@@ -37,7 +37,7 @@ Exchange Server 2013 管理パックによって、SCOM コンソールの **\[�
 
 ## 監視カテゴリ
 
-Exchange Server 2013 ダッシュボード内の 3 つの表示を確認している間に、**\[状態\]** 列の他に、4 つの正常性インジケーターが追加されていることに気付いたかもしれません。
+Exchange Server 2013 ダッシュボード内の 3 つの表示を確認している間に、<strong>状態</strong> 列の他に、4 つの正常性インジケーターが追加されていることに気付いたかもしれません。
 
 ![Exchange の正常性インジケーター](images/Dn195908.dd10ed0b-abe5-41aa-8d43-b4fb10133984(EXCHG.150).png "Exchange の正常性インジケーター")
 

@@ -141,7 +141,7 @@ Exchange 2013 では、Exchange 2013 管理センター (EAC) および Exchange
 </table>
 
 
-移行エンドポイントの詳細については、EAC の **\[移行\]** ユーザー インターフェイスと「[New-MigrationEndpoint](https://technet.microsoft.com/ja-jp/library/jj218611\(v=exchg.150\))」を参照してください。
+移行エンドポイントの詳細については、EAC の <strong>移行</strong> ユーザー インターフェイスと「[New-MigrationEndpoint](https://technet.microsoft.com/ja-jp/library/jj218611\(v=exchg.150\))」を参照してください。
 
 新しい移動と既存の移動を管理する方法の詳細については、「[社内の移動の管理](manage-on-premises-moves-exchange-2013-help.md)」を参照してください。
 

@@ -63,9 +63,9 @@ Exchange 2013 では、Exchange 2013 メールボックス サーバーにトラ
 
   - **Get-MessageTrackingLog**   このコマンドレットにより、管理者はさまざまなフィルター条件で、メッセージに関する情報をメッセージ追跡ログから検索できます。詳細については、「[メッセージ追跡ログの検索](search-message-tracking-logs-exchange-2013-help.md)」を参照してください。
 
-  - **管理者用配信レポート**   管理者は、Exchange 管理センター (EAC) の **\[配信レポート\]** タブ、またはそのベースになっている **Search-MessageTrackingReport** コマンドレットと **Get-MesageTrackingReport** コマンドレットを使用して、組織内の特定のメールボックスによって送受信されたメッセージに関する情報をメッセージ追跡ログから検索できます。詳細については、「[管理者用の配信レポート](delivery-reports-for-administrators-exchange-2013-help.md)」を参照してください。
+  - **管理者用配信レポート**   管理者は、Exchange 管理センター (EAC) の <strong>配信レポート</strong> タブ、またはそのベースになっている **Search-MessageTrackingReport** コマンドレットと **Get-MesageTrackingReport** コマンドレットを使用して、組織内の特定のメールボックスによって送受信されたメッセージに関する情報をメッセージ追跡ログから検索できます。詳細については、「[管理者用の配信レポート](delivery-reports-for-administrators-exchange-2013-help.md)」を参照してください。
 
-  - **ユーザー用配信レポート**   ユーザーは、Outlook Web App の **\[配信レポート\]** タブを使用して、自分のメールボックスで送受信したメッセージに関する情報をメッセージ追跡ログから検索できます。詳細については、「[配信レポート](https://go.microsoft.com/fwlink/?linkid=279920)」を参照してください。
+  - **ユーザー用配信レポート**   ユーザーは、Outlook Web App の <strong>配信レポート</strong> タブを使用して、自分のメールボックスで送受信したメッセージに関する情報をメッセージ追跡ログから検索できます。詳細については、「[配信レポート](https://go.microsoft.com/fwlink/?linkid=279920)」を参照してください。
 
 ページのトップへ
 

@@ -79,27 +79,27 @@ Office 2010 Filter Pack の展開は、次の 2 つの主要な手順で構成�
     
         HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ExchangeServer\v15\HubTransportRole\CLSID
 
-4.  **\[CLSID\]** で、次のように OneNote ファイルのサブキーを追加します。
+4.  <strong>CLSID</strong> で、次のように OneNote ファイルのサブキーを追加します。
     
-    1.  **\[CLSID\]** を右クリックし、**\[新規\]** をポイントして、**\[キー\]** をクリックします。
+    1.  <strong>CLSID</strong> を右クリックし、<strong>新規</strong> をポイントして、<strong>キー</strong> をクリックします。
     
     2.  新しいキーの名前を `{B8D12492-CE0F-40AD-83EA-099A03D493F1}` に変更します。
     
-    3.  作成したキーをクリックし、**\[(既定)\]** の値を Office 2010 Filter Pack をインストールした場所に設定します。既定では、フィルター パックは `C:\Program Files\Common Files\Microsoft Shared\Filters\ONIFilter.dll` にインストールされます。
+    3.  作成したキーをクリックし、<strong>(既定)</strong> の値を Office 2010 Filter Pack をインストールした場所に設定します。既定では、フィルター パックは `C:\Program Files\Common Files\Microsoft Shared\Filters\ONIFilter.dll` にインストールされます。
     
-    4.  **\[{B8D12492-CE0F-40AD-83EA-099A03D493F1}\]** を右クリックし、**\[新規\]** をポイントします。次に、**\[文字列値\]** をクリックします。
+    4.  <strong>{B8D12492-CE0F-40AD-83EA-099A03D493F1}</strong> を右クリックし、<strong>新規</strong> をポイントします。次に、<strong>文字列値</strong> をクリックします。
     
     5.  新しい文字列値に `ThreadingModel` という名前を付け、`Both` に設定します。
 
-5.  **\[CLSID\]** で、次のように Publisher ファイルのサブキーを追加します。
+5.  <strong>CLSID</strong> で、次のように Publisher ファイルのサブキーを追加します。
     
-    1.  **\[CLSID\]** を右クリックし、**\[新規\]** をポイントして、**\[キー\]** をクリックします。
+    1.  <strong>CLSID</strong> を右クリックし、<strong>新規</strong> をポイントして、<strong>キー</strong> をクリックします。
     
     2.  新しいキーの名前を `{A7FD8AC9-7ABF-46FC-B70B-6A5E5EC9859A}` に変更します。
     
-    3.  作成したキーをクリックし、**\[(既定)\]** の値を Office 2010 Filter Pack をインストールした場所に設定します。既定では、フィルター パックは `C:\Program Files\Common Files\Microsoft Shared\Filters\PUBFILT.dll` にインストールされます。
+    3.  作成したキーをクリックし、<strong>(既定)</strong> の値を Office 2010 Filter Pack をインストールした場所に設定します。既定では、フィルター パックは `C:\Program Files\Common Files\Microsoft Shared\Filters\PUBFILT.dll` にインストールされます。
     
-    4.  **\[{A7FD8AC9-7ABF-46FC-B70B-6A5E5EC9859A}\]** を右クリックし、**\[新規\]** をポイントします。次に、**\[文字列値\]** をクリックします。
+    4.  <strong>{A7FD8AC9-7ABF-46FC-B70B-6A5E5EC9859A}</strong> を右クリックし、<strong>新規</strong> をポイントします。次に、<strong>文字列値</strong> をクリックします。
     
     5.  新しい文字列値に `ThreadingModel` という名前を付け、`Both` に設定します。
 
@@ -107,21 +107,21 @@ Office 2010 Filter Pack の展開は、次の 2 つの主要な手順で構成�
     
         HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ExchangeServer\v15\HubTransportRole\filters
 
-7.  **\[フィルター\]** で、次のように .one 拡張子のサブキーを追加します。
+7.  <strong>フィルター</strong> で、次のように .one 拡張子のサブキーを追加します。
     
-    1.  **\[フィルター\]** を右クリックし、**\[新規\]** をポイントして、**\[キー\]** をクリックします。
+    1.  <strong>フィルター</strong> を右クリックし、<strong>新規</strong> をポイントして、<strong>キー</strong> をクリックします。
     
     2.  新しいキーの名前を `.one` に変更します。
     
-    3.  作成したキーをクリックし、**\[(既定)\]** の値を `{B8D12492-CE0F-40AD-83EA-099A03D493F1}` に設定します。
+    3.  作成したキーをクリックし、<strong>(既定)</strong> の値を `{B8D12492-CE0F-40AD-83EA-099A03D493F1}` に設定します。
 
-8.  **\[フィルター\]** で、次のように .pub 拡張子のサブキーを追加します。
+8.  <strong>フィルター</strong> で、次のように .pub 拡張子のサブキーを追加します。
     
-    1.  **\[フィルター\]** を右クリックし、**\[新規\]** をポイントして、**\[キー\]** をクリックします。
+    1.  <strong>フィルター</strong> を右クリックし、<strong>新規</strong> をポイントして、<strong>キー</strong> をクリックします。
     
     2.  新しいキーの名前を `.pub` に変更します。
     
-    3.  作成したキーをクリックし、**\[(既定)\]** の値を `{A7FD8AC9-7ABF-46FC-B70B-6A5E5EC9859A}` に設定します。
+    3.  作成したキーをクリックし、<strong>(既定)</strong> の値を `{A7FD8AC9-7ABF-46FC-B70B-6A5E5EC9859A}` に設定します。
 
 9.  レジストリ エディターを終了します。
 
@@ -179,9 +179,9 @@ Microsoft Office 2010 Filter Pack の IFilter を正常に登録したことを�
     
         HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ExchangeServer\v15\HubTransportRole\CLSID
 
-3.  **\[CLSID\]** で、次のように PDF ファイルのサブキーを追加します。
+3.  <strong>CLSID</strong> で、次のように PDF ファイルのサブキーを追加します。
     
-    1.  **\[CLSID\]** を右クリックし、**\[新規\]** をポイントして、**\[キー\]** をクリックします。
+    1.  <strong>CLSID</strong> を右クリックし、<strong>新規</strong> をポイントして、<strong>キー</strong> をクリックします。
     
     2.  新しいキーの名前を `{E8978DA6-047F-4E3D-9C78-CDBE46041603}` に変更します。
         
@@ -190,19 +190,19 @@ Microsoft Office 2010 Filter Pack の IFilter を正常に登録したことを�
         > 各 IFilter には、一意なクラス ID (CLSID) があります。CLSID は、登録している IFilter のインストール マニュアル、またはレジストリの <CODE>HKEY_CLASSES_ROOT\CLSID</CODE> キーの下にあるファイル拡張子を検索すると見つけることができます。
 
     
-    3.  作成したキーをクリックし、**\[(既定)\]** の値を PDF IFilter をインストールした場所に設定します。既定では、PDF IFilter は `C:\Program Files\Adobe\Adobe PDF IFilter 9 for 64-bit platforms\bin\PDFFilter.dll` にインストールされます。
+    3.  作成したキーをクリックし、<strong>(既定)</strong> の値を PDF IFilter をインストールした場所に設定します。既定では、PDF IFilter は `C:\Program Files\Adobe\Adobe PDF IFilter 9 for 64-bit platforms\bin\PDFFilter.dll` にインストールされます。
 
 4.  次のレジストリ キーを見つけます。
     
         HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ExchangeServer\v15\HubTransportRole\filters
 
-5.  **\[フィルター\]** で、次のように .pdf 拡張子のサブキーを追加します。
+5.  <strong>フィルター</strong> で、次のように .pdf 拡張子のサブキーを追加します。
     
-    1.  **\[フィルター\]** を右クリックし、**\[新規\]** をポイントして、**\[キー\]** をクリックします。
+    1.  <strong>フィルター</strong> を右クリックし、<strong>新規</strong> をポイントして、<strong>キー</strong> をクリックします。
     
     2.  新しいキーの名前を `.pdf` に変更します。
     
-    3.  作成したキーをクリックし、**\[(既定)\]** の値を `{E8978DA6-047F-4E3D-9C78-CDBE46041603}` に設定します。
+    3.  作成したキーをクリックし、<strong>(既定)</strong> の値を `{E8978DA6-047F-4E3D-9C78-CDBE46041603}` に設定します。
 
 6.  レジストリ エディターを終了します。
 

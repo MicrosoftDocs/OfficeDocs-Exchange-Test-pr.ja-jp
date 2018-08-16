@@ -31,15 +31,15 @@ Exchange 2007 のセットアップ プログラムを実行するには、Micr
 
 **分散トランザクション コーディネーター サービスの状態を "開始" に設定するには、次の操作を行います。**
 
-1.  **\[マイ コンピューター\]** を右クリックし、**\[管理\]** をクリックします。
+1.  <strong>マイ コンピューター</strong> を右クリックし、<strong>管理</strong> をクリックします。
 
-2.  **\[サービスとアプリケーション\]** ノードを展開し、**\[サービス\]** ノードをクリックします。
+2.  <strong>サービスとアプリケーション</strong> ノードを展開し、<strong>サービス</strong> ノードをクリックします。
 
-3.  右側のウィンドウで、**\[Distributed Transaction Coordinator\]** を見つけます。
+3.  右側のウィンドウで、<strong>Distributed Transaction Coordinator</strong> を見つけます。
 
-4.  **\[Distributed Transaction Coordinator\]** を右クリックし、**\[プロパティ\]** をクリックします。
+4.  <strong>Distributed Transaction Coordinator</strong> を右クリックし、<strong>プロパティ</strong> をクリックします。
 
-5.  **\[スタートアップの種類\]** を **\[自動\]** に設定し、**\[サービスの状態\]** を **\[開始\]** に設定します。
+5.  <strong>スタートアップの種類</strong> を <strong>自動</strong> に設定し、<strong>サービスの状態</strong> を <strong>開始</strong> に設定します。
 
-6.  **\[適用\]** をクリックし、**\[OK\]** をクリックします。
+6.  <strong>適用</strong> をクリックし、<strong>OK</strong> をクリックします。
 

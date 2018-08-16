@@ -75,7 +75,7 @@ Microsoft Exchange 2013 では、**New-MoveRequest** および **New-MigrationBa
 
 
 
-4.  ILM Identity Manager コンソールで、**\[ファイル\]** \> **\[サーバー構成のインポート\]** の順にクリックして、ILMServerConfig フォルダーから ILM サーバー構成をインポートします。この操作により、2 つの Active Directory 管理エージェントがメタバース スキーマおよびプロビジョニング ルールと共にインポートされます。
+4.  ILM Identity Manager コンソールで、<strong>ファイル</strong> \> <strong>サーバー構成のインポート</strong> の順にクリックして、ILMServerConfig フォルダーから ILM サーバー構成をインポートします。この操作により、2 つの Active Directory 管理エージェントがメタバース スキーマおよびプロビジョニング ルールと共にインポートされます。
     
 
     > [!NOTE]
@@ -83,13 +83,13 @@ Microsoft Exchange 2013 では、**New-MoveRequest** および **New-MigrationBa
 
 
 
-5.  Exchange 2013 移動先フォレストをサポートする ADMA に対し、**\[管理エージェントの作成\]** ページの **\[拡張の構成\]** ウィンドウで、**\[プロビジョニング対象\]** ドロップダウン リストから **\[Exchange 2013\]** を選択し、Exchange 2010 クライアント アクセス サーバーのリモート Windows PowerShell の URI を **\[Exchange 2013 RPS URI\]** に入力します。
+5.  Exchange 2013 移動先フォレストをサポートする ADMA に対し、<strong>管理エージェントの作成</strong> ページの <strong>拡張の構成</strong> ウィンドウで、<strong>プロビジョニング対象</strong> ドロップダウン リストから <strong>Exchange 2013</strong> を選択し、Exchange 2010 クライアント アクセス サーバーのリモート Windows PowerShell の URI を <strong>Exchange 2013 RPS URI</strong> に入力します。
     
-    **\[管理エージェントの作成\] ページ**
+    <strong>管理エージェントの作成\] ページ**
     
     ![管理エージェントの Exchange 2010 プロビジョニング](images/Aa998597.8f403cda-e5e4-4edf-887f-c1ed46cee3f5(EXCHG.150).gif "管理エージェントの Exchange 2010 プロビジョニング")  
 
-6.  ILM Identity Manager コンソールの **\[管理エージェントの作成\]** ウィンドウで、移動元フォレストの管理エージェントの **\[プロパティ\]** を開きます。**\[ディレクトリ パーティションの構成\]** ウィザードを選択し、**\[コンテナー\]** をクリックして、移動先フォレストに移動中のメールボックスを含むコンテナーを選択します。他のすべてのコンテナーの選択をオフにして、管理エージェントのスコープをこの 1 つのコンテナーの管理だけにします。同様に、移動先フォレストの MA に対し、メールが有効なユーザーがプロビジョニングされるコンテナー、つまり手順 2 で指定した TargetOU を選択します。
+6.  ILM Identity Manager コンソールの <strong>管理エージェントの作成</strong> ウィンドウで、移動元フォレストの管理エージェントの <strong>プロパティ</strong> を開きます。<strong>ディレクトリ パーティションの構成</strong> ウィザードを選択し、<strong>コンテナー</strong> をクリックして、移動先フォレストに移動中のメールボックスを含むコンテナーを選択します。他のすべてのコンテナーの選択をオフにして、管理エージェントのスコープをこの 1 つのコンテナーの管理だけにします。同様に、移動先フォレストの MA に対し、メールが有効なユーザーがプロビジョニングされるコンテナー、つまり手順 2 で指定した TargetOU を選択します。
     
 
     > [!NOTE]
