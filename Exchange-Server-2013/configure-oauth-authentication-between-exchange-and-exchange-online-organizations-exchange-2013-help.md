@@ -95,7 +95,7 @@ Exchange 2013 および Exchange Online とのハイブリッド展開を実装�
 
 次に、Windows PowerShell を使用して、直前の手順でエクスポートしたオンプレミスの認証証明書を Azure Active Directory アクセス制御サービス (ACS) にアップロードする必要があります。これを行うには、Windows PowerShell の Azure Active Directory モジュール コマンドレットをインストールする必要があります。インストールされていない場合、<https://aka.ms/aadposh> に移動して、Windows PowerShell の Azure Active Directory モジュール をインストールしてください。Windows PowerShell の Azure Active Directory モジュール のインストール後、以下の手順を実行します。
 
-1.  **\[Windows PowerShell 用 Azure Active Directory モジュール\]** ショートカットをクリックして、Azure AD コマンドレットがインストールされた Windows PowerShell ワークスペースを開きます。この手順のすべてのコマンドは、Azure Active Directory コンソール用の Windows PowerShell を使用して実行されます。
+1.  <strong>Windows PowerShell 用 Azure Active Directory モジュール</strong> ショートカットをクリックして、Azure AD コマンドレットがインストールされた Windows PowerShell ワークスペースを開きます。この手順のすべてのコマンドは、Azure Active Directory コンソール用の Windows PowerShell を使用して実行されます。
 
 2.  次のテキストを、たとえば **UploadAuthCert.ps1** という名前の PowerShell スクリプト ファイルに保存します。
     

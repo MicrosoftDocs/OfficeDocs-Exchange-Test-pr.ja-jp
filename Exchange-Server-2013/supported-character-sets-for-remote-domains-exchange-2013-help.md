@@ -17,7 +17,7 @@ _**適用先:** Exchange Online, Exchange Server 2013_
 
 リモート ドメインに送信されるメッセージに次の文字セットを指定できます。
 
-  - Exchange 管理センター (EAC) の **\[リモート ドメイン\]** の設定ページで、**\[MIME 文字セット\]** および **\[非 MIME 文字セット\]** ドロップダウン リストから名前を選択します。
+  - Exchange 管理センター (EAC) の <strong>リモート ドメイン</strong> の設定ページで、<strong>MIME 文字セット</strong> および <strong>非 MIME 文字セット</strong> ドロップダウン リストから名前を選択します。
 
   - シェルでは、[Set-RemoteDomain](https://technet.microsoft.com/ja-jp/library/aa997857\(v=exchg.150\)) コマンドレット内の *CharacterSet* パラメーターまたは *NonMimeCharacterSet* パラメーターに関する次の表内の \[名前\] 列内の値を使用します。
 

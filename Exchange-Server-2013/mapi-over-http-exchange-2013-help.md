@@ -161,15 +161,15 @@ MAPI over HTTP をサポートするようにクライアントとサーバー�
 
 4.  すべての Exchange 2013 SP1 クライアント アクセス サーバーで、次の手順を実行して Windows 環境変数 **COMPLUS\_DisableRetStructPinning** を追加します。
     
-    1.  コマンド プロンプト ウィンドウで、`systempropertiesadvanced` を実行してから **\[環境変数\]** をクリックします。
+    1.  コマンド プロンプト ウィンドウで、`systempropertiesadvanced` を実行してから <strong>環境変数</strong> をクリックします。
     
-    2.  **\[システム変数\]** セクションで、**\[新規\]** をクリックしてから次の情報を入力します。
+    2.  <strong>システム変数</strong> セクションで、<strong>新規</strong> をクリックしてから次の情報を入力します。
         
           - **変数の名前**   `COMPLUS_DisableRetStructPinning`
         
           - **変数の値** 1
     
-    3.  完了したら、**\[OK\]** をクリックします。
+    3.  完了したら、<strong>OK</strong> をクリックします。
 
 ## 構成
 

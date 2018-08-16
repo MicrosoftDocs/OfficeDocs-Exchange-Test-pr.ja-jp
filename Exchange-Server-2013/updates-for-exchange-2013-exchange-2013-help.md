@@ -156,7 +156,7 @@ Exchange 2013 SP1 では、Outlook Web App による S/MIME ベースのメッ�
 
 データ損失防止 (DLP) [ポリシー ヒント](technical-overview-of-policy-tips-in-exchange-online-and-exchange-2013.md) は、機密情報を送信しようとした場合に、送信側の Outlook に表示される通知情報です。Exchange 2013 SP1 において、この機能は、Outlook Web App のデスクトップ版とモバイル版 (OWA for Devices) の両方に対応するように拡張されています。Outlook のためのポリシー ヒントをオンにした既存の DLP ポリシーがある場合、この機能の動作を確認できます。ポリシーに、Outlook 用のポリシー ヒントが既に含まれているなら、それ以外の設定は必要ありません。そのまま続行してください。
 
-ポリシー ヒントを現在使用していない場合は、どうしますか?まず、[テンプレートからの DLP ポリシーの作成](how-to-new-dlp-data-loss-prevention-policy-template.md)の後、ポリシーを編集して **\[ポリシー ヒントを使用して送信者に通知する\]** アクションを追加することにより、ポリシー ヒントを追加します。
+ポリシー ヒントを現在使用していない場合は、どうしますか?まず、[テンプレートからの DLP ポリシーの作成](how-to-new-dlp-data-loss-prevention-policy-template.md)の後、ポリシーを編集して <strong>ポリシー ヒントを使用して送信者に通知する</strong> アクションを追加することにより、ポリシー ヒントを追加します。
 
 ## ドキュメントの指紋に基づく DLP 分類
 

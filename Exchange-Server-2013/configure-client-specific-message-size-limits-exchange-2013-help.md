@@ -79,17 +79,17 @@ Microsoft Exchange Server 2013 には、メッセージが Exchange 組織を経
 
 1.  次のいずれかの手順を実行します。
     
-      - クライアント アクセス サーバーで、**\[IIS マネージャー\]** を開き、**\[サイト\]** \> **\[既定の Web サイト\]** に移動して、**\[Microsoft-Server-ActiveSync\]** を選択します。
+      - クライアント アクセス サーバーで、<strong>IIS マネージャー</strong> を開き、<strong>サイト</strong> \> <strong>既定の Web サイト</strong> に移動して、<strong>Microsoft-Server-ActiveSync</strong> を選択します。
     
-      - メールボックス サーバーで、**\[IIS マネージャー\]** を開き、**\[サイト\]** \> **\[Exchange バックエンド\]** に移動して、**\[Microsoft-Server-ActiveSync\]** を選択します。
+      - メールボックス サーバーで、<strong>IIS マネージャー</strong> を開き、<strong>サイト</strong> \> <strong>Exchange バックエンド</strong> に移動して、<strong>Microsoft-Server-ActiveSync</strong> を選択します。
 
-2.  **\[機能ビュー\]** が選択されていることを確認して、**\[管理\]** セクションの **\[構成エディター\]** をダブルクリックします。
+2.  <strong>機能ビュー</strong> が選択されていることを確認して、<strong>管理</strong> セクションの <strong>構成エディター</strong> をダブルクリックします。
 
-3.  **\[セクション\]** フィールドのドロップダウン矢印をクリックし、**\[system.webServer\]** \> **\[セキュリティ\]** に移動して、**\[requestFiltering\]** を選択します。
+3.  <strong>セクション</strong> フィールドのドロップダウン矢印をクリックし、<strong>system.webServer</strong> \> <strong>セキュリティ</strong> に移動して、<strong>requestFiltering</strong> を選択します。
 
-4.  結果の中の **\[requestLimits\]** を展開すると、**\[maxAllowedContentLength\]** および既定値の 30000000 (バイト) が表示されます。
+4.  結果の中の <strong>requestLimits</strong> を展開すると、<strong>maxAllowedContentLength</strong> および既定値の 30000000 (バイト) が表示されます。
 
-**maxAllowedContentLength** 値を変更するには、新しい値をバイト数で入力して、**\[適用\]** をクリックします。クライアント アクセス サーバーとメールボックス サーバーでの値を変更する必要があります。IIS マネージャーで値を変更した後、新しい *maxAllowedContentLength* キーが、対応する `web.config` ファイル (クライアント アクセス サーバーの `%ExchangeInstallPath%FrontEnd\HttpProxy\Sync\web.config` およびメールボックス サーバーの `%ExchangeInstallPath%ClientAccess\Sync\web.config`) に書き込まれます。
+**maxAllowedContentLength** 値を変更するには、新しい値をバイト数で入力して、<strong>適用</strong> をクリックします。クライアント アクセス サーバーとメールボックス サーバーでの値を変更する必要があります。IIS マネージャーで値を変更した後、新しい *maxAllowedContentLength* キーが、対応する `web.config` ファイル (クライアント アクセス サーバーの `%ExchangeInstallPath%FrontEnd\HttpProxy\Sync\web.config` およびメールボックス サーバーの `%ExchangeInstallPath%ClientAccess\Sync\web.config`) に書き込まれます。
 
 ActiveSync クライアントの最大メッセージ サイズを変更するには、クライアント アクセス サーバーとメールボックス サーバーの `web.config` ファイルで *maxRequestLength* の値、メールボックス サーバーの `web.config` ファイルで *MaxDocumentDataSize* の値、およびクライアント アクセス サーバーとメールボックス サーバーの IIS マネージャーで *maxAllowedContentLength* の値を変更する必要があります。
 
@@ -256,7 +256,7 @@ ActiveSync クライアントの最大メッセージ サイズを変更する�
 
 ## コマンド ラインからクライアント固有のメッセージのサイズ制限を構成する
 
-メモ帳を使用する代わりに、コマンド ラインからクライアント固有のメッセージのサイズ制限を構成することもできます。Exchange サーバーで管理者特権でのコマンド プロンプト (**\[管理者として実行\]** を選択して開くコマンド プロンプト ウィンドウ) を開き、構成する制限に該当するコマンドを実行します。
+メモ帳を使用する代わりに、コマンド ラインからクライアント固有のメッセージのサイズ制限を構成することもできます。Exchange サーバーで管理者特権でのコマンド プロンプト (<strong>管理者として実行</strong> を選択して開くコマンド プロンプト ウィンドウ) を開き、構成する制限に該当するコマンドを実行します。
 
 **注**:
 

@@ -37,13 +37,13 @@ Outlook Web App メールボックス ポリシーに関連する追加の管理
 
 ## EAC を使用して Outlook Web App のメールボックス ポリシーを削除する
 
-1.  EAC で、**\[アクセス許可\]** \> **\[Outlook Web App policies\]** の順にクリックします。
+1.  EAC で、<strong>アクセス許可</strong> \> <strong>Outlook Web App policies</strong> の順にクリックします。
 
 2.  結果ウィンドウで、削除するメールボックス ポリシーをクリックして選択します。
 
-3.  **\[削除\]** をクリックします。
+3.  <strong>削除</strong> をクリックします。
 
-4.  確認ウィンドウで **\[はい\]** をクリックしてメールボックス ポリシーを削除するか、**\[いいえ\]** をクリックして削除を取り消します。
+4.  確認ウィンドウで <strong>はい</strong> をクリックしてメールボックス ポリシーを削除するか、<strong>いいえ</strong> をクリックして削除を取り消します。
 
 ## シェルを使用して Outlook Web App メールボックス ポリシーを削除する
 
@@ -57,5 +57,5 @@ Outlook Web App メールボックス ポリシーに関連する追加の管理
 
 Outlook Web App メールボックス ポリシーが正常に削除されたことを確認するには、次の手順を実行します。
 
-  - EAC で、**\[アクセス許可\]** \> **\[Outlook Web App policies\]** の順にクリックします。削除したポリシーは一覧に表示されなくなります。
+  - EAC で、<strong>アクセス許可</strong> \> <strong>Outlook Web App policies</strong> の順にクリックします。削除したポリシーは一覧に表示されなくなります。
 

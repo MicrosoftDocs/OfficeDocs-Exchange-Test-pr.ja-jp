@@ -27,5 +27,5 @@ _**トピックの最終更新日:** 2012-10-11_
 
   - 「[Exchange Server コミュニティ](http://go.microsoft.com/fwlink/p/?linkid=14927)」で入手可能なコンテンツを閲覧します。
 
-  - この問題を解決できない場合は、Microsoft カスタマー サービス/サポートにお問い合わせください。サポートに問い合わせるには、「[Exchange Server 2013 (IT 担当者向け)](http://go.microsoft.com/fwlink/p/?linkid=402506)」にアクセスし、**\[Microsoft のサポート担当者に問い合わせる\]** をクリックします。
+  - この問題を解決できない場合は、Microsoft カスタマー サービス/サポートにお問い合わせください。サポートに問い合わせるには、「[Exchange Server 2013 (IT 担当者向け)](http://go.microsoft.com/fwlink/p/?linkid=402506)」にアクセスし、<strong>Microsoft のサポート担当者に問い合わせる</strong> をクリックします。
 

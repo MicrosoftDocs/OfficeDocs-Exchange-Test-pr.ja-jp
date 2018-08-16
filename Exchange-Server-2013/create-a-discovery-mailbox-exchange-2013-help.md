@@ -53,7 +53,7 @@ Exchange Online 組織または Office 365 組織がある場合はこの手順�
     
         $UserCredential = Get-Credential
     
-    **\[Windows PowerShell 資格情報の要求\]** ダイアログ ボックスで、Office 365 のグローバル管理者アカウントのユーザー名とパスワードを入力し、**\[OK\]** をクリックします。
+    <strong>Windows PowerShell 資格情報の要求</strong> ダイアログ ボックスで、Office 365 のグローバル管理者アカウントのユーザー名とパスワードを入力し、<strong>OK</strong> をクリックします。
 
 2.  次のコマンドを実行します。
     

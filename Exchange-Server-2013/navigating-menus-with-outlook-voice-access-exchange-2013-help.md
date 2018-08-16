@@ -25,7 +25,7 @@ UM が有効なユーザーが Outlook Access 番号に発信する場合、電�
 
   - PIN などの個人オプションの変更、または個人用連絡先への通話や音声メッセージの送信を行う。
 
-ユーザーに対して UM が有効な場合、Outlook Voice Access 番号がユーザーに割り当てられます。UM が有効な場合、ユーザーに対して送信されるウェルカム メッセージで、メールボックスにアクセスする Outlook Voice Access 番号を検索できます。また、Outlook Web App を使ってメールボックスにサインインして、**\[オプション\]** \> **\[電話\]** と移動して、**\[Outlook Voice Access\]** セクションで Outlook Voice Access 番号を特定することもできます。
+ユーザーに対して UM が有効な場合、Outlook Voice Access 番号がユーザーに割り当てられます。UM が有効な場合、ユーザーに対して送信されるウェルカム メッセージで、メールボックスにアクセスする Outlook Voice Access 番号を検索できます。また、Outlook Web App を使ってメールボックスにサインインして、<strong>オプション</strong> \> <strong>電話</strong> と移動して、<strong>Outlook Voice Access</strong> セクションで Outlook Voice Access 番号を特定することもできます。
 
 内線番号と PIN を入力すると、ボイス メール システムにより、新しく受信したボイス メールと電子メール メッセージの受信件数と受信時刻が通知されます。ボイス メール システムがこのプロンプトを再生した後、Outlook Voice Access のメイン メニューが読み上げられ、ユーザーは、以下のいずれかの音声コマンドを使用できます。
 

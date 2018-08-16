@@ -67,7 +67,7 @@ _**トピックの最終更新日:** 2013-02-19_
 
 
 
-  - **Outlook を構成します**   組織のニーズに応じて Outlook の代理人アクセス許可を構成する必要があります。さらに、**\[メッセージ\]** ビューに元の `Sender[#0x0069001E]`、`Recipient[#0x0E04001E]`、および `Bcc[#0x0E02001E]` フィールドを表示するように Outlook プロファイルを構成することをお勧めします。詳細については、「[検疫済みメッセージをスパム検疫メールボックスから解放する](release-quarantined-messages-from-the-spam-quarantine-mailbox-exchange-2013-help.md)」を参照してください。
+  - **Outlook を構成します**   組織のニーズに応じて Outlook の代理人アクセス許可を構成する必要があります。さらに、<strong>メッセージ</strong> ビューに元の `Sender[#0x0069001E]`、`Recipient[#0x0E04001E]`、および `Bcc[#0x0E02001E]` フィールドを表示するように Outlook プロファイルを構成することをお勧めします。詳細については、「[検疫済みメッセージをスパム検疫メールボックスから解放する](release-quarantined-messages-from-the-spam-quarantine-mailbox-exchange-2013-help.md)」を参照してください。
 
 ## 手順 3: スパム検疫メールボックスを指定する
 

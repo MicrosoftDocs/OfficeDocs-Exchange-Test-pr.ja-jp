@@ -53,13 +53,13 @@ _**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 ## EAC を使用して Windows Rights Management をサポートしていない電子メール クライアントに表示するテキストを指定する
 
-1.  EAC で、**\[ユニファイド メッセージング\]** \> **\[UM ダイヤル プラン\]** に移動します。リスト ビューで、変更する UM ダイヤル プランを選択し、**\[編集\]**![編集アイコン](images/Bb124582.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "編集アイコン") をクリックします。
+1.  EAC で、<strong>ユニファイド メッセージング</strong> \> <strong>UM ダイヤル プラン</strong> に移動します。リスト ビューで、変更する UM ダイヤル プランを選択し、<strong>編集</strong>![編集アイコン](images/Bb124582.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "編集アイコン") をクリックします。
 
-2.  **\[UM ダイヤル プラン\]** ページの **\[UM メールボックス ポリシー\]** で管理する UM メールボックス ポリシーを選択し、**\[編集\]**![編集アイコン](images/Bb124582.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "編集アイコン") をクリックします。
+2.  <strong>UM ダイヤル プラン</strong> ページの <strong>UM メールボックス ポリシー</strong> で管理する UM メールボックス ポリシーを選択し、<strong>編集</strong>![編集アイコン](images/Bb124582.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "編集アイコン") をクリックします。
 
-3.  **\[UM メールボックス ポリシー\]** ページの **\[保護されているボイス メール\]** にある **\[Windows Rights Management をサポートしていないユーザーに送信するメッセージ\]** のテキスト ボックスにメッセージ テキストを入力します。
+3.  <strong>UM メールボックス ポリシー</strong> ページの <strong>保護されているボイス メール</strong> にある <strong>Windows Rights Management をサポートしていないユーザーに送信するメッセージ</strong> のテキスト ボックスにメッセージ テキストを入力します。
 
-4.  **\[保存\]** をクリックします。
+4.  <strong>保存</strong> をクリックします。
 
 ## シェルを使用して Windows Rights Management をサポートしていない電子メール クライアントに表示するテキストを指定する
 

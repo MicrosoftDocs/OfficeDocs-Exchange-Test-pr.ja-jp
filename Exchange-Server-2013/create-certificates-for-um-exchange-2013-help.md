@@ -47,23 +47,23 @@ EAC の Exchange 証明書の新規作成ウィザードまたはシェルを使
 
 ## EAC を使用して UM に対する証明書要求を作成する
 
-1.  EAC で、**\[サーバー\]** \> **\[証明書\]** の順に選択してから、**\[追加\]**![\[追加\] アイコン](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "[追加] アイコン") をクリックします。
+1.  EAC で、<strong>サーバー</strong> \> <strong>証明書</strong> の順に選択してから、<strong>追加</strong>![\[追加\] アイコン](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "[追加] アイコン") をクリックします。
 
-2.  **\[Exchange 証明書の新規作成\]** ページで、**\[証明機関発行の証明書の要求を作成する\]** を選択してから、**\[次へ\]** をクリックします。
+2.  <strong>Exchange 証明書の新規作成</strong> ページで、<strong>証明機関発行の証明書の要求を作成する</strong> を選択してから、<strong>次へ</strong> をクリックします。
 
-3.  証明書のフレンドリ名を入力してから、**\[次へ\]** をクリックします。
+3.  証明書のフレンドリ名を入力してから、<strong>次へ</strong> をクリックします。
 
-4.  ワイルドカード証明書が必要ない場合は、**\[次へ\]** をクリックします。ワイルドカード証明書が必要な場合は、**\[Request a wildcard certificate. A wildcard certificate can be used to secure all sub-domains under your root domain with a single certificate\]** を選択して、ルート ドメインの名前を入力してから、**\[次へ\]** をクリックします。
+4.  ワイルドカード証明書が必要ない場合は、<strong>次へ</strong> をクリックします。ワイルドカード証明書が必要な場合は、<strong>Request a wildcard certificate. A wildcard certificate can be used to secure all sub-domains under your root domain with a single certificate</strong> を選択して、ルート ドメインの名前を入力してから、<strong>次へ</strong> をクリックします。
 
-5.  **\[Store certificate request on this server\]** で、**\[参照\]** をクリックしてファイルの保存場所に移動します。証明書要求は Exchange 組織内の任意のクライアント アクセス サーバーまたはメールボックス サーバーに保存できます。場所を選択して、**\[OK\]** をクリックしてから、**\[次へ\]** をクリックします。
+5.  <strong>Store certificate request on this server</strong> で、<strong>参照</strong> をクリックしてファイルの保存場所に移動します。証明書要求は Exchange 組織内の任意のクライアント アクセス サーバーまたはメールボックス サーバーに保存できます。場所を選択して、<strong>OK</strong> をクリックしてから、<strong>次へ</strong> をクリックします。
 
 6.  ワイルドカード証明書を要求した場合は、手順 9 に進みます。
 
-7.  ワイルドカード証明書を要求していない場合は、証明書に含めるドメインを指定する必要があります。ドメインを編集する場合は、**\[編集\]**![編集アイコン](images/Bb124582.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "編集アイコン") をクリックしてから、**\[次へ\]** をクリックします。
+7.  ワイルドカード証明書を要求していない場合は、証明書に含めるドメインを指定する必要があります。ドメインを編集する場合は、<strong>編集</strong>![編集アイコン](images/Bb124582.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "編集アイコン") をクリックしてから、<strong>次へ</strong> をクリックします。
 
-8.  **\[Based on your selections, the following domains will be included in your certificate. You can add additional domains here, or make changes\]** では、**\[ドメイン\]** に列挙されたドメインの名前を追加、編集、削除、または確認できます。その後で、**\[次へ\]** をクリックします。
+8.  <strong>Based on your selections, the following domains will be included in your certificate. You can add additional domains here, or make changes</strong> では、<strong>ドメイン</strong> に列挙されたドメインの名前を追加、編集、削除、または確認できます。その後で、<strong>次へ</strong> をクリックします。
 
-9.  **\[Specify information about your organization. This is required by the certification authority\]** で、以下を入力します。
+9.  <strong>Specify information about your organization. This is required by the certification authority</strong> で、以下を入力します。
     
       - **組織名**
     
@@ -73,9 +73,9 @@ EAC の Exchange 証明書の新規作成ウィザードまたはシェルを使
     
       - **都道府県**
     
-      - **\[国/地域名\]**   このオプションでは、ドロップダウン リストを使用して国または地域を選択します。
+      - <strong>国/地域名</strong>   このオプションでは、ドロップダウン リストを使用して国または地域を選択します。
 
-10. **\[Save the certificate request to the following file\]** で、証明書ファイルの名前を入力してから、**\[完了\]** をクリックします。
+10. <strong>Save the certificate request to the following file</strong> で、証明書ファイルの名前を入力してから、<strong>完了</strong> をクリックします。
 
 ## シェルを使用して UM に対する証明書要求を作成する
 
@@ -85,17 +85,17 @@ EAC の Exchange 証明書の新規作成ウィザードまたはシェルを使
 
 ## EAC を使用して UM 用の自己署名証明書を作成する
 
-1.  EAC で、**\[サーバー\]** \> **\[証明書\]** の順に選択してから、**\[追加\]**![\[追加\] アイコン](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "[追加] アイコン") をクリックします。
+1.  EAC で、<strong>サーバー</strong> \> <strong>証明書</strong> の順に選択してから、<strong>追加</strong>![\[追加\] アイコン](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "[追加] アイコン") をクリックします。
 
-2.  **\[Exchange 証明書の新規作成\]** ページで、**\[自己署名証明書を作成する\]** を選択してから、**\[次へ\]** を選択します。
+2.  <strong>Exchange 証明書の新規作成</strong> ページで、<strong>自己署名証明書を作成する</strong> を選択してから、<strong>次へ</strong> を選択します。
 
-3.  証明書のフレンドリ名を入力してから、**\[次へ\]** を選択します。
+3.  証明書のフレンドリ名を入力してから、<strong>次へ</strong> を選択します。
 
-4.  **\[追加\]** ![\[追加\] アイコン](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "[追加] アイコン") をクリックしてこの証明書を適用する Exchange サーバーを選択してから、**\[次へ\]** を選択します。
+4.  <strong>追加</strong> ![\[追加\] アイコン](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "[追加] アイコン") をクリックしてこの証明書を適用する Exchange サーバーを選択してから、<strong>次へ</strong> を選択します。
 
-5.  証明書に含めるドメインを指定してから、**\[次へ\]** を選択します。サービス用のドメインを追加する場合は、**\[編集\]**![編集アイコン](images/Bb124582.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "編集アイコン") をクリックします。
+5.  証明書に含めるドメインを指定してから、<strong>次へ</strong> を選択します。サービス用のドメインを追加する場合は、<strong>編集</strong>![編集アイコン](images/Bb124582.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "編集アイコン") をクリックします。
 
-6.  追加したドメインが正しいことを確認してから、**\[完了\]** を選択します。
+6.  追加したドメインが正しいことを確認してから、<strong>完了</strong> を選択します。
 
 
 > [!IMPORTANT]

@@ -167,7 +167,7 @@ Microsoft Outlook 2010 以降でエンド ユーザーが使用できる機能�
     
         Set-User -Identity "DHamilton@contoso.com" -SeniorityIndex 100
 
-上記の手順が完了すると、Outlook に HAB が表示されるようになります。HAB を表示するには、Outlook を開いて **\[アドレス帳\]** をクリックします。HAB は次の図のように **\[組織\]** タブに表示されます。
+上記の手順が完了すると、Outlook に HAB が表示されるようになります。HAB を表示するには、Outlook を開いて <strong>アドレス帳</strong> をクリックします。HAB は次の図のように <strong>組織</strong> タブに表示されます。
 
 **Contoso,Ltd の HAB の例**
 

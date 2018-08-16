@@ -188,7 +188,7 @@ Exchange 2013 の接続制限の種類は、以下のとおりです。
     
     **\\\\HKEY\_LOCAL\_MACHINE \\SYSTEM\\CurrentControlSet\\Services\\MSExchangeIS\\ParametersSystem**。
 
-3.  **\[ParametersSystem\]** を右クリックし、**\[新規\]** をポイントし、**\[DWORD (32 ビット) 値\]** をクリックします。
+3.  <strong>ParametersSystem</strong> を右クリックし、<strong>新規</strong> をポイントし、<strong>DWORD (32 ビット) 値</strong> をクリックします。
     
     新しい値が結果ウィンドウに作成されます。
 
@@ -200,9 +200,9 @@ Exchange 2013 の接続制限の種類は、以下のとおりです。
     
       - **サービスあたりの最大許容 Exchange セッション数**   この制限は、サービスごとに許容される最大 Exchange セッション数を指定します。既定値は 10,000 です。
 
-5.  新規作成したキーを右クリックし、**\[変更\]** をクリックします。
+5.  新規作成したキーを右クリックし、<strong>変更</strong> をクリックします。
 
-6.  **\[値** **データ\]** ボックスに、このエントリに設定するオブジェクト数の制限値を入力し、**\[OK\]** をクリックします。既定の設定を表示するには、上記の表を使用します。
+6.  <strong>値** **データ</strong> ボックスに、このエントリに設定するオブジェクト数の制限値を入力し、<strong>OK</strong> をクリックします。既定の設定を表示するには、上記の表を使用します。
 
 ページのトップへ
 
@@ -318,21 +318,21 @@ MAPI クライアントが同時に使用できるリソースの最大数を制
     
     **\\\\HKEY\_LOCAL\_MACHINE \\SYSTEM\\CurrentControlSet\\Services\\MSExchangeIS\\ParametersSystem**
 
-3.  **\[ParametersSystem\]** を右クリックし、**\[新規\]** をポイントして、**\[キー\]** をクリックします。
+3.  <strong>ParametersSystem</strong> を右クリックし、<strong>新規</strong> をポイントして、<strong>キー</strong> をクリックします。
     
     新しいキーがコンソール ツリーに作成されます。
 
 4.  **MaxObjsPerMapiSession** キーの名前を変更して Enter キーを押します。
 
-5.  **\[MaxObjsPerMapiSession\]** を右クリックし、**\[新規\]** をポイントして、**\[DWORD (32 ビット) 値\]** をクリックします。
+5.  <strong>MaxObjsPerMapiSession</strong> を右クリックし、<strong>新規</strong> をポイントして、<strong>DWORD (32 ビット) 値</strong> をクリックします。
     
     新しい値が結果ウィンドウに作成されます。
 
 6.  キーの名前を *\<Object\_type\>* に変更します。*\<Object\_type\>* は、変更するレジストリ オブジェクトの種類の名前です。例えば、開くことができるメッセージの数を変更するには *objtMessage* を使用します。Enter キーを押します。
 
-7.  新規作成したキーを右クリックし、**\[変更\]** をクリックします。
+7.  新規作成したキーを右クリックし、<strong>変更</strong> をクリックします。
 
-8.  **\[値データ\]** ボックスで、このエントリに設定するオブジェクト数の制限値を入力し、**\[OK\]** をクリックします。例えば、オブジェクトの値を増やすために **\[350\]** と入力します。
+8.  <strong>値データ</strong> ボックスで、このエントリに設定するオブジェクト数の制限値を入力し、<strong>OK</strong> をクリックします。例えば、オブジェクトの値を増やすために <strong>350</strong> と入力します。
 
 9.  Microsoft Exchange Information Store サービスを再起動します。
 

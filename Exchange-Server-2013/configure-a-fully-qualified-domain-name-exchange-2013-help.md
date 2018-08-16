@@ -45,11 +45,11 @@ UM IP ゲートウェイに関連する追加の管理タスクについては�
 
 ## EAC を使用して FQDN を構成する
 
-1.  EAC で **\[ユニファイド メッセージング\]** \> **\[UM IP ゲートウェイ\]** に移動し、変更する UM IP ゲートウェイを選択してから、**\[編集\]**![編集アイコン](images/Bb124582.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "編集アイコン") をクリックします。
+1.  EAC で <strong>ユニファイド メッセージング</strong> \> <strong>UM IP ゲートウェイ</strong> に移動し、変更する UM IP ゲートウェイを選択してから、<strong>編集</strong>![編集アイコン](images/Bb124582.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "編集アイコン") をクリックします。
 
-2.  **\[UM IP ゲートウェイ\]** ページの**\[アドレス\]** で、VoIP ゲートウェイ、SIP 有効化された PBX、IP PBX 、または SBC のいずれかの FQDN を入力します。
+2.  <strong>UM IP ゲートウェイ</strong> ページの<strong>アドレス</strong> で、VoIP ゲートウェイ、SIP 有効化された PBX、IP PBX 、または SBC のいずれかの FQDN を入力します。
 
-3.  **\[保存\]** をクリックします。
+3.  <strong>保存</strong> をクリックします。
 
 
 > [!IMPORTANT]

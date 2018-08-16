@@ -43,19 +43,19 @@ Exchange サーバーは、SPF レコードに基づいてメッセージのメ�
 
 Sender ID の評価処理によってメッセージの Sender ID の状態が生成されます。Sender ID の状態は、メッセージの SCL (Spam Confidence Level) レベルを評価するために使用されます。この状態は、以下に示すいずれかの値に設定されます。
 
-  - **Pass   **IP アドレスと PRA (Purported Responsible Address) の両方が Sender ID の検証確認に合格しました。
+  - **Pass**   IP アドレスと PRA (Purported Responsible Address) の両方が Sender ID の検証確認に合格しました。
 
   - **Neutral**   発行された Sender ID のデータだけでは判断できないことを示します。
 
   - **Soft fail**   PRA の IP アドレスは許可されていないセットに含まれている可能性があります。
 
-  - **Fail   **IP アドレスが許可されていません。受信メールで PRA が見つからないか、送信ドメインが存在しません。
+  - **Fail**   IP アドレスが許可されていません。受信メールで PRA が見つからないか、送信ドメインが存在しません。
 
-  - **None   **送信者の DNS 内に、公開されている SPF データが存在しません。
+  - **None**   送信者の DNS 内に、公開されている SPF データが存在しません。
 
   - **TempError**   DNS サーバーが使用できないなど、一時的な DNS エラーが発生しました。
 
-  - **PermError   **レコードの形式にエラーがあるなど、DNS レコードが無効です。
+  - **PermError**   レコードの形式にエラーがあるなど、DNS レコードが無効です。
 
 Sender ID の状態は、メッセージのメタデータに追加され、後で MAPI プロパティに変換されます。Microsoft Outlook の迷惑メール フィルターで SCL の値を生成するときにその MAPI プロパティが使用されます。
 

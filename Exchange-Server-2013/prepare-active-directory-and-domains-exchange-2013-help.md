@@ -191,15 +191,15 @@ Active Directory フォレストにドメインを準備する前に、以下の
 
 Exchange によって Active Directory スキーマを拡張し、Exchange 用に Active Directory の準備を行った後、いくつかのプロパティが更新され、準備が整ったことが示されます。以下のリストの情報を使用して、それらのプロパティに適切な値が設定されていることを確認します。それぞれのプロパティは、以下に示されている、インストールしている Exchange 2013 のリリースの値と一致しなければなりません。
 
-  - **\[スキーマ\]** 名前付けコンテキストで、**ms-Exch-Schema-Verision-Pt** の **rangeUpper** プロパティが、「Exchange 2013 Active Directory のバージョン」の表に示された Exchange 2013 のバージョンの値に設定されていることを確認します。
+  - <strong>スキーマ</strong> 名前付けコンテキストで、**ms-Exch-Schema-Verision-Pt** の **rangeUpper** プロパティが、「Exchange 2013 Active Directory のバージョン」の表に示された Exchange 2013 のバージョンの値に設定されていることを確認します。
     
      
 
-  - **\[構成\]** 名前付けコンテキストで、CN=\<*your organization*\>,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=\<*domain*\> コンテナーの **objectVersion** プロパティが、「Exchange 2013 Active Directory のバージョン」の表に示された Exchange 2013 のバージョンの値に設定されていることを確認します。
+  - <strong>構成</strong> 名前付けコンテキストで、CN=\<*your organization*\>,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=\<*domain*\> コンテナーの **objectVersion** プロパティが、「Exchange 2013 Active Directory のバージョン」の表に示された Exchange 2013 のバージョンの値に設定されていることを確認します。
     
      
 
-  - **\[既定\]** 名前付けコンテキストで、DC=\<*root domain*の下にある **Microsoft Exchange System Objects** コンテナーの **objectVersion** プロパティが、「Exchange 2013 Active Directory のバージョン」の表に示された Exchange 2013 のバージョンの値に設定されていることを確認します。
+  - <strong>既定</strong> 名前付けコンテキストで、DC=\<*root domain*の下にある **Microsoft Exchange System Objects** コンテナーの **objectVersion** プロパティが、「Exchange 2013 Active Directory のバージョン」の表に示された Exchange 2013 のバージョンの値に設定されていることを確認します。
     
      
 

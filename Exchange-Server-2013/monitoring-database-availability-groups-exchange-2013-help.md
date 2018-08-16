@@ -239,9 +239,9 @@ Exchange 2013 は、アプリケーションとサービス ログ領域内の�
 
 1.  イベント ビューアーを開きます。
 
-2.  コンソール ツリーで、**\[アプリケーションとサービス ログ\]** \> **\[Microsoft\]** \> **\[Exchange\]** の順に移動します。
+2.  コンソール ツリーで、<strong>アプリケーションとサービス ログ</strong> \> <strong>Microsoft</strong> \> <strong>Exchange</strong> の順に移動します。
 
-3.  **\[Exchange\]** の下で、**\[HighAvailability\]** や **\[MailboxDatabaseFailureItems\]** (DAG およびデータベース コピー関連のイベントを確認する場合)、または **\[ActiveMontoring\]** や **\[ManagedAvailability\]** (可用性管理に関連するイベントを確認する場合) などのクリムゾン チャネルを選択します。
+3.  <strong>Exchange</strong> の下で、<strong>HighAvailability</strong> や <strong>MailboxDatabaseFailureItems</strong> (DAG およびデータベース コピー関連のイベントを確認する場合)、または <strong>ActiveMontoring</strong> や <strong>ManagedAvailability</strong> (可用性管理に関連するイベントを確認する場合) などのクリムゾン チャネルを選択します。
 
 HighAvailability チャネルには、Microsoft Exchange Replication サービスの起動とシャットダウンに関連するイベント、および アクティブ マネージャー、サードパーティ製の同期レプリケーション API、タスク RPC サーバー、TCP リスナー、およびボリューム シャドウ コピー サービス (VSS) ライターなど、Microsoft Exchange Replication サービス内で実行されるさまざまなコンポーネントに関連するイベントが含まれます。また、HighAvailability チャネルは、アクティブ マネージャー 役割監視およびデータベース マウント処理やログの切り詰めなどのデータベース処理イベントに関連するイベントを記録し、DAG の基になるクラスターに関連するイベントを記録するために、アクティブ マネージャー によって使用されます。
 

@@ -43,15 +43,15 @@ POP3 および IMAP4 に関連する詳細情報については、「[Exchange S
 
 IMAP4 サービスを開始するには:
 
-1.  クライアント アクセス サーバーの役割を実行しているコンピューターで、**\[スタート\]** ボタンをクリックし、**\[プログラム\]** をポイントします。次に **\[管理ツール\]** をポイントし、**\[サービス\]** をクリックします。 **\[Microsoft Exchange IMAP4\]** を右クリックし、**\[開始\]** をクリックします。
+1.  クライアント アクセス サーバーの役割を実行しているコンピューターで、<strong>スタート</strong> ボタンをクリックし、<strong>プログラム</strong> をポイントします。次に <strong>管理ツール</strong> をポイントし、<strong>サービス</strong> をクリックします。 <strong>Microsoft Exchange IMAP4</strong> を右クリックし、<strong>開始</strong> をクリックします。
 
-2.  メールボックスの役割を実行しているコンピューターで、**\[スタート\]** ボタンをクリックし、**\[プログラム\]** をポイントします。次に **\[管理ツール\]** をポイントし、**\[サービス\]** をクリックします。 **\[Microsoft Exchange IMAP4 バックエンド\]** を右クリックし、**\[開始\]** をクリックします。
+2.  メールボックスの役割を実行しているコンピューターで、<strong>スタート</strong> ボタンをクリックし、<strong>プログラム</strong> をポイントします。次に <strong>管理ツール</strong> をポイントし、<strong>サービス</strong> をクリックします。 <strong>Microsoft Exchange IMAP4 バックエンド</strong> を右クリックし、<strong>開始</strong> をクリックします。
 
 IMAP4 サービスを停止するには:
 
-1.  クライアント アクセス サーバーの役割を実行しているコンピューターで、**\[スタート\]** ボタンをクリックし、**\[プログラム\]** をポイントします。次に **\[管理ツール\]** をポイントし、**\[サービス\]** をクリックします。 **\[Microsoft Exchange IMAP4\]** を右クリックし、**\[停止\]** をクリックします。
+1.  クライアント アクセス サーバーの役割を実行しているコンピューターで、<strong>スタート</strong> ボタンをクリックし、<strong>プログラム</strong> をポイントします。次に <strong>管理ツール</strong> をポイントし、<strong>サービス</strong> をクリックします。 <strong>Microsoft Exchange IMAP4</strong> を右クリックし、<strong>停止</strong> をクリックします。
 
-2.  メールボックスの役割を実行しているコンピューターで、**\[スタート\]** ボタンをクリックし、**\[プログラム\]** をポイントします。次に **\[管理ツール\]** をポイントし、**\[サービス\]** をクリックします。**\[Microsoft Exchange IMAP4 バックエンド\]** を右クリックし、**\[停止\]** をクリックします。
+2.  メールボックスの役割を実行しているコンピューターで、<strong>スタート</strong> ボタンをクリックし、<strong>プログラム</strong> をポイントします。次に <strong>管理ツール</strong> をポイントし、<strong>サービス</strong> をクリックします。<strong>Microsoft Exchange IMAP4 バックエンド</strong> を右クリックし、<strong>停止</strong> をクリックします。
 
 ## シェルを使用して IMAP4 サービスを開始または停止する
 
@@ -99,7 +99,7 @@ IMAP4 サービスを停止するには:
 
 ## 正常な動作を確認する方法
 
-1.  Exchange クライアント アクセス サーバーで、Windows タスク マネージャーを開きます。 Microsoft Exchange IMAP4 サービスが実行中である場合、**\[サービス\]** タブで、**\[MSExchangeIMAP4\]** の状態が **\[実行中\]** と表示されます。
+1.  Exchange クライアント アクセス サーバーで、Windows タスク マネージャーを開きます。 Microsoft Exchange IMAP4 サービスが実行中である場合、<strong>サービス</strong> タブで、<strong>MSExchangeIMAP4</strong> の状態が <strong>実行中</strong> と表示されます。
 
-2.  Exchange メールボックス サーバーで、Windows タスク マネージャーを開きます。 Microsoft Exchange IMAP4 Backend サービスが実行中である場合、**\[サービス\]** タブで、**\[MSExchangeIMAP4BE\]** の状態が **\[実行中\]** と表示されます。
+2.  Exchange メールボックス サーバーで、Windows タスク マネージャーを開きます。 Microsoft Exchange IMAP4 Backend サービスが実行中である場合、<strong>サービス</strong> タブで、<strong>MSExchangeIMAP4BE</strong> の状態が <strong>実行中</strong> と表示されます。
 

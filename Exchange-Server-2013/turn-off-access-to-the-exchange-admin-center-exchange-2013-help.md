@@ -61,5 +61,5 @@ EAC へのアクセスが正常にオフになったことを確認するには�
 
 1.  インターネット ブラウザーを使用して、Outlook Web App へのアクセスに使用する組織の内部または外部 URL を入力します。ただし、**/owa** ID を **/ecp** に置き換えます。たとえば、Outlook Web App へのアクセスに使用する組織の外部 URL が https://primary.tailspintoys.com/owa の場合は、https://primary.tailspintoys.com/ecp を使用します。
 
-2.  アクセスがオフになっていると、**\[404 – Web サイトが見つかりません\]** というエラーが発生します。
+2.  アクセスがオフになっていると、<strong>404 – Web サイトが見つかりません</strong> というエラーが発生します。
 

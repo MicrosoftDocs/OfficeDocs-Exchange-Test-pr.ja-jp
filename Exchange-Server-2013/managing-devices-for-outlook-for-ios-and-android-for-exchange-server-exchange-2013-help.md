@@ -69,7 +69,7 @@ iOS および Android 用の Outlook のクラウドベースのアーキテク�
 
 このセクションでは、Exchange のオンプレミス組織に属するユーザーが iOS および Android 用の Outlook の基本認証を使ってデータにアクセスしないようにするために、アプリをブロックする方法について説明します。
 
-どの Exchange 組織にも、セキュリティやデバイスの管理に関するそれぞれのポリシーがあります。iOS および Android 用の Outlook が組織のニーズに合わない、あるいは何らかの理由で組織にとって最適なソリューションではないと判断される場合、管理者は Exchange ActiveSync のデバイス管理ポリシーを使ってアプリをブロックすることができます。Exchange ActiveSync の構成に関する詳細な説明については、「[デバイス アクセスの制御](https://go.microsoft.com/fwlink/p/?linkid=6240)」を参照してください。Exchange ActiveSync の管理画面で、Outlook アプリは **\[DeviceModel:'Outlook for iOS and Android'\]** または **\[DeviceType:'Outook'\]** のように識別されています。
+どの Exchange 組織にも、セキュリティやデバイスの管理に関するそれぞれのポリシーがあります。iOS および Android 用の Outlook が組織のニーズに合わない、あるいは何らかの理由で組織にとって最適なソリューションではないと判断される場合、管理者は Exchange ActiveSync のデバイス管理ポリシーを使ってアプリをブロックすることができます。Exchange ActiveSync の構成に関する詳細な説明については、「[デバイス アクセスの制御](https://go.microsoft.com/fwlink/p/?linkid=6240)」を参照してください。Exchange ActiveSync の管理画面で、Outlook アプリは <strong>DeviceModel:'Outlook for iOS and Android'</strong> または <strong>DeviceType:'Outook'</strong> のように識別されています。
 
 
 > [!NOTE]

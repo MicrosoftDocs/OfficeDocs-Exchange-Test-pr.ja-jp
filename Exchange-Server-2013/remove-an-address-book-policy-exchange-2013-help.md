@@ -33,7 +33,7 @@ ABP に関連する追加の管理タスクについては、「[アドレス帳
     
     `Get-Mailbox -SoftDeletedMailbox | Where $._AddressBookPolicy -eq <AddressBookPolicyName>`
 
-  - ユーザーのメールボックスから ABP を削除するには、メールボックスのプロパティの **\[メールボックスの機能\]** ページか、**Set-Mailbox** コマンドレットを使用します。
+  - ユーザーのメールボックスから ABP を削除するには、メールボックスのプロパティの <strong>メールボックスの機能</strong> ページか、**Set-Mailbox** コマンドレットを使用します。
 
   - Exchange 管理センター (EAC) を使用して ABP を削除することはできません。シェルを使用する必要があります。
 

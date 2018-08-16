@@ -104,7 +104,7 @@ _**トピックの最終更新日:** 2015-11-10_
 
 このエラーは、Lync 2013 と Outlook Web App の統合に使用される証明書が、メールボックス サーバー上の Outlook Web App アプリケーション構成 (web.config) ファイルに定義されていないことを示しています。この `web.config` ファイルは `%ExchangeInstallPath%ClientAccess\Owa` にあり、証明書の拇印 (ハッシュ) を指定する **IMCertificateThumbprint** という名前のキーを含んでいる必要があります。
 
-**Get-ExchangeCertificate** コマンドレットを使用して、または、Exchange 管理センター (EAC) で **\[サーバー\]** \> **\[証明書\]** を選択して、証明書の拇印の値を取得できます。
+**Get-ExchangeCertificate** コマンドレットを使用して、または、Exchange 管理センター (EAC) で <strong>サーバー</strong> \> <strong>証明書</strong> を選択して、証明書の拇印の値を取得できます。
 
 この問題を修正するには、次の手順に従います。
 
@@ -132,13 +132,13 @@ _**トピックの最終更新日:** 2015-11-10_
 
 このエラーは、Lync 2013 と Outlook Web App の統合に使用される証明書が、メールボックス サーバー上に見つからないことを示しています。この証明書は、メールボックス サーバーと Lync 2013サーバーにインストールされていて、両方のサーバーによって信頼されている必要があります。証明書の要件について詳しくは、「[Microsoft Lync Server 2013 および Microsoft Outlook Web App 2013 の統合](http://go.microsoft.com/fwlink/p/?linkid=280418)」の『Outlook Web App でインスタント メッセージングを有効にする』セクションを参照してください。
 
-**Get-ExchangeCertificate** コマンドレットを使用して、または Exchange 管理センター (EAC) で **\[サーバー\]** \> **\[証明書\]** を選択して、エラーの拇印値を証明書に一致させることができます。
+**Get-ExchangeCertificate** コマンドレットを使用して、または Exchange 管理センター (EAC) で <strong>サーバー</strong> \> <strong>証明書</strong> を選択して、エラーの拇印値を証明書に一致させることができます。
 
 ## 次のエラーに対する回復処理:「IM 証明書が期限切れです。」
 
 このエラーは、Lync 2013 と Outlook Web App の統合に使用される証明書が期限切れであることを示しています。このエラーを解決するには、証明書を更新する必要があります。
 
-**Get-ExchangeCertificate** コマンドレットを使用して、または Exchange 管理センター (EAC) で **\[サーバー\]** \> **\[証明書\]** を選択して、エラーの拇印値を証明書に一致させることができます。
+**Get-ExchangeCertificate** コマンドレットを使用して、または Exchange 管理センター (EAC) で <strong>サーバー</strong> \> <strong>証明書</strong> を選択して、エラーの拇印値を証明書に一致させることができます。
 
 ## 次のエラーに対する回復処理:「IM 証明書がまだ有効になっていません。」
 

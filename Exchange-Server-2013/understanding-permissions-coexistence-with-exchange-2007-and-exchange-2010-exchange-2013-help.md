@@ -164,7 +164,7 @@ Exchange 2007 では、次のような定義済みの管理者の役割があ�
 
   - **"Exchange Server Administrator/Exchange サーバー管理者" 役割**   この役割は、特定のサーバーを管理するためのアクセス許可を付与します。ただし、この役割は Exchange 2007 組織全体に影響を与える操作を実行するためのアクセス許可は付与しません。
 
-  - **"Exchange Public Folder Administrator/Exchange パブリック フォルダー管理者" 役割**   この役割は、Exchange 2007 Service Pack 1 で追加されました**。**この役割は、Exchange 2007 組織内のパブリック フォルダーを管理するためのアクセス許可を付与します。
+  - **"Exchange Public Folder Administrator/Exchange パブリック フォルダー管理者" 役割**   この役割は、Exchange 2007 Service Pack 1 で追加されました。この役割は、Exchange 2007 組織内のパブリック フォルダーを管理するためのアクセス許可を付与します。
 
 このアクセス許可モデルでは、Exchange サーバー管理者役割を除くすべての役割に対して USG が使用されます。Exchange 2007**Setup /PrepareAD** コマンドを実行すると、セットアップ プログラムによって、ルート ドメイン内に USG が作成され、フォレスト全体のスコープが USG に割り当てられます。USG は、Active Directory 全体の Exchange オブジェクトを管理するために ACL を割り当てられます。
 

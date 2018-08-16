@@ -59,15 +59,15 @@ Outlook Voice Access の PIN セキュリティに関連するその他のタス
 
 ## EAC を使用して、Outlook Voice Access ユーザーの PIN ポリシーを設定する
 
-1.  EAC で、**\[ユニファイド メッセージング\]** \> **\[UM ダイヤル プラン\]** に移動します。リスト ビューで、編集する UM ダイヤル プランをクリックし、**\[編集\]**![編集アイコン](images/Bb124582.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "編集アイコン") をクリックします。
+1.  EAC で、<strong>ユニファイド メッセージング</strong> \> <strong>UM ダイヤル プラン</strong> に移動します。リスト ビューで、編集する UM ダイヤル プランをクリックし、<strong>編集</strong>![編集アイコン](images/Bb124582.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "編集アイコン") をクリックします。
 
-2.  **\[UM ダイヤル プラン\]** ページの **\[UM メールボックス ポリシー\]** 下で編集したい UM メールボックス ポリシーを選択してから、**\[編集\]**![編集アイコン](images/Bb124582.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "編集アイコン") をクリックします。
+2.  <strong>UM ダイヤル プラン</strong> ページの <strong>UM メールボックス ポリシー</strong> 下で編集したい UM メールボックス ポリシーを選択してから、<strong>編集</strong>![編集アイコン](images/Bb124582.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "編集アイコン") をクリックします。
 
-3.  **\[プロパティ\]** をクリックします。
+3.  <strong>プロパティ</strong> をクリックします。
 
-4.  **\[UM メールボックス ポリシー\]** ページで、**\[PIN ポリシー\]** をクリックします。
+4.  <strong>UM メールボックス ポリシー</strong> ページで、<strong>PIN ポリシー</strong> をクリックします。
 
-5.  **\[PIN ポリシー\]** ページで、この UM メールボックス ポリシーに関連付けられている Outlook Voice Access ユーザーの PIN 設定を構成し、**\[保存\]** をクリックします。
+5.  <strong>PIN ポリシー</strong> ページで、この UM メールボックス ポリシーに関連付けられている Outlook Voice Access ユーザーの PIN 設定を構成し、<strong>保存</strong> をクリックします。
 
 ## シェルを使用して、Outlook Voice Access ユーザーの PIN ポリシーを設定する
 

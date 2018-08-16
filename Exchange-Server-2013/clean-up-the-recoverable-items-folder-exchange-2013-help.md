@@ -142,7 +142,7 @@ _**トピックの最終更新日:** 2015-09-30_
     
         Search-Mailbox -Identity "Gurinder Singh" -SearchDumpsterOnly -TargetMailbox "Discovery Search Mailbox" -TargetFolder "GurinderSingh-RecoverableItems" -DeleteContent
     
-    指定した条件に一致するメッセージのみを削除する必要がある場合は、*SearchQuery* パラメーターを使用して条件を指定します。この例では、**\[件名\]**フィールドに「Your bank statement」という文字列が含まれるメッセージを削除します。
+    指定した条件に一致するメッセージのみを削除する必要がある場合は、*SearchQuery* パラメーターを使用して条件を指定します。この例では、<strong>件名</strong>フィールドに「Your bank statement」という文字列が含まれるメッセージを削除します。
     
         Search-Mailbox -Identity "Gurinder Singh" -SearchQuery "Subject:'Your bank statement'" -SearchDumpsterOnly -TargetMailbox "Discovery Search Mailbox" -TargetFolder "GurinderSingh-RecoverableItems" -DeleteContent
     
