@@ -49,9 +49,9 @@ Exchange 2013 では、ユーザーが内部および外部の受信者に対し
 
 Exchange 2013 では、次の 2 種類の自動返信があります。
 
-  - **\[外部\]**Exchange 2013 および Exchange 2010 でサポートされます。Outlook 2010 または Office Outlook 2007 で設定できるか、Microsoft Office Outlook Web App を使用して設定できます。
+  - <strong>\[外部\]</strong>Exchange 2013 および Exchange 2010 でサポートされます。Outlook 2010 または Office Outlook 2007 で設定できるか、Microsoft Office Outlook Web App を使用して設定できます。
 
-  - **\[内部\]**Exchange 2013 および Exchange 2010 でサポートされます。Outlook 2010 または Outlook 2007 で設定できるか、Outlook Web App を使用して設定できます。
+  - <strong>\[内部\]</strong>Exchange 2013 および Exchange 2010 でサポートされます。Outlook 2010 または Outlook 2007 で設定できるか、Outlook Web App を使用して設定できます。
 
 以下の表は、さまざまなクライアントとサーバーの組み合わせと、各シナリオで使用できる自動返信の種類を示します。
 
