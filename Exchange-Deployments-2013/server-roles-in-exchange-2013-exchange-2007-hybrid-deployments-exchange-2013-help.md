@@ -13,9 +13,9 @@ ms.translationtype: HT
 
 このトピックは処理中です。  
 
-_**適用先:**Exchange Online, Exchange Server, Exchange Server 2013_
+_<strong>適用先:</strong>Exchange Online, Exchange Server, Exchange Server 2013_
 
-_**トピックの最終更新日:**2016-12-09_
+_<strong>トピックの最終更新日:</strong>2016-12-09_
 
 Exchange 2007 組織でハイブリッド展開を構成する場合、既存の Exchange 2007 組織に、クライアント アクセス サーバーとメールボックス サーバーの役割を備えた Exchange 2013 サーバーを少なくとも 1 台設置する必要があります。Exchange 2013 クライアント アクセス サーバーとメールボックス サーバーは、既存の Exchange 2007 社内組織と Exchange Online 組織との間で通信を調整します。この通信には、社内組織と Exchange Online 組織間のメッセージ トランスポート機能およびメッセージング機能が使用されます。
 

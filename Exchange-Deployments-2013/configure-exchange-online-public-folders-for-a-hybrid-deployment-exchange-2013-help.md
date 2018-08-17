@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013_
+_<strong>適用先:</strong>Exchange Server 2013_
 
-**概要:** オンプレミスの Exchange 2013 ユーザーが、Exchange Online のパブリック フォルダーにアクセスできるようにするための手順。
+**概要:**  オンプレミスの Exchange 2013 ユーザーが、Exchange Online のパブリック フォルダーにアクセスできるようにするための手順。
 
 ハイブリッド展開では、ユーザーは Exchange Online と Exchange オンプレミスのいずれか一方または両方に配置され、パブリック フォルダーは Exchange Online か Exchange オンプレミスのいずれかに配置されます。オンライン ユーザーが、Exchange Server 2013 のオンプレミス環境のパブリック フォルダーにアクセスすることが必要な場合があります。同様に、Exchange 2013 ユーザーが、Office 365 または Exchange Online のパブリック フォルダーにアクセスすることが必要な場合もあります。
 

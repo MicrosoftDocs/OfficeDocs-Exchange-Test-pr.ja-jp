@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server, Exchange Server 2013, Exchange Server 2016_
+_<strong>適用先:</strong>Exchange Online, Exchange Server, Exchange Server 2013, Exchange Server 2016_
 
-_**トピックの最終更新日:**2016-01-27_
+_<strong>トピックの最終更新日:</strong>2016-01-27_
 
 Exchange のオンプレミスの組織から Office 365 にメールボックスを移動する際に Exchange ActiveSync デバイスが自動的に再構成されます。Exchange ActiveSync は Office 365 内の新しいメールボックスの場所を検索し、Office 365 と直接通信できるように構成を更新します。Exchange ActiveSync デバイスは、Office 365 に正常にリダイレクトされた後は、オンプレミスの Exchange サーバーとの通信を試行しなくなります。いくつかの例外 (詳細は後述) を除いて、メールが動作し続けるようにユーザーがこのデバイスを手動で設定する必要はなくなりました。
 

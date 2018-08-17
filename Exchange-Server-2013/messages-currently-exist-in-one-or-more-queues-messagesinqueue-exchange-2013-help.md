@@ -1,0 +1,53 @@
+﻿---
+title: '1 つ以上のキューにメッセージが存在している_MessagesInQueue: Exchange 2013 Help'
+TOCTitle: 1 つ以上のキューにメッセージが存在している_MessagesInQueue
+ms:assetid: 3ffcdc7e-c1b7-49a7-8e5f-b30c0397908d
+ms:mtpsurl: https://technet.microsoft.com/ja-jp/library/ms.exch.setupreadiness.messagesinqueue(v=EXCHG.150)
+ms:contentKeyID: 48269403
+ms.date: 04/24/2018
+mtps_version: v=EXCHG.150
+ms.translationtype: HT
+---
+
+# 1 つ以上のキューにメッセージが存在している\_MessagesInQueue
+
+ 
+
+_**適用先:** Exchange Server_
+
+_**トピックの最終更新日:** 2012-06-05_
+
+このトピックの内容は、Microsoft Exchange Server 2013 向けに更新されていません。まだ更新されていませんが、そのままで Exchange 2013 にも適用できる可能性があります。ヘルプが必要な場合は、以下のコミュニティ リソースを確認してください。
+
+問題がある場合は、Exchange のフォーラムで質問してください。 次のフォーラムにアクセスしてください。[Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612)、 [Exchange Online](https://go.microsoft.com/fwlink/p/?linkid=267542)、 または [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkid=285351)。
+
+トランスポートの役割をアンインストールする際にトランスポート キューからデータが失われる可能性がある場合、Microsoft® Exchange Server 2007 セットアップ プログラムによってこの警告が表示されます。
+
+Exchange 2007 セットアップ プログラムは、トランスポート キューの管理に関連する役割を削除する前に、トランスポート キューが空であることを確認します。
+
+トランスポート キューに残っているメッセージを配信する前にトランスポートの役割を削除すると、そのメッセージはキューに格納され続けることになります。
+
+この問題を解決するには、セットアップを続行する前に、該当するキューにメッセージが存在しないことを確認してください。
+
+**キューの内容を表示するには、次の操作を行います。**
+
+1.  Exchange 管理コンソールを開きます。
+
+2.  コンソール ツリーで、<strong>ツールボックス</strong> をクリックします。
+
+3.  結果ウィンドウで、<strong>Exchange キュー ビューアー</strong> をクリックします。
+
+4.  操作ウィンドウで、<strong>ツールを開く</strong> をクリックします。
+
+5.  キュー ビューアーで、<strong>キュー</strong> タブをクリックします。接続先のサーバー上にあるすべてのキューの一覧が表示されます。
+
+6.  目的のキューを右クリックし、<strong>プロパティ</strong> をクリックしてキューのプロパティを表示します。
+
+**キューにあるメッセージを表示するには、次の操作を行います。**
+
+1.  上記の手順 1. ～ 4. を実行します。
+
+2.  キュー ビューアーで、<strong>メッセージ</strong> タブをクリックします。接続先のサーバー上にあるすべてのメッセージの一覧が表示されます。表示内容を 1 つのキューのみに絞り込むには、<strong>キュー</strong> タブをクリックし、キューの名前をダブルクリックします。次に、表示される \[Server\\Queue\] タブをクリックします。
+
+3.  メッセージの詳細情報を表示するには、メッセージを選択し、アクション ペインで <strong>プロパティ</strong> をクリックします。
+

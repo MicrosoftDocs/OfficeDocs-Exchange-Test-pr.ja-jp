@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Server 2013, Project Server 2013_
+_**適用先:** Exchange Server 2013, Project Server 2013_
 
-_**トピックの最終更新日:**2015-03-09_
+_**トピックの最終更新日:** 2015-03-09_
 
 EWS.Protocol 正常性セットは、メールボックス サーバー上の Exchange Web サービス (EWS) 通信プロトコルを監視します。EWS.Protocol 正常性セットは、次の正常性セットに密接に関連しています。
 
@@ -126,7 +126,7 @@ EwsSelfTestProbe は、インフォメーション ストアに依存しませ�
 
 2.  失敗したプローブのメールボックス データベースを探して、そのメールボックス データベースがメールボックス サーバーに対してアクティブであることと、インフォメーション ストアが正常であることを確認します。
 
-3.  **\[アプリケーション プール\]** をクリックし、シェルから次のコマンドを実行して、**MSExchangeServicesAppPool** アプリケーション プールをリサイクルします。
+3.  <strong>アプリケーション プール</strong> をクリックし、シェルから次のコマンドを実行して、**MSExchangeServicesAppPool** アプリケーション プールをリサイクルします。
     
         %SystemRoot%\System32\inetsrv\Appcmd recycle MSExchangeServicesAppPool
 
@@ -160,7 +160,7 @@ EwsSelfTestProbe は、インフォメーション ストアに依存しませ�
     
         Set-MailboxServer server1.contoso.com -DatabaseCopyActivationDisabledAndMoveNow $false
 
-14. プローブがまだ失敗する場合は、この問題の解決にサポートが必要なこともあります。この問題を解決するには、Microsoft のサポート担当者にお問い合わせください。Microsoft のサポート担当者に問い合わせるには、「[Exchange Server サポート ページ](http://go.microsoft.com/fwlink/p/?linkid=180809)」にアクセスしてください。ナビゲーション ウィンドウで、**\[サポート オプションとリソース\]** をクリックし、**\[テクニカル サポートを利用する\]** に表示されるいずれかのオプションを使用して、Microsoft のサポート担当者に問い合わせます。組織には Microsoft 製品サポート サービスに直接問い合わせるための特定の手順がある場合があるので、組織のガイドラインを最初に必ず確認してください。
+14. プローブがまだ失敗する場合は、この問題の解決にサポートが必要なこともあります。この問題を解決するには、Microsoft のサポート担当者にお問い合わせください。Microsoft のサポート担当者に問い合わせるには、「[Exchange Server サポート ページ](http://go.microsoft.com/fwlink/p/?linkid=180809)」にアクセスしてください。ナビゲーション ウィンドウで、<strong>サポート オプションとリソース</strong> をクリックし、<strong>テクニカル サポートを利用する</strong> に表示されるいずれかのオプションを使用して、Microsoft のサポート担当者に問い合わせます。組織には Microsoft 製品サポート サービスに直接問い合わせるための特定の手順がある場合があるので、組織のガイドラインを最初に必ず確認してください。
 
 ## 詳細情報
 

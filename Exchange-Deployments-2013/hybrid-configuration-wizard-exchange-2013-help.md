@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_<strong>適用先:</strong>Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**トピックの最終更新日:**2016-12-09_
+_<strong>トピックの最終更新日:</strong>2016-12-09_
 
 このトピックでは、Exchange ハイブリッド展開構成プロセス、使用可能なハイブリッド展開機能とオプション、ハイブリッド展開の構成と更新の両方で必要な中心的処理を実行するハイブリッド構成エンジンの概要について説明します。
 

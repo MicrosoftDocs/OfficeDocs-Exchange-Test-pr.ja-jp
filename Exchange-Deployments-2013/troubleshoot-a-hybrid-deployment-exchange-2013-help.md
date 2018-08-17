@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**適用先:**Exchange Online, Exchange Server 2013, Exchange Server 2016_
+_<strong>適用先:</strong>Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-_**トピックの最終更新日:**2016-04-29_
+_<strong>トピックの最終更新日:</strong>2016-04-29_
 
 ハイブリッド構成ウィザードを使用して Exchange でハイブリッド展開を構成すると、ハイブリッド展開で問題が発生する可能性が大幅に低下します。ただし構成を誤った場合、ハイブリッド構成ウィザードの範囲外に、ハイブリッド展開で問題が発生する可能性がある一般的な領域がいくつかあります。このトピックでは、問題が発生する可能性がある、次の一般的な領域について説明し、問題の確認または修正を行う基本的な手順について概説します。
 
@@ -74,15 +74,15 @@ _**トピックの最終更新日:**2016-04-29_
 
 2.  この手順は EWS タスクの一般的なテスト用であり、EWS タスクが動作していること、および EWS エンドポイントが構成されていることを確認するためのものです。
     
-    **\[Microsoft Exchange Web サービス接続テスト\]** セクションの **\[同期、通知、可用性、および自動返信 (OOF)\]** テストを実行し、エラーがないことを確認します。エラーが発生する場合は、テストで識別された項目を修正します。
+    <strong>Microsoft Exchange Web サービス接続テスト</strong> セクションの <strong>同期、通知、可用性、および自動返信 (OOF)</strong> テストを実行し、エラーがないことを確認します。エラーが発生する場合は、テストで識別された項目を修正します。
 
 3.  この手順は自動検出サービスの一般的なテスト用であり、自動検出サービスが動作していること、および自動検出エンドポイントが構成されていることを確認するためのものです。
     
-    **\[Microsoft Office Outlook 接続テスト\]** セクションの **\[Outlook 自動検出\]** テストを実行し、エラーがないことを確認します。エラーが発生する場合は、テストで識別された項目を修正します。
+    <strong>Microsoft Office Outlook 接続テスト</strong> セクションの <strong>Outlook 自動検出</strong> テストを実行し、エラーがないことを確認します。エラーが発生する場合は、テストで識別された項目を修正します。
 
 4.  この手順は SMTP 接続の一般的なテスト用であり、Exchange サーバーが受信インターネット メールを受信できることを確認するためのものです。
     
-    **\[インターネット電子メール テスト\]** セクションの **\[受信 SMTP 電子メール\]** テストを実行し、エラーがないことを確認します。エラーが発生する場合は、テストで識別された項目を修正します。
+    <strong>インターネット電子メール テスト</strong> セクションの <strong>受信 SMTP 電子メール</strong> テストを実行し、エラーがないことを確認します。エラーが発生する場合は、テストで識別された項目を修正します。
 
 ## 証明書に関する問題のトラブルシューティング
 
@@ -124,12 +124,11 @@ _**トピックの最終更新日:**2016-04-29_
 
   - **メッセージ:「サーバー\<サーバー名\>上で、既定の受信コネクタが検出できません」**   次の属性に一覧表示されている Exchange サーバー上の受信コネクタが、IPv4 と IPv6 の両方のプロトコルを TCP ポート 25 でリッスンしていない場合、このメッセージが表示されます。`(Get-HybridConfiguration).ReceivingTransportServers.`
     
-      -  
-        `(Get-HybridConfiguration).ReceivingTransportServers.` の実行時に一覧表示されている Exchange サーバー上の受信コネクタのバインディングが適切であることを確認するには、Exchange 管理シェル で次のコマンドを実行します。
+      -    `(Get-HybridConfiguration).ReceivingTransportServers.` の実行時に一覧表示されている Exchange サーバー上の受信コネクタのバインディングが適切であることを確認するには、Exchange 管理シェル で次のコマンドを実行します。
         
             Get-ReceiveConnector -Server <Server Name> | FT Identity, Bindings
         
-        Exchange サーバーの次のエントリが一覧表示されます: `{[::]:25, 0.0.0.0:25}`
+            Exchange サーバーの次のエントリが一覧表示されます: `{[::]:25, 0.0.0.0:25}`
         
-        このバインディングが表示されない場合、**Set-ReceiveConnector** コマンドレットの *Bindings* パラメータを使って、受信コネクタに追加する必要があります。詳細については、「[Set-ReceiveConnector](https://technet.microsoft.com/ja-jp/library/bb125140\(v=exchg.150\))」を参照してください。
+            このバインディングが表示されない場合、**Set-ReceiveConnector** コマンドレットの *Bindings* パラメータを使って、受信コネクタに追加する必要があります。詳細については、「[Set-ReceiveConnector](https://technet.microsoft.com/ja-jp/library/bb125140\(v=exchg.150\))」を参照してください。
 
