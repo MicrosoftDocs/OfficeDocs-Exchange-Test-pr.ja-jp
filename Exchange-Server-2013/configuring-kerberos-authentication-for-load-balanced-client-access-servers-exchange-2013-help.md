@@ -57,9 +57,9 @@ ASA 資格情報を設定するときに、以下のガイドラインに留意�
 
 2.  **New-ADComputer** コマンドレットを次のコマンドレット構文で使用して、新しい Active Directory コンピューター アカウントを作成します。
     
-        New-ADComputer [-Name] <string> [-AccountPassword <SecureString>] [-AllowReversiblePasswordEncryption <System.Nullable[boolean]>] [-Description <string>] [-Enabled <System.Nullable[bool]>]**
+        New-ADComputer [-Name] <string> [-AccountPassword <SecureString>] [-AllowReversiblePasswordEncryption <System.Nullable[boolean]>] [-Description <string>] [-Enabled <System.Nullable[bool]>]
     
-    例:** 
+    例: 
     
         New-ADComputer -Name EXCH2013ASA -AccountPassword (Read-Host 'Enter password' -AsSecureString) -Description 'Alternate Service Account credentials for Exchange' -Enabled:$True -SamAccountName EXCH2013ASA
     
@@ -67,9 +67,9 @@ ASA 資格情報を設定するときに、以下のガイドラインに留意�
 
 3.  このコマンドレットの構文を使用して Kerberos で使用される AES 256 暗号化の暗号を有効にするには、**Set-ADComputer** コマンドレットを使用します。
     
-        Set-ADComputer [-Name] <string> [-add @{<attributename>="<value>"]**
+        Set-ADComputer [-Name] <string> [-add @{<attributename>="<value>"]
     
-    例:** 
+    例:   
     
         Set-ADComputer EXCH2013ASA -add @{"msDS-SupportedEncryptionTypes"="28"}
     

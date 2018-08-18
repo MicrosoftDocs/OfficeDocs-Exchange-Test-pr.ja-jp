@@ -49,7 +49,7 @@ Exchange 2013 のコマンドレット拡張エージェントを有効にする
 
 
 
-この例では、**Enable-CmdletExtensionAgent** コマンドレットを使用してコマンドレット拡張エージェントを有効にします。コマンドレットを実行するときには有効にするエージェント名を指定する必要があります。`Scripting Agent` を有効にする前に、まず `ScriptingAgentConfig.xml` 構成ファイルが組織内のすべてのサーバーに展開されていることを確認する必要があります。構成ファイルを展開せずに `Scripting``Agent` を有効にした場合は、**Get** コマンドレット以外のコマンドレットは実行しても失敗します。この例では、`Scripting Agent` を有効にします。
+この例では、**Enable-CmdletExtensionAgent** コマンドレットを使用してコマンドレット拡張エージェントを有効にします。コマンドレットを実行するときには有効にするエージェント名を指定する必要があります。`Scripting Agent` を有効にする前に、まず `ScriptingAgentConfig.xml` 構成ファイルが組織内のすべてのサーバーに展開されていることを確認する必要があります。構成ファイルを展開せずに `Scripting Agent` を有効にした場合は、**Get** コマンドレット以外のコマンドレットは実行しても失敗します。この例では、`Scripting Agent` を有効にします。
 
     Enable-CmdletExtensionAgent "Scripting Agent"
 

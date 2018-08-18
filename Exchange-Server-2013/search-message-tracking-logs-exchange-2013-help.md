@@ -99,7 +99,7 @@ Exchange 管理シェルで **Get-MessageTrackingLog** コマンドレットを�
 
 この例では以下の検索条件で、すべての Exchange 2013 メールボックス サーバー上のメッセージ追跡ログを検索します。
 
-  - **MessageID:**  の値が`<ba18339e-8151-4ff3-aeea-87ccf5fc9796@mailbox01.contoso.com>` であるメッセージに関連するエントリをすべて検索します。山かっこ (`<``>`) は省略できます。省略しない場合は、**MessageID:**  の値全体を二重引用符で囲む必要があります。
+  - **MessageID:**  の値が`<ba18339e-8151-4ff3-aeea-87ccf5fc9796@mailbox01.contoso.com>` であるメッセージに関連するエントリをすべて検索します。山かっこ (`<>`) は省略できます。省略しない場合は、**MessageID:**  の値全体を二重引用符で囲む必要があります。
 
   - エントリごとに、**date-time**、**server-hostname**、**client-hostname**、**source**、**event-id**、および **recipient-address** の各フィールドを表示します。
 

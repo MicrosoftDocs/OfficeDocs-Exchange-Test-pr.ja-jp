@@ -148,9 +148,9 @@ Exchange 管理シェルには、コマンド出力の書式設定に使用で�
                                             Action <ActionPreference>] [-ErrorVaria
                                             ble <String>] [-WarningVariable <String
                                             >] [-OutVariable <String>] [-OutBuffer
-                                            <Int32>]**
+                                            <Int32>]
 
-Format-List** コマンドレットの場合と同じように、ここでもプロパティ名の一部にワイルドカード文字 "`*`" を使用できます。ワイルドカード文字を使用すると、各プロパティ名を個々に入力しなくても、複数のプロパティに一致させることができます。
+**Format-List** コマンドレットの場合と同じように、ここでもプロパティ名の一部にワイルドカード文字 "`*`" を使用できます。ワイルドカード文字を使用すると、各プロパティ名を個々に入力しなくても、複数のプロパティに一致させることができます。
 
 ## Format-Wide
 
