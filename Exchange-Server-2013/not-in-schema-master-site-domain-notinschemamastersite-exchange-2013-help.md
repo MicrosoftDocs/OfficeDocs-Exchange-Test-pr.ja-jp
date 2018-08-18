@@ -35,7 +35,7 @@ Exchange 2007 セットアップ プログラムは、Exchange セットアッ�
 
 **現在のスキーマ マスターを表示するには**
 
-1.  コマンド プロンプトで、**「regsvr32 schmmgmt.dll」**と入力します。
+1.  コマンド プロンプトで、<strong>「regsvr32 schmmgmt.dll」</strong>と入力します。
     
 
     > [!NOTE]

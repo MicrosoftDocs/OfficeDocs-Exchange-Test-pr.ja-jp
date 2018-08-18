@@ -41,15 +41,15 @@ PST ファイルとも呼ばれる Outlook データ ファイルに埋め込み
 
   - エクスポートするアカウントに接続されたアクティブなメールボックスが必要です。
 
-  - Internet Explorer でローカル イントラネット設定を適切に設定してください。ローカル イントラネット ゾーンに **https://\*.outlook.com** が追加されていることを確認します。
+  - Internet Explorer でローカル イントラネット設定を適切に設定してください。ローカル イントラネット ゾーンに **https://&#42;.outlook.com** が追加されていることを確認します。
 
   - 信頼済みサイト ゾーンに、次に示す URL が表示されていないことを確認します。
     
-      - https://\*.outlook.com
+      - https://&#42;.outlook.com
     
       - https://r4.res.outlook.com
     
-      - https://\*.res.outlook.com
+      - https://&#42;.res.outlook.com
 
   - このトピックの手順で使用可能なキーボード ショートカットについては、「[Exchange 管理センターのキーボード ショートカット](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)」を参照してください。
 

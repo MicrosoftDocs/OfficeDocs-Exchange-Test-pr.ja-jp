@@ -37,9 +37,9 @@ EAC で共通のユーザー インターフェイス要素
 
 EAC は現在 Web ベースの管理コンソールであるため、Web ブラウザーから ECP 仮想ディレクトリ URL を使用してコンソールにアクセスする必要があります。ほとんどの場合、EAC の URL は次のようになります。
 
-  - <strong>内部 URL\]:`https://<CASServerName>/ecp`**   内部 URL を使用して、組織のファイアウォール内から EAC にアクセスします。
+  - <strong>[内部 URL\]:`https://<CASServerName>/ecp`</strong>   内部 URL を使用して、組織のファイアウォール内から EAC にアクセスします。
 
-  - <strong>外部 URL\]:`https://mail.contoso.com/ecp`**   外部 URL を使用して、組織のファイアウォールの外部から EAC にアクセスします。組織によっては EAC への外部アクセスをオフにすることもできます。詳細については、「[Exchange 管理センターへのアクセスをオフにする](turn-off-access-to-the-exchange-admin-center-exchange-2013-help.md)」を参照してください。
+  - <strong>[外部 URL\]:`https://mail.contoso.com/ecp`</strong>   外部 URL を使用して、組織のファイアウォールの外部から EAC にアクセスします。組織によっては EAC への外部アクセスをオフにすることもできます。詳細については、「[Exchange 管理センターへのアクセスをオフにする](turn-off-access-to-the-exchange-admin-center-exchange-2013-help.md)」を参照してください。
 
 EAC の内部 URL または外部 URL を特定するには、[Get-EcpVirtualDirectory](https://technet.microsoft.com/ja-jp/library/dd351058\(v=exchg.150\)) コマンドレットを使用できます。詳細については、「[Exchange 管理センターの内部 URL および外部 URL を検索する](find-the-internal-and-external-urls-for-the-exchange-admin-center-exchange-2013-help.md)」を参照してください。
 

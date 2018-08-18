@@ -29,7 +29,7 @@ Microsoft Exchange 障害回復セットアップ プログラムを実行する
 
 **ドライブ文字の割り当てまたは変更**
 
-1.  <strong>コンピューターの管理** **(ローカル)</strong> を開きます。
+1.  <strong>コンピューターの管理</strong> <strong> (ローカル)</strong> を開きます。
 
 2.  コンソール ツリーで、<strong>コンピューターの管理 (ローカル)</strong> をクリックし、<strong>記憶域</strong> をクリックします。次に、<strong>ディスクの管理</strong> をクリックします。
 
