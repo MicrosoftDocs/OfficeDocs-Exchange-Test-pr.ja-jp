@@ -15,7 +15,7 @@ ms.translationtype: HT
 
 _**適用先:** Exchange Online, Exchange Server 2013_
 
-組織でフォームを使用して機密情報を収集している場合は、ユーザーがそのようなフォームを電子メールで外部の連絡先に送ることで、セキュリティ リスクが生じる可能性があります。Exchange のデータ損失防止 (DLP) は、[ドキュメント フィンガープリンティング](overview-of-document-fingerprinting-in-exchange.md) を使用して機密情報を検出することによって、その情報の保護を支援します。ドキュメント フィンガープリンティングを使用するには、知的財産文書、政府機関フォーム、組織内で使用されているその他の標準フォームなどの空白のフォームをアップロードするだけです。その後で、生成されたドキュメント フィンガープリントを DLP ポリシーまたはトランスポート ルールに追加します。ここでは、使用方法について説明します。
+組織でフォームを使用して機密情報を収集している場合は、ユーザーがそのようなフォームを電子メールで外部の連絡先に送ることで、セキュリティ リスクが生じる可能性があります。Exchange のデータ損失防止 (DLP) は、[ドキュメント フィンガープリンティング](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/data-loss-prevention/document-fingerprinting) を使用して機密情報を検出することによって、その情報の保護を支援します。ドキュメント フィンガープリンティングを使用するには、知的財産文書、政府機関フォーム、組織内で使用されているその他の標準フォームなどの空白のフォームをアップロードするだけです。その後で、生成されたドキュメント フィンガープリントを DLP ポリシーまたはトランスポート ルールに追加します。ここでは、使用方法について説明します。
 
 > [!VIDEO https://www.microsoft.com/ja-jp/videoplayer/embed/df9d0f67-cf16-4beb-868b-c7149b260056]
 
@@ -41,7 +41,7 @@ _**適用先:** Exchange Online, Exchange Server 2013_
 
 ![強調表示されている \[このルールを適用する条件\]](images/Dn635175.9355a513-a790-48eb-a61b-575ba2ecdfa6(EXCHG.150).png "強調表示されている [このルールを適用する条件]")
 
-DLP ポリシーへのルールの追加方法については、「[DLP ポリシーの管理](manage-dlp-policies-exchange-2013-help.md)」の「DLP ポリシーを変更する」を参照してください。また、トランスポート ルールの変更方法については、「[機密情報ルールとトランスポート ルールの統合](integrating-sensitive-information-rules-with-transport-rules-exchange-2013-help.md)」を参照してください。新しいポリシーを作成する場合は、「[テンプレートからの DLP ポリシーの作成](how-to-new-dlp-data-loss-prevention-policy-template.md)」を参照してください。
+DLP ポリシーへのルールの追加方法については、「[DLP ポリシーの管理](manage-dlp-policies-exchange-2013-help.md)」の「DLP ポリシーを変更する」を参照してください。また、トランスポート ルールの変更方法については、「[機密情報ルールとトランスポート ルールの統合](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/data-loss-prevention/integrate-sensitive-information-rules)」を参照してください。新しいポリシーを作成する場合は、「[テンプレートからの DLP ポリシーの作成](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/data-loss-prevention/create-dlp-policy-from-template)」を参照してください。
 
 ## シェルを使用してドキュメント フィンガープリントに基づいて分類ルール パッケージを作成する
 
@@ -74,9 +74,9 @@ DLP は、分類ルール パッケージを使用して、メッセージ内の
 
 ## 詳細情報
 
-[ドキュメント フィンガープリンティング](overview-of-document-fingerprinting-in-exchange.md)
+[ドキュメント フィンガープリンティング](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/data-loss-prevention/document-fingerprinting)
 
 [DLP ポリシーの管理](manage-dlp-policies-exchange-2013-help.md)
 
-[機密情報ルールとトランスポート ルールの統合](integrating-sensitive-information-rules-with-transport-rules-exchange-2013-help.md)
+[機密情報ルールとトランスポート ルールの統合](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/data-loss-prevention/integrate-sensitive-information-rules)
 

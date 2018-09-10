@@ -19,9 +19,9 @@ _**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 ユニファイド メッセージングには、勤務時間外に使用する既定のシステム プロンプトが用意されています。既定のシステム プロンプトを置換または変更することはできませんが、カスタマイズした案内応答を用意することができます。カスタマイズした案内応答を .wav または .wma ファイル形式で作成して、発信者が勤務時間外に UM 自動応答に電話を掛けたときに使用することができます。たとえば、"Woodgrove Bank の本日の業務は終了いたしました。" のように作成します。
 
-既定の案内応答の一部として組織や会社の名前を含める場合、UM 自動応答の <strong>会社名</strong> ボックスに名前を入力できます。詳細については、「[会社名を入力する](enter-a-business-name-exchange-2013-help.md)」を参照してください。
+既定の案内応答の一部として組織や会社の名前を含める場合、UM 自動応答の <strong>会社名</strong> ボックスに名前を入力できます。詳細については、「[会社名を入力する](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/enter-a-business-name)」を参照してください。
 
-UM 自動応答に関連する追加の管理タスクについては、「[UM 自動応答手順](um-auto-attendant-procedures-exchange-2013-help.md)」を参照してください。
+UM 自動応答に関連する追加の管理タスクについては、「[UM 自動応答手順](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/um-auto-attendant-procedures)」を参照してください。
 
 ## 始める前に把握しておくべき情報
 
@@ -29,7 +29,7 @@ UM 自動応答に関連する追加の管理タスクについては、「[UM �
 
   - この手順を実行する際には、あらかじめアクセス許可を割り当てる必要があります。必要なアクセス許可の一覧については、以下を参照してください。「[ユニファイド メッセージングのアクセス許可](unified-messaging-permissions-exchange-2013-help.md)」の「UM 自動応答」。
 
-  - これらの手順を実行する前に、UM ダイヤル プランが作成されていることを確認してください。詳細な手順については、「[UM ダイヤル プランを作成する](create-a-um-dial-plan-exchange-2013-help.md)」を参照してください。
+  - これらの手順を実行する前に、UM ダイヤル プランが作成されていることを確認してください。詳細な手順については、「[UM ダイヤル プランを作成する](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-dial-plan)」を参照してください。
 
   - これらの手順を実行する前に、UM 自動応答が作成されていることを確認してください。詳細な手順については、「[UM 自動応答を作成する](create-a-um-auto-attendant-exchange-2013-help.md)」を参照してください。
 

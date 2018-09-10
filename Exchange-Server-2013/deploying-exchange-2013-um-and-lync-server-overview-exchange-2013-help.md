@@ -59,7 +59,7 @@ Exchange UM と Lync Server の展開の概要
     
 
     > [!IMPORTANT]
-    > ExchUcUtil.ps1 スクリプトは、Lync の統合のための 1 つまたは複数の UM IP ゲートウェイを作成します。スクリプトで作成した 1 つのゲートウェイを除き、すべての UM IP ゲートウェイでの発信呼び出しを無効にする必要があります。これにはスクリプトを実行する前に作成した UM IP ゲートウェイでの発信呼び出しを無効にすることが含まれます。UM IP ゲートウェイでの発信呼び出しを無効にするには、「<A href="disable-outgoing-calls-on-um-ip-gateways-exchange-2013-help.md">UM IP ゲートウェイで送信呼び出しを無効にする</A>」を参照してください。
+    > ExchUcUtil.ps1 スクリプトは、Lync の統合のための 1 つまたは複数の UM IP ゲートウェイを作成します。スクリプトで作成した 1 つのゲートウェイを除き、すべての UM IP ゲートウェイでの発信呼び出しを無効にする必要があります。これにはスクリプトを実行する前に作成した UM IP ゲートウェイでの発信呼び出しを無効にすることが含まれます。UM IP ゲートウェイでの発信呼び出しを無効にするには、「<A href="disable-outgoing-calls-on-https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/connect-voice-mail-system/um-ip-gateways">UM IP ゲートウェイで送信呼び出しを無効にする</A>」を参照してください。
 
 
 
@@ -134,7 +134,7 @@ Microsoft Lync Server の詳細については、「[Microsoft Lync Server](http
 
 以下のステップを実行して、Lync Server のエンタープライズ VoIP 機能と連携するようにユニファイド メッセージングを構成します:
 
-1.  それぞれが対応する Lync Server の場所プロファイルにマップする、1 つまたは複数のユニファイド メッセージング SIP URI ダイヤル プランを作成します。エンタープライズ VoIP の場所のプロファイルは、Exchange UM ダイヤル プランごとに作成する必要があります。**Get-UMDialPlan** コマンドレットを使用して、SIP URI ダイヤル プランの FQDN を取得できます。SIP URI ダイヤル プランを作成する方法の詳細については、「[UM ダイヤル プランを作成する](create-a-um-dial-plan-exchange-2013-help.md)」を参照してください。
+1.  それぞれが対応する Lync Server の場所プロファイルにマップする、1 つまたは複数のユニファイド メッセージング SIP URI ダイヤル プランを作成します。エンタープライズ VoIP の場所のプロファイルは、Exchange UM ダイヤル プランごとに作成する必要があります。**Get-UMDialPlan** コマンドレットを使用して、SIP URI ダイヤル プランの FQDN を取得できます。SIP URI ダイヤル プランを作成する方法の詳細については、「[UM ダイヤル プランを作成する](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-dial-plan)」を参照してください。
     
 
     > [!IMPORTANT]
@@ -190,7 +190,7 @@ Microsoft Lync Server の詳細については、「[Microsoft Lync Server](http
 
 6.  UM 自動応答を作成して構成します。詳細については、「[UM 自動応答の設定](set-up-a-um-auto-attendant-exchange-2013-help.md)」を参照してください。
 
-7.  ユーザーのボイス メールを有効にするには、エンタープライズ VoIP を使用するユーザーの SIP アドレスを作成します。通常この SIP アドレスは、ユーザーのエンタープライズ VoIP を有効にするときに使用するのと同じ SIP アドレスです。詳細については、「[ボイス メール用にユーザーを有効にする](enable-a-user-for-voice-mail-exchange-2013-help.md)」を参照してください。
+7.  ユーザーのボイス メールを有効にするには、エンタープライズ VoIP を使用するユーザーの SIP アドレスを作成します。通常この SIP アドレスは、ユーザーのエンタープライズ VoIP を有効にするときに使用するのと同じ SIP アドレスです。詳細については、「[ボイス メール用にユーザーを有効にする](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-voice-mail/enable-a-user-for-voice-mail)」を参照してください。
     
 
     > [!IMPORTANT]
@@ -202,11 +202,11 @@ Microsoft Lync Server の詳細については、「[Microsoft Lync Server](http
     
       - Lync Server に対し、Exchange UM Active Directory コンポーネント、特に前のタスクで作成された SIP URI ダイヤル プランを読み取るためのアクセス許可を与えます。Active Directory でアクセス許可を構成する方法の詳細については、「[ADSI Edit を使用してアクセス許可を適用する方法についてのページ](https://go.microsoft.com/fwlink/p/?linkid=82751)」を参照してください (このサイトは英語の場合があります)。
     
-      - 各 Lync Server プール、またはエンタープライズ VoIP が有効なユーザーをホストする Lync Server Standard Edition を実行している各サーバーに UM IP ゲートウェイを作成します。詳細については、「[UM IP ゲートウェイを作成する](create-a-um-ip-gateway-exchange-2013-help.md)」を参照してください。
+      - 各 Lync Server プール、またはエンタープライズ VoIP が有効なユーザーをホストする Lync Server Standard Edition を実行している各サーバーに UM IP ゲートウェイを作成します。詳細については、「[UM IP ゲートウェイを作成する](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-ip-gateway)」を参照してください。
     
       - 各 IP ゲートウェイの Exchange UM ハント グループを作成します。ハント グループのパイロット ID は、対応する UM IP ゲートウェイに関連付けられたダイヤル プランの名前です。ハント グループは、UM IP ゲートウェイに使用される UM SIP ダイヤル プランを指定する必要があります。
 
-9.  ユーザーのボイス メールを有効にします。ユーザーのボイス メールを有効にするには、ユーザーに有効な SIP アドレスを入力し、SIP ダイヤル プランにリンクします。詳細については、「[ボイス メール用にユーザーを有効にする](enable-a-user-for-voice-mail-exchange-2013-help.md)」を参照してください。
+9.  ユーザーのボイス メールを有効にします。ユーザーのボイス メールを有効にするには、ユーザーに有効な SIP アドレスを入力し、SIP ダイヤル プランにリンクします。詳細については、「[ボイス メール用にユーザーを有効にする](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-voice-mail/enable-a-user-for-voice-mail)」を参照してください。
 
 また、Lync Server を Exchange UM と協調して動作するように構成するには、次の作業を完了する必要があります。
 

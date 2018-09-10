@@ -77,7 +77,7 @@ Exchange 2013 では、Exchange 2013 メールボックス サーバーにトラ
 
   - **MSGTRK**   トランスポート サービスに関するログです。
 
-  - **MSGTRKMA**   モデレート トランスポートの許可と拒否に関するログです。詳細については、「[メッセージ承認の管理](manage-message-approval-exchange-2013-help.md)」を参照してください。
+  - **MSGTRKMA**   モデレート トランスポートの許可と拒否に関するログです。詳細については、「[メッセージ承認の管理](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/mail-flow-rules/manage-message-approval)」を参照してください。
 
   - **MSGTRKMD**   メールボックス トランスポート配信サービスによってメールボックスに配信されたメッセージに関するログです。
 
@@ -343,7 +343,7 @@ Exchange 2013 では、Exchange 2013 メールボックス サーバーにトラ
 </tr>
 <tr class="even">
 <td><p><strong>INITMESSAGECREATED</strong></p></td>
-<td><p>モデレート受信者に送信されたメッセージが、承認のために調停メールボックスに送信された。詳細については、「<a href="manage-message-approval-exchange-2013-help.md">メッセージ承認の管理</a>」を参照してください。</p></td>
+<td><p>モデレート受信者に送信されたメッセージが、承認のために調停メールボックスに送信された。詳細については、「<a href="https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/mail-flow-rules/manage-message-approval">メッセージ承認の管理</a>」を参照してください。</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>LOAD</strong></p></td>
@@ -351,7 +351,7 @@ Exchange 2013 では、Exchange 2013 メールボックス サーバーにトラ
 </tr>
 <tr class="even">
 <td><p><strong>MODERATIONEXPIRE</strong></p></td>
-<td><p>モデレート受信者のモデレーターがメッセージの承認も拒否もしなかったため、メッセージが期限切れになった。モデレート受信者の詳細については、「<a href="manage-message-approval-exchange-2013-help.md">メッセージ承認の管理</a>」を参照してください。</p></td>
+<td><p>モデレート受信者のモデレーターがメッセージの承認も拒否もしなかったため、メッセージが期限切れになった。モデレート受信者の詳細については、「<a href="https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/mail-flow-rules/manage-message-approval">メッセージ承認の管理</a>」を参照してください。</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>MODERATORAPPROVE</strong></p></td>
@@ -478,7 +478,7 @@ Exchange 2013 では、Exchange 2013 メールボックス サーバーにトラ
 </tr>
 <tr class="odd">
 <td><p><strong>APPROVAL</strong></p></td>
-<td><p>モデレート受信者に使用される承認フレームワークがイベント ソース。詳細については、「<a href="manage-message-approval-exchange-2013-help.md">メッセージ承認の管理</a>」を参照してください。</p></td>
+<td><p>モデレート受信者に使用される承認フレームワークがイベント ソース。詳細については、「<a href="https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/mail-flow-rules/manage-message-approval">メッセージ承認の管理</a>」を参照してください。</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>BOOTLOADER</strong></p></td>

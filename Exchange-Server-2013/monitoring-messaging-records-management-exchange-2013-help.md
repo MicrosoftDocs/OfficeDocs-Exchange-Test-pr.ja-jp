@@ -17,9 +17,9 @@ _**適用先:** Exchange Server 2013_
 
 _**トピックの最終更新日:** 2009-11-03_
 
-[メッセージング レコード管理用のパフォーマンス カウンターを表示する](view-performance-counters-for-messaging-records-management-exchange-2013-help.md)
+[メッセージング レコード管理用のパフォーマンス カウンターを表示する](view-performance-counters-for-https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/messaging-records-management/messaging-records-management)
 
-[メッセージング レコード管理用のパフォーマンス カウンター](performance-counters-for-messaging-records-management-exchange-2013-help.md)
+[メッセージング レコード管理用のパフォーマンス カウンター](performance-counters-for-https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/messaging-records-management/messaging-records-management)
 
 [メッセージング レコード管理のエラーおよびイベント](messaging-records-management-errors-and-events-exchange-2013-help.md)
 

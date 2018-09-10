@@ -19,11 +19,11 @@ EAC またはシェルを使用して、組織の Outlook 用アドインをイ�
 
 
 > [!NOTE]
-> 既定では、組織でアドインをインストールすると、組織内のすべてのユーザーがそのアドインを使用できるようになります。インストール後に EAC かシェルを使用して、ユーザーに対してアドインをオプションまたは必須にし、そのアドインを有効にするか無効にするかを指定できます。アドインの既定の設定を変更する方法については、「<A href="manage-user-access-to-add-ins-for-outlook-exchange-online-help.md">Outlook 用アプリへのユーザー アクセスを管理する</A>」を参照してください。組織の特定のユーザーに対してアドインの利用を制限するには、シェルを使用する必要があります。詳細については、「<A href="manage-user-access-to-add-ins-for-outlook-exchange-online-help.md">Outlook 用アプリへのユーザー アクセスを管理する</A>」を参照してください。
+> 既定では、組織でアドインをインストールすると、組織内のすべてのユーザーがそのアドインを使用できるようになります。インストール後に EAC かシェルを使用して、ユーザーに対してアドインをオプションまたは必須にし、そのアドインを有効にするか無効にするかを指定できます。アドインの既定の設定を変更する方法については、「<A href="https://docs.microsoft.com/ja-jp/exchange/clients-and-mobile-in-exchange-online/add-ins-for-outlook/manage-user-access-to-add-ins">Outlook 用アプリへのユーザー アクセスを管理する</A>」を参照してください。組織の特定のユーザーに対してアドインの利用を制限するには、シェルを使用する必要があります。詳細については、「<A href="https://docs.microsoft.com/ja-jp/exchange/clients-and-mobile-in-exchange-online/add-ins-for-outlook/manage-user-access-to-add-ins">Outlook 用アプリへのユーザー アクセスを管理する</A>」を参照してください。
 
 
 
-その他の管理タスクについては、「[Outlook 用アプリ](add-ins-for-outlook-exchange-2013-help.md)」を参照してください。
+その他の管理タスクについては、「[Outlook 用アプリ](https://docs.microsoft.com/ja-jp/exchange/clients-and-mobile-in-exchange-online/add-ins-for-outlook/add-ins-for-outlook)」を参照してください。
 
 ## 始める前に把握しておくべき情報
 
@@ -31,7 +31,7 @@ EAC またはシェルを使用して、組織の Outlook 用アドインをイ�
 
   - この手順を実行する際には、あらかじめアクセス許可を割り当てる必要があります。必要なアクセス許可の一覧については、以下を参照してください。「[受信者のアクセス許可](recipients-permissions-exchange-2013-help.md)」の "Outlook 用アプリ"。
 
-  - 組織にアドインをインストールして管理するために、管理者のアクセス許可を割り当てることができます。ユーザーが自分で使用するアドインをインストールして管理するために、ユーザーのアクセス許可を割り当てることもできます。詳細については、「[Outlook 用のアドインをインストールおよび管理できる管理者とユーザーを指定する](specify-the-administrators-and-users-who-can-install-and-manage-add-ins-for-outlook-exchange-2013-help.md)」を参照してください。
+  - 組織にアドインをインストールして管理するために、管理者のアクセス許可を割り当てることができます。ユーザーが自分で使用するアドインをインストールして管理するために、ユーザーのアクセス許可を割り当てることもできます。詳細については、「[Outlook 用のアドインをインストールおよび管理できる管理者とユーザーを指定する](specify-the-administrators-and-users-who-can-install-and-manage-https://docs.microsoft.com/ja-jp/exchange/clients-and-mobile-in-exchange-online/add-ins-for-outlook/add-ins-for-outlook)」を参照してください。
 
   - 特定の地域では、メールボックス、または組織での Office ストアへのアクセスはサポートされていません。**Exchange 管理センター**の <strong>組織</strong> \> <strong>アドイン</strong> \> ![\[追加\] アイコン](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "[追加] アイコン") の下のオプションに <strong>Office ストアから追加</strong> が表示されない場合は、URL またはファイルの場所から Outlook 用アドインをインストールできる場合があります。詳細については、サービス プロバイダーにお問い合わせください。
 

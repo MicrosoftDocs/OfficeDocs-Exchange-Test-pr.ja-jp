@@ -33,7 +33,7 @@ _**適用先:** Exchange Online, Exchange Server 2013_
     
     3.  トランスポート エージェントによってスキャンされるメッセージ ヘッダー、メッセージ本文、またはメッセージ添付ファイルの内容が、ポリシー ヒント通知ルールも含まれている DLP ポリシーまたは DLP ルール内で確立された条件を満たす必要があります。つまり、関連付けられたルールによりアクションが実行される原因となることをユーザーが行った場合にのみ、ポリシー ヒントがエンド ユーザーに対して表示されます。
 
-  - ポリシー ヒント設定機能を使用してポリシー ヒント テキストをカスタマイズしない場合は、システムに組み込まれた既定のポリシー ヒント通知テキストが表示されます。既定のテキストの詳細については、「[ポリシー ヒント](technical-overview-of-policy-tips-in-exchange-online-and-exchange-2013.md)」を参照してください。
+  - ポリシー ヒント設定機能を使用してポリシー ヒント テキストをカスタマイズしない場合は、システムに組み込まれた既定のポリシー ヒント通知テキストが表示されます。既定のテキストの詳細については、「[ポリシー ヒント](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/data-loss-prevention/policy-tips)」を参照してください。
 
   - このトピックの手順で使用可能なキーボード ショートカットについては、「[Exchange 管理センターのキーボード ショートカット](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)」を参照してください。
 
@@ -149,7 +149,7 @@ _**適用先:** Exchange Online, Exchange Server 2013_
 
 ## ブロックしない場合は上書きのポリシー ヒントを作成または変更する
 
-メッセージを拒否できる、またはメッセージが送信者の送信トレイから送信されないようにできるポリシー ヒントのオプションは 4 つあります。これらのオプションの詳細については、「[ポリシー ヒント](technical-overview-of-policy-tips-in-exchange-online-and-exchange-2013.md)」を参照してください。
+メッセージを拒否できる、またはメッセージが送信者の送信トレイから送信されないようにできるポリシー ヒントのオプションは 4 つあります。これらのオプションの詳細については、「[ポリシー ヒント](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/data-loss-prevention/policy-tips)」を参照してください。
 
 ## EAC を使用して、ブロックしない場合は上書きのポリシー ヒントを構成する
 
@@ -185,7 +185,7 @@ _**適用先:** Exchange Online, Exchange Server 2013_
 
 ## カスタムのポリシー ヒント通知テキストを作成する
 
-この手順は省略可能ですが、電子メール送信者の電子メール プログラムに表示されるポリシー ヒント通知テキストのカスタマイズに役立ちます。これを行った場合は、通知を表示させるアクションを使用した DLP ポリシー ルールもまた構成しない限り、カスタムのポリシー ヒント通知テキストは表示されません。ポリシー ヒント通知テキストをカスタマイズしない場合は、既定のシステム ポリシー ヒント通知を表示できることに注意してください。既定のテキストの詳細については、「[ポリシー ヒント](technical-overview-of-policy-tips-in-exchange-online-and-exchange-2013.md)」を参照してください。
+この手順は省略可能ですが、電子メール送信者の電子メール プログラムに表示されるポリシー ヒント通知テキストのカスタマイズに役立ちます。これを行った場合は、通知を表示させるアクションを使用した DLP ポリシー ルールもまた構成しない限り、カスタムのポリシー ヒント通知テキストは表示されません。ポリシー ヒント通知テキストをカスタマイズしない場合は、既定のシステム ポリシー ヒント通知を表示できることに注意してください。既定のテキストの詳細については、「[ポリシー ヒント](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/data-loss-prevention/policy-tips)」を参照してください。
 
 ## EAC を使用してカスタムのポリシー ヒント通知テキストを作成および管理する
 
@@ -193,7 +193,7 @@ _**適用先:** Exchange Online, Exchange Server 2013_
 
 2.  <strong>ポリシー ヒントの設定</strong> ![ポリシー ヒントの設定](images/JJ619307.54d1813d-3289-4765-a9a3-a7303a5ab3c7(EXCHG.150).gif "ポリシー ヒントの設定") を選択します。
 
-3.  独自のカスタマイズしたメッセージを使用して新しいポリシー ヒントを追加するには、<strong>追加</strong>![\[追加\] アイコン](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "[追加] アイコン") を選択します。使用可能なアクション選択肢の詳細については、「[ポリシー ヒント](technical-overview-of-policy-tips-in-exchange-online-and-exchange-2013.md)」を参照してください。
+3.  独自のカスタマイズしたメッセージを使用して新しいポリシー ヒントを追加するには、<strong>追加</strong>![\[追加\] アイコン](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "[追加] アイコン") を選択します。使用可能なアクション選択肢の詳細については、「[ポリシー ヒント](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/data-loss-prevention/policy-tips)」を参照してください。
     
     既存のポリシー ヒントを変更するには、ヒントを強調表示して <strong>編集</strong>![編集アイコン](images/Bb124582.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "編集アイコン") を選択します。
     
@@ -233,9 +233,9 @@ DLP コマンドレットの詳細については、「[ポリシーとコンプ
 
 ## 詳細情報
 
-[データ損失防止](technical-overview-of-dlp-data-loss-prevention-in-exchange.md)
+[データ損失防止](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention)
 
-[ポリシー ヒント](technical-overview-of-policy-tips-in-exchange-online-and-exchange-2013.md)
+[ポリシー ヒント](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/data-loss-prevention/policy-tips)
 
 [メール フローやトランスポート ルール](mail-flow-rules-transport-rules-in-exchange-2013-exchange-2013-help.md)Exchange 2013
 

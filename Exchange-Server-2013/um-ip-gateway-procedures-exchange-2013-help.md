@@ -15,19 +15,19 @@ ms.translationtype: HT
 
 _**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-[UM IP ゲートウェイを作成する](create-a-um-ip-gateway-exchange-2013-help.md)
+[UM IP ゲートウェイを作成する](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-ip-gateway)
 
 [UM IP ゲートウェイの管理](manage-a-um-ip-gateway-exchange-2013-help.md)
 
-[UM IP ゲートウェイを有効にする](enable-a-um-ip-gateway-exchange-2013-help.md)
+[UM IP ゲートウェイを有効にする](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/connect-voice-mail-system/enable-um-ip-gateway)
 
-[UM IP ゲートウェイを無効にする](disable-a-um-ip-gateway-exchange-2013-help.md)
+[UM IP ゲートウェイを無効にする](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/connect-voice-mail-system/disable-um-ip-gateway)
 
 [完全修飾ドメイン名の構成](configure-a-fully-qualified-domain-name-exchange-2013-help.md)
 
-[IP アドレスの構成](configure-the-ip-address-exchange-2013-help.md)
+[IP アドレスの構成](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/connect-voice-mail-system/configure-ip-address)
 
 [リスニング ポートの構成](configure-the-listening-port-exchange-2013-help.md)
 
-[UM IP ゲートウェイを削除する](delete-a-um-ip-gateway-exchange-2013-help.md)
+[UM IP ゲートウェイを削除する](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/connect-voice-mail-system/delete-um-ip-gateway)
 

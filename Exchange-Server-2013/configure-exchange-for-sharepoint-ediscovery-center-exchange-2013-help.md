@@ -60,7 +60,7 @@ Exchange 2013 サーバー上でこの手順を実行します。この手順を
 
 ## 手順 3:承認されたユーザーを "Discovery Management/検出の管理" 役割グループに追加する
 
-SharePoint 2013 を使用して電子証拠開示検索を実行する必要があるユーザーを、Exchange 2013 内の "Discovery Management/検出の管理" 役割グループに追加します。詳細については、「[Exchange の電子情報開示のアクセス許可を割り当てる](assign-ediscovery-permissions-in-exchange-exchange-2013-help.md)」を参照してください。
+SharePoint 2013 を使用して電子証拠開示検索を実行する必要があるユーザーを、Exchange 2013 内の "Discovery Management/検出の管理" 役割グループに追加します。詳細については、「[Exchange の電子情報開示のアクセス許可を割り当てる](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/in-place-ediscovery/assign-ediscovery-permissions)」を参照してください。
 
 
 > [!NOTE]

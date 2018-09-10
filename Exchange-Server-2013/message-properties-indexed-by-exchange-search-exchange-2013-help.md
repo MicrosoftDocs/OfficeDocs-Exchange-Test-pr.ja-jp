@@ -503,7 +503,7 @@ Exchange Search は、電子メール メッセージの送信者、受信者、
 
 **インデックス処理されるプロパティのメモ**:
 
-  - Outlook Web App などの検索クライアントによる AQS クエリでは、**クエリ可能なプロパティ**を `property:value` ペアの形式で使用できます (例: `from:bsuneja@cotoso.com`)。前の表にリストされたクエリ可能なプロパティのサブセットは、インプレース電子情報開示の検索クエリにも使用できます。これらのプロパティの一覧については、「[インプレース電子情報開示のためのメッセージ プロパティと検索演算子](message-properties-and-search-operators-for-in-place-ediscovery-exchange-2013-help.md)」を参照してください。
+  - Outlook Web App などの検索クライアントによる AQS クエリでは、**クエリ可能なプロパティ**を `property:value` ペアの形式で使用できます (例: `from:bsuneja@cotoso.com`)。前の表にリストされたクエリ可能なプロパティのサブセットは、インプレース電子情報開示の検索クエリにも使用できます。これらのプロパティの一覧については、「[インプレース電子情報開示のためのメッセージ プロパティと検索演算子](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/in-place-ediscovery/message-properties-and-search-operators)」を参照してください。
 
   - **検索可能なプロパティ**は、`property:value` ペアでは指定できないプロパティですが、これが検索可能なプロパティに含まれていれば、キーワード検索によって値が返されます。たとえば、`body:Contoso` を使用してメッセージ本文内の文字列 `contoso` のみを検索することはできません。ただし、この文字列を検索すると、検索可能なプロパティに含まれているプロパティを持つすべての項目が返されます。
 

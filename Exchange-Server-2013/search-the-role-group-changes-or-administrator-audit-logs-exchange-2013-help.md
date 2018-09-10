@@ -21,7 +21,7 @@ _**適用先:** Exchange Online, Exchange Server 2013_
 
 
 > [!TIP]
-> Exchange Online では、EAC を使用して管理者監査ログのエントリを表示できます。詳しくは、「<A href="view-the-administrator-audit-log-exchange-2013-help.md">管理者監査ログを表示する</A>」をご覧ください。
+> Exchange Online では、EAC を使用して管理者監査ログのエントリを表示できます。詳しくは、「<A href="https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/exchange-auditing-reports/view-administrator-audit-log">管理者監査ログを表示する</A>」をご覧ください。
 
 
 

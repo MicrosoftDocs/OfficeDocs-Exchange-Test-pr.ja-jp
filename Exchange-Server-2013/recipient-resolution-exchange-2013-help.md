@@ -104,7 +104,7 @@ Exchange での SMTP 電子メール アドレスの最大長は 571 文字で�
 </tr>
 <tr class="even">
 <td><p>DynamicDistributionGroup</p></td>
-<td><p>Active Directory クラス <strong>msExchDynamicDistributionList</strong> を持つオブジェクトです。詳細については、「<a href="manage-dynamic-distribution-groups-exchange-2013-help.md">動的配布グループの管理</a>」を参照してください。</p></td>
+<td><p>Active Directory クラス <strong>msExchDynamicDistributionList</strong> を持つオブジェクトです。詳細については、「<a href="https://docs.microsoft.com/ja-jp/exchange/recipients-in-exchange-online/manage-dynamic-distribution-groups/manage-dynamic-distribution-groups">動的配布グループの管理</a>」を参照してください。</p></td>
 </tr>
 <tr class="odd">
 <td><p>Mailbox</p></td>
@@ -112,11 +112,11 @@ Exchange での SMTP 電子メール アドレスの最大長は 571 文字で�
 </tr>
 <tr class="even">
 <td><p>MailUser</p></td>
-<td><p>定義済みの <em>Database</em> パラメーターがない電子メール アドレスを持つユーザー オブジェクトです。詳細については、「<a href="manage-mail-users-exchange-2013-help.md">メール ユーザーの管理</a>」を参照してください。</p></td>
+<td><p>定義済みの <em>Database</em> パラメーターがない電子メール アドレスを持つユーザー オブジェクトです。詳細については、「<a href="https://docs.microsoft.com/ja-jp/exchange/recipients-in-exchange-online/manage-mail-users">メール ユーザーの管理</a>」を参照してください。</p></td>
 </tr>
 <tr class="odd">
 <td><p>MailContact</p></td>
-<td><p>電子メール アドレスを持つ連絡先オブジェクトです。通常、メール連絡先は Exchange 組織外の受信者に使用されます。また、メール連絡先はフォレスト間 Exchange 環境でも使用されます。詳細については、「<a href="manage-mail-contacts-exchange-2013-help.md">メール連絡先の管理</a>」を参照してください。</p></td>
+<td><p>電子メール アドレスを持つ連絡先オブジェクトです。通常、メール連絡先は Exchange 組織外の受信者に使用されます。また、メール連絡先はフォレスト間 Exchange 環境でも使用されます。詳細については、「<a href="https://docs.microsoft.com/ja-jp/exchange/recipients-in-exchange-online/manage-mail-contacts">メール連絡先の管理</a>」を参照してください。</p></td>
 </tr>
 <tr class="even">
 <td><p>MailPublicFolder</p></td>

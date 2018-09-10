@@ -17,7 +17,7 @@ _**適用先:** Exchange Online, Exchange Server 2013_
 
 シェルを使用して、オフライン アドレス帳 (OAB) にアドレス一覧を追加したり、またはオフライン アドレス帳 (OAB) からアドレス一覧を削除したりすることができます。既定では、グローバル アドレス一覧 (GAL) を含む、"既定のオフライン アドレス帳" という名前の OAB が用意されています。OAB は、その OAB に含まれるアドレス一覧に基づいて生成されます。ユーザーがダウンロードできるカスタムの OAB を作成するために、OAB にアドレス一覧を追加したり、OAB からアドレス一覧を削除したりすることができます。
 
-OAB に関連するその他の管理タスクについては、「[オフライン アドレス帳の手順](offline-address-book-procedures-exchange-2013-help.md)」を参照してください。
+OAB に関連するその他の管理タスクについては、「[オフライン アドレス帳の手順](https://docs.microsoft.com/ja-jp/exchange/address-books/offline-address-books/offline-address-book-procedures)」を参照してください。
 
 ## 始める前に把握しておくべき情報
 
@@ -27,7 +27,7 @@ OAB に関連するその他の管理タスクについては、「[オフライ
 
   - UNRESOLVED\_TOKENBLOCK\_VAL(GENL\_AddressListRole\_EXOnOP)
 
-  - アドレス一覧に対する変更は、そのアドレス一覧が含まれる OAB が生成されるまでは、クライアントのダウンロード内容には反映されません。詳細については、「[オフライン アドレス帳の更新](update-an-offline-address-book-exchange-2013-help.md)」を参照してください。
+  - アドレス一覧に対する変更は、そのアドレス一覧が含まれる OAB が生成されるまでは、クライアントのダウンロード内容には反映されません。詳細については、「[オフライン アドレス帳の更新](https://docs.microsoft.com/ja-jp/exchange/address-books/offline-address-books/update-offline-address-book)」を参照してください。
 
   - Exchange 管理センター (EAC) を使用してこの手順を実行することはできません。シェルを使用する必要があります。
 

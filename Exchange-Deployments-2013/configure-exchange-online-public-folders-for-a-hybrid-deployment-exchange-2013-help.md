@@ -19,11 +19,11 @@ _<strong>適用先:</strong>Exchange Server 2013_
 
 ハイブリッド展開では、ユーザーは Exchange Online と Exchange オンプレミスのいずれか一方または両方に配置され、パブリック フォルダーは Exchange Online か Exchange オンプレミスのいずれかに配置されます。オンライン ユーザーが、Exchange Server 2013 のオンプレミス環境のパブリック フォルダーにアクセスすることが必要な場合があります。同様に、Exchange 2013 ユーザーが、Office 365 または Exchange Online のパブリック フォルダーにアクセスすることが必要な場合もあります。
 
-この記事では、お使いの Exchange 2013 オンプレミス環境のユーザーが、Exchange Online/Office 365 のパブリック フォルダーにアクセスできるようにする方法について説明します。Exchange Online/Office 365 のユーザーがオンプレミス Exchange 2013 のパブリック フォルダーにアクセスできるようにする方法については、「[ハイブリッド展開用に Exchange 2013 パブリック フォルダーを構成する](configure-exchange-2013-public-folders-for-a-hybrid-deployment-exchange-2013-help.md)」を参照してください。
+この記事では、お使いの Exchange 2013 オンプレミス環境のユーザーが、Exchange Online/Office 365 のパブリック フォルダーにアクセスできるようにする方法について説明します。Exchange Online/Office 365 のユーザーがオンプレミス Exchange 2013 のパブリック フォルダーにアクセスできるようにする方法については、「[ハイブリッド展開用に Exchange 2013 パブリック フォルダーを構成する](https://docs.microsoft.com/ja-jp/exchange/collaboration-exo/public-folders/set-up-modern-hybrid-public-folders)」を参照してください。
 
 
 > [!NOTE]
-> Exchange 2010 または Exchange 2007 のパブリック フォルダーがある場合は、「<A href="configure-legacy-on-premises-public-folders-for-a-hybrid-deployment-exchange-2013-help.md">ハイブリッド展開用に従来の社内パブリック フォルダーを構成する</A>」をご覧ください。
+> Exchange 2010 または Exchange 2007 のパブリック フォルダーがある場合は、「<A href="https://docs.microsoft.com/ja-jp/exchange/collaboration-exo/public-folders/set-up-legacy-hybrid-public-folders">ハイブリッド展開用に従来の社内パブリック フォルダーを構成する</A>」をご覧ください。
 
 
 

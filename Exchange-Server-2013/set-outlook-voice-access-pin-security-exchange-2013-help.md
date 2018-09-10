@@ -115,7 +115,7 @@ Outlook Voice Access PIN のプランを立てるとき、組織にとって適�
 
 
 
-Outlook Voice Access PIN の要件の設定後、UM メールボックス ポリシーを作成および構成して組織の PIN 要件を適用する必要があります。UM メールボックス ポリシーの作成方法については、「[UM メールボックス ポリシーの作成](create-a-um-mailbox-policy-exchange-2013-help.md)」を参照してください。UM メールボックス ポリシーを管理する方法の詳細については、「[UM メールボックス ポリシーの管理](manage-a-um-mailbox-policy-exchange-2013-help.md)」を参照してください。
+Outlook Voice Access PIN の要件の設定後、UM メールボックス ポリシーを作成および構成して組織の PIN 要件を適用する必要があります。UM メールボックス ポリシーの作成方法については、「[UM メールボックス ポリシーの作成](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-voice-mail/create-um-mailbox-policy)」を参照してください。UM メールボックス ポリシーを管理する方法の詳細については、「[UM メールボックス ポリシーの管理](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-voice-mail/manage-um-mailbox-policy)」を参照してください。
 
 
 > [!NOTE]
@@ -123,7 +123,7 @@ Outlook Voice Access PIN の要件の設定後、UM メールボックス ポリ
 
 
 
-Outlook Voice Access ユーザーが PIN を忘れたり、メールボックスへのボイス メール アクセスからロックアウトされる場合があります。このような場合、UM が有効なユーザーの PIN を管理者がリセットしなければならないことがあります。詳細については、「[ボイス メール PIN のリセット](reset-a-voice-mail-pin-exchange-2013-help.md)」を参照してください。
+Outlook Voice Access ユーザーが PIN を忘れたり、メールボックスへのボイス メール アクセスからロックアウトされる場合があります。このような場合、UM が有効なユーザーの PIN を管理者がリセットしなければならないことがあります。詳細については、「[ボイス メール PIN のリセット](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-outlook-voice-access-pin-security/reset-a-voice-mail-pin)」を参照してください。
 
-  ユニファイド メッセージングが有効になっているユーザーの PIN 情報を取得できます。ユーザーのメールボックスに暗号化された形式で格納されている PIN データを使って計算された情報が返されます。このタスクでは、ユーザーの PIN 情報を表示したり、ユーザーがメールボックスからロックアウトされているかどうかを確認することができます。詳細については、「[ボイス メール PIN 情報を取得する](retrieve-voice-mail-pin-information-exchange-2013-help.md)」を参照してください。
+  ユニファイド メッセージングが有効になっているユーザーの PIN 情報を取得できます。ユーザーのメールボックスに暗号化された形式で格納されている PIN データを使って計算された情報が返されます。このタスクでは、ユーザーの PIN 情報を表示したり、ユーザーがメールボックスからロックアウトされているかどうかを確認することができます。詳細については、「[ボイス メール PIN 情報を取得する](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-outlook-voice-access-pin-security/retrieve-voice-mail-pin-information)」を参照してください。
 

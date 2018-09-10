@@ -277,7 +277,7 @@ Exchange は、次の種類の配布グループをサポートしています�
 
   - 受信者コンテナー
 
-また、ここに示したプロパティ以外の受信者のプロパティに基づいて条件を指定することもできます。このためには、シェルを使用して、動的配布グループのカスタム クエリを作成する必要があります。カスタムの受信者フィルターを使用した動的配布グループのフィルターおよび条件の設定は、シェルでしか管理できないので注意してください。カスタム クエリを使用して動的配布グループを作成する方法の例については、「[動的配布グループの管理](manage-dynamic-distribution-groups-exchange-2013-help.md)」を参照してください。
+また、ここに示したプロパティ以外の受信者のプロパティに基づいて条件を指定することもできます。このためには、シェルを使用して、動的配布グループのカスタム クエリを作成する必要があります。カスタムの受信者フィルターを使用した動的配布グループのフィルターおよび条件の設定は、シェルでしか管理できないので注意してください。カスタム クエリを使用して動的配布グループを作成する方法の例については、「[動的配布グループの管理](https://docs.microsoft.com/ja-jp/exchange/recipients-in-exchange-online/manage-dynamic-distribution-groups/manage-dynamic-distribution-groups)」を参照してください。
 
 ## メール連絡先
 
@@ -341,7 +341,7 @@ Microsoft Exchange 受信者は、メールボックス、メール ユーザー
 <td><p>Exchange 管理センターまたは Exchange 管理シェルを使用してユーザー メールボックスを作成する方法を説明します。</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="manage-user-mailboxes-exchange-2013-help.md">ユーザー メールボックスの管理</a></p></td>
+<td><p><a href="https://docs.microsoft.com/ja-jp/exchange/recipients-in-exchange-online/manage-user-mailboxes/manage-user-mailboxes">ユーザー メールボックスの管理</a></p></td>
 <td><p>ユーザー メールボックスの作成方法、メールボックスのプロパティの変更方法、複数のメールボックスの選択したプロパティの一括編集方法を説明します。</p></td>
 </tr>
 <tr class="odd">
@@ -349,7 +349,7 @@ Microsoft Exchange 受信者は、メールボックス、メール ユーザー
 <td><p>リンクされたメールボックスの要件、メールボックスの作成とマスター アカウントへのリンク方法、リンクされたメールボックスのプロパティの変更方法を説明します。</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="create-and-manage-distribution-groups-exchange-2013-help.md">配布グループの作成と管理</a></p></td>
+<td><p><a href="https://docs.microsoft.com/ja-jp/exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups">配布グループの作成と管理</a></p></td>
 <td><p>配布グループの作成と管理の方法、および組織のグループの名前付けポリシーの作成方法を説明します。</p></td>
 </tr>
 <tr class="odd">
@@ -357,19 +357,19 @@ Microsoft Exchange 受信者は、メールボックス、メール ユーザー
 <td><p>メールが有効なセキュリティ グループの作成と管理の方法を説明します。</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="manage-dynamic-distribution-groups-exchange-2013-help.md">動的配布グループの管理</a></p></td>
+<td><p><a href="https://docs.microsoft.com/ja-jp/exchange/recipients-in-exchange-online/manage-dynamic-distribution-groups/manage-dynamic-distribution-groups">動的配布グループの管理</a></p></td>
 <td><p>動的配布グループを作成し、動的配布グループのプロパティを管理する方法 (グループのメンバーシップを決定するためのカスタム属性およびその他のプロパティの使用方法など) を説明します。</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="manage-mail-contacts-exchange-2013-help.md">メール連絡先の管理</a></p></td>
+<td><p><a href="https://docs.microsoft.com/ja-jp/exchange/recipients-in-exchange-online/manage-mail-contacts">メール連絡先の管理</a></p></td>
 <td><p>メール連絡先の作成方法と管理方法を説明します。</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="manage-mail-users-exchange-2013-help.md">メール ユーザーの管理</a></p></td>
+<td><p><a href="https://docs.microsoft.com/ja-jp/exchange/recipients-in-exchange-online/manage-mail-users">メール ユーザーの管理</a></p></td>
 <td><p>メール ユーザーの作成方法と管理方法を説明します。</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="create-and-manage-room-mailboxes-exchange-2013-help.md">会議室メールボックスの作成と管理</a></p></td>
+<td><p><a href="https://docs.microsoft.com/ja-jp/exchange/recipients-in-exchange-online/manage-room-mailboxes">会議室メールボックスの作成と管理</a></p></td>
 <td><p>会議室メールボックスの作成方法、および定期的な会議の有効化や予約およびスケジュール オプションの構成などの会議室メールボックスのプロパティの管理方法を説明します。</p></td>
 </tr>
 <tr class="even">

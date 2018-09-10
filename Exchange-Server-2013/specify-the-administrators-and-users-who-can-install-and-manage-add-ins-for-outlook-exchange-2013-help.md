@@ -39,7 +39,7 @@ _**トピックの最終更新日:** 2017-02-08_
 
 これらの役割の詳細については、 ["Org Marketplace Apps/組織マーケットプレイス アプリ" 役割](org-marketplace-apps-role-exchange-2013-help.md)、 ["Org Custom Apps/組織のカスタム アプリ" 役割](org-custom-apps-role-exchange-2013-help.md)、 ["My Marketplace Apps/マイ マーケットプレイス アプリ" 役割](my-marketplace-apps-role-exchange-2013-help.md)、 ["My Custom Apps/自分のカスタム アプリ" 役割](my-custom-apps-role-exchange-2013-help.md)、および[自分の ReadWriteMailbox アプリの役割](my-readwritemailbox-apps-role-exchange-2013-help.md)を参照してください。
 
-アドインの詳細については、「[Outlook 用アプリ](add-ins-for-outlook-exchange-2013-help.md)」を参照してください。
+アドインの詳細については、「[Outlook 用アプリ](https://docs.microsoft.com/ja-jp/exchange/clients-and-mobile-in-exchange-online/add-ins-for-outlook/add-ins-for-outlook)」を参照してください。
 
 ## 始める前に把握しておくべき情報
 

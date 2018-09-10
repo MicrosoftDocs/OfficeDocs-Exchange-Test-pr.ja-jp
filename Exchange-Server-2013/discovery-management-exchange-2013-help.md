@@ -19,7 +19,7 @@ _**トピックの最終更新日:** 2015-03-09_
 
 Discovery Management 管理役割グループは、Microsoft Exchange Server 2013 の役割ベースのアクセス制御 (RBAC) というアクセス許可モデルを構成するいくつかの組み込みの役割グループの 1 つです。役割グループには、指定された一連のタスクの実行に必要なアクセス許可を含む 1 つ以上の管理役割が割り当てられます。役割グループのメンバーには、役割グループに割り当てられた管理役割に対するアクセス権が付与されます。役割グループの詳細については、「[管理役割グループについて](understanding-management-role-groups-exchange-2013-help.md)」を参照してください。
 
-Discovery Management 役割グループのメンバーである管理者またはユーザーは、特定の条件を満たすデータについて、Exchange 組織内のメールボックスを検索でき、メールボックスに訴訟ホールドを構成することもできます。詳細については、「[インプレース電子情報開示 (eDiscovery)](in-place-ediscovery-exchange-2013-help.md)」を参照してください。
+Discovery Management 役割グループのメンバーである管理者またはユーザーは、特定の条件を満たすデータについて、Exchange 組織内のメールボックスを検索でき、メールボックスに訴訟ホールドを構成することもできます。詳細については、「[インプレース電子情報開示 (eDiscovery)](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery)」を参照してください。
 
 
 > [!IMPORTANT]

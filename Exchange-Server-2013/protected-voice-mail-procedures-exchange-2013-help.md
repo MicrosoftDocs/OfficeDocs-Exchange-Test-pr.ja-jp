@@ -15,11 +15,11 @@ ms.translationtype: HT
 
 _**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-[認証されている発信者からの保護されたボイス メールを構成する](configure-protected-voice-mail-from-authenticated-callers-exchange-2013-help.md)
+[認証されている発信者からの保護されたボイス メールを構成する](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/configure-protected-voice-mail-from-authenticated-callers)
 
 [認証されていない発信者からの保護されたボイス メールを構成する](configure-protected-voice-mail-from-unauthenticated-callers-exchange-2013-help.md)
 
-[保護された音声メッセージのマルチメディア再生を有効または無効にする](enable-or-disable-multimedia-playback-of-protected-voice-messages-exchange-2013-help.md)
+[保護された音声メッセージのマルチメディア再生を有効または無効にする](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/enable-or-disable-multimedia-playback)
 
-[Windows Rights Management をサポートしていない電子メール クライアントに表示するテキストを指定する](specify-the-text-to-display-for-email-clients-that-don-t-support-windows-rights-management-exchange-2013-help.md)
+[Windows Rights Management をサポートしていない電子メール クライアントに表示するテキストを指定する](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/specify-text-to-display-for-clients-that-don-t-support-windows-rights-management)
 

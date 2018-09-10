@@ -206,9 +206,9 @@ Microsoft Exchange Server 2013 および Exchange Online では、特定の規�
 
 ## 詳細情報
 
-[データ損失防止](technical-overview-of-dlp-data-loss-prevention-in-exchange.md)
+[データ損失防止](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention)
 
-[テンプレートからの DLP ポリシーの作成](how-to-new-dlp-data-loss-prevention-policy-template.md)
+[テンプレートからの DLP ポリシーの作成](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/data-loss-prevention/create-dlp-policy-from-template)
 
 [Exchange での機密情報の種類の検索基準：](what-the-sensitive-information-types-in-exchange-look-for-exchange-online-help.md)
 

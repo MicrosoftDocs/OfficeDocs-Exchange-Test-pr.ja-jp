@@ -21,7 +21,7 @@ _**トピックの最終更新日:** 2012-12-05_
 
 オフライン アドレス帳 (OAB) はダウンロードしたアドレス帳のコピーであり、Outlook ユーザーはサーバーに接続していないときでもアドレス帳の情報にアクセスできます。Set-MailboxServer コマンドレットで *OABGeneratorWorkCycle* パラメーターと *OABGeneratorWorkCycleCheckpoint* パラメーターを使用して、OAB を生成する頻度を構成できます。
 
-OAB に関連するその他の管理タスクについては、「[オフライン アドレス帳の手順](offline-address-book-procedures-exchange-2013-help.md)」を参照してください。
+OAB に関連するその他の管理タスクについては、「[オフライン アドレス帳の手順](https://docs.microsoft.com/ja-jp/exchange/address-books/offline-address-books/offline-address-book-procedures)」を参照してください。
 
 ## 始める前に把握しておくべき情報
 

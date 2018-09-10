@@ -173,7 +173,7 @@ Exchange 2013 組織内で送受信されるメッセージはすべて、ルー
 <td><p>トランスポート ログは、トランスポート パイプラインを通過するメッセージの処理内容を記録します。</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="manage-message-approval-exchange-2013-help.md">メッセージ承認の管理</a></p></td>
+<td><p><a href="https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/mail-flow-rules/manage-message-approval">メッセージ承認の管理</a></p></td>
 <td><p>モデレート トランスポートには、特定の受信者に送信されるメッセージに対する承認が必要です。</p></td>
 </tr>
 <tr class="even">

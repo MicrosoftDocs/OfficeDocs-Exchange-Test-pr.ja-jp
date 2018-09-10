@@ -19,7 +19,7 @@ _**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 また、既存の祝日のスケジュール内に別の祝日のスケジュールを作成することもできます。祝日のスケジュールを複数作成する場合、ユニファイド メッセージングではスケジュールされた休業時間を重ねることができます。たとえば、工事のために組織が休業する期間の 12 月 15 ～ 31 日に祝日のスケジュールを定義し、それとは別に 12 月 24 ～ 26 日に祝日のスケジュールを定義できます。発信者が 12 月 15 ～ 23 日および 12 月 27 ～ 31 日の期間に自動応答に接続された場合は、この特定のスケジュールに対して指定した祝日の案内応答が再生されます。たとえば、"工事のために現在休業中です" と再生されます。発信者が 12 月 24 ～ 26 日の期間に自動応答に接続された場合は、別の祝日の案内応答、たとえば "従業員が祝日を家族と共に過ごせるように現在休業中です" と再生されます。
 
-UM 自動応答に関連する追加の管理タスクについては、「[UM 自動応答手順](um-auto-attendant-procedures-exchange-2013-help.md)」を参照してください。
+UM 自動応答に関連する追加の管理タスクについては、「[UM 自動応答手順](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/um-auto-attendant-procedures)」を参照してください。
 
 ## 始める前に把握しておくべき情報
 
@@ -27,7 +27,7 @@ UM 自動応答に関連する追加の管理タスクについては、「[UM �
 
   - この手順を実行する際には、あらかじめアクセス許可を割り当てる必要があります。必要なアクセス許可の一覧については、以下を参照してください。「[ユニファイド メッセージングのアクセス許可](unified-messaging-permissions-exchange-2013-help.md)」の「UM 自動応答」。
 
-  - これらの手順を実行する前に、UM ダイヤル プランが作成されていることを確認してください。詳細な手順については、「[UM ダイヤル プランを作成する](create-a-um-dial-plan-exchange-2013-help.md)」を参照してください。
+  - これらの手順を実行する前に、UM ダイヤル プランが作成されていることを確認してください。詳細な手順については、「[UM ダイヤル プランを作成する](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-dial-plan)」を参照してください。
 
   - これらの手順を実行する前に、UM 自動応答が作成されていることを確認してください。詳細な手順については、「[UM 自動応答を作成する](create-a-um-auto-attendant-exchange-2013-help.md)」を参照してください。
 

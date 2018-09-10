@@ -25,7 +25,7 @@ Exchange 管理センター または Exchange 管理シェル を使用して�
 
 メールボックスへの電子メール クライアント アクセスの管理に関連する追加の管理タスクについては、次のトピックを参照してください。
 
-  - [メールボックスに対して Outlook Web App を有効または無効にする](enable-or-disable-outlook-web-app-for-a-mailbox-exchange-2013-help.md)
+  - [メールボックスに対して Outlook Web App を有効または無効にする](https://docs.microsoft.com/ja-jp/exchange/recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-outlook-web-app)
 
   - [ユーザーの IMAP4 アクセスを有効または無効にする](enable-or-disable-imap4-access-for-a-user-exchange-2013-help.md)
 

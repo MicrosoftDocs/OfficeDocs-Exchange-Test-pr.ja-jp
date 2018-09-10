@@ -19,7 +19,7 @@ _**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 ユニファイド メッセージング (UM) 自動応答を作成した後で、さまざまな設定を表示または構成できます。たとえば、自動応答に関連付けられる内線番号を追加、削除、および編集することができます。また、自動応答の自動音声認識 (ASR) を有効または無効にし、勤務時間内用および勤務時間外用に使用する案内応答を変更することもできます。
 
-UM 自動応答に関連する追加の管理タスクについては、「[UM 自動応答手順](um-auto-attendant-procedures-exchange-2013-help.md)」を参照してください。
+UM 自動応答に関連する追加の管理タスクについては、「[UM 自動応答手順](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/um-auto-attendant-procedures)」を参照してください。
 
 ## 始める前に把握しておくべき情報
 
@@ -27,7 +27,7 @@ UM 自動応答に関連する追加の管理タスクについては、「[UM �
 
   - この手順を実行する際には、あらかじめアクセス許可を割り当てる必要があります。必要なアクセス許可の一覧については、以下を参照してください。「[ユニファイド メッセージングのアクセス許可](unified-messaging-permissions-exchange-2013-help.md)」の「UM 自動応答」。
 
-  - これらの手順を実行する前に、UM ダイヤル プランが作成されていることを確認してください。詳細な手順については、「[UM ダイヤル プランを作成する](create-a-um-dial-plan-exchange-2013-help.md)」を参照してください。
+  - これらの手順を実行する前に、UM ダイヤル プランが作成されていることを確認してください。詳細な手順については、「[UM ダイヤル プランを作成する](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-dial-plan)」を参照してください。
 
   - これらの手順を実行する前に、UM 自動応答が作成されていることを確認してください。詳細な手順については、「[UM 自動応答を作成する](create-a-um-auto-attendant-exchange-2013-help.md)」を参照してください。
 

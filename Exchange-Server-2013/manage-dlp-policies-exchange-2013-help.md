@@ -125,7 +125,7 @@ EAC を使用して DLP ポリシーを完全に削除できます。ポリシ�
 
 ## 詳細情報
 
-[データ損失防止](technical-overview-of-dlp-data-loss-prevention-in-exchange.md)
+[データ損失防止](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention)
 
-[ポリシー ヒント](technical-overview-of-policy-tips-in-exchange-online-and-exchange-2013.md)
+[ポリシー ヒント](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/data-loss-prevention/policy-tips)
 

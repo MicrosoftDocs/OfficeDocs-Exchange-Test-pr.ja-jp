@@ -19,7 +19,7 @@ _**トピックの最終更新日:** 2012-11-16_
 
 Microsoft Exchange Server 2013 では、Exchange Search が IRM 保護メッセージをインデックス処理できるように Information Rights Management (IRM) を構成できます。
 
-"Discovery Management/検出の管理" 役割グループのメンバーが [インプレース電子情報開示 (eDiscovery)](in-place-ediscovery-exchange-2013-help.md) 検索を実行すると、IRM 保護メッセージが検索結果に返され、検索で指定された探索メールボックスにコピーされます。さらに、"Discovery Management/検出の管理" 役割グループのメンバーは Outlook Web App を使用して、探索検索の結果として探索メールボックスにコピーされた IRM 保護メッセージにアクセスできます。
+"Discovery Management/検出の管理" 役割グループのメンバーが [インプレース電子情報開示 (eDiscovery)](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery) 検索を実行すると、IRM 保護メッセージが検索結果に返され、検索で指定された探索メールボックスにコピーされます。さらに、"Discovery Management/検出の管理" 役割グループのメンバーは Outlook Web App を使用して、探索検索の結果として探索メールボックスにコピーされた IRM 保護メッセージにアクセスできます。
 
 
 > [!NOTE]

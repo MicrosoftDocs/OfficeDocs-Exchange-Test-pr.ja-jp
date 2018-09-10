@@ -27,7 +27,7 @@ Microsoft Office Communications Server 2007 R2 または Microsoft Lync Server �
 
   - [VoIP ゲートウェイ、IP PBX、またはセッション ボーダー コント ローラーを UM に接続する](connect-a-voip-gateway-ip-pbx-or-session-border-controller-to-um-exchange-2013-help.md)   VoIP ゲートウェイまたは IP PBX を UM に接続する方法について説明します。
 
-  - [Exchange 2013 のテレフォニー アドバイザー](telephony-advisor-for-exchange-2013-exchange-2013-help.md)   サポートされる VoIP ゲートウェイ、IP PBX、および PBX について説明します。
+  - [Exchange 2013 のテレフォニー アドバイザー](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/telephony-advisor-for-exchange-2013)   サポートされる VoIP ゲートウェイ、IP PBX、および PBX について説明します。
 
-  - [サポートされる VoIP ゲートウェイ、IP Pbx、および PBX の構成に関する注意事項](configuration-notes-for-supported-voip-gateways-ip-pbxs-and-pbxs-exchange-2013-help.md)   VoIP ゲートウェイ、IP PBX、および PBX を設定する方法について説明します。
+  - [サポートされる VoIP ゲートウェイ、IP Pbx、および PBX の構成に関する注意事項](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/configuration-notes-for-voip-gateways)   VoIP ゲートウェイ、IP PBX、および PBX を設定する方法について説明します。
 

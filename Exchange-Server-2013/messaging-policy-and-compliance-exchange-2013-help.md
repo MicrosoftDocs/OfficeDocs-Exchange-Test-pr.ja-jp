@@ -51,7 +51,7 @@ _**トピックの最終更新日:** 2015-03-09_
 <li><p>すべてのメッセージを同じ期間保持するべきか</p></li>
 </ul>
 <p>Exchange 2013 には、組織の電子メール ライフサイクル ポリシーを実装することができる MRM 機能が含まれています。MRM を使用してすべてのメッセージに一律の保持設定を適用したり、カスタム保持ポリシーを使用して基準となる保持設定をメールボックスに適用したり、オプションとしてユーザーがメッセージを分類し、特定の期間保存できるようにしたりすることが可能です。</p></td>
-<td><p><a href="messaging-records-management-exchange-2013-help.md">メッセージング レコード管理</a></p></td>
+<td><p><a href="https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/messaging-records-management/messaging-records-management">メッセージング レコード管理</a></p></td>
 </tr>
 <tr class="even">
 <td><p>インプレース アーカイブ</p></td>
@@ -61,12 +61,12 @@ _**トピックの最終更新日:** 2015-03-09_
 <tr class="odd">
 <td><p>インプレース保持</p></td>
 <td><p>訴訟となる可能性がある程度見込まれる場合、組織では、訴訟に関連する電子メールを含めた電子的に格納された情報 (ESI) を保持する必要があります。インプレース保持を使用すると、クエリ パラメーターに一致するメッセージを検索して保存できます。メッセージは、削除、変更、または改ざんされないように保護され、無期限または指定した期間、保存されます。</p></td>
-<td><p><a href="in-place-hold-and-litigation-hold-exchange-2013-help.md">インプレース保持と訴訟ホールド</a></p></td>
+<td><p><a href="https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/in-place-and-litigation-holds">インプレース保持と訴訟ホールド</a></p></td>
 </tr>
 <tr class="even">
 <td><p>インプレース電子情報開示 (eDiscovery)</p></td>
 <td><p>インプレース電子情報開示を使用すると、Exchange の組織全体のメールボックスのデータ検索、検索結果のプレビュー、検索結果の探索メールボックスへのコピーができます。</p></td>
-<td><p><a href="in-place-ediscovery-exchange-2013-help.md">インプレース電子情報開示 (eDiscovery)</a></p></td>
+<td><p><a href="https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery">インプレース電子情報開示 (eDiscovery)</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>ジャーナル</p></td>
@@ -81,7 +81,7 @@ _**トピックの最終更新日:** 2015-03-09_
 <tr class="odd">
 <td><p>データ損失防止 (DLP)</p></td>
 <td><p>DLP 機能では機密データを保護し、ポリシーおよび規制についてユーザーに通知できます。ユーザーが誤って承認されていない連絡先に機密情報を送信してしまわないように防止することもできます。DLP ポリシーを構成する際、関連付けられたファイルの種類を数多く含むメッセージング システムの内容を分析することにより、機密データを識別して保護することができます。Exchange 2013 で用意されている DLP ポリシー テンプレートは、PII やクレジットカード業界のデータ セキュリティ基準 (PCI) などの規制基準に基づいています。DLP は、組織にとって重要なその他のポリシーをサポートするように拡張できます。さらに、新しいポリシー ヒント機能により、機密データが送信される前にポリシー違反についてユーザーに通知することが可能です。</p></td>
-<td><p><a href="technical-overview-of-dlp-data-loss-prevention-in-exchange.md">データ損失防止</a></p></td>
+<td><p><a href="https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention">データ損失防止</a></p></td>
 </tr>
 <tr class="even">
 <td><p>Information Rights Management (IRM)</p></td>
@@ -97,7 +97,7 @@ _**トピックの最終更新日:** 2015-03-09_
 <td><p>メールボックスの監査ログの出力</p></td>
 <td><p>メールボックスには機密でビジネスへの影響が大きい (HBI) 情報、および PII が含まれている可能性があり、組織内のメールボックスにログオンしたユーザー、および行った操作を追跡することが重要です。メールボックスの所有者 (代理ユーザーと呼ばれます) 以外のユーザーによるメールボックスへのアクセスを追跡することが特に重要です。メールボックス監査ログを使用すると、メールボックスの所有者、代理人 (フル メールボックス アクセスのアクセス許可を持つ管理者を含む)、および管理者によるメールボックスへのアクセスをログに記録できます。</p></td>
 <td><p><a href="mailbox-audit-logging-exchange-2013-help.md">メールボックスの監査ログの出力</a></p>
-<p><a href="exchange-auditing-reports-exchange-2013-help.md">Exchange 監査レポート</a></p></td>
+<p><a href="https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/exchange-auditing-reports/exchange-auditing-reports">Exchange 監査レポート</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>管理者監査ログ</p></td>

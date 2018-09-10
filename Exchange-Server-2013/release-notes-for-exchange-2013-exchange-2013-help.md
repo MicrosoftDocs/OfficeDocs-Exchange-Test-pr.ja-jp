@@ -107,7 +107,7 @@ Exchange 2013 のインストール方法の詳細については、「[計画�
     
     Exchange 2013 CU6 以降、外部の送信者がメールが有効なパブリック フォルダーにメールを送信する場合、<strong>匿名</strong> ユーザーに <strong>アイテムの作成</strong> 以上のアクセス許可が付与されている必要があります。メールが有効なパブリック フォルダーをセットアップしていて、このアクセス許可の付与を行っていない場合、外部のユーザーは配信失敗の通知を受け取り、メッセージはメールが有効なパブリック フォルダーに配信されません。
     
-    匿名ユーザーのアクセス許可を設定するには、シェルや Outlook を使用できます。匿名ユーザーにアクセス許可を設定する方法について詳しくは、「[パブリック フォルダーのメールの有効化またはメールの無効化](mail-enable-or-mail-disable-a-public-folder-exchange-2013-help.md)」を参照してください。
+    匿名ユーザーのアクセス許可を設定するには、シェルや Outlook を使用できます。匿名ユーザーにアクセス許可を設定する方法について詳しくは、「[パブリック フォルダーのメールの有効化またはメールの無効化](https://docs.microsoft.com/ja-jp/exchange/collaboration-exo/public-folders/enable-or-disable-mail-for-public-folder)」を参照してください。
 
   - 従来の Exchange サーバーから Exchange 2013 に移行できるパブリック フォルダーの最大数は、500,000 です。パブリック フォルダーの移行については、「[バッチ移行を使用して以前のバージョンから Exchange 2013 にパブリック フォルダーを移行する](use-batch-migration-to-migrate-public-folders-to-exchange-2013-from-previous-versions-exchange-2013-help.md)」をご覧ください。
 

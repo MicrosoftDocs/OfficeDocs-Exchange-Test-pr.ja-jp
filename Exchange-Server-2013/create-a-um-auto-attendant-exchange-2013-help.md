@@ -19,7 +19,7 @@ _**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 ユニファイド メッセージング (UM) 自動応答を作成すると、通常は人間のオペレーターが応答する外線番号への着信呼び出しに、自動応答が応答するようになります。UM ダイヤル プランや UM IP ゲートウェイなど、他のユニファイド メッセージング コンポーネントとは異なり、UM 自動応答の作成は必須ではありません。ただし、自動応答は、組織の内部や外部から電話を掛けてきた人が、組織内に存在するユーザーや部署を見つけて目的の相手や部署に呼び出しを転送できるようにします。
 
-UM 自動応答に関連する追加の管理タスクについては、「[UM 自動応答手順](um-auto-attendant-procedures-exchange-2013-help.md)」を参照してください。
+UM 自動応答に関連する追加の管理タスクについては、「[UM 自動応答手順](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/um-auto-attendant-procedures)」を参照してください。
 
 ## 始める前に把握しておくべき情報
 
@@ -27,7 +27,7 @@ UM 自動応答に関連する追加の管理タスクについては、「[UM �
 
   - この手順を実行する際には、あらかじめアクセス許可を割り当てる必要があります。必要なアクセス許可の一覧については、以下を参照してください。「[ユニファイド メッセージングのアクセス許可](unified-messaging-permissions-exchange-2013-help.md)」の「UM 自動応答」。
 
-  - これらの手順を実行する前に、UM ダイヤル プランが作成されていることを確認してください。詳細な手順については、「[UM ダイヤル プランを作成する](create-a-um-dial-plan-exchange-2013-help.md)」を参照してください。
+  - これらの手順を実行する前に、UM ダイヤル プランが作成されていることを確認してください。詳細な手順については、「[UM ダイヤル プランを作成する](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-dial-plan)」を参照してください。
 
   - このトピックの手順で使用可能なキーボード ショートカットについては、「[Exchange 管理センターのキーボード ショートカット](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)」を参照してください。
 

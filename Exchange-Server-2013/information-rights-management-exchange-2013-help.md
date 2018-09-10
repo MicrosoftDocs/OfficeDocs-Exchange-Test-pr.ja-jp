@@ -223,11 +223,11 @@ Exchange 2010 では、IRM による保護を次の方法でメッセージに�
 
   - **ジャーナル レポート復号化**   準拠や事業要件を満たすために、組織ではジャーナリングを使用してメッセージング コンテンツを保持できます。ジャーナリング エージェントは、ジャーナリング対象のメッセージのジャーナル レポートを作成し、レポート内のメッセージに関するメタデータを格納します。元のメッセージは、ジャーナル レポートに添付されます。ジャーナル レポート内のメッセージが IRM で保護されている場合、ジャーナル レポート復号化によってメッセージのクリア テキスト コピーがジャーナル レポートに添付されます。詳細については、「[ジャーナル レポート復号化](journal-report-decryption-exchange-2013-help.md)」を参照してください。
 
-  - **Exchange Search 用の IRM 解読**   Exchange Search 用の IRM 解読では、Exchange Search は、IRM で保護されたメッセージのコンテンツにインデックスを作成できます。検出マネージャーがインプレースの電子情報開示検索を実行すると、検索結果にインデックスが作成された IRM で保護されたメッセージが返されます。詳細については、「[インプレース電子情報開示 (eDiscovery)](in-place-ediscovery-exchange-2013-help.md)」を参照してください。
+  - **Exchange Search 用の IRM 解読**   Exchange Search 用の IRM 解読では、Exchange Search は、IRM で保護されたメッセージのコンテンツにインデックスを作成できます。検出マネージャーがインプレースの電子情報開示検索を実行すると、検索結果にインデックスが作成された IRM で保護されたメッセージが返されます。詳細については、「[インプレース電子情報開示 (eDiscovery)](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery)」を参照してください。
     
 
     > [!NOTE]
-    > Exchange 2010 SP1 以降では、"Discovery Management/検出の管理" 役割グループのメンバーは、探索検索によって返され、探索メールボックスに保存されている IRM で保護されたメッセージにアクセスできます。この機能を有効にするには、<A href="https://technet.microsoft.com/ja-jp/library/dd979792(v=exchg.150)">Set-IRMConfiguration</A> コマンドレットを <EM>EDiscoverySuperUserEnabled</EM> パラメーターと共に使用します。詳細については、「<A href="configure-irm-for-exchange-search-and-in-place-ediscovery-exchange-2013-help.md">Exchange 検索およびインプレース電子情報開示のための IRM の構成</A>」を参照してください。
+    > Exchange 2010 SP1 以降では、"Discovery Management/検出の管理" 役割グループのメンバーは、探索検索によって返され、探索メールボックスに保存されている IRM で保護されたメッセージにアクセスできます。この機能を有効にするには、<A href="https://technet.microsoft.com/ja-jp/library/dd979792(v=exchg.150)">Set-IRMConfiguration</A> コマンドレットを <EM>EDiscoverySuperUserEnabled</EM> パラメーターと共に使用します。詳細については、「<A href="configure-irm-for-exchange-search-and-https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery">Exchange 検索およびインプレース電子情報開示のための IRM の構成</A>」を参照してください。
 
 
 

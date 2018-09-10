@@ -23,7 +23,7 @@ _**トピックの最終更新日:** 2012-10-16_
 
   - 組織の外部にいるメンバーの数
 
-グループ測定値データは、Microsoft Exchange Server 2013 のメール ヒントをサポートするために使用します。 メール ヒントは、送信者がメッセージを作成しているときに送信者に表示される情報メッセージです。 Exchange 2013 で使用可能なメール ヒントの完全な一覧を含むメール ヒントの詳細については、「[MailTips](mailtips-exchange-2013-help.md)」を参照してください。
+グループ測定値データは、Microsoft Exchange Server 2013 のメール ヒントをサポートするために使用します。 メール ヒントは、送信者がメッセージを作成しているときに送信者に表示される情報メッセージです。 Exchange 2013 で使用可能なメール ヒントの完全な一覧を含むメール ヒントの詳細については、「[MailTips](https://docs.microsoft.com/ja-jp/exchange/clients-and-mobile-in-exchange-online/mailtips/mailtips)」を参照してください。
 
 グループ メトリックス データは、次のメール ヒントで使用されます。
 

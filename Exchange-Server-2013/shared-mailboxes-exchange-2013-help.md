@@ -51,5 +51,5 @@ Microsoft Exchange Server 2013 の Exchange 共有メールボックスについ
 
 ## 共有メールボックスの変換
 
-以前のバージョンの Exchange では、通常のメールボックスを委任メールボックスとして使用できました。メールボックスを委任すると、シェルを使用して委任メールボックスを共有メールボックスに変換できます。詳細については、「[メールボックスを変換する](convert-a-mailbox-exchange-2013-help.md)」を参照してください。
+以前のバージョンの Exchange では、通常のメールボックスを委任メールボックスとして使用できました。メールボックスを委任すると、シェルを使用して委任メールボックスを共有メールボックスに変換できます。詳細については、「[メールボックスを変換する](https://docs.microsoft.com/ja-jp/exchange/recipients-in-exchange-online/manage-user-mailboxes/convert-a-mailbox)」を参照してください。
 

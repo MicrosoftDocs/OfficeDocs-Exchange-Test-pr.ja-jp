@@ -19,7 +19,7 @@ _**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 ダイヤル コードと番号プレフィクスは、UM が有効なユーザーによる発信呼び出しでダイヤルする正しい番号を決定するために使用されます。*アウトダイヤル*とは、UM ダイヤル プラン内のユーザーが発信呼び出しを開始するプロセスを説明するために使用される用語です。番号形式は、国または地域内の着信呼び出し、国際呼び出し、またはダイヤル プラン内で発信された呼び出しで使用されます。国/地域内の番号と国際番号の両方で着信呼び出し番号形式が一致するようにダイヤル プランを構成できます。国/地域内の番号と国際番号の形式を構成すると、ダイヤル プランにリンクされたユーザーの着信呼び出しを制限できます。
 
-アウトダイヤルに関するその他の管理タスクについては、「[呼び出しプロシージャの作成をユーザーに許可する](allowing-users-to-make-calls-procedures-exchange-2013-help.md)」を参照してください。
+アウトダイヤルに関するその他の管理タスクについては、「[呼び出しプロシージャの作成をユーザーに許可する](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/allow-users-to-make-calls-procedures)」を参照してください。
 
 ## 始める前に把握しておくべき情報
 
@@ -27,7 +27,7 @@ _**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
   - この手順を実行する際には、あらかじめアクセス許可を割り当てる必要があります。必要なアクセス許可の一覧については、以下を参照してください。「[ユニファイド メッセージングのアクセス許可](unified-messaging-permissions-exchange-2013-help.md)」の「UM ダイヤル プラン」。
 
-  - これらの手順を実行する前に、UM ダイヤル プランが作成されていることを確認してください。詳細な手順については、「[UM ダイヤル プランを作成する](create-a-um-dial-plan-exchange-2013-help.md)」を参照してください。
+  - これらの手順を実行する前に、UM ダイヤル プランが作成されていることを確認してください。詳細な手順については、「[UM ダイヤル プランを作成する](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-dial-plan)」を参照してください。
 
   - このトピックの手順で使用可能なキーボード ショートカットについては、「[Exchange 管理センターのキーボード ショートカット](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)」を参照してください。
 

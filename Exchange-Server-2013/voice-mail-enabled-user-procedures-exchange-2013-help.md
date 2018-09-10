@@ -15,37 +15,37 @@ ms.translationtype: HT
 
 _**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-[ボイス メール用にユーザーを有効にする](enable-a-user-for-voice-mail-exchange-2013-help.md)
+[ボイス メール用にユーザーを有効にする](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-voice-mail/enable-a-user-for-voice-mail)
 
-[ボイス メールが有効なときに送信される電子メール メッセージにテキストを含める](include-text-with-the-email-message-sent-when-a-user-is-enabled-for-voice-mail-exchange-2013-help.md)
+[ボイス メールが有効なときに送信される電子メール メッセージにテキストを含める](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-voice-mail/include-text-with-email-sent-when-voicemail-is-enabled)
 
-[ユーザーのボイス メール設定の管理](manage-voice-mail-settings-for-a-user-exchange-2013-help.md)
+[ユーザーのボイス メール設定の管理](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-voice-mail/manage-voice-mail-settings)
 
-[UM メールボックス ポリシーの割り当て](assign-a-um-mailbox-policy-exchange-2013-help.md)
+[UM メールボックス ポリシーの割り当て](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-voice-mail/assign-um-mailbox-policy)
 
-[UM ダイヤル プランの変更](change-the-um-dial-plan-exchange-2013-help.md)
+[UM ダイヤル プランの変更](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-voice-mail/change-um-dial-plan)
 
-[UM が有効になっていないユーザーからの呼び出しを有効にする](enable-calls-from-users-who-aren-t-um-enabled-exchange-2013-help.md)
+[UM が有効になっていないユーザーからの呼び出しを有効にする](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-voice-mail/enable-calls-from-users-who-aren-t-um-enabled)
 
 [UM が有効になっていないユーザーからの呼び出しを無効にする](disable-calls-from-users-who-aren-t-um-enabled-exchange-2013-help.md)
 
-[呼び出し ID のない発信者による音声メッセージの録音を許可する](allow-callers-without-a-caller-id-to-leave-a-voice-message-exchange-2013-help.md)
+[呼び出し ID のない発信者による音声メッセージの録音を許可する](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-voice-mail/allow-callers-without-caller-id-to-leave-voice-message)
 
-[音声メッセージの受信時に送信される電子メール メッセージにテキストを含める](include-text-with-the-email-message-sent-when-a-voice-message-is-received-exchange-2013-help.md)
+[音声メッセージの受信時に送信される電子メール メッセージにテキストを含める](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-voice-mail/include-text-with-email-sent-when-voice-message-is-received)
 
-[呼び出し ID のない呼び出し元が音声メッセージを残すことを禁止する](prevent-callers-without-a-caller-id-from-leaving-a-voice-message-exchange-2013-help.md)
+[呼び出し ID のない呼び出し元が音声メッセージを残すことを禁止する](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-voice-mail/prevent-callers-without-caller-id-from-leaving-voice-message)
 
-[ユーザーのボイス メールを無効にする](disable-voice-mail-for-a-user-exchange-2013-help.md)
+[ユーザーのボイス メールを無効にする](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-voice-mail/disable-voice-mail)
 
 [SIP アドレスの変更](change-a-sip-address-exchange-2013-help.md)
 
-[内線番号の変更](change-an-extension-number-exchange-2013-help.md)
+[内線番号の変更](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-voice-mail/change-extension-number)
 
 [SIP アドレスの追加](add-a-sip-address-exchange-2013-help.md)
 
-[SIP アドレスの削除](remove-a-sip-address-exchange-2013-help.md)
+[SIP アドレスの削除](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-voice-mail/remove-sip-address)
 
-[内線番号の追加](add-an-extension-number-exchange-2013-help.md)
+[内線番号の追加](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-voice-mail/add-extension-number)
 
 [内線番号の削除](remove-an-extension-number-exchange-2013-help.md)
 
@@ -53,5 +53,5 @@ _**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 [E.164 番号の追加](add-an-e-164-number-exchange-2013-help.md)
 
-[E.164 番号の削除](remove-an-e-164-number-exchange-2013-help.md)
+[E.164 番号の削除](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-voice-mail/remove-e-164-number)
 

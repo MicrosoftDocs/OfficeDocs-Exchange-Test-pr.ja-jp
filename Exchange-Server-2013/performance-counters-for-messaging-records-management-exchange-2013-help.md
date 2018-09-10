@@ -19,7 +19,7 @@ _**トピックの最終更新日:** 2015-03-09_
 
 本トピックのパフォーマンス カウンターは管理フォルダー アシスタントを監視します。管理フォルダー アシスタントは Microsoft Exchange Server 2010 のメッセージング レコード管理 (MRM) を実装します。管理フォルダー アシスタントの実行はリソースを多く消費するため、サーバーが追加の負荷に耐えられる場合にのみ実行してください。また、管理フォルダー アシスタントの実行中はサーバーのパフォーマンスを監視してください。このトピックで示すパフォーマンス カウンターに加えて、ディスク パフォーマンスや CPU の使用量などを監視する他のパフォーマンス カウンターも使用できます。
 
-MRM を実行するコンピューターの監視の詳細については、「[メッセージング レコード管理の監視](monitoring-messaging-records-management-exchange-2013-help.md)」を参照してください。
+MRM を実行するコンピューターの監視の詳細については、「[メッセージング レコード管理の監視](monitoring-https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/messaging-records-management/messaging-records-management)」を参照してください。
 
 ## MRM のパフォーマンス カウンター
 

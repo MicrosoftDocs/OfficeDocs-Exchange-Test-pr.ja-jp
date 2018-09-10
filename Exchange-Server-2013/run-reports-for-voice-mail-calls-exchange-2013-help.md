@@ -33,13 +33,13 @@ _**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 次のトピックは、呼び出しの統計およびレポートを収集してそれらの結果を解釈し、組織内の UM サービスを監視およびトラブルシュートする際に役に立ちます。
 
-  - [組織でボイス メールの呼び出しを確認する](review-the-voice-mail-calls-in-your-organization-exchange-2013-help.md)   UM 呼び出しの統計のレポートを使用して、UM の可用性と音質の監視、および容量計画用の使用量の追跡を行います。
+  - [組織でボイス メールの呼び出しを確認する](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/run-voice-mail-call-reports/review-voice-mail-calls-for-organization)   UM 呼び出しの統計のレポートを使用して、UM の可用性と音質の監視、および容量計画用の使用量の追跡を行います。
 
-  - [ユーザーのボイス メール呼び出しの確認](review-the-voice-mail-calls-for-a-user-exchange-2013-help.md)   ユーザーの呼び出しログを使用して、過去 90 日間のユーザーの呼び出しの詳細を表示します。
+  - [ユーザーのボイス メール呼び出しの確認](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/run-voice-mail-call-reports/review-voice-mail-calls-for-user)   ユーザーの呼び出しログを使用して、過去 90 日間のユーザーの呼び出しの詳細を表示します。
 
   - [組織の音声呼び出しの音質を調査する](investigate-the-audio-quality-of-voice-calls-in-your-organization-exchange-2013-help.md)   組織の UM 呼び出しの音質に問題がある場合は、UM 呼び出しの統計のレポートに示されている音質の詳細を使用すると、原因の究明に役立ちます。
 
-  - [ユーザーの音声呼び出しの音質の調査](investigate-the-audio-quality-of-voice-calls-for-a-user-exchange-2013-help.md)   ユーザーの UM 呼び出しの音質に問題がある場合は、ユーザーの呼び出しログに示されている音質の詳細を使用すると、原因の究明に役立ちます。
+  - [ユーザーの音声呼び出しの音質の調査](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/run-voice-mail-call-reports/audio-quality-of-voice-calls-for-user)   ユーザーの UM 呼び出しの音質に問題がある場合は、ユーザーの呼び出しログに示されている音質の詳細を使用すると、原因の究明に役立ちます。
 
-  - [ボイス メール呼び出しレコードを解釈する](interpret-voice-mail-call-records-exchange-2013-help.md)   より詳細なデータをエクスポートして、音質や拒否された呼び出しに関する問題を診断したり、UM サービスに関する監査やレポートの情報を提供したりします。
+  - [ボイス メール呼び出しレコードを解釈する](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/run-voice-mail-call-reports/interpret-voice-mail-call-records)   より詳細なデータをエクスポートして、音質や拒否された呼び出しに関する問題を診断したり、UM サービスに関する監査やレポートの情報を提供したりします。
 

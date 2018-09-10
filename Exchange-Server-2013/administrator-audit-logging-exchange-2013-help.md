@@ -201,7 +201,7 @@ EAC の <strong>監査</strong> ページには、さまざまな種類の規制
 
 これらのレポートを使用する方法については、「[役割グループの変更または管理者監査ログを検索する](search-the-role-group-changes-or-administrator-audit-logs-exchange-2013-help.md)」を参照してください。
 
-<strong>監査</strong> ページに含まれるその他のレポートについては、「[Exchange 監査レポート](exchange-auditing-reports-exchange-2013-help.md)」を参照してください。
+<strong>監査</strong> ページに含まれるその他のレポートについては、「[Exchange 監査レポート](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/exchange-auditing-reports/exchange-auditing-reports)」を参照してください。
 
 ## Search-AdminAuditLog コマンドレット
 

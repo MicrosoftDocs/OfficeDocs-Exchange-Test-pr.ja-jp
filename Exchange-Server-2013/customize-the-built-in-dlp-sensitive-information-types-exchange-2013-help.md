@@ -261,9 +261,9 @@ XML 内でクレジット カード番号のルール定義が見つかったら
 
 ## 詳細情報
 
-  - [メッセージの評価に DLP ルールを適用する方法](how-dlp-rules-are-applied-to-evaluate-messages-exchange-2013-help.md)
+  - [メッセージの評価に DLP ルールを適用する方法](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/data-loss-prevention/dlp-rule-application)
 
-  - [カスタム DLP ポリシーの作成](create-a-custom-dlp-policy-exchange-2013-help.md)
+  - [カスタム DLP ポリシーの作成](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/data-loss-prevention/create-custom-dlp-policy)
 
   - [Exchange での機密情報の種類の検索基準：](what-the-sensitive-information-types-in-exchange-look-for-exchange-online-help.md)
 

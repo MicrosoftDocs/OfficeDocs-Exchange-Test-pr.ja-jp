@@ -83,12 +83,12 @@ Lync Server 用に実行が必要なタスクの実行方法の詳細につい�
 <tr class="odd">
 <td><p><strong> </strong></p></td>
 <td><p>組織で必要な数の SIP URI ダイヤル プランを作成します。</p></td>
-<td><p><a href="create-a-um-dial-plan-exchange-2013-help.md">UM ダイヤル プランを作成する</a></p></td>
+<td><p><a href="https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-dial-plan">UM ダイヤル プランを作成する</a></p></td>
 </tr>
 <tr class="even">
 <td><p></p></td>
 <td><p>ダイヤル プランのセキュリティ設定を構成します。</p></td>
-<td><p><a href="configure-the-voip-security-setting-exchange-2013-help.md">VoIP セキュリティ設定の構成</a></p></td>
+<td><p><a href="https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/connect-voice-mail-system/configure-voip-security-setting">VoIP セキュリティ設定の構成</a></p></td>
 </tr>
 <tr class="odd">
 <td><p></p></td>
@@ -98,7 +98,7 @@ Lync Server 用に実行が必要なタスクの実行方法の詳細につい�
 <tr class="even">
 <td><p></p></td>
 <td><p>Outlook Voice Access の番号とその他の設定を構成します。</p></td>
-<td><p><a href="manage-a-um-dial-plan-exchange-2013-help.md">UM ダイヤル プランの管理</a></p></td>
+<td><p><a href="https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/connect-voice-mail-system/manage-um-dial-plan">UM ダイヤル プランの管理</a></p></td>
 </tr>
 <tr class="odd">
 <td><p></p></td>
@@ -108,8 +108,8 @@ Lync Server 用に実行が必要なタスクの実行方法の詳細につい�
 <tr class="even">
 <td><p></p></td>
 <td><p>ユニファイド メッセージングの送信ダイヤルを構成します。SIP URI ダイヤル プランとそれらのダイヤル プランにリンクされた UM メールボックス ポリシーのすべての通話を許可します。</p></td>
-<td><p><a href="authorize-calls-for-users-in-a-dial-plan-exchange-2013-help.md">ダイヤル プランでユーザーの呼び出しを承認する</a></p>
-<p><a href="authorize-calls-for-a-group-of-users-exchange-2013-help.md">ユーザー グループの呼び出しを承認する</a></p></td>
+<td><p><a href="https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/authorize-calls-for-users-in-a-dial-plan">ダイヤル プランでユーザーの呼び出しを承認する</a></p>
+<p><a href="https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/authorize-calls-for-a-group-of-users">ユーザー グループの呼び出しを承認する</a></p></td>
 </tr>
 <tr class="odd">
 <td><p></p></td>
@@ -143,13 +143,13 @@ Lync Server 用に実行が必要なタスクの実行方法の詳細につい�
 <tr class="even">
 <td><p><strong> </strong></p></td>
 <td><p>UM メールボックス ポリシーを作成するか、既定の UM メールボックス ポリシーを構成します。</p></td>
-<td><p><a href="create-a-um-mailbox-policy-exchange-2013-help.md">UM メールボックス ポリシーの作成</a></p>
-<p><a href="manage-a-um-mailbox-policy-exchange-2013-help.md">UM メールボックス ポリシーの管理</a></p></td>
+<td><p><a href="https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-voice-mail/create-um-mailbox-policy">UM メールボックス ポリシーの作成</a></p>
+<p><a href="https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-voice-mail/manage-um-mailbox-policy">UM メールボックス ポリシーの管理</a></p></td>
 </tr>
 <tr class="odd">
 <td><p> </p></td>
 <td><p>ユーザーに対して SIP アドレスを使用したユニファイド メッセージングを有効にし、それらを SIP URI ダイヤル プランとリンクします。</p></td>
-<td><p><a href="enable-a-user-for-voice-mail-exchange-2013-help.md">ボイス メール用にユーザーを有効にする</a></p></td>
+<td><p><a href="https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-voice-mail/enable-a-user-for-voice-mail">ボイス メール用にユーザーを有効にする</a></p></td>
 </tr>
 <tr class="even">
 <td><p></p></td>

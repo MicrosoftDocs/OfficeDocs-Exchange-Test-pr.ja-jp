@@ -29,15 +29,15 @@ _**適用先:** Exchange Online, Exchange Online Protection, Exchange Server 201
 
   - [トランスポート ルールを使用してメッセージの添付を検査する](use-transport-rules-to-inspect-message-attachments-exchange-2013-help.md)
 
-  - [添付ファイル ブロックの一般的なシナリオ](common-attachment-blocking-scenarios-for-mail-flow-rules-exchange-2013-help.md)
+  - [添付ファイル ブロックの一般的なシナリオ](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/mail-flow-rules/common-attachment-blocking-scenarios)
 
-  - [単語、語句、パターンの一覧に基づいてメールをルーティングするメール フロー ルールの使用](use-mail-flow-rules-to-route-email-based-on-a-list-of-words-phrases-or-patterns-exchange-2013-help.md)
+  - [単語、語句、パターンの一覧に基づいてメールをルーティングするメール フロー ルールの使用](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/mail-flow-rules/use-rules-to-route-email)
 
-  - [一般的なメッセージの承認シナリオ](common-message-approval-scenarios-exchange-2013-help.md)
+  - [一般的なメッセージの承認シナリオ](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/mail-flow-rules/common-message-approval-scenarios)
 
-  - [メッセージが低優先メール機能を迂回できるメール フロー ルールを使用する](use-mail-flow-rules-so-messages-can-bypass-clutter-exchange-2013-help.md)
+  - [メッセージが低優先メール機能を迂回できるメール フロー ルールを使用する](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/mail-flow-rules/use-rules-to-bypass-clutter)
 
-  - [メール フローのルールを構成するためのベスト プラクティス](best-practices-for-configuring-mail-flow-rules-exchange-2013-help.md)
+  - [メール フローのルールを構成するためのベスト プラクティス](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/mail-flow-rules/configuration-best-practices)
 
   - [Office 365 で、メール フロー ルールを使用してメッセージの添付ファイルを検査する](https://technet.microsoft.com/ja-jp/library/jj919236\(v=exchg.150\))
 
@@ -130,7 +130,7 @@ EAC を使用すると、テンプレートを使用するか、既存のルー�
         
           - <strong>強制</strong> これを使用するとルールがオンになり、ルールによるメッセージの処理が即座に開始されます。ルールのすべてのアクションが実行されます。
         
-          - <strong>ポリシー ヒントありのテスト</strong>  ルールがオンになり、ポリシー ヒント アクション (<strong>ポリシー ヒントを使用して送信者に通知する</strong>) が送信されますが、メッセージ配信に関連したアクションは実行されません。このモードを使うには、データ損失防止 (DLP) が必要です。詳細については、「[ポリシー ヒント](technical-overview-of-policy-tips-in-exchange-online-and-exchange-2013.md)」を参照してください。
+          - <strong>ポリシー ヒントありのテスト</strong>  ルールがオンになり、ポリシー ヒント アクション (<strong>ポリシー ヒントを使用して送信者に通知する</strong>) が送信されますが、メッセージ配信に関連したアクションは実行されません。このモードを使うには、データ損失防止 (DLP) が必要です。詳細については、「[ポリシー ヒント](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/data-loss-prevention/policy-tips)」を参照してください。
         
           - <strong>ポリシー ヒントなしのテスト</strong> インシデント レポートの作成アクションだけが適用されます。メッセージの配信に関連するアクションは実行されません。
 

@@ -25,7 +25,7 @@ _**適用先:** Exchange Server 2013_
 
   - EAC またはシェルを使用して電子情報開示検索を作成しなければ、検索結果をコピーすることができません。詳細については、「[インプレース電子情報開示検索を作成する](create-an-in-place-ediscovery-search-exchange-2013-help.md)」を参照してください。
 
-  - Exchange 2013 セットアップは、検索結果をコピーするために <strong>探索検索メールボックス</strong> という名前の探索メールボックスを作成します。探索検索メールボックスは既定で Exchange Online 内に作成されます。追加の探索メールボックスを作成できます。詳細については、「[探索メールボックスの作成](create-a-discovery-mailbox-exchange-2013-help.md)」を参照してください。
+  - Exchange 2013 セットアップは、検索結果をコピーするために <strong>探索検索メールボックス</strong> という名前の探索メールボックスを作成します。探索検索メールボックスは既定で Exchange Online 内に作成されます。追加の探索メールボックスを作成できます。詳細については、「[探索メールボックスの作成](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/in-place-ediscovery/create-a-discovery-mailbox)」を参照してください。
 
   - このトピックの手順で使用可能なキーボード ショートカットについては、「[Exchange 管理センターのキーボード ショートカット](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)」を参照してください。
 

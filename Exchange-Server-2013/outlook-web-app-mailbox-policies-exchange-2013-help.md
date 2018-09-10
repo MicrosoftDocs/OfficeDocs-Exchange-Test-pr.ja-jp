@@ -43,7 +43,7 @@ Exchange をインストールすると、既定の Outlook Web App メールボ
 
 
 
-メールボックス ポリシーの作成や削除に関しては、「[Outlook Web App のメールボックス ポリシーの作成](create-an-outlook-web-app-mailbox-policy-exchange-2013-help.md)」と「[Exchange から Outlook Web App のメールボックス ポリシーを削除する](remove-an-outlook-web-app-mailbox-policy-from-exchange-exchange-2013-help.md)」を参照してください。
+メールボックス ポリシーの作成や削除に関しては、「[Outlook Web App のメールボックス ポリシーの作成](https://docs.microsoft.com/ja-jp/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/create-outlook-web-app-mailbox-policy)」と「[Exchange から Outlook Web App のメールボックス ポリシーを削除する](remove-an-outlook-web-app-mailbox-policy-from-exchange-exchange-2013-help.md)」を参照してください。
 
 ## Outlook Web App メールボックス ポリシーの構成
 

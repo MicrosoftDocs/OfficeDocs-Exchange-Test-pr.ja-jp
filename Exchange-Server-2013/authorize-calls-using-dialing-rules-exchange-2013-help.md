@@ -46,15 +46,15 @@ _**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 <tbody>
 <tr class="odd">
 <td><p>認証されていない発信者が Outlook Voice Access 番号を呼び出し、PIN を入力しない場合</p></td>
-<td><p>UM ダイヤル プラン。詳細については、「<a href="authorize-calls-for-users-in-a-dial-plan-exchange-2013-help.md">ダイヤル プランでユーザーの呼び出しを承認する</a>」を参照してください。</p></td>
+<td><p>UM ダイヤル プラン。詳細については、「<a href="https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/authorize-calls-for-users-in-a-dial-plan">ダイヤル プランでユーザーの呼び出しを承認する</a>」を参照してください。</p></td>
 </tr>
 <tr class="even">
 <td><p>認証されている発信者が Outlook Voice Access 番号を呼び出し、PIN を入力する場合</p></td>
-<td><p>その発信者の UM メールボックス ポリシー。詳細については、「<a href="authorize-calls-for-a-group-of-users-exchange-2013-help.md">ユーザー グループの呼び出しを承認する</a>」を参照してください。</p></td>
+<td><p>その発信者の UM メールボックス ポリシー。詳細については、「<a href="https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/authorize-calls-for-a-group-of-users">ユーザー グループの呼び出しを承認する</a>」を参照してください。</p></td>
 </tr>
 <tr class="odd">
 <td><p>認証されていない発信者が、UM 自動応答で構成された電話番号を呼び出す場合</p></td>
-<td><p>UM 自動応答。詳細については、「<a href="authorize-calls-for-auto-attendant-callers-exchange-2013-help.md">自動応答の呼び出し元の呼び出しを承認する</a>」を参照してください。</p></td>
+<td><p>UM 自動応答。詳細については、「<a href="https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/authorize-calls-for-auto-attendant-callers">自動応答の呼び出し元の呼び出しを承認する</a>」を参照してください。</p></td>
 </tr>
 </tbody>
 </table>

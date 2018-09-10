@@ -71,7 +71,7 @@ _**適用先:** Exchange Online, Exchange Server 2013_
 
 ## 詳細情報
 
-  - 単一アイテムの回復の詳細については、「[\[回復可能なアイテム\] フォルダー](recoverable-items-folder-exchange-2013-help.md)」を参照してください。ユーザーによって削除されたメッセージを削除済みアイテム保持期間が過ぎる前に回復するには、「[ユーザーのメールボックス内の削除済みメッセージを復元する](recover-deleted-messages-in-a-user-s-mailbox-exchange-2013-help.md)」を参照してください。
+  - 単一アイテムの回復の詳細については、「[\[回復可能なアイテム\] フォルダー](recoverable-items-folder-exchange-2013-help.md)」を参照してください。ユーザーによって削除されたメッセージを削除済みアイテム保持期間が過ぎる前に回復するには、「[ユーザーのメールボックス内の削除済みメッセージを復元する](https://docs.microsoft.com/ja-jp/exchange/recipients-in-exchange-online/manage-user-mailboxes/recover-deleted-messages)」を参照してください。
 
   - メールボックスがインプレース ホールドまたは訴訟ホールドになっている場合、保持期間が経過するまで、\[回復可能なアイテム\] フォルダー内のメッセージは保持されます。保持期間が無期限である場合は、ホールドが解除されるか、または保持期間が変更されるまで、アイテムは保持されます。
 

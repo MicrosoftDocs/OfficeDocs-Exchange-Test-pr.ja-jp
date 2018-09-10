@@ -107,7 +107,7 @@ Exchange 2013 には、エンドユーザーに最もよく使用されるアク
 <tbody>
 <tr class="odd">
 <td><p>メールボックス</p></td>
-<td><p><a href="manage-user-mailboxes-exchange-2013-help.md">ユーザー メールボックスの管理</a></p>
+<td><p><a href="https://docs.microsoft.com/ja-jp/exchange/recipients-in-exchange-online/manage-user-mailboxes/manage-user-mailboxes">ユーザー メールボックスの管理</a></p>
 <p><a href="change-the-assignment-policy-on-a-mailbox-exchange-2013-help.md">メールボックスの割り当てポリシーを変更する</a></p></td>
 </tr>
 <tr class="even">

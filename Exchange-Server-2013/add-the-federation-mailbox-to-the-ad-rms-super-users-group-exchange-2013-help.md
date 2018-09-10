@@ -61,7 +61,7 @@ IRM に関連する追加の管理タスクについては、「[Information Rig
 
 配布グループが、AD RMS クラスターのスーパー ユーザー グループとして作成され構成されている場合、Exchange 2013 フェデレーション メールボックスをそのグループのメンバーとして追加できます。スーパー ユーザー グループが構成されていない場合は、配布グループを作成してフェデレーション メールボックスをメンバーとして追加する必要があります。
 
-1.  AD RMS スーパー ユーザー グループとして使用する専用の配布グループを作成します。詳細については、「[配布グループの作成と管理](create-and-manage-distribution-groups-exchange-2013-help.md)」を参照してください。
+1.  AD RMS スーパー ユーザー グループとして使用する専用の配布グループを作成します。詳細については、「[配布グループの作成と管理](https://docs.microsoft.com/ja-jp/exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups)」を参照してください。
 
 2.  **FederatedEmail.4c1f4d8b-8179-4148-93bf-00a95fa1e042** というユーザーを新しい配布グループに追加します。フェデレーション メールボックスはシステム メールボックスなので、EAC には表示されません。このメールボックスを配布グループに追加するには、シェルから [Add-DistributionGroupMember](https://technet.microsoft.com/ja-jp/library/bb124340\(v=exchg.150\)) コマンドレットを使用する必要があります。
     

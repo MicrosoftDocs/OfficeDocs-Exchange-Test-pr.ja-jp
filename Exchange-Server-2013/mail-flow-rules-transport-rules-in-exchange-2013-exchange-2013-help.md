@@ -25,21 +25,21 @@ Exchange Online におけるメール フロー ルールの情報について�
 
 メール フロー ルールを管理するために、Exchange 管理センター (EAC)、または Exchange 管理シェル を使用できます。トランスポート ルールを管理する方法の詳細については、[メール フロー ルールを管理します](manage-mail-flow-rules-exchange-2013-help.md) を参照してください。
 
-ルールごとに、ルールを適用、ルールをテスト、ルールをテストして送信者に通知するという、いずれかのオプションを選択できます。テストのオプションについては、[メール フロー ルールのテスト](test-a-mail-flow-rule-exchange-2013-help.md) および [ポリシー ヒント](technical-overview-of-policy-tips-in-exchange-online-and-exchange-2013.md)を参照してください。
+ルールごとに、ルールを適用、ルールをテスト、ルールをテストして送信者に通知するという、いずれかのオプションを選択できます。テストのオプションについては、[メール フロー ルールのテスト](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/mail-flow-rules/test-mail-flow-rules) および [ポリシー ヒント](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/data-loss-prevention/policy-tips)を参照してください。
 
 メール フロー ルールを使用して特定のメッセージング ポリシーを実装するには、次のトピックを参照してください。
 
   - [トランスポート ルールを使用してメッセージの添付を検査する](use-transport-rules-to-inspect-message-attachments-exchange-2013-help.md)
 
-  - [添付ファイル ブロックの一般的なシナリオ](common-attachment-blocking-scenarios-for-mail-flow-rules-exchange-2013-help.md)
+  - [添付ファイル ブロックの一般的なシナリオ](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/mail-flow-rules/common-attachment-blocking-scenarios)
 
   - [組織全体の免責事項、署名、フッター、またはヘッダー](organization-wide-disclaimers-signatures-footers-or-headers-exchange-online-help.md)
 
-  - [メッセージが低優先メール機能を迂回できるメール フロー ルールを使用する](use-mail-flow-rules-so-messages-can-bypass-clutter-exchange-2013-help.md)
+  - [メッセージが低優先メール機能を迂回できるメール フロー ルールを使用する](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/mail-flow-rules/use-rules-to-bypass-clutter)
 
-  - [単語、語句、パターンの一覧に基づいてメールをルーティングするメール フロー ルールの使用](use-mail-flow-rules-to-route-email-based-on-a-list-of-words-phrases-or-patterns-exchange-2013-help.md)
+  - [単語、語句、パターンの一覧に基づいてメールをルーティングするメール フロー ルールの使用](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/mail-flow-rules/use-rules-to-route-email)
 
-  - [一般的なメッセージの承認シナリオ](common-message-approval-scenarios-exchange-2013-help.md)
+  - [一般的なメッセージの承認シナリオ](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/mail-flow-rules/common-message-approval-scenarios)
 
 ## メール フロー ルールの構成要素
 
@@ -137,8 +137,8 @@ Exchange Online におけるメール フロー ルールの情報について�
 <td><p><strong>[モード]</strong></p></td>
 <td><p><em>Mode</em></p></td>
 <td><p>ルールにすぐにメッセージの処理を開始させるか、あるいはメッセージの配信に影響を与えずにルールをテストするかどうかを指定することができます (データ紛失防止、DLP ポリシー ヒントの有無を問わず)。</p>
-<p>ポリシー ヒントは、メッセージを作成しているユーザーにそれがポリシー違反の可能性があることを通知する短いメモを、Outlook または Web 上の Outlook で提示します。詳細については、「<a href="technical-overview-of-policy-tips-in-exchange-online-and-exchange-2013.md">ポリシー ヒント</a>」を参照してください。</p>
-<p>モードの詳細については、「<a href="test-a-mail-flow-rule-exchange-2013-help.md">メール フロー ルールのテスト</a>」を参照してください。</p></td>
+<p>ポリシー ヒントは、メッセージを作成しているユーザーにそれがポリシー違反の可能性があることを通知する短いメモを、Outlook または Web 上の Outlook で提示します。詳細については、「<a href="https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/data-loss-prevention/policy-tips">ポリシー ヒント</a>」を参照してください。</p>
+<p>モードの詳細については、「<a href="https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/mail-flow-rules/test-mail-flow-rules">メール フロー ルールのテスト</a>」を参照してください。</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>次の日付でこのルールを有効にする</strong></p>

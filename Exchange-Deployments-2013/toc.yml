@@ -1,4 +1,4 @@
-- name: Exchange Server 2013 プレビューのハイブリッド展開
+﻿- name: Exchange Server 2013 プレビューのハイブリッド展開
   href: exchange-server-hybrid-deployments-exchange-2013-help.md
   items:
   - name: ハイブリッド構成ウィザード
@@ -41,11 +41,11 @@
     - name: ハイブリッド展開においてオンプレミスの組織と Exchange Online 組織間でメールボックスを移動する
       href: move-mailboxes-between-on-premises-and-exchange-online-organizations-in-hybrid-deployments-exchange-2013-help.md
     - name: ハイブリッド展開用に従来の社内パブリック フォルダーを構成する
-      href: configure-legacy-on-premises-public-folders-for-a-hybrid-deployment-exchange-2013-help.md
+      href: https://docs.microsoft.com/ja-jp/exchange/collaboration-exo/public-folders/set-up-legacy-hybrid-public-folders
     - name: ハイブリッド展開用に Exchange 2013 パブリック フォルダーを構成する
-      href: configure-exchange-2013-public-folders-for-a-hybrid-deployment-exchange-2013-help.md
+      href: https://docs.microsoft.com/ja-jp/exchange/collaboration-exo/public-folders/set-up-modern-hybrid-public-folders
     - name: ハイブリッド展開用に Exchange Online パブリック フォルダーを構成する
-      href: configure-exchange-online-public-folders-for-a-hybrid-deployment-exchange-2013-help.md
+      href: https://docs.microsoft.com/ja-jp/exchange/collaboration-exo/public-folders/set-up-exo-hybrid-public-folders
     - name: ハイブリッド展開で委任されたメールボックスへのアクセス許可をサポートするように Exchange を構成する
       href: configure-exchange-to-support-delegated-mailbox-permissions-in-a-hybrid-deployment-exchange-2013-help.md
     - name: OneDrive for Business と Exchange 2016 (オンプレミス) を使用して最新の添付ファイルを構成する
@@ -90,4 +90,4 @@
     - name: 障碍がある方のためのユーザー補助機能
       href: accessibility-for-people-with-disabilities-exchange-2013-help.md
     - name: サード パーティの著作権に関する通知
-      href: third-party-copyright-notices-exchange-2013-help.md
+      href: https://docs.microsoft.com/ja-jp/exchange/about-exchange-documentation/third-party-copyright-notices

@@ -15,7 +15,7 @@ ms.translationtype: HT
 
 _**適用先:** Exchange Online, Exchange Server 2013_
 
-この概要では、データ損失防止 (DLP) ポリシー テンプレート ファイルの XML スキーマ定義のコンポーネントを説明し、さらに XML 形式のポリシー ファイル例も示します。作業を開始する前に、全体的な DLP のアーキテクチャとルール開発プロセスを理解するために役立ちます。詳細については、「[データ損失防止](technical-overview-of-dlp-data-loss-prevention-in-exchange.md)」および「[独自の DLP テンプレートおよび情報の種類の定義](define-your-own-dlp-templates-and-information-types-exchange-2013-help.md)」を参照してください。
+この概要では、データ損失防止 (DLP) ポリシー テンプレート ファイルの XML スキーマ定義のコンポーネントを説明し、さらに XML 形式のポリシー ファイル例も示します。作業を開始する前に、全体的な DLP のアーキテクチャとルール開発プロセスを理解するために役立ちます。詳細については、「[データ損失防止](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention)」および「[独自の DLP テンプレートおよび情報の種類の定義](define-your-own-dlp-templates-and-information-types-exchange-2013-help.md)」を参照してください。
 
 データ損失防止ソリューションを容易に適用し、管理するために、Microsoft Exchange Server 2013 では、DLP ポリシーとポリシー テンプレートとして認識されている概念モデルが導入されています。DLP ポリシー テンプレートには、目的とする DLP ポリシーの予備的なデザインが備えられています。DLP ポリシー テンプレートを有用なものにするには、このテンプレートが、規則やビジネス上の要求などの特定のポリシーの目的を実現するために必要なすべてのディレクティブおよびデータ オブジェクトをカプセル化する必要があります。テンプレートは、環境に依存するものではありません。DLP ポリシー テンプレートは、製品構成の一部として提供されたり、独立系ソフトウェア ベンダーとパートナーによって提供されたりする単なるポリシーの定義またはモデルです。その一方で DLP ポリシーは、展開環境に依存するテンプレートの実行時のインスタンス化でもあります。トランスポート ルールを使用することで、既存のメッセージング ポリシーのフレームワークに DLP ポリシーを組み込むことができます。トランスポート ルールは、ユーザーの DLP ソリューションに柔軟に適応し、多様な DLP ソリューションに対応します。
 
@@ -313,7 +313,7 @@ New-TransportRule -name "customEntity" -DlpPolicy "%%DlpPolicyName%%" -SentToSco
 
 ## 詳細情報
 
-[データ損失防止](technical-overview-of-dlp-data-loss-prevention-in-exchange.md)
+[データ損失防止](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention)
 
 [独自の DLP テンプレートおよび情報の種類の定義](define-your-own-dlp-templates-and-information-types-exchange-2013-help.md)
 
