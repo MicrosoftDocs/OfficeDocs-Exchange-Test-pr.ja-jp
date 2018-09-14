@@ -23,7 +23,7 @@ _**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 
 
-呼び出しの統計に関連する追加のタスクについては、「[UM レポート手順](um-reports-procedures-exchange-2013-help.md)」を参照してください。
+呼び出しの統計に関連する追加のタスクについては、「[UM レポート手順](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/run-voice-mail-call-reports/um-reports-procedures)」を参照してください。
 
 ## 始める前に把握しておくべき情報
 
@@ -84,5 +84,5 @@ _**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
     
       - <strong>サンプル数</strong>   平均値を計算するためにサンプリングされた呼び出しの数です。
 
-4.  特定の呼び出しに関する音質の指標の詳細については、「[ユーザーの音声呼び出しの音質の調査](investigate-the-audio-quality-of-voice-calls-for-a-user-exchange-2013-help.md)」を参照してください。
+4.  特定の呼び出しに関する音質の指標の詳細については、「[ユーザーの音声呼び出しの音質の調査](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/run-voice-mail-call-reports/audio-quality-of-voice-calls-for-user)」を参照してください。
 

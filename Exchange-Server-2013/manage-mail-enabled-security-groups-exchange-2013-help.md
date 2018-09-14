@@ -47,7 +47,7 @@ _**適用先:** Exchange Online, Exchange Server 2013_
         
 
         > [!NOTE]  
-        > グループの名前付けポリシーが適用されている場合は、組織で指定されている名前付けの制約に従う必要があります。詳細については、「<A href="create-a-distribution-group-naming-policy-exchange-2013-help.md">配布グループ名前付けポリシーを作成する</A>」を参照してください。組織のグループの名前付けポリシーを上書きする場合は、「<A href="override-the-distribution-group-naming-policy-exchange-2013-help.md">配布グループ名前付けポリシーの上書き</A>」を参照してください。
+        > グループの名前付けポリシーが適用されている場合は、組織で指定されている名前付けの制約に従う必要があります。詳細については、「<A href="https://docs.microsoft.com/ja-jp/exchange/recipients-in-exchange-online/manage-distribution-groups/create-group-naming-policy">配布グループ名前付けポリシーを作成する</A>」を参照してください。組織のグループの名前付けポリシーを上書きする場合は、「<A href="override-the-distribution-group-naming-policy-exchange-2013-help.md">配布グループ名前付けポリシーの上書き</A>」を参照してください。
 
     
       - <strong>&#42;[エイリアス]</strong>   このボックスを使用して、セキュリティ グループのエイリアスを入力します。エイリアスは 64 文字以内で、フォレスト内で一意である必要があります。ユーザーが電子メール メッセージの宛先行にエイリアスを入力すると、グループの表示名に解決されます。

@@ -19,7 +19,7 @@ _**トピックの最終更新日:** 2014-11-16_
 
 オフライン アドレス帳 (OAB) はダウンロードされたアドレス一覧の集合のコピーであり、Microsoft Outlook ユーザーはサーバーに接続していないときでもアドレス帳にアクセスできます。Microsoft Exchange は新しい OAB ファイルを生成し、そのファイルを圧縮してローカルの共有に格納します。オフラインで作業するユーザーに対して、どのアドレス一覧を使用可能にするかを決定できます。また、アドレス帳の配布方法を構成することもできます。
 
-アドレス一覧の詳細については、「[アドレス一覧](address-lists-exchange-2013-help.md)」を参照してください。
+アドレス一覧の詳細については、「[アドレス一覧](https://docs.microsoft.com/ja-jp/exchange/address-books/address-lists/address-lists)」を参照してください。
 
 
 > [!IMPORTANT]
@@ -27,7 +27,7 @@ _**トピックの最終更新日:** 2014-11-16_
 
 
 
-OAB に関連する管理タスクについては、「[オフライン アドレス帳の手順](offline-address-book-procedures-exchange-2013-help.md)」を参照してください。
+OAB に関連する管理タスクについては、「[オフライン アドレス帳の手順](https://docs.microsoft.com/ja-jp/exchange/address-books/offline-address-books/offline-address-book-procedures)」を参照してください。
 
 **目次**
 
@@ -75,7 +75,7 @@ Web ベースの配布は、正しく機能するために以下のコンポー�
 
   - **OAB の配布** クライアントが OAB の配布要求を開始する場合、要求はクライアント アクセス サーバーを介して転送されます。クライアント アクセス サーバーは、OAB ファイルをホストしているメールボックス サーバーに要求を転送します。その後、OAB ファイルはメールボックス サーバーからクライアントに直接配布されます。
 
-  - **OAB 仮想ディレクトリ** OAB 仮想ディレクトリは、Web ベースの配布方法で使用される配布ポイントです。既定では、Exchange がインストールされると、インターネット インフォメーション サービス (IIS) の既定の内部 Web サイトに **OAB** という名前の新しい仮想ディレクトリが作成されます。組織のファイアウォールの外部から Outlook に接続するクライアント側のユーザーがいる場合は、外部の Web サイトを追加できます。また、シェルで **New-OABVirtualDirectory** コマンドレットを実行すると、ローカルの Exchange サーバー上の既定の IIS Web サイトに OAB という名前の新しい仮想ディレクトリが作成されます。詳細については、「[オフライン アドレス帳仮想ディレクトリを作成する](create-an-offline-address-book-virtual-directory-exchange-2013-help.md)」を参照してください。
+  - **OAB 仮想ディレクトリ** OAB 仮想ディレクトリは、Web ベースの配布方法で使用される配布ポイントです。既定では、Exchange がインストールされると、インターネット インフォメーション サービス (IIS) の既定の内部 Web サイトに **OAB** という名前の新しい仮想ディレクトリが作成されます。組織のファイアウォールの外部から Outlook に接続するクライアント側のユーザーがいる場合は、外部の Web サイトを追加できます。また、シェルで **New-OABVirtualDirectory** コマンドレットを実行すると、ローカルの Exchange サーバー上の既定の IIS Web サイトに OAB という名前の新しい仮想ディレクトリが作成されます。詳細については、「[オフライン アドレス帳仮想ディレクトリを作成する](https://docs.microsoft.com/ja-jp/exchange/address-books/offline-address-books/create-virtual-directory)」を参照してください。
 
   - **自動検出サービス**   これは、Outlook 2013、Outlook 2010、Outlook 2007、および Exchange にアクセスするようにクライアントが自動的に構成される一部のモバイル デバイスで使用可能な機能です。このサービスはクライアント アクセス サーバーで実行され、特定のクライアント接続に対して正しい OAB URL を返します。
 

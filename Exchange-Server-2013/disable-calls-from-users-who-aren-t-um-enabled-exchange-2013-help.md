@@ -19,7 +19,7 @@ _**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 UM が有効なユーザーに関するこの設定が無効になっている場合でも、ディレクトリ検索を使用して、そのユーザーのメールボックスを特定することができます。ただし、そのユーザーに対して外部発信者が呼び出しの転送を試みると、"誠に申し訳ありませんが、おかけになった番号を直接呼び出すことができません。オペレーターに接続します。" という案内が流れます。自動応答でオペレーターが構成されている場合は、発信者はオペレーターに接続されます。自動応答でオペレーターが構成されておらず、ダイヤル プランのオペレーターが構成されている場合、ダイヤル プランのオペレーターに呼び出しが転送されます。音声認識が有効な自動応答、デュアル トーン多重周波数 (DTMF) フォールバック自動応答、またはダイヤル プランのいずれにもオペレーターの内線番号が構成されていない場合は、"誠に申し訳ありませんが、 オペレーターもタッチトーン サービスも使用することができません" という案内が流れます。
 
-ボイス メールが有効なユーザーに関連するその他の管理タスクについては、「[ユーザーのボイス メール設定の管理](manage-voice-mail-settings-for-a-user-exchange-2013-help.md)」を参照してください。
+ボイス メールが有効なユーザーに関連するその他の管理タスクについては、「[ユーザーのボイス メール設定の管理](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-voice-mail/manage-voice-mail-settings)」を参照してください。
 
 ## 始める前に把握しておくべき情報
 
@@ -27,11 +27,11 @@ UM が有効なユーザーに関するこの設定が無効になっている�
 
   - この手順を実行する際には、あらかじめアクセス許可を割り当てる必要があります。必要なアクセス許可の一覧については、以下を参照してください。「[ユニファイド メッセージングのアクセス許可](unified-messaging-permissions-exchange-2013-help.md)」の「UM メールボックス」。
 
-  - この手順を実行する前に、UM ダイヤル プランが作成されていることを確認してください。詳細な手順については、「[UM ダイヤル プランを作成する](create-a-um-dial-plan-exchange-2013-help.md)」を参照してください。
+  - この手順を実行する前に、UM ダイヤル プランが作成されていることを確認してください。詳細な手順については、「[UM ダイヤル プランを作成する](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-dial-plan)」を参照してください。
 
   - この手順を実行する前に、UM メールボックス ポリシーが作成されていることを確認してください。詳細な手順については、「[New-UMMailboxPolicy](https://technet.microsoft.com/ja-jp/library/aa998300\(v=exchg.150\))」を参照してください。
 
-  - この手順を実行する前に、ユーザーのメールボックスの UM が有効になっていることを確認してください。詳細な手順については、「[ボイス メール用にユーザーを有効にする](enable-a-user-for-voice-mail-exchange-2013-help.md)」を参照してください。
+  - この手順を実行する前に、ユーザーのメールボックスの UM が有効になっていることを確認してください。詳細な手順については、「[ボイス メール用にユーザーを有効にする](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-voice-mail/enable-a-user-for-voice-mail)」を参照してください。
 
   - このトピックの手順で使用可能なキーボード ショートカットについては、「[Exchange 管理センターのキーボード ショートカット](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)」を参照してください。
 

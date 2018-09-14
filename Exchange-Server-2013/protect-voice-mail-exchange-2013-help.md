@@ -243,7 +243,7 @@ Exchange サーバーを設定すると、[Test-IRMConfiguration](https://techne
 
 ## UM メールボックス ポリシー
 
-ユニファイド メッセージング メールボックス ポリシーを作成して、PIN のポリシー設定、ダイヤル制限、および保護されたボイス メールの設定など、一連の共通の UM ポリシー設定を、UM が有効なメールボックスのコレクションに適用することができます。UM メールボックス ポリシーの詳細については、「[UM メールボックス ポリシーの管理](manage-a-um-mailbox-policy-exchange-2013-help.md)」を参照してください。
+ユニファイド メッセージング メールボックス ポリシーを作成して、PIN のポリシー設定、ダイヤル制限、および保護されたボイス メールの設定など、一連の共通の UM ポリシー設定を、UM が有効なメールボックスのコレクションに適用することができます。UM メールボックス ポリシーの詳細については、「[UM メールボックス ポリシーの管理](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-voice-mail/manage-um-mailbox-policy)」を参照してください。
 
 EAC または **Set-UMMailboxPolicy** コマンドレットを使用して、保護されたボイス メールのオプションを構成できます。次の表は、保護されたボイス メール向けに構成できる設定の一覧です。
 

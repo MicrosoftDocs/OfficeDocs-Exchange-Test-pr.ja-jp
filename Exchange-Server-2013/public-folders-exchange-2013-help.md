@@ -127,7 +127,7 @@ Exchange 2013 で、パブリック フォルダーは、メールボックス �
 
 大規模な組織で新しいパブリック フォルダー メールボックスを作成する場合は、ユーザーが接続する前に、階層をそのパブリック フォルダーに同期させる必要があります。同期しないと、ユーザーが Outlook で接続したときに不完全なパブリック フォルダー構造が表示される可能性があります。ユーザーが新しいパブリック フォルダー メールボックスへの接続を試みる前にこの同期を完了させるには、パブリック フォルダー メールボックスを作成する際に、**New-Mailbox** コマンドレットに *IsExcludedFromServingHierarchy* パラメーターを設定します。このパラメーターによって、ユーザーが新しく作成されたパブリック フォルダー メールボックスに接続できないようにします。同期が完了したら、[Set-Mailbox](https://technet.microsoft.com/ja-jp/library/bb123981\(v=exchg.150\)) コマンドレットを実行して *IsExcludedFromServingHierarchy* パラメーターを `false` に設定し、パブリック フォルダー メールボックスに接続できるようになったことを示します。[Get-PublicFolderMailboxDiagnostics](https://technet.microsoft.com/ja-jp/library/jj218720\(v=exchg.150\)) コマンドレットを使用して、*SyncInfo* および *AssistantInfo* プロパティにより同期状況を確認することもできます。
 
-詳細については、「[パブリック フォルダーの作成](create-a-public-folder-exchange-2013-help.md)」を参照してください。
+詳細については、「[パブリック フォルダーの作成](https://docs.microsoft.com/ja-jp/exchange/collaboration-exo/public-folders/create-public-folder)」を参照してください。
 
 ## パブリック フォルダーの内容
 
@@ -143,7 +143,7 @@ Exchange 2013 で、パブリック フォルダーは、メールボックス �
 
 Exchange Server の以前のバージョンから Exchange 2013 へ、または Exchange Server の以前のバージョンから Exchange Online へ、パブリック フォルダーを移行できます。また、Exchange 2013 のパブリック フォルダーを Exchange Online に移行することもできます。
 
-Exchange 2013 をインストールする前に組織内に Exchange 2010 SP3 または Exchange 2007 SP3 RU10 パブリック フォルダーが既にある場合は、それらのパブリック フォルダーを Exchange 2013 に移行する必要があります。移行には、**PublicFolderMigrationRequst** コマンドレットを使用します。詳しくは、「[バッチ移行を使用して以前のバージョンから Exchange 2013 にパブリック フォルダーを移行する](use-batch-migration-to-migrate-public-folders-to-exchange-2013-from-previous-versions-exchange-2013-help.md)」を参照してください。組織が Exchange Online に移行する場合、パブリック フォルダーのクラウドへの移行とアップグレードを同時に実行できます。詳細については、「[バッチ移行を使用して、従来のパブリック フォルダーを Office 365 と Exchange Online に移行する](use-batch-migration-to-migrate-legacy-public-folders-to-office-365-and-exchange-online-exchange-online-help.md)」および「[バッチ移行を使用して、Exchange 2013 のパブリック フォルダーを Exchange Online に移行する](use-batch-migration-to-migrate-exchange-2013-public-folders-to-exchange-online-exchange-online-help.md)」を参照してください。
+Exchange 2013 をインストールする前に組織内に Exchange 2010 SP3 または Exchange 2007 SP3 RU10 パブリック フォルダーが既にある場合は、それらのパブリック フォルダーを Exchange 2013 に移行する必要があります。移行には、**PublicFolderMigrationRequst** コマンドレットを使用します。詳しくは、「[バッチ移行を使用して以前のバージョンから Exchange 2013 にパブリック フォルダーを移行する](use-batch-migration-to-migrate-public-folders-to-exchange-2013-from-previous-versions-exchange-2013-help.md)」を参照してください。組織が Exchange Online に移行する場合、パブリック フォルダーのクラウドへの移行とアップグレードを同時に実行できます。詳細については、「[バッチ移行を使用して、従来のパブリック フォルダーを Office 365 と Exchange Online に移行する](https://docs.microsoft.com/ja-jp/exchange/collaboration-exo/public-folders/batch-migration-of-legacy-public-folders)」および「[バッチ移行を使用して、Exchange 2013 のパブリック フォルダーを Exchange Online に移行する](https://docs.microsoft.com/ja-jp/exchange/collaboration-exo/public-folders/batch-migration-of-exchange-2013-public-folders)」を参照してください。
 
 パブリック フォルダーの保存方法が変更されているため、従来の Exchange メールボックスは、Exchange 2013 サーバー上または Exchange Online 上のパブリック フォルダー階層にアクセスできません。ただし、Exchange 2013 サーバーまたは Exchange Online 上のユーザー メールボックスは、従来のパブリック フォルダーに接続できます。Exchange 2013 パブリック フォルダーと従来のパブリック フォルダーは、Exchange 組織内に共存できません。つまり、実質的にバージョン間の共存が不可能です。Exchange Server 2013 または Exchange Online へのパブリック フォルダーの移行は、1 回限りの一括プロセスです。
 

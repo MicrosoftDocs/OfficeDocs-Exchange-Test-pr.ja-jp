@@ -25,9 +25,9 @@ VoIP ゲートウェイを構成するときは、VoIP ゲートウェイ デバ
 
 Exchange TechCenter の次の推奨リソースには、VoIP ゲートウェイおよび PBX を正しく構成するのに役立つ情報が含まれています。
 
-  - **サポートされる VoIP ゲートウェイ、IP PBX、および PBX のドキュメント**   「[Exchange 2013 のテレフォニー アドバイザー](telephony-advisor-for-exchange-2013-exchange-2013-help.md)」には、VoIP ゲートウェイ および PBX を構成するときに使用できる構成ファイルとセットアップ情報が記載されています。
+  - **サポートされる VoIP ゲートウェイ、IP PBX、および PBX のドキュメント**   「[Exchange 2013 のテレフォニー アドバイザー](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/telephony-advisor-for-exchange-2013)」には、VoIP ゲートウェイ および PBX を構成するときに使用できる構成ファイルとセットアップ情報が記載されています。
 
-  - **構成および技術的な注記**   「[サポートされる VoIP ゲートウェイ、IP Pbx、および PBX の構成に関する注意事項](configuration-notes-for-supported-voip-gateways-ip-pbxs-and-pbxs-exchange-2013-help.md)」には、VoIP ゲートウェイ および PBX を構成するときに使用できる構成ファイルとセットアップ情報が記載されています。
+  - **構成および技術的な注記**   「[サポートされる VoIP ゲートウェイ、IP Pbx、および PBX の構成に関する注意事項](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/configuration-notes-for-voip-gateways)」には、VoIP ゲートウェイ および PBX を構成するときに使用できる構成ファイルとセットアップ情報が記載されています。
 
   - **AudioCodes ベースの VoIP ゲートウェイの構成**  「[Microsoft Exchange Server リソース ページ](https://www.audiocodes.com/solutions/microsoft/exchange-server)」には、ユニファイド メッセージングで使用するための AudioCodes ベースの VoIP ゲートウェイの構成に役立つ最新のサポート情報および構成情報が記載されています。
 
@@ -37,7 +37,7 @@ Exchange TechCenter の次の推奨リソースには、VoIP ゲートウェイ�
 
 ## 詳細情報
 
-[サポートされる VoIP ゲートウェイ、IP Pbx、および PBX の構成に関する注意事項](configuration-notes-for-supported-voip-gateways-ip-pbxs-and-pbxs-exchange-2013-help.md)
+[サポートされる VoIP ゲートウェイ、IP Pbx、および PBX の構成に関する注意事項](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/configuration-notes-for-voip-gateways)
 
 [UM をサポートされる VoIP ゲートウェイに接続する](connect-um-to-a-supported-voip-gateway-exchange-2013-help.md)
 

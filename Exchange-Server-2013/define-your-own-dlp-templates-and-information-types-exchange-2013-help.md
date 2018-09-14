@@ -47,7 +47,7 @@ Microsoft Exchange の DLP を使用すると、組織固有のポリシーを�
 
 2.  カスタム テンプレートをインポートします。詳しくは、「[ファイルからカスタムの DLP ポリシー テンプレートをインポートする](import-a-custom-dlp-policy-template-from-a-file-exchange-2013-help.md)」を参照してください。
 
-3.  カスタム テンプレートに基づいて DLP ポリシーを作成します。詳しくは、「[テンプレートからの DLP ポリシーの作成](how-to-new-dlp-data-loss-prevention-policy-template.md)」を参照してください。
+3.  カスタム テンプレートに基づいて DLP ポリシーを作成します。詳しくは、「[テンプレートからの DLP ポリシーの作成](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/data-loss-prevention/create-dlp-policy-from-template)」を参照してください。
 
 4.  手順 1 と 2 を繰り返すことによって、カスタム テンプレートを更新します。
 
@@ -81,7 +81,7 @@ Microsoft Exchange の DLP を使用すると、組織固有のポリシーを�
 
 ## 詳細情報
 
-[データ損失防止](technical-overview-of-dlp-data-loss-prevention-in-exchange.md)
+[データ損失防止](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention)
 
 [ファイルからカスタムの DLP ポリシー テンプレートをインポートする](import-a-custom-dlp-policy-template-from-a-file-exchange-2013-help.md)
 

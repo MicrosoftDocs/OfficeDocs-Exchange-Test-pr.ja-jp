@@ -67,9 +67,9 @@ Microsoft から多数の DLP ポリシーが提供されています。これ�
 
   - [Exchange で提供される DLP ポリシー テンプレート](dlp-policy-templates-supplied-in-exchange-exchange-2013-help.md)
 
-  - [テンプレートからの DLP ポリシーの作成](how-to-new-dlp-data-loss-prevention-policy-template.md)
+  - [テンプレートからの DLP ポリシーの作成](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/data-loss-prevention/create-dlp-policy-from-template)
 
 ## 詳細情報
 
-[データ損失防止](technical-overview-of-dlp-data-loss-prevention-in-exchange.md)
+[データ損失防止](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention)
 

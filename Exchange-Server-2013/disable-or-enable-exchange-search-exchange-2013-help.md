@@ -21,7 +21,7 @@ _**トピックの最終更新日:** 2014-05-07_
 
 
 > [!NOTE]
-> Exchange Search を無効にすると、Outlook のオンライン モードの使用時、あるいは Windows モバイル デバイス上において、ユーザーが実行するフルテキスト検索の機能やパフォーマンスが影響を受けます。<BR><A href="in-place-ediscovery-exchange-2013-help.md">インプレース電子情報開示 (eDiscovery)</A> も Exchange Search に依存しています。メールボックス データベースまたはメールボックス サーバーの Exchange Search を無効にすると、インプレース電子情報開示の検索が実行されてもデータベースまたはサーバーからメッセージが返らなくなります。
+> Exchange Search を無効にすると、Outlook のオンライン モードの使用時、あるいは Windows モバイル デバイス上において、ユーザーが実行するフルテキスト検索の機能やパフォーマンスが影響を受けます。<BR><A href="https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery">インプレース電子情報開示 (eDiscovery)</A> も Exchange Search に依存しています。メールボックス データベースまたはメールボックス サーバーの Exchange Search を無効にすると、インプレース電子情報開示の検索が実行されてもデータベースまたはサーバーからメッセージが返らなくなります。
 
 
 

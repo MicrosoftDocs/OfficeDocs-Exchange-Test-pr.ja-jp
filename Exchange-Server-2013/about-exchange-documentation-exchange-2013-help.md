@@ -17,7 +17,7 @@ _**適用先:** Exchange Online, Exchange Server 2013_
 
 これは、内容別または Microsoft Exchange で使用されるテクノロジ別に編成された概念および手順を説明したトピックを集めたものです。それぞれのトピックへは、左側のウィンドウの目次から、他のヘルプ トピック内のリンクから、検索結果から、またはカスタマイズしたお気に入りのトピック一覧から直接アクセスできます。
 
-Exchange ドキュメントに関連するその他の情報は、「[サード パーティの著作権に関する通知](third-party-copyright-notices-exchange-2013-help.md)」にあります。
+Exchange ドキュメントに関連するその他の情報は、「[サード パーティの著作権に関する通知](https://docs.microsoft.com/ja-jp/exchange/about-exchange-documentation/third-party-copyright-notices)」にあります。
 
 ## Exchange ドキュメントの場所
 

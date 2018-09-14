@@ -17,7 +17,7 @@ _**適用先:** Exchange Online, Exchange Server 2013_
 
 このトピックでは、オフライン アドレス帳 (OAB) を削除する方法について説明します。
 
-OAB に関連するその他の管理タスクについては、「[オフライン アドレス帳の手順](offline-address-book-procedures-exchange-2013-help.md)」を参照してください。
+OAB に関連するその他の管理タスクについては、「[オフライン アドレス帳の手順](https://docs.microsoft.com/ja-jp/exchange/address-books/offline-address-books/offline-address-book-procedures)」を参照してください。
 
 ## 始める前に把握しておくべき情報
 
@@ -27,7 +27,7 @@ OAB に関連するその他の管理タスクについては、「[オフライ
 
   - UNRESOLVED\_TOKENBLOCK\_VAL(GENL\_AddressListRole\_EXOnOP)
 
-  - ユーザーまたはメールボックス データベースにリンクされた OAB を削除した後、そのユーザーに対して新しい OAB を割り当てるまで、受信者は既定の OAB をダウンロードします。既定の OAB を削除する場合は、別の OAB を既定の OAB として割り当てる必要があります。既定の OAB を変更する手順については、「[既定のオフライン アドレス帳を変更する](change-the-default-offline-address-book-exchange-2013-help.md)」を参照してください。
+  - ユーザーまたはメールボックス データベースにリンクされた OAB を削除した後、そのユーザーに対して新しい OAB を割り当てるまで、受信者は既定の OAB をダウンロードします。既定の OAB を削除する場合は、別の OAB を既定の OAB として割り当てる必要があります。既定の OAB を変更する手順については、「[既定のオフライン アドレス帳を変更する](https://docs.microsoft.com/ja-jp/exchange/address-books/offline-address-books/change-default-offline-address-book)」を参照してください。
 
   - Exchange 管理センター (EAC) を使用してこの手順を実行することはできません。シェルを使用する必要があります。
 

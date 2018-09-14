@@ -21,17 +21,17 @@ _**トピックの最終更新日:** 2012-10-12_
 
 [アドレス一覧を更新する](update-an-address-list-exchange-2013-help.md)
 
-[受信者フィルターを使用したアドレス一覧の作成](create-an-address-list-by-using-recipient-filters-exchange-2013-help.md)
+[受信者フィルターを使用したアドレス一覧の作成](https://docs.microsoft.com/ja-jp/exchange/address-books/address-lists/use-recipient-filters-to-create-an-address-list)
 
 [アドレス一覧を移動する](move-an-address-list-exchange-2013-help.md)
 
 [アドレス一覧の削除](remove-an-address-list-exchange-2013-help.md)
 
-[グローバル アドレス一覧の作成](create-a-global-address-list-exchange-2013-help.md)
+[グローバル アドレス一覧の作成](https://docs.microsoft.com/ja-jp/exchange/address-books/address-lists/create-global-address-list)
 
-[グローバル アドレス一覧のプロパティを構成する](configure-global-address-list-properties-exchange-2013-help.md)
+[グローバル アドレス一覧のプロパティを構成する](https://docs.microsoft.com/ja-jp/exchange/address-books/address-lists/configure-global-address-list-properties)
 
-[グローバル アドレス一覧を削除する](remove-a-global-address-list-exchange-2013-help.md)
+[グローバル アドレス一覧を削除する](https://docs.microsoft.com/ja-jp/exchange/address-books/address-lists/remove-a-global-address-list)
 
 [グローバル アドレス一覧の更新](update-a-global-address-list-exchange-2013-help.md)
 

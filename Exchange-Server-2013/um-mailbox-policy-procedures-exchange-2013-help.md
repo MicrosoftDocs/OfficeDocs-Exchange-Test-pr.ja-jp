@@ -15,9 +15,9 @@ ms.translationtype: HT
 
 _**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
-[UM メールボックス ポリシーの作成](create-a-um-mailbox-policy-exchange-2013-help.md)
+[UM メールボックス ポリシーの作成](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-voice-mail/create-um-mailbox-policy)
 
-[UM メールボックス ポリシーの管理](manage-a-um-mailbox-policy-exchange-2013-help.md)
+[UM メールボックス ポリシーの管理](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-voice-mail/manage-um-mailbox-policy)
 
-[UM メールボックス ポリシーを削除する](delete-a-um-mailbox-policy-exchange-2013-help.md)
+[UM メールボックス ポリシーを削除する](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-voice-mail/delete-um-mailbox-policy)
 

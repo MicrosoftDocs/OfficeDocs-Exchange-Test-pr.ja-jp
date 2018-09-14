@@ -23,7 +23,7 @@ _**トピックの最終更新日:** 2017-03-27_
 
 ## パブリック フォルダーの移行に関する FAQ
 
-このセクションでは、パブリック フォルダーの移行に関してよくある質問をまとめてあります。詳細については、「[バッチ移行を使用して以前のバージョンから Exchange 2013 にパブリック フォルダーを移行する](use-batch-migration-to-migrate-public-folders-to-exchange-2013-from-previous-versions-exchange-2013-help.md)」、「[バッチ移行を使用して、従来のパブリック フォルダーを Office 365 と Exchange Online に移行する](use-batch-migration-to-migrate-legacy-public-folders-to-office-365-and-exchange-online-exchange-online-help.md)」、「[バッチ移行を使用して、Exchange 2013 のパブリック フォルダーを Exchange Online に移行する](use-batch-migration-to-migrate-exchange-2013-public-folders-to-exchange-online-exchange-online-help.md)」を参照してください。
+このセクションでは、パブリック フォルダーの移行に関してよくある質問をまとめてあります。詳細については、「[バッチ移行を使用して以前のバージョンから Exchange 2013 にパブリック フォルダーを移行する](use-batch-migration-to-migrate-public-folders-to-exchange-2013-from-previous-versions-exchange-2013-help.md)」、「[バッチ移行を使用して、従来のパブリック フォルダーを Office 365 と Exchange Online に移行する](https://docs.microsoft.com/ja-jp/exchange/collaboration-exo/public-folders/batch-migration-of-legacy-public-folders)」、「[バッチ移行を使用して、Exchange 2013 のパブリック フォルダーを Exchange Online に移行する](https://docs.microsoft.com/ja-jp/exchange/collaboration-exo/public-folders/batch-migration-of-exchange-2013-public-folders)」を参照してください。
 
 ## サポートされているパブリック フォルダー移行のシナリオには、どのようなものがありますか。
 
@@ -113,7 +113,7 @@ Outlook Web App がサポートされていますが、いくつか制限があ�
 
     New-Mailbox -PublicFolder -Name <name of public folder>
 
-詳細については、「[パブリック フォルダーの作成](create-a-public-folder-exchange-2013-help.md)」を参照してください。
+詳細については、「[パブリック フォルダーの作成](https://docs.microsoft.com/ja-jp/exchange/collaboration-exo/public-folders/create-public-folder)」を参照してください。
 
 ## Exchange の以前のバージョンには、メールボックス データベースごとにそのパブリック フォルダー データベースを指定するオプションがありました。Exchange 2013 では、このオプションはどのように機能しますか?
 

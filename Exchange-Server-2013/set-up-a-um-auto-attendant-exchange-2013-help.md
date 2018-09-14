@@ -17,7 +17,7 @@ _**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 ユーザーのボイス メールへのアクセスを許可するほかに、ユニファイド メッセージング (UM) を使用すると、組織のニーズに応じて、1 つ以上の UM 自動応答を作成することができます。組織は、UM 自動応答を使用して、外部や内部から電話を掛けてきた発信者が社内のユーザーや組織内の部署を見つけて通話したり、呼び出しを転送したりできるような音声メニュー システムを作成することができます。
 
-UM 自動応答に関連する追加の管理タスクについては、「[UM 自動応答手順](um-auto-attendant-procedures-exchange-2013-help.md)」を参照してください。
+UM 自動応答に関連する追加の管理タスクについては、「[UM 自動応答手順](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/um-auto-attendant-procedures)」を参照してください。
 
 ## 自動応答
 

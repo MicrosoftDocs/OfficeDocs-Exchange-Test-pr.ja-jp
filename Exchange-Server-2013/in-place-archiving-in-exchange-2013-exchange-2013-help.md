@@ -271,7 +271,7 @@ Outlook 2010 以降の法令遵守とアーカイブの詳細については、�
 
   - **Exchange Search**   アーカイブ メールボックスでは、メッセージを迅速に検索する機能がより重要になります。Exchange Search については、プライマリ メールボックスとアーカイブ メールボックスとの間に違いはありません。両方のメールボックスのコンテンツにはインデックスが付きます。Outlook を Exchange キャッシュ モードで使用している場合でもユーザーのコンピューターにはアーカイブ メールボックスがキャッシュされないため、アーカイブの検索結果は常に Exchange Search によって提供されます。Outlook 2010 以降および Outlook Web App でメールボックス全体を検索すると、検索結果にはユーザーのプライマリ メールボックスとアーカイブ メールボックスが含まれます。
 
-  - <strong>インプレース電子証拠開示</strong>   検出マネージャーがインプレース電子証拠開示の検索を実施すると、ユーザーのアーカイブ メールボックスも検索対象となります。Exchange 管理センター (EAC) から探索検索を作成する際にアーカイブ メールボックスを除外することはできません。Exchange 管理シェルを使用して探索検索を作成する場合は、*DoNotIncludeArchive* スイッチを使用してアーカイブを除外することができます。詳細については、「[New-MailboxSearch](https://technet.microsoft.com/ja-jp/library/dd298064\(v=exchg.150\))」を参照してください。詳細については、「[インプレース電子情報開示 (eDiscovery)](in-place-ediscovery-exchange-2013-help.md)」を参照してください。
+  - <strong>インプレース電子証拠開示</strong>   検出マネージャーがインプレース電子証拠開示の検索を実施すると、ユーザーのアーカイブ メールボックスも検索対象となります。Exchange 管理センター (EAC) から探索検索を作成する際にアーカイブ メールボックスを除外することはできません。Exchange 管理シェルを使用して探索検索を作成する場合は、*DoNotIncludeArchive* スイッチを使用してアーカイブを除外することができます。詳細については、「[New-MailboxSearch](https://technet.microsoft.com/ja-jp/library/dd298064\(v=exchg.150\))」を参照してください。詳細については、「[インプレース電子情報開示 (eDiscovery)](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery)」を参照してください。
     
 
     > [!IMPORTANT]
@@ -279,7 +279,7 @@ Outlook 2010 以降の法令遵守とアーカイブの詳細については、�
 
 
 
-  - **インプレース保持と訴訟ホールド**   メールボックスのインプレース保持または訴訟ホールドを有効にすると、プライマリ メールボックスとアーカイブ メールボックスの両方にホールド（保持）が適用されます。インプレース保持と訴訟ホールドの詳細については、「[インプレース保持と訴訟ホールド](in-place-hold-and-litigation-hold-exchange-2013-help.md)」を参照してください。
+  - **インプレース保持と訴訟ホールド**   メールボックスのインプレース保持または訴訟ホールドを有効にすると、プライマリ メールボックスとアーカイブ メールボックスの両方にホールド（保持）が適用されます。インプレース保持と訴訟ホールドの詳細については、「[インプレース保持と訴訟ホールド](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/in-place-and-litigation-holds)」を参照してください。
 
   - **回復可能なアイテム フォルダー**   アーカイブ メールボックスには、独自の回復可能なアイテム フォルダーがあり、プライマリ メールボックスと同じ回復可能なアイテム フォルダー クォータが適用されます。回復可能なアイテムの詳細については、「[\[回復可能なアイテム\] フォルダー](recoverable-items-folder-exchange-2013-help.md)」を参照してください。
 

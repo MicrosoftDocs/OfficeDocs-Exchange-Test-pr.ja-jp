@@ -17,7 +17,7 @@ _**適用先:** Exchange Online, Exchange Server 2013_
 
 Exchange 管理シェルを使用して、さまざまな組織間のメール ヒントのカスタム設定を構成できます。
 
-組織の関係を構築すると、空き時間情報データの共有、セキュリティで保護されたメッセージの流れの構成、およびメッセージの追跡の有効化などによって、両方の組織でユーザーの操作性を向上させることができます。組織の関係の詳細については、「[組織の関係にまたがるメール ヒント](mailtips-over-organization-relationships-exchange-2013-help.md)」を参照してください。
+組織の関係を構築すると、空き時間情報データの共有、セキュリティで保護されたメッセージの流れの構成、およびメッセージの追跡の有効化などによって、両方の組織でユーザーの操作性を向上させることができます。組織の関係の詳細については、「[組織の関係にまたがるメール ヒント](https://docs.microsoft.com/ja-jp/exchange/clients-and-mobile-in-exchange-online/mailtips/mailtips-over-organization-relationships)」を参照してください。
 
 組織の関係を構築した 2 つの組織間でメール ヒントを使用する方法について、さまざまな設定を使用して制御できます。ここで説明する手順では、これらのさまざまな制御について図示します。すべての例において、社内の組織は contoso.com、リモート組織は online.contoso.com、そして組織の関係は Contoso Online という名前です。
 

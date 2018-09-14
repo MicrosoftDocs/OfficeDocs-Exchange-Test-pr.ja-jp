@@ -21,5 +21,5 @@ _**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 ## ユーザーのボイス メールの設定
 
-ユーザーの UM を有効にする前に、使用するダイヤル プランの種類、使用する内線番号、PIN ポリシー、Outlook Voice Access、およびユーザーにアクセスを許可するその他の機能について考慮する必要があります。詳細については、「[ユーザーのボイス メール](voice-mail-for-users-exchange-2013-help.md)」を参照してください。
+ユーザーの UM を有効にする前に、使用するダイヤル プランの種類、使用する内線番号、PIN ポリシー、Outlook Voice Access、およびユーザーにアクセスを許可するその他の機能について考慮する必要があります。詳細については、「[ユーザーのボイス メール](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-voice-mail/voice-mail-for-users)」を参照してください。
 

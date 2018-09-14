@@ -21,11 +21,11 @@ _<strong>適用先:</strong>Exchange Server 2013, Exchange Server 2016_
 
 
 > [!NOTE]
-> Exchange 2010 または Exchange 2007 のパブリック フォルダーがある場合は、「<A href="configure-legacy-on-premises-public-folders-for-a-hybrid-deployment-exchange-2013-help.md">ハイブリッド展開用に従来の社内パブリック フォルダーを構成する</A>」をご覧ください。
+> Exchange 2010 または Exchange 2007 のパブリック フォルダーがある場合は、「<A href="https://docs.microsoft.com/ja-jp/exchange/collaboration-exo/public-folders/set-up-legacy-hybrid-public-folders">ハイブリッド展開用に従来の社内パブリック フォルダーを構成する</A>」をご覧ください。
 
 
 
-この記事では、Exchange Online/Office 365 のユーザーが Exchange 2013 のパブリック フォルダーにアクセスできるようにする方法について説明します。オンプレミス Exchange 2013 のユーザーが Exchange Online のパブリック フォルダーにアクセスできるようにする方法については、「[ハイブリッド展開用に Exchange Online パブリック フォルダーを構成する](configure-exchange-online-public-folders-for-a-hybrid-deployment-exchange-2013-help.md)」をご覧ください。
+この記事では、Exchange Online/Office 365 のユーザーが Exchange 2013 のパブリック フォルダーにアクセスできるようにする方法について説明します。オンプレミス Exchange 2013 のユーザーが Exchange Online のパブリック フォルダーにアクセスできるようにする方法については、「[ハイブリッド展開用に Exchange Online パブリック フォルダーを構成する](https://docs.microsoft.com/ja-jp/exchange/collaboration-exo/public-folders/set-up-exo-hybrid-public-folders)」をご覧ください。
 
 Exchange Online/Office 365 のユーザーが Exchange 2013 のパブリック フォルダーにアクセスするには、そのユーザーがオンプレミスの Exchange 環境で MailUser オブジェクトによって表されている必要があります。この MailUser オブジェクトは、ターゲットの Exchange 2013 パブリック フォルダー階層に対してローカルである必要もあります。現在、オンプレミスで MailUser オブジェクトとして表されていない Office 365 ユーザーがある場合は、Microsoft サポート技術情報 3106618「[Exchange Online ユーザーがレガシ パブリック フォルダーにアクセスできない](https://go.microsoft.com/fwlink/p/?linkid=699451)」を参照し、対応するオンプレミスのエンティティを作成してください。
 

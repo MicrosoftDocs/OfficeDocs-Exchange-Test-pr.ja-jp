@@ -110,9 +110,9 @@ UM メールボックス ポリシーの 1 つのプロパティは UM ダイヤ
 
 内線番号を追加、削除、または変更する方法の詳細については、以下のトピックを参照してください。
 
-  - [内線番号の変更](change-an-extension-number-exchange-2013-help.md)
+  - [内線番号の変更](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-voice-mail/change-extension-number)
 
-  - [内線番号の追加](add-an-extension-number-exchange-2013-help.md)
+  - [内線番号の追加](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-voice-mail/add-extension-number)
 
   - [内線番号の削除](remove-an-extension-number-exchange-2013-help.md)
 
@@ -122,13 +122,13 @@ UM が有効なユーザーの SIP アドレスまたは E.164 番号を変更�
 
   - [SIP アドレスの変更](change-a-sip-address-exchange-2013-help.md)
 
-  - [SIP アドレスの削除](remove-a-sip-address-exchange-2013-help.md)
+  - [SIP アドレスの削除](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-voice-mail/remove-sip-address)
 
   - [E.164 番号の追加](add-an-e-164-number-exchange-2013-help.md)
 
   - [E.164 番号の変更](change-an-e-164-number-exchange-2013-help.md)
 
-  - [E.164 番号の削除](remove-an-e-164-number-exchange-2013-help.md)
+  - [E.164 番号の削除](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-voice-mail/remove-e-164-number)
 
 ## 通話応答
 

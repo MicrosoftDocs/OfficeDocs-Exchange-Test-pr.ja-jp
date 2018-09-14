@@ -21,7 +21,7 @@ _**適用先:** Exchange Online, Exchange Server 2013_
 
 
 
-[インプレース電子情報開示 (eDiscovery)](in-place-ediscovery-exchange-2013-help.md) を使用して、ユーザーが [インプレース保持と訴訟ホールド](in-place-hold-and-litigation-hold-exchange-2013-help.md) に置いた、削除済みアイテム、変更済みアイテムの原本を含む、すべてのメールボックスの内容を対象に検索を行います。
+[インプレース電子情報開示 (eDiscovery)](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery) を使用して、ユーザーが [インプレース保持と訴訟ホールド](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/in-place-and-litigation-holds) に置いた、削除済みアイテム、変更済みアイテムの原本を含む、すべてのメールボックスの内容を対象に検索を行います。
 
 ## 始める前に把握しておくべき情報
 
@@ -31,7 +31,7 @@ _**適用先:** Exchange Online, Exchange Server 2013_
 
   - 電子情報開示検索を作成するには、検索を作成する組織内に SMTP アドレスがあることが必要です。そのためには、Exchange Online に、電子情報開示検索を作成するためのライセンスが付与された Exchange Online (プラン 2) メールボックスがあることが必要となります。Exchange ハイブリッド組織の場合は、Exchange Online メールボックスを検索できるように、オンプレミスの Exchange メールボックスに対応するメール ユーザー アカウントが Office 365 組織内になければなりません。あるいは、テナント管理者アカウントなど Office 365 だけに存在するアカウントでサインインする場合は、そのアカウントに Exchange Online (プラン 2) ライセンスが割り当てられている必要があります。
 
-  - Exchange 2013 セットアップは、検索結果をコピーするために <strong>探索検索メールボックス</strong> という名前の探索メールボックスを作成します。探索検索メールボックスは既定で Exchange Online 内に作成されます。追加の探索メールボックスを作成できます。詳細については、「[探索メールボックスの作成](create-a-discovery-mailbox-exchange-2013-help.md)」を参照してください。
+  - Exchange 2013 セットアップは、検索結果をコピーするために <strong>探索検索メールボックス</strong> という名前の探索メールボックスを作成します。探索検索メールボックスは既定で Exchange Online 内に作成されます。追加の探索メールボックスを作成できます。詳細については、「[探索メールボックスの作成](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/in-place-ediscovery/create-a-discovery-mailbox)」を参照してください。
 
   - インプレースの電子情報開示検索を作成しても、検索結果で返されるメッセージは自動では探索メールボックスにコピーされません。検索の作成後、Exchange 管理センター (EAC) を使用して、検索結果の推定とプレビュー、または探索メールボックスへのコピーを行えます。詳細については、以下を参照してください。
     
@@ -61,7 +61,7 @@ _**適用先:** Exchange Online, Exchange Server 2013_
     
 
     > [!IMPORTANT]
-    > <STRONG>[すべてのメールボックスを検索する]</STRONG> オプションを使用して、すべてのメールボックスを保持することはできません。インプレース ホールドを作成するには、<STRONG>[検索するメールボックスを指定する]</STRONG> を選択する必要があります。詳細については、「<A href="create-or-remove-an-in-place-hold-exchange-2013-help.md">インプレース保持を作成または削除する</A>」を参照してください。
+    > <STRONG>[すべてのメールボックスを検索する]</STRONG> オプションを使用して、すべてのメールボックスを保持することはできません。インプレース ホールドを作成するには、<STRONG>[検索するメールボックスを指定する]</STRONG> を選択する必要があります。詳細については、「<A href="https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/create-or-remove-in-place-holds">インプレース保持を作成または削除する</A>」を参照してください。
 
 
 

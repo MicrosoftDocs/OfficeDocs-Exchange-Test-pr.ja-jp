@@ -29,11 +29,11 @@ Microsoft Exchange 2010 UM トラブルシューティング ツールは **Test
 
   - Exchange 2010 または Exchange 2013 組織が次の要件を満たしているかを確認します。
     
-      - UM ダイヤル プランが作成されている。詳細な手順については、「[UM ダイヤル プランを作成する](create-a-um-dial-plan-exchange-2013-help.md)」を参照してください。
+      - UM ダイヤル プランが作成されている。詳細な手順については、「[UM ダイヤル プランを作成する](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-dial-plan)」を参照してください。
     
-      - UM メールボックス ポリシーが作成されている。詳細な手順については、「[UM メールボックス ポリシーの作成](create-a-um-mailbox-policy-exchange-2013-help.md)」を参照してください。
+      - UM メールボックス ポリシーが作成されている。詳細な手順については、「[UM メールボックス ポリシーの作成](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-voice-mail/create-um-mailbox-policy)」を参照してください。
     
-      - UM IP ゲートウェイが作成されている。詳細な手順については、「[UM IP ゲートウェイを作成する](create-a-um-ip-gateway-exchange-2013-help.md)」を参照してください。
+      - UM IP ゲートウェイが作成されている。詳細な手順については、「[UM IP ゲートウェイを作成する](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-ip-gateway)」を参照してください。
     
       - Exchange 2010 UM サーバーが UM ダイヤル プランに追加されました。Exchange 2013 と Lync Server を使用している場合は、SIP URI ダイヤル プランに、すべてのクライアント アクセスおよびメールボックス サーバーを追加します。詳細な手順については、「[ダイヤル プランに UM サーバーを追加](https://go.microsoft.com/fwlink/p/?linkid=313051)」または「[メールボックス サーバーとクライアント アクセス サーバーを SIP URI ダイヤル プランに追加する](add-mailbox-and-client-access-servers-to-a-sip-uri-dial-plan-exchange-2013-help.md)」を参照してください。
 

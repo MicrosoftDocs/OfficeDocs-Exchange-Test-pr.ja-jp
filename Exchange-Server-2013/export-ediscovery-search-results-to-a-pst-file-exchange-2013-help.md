@@ -106,7 +106,7 @@ PST ファイルとも呼ばれる Outlook データ ファイルに埋め込み
 
   - 重複除外および検索不能アイテムの詳細については以下を参照してください。
     
-      - [Estimate, preview, and copy search results](in-place-ediscovery-exchange-2013-help.md)
+      - [Estimate, preview, and copy search results](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery)
     
       - [Exchange 電子情報開示の検索不能アイテム](unsearchable-items-in-exchange-ediscovery-exchange-2013-help.md)
 

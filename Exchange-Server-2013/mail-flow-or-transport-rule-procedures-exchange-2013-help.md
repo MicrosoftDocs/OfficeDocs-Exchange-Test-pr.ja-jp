@@ -23,11 +23,11 @@ _**トピックの最終更新日:** 2015-04-13_
 
 [Office 365 で組織全体の信頼できる差出人またはブロックする差出人の一覧を作成する](https://technet.microsoft.com/ja-jp/library/dn198251\(v=exchg.150\))   トランスポート ルールを使用して、ドメインまたはユーザー ベースの差出人セーフ リストと受信拒否リストを作成するための情報。
 
-[単語、語句、パターンの一覧に基づいてメールをルーティングするメール フロー ルールの使用](use-mail-flow-rules-to-route-email-based-on-a-list-of-words-phrases-or-patterns-exchange-2013-help.md) 組織の電子メール ポリシーに準拠するために役立つ情報。
+[単語、語句、パターンの一覧に基づいてメールをルーティングするメール フロー ルールの使用](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/mail-flow-rules/use-rules-to-route-email) 組織の電子メール ポリシーに準拠するために役立つ情報。
 
 [Exchange 2013 でフィルター パック IFilter を登録する](register-filter-pack-ifilters-with-exchange-2013-exchange-2013-help.md)   添付ファイルの追加のファイル タイプを登録するための情報。登録することにより、添付ファイルに適用されるトランスポート ルールでそれらのファイル タイプをスキャンできるようにします。
 
 [メール フロー ルールを管理します](manage-mail-flow-rules-exchange-2013-help.md)   トランスポート ルールを作成、表示、変更、有効化、無効化、または削除するための情報と、トランスポート ルール コレクションのインポートとエクスポートに関する情報。
 
-[メール フローのルールを構成するためのベスト プラクティス](best-practices-for-configuring-mail-flow-rules-exchange-2013-help.md)   一般的な構成エラーを防止するために役立つ情報。
+[メール フローのルールを構成するためのベスト プラクティス](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/mail-flow-rules/configuration-best-practices)   一般的な構成エラーを防止するために役立つ情報。
 

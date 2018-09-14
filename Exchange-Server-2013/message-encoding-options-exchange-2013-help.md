@@ -399,9 +399,9 @@ Set-RemoteDomain に NonMimeCharacterSet を設定した場合、文字セット
 
 [Exchange Online のリモート ドメイン](https://technet.microsoft.com/ja-jp/library/jj966211\(v=exchg.150\))
 
-[メール ユーザーの管理](manage-mail-users-exchange-2013-help.md)
+[メール ユーザーの管理](https://docs.microsoft.com/ja-jp/exchange/recipients-in-exchange-online/manage-mail-users)
 
-[メール連絡先の管理](manage-mail-contacts-exchange-2013-help.md)
+[メール連絡先の管理](https://docs.microsoft.com/ja-jp/exchange/recipients-in-exchange-online/manage-mail-contacts)
 
 [Outlook でメッセージ形式を変更する](https://go.microsoft.com/fwlink/p/?linkid=397890)
 

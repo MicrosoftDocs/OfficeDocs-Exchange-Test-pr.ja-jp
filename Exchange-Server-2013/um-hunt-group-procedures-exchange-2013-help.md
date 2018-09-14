@@ -19,5 +19,5 @@ _**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 [UM ハント グループの表示](view-a-um-hunt-group-exchange-2013-help.md)
 
-[UM ハント グループを削除する](delete-a-um-hunt-group-exchange-2013-help.md)
+[UM ハント グループを削除する](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/connect-voice-mail-system/delete-um-hunt-group)
 

@@ -17,11 +17,11 @@ _**適用先:** Exchange Server 2013_
 
 _**トピックの最終更新日:** 2012-10-11_
 
-[アドレス帳ポリシーの作成](create-an-address-book-policy-exchange-2013-help.md)
+[アドレス帳ポリシーの作成](https://docs.microsoft.com/ja-jp/exchange/address-books/address-book-policies/create-an-address-book-policy)
 
-[メール ユーザーへのアドレス帳ポリシーの割り当て](assign-an-address-book-policy-to-mail-users-exchange-2013-help.md)
+[メール ユーザーへのアドレス帳ポリシーの割り当て](https://docs.microsoft.com/ja-jp/exchange/address-books/address-book-policies/assign-an-address-book-policy-to-mail-users)
 
-[アドレス帳ポリシーの設定の変更](change-the-settings-of-an-address-book-policy-exchange-2013-help.md)
+[アドレス帳ポリシーの設定の変更](https://docs.microsoft.com/ja-jp/exchange/address-books/address-book-policies/change-the-settings-of-an-address-book-policy)
 
-[アドレス帳ポリシーの削除](remove-an-address-book-policy-exchange-2013-help.md)
+[アドレス帳ポリシーの削除](https://docs.microsoft.com/ja-jp/exchange/address-books/address-book-policies/remove-an-address-book-policy)
 

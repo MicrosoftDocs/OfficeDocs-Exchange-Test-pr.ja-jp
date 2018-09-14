@@ -45,11 +45,11 @@ UM は、VoIP ゲートウェイの機能を使用して、PBX からの ISDN �
 
 テレフォニー ネットワークと UM の統合で最初の手順となるのが、正しい VoIP ゲートウェイ、IP PBX、SIP 対応 PBX、または SBC を選択することです。これらのデバイスは UM と共に動作するように構成する必要があります。オンプレミス展開およびハイブリッド展開のどちらの場合も、必要なクライアント アクセス サーバーとメールボックス サーバーを展開し、必要なすべての UM コンポーネントを作成して構成する必要があります。ボイス メールがホストされている Office 365 の場合、サーバーのインストールや構成は一切必要ありません。上記のコンポーネントにより、テレフォニー、回線交換ネットワークから IP データ ネットワークへの接続を確立して、組織内のユーザーのボイス メールを有効にすることができます。サポートされるテレフォニー デバイスの詳細については、次のリソースをご覧ください。
 
-  - [Exchange 2013 のテレフォニー アドバイザー](telephony-advisor-for-exchange-2013-exchange-2013-help.md)
+  - [Exchange 2013 のテレフォニー アドバイザー](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/telephony-advisor-for-exchange-2013)
 
-  - [サポートされる VoIP ゲートウェイ、IP Pbx、および PBX の構成に関する注意事項](configuration-notes-for-supported-voip-gateways-ip-pbxs-and-pbxs-exchange-2013-help.md)
+  - [サポートされる VoIP ゲートウェイ、IP Pbx、および PBX の構成に関する注意事項](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/configuration-notes-for-voip-gateways)
 
-  - [サポートされているセッション ボーダー コントローラーの構成に関する注意事項](configuration-notes-for-supported-session-border-controllers-exchange-2013-help.md)
+  - [サポートされているセッション ボーダー コントローラーの構成に関する注意事項](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/configuration-notes-for-session-border-controllers)
 
 ## Microsoft Lync Server
 

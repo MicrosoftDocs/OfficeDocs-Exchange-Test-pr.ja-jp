@@ -59,7 +59,7 @@ _**トピックの最終更新日:** 2013-02-19_
 
   - **専用のメールボックスとユーザー アカウントを作成します**   スパム検疫メールボックス専用のメールボックスと Active Directory ユーザー アカウントを作成することをお勧めします。詳細については、「[ユーザー メールボックスを作成する](create-user-mailboxes-exchange-2013-help.md)」を参照してください。
     
-    組織の準拠ポリシーとニーズに応じて、メッセージング レコード管理、メールボックスのクォータ、委任権限など、受信者ポリシーを適用することができます。詳細については、「[メッセージング レコード管理](messaging-records-management-exchange-2013-help.md)」を参照してください。
+    組織の準拠ポリシーとニーズに応じて、メッセージング レコード管理、メールボックスのクォータ、委任権限など、受信者ポリシーを適用することができます。詳細については、「[メッセージング レコード管理](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/messaging-records-management/messaging-records-management)」を参照してください。
     
 
     > [!NOTE]

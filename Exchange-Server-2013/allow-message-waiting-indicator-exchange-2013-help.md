@@ -218,9 +218,9 @@ UM メールボックス ポリシーを作成して、UM 対応メールボッ�
 
 UM メールボックス ポリシー上の MWI 設定の管理方法については、以下のトピックを参照してください。
 
-  - [UM メールボックス ポリシーの管理](manage-a-um-mailbox-policy-exchange-2013-help.md)
+  - [UM メールボックス ポリシーの管理](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-voice-mail/manage-um-mailbox-policy)
 
-  - [ユーザーのメッセージ待機インジケーター (MWI) を有効にする](enable-message-waiting-indicator-mwi-for-users-exchange-2013-help.md)
+  - [ユーザーのメッセージ待機インジケーター (MWI) を有効にする](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/enable-mwi-for-users)
 
   - [ユーザーのメッセージ待機インジケーター (MWI) を無効にする](disable-message-waiting-indicator-mwi-for-users-exchange-2013-help.md)
 
@@ -228,7 +228,7 @@ UM メールボックス ポリシー上の MWI 設定の管理方法につい�
 
 ## UM IP ゲートウェイと MWI
 
-UM IP ゲートウェイで MWI を無効にすると、UM IP ゲートウェイによって表現された VoIP ゲートウェイまたは IP PBX に接続するすべてのユーザーに対して MWI 通知が無効になります。UM ダイヤル プランにリンクされた 1 つの UM IP ゲートウェイで MWI を無効にすることによって、単一または複数の UM ダイヤル プランあるいは単一または複数の UM メールボックス ポリシーに関連付けられた、UM が有効なすべてのユーザーに対して MWI 通知を無効にすることができます。UM が有効なユーザーのグループに対して MWI を有効または無効にする方法などの UM メールボックス ポリシーの詳細については、「[UM メールボックス ポリシーの管理](manage-a-um-mailbox-policy-exchange-2013-help.md)」を参照してください。
+UM IP ゲートウェイで MWI を無効にすると、UM IP ゲートウェイによって表現された VoIP ゲートウェイまたは IP PBX に接続するすべてのユーザーに対して MWI 通知が無効になります。UM ダイヤル プランにリンクされた 1 つの UM IP ゲートウェイで MWI を無効にすることによって、単一または複数の UM ダイヤル プランあるいは単一または複数の UM メールボックス ポリシーに関連付けられた、UM が有効なすべてのユーザーに対して MWI 通知を無効にすることができます。UM が有効なユーザーのグループに対して MWI を有効または無効にする方法などの UM メールボックス ポリシーの詳細については、「[UM メールボックス ポリシーの管理](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-voice-mail/manage-um-mailbox-policy)」を参照してください。
 
 下の表に示すように、EAC を使用して、または、シェルで **Set-UMMailboxPolicy** コマンドレットを使用して、MWI 設定を構成できます。
 
@@ -262,9 +262,9 @@ MWI 設定の管理方法の詳細については、以下のトピックを参�
 
   - [UM IP ゲートウェイの管理](manage-a-um-ip-gateway-exchange-2013-help.md)
 
-  - [UM IP ゲートウェイ上でメッセージ待機インジケーター (MWI) を許可する](allow-message-waiting-indicator-mwi-on-a-um-ip-gateway-exchange-2013-help.md)
+  - [UM IP ゲートウェイ上でメッセージ待機インジケーター (MWI) を許可する](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/allow-mwi-on-um-ip-gateway)
 
-  - [UM IP ゲートウェイでメッセージ待機インジケーター (MWI) を抑制する](prevent-message-waiting-indicator-mwi-on-a-um-ip-gateway-exchange-2013-help.md)
+  - [UM IP ゲートウェイでメッセージ待機インジケーター (MWI) を抑制する](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/prevent-mwi-on-um-ip-gateway)
 
   - [Set-UMIPGateway](https://technet.microsoft.com/ja-jp/library/aa996577\(v=exchg.150\))
 
@@ -307,7 +307,7 @@ MWI 設定の管理方法の詳細については、以下のトピックを参�
 
 ユーザーのメールボックスのテキスト メッセージ通知設定の管理方法については、以下のトピックを参照してください。
 
-  - [ユーザーのボイス メール設定の管理](manage-voice-mail-settings-for-a-user-exchange-2013-help.md)
+  - [ユーザーのボイス メール設定の管理](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-voice-mail/manage-voice-mail-settings)
 
   - [Set-UMMailbox](https://technet.microsoft.com/ja-jp/library/bb124893\(v=exchg.150\))
 
@@ -341,7 +341,7 @@ MWI 設定の管理方法の詳細については、以下のトピックを参�
 
 テキスト メッセージ通知設定の管理方法の詳細については、以下のトピックを参照してください。
 
-  - [UM メールボックス ポリシーの管理](manage-a-um-mailbox-policy-exchange-2013-help.md)
+  - [UM メールボックス ポリシーの管理](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-voice-mail/manage-um-mailbox-policy)
 
   - [Set-UMMailboxPolicy](https://technet.microsoft.com/ja-jp/library/bb124903\(v=exchg.150\))
 

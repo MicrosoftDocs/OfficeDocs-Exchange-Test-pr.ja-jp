@@ -23,9 +23,9 @@ _**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
 
 
-ボイス メール プレビュー パートナー プログラムの詳細については、「[ボイス メール プレビュー アドバイザー](voice-mail-preview-advisor-exchange-2013-help.md)」を参照してください。
+ボイス メール プレビュー パートナー プログラムの詳細については、「[ボイス メール プレビュー アドバイザー](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/voice-mail-preview-advisor)」を参照してください。
 
-ボイス メール プレビューに関連するその他の管理タスクについては、「[ボイス メール プレビューの手順](voice-mail-preview-procedures-exchange-2013-help.md)」を参照してください。
+ボイス メール プレビューに関連するその他の管理タスクについては、「[ボイス メール プレビューの手順](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/voice-mail-preview-procedures)」を参照してください。
 
 ## 始める前に把握しておくべき情報
 
@@ -33,9 +33,9 @@ _**適用先:** Exchange Online, Exchange Server 2013, Exchange Server 2016_
 
   - この手順を実行する際には、あらかじめアクセス許可を割り当てる必要があります。必要なアクセス許可の一覧については、以下を参照してください。「[ユニファイド メッセージングのアクセス許可](unified-messaging-permissions-exchange-2013-help.md)」の「UM メールボックス ポリシー」。
 
-  - これらの手順を実行する前に、UM ダイヤル プランが作成されていることを確認してください。詳細な手順については、「[UM ダイヤル プランを作成する](create-a-um-dial-plan-exchange-2013-help.md)」を参照してください。
+  - これらの手順を実行する前に、UM ダイヤル プランが作成されていることを確認してください。詳細な手順については、「[UM ダイヤル プランを作成する](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-dial-plan)」を参照してください。
 
-  - これらの手順を実行する前に、UM ダイヤル プランが作成されていることを確認してください。詳細な手順については、「[UM メールボックス ポリシーの作成](create-a-um-mailbox-policy-exchange-2013-help.md)」を参照してください。
+  - これらの手順を実行する前に、UM ダイヤル プランが作成されていることを確認してください。詳細な手順については、「[UM メールボックス ポリシーの作成](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-voice-mail/create-um-mailbox-policy)」を参照してください。
 
   - このトピックの手順で使用可能なキーボード ショートカットについては、「[Exchange 管理センターのキーボード ショートカット](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)」を参照してください。
 

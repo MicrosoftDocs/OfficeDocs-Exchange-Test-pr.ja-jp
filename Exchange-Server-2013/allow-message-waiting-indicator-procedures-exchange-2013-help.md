@@ -15,15 +15,15 @@ ms.translationtype: HT
 
 _**適用先:** Exchange Server 2013, Exchange Server 2016_
 
-[UM IP ゲートウェイ上でメッセージ待機インジケーター (MWI) を許可する](allow-message-waiting-indicator-mwi-on-a-um-ip-gateway-exchange-2013-help.md)
+[UM IP ゲートウェイ上でメッセージ待機インジケーター (MWI) を許可する](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/allow-mwi-on-um-ip-gateway)
 
-[UM IP ゲートウェイでメッセージ待機インジケーター (MWI) を抑制する](prevent-message-waiting-indicator-mwi-on-a-um-ip-gateway-exchange-2013-help.md)
+[UM IP ゲートウェイでメッセージ待機インジケーター (MWI) を抑制する](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/prevent-mwi-on-um-ip-gateway)
 
-[ユーザーのメッセージ待機インジケーター (MWI) を有効にする](enable-message-waiting-indicator-mwi-for-users-exchange-2013-help.md)
+[ユーザーのメッセージ待機インジケーター (MWI) を有効にする](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/enable-mwi-for-users)
 
 [ユーザーのメッセージ待機インジケーター (MWI) を無効にする](disable-message-waiting-indicator-mwi-for-users-exchange-2013-help.md)
 
-[ユーザーの不在着信通知を有効にする](enable-missed-call-notifications-for-a-user-exchange-2013-help.md)
+[ユーザーの不在着信通知を有効にする](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/enable-missed-call-notifications)
 
-[ユーザーに対する不在着信通知を無効にする](disable-missed-call-notifications-for-a-user-exchange-2013-help.md)
+[ユーザーに対する不在着信通知を無効にする](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/disable-missed-call-notifications)
 

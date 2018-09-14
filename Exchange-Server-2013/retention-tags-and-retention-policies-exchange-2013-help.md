@@ -97,7 +97,7 @@ Exchange 2013 と Exchange Online の MRM は*保持タグ*と*アイテム保�
 <tr class="even">
 <td><p>アイテム保持ポリシー タグ (RPT)</p></td>
 <td><p>既定のフォルダーに自動的に適用する</p>
-<p>既定のフォルダーは、すべてのメールボックスで自動的に作成されるフォルダーです。たとえば、次のようなフォルダーです。<strong>[受信トレイ]</strong>、<strong>[削除済みアイテム]</strong>、および <strong>[送信済みアイテム]</strong>。「<a href="default-folders-that-support-retention-policy-tags-exchange-2013-help.md">アイテム保持ポリシー タグをサポートする既定のフォルダー</a>」のサポートされる既定のフォルダーの一覧を参照してください。</p></td>
+<p>既定のフォルダーは、すべてのメールボックスで自動的に作成されるフォルダーです。たとえば、次のようなフォルダーです。<strong>[受信トレイ]</strong>、<strong>[削除済みアイテム]</strong>、および <strong>[送信済みアイテム]</strong>。「<a href="https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/messaging-records-management/default-folders">アイテム保持ポリシー タグをサポートする既定のフォルダー</a>」のサポートされる既定のフォルダーの一覧を参照してください。</p></td>
 <td><p>管理者</p></td>
 <td><ul>
 <li><p>削除して回復を許可する</p></li>
@@ -205,7 +205,7 @@ Outlook 2010 ユーザーや Outlook Web App ユーザーは、保持ポリシ�
 <li><p>完全に削除した後で、メッセージを回復することはできません。</p></li>
 </ul></td>
 <td><ul>
-<li><p>メールボックスが<a href="in-place-hold-and-litigation-hold-exchange-2013-help.md">インプレース保持と訴訟ホールド</a>または訴訟ホールドの対象となっている場合、アイテムはホールド パラメーターに基づいて [回復可能なアイテム] フォルダーに保管されます。<a href="in-place-ediscovery-exchange-2013-help.md">インプレース電子情報開示 (eDiscovery)</a>は引き続き検索結果でこれらのアイテムを戻します。</p>
+<li><p>メールボックスが<a href="https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/in-place-and-litigation-holds">インプレース保持と訴訟ホールド</a>または訴訟ホールドの対象となっている場合、アイテムはホールド パラメーターに基づいて [回復可能なアイテム] フォルダーに保管されます。<a href="https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery">インプレース電子情報開示 (eDiscovery)</a>は引き続き検索結果でこれらのアイテムを戻します。</p>
 <p></p></li>
 </ul></td>
 </tr>
@@ -226,7 +226,7 @@ Outlook 2010 ユーザーや Outlook Web App ユーザーは、保持ポリシ�
 
 
 
-保持タグの作成方法については、「[アイテム保持ポリシーの作成](create-a-retention-policy-exchange-2013-help.md)」を参照してください。
+保持タグの作成方法については、「[アイテム保持ポリシーの作成](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/messaging-records-management/create-a-retention-policy)」を参照してください。
 
 ページのトップへ
 
@@ -303,7 +303,7 @@ Exchange セットアップでは、**既定の MRM ポリシー**のアイテ�
 
 規定の MRM ポリシーに含まれているタグを変更すること (保存の有効期限や保持アクションを変更するなど)、タグを無効にすること、またはポリシーを変更すること (そのタグを追加または削除する) ことができます。更新されたポリシーは、管理フォルダー アシスタントによって次回ポリシーが処理されたときにメールボックスに適用されます。
 
-ポリシーにリンクされた保持タグの一覧などの詳細については、「[Exchange Online および Exchange Server の既定のアイテム保持ポリシー](default-retention-policy-in-exchange-online-and-exchange-server-exchange-2013-help.md)」を参照してください。
+ポリシーにリンクされた保持タグの一覧などの詳細については、「[Exchange Online および Exchange Server の既定のアイテム保持ポリシー](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/messaging-records-management/default-retention-policy)」を参照してください。
 
 ページのトップへ
 
@@ -371,7 +371,7 @@ Exchange セットアップでは、**既定の MRM ポリシー**のアイテ�
 
 組織が MRM を実装したことがなく、ユーザーがその機能に慣れていない場合は、MRM 展開の最初の*ウォームアップとトレーニング*段階で保存機能を使用することもできます。アイテム保持ポリシーを作成および展開し、ユーザーがアイテムをタグ付けできるようになる前にアイテムを移動または削除するという危険を犯させないように、ポリシーについての十分な指導をユーザーに対して行ってください。ウォームアップとトレーニング期間が終了する数日前に、ユーザーに対してウォームアップの期限が近付いていることを通知する必要があります。期限が過ぎたら、ユーザーのメールボックスから保存機能を削除し、管理フォルダー アシスタントがメールボックス アイテムを処理し、指定した保持アクションを実行できるようにします。
 
-メールボックスの保存機能を有効にする方法の詳細については、「[メールボックスの保存機能を有効にする](place-a-mailbox-on-retention-hold-exchange-2013-help.md)」を参照してください。
+メールボックスの保存機能を有効にする方法の詳細については、「[メールボックスの保存機能を有効にする](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/messaging-records-management/mailbox-retention-hold)」を参照してください。
 
 ページのトップへ
 

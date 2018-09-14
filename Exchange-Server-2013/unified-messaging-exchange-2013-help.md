@@ -259,15 +259,15 @@ Exchange 管理シェルは、Windows PowerShell テクノロジを基盤に開�
 <td><p>テレフォニー ネットワークを UM と統合する方法について学習します。</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="connect-your-voice-mail-system-to-your-telephone-network-exchange-2013-help.md">電話ネットワークへのボイス メール システムの接続</a></p></td>
+<td><p><a href="https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/connect-voice-mail-system/connect-voice-mail-system">電話ネットワークへのボイス メール システムの接続</a></p></td>
 <td><p>テレフォニー ネットワークを Exchange UM に接続するために UM コンポーネントを使用および構成する方法を学びます。</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="automatically-answer-and-route-incoming-calls-exchange-2013-help.md">着信呼び出しへの自動応答とルーティング</a></p></td>
+<td><p><a href="https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/automatically-answer-and-route-calls">着信呼び出しへの自動応答とルーティング</a></p></td>
 <td><p>UM 自動応答を作成し、ナビゲーション メニュー、案内応答、および勤務時間と勤務時間外の設定を管理する方法を学びます。</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="set-up-voice-mail-for-users-exchange-2013-help.md">ユーザーのボイス メールのセットアップ</a></p></td>
+<td><p><a href="set-up-https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-voice-mail/voice-mail-for-users">ユーザーのボイス メールのセットアップ</a></p></td>
 <td><p>UM メールボックス ポリシーの作成方法と管理方法、および UM に対してユーザーを有効にする方法を学びます。</p></td>
 </tr>
 <tr class="odd">
