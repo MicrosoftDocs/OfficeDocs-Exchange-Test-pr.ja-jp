@@ -27,7 +27,7 @@ _**トピックの最終更新日:** 2015-04-13_
 
 [Exchange 2013 でフィルター パック IFilter を登録する](register-filter-pack-ifilters-with-exchange-2013-exchange-2013-help.md)   添付ファイルの追加のファイル タイプを登録するための情報。登録することにより、添付ファイルに適用されるトランスポート ルールでそれらのファイル タイプをスキャンできるようにします。
 
-[メール フロー ルールを管理します](manage-mail-flow-rules-exchange-2013-help.md)   トランスポート ルールを作成、表示、変更、有効化、無効化、または削除するための情報と、トランスポート ルール コレクションのインポートとエクスポートに関する情報。
+[メール フロー ルールを管理します](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules)   トランスポート ルールを作成、表示、変更、有効化、無効化、または削除するための情報と、トランスポート ルール コレクションのインポートとエクスポートに関する情報。
 
 [メール フローのルールを構成するためのベスト プラクティス](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/mail-flow-rules/configuration-best-practices)   一般的な構成エラーを防止するために役立つ情報。
 

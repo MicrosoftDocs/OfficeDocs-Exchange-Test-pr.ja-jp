@@ -41,9 +41,9 @@ PIN なしサインインを有効にするには、UM メールボックス ポ
 
   - この手順を実行するには、シェルを使用する必要があります。オンプレミスの Exchange 組織で Exchange 管理シェル を開く方法については、「[シェルを開く](https://technet.microsoft.com/ja-jp/library/dd638134\(v=exchg.150\))」を参照してください。 Windows PowerShell を使って Exchange Online に接続する方法については、「[Exchange Online PowerShell への接続](https://go.microsoft.com/fwlink/p/?linkid=396554)」を参照してください。
 
-UM メールボックス ポリシーに関連する追加のタスクについては、「[UM メールボックス ポリシー手順](um-mailbox-policy-procedures-exchange-2013-help.md)」を参照してください。
+UM メールボックス ポリシーに関連する追加のタスクについては、「[UM メールボックス ポリシー手順](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-voice-mail/um-mailbox-policy-procedures)」を参照してください。
 
-UM メールボックスに関連するその他のタスクについては、「[ボイス メールが有効なユーザーの手順](voice-mail-enabled-user-procedures-exchange-2013-help.md)」を参照してください。
+UM メールボックスに関連するその他のタスクについては、「[ボイス メールが有効なユーザーの手順](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-voice-mail/voice-mail-enabled-user-procedures)」を参照してください。
 
 ## 始める前に把握しておくべき情報
 

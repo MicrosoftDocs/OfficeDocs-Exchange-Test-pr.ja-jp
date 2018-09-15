@@ -87,7 +87,7 @@ Exchange 2013 で、パブリック フォルダーは、メールボックス �
 
   - Exchange 管理シェルで、**\*-Mailbox** コマンドレット一式を使用します。パブリック フォルダー メールボックスをサポートするために、次のパラメーターが [New-Mailbox](https://technet.microsoft.com/ja-jp/library/aa997663\(v=exchg.150\)) コマンドレットに追加されています。
     
-      - *PublicFolder*   このパラメーターは、パブリック フォルダー メールボックスを作成するために **New-Mailbox** コマンドレットと共に使用されます。パブリック フォルダー メールボックスを作成すると、種類が `PublicFolder` の新しいメールボックスが作成されます。詳細については、「[パブリック フォルダー メールボックスを作成する](create-a-public-folder-mailbox-exchange-2013-help.md)」を参照してください。
+      - *PublicFolder*   このパラメーターは、パブリック フォルダー メールボックスを作成するために **New-Mailbox** コマンドレットと共に使用されます。パブリック フォルダー メールボックスを作成すると、種類が `PublicFolder` の新しいメールボックスが作成されます。詳細については、「[パブリック フォルダー メールボックスを作成する](https://docs.microsoft.com/ja-jp/exchange/collaboration-exo/public-folders/create-public-folder-mailbox)」を参照してください。
     
       - *HoldForMigration*   このパラメーターは、以前のバージョンの Exchange 2013 からパブリック フォルダーを移行する場合に限り使用されます。詳細については、このトピックで後述する「パブリック フォルダーの移行」を参照してください。
     

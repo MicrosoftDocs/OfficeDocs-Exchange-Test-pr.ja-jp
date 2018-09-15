@@ -27,7 +27,7 @@ _**トピックの最終更新日:** 2013-04-16_
 
 [オーディオ コーデックの変更](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/connect-voice-mail-system/change-audio-codec)
 
-[最大通話時間の構成](configure-the-maximum-call-duration-exchange-2013-help.md)
+[最大通話時間の構成](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/connect-voice-mail-system/configure-maximum-call-duration)
 
 [最大録音時間の構成](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/connect-voice-mail-system/configure-maximum-recording-duration)
 

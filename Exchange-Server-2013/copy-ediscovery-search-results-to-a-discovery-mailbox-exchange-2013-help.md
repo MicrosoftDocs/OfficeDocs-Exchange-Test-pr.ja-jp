@@ -23,7 +23,7 @@ _**適用先:** Exchange Server 2013_
 
   - この手順を実行する際には、あらかじめアクセス許可を割り当てる必要があります。必要なアクセス許可の一覧については、以下を参照してください。「[メッセージング ポリシーとコンプライアンスのアクセス許可](messaging-policy-and-compliance-permissions-exchange-2013-help.md)」の「インプレース電子情報開示」。
 
-  - EAC またはシェルを使用して電子情報開示検索を作成しなければ、検索結果をコピーすることができません。詳細については、「[インプレース電子情報開示検索を作成する](create-an-in-place-ediscovery-search-exchange-2013-help.md)」を参照してください。
+  - EAC またはシェルを使用して電子情報開示検索を作成しなければ、検索結果をコピーすることができません。詳細については、「[インプレース電子情報開示検索を作成する](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/in-place-ediscovery/create-in-place-ediscovery-search)」を参照してください。
 
   - Exchange 2013 セットアップは、検索結果をコピーするために <strong>探索検索メールボックス</strong> という名前の探索メールボックスを作成します。探索検索メールボックスは既定で Exchange Online 内に作成されます。追加の探索メールボックスを作成できます。詳細については、「[探索メールボックスの作成](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/in-place-ediscovery/create-a-discovery-mailbox)」を参照してください。
 
@@ -69,7 +69,7 @@ _**適用先:** Exchange Server 2013_
 
 **New-MailboxSearch** コマンドレットを使用してインプレース電子情報開示検索を作成したら、メッセージを *TargetMailbox* パラメーターで指定した探索メールボックスにコピーするための検索を開始する必要があります。シェルを使用した電子情報開示検索の作成方法については、以下を参照してください。
 
-  - [Use the Shell to create an In-Place eDiscovery search](create-an-in-place-ediscovery-search-exchange-2013-help.md)
+  - [Use the Shell to create an In-Place eDiscovery search](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/in-place-ediscovery/create-in-place-ediscovery-search)
 
   - [New-MailboxSearch](https://technet.microsoft.com/ja-jp/library/dd298064\(v=exchg.150\))
 
@@ -91,7 +91,7 @@ _**適用先:** Exchange Server 2013_
 
 ## 検索結果のコピーに関する詳細情報
 
-  - 検索結果を探索メールボックスにコピーしたら、それらの検索結果を PST ファイルにエクスポートできます。詳細については、「[電子情報開示検索の結果を PST ファイルへエクスポート](export-ediscovery-search-results-to-a-pst-file-exchange-2013-help.md)」を参照してください。
+  - 検索結果を探索メールボックスにコピーしたら、それらの検索結果を PST ファイルにエクスポートできます。詳細については、「[電子情報開示検索の結果を PST ファイルへエクスポート](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/in-place-ediscovery/export-search-results)」を参照してください。
 
   - 検索不能アイテムの詳細については、「[Exchange 電子情報開示の検索不能アイテム](unsearchable-items-in-exchange-ediscovery-exchange-2013-help.md)」を参照してください。
 
@@ -103,5 +103,5 @@ _**適用先:** Exchange Server 2013_
     
       - <strong>検索結果をプレビューする</strong>   このオプションを使用すれば、検索で返された結果を表示するために探索メールボックスにコピーしなくても、プレビューすることができます。これにより、検索結果が適切かどうかをすばやく判断できます。結果をプレビューしたら、検索結果を絞り込ために検索クエリを修正し、検索を再実行できます。プレビュー ページのアイテムは、実際の検索結果の読み取り専用バージョンであるため、プレビュー ページで移動、編集、削除、または転送を行うことはできません。
     
-    詳細については、「[Estimate or preview search results](create-an-in-place-ediscovery-search-exchange-2013-help.md)」を参照してください。
+    詳細については、「[Estimate or preview search results](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/in-place-ediscovery/create-in-place-ediscovery-search)」を参照してください。
 

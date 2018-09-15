@@ -114,12 +114,12 @@ Lync Server 用に実行が必要なタスクの実行方法の詳細につい�
 <tr class="odd">
 <td><p></p></td>
 <td><p>必要な数の自動応答を作成します。</p></td>
-<td><p><a href="create-a-um-auto-attendant-exchange-2013-help.md">UM 自動応答を作成する</a></p></td>
+<td><p><a href="https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/create-a-um-auto-attendant">UM 自動応答を作成する</a></p></td>
 </tr>
 <tr class="even">
 <td><p></p></td>
 <td><p>UM 自動応答をそれぞれに設定し、構成します。</p></td>
-<td><p><a href="set-up-a-um-auto-attendant-exchange-2013-help.md">UM 自動応答の設定</a></p></td>
+<td><p><a href="https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/set-up-um-auto-attendant">UM 自動応答の設定</a></p></td>
 </tr>
 <tr class="odd">
 <td><p> </p></td>

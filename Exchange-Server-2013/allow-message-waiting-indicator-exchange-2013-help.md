@@ -185,7 +185,7 @@ MWI は、UM メールボックス ポリシーと UM IP ゲートウェイと�
 
 ## UM メールボックス ポリシーと MWI
 
-UM メールボックス ポリシーを作成して、UM 対応メールボックスの集合に UM ポリシー設定の共通セットを適用します。たとえば、UM メールボックス ポリシーを使用して、PIN ポリシー設定、ダイヤルの制限、および MWI 通知設定を適用できます。UM メールボックス ポリシーで MWI を有効または無効にすると、その UM メールボックス ポリシーに関連付けられているすべての UM が有効なユーザーに対して MWI が有効または無効になります。MWI 設定は、UM ダイヤル プランに関連付けられているユーザーのサブセットに適用することもできます。UM が有効なユーザーのグループに対して MWI を有効または無効にする方法などの UM メールボックス ポリシーの詳細については、「[UM メールボックス ポリシー手順](um-mailbox-policy-procedures-exchange-2013-help.md)」を参照してください。
+UM メールボックス ポリシーを作成して、UM 対応メールボックスの集合に UM ポリシー設定の共通セットを適用します。たとえば、UM メールボックス ポリシーを使用して、PIN ポリシー設定、ダイヤルの制限、および MWI 通知設定を適用できます。UM メールボックス ポリシーで MWI を有効または無効にすると、その UM メールボックス ポリシーに関連付けられているすべての UM が有効なユーザーに対して MWI が有効または無効になります。MWI 設定は、UM ダイヤル プランに関連付けられているユーザーのサブセットに適用することもできます。UM が有効なユーザーのグループに対して MWI を有効または無効にする方法などの UM メールボックス ポリシーの詳細については、「[UM メールボックス ポリシー手順](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-voice-mail/um-mailbox-policy-procedures)」を参照してください。
 
 下の表に示すように、EAC を使用して、または、シェルで **Set-UMMailboxPolicy** コマンドレットを使用して、MWI 設定を構成できます。
 
@@ -222,7 +222,7 @@ UM メールボックス ポリシー上の MWI 設定の管理方法につい�
 
   - [ユーザーのメッセージ待機インジケーター (MWI) を有効にする](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/enable-mwi-for-users)
 
-  - [ユーザーのメッセージ待機インジケーター (MWI) を無効にする](disable-message-waiting-indicator-mwi-for-users-exchange-2013-help.md)
+  - [ユーザーのメッセージ待機インジケーター (MWI) を無効にする](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/disable-mwi-for-users)
 
   - [Set-UMMailboxPolicy](https://technet.microsoft.com/ja-jp/library/bb124903\(v=exchg.150\))
 
@@ -260,7 +260,7 @@ UM IP ゲートウェイで MWI を無効にすると、UM IP ゲートウェイ
 
 MWI 設定の管理方法の詳細については、以下のトピックを参照してください。
 
-  - [UM IP ゲートウェイの管理](manage-a-um-ip-gateway-exchange-2013-help.md)
+  - [UM IP ゲートウェイの管理](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/connect-voice-mail-system/manage-um-ip-gateway)
 
   - [UM IP ゲートウェイ上でメッセージ待機インジケーター (MWI) を許可する](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/allow-mwi-on-um-ip-gateway)
 

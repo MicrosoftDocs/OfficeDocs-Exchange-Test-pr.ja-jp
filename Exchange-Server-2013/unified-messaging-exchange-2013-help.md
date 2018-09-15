@@ -255,7 +255,7 @@ Exchange 管理シェルは、Windows PowerShell テクノロジを基盤に開�
 <td><p>UM の言語パックと言語設定について学習します。</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="telephone-system-integration-with-um-exchange-2013-help.md">電話システムの UM との統合</a></p></td>
+<td><p><a href="https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/telephone-system-integration-with-um">電話システムの UM との統合</a></p></td>
 <td><p>テレフォニー ネットワークを UM と統合する方法について学習します。</p></td>
 </tr>
 <tr class="even">
@@ -275,7 +275,7 @@ Exchange 管理シェルは、Windows PowerShell テクノロジを基盤に開�
 <td><p>ユーザーがボイス メール メッセージにアクセスしてそれを管理できるようにクライアント機能を設定する方法を学びます。</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="set-outlook-voice-access-pin-security-exchange-2013-help.md">Outlook Voice Access PIN セキュリティの設定</a></p></td>
+<td><p><a href="https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-outlook-voice-access-pin-security/set-outlook-voice-access-pin-security">Outlook Voice Access PIN セキュリティの設定</a></p></td>
 <td><p>Outlook Voice Access ユーザーの PIN 要件を設定する方法を学びます。</p></td>
 </tr>
 <tr class="odd">
@@ -283,7 +283,7 @@ Exchange 管理シェルは、Windows PowerShell テクノロジを基盤に開�
 <td><p>UM を使用して音声メッセージを保護する方法を学びます。</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="run-reports-for-voice-mail-calls-exchange-2013-help.md">ボイス メール通話のレポートを実行する</a></p></td>
+<td><p><a href="https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/run-voice-mail-call-reports/run-voice-mail-call-reports">ボイス メール通話のレポートを実行する</a></p></td>
 <td><p>UM 呼び出しレポートについて学びます。</p></td>
 </tr>
 </tbody>

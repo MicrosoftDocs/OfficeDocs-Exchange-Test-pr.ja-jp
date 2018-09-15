@@ -21,7 +21,7 @@ Microsoft Exchange Server 2013 組織に保持ポリシーを展開するには
 
   - [メッセージング レコード管理](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/messaging-records-management/messaging-records-management)
 
-  - [保持タグおよびアイテム保持ポリシー](retention-tags-and-retention-policies-exchange-2013-help.md)
+  - [保持タグおよびアイテム保持ポリシー](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/messaging-records-management/retention-tags-and-policies)
 
 ## 保持ポリシーの展開のチェックリスト
 
@@ -73,7 +73,7 @@ Microsoft Exchange Server 2013 組織に保持ポリシーを展開するには
 <tr class="odd">
 <td><p> </p></td>
 <td><p>テストのため、1 つのメールボックスに保持ポリシーを適用します。</p></td>
-<td><p><a href="apply-a-retention-policy-to-mailboxes-exchange-2013-help.md">メールボックスにアイテム保持ポリシーを適用する</a></p></td>
+<td><p><a href="https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/messaging-records-management/apply-retention-policy">メールボックスにアイテム保持ポリシーを適用する</a></p></td>
 </tr>
 <tr class="even">
 <td><p><strong> </strong></p></td>
@@ -88,7 +88,7 @@ Microsoft Exchange Server 2013 組織に保持ポリシーを展開するには
 <tr class="even">
 <td><p><strong> </strong></p></td>
 <td><p>他のメールボックスにも保持ポリシーを適用します。</p></td>
-<td><p><a href="apply-a-retention-policy-to-mailboxes-exchange-2013-help.md">メールボックスにアイテム保持ポリシーを適用する</a></p></td>
+<td><p><a href="https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/messaging-records-management/apply-retention-policy">メールボックスにアイテム保持ポリシーを適用する</a></p></td>
 </tr>
 <tr class="odd">
 <td><p> </p></td>

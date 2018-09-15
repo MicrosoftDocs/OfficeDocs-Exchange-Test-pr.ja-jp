@@ -312,17 +312,17 @@ VoIP ゲートウェイまたは IP PBX を展開し、クライアント アク
 
   - クライアント アクセス サーバーおよびメールボックス サーバー上での起動モードを構成します。詳細については、「[メールボックス サーバーのスタートアップ モードを構成する](configure-the-startup-mode-on-a-mailbox-server-exchange-2013-help.md)」および「[クライアント アクセス サーバーのスタートアップ モードを構成する](configure-the-startup-mode-on-a-client-access-server-exchange-2013-help.md)」を参照してください。
 
-  - ポート 5061 をリッスンするように UM IP ゲートウェイを構成します。詳細については、「[リスニング ポートの構成](configure-the-listening-port-exchange-2013-help.md)」を参照してください。
+  - ポート 5061 をリッスンするように UM IP ゲートウェイを構成します。詳細については、「[リスニング ポートの構成](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/connect-voice-mail-system/configure-listening-port)」を参照してください。
 
 ## UM が有効なユーザーの PIN ポリシー
 
-ユニファイド メッセージングでは、PIN ポリシーは UM メールボックス ポリシーで定義および構成されます。ユーザーのユニファイド メッセージングを有効にするときに、そのユーザーを既存の UM メールボックス ポリシーに関連付けます。UM メールボックス ポリシーで構成されている UM PIN ポリシーは、組織のセキュリティ要件に基づくものにする必要があります。UM が有効なユーザーの PIN 設定を構成する方法の詳細については、「[Outlook Voice Access PIN セキュリティの設定](set-outlook-voice-access-pin-security-exchange-2013-help.md)」を参照してください。
+ユニファイド メッセージングでは、PIN ポリシーは UM メールボックス ポリシーで定義および構成されます。ユーザーのユニファイド メッセージングを有効にするときに、そのユーザーを既存の UM メールボックス ポリシーに関連付けます。UM メールボックス ポリシーで構成されている UM PIN ポリシーは、組織のセキュリティ要件に基づくものにする必要があります。UM が有効なユーザーの PIN 設定を構成する方法の詳細については、「[Outlook Voice Access PIN セキュリティの設定](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-outlook-voice-access-pin-security/set-outlook-voice-access-pin-security)」を参照してください。
 
 ## クライアント ボイス メール機能をセットアップする
 
 サーバーおよび必要な UM コンポーネントを展開した後、オプションでいくつかのボイス メール関連機能を構成できます。詳細については、以下のトピックを参照してください。
 
-  - [Outlook Voice Access の設定](setting-up-outlook-voice-access-exchange-2013-help.md)
+  - [Outlook Voice Access の設定](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/set-up-outlook-voice-access)
 
   - [ボイス メール ユーザーの呼び出し転送を許可する](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/allow-voice-mail-users-to-forward-calls)
 

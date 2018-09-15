@@ -35,11 +35,11 @@ Exchange 管理者は、<strong>Exchange 管理センター</strong> \> <strong>
 
 ![添付ファイルに関連するルールを選択するダイアログ ボックス](images/JJ674307.2ae4a179-bfd2-4a0e-abe1-53ed4e9e3368(EXCHG.150).jpg "添付ファイルに関連するルールを選択するダイアログ ボックス")
 
-選択できる条件や操作の範囲全般を含むトランスポート ルールの詳細については、「[メール フローやトランスポート ルール](mail-flow-rules-transport-rules-in-exchange-2013-exchange-2013-help.md)」を参照してください。Exchange Online Protection (EOP) およびハイブリッド環境では、[EOP を構成するためのベスト プラクティス](https://technet.microsoft.com/ja-jp/library/jj723164\(v=exchg.150\)) で提供されるトランスポート ルールのベスト プラクティスを活用できます。ルールの作成を開始する準備ができている場合は、「[メール フロー ルールを管理します](manage-mail-flow-rules-exchange-2013-help.md)」を参照してください。
+選択できる条件や操作の範囲全般を含むトランスポート ルールの詳細については、「[メール フローやトランスポート ルール](mail-flow-rules-transport-rules-in-exchange-2013-exchange-2013-help.md)」を参照してください。Exchange Online Protection (EOP) およびハイブリッド環境では、[EOP を構成するためのベスト プラクティス](https://technet.microsoft.com/ja-jp/library/jj723164\(v=exchg.150\)) で提供されるトランスポート ルールのベスト プラクティスを活用できます。ルールの作成を開始する準備ができている場合は、「[メール フロー ルールを管理します](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules)」を参照してください。
 
 ## 添付ファイル内のコンテンツの検査
 
-次の表にあるトランスポート ルールの条件を使用して、メッセージの添付ファイルのコンテンツを調べることができます。これらの条件では、添付ファイルの最初の 150 KB だけが検査されます。メッセージを検査するときに、これらの条件の使用を開始するためには、トランスポート ルールに条件を追加する必要があります。ルールの作成や変更の詳細については、「[メール フロー ルールを管理します](manage-mail-flow-rules-exchange-2013-help.md)」を参照してください。
+次の表にあるトランスポート ルールの条件を使用して、メッセージの添付ファイルのコンテンツを調べることができます。これらの条件では、添付ファイルの最初の 150 KB だけが検査されます。メッセージを検査するときに、これらの条件の使用を開始するためには、トランスポート ルールに条件を追加する必要があります。ルールの作成や変更の詳細については、「[メール フロー ルールを管理します](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules)」を参照してください。
 
 
 <table>
@@ -158,7 +158,7 @@ Exchange 管理者は、<strong>Exchange 管理センター</strong> \> <strong>
 
 ## 添付ファイルのファイル プロパティの検査
 
-次のトランスポート ルールの条件は、メッセージに添付されているファイルのプロパティを検査します。メッセージを検査するときに、これらの条件の使用を開始するためには、トランスポート ルールに条件を追加する必要があります。トランスポート ルールのコンテキスト内でチェックできる、実行可能コードを持つサポート対象ファイルの種類の一覧は次のとおりです。ルールの作成または変更に関する詳細については、「[メール フロー ルールを管理します](manage-mail-flow-rules-exchange-2013-help.md)」を参照してください。
+次のトランスポート ルールの条件は、メッセージに添付されているファイルのプロパティを検査します。メッセージを検査するときに、これらの条件の使用を開始するためには、トランスポート ルールに条件を追加する必要があります。トランスポート ルールのコンテキスト内でチェックできる、実行可能コードを持つサポート対象ファイルの種類の一覧は次のとおりです。ルールの作成または変更に関する詳細については、「[メール フロー ルールを管理します](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules)」を参照してください。
 
 
 <table>

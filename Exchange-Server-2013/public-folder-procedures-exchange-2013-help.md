@@ -37,7 +37,7 @@ _**トピックの最終更新日:** 2017-08-02_
 
 [バッチ移行を使用して、Exchange 2013 のパブリック フォルダーを Exchange Online に移行する](https://docs.microsoft.com/ja-jp/exchange/collaboration-exo/public-folders/batch-migration-of-exchange-2013-public-folders)
 
-[パブリック フォルダー メールボックスを作成する](create-a-public-folder-mailbox-exchange-2013-help.md)
+[パブリック フォルダー メールボックスを作成する](https://docs.microsoft.com/ja-jp/exchange/collaboration-exo/public-folders/create-public-folder-mailbox)
 
 [パブリック フォルダーの作成](https://docs.microsoft.com/ja-jp/exchange/collaboration-exo/public-folders/create-public-folder)
 
@@ -55,5 +55,5 @@ _**トピックの最終更新日:** 2017-08-02_
 
 [失敗した移動からパブリック フォルダーとパブリック フォルダー メールボックスを復元する](restore-public-folders-and-public-folder-mailboxes-from-failed-moves-exchange-2013-help.md)
 
-[パブリック フォルダーおよびパブリック フォルダー アイテムの統計情報の表示](view-statistics-for-public-folders-and-public-folder-items-exchange-2013-help.md)
+[パブリック フォルダーおよびパブリック フォルダー アイテムの統計情報の表示](https://docs.microsoft.com/ja-jp/exchange/collaboration-exo/public-folders/view-public-folder-statistics)
 

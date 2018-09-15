@@ -47,7 +47,7 @@ Exchange Server 2013 では、パブリック フォルダーを従来のデー�
 <tr class="odd">
 <td><p>パブリック フォルダーのメールボックスの合計数</p></td>
 <td><p>100</p></td>
-<td><p>100 を超える数のパブリック フォルダー メールボックスを作成できますが、これはサポートされていません。<a href="create-a-public-folder-mailbox-exchange-2013-help.md">パブリック フォルダー メールボックスを作成する</a></p></td>
+<td><p>100 を超える数のパブリック フォルダー メールボックスを作成できますが、これはサポートされていません。<a href="https://docs.microsoft.com/ja-jp/exchange/collaboration-exo/public-folders/create-public-folder-mailbox">パブリック フォルダー メールボックスを作成する</a></p></td>
 </tr>
 <tr class="even">
 <td><p>階層内のパブリック フォルダーの総数</p></td>

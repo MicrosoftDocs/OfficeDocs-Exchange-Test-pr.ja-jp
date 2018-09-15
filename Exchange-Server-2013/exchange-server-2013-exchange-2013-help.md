@@ -92,7 +92,7 @@ Exchange 2013 のヘルプ コンテンツは、次の最上位カテゴリで�
 
   - [サーバーの状態とパフォーマンス](server-health-and-performance-exchange-2013-help.md)
 
-  - [Exchange マニュアルについて](about-exchange-documentation-exchange-2013-help.md)
+  - [Exchange マニュアルについて](https://docs.microsoft.com/ja-jp/exchange/about-exchange-documentation)
 
 
 > [!NOTE]
