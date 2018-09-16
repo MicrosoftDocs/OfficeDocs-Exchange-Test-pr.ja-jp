@@ -21,7 +21,7 @@ _**トピックの最終更新日:** 2013-04-17_
 
 [ダイヤル プランの既定言語を設定する](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/greetings-announcements-menus-and-prompts/set-dial-plan-default-language)
 
-[自動応答で使う言語を選択する](select-the-language-for-an-auto-attendant-exchange-2013-help.md)
+[自動応答で使う言語を選択する](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/greetings-announcements-menus-and-prompts/select-auto-attendant-language)
 
 [UM 言語パックの削除](remove-a-um-language-pack-exchange-2013-help.md)
 

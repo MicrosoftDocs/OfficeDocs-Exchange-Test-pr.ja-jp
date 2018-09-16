@@ -293,7 +293,7 @@ EAC または **Set-UMMailboxPolicy** コマンドレットを使用して、保
 </table>
 
 
-保護されたボイス メール設定の管理方法の詳細については、「[保護されているボイス メールの手順](protected-voice-mail-procedures-exchange-2013-help.md)」または「[Set-UMMailboxPolicy](https://technet.microsoft.com/ja-jp/library/bb124903\(v=exchg.150\))」を参照してください。
+保護されたボイス メール設定の管理方法の詳細については、「[保護されているボイス メールの手順](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/protected-voice-mail-procedures)」または「[Set-UMMailboxPolicy](https://technet.microsoft.com/ja-jp/library/bb124903\(v=exchg.150\))」を参照してください。
 
 ページのトップへ
 

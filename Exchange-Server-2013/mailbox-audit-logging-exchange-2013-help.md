@@ -159,7 +159,7 @@ _**トピックの最終更新日:** 2016-12-09_
 
   - **Exchange 管理センター (EAC) の監査レポートを使用**   EAC の <strong>監査</strong> タブを使用して、所有者以外のメールボックス アクセスのレポートを実行したり、メールボックス監査ログからエントリをエクスポートしたりできます。詳細については、以下を参照してください。
     
-      - [所有者以外のメールボックス アクセスのレポートの実行](run-a-non-owner-mailbox-access-report-exchange-online-help.md)
+      - [所有者以外のメールボックス アクセスのレポートの実行](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/exchange-auditing-reports/non-owner-mailbox-access-report)
     
       - [メールボックス監査ログをエクスポートする](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/exchange-auditing-reports/export-mailbox-audit-logs)
 

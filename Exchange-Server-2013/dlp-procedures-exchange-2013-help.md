@@ -37,7 +37,7 @@ _**トピックの最終更新日:** 2015-01-07_
 
 ## 詳細情報
 
-[ポリシー ヒントの管理](how-to-configure-and-manage-policy-tips-a-dlp-feature-exchange.md)
+[ポリシー ヒントの管理](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/data-loss-prevention/manage-policy-tips)
 
 [DLP ポリシー検出のインシデント レポートの作成](create-incident-reports-for-dlp-policy-detections-exchange-2013-help.md)
 

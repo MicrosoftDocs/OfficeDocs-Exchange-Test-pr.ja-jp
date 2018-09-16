@@ -27,7 +27,7 @@ _**トピックの最終更新日:** 2015-04-08_
 
   - この手順を実行する際には、あらかじめアクセス許可を割り当てる必要があります。必要なアクセス許可の一覧については、以下を参照してください。「[受信者のアクセス許可](recipients-permissions-exchange-2013-help.md)」の「グループ測定値」。
 
-  - グループ測定値データは、メール ヒントに対してのみ使用されます。グループ測定メール ヒントが組織内で有効になっていることを確認します。詳細な手順については、「[組織上の関係のメール ヒントの管理](manage-mailtips-for-organization-relationships-exchange-2013-help.md)」を参照してください。
+  - グループ測定値データは、メール ヒントに対してのみ使用されます。グループ測定メール ヒントが組織内で有効になっていることを確認します。詳細な手順については、「[組織上の関係のメール ヒントの管理](https://docs.microsoft.com/ja-jp/exchange/clients-and-mobile-in-exchange-online/mailtips/manage-mailtips-for-organization-relationships)」を参照してください。
 
   - この手順を実行するには、シェルを使用する必要があります。
 

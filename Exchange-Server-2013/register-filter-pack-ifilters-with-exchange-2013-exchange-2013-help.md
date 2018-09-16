@@ -27,7 +27,7 @@ _**トピックの最終更新日:** 2016-12-09_
 
 
 
-トランスポート ルールに関連する追加の管理タスクについては、「[メール フロー ルールを管理します](manage-mail-flow-rules-exchange-2013-help.md)」を参照してください。
+トランスポート ルールに関連する追加の管理タスクについては、「[メール フロー ルールを管理します](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules)」を参照してください。
 
 ## 始める前に把握しておくべき情報
 
@@ -139,7 +139,7 @@ Office 2010 Filter Pack の展開は、次の 2 つの主要な手順で構成�
 
 Microsoft Office 2010 Filter Pack の IFilter を正常に登録したことを確認するには、次の手順を実行します。
 
-1.  次のプロパティを持つトランスポート ルールを作成します。トランスポート ルールを作成する方法の詳細については、「[メール フロー ルールを管理します](manage-mail-flow-rules-exchange-2013-help.md)」を参照してください。
+1.  次のプロパティを持つトランスポート ルールを作成します。トランスポート ルールを作成する方法の詳細については、「[メール フロー ルールを管理します](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules)」を参照してください。
     
       - 送信者は自分のメールボックスにします。
     

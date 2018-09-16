@@ -188,7 +188,7 @@ Microsoft Lync Server の詳細については、「[Microsoft Lync Server](http
 
 5.  SIP URI ダイヤル プランに追加するクライアント アクセス サーバーとメールボックス サーバーのスタートアップ モードと TLS ポートを \[デュアル\] に設定し、各メールボックス サーバー上の MicrosoftExchange ユニファイド メッセージング サービスと、各クライアント アクセス サーバー上の MicrosoftExchange ユニファイド メッセージング呼び出しルーター サービスを再起動します。
 
-6.  UM 自動応答を作成して構成します。詳細については、「[UM 自動応答の設定](set-up-a-um-auto-attendant-exchange-2013-help.md)」を参照してください。
+6.  UM 自動応答を作成して構成します。詳細については、「[UM 自動応答の設定](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/set-up-um-auto-attendant)」を参照してください。
 
 7.  ユーザーのボイス メールを有効にするには、エンタープライズ VoIP を使用するユーザーの SIP アドレスを作成します。通常この SIP アドレスは、ユーザーのエンタープライズ VoIP を有効にするときに使用するのと同じ SIP アドレスです。詳細については、「[ボイス メール用にユーザーを有効にする](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-voice-mail/enable-a-user-for-voice-mail)」を参照してください。
     

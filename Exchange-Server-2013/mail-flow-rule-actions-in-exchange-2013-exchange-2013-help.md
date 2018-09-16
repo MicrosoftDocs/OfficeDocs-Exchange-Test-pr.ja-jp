@@ -632,7 +632,7 @@ Exchange Online におけるメール フロー ルールのアクションの�
 
 ## 詳細情報
 
-[メール フロー ルールを管理します](manage-mail-flow-rules-exchange-2013-help.md)
+[メール フロー ルールを管理します](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules)
 
 [メール フローやトランスポート ルール](mail-flow-rules-transport-rules-in-exchange-2013-exchange-2013-help.md)
 

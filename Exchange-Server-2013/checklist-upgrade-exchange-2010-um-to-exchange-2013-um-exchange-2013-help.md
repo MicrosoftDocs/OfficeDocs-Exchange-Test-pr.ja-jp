@@ -23,7 +23,7 @@ _**トピックの最終更新日:** 2016-12-09_
 
   - [ユニファイド メッセージングの計画](planning-for-unified-messaging-exchange-2013-help.md)
 
-  - [電話システムの UM との統合](telephone-system-integration-with-um-exchange-2013-help.md)
+  - [電話システムの UM との統合](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/telephone-system-integration-with-um)
 
   - [電話ネットワークへのボイス メール システムの接続](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/connect-voice-mail-system/connect-voice-mail-system)
 
@@ -118,18 +118,18 @@ Exchange 2007 UM から Exchange 2013 UM にアップグレードする方法の
 <td><p></p></td>
 <td><p>既存の UM IP ゲートウェイを作成または構成します。</p></td>
 <td><p><a href="https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-ip-gateway">UM IP ゲートウェイを作成する</a></p>
-<p><a href="manage-a-um-ip-gateway-exchange-2013-help.md">UM IP ゲートウェイの管理</a></p></td>
+<p><a href="https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/connect-voice-mail-system/manage-um-ip-gateway">UM IP ゲートウェイの管理</a></p></td>
 </tr>
 <tr class="odd">
 <td><p></p></td>
 <td><p>UM ハント グループを作成します。</p></td>
-<td><p><a href="create-a-um-hunt-group-exchange-2013-help.md">UM ハント グループを作成する</a></p></td>
+<td><p><a href="https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-hunt-group">UM ハント グループを作成する</a></p></td>
 </tr>
 <tr class="even">
 <td><p></p></td>
 <td><p>UM 自動応答を作成または構成します。</p></td>
-<td><p><a href="create-a-um-auto-attendant-exchange-2013-help.md">UM 自動応答を作成する</a></p>
-<p><a href="manage-a-um-auto-attendant-exchange-2013-help.md">UM 自動応答の管理</a></p></td>
+<td><p><a href="https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/create-a-um-auto-attendant">UM 自動応答を作成する</a></p>
+<p><a href="https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/manage-um-auto-attendant">UM 自動応答の管理</a></p></td>
 </tr>
 <tr class="odd">
 <td><p></p></td>

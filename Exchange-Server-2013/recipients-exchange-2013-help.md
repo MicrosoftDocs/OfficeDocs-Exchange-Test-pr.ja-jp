@@ -353,7 +353,7 @@ Microsoft Exchange 受信者は、メールボックス、メール ユーザー
 <td><p>配布グループの作成と管理の方法、および組織のグループの名前付けポリシーの作成方法を説明します。</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="manage-mail-enabled-security-groups-exchange-2013-help.md">メールが有効なセキュリティ グループの管理</a></p></td>
+<td><p><a href="https://docs.microsoft.com/ja-jp/exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups">メールが有効なセキュリティ グループの管理</a></p></td>
 <td><p>メールが有効なセキュリティ グループの作成と管理の方法を説明します。</p></td>
 </tr>
 <tr class="even">
@@ -373,7 +373,7 @@ Microsoft Exchange 受信者は、メールボックス、メール ユーザー
 <td><p>会議室メールボックスの作成方法、および定期的な会議の有効化や予約およびスケジュール オプションの構成などの会議室メールボックスのプロパティの管理方法を説明します。</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="manage-equipment-mailboxes-exchange-2013-help.md">備品用メールボックスの管理</a></p></td>
+<td><p><a href="https://docs.microsoft.com/ja-jp/exchange/recipients-in-exchange-online/manage-equipment-mailboxes">備品用メールボックスの管理</a></p></td>
 <td><p>備品メールボックスの作成方法、予約とスケジュール オプションの構成方法、およびその他のメールボックスのプロパティの管理方法を説明します。</p></td>
 </tr>
 <tr class="odd">
@@ -389,7 +389,7 @@ Microsoft Exchange 受信者は、メールボックス、メール ユーザー
 <td><p>コマンドによって既定のフィルターまたはカスタム フィルターを使用し、受信者セットをフィルター処理する方法を説明します。</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="manage-permissions-for-recipients-exchange-online-help.md">受信者のアクセス許可を管理する</a></p></td>
+<td><p><a href="https://docs.microsoft.com/ja-jp/exchange/recipients-in-exchange-online/manage-permissions-for-recipients">受信者のアクセス許可を管理する</a></p></td>
 <td><p>EAC またはシェルを使用して、ユーザーとグループにアクセス許可を割り当てる方法を説明します。</p></td>
 </tr>
 <tr class="odd">

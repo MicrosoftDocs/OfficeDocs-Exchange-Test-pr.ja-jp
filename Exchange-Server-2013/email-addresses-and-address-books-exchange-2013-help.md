@@ -68,7 +68,7 @@ _**トピックの最終更新日:** 2015-03-09_
 <td><p>受信者を整理し、エンドユーザーにアクセスしやすくするためのアドレス一覧および GAL の詳細情報:</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="address-book-policies-exchange-2013-help.md">アドレス帳ポリシー</a></p></td>
+<td><p><a href="https://docs.microsoft.com/ja-jp/exchange/address-books/address-book-policies/address-book-policies">アドレス帳ポリシー</a></p></td>
 <td><p>アドレス一覧および GAL を別々の仮想組織に区分するための詳細情報:</p></td>
 </tr>
 <tr class="odd">

@@ -19,7 +19,7 @@ _**適用先:** Exchange Server 2013_
 
 [アイテム保持ポリシーへの保持タグの追加、またはアイテム保持ポリシーからの保持タグの削除](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/messaging-records-management/add-or-remove-retention-tags)
 
-[メールボックスにアイテム保持ポリシーを適用する](apply-a-retention-policy-to-mailboxes-exchange-2013-help.md)
+[メールボックスにアイテム保持ポリシーを適用する](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/messaging-records-management/apply-retention-policy)
 
 [管理フォルダー アシスタントの構成](configure-the-managed-folder-assistant-exchange-2013-help.md)
 

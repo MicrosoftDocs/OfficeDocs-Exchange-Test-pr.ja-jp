@@ -61,9 +61,9 @@ Exchange Server 2013 と Exchange Online のインプレース電子情報開示
 
 検索結果に検索不能アイテムを含める方法の詳細については、以下を参照してください。
 
-  - [インプレース電子情報開示検索を作成する](create-an-in-place-ediscovery-search-exchange-2013-help.md)
+  - [インプレース電子情報開示検索を作成する](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/in-place-ediscovery/create-in-place-ediscovery-search)
 
-  - [電子情報開示検索の結果を PST ファイルへエクスポート](export-ediscovery-search-results-to-a-pst-file-exchange-2013-help.md)
+  - [電子情報開示検索の結果を PST ファイルへエクスポート](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/in-place-ediscovery/export-search-results)
 
   - [SharePoint:電子情報開示コンテンツをエクスポートしレポートを作成する](https://go.microsoft.com/fwlink/p/?linkid=324757)
 

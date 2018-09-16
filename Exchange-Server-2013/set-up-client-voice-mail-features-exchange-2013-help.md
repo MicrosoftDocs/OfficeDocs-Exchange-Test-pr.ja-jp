@@ -41,7 +41,7 @@ Outlook Voice Access
 
 ## Outlook Voice Access
 
-Exchange UM では、UM が有効なユーザーが、UM ダイヤル プランで構成されている内部または外部の電話番号に呼び出しを行って、自分のメールボックスにアクセスしたり、Outlook Voice Access のメニュー システムを使用したりできます。UM が有効なユーザーは、このメニューを使用して、電子メールを読む、音声メッセージを聞く、Outlook 予定表を操作する、個人用連絡先にアクセスする、タスクを実行する (Outlook Voice Access PIN の構成やボイス メールの録音) などの操作ができます。詳細については、「[Outlook Voice Access の設定](setting-up-outlook-voice-access-exchange-2013-help.md)」を参照してください。
+Exchange UM では、UM が有効なユーザーが、UM ダイヤル プランで構成されている内部または外部の電話番号に呼び出しを行って、自分のメールボックスにアクセスしたり、Outlook Voice Access のメニュー システムを使用したりできます。UM が有効なユーザーは、このメニューを使用して、電子メールを読む、音声メッセージを聞く、Outlook 予定表を操作する、個人用連絡先にアクセスする、タスクを実行する (Outlook Voice Access PIN の構成やボイス メールの録音) などの操作ができます。詳細については、「[Outlook Voice Access の設定](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/set-up-outlook-voice-access)」を参照してください。
 
 ## 呼び出しの転送
 

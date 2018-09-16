@@ -111,19 +111,19 @@ UM および Microsoft Lync Server の展開方法に関する詳細なガイダ
 <tr class="even">
 <td><p></p></td>
 <td><p>ユニファイド メッセージングの送信ダイヤルを構成します。</p></td>
-<td><p><a href="authorize-calls-using-dialing-rules-exchange-2013-help.md">ダイヤル ルールを使用して呼び出しを承認する</a></p>
+<td><p><a href="https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/authorize-calls-using-dialing-rules">ダイヤル ルールを使用して呼び出しを承認する</a></p>
 <p><a href="https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/authorize-calls-for-users-in-a-dial-plan">ダイヤル プランでユーザーの呼び出しを承認する</a></p>
 <p><a href="https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/authorize-calls-for-a-group-of-users">ユーザー グループの呼び出しを承認する</a></p></td>
 </tr>
 <tr class="odd">
 <td><p></p></td>
 <td><p>必要な数の自動応答を作成します。</p></td>
-<td><p><a href="create-a-um-auto-attendant-exchange-2013-help.md">UM 自動応答を作成する</a></p></td>
+<td><p><a href="https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/create-a-um-auto-attendant">UM 自動応答を作成する</a></p></td>
 </tr>
 <tr class="even">
 <td><p></p></td>
 <td><p>UM 自動応答をそれぞれに設定し、構成します。</p></td>
-<td><p><a href="set-up-a-um-auto-attendant-exchange-2013-help.md">UM 自動応答の設定</a></p></td>
+<td><p><a href="https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/set-up-um-auto-attendant">UM 自動応答の設定</a></p></td>
 </tr>
 <tr class="odd">
 <td><p><strong> </strong></p></td>

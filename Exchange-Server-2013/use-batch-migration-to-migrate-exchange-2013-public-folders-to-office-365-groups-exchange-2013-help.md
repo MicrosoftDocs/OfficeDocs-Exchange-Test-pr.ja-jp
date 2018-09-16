@@ -19,7 +19,7 @@ _**トピックの最終更新日:** 2018-03-26_
 
 **概要:**  Exchange 2013 のパブリック フォルダーを Office 365 グループに移動する方法
 
-*バッチ移行*というプロセスを通じて、Exchange 2013 のパブリック フォルダーの一部またはすべてを、Office 365 グループに移動することができます。Office 365 グループは、パブリック フォルダーよりも優れた利点を提供する Microsoft の新しいコラボレーション製品です。パブリック フォルダーと Office 365 グループの相違点の概要と、組織が Office 365 グループに切り替えることのメリットとデメリットの根拠については、「[パブリック フォルダーを Office 365 グループに移行する](migrate-your-public-folders-to-office-365-groups-exchange-2013-help.md)」を参照してください。
+*バッチ移行*というプロセスを通じて、Exchange 2013 のパブリック フォルダーの一部またはすべてを、Office 365 グループに移動することができます。Office 365 グループは、パブリック フォルダーよりも優れた利点を提供する Microsoft の新しいコラボレーション製品です。パブリック フォルダーと Office 365 グループの相違点の概要と、組織が Office 365 グループに切り替えることのメリットとデメリットの根拠については、「[パブリック フォルダーを Office 365 グループに移行する](https://docs.microsoft.com/ja-jp/exchange/collaboration-exo/public-folders/migrate-your-public-folders-to-office-365-groups)」を参照してください。
 
 この記事では、Exchange 2013 のパブリック フォルダーを実際にバッチ移行するためのステップごとの手順を示します。
 
