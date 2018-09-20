@@ -2067,7 +2067,7 @@
           - name: Outlook Voice Access ユーザーの情報アナウンスを有効にする
             href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/enable-an-informational-announcement
           - name: Outlook Voice Access ユーザー用にカスタマイズした案内応答を有効にする
-            href: enable-a-customized-greeting-for-outlook-voice-access-users-exchange-2013-help.md
+            href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/enable-a-customized-greeting
           - name: Outlook Voice Access ユーザーの電話での再生を有効または無効にする
             href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/enable-or-disable-play-on-phone
           - name: Outlook Voice Access からの音声メッセージの送信を有効または無効にする
