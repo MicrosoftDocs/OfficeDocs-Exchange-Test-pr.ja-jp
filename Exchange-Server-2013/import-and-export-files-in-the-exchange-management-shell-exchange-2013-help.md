@@ -142,7 +142,9 @@ Exchange 2013 サーバーで実行できる通常の操作の大半を、これ
 
 **FileData** プロパティに保存されたデータをローカル コンピューターに保存することを、シェルに認識させる必要があります。それには、次の構文を使用します。
 
-    <cmdlet> | ForEach { $_.FileData | Add-Content <local path to file> -Encoding Byte }
+```command line
+<cmdlet> | ForEach {     <cmdlet> | ForEach { $_.FileData | Add-Content <local path to file> -Encoding Byte }.FileData | Add-Content <local path to file> -Encoding Byte }
+```
 
 たとえば、次のコマンドにより、オブジェクトの **FileData** プロパティに保存されたデータは、**Export-SomeData** 架空コマンドレットによって作成されたオブジェクトにエクスポートされます。エクスポートされたデータは、ローカル コンピューター上で指定するファイル、この場合は MyData.dat に保存されます。
 
@@ -152,7 +154,9 @@ Exchange 2013 サーバーで実行できる通常の操作の大半を、これ
 
 
 
-    Export-SomeData | ForEach { $_.FileData | Add-Content C:\MyData.dat -Encoding Byte }
+```powershell
+Export-SomeData | ForEach {     Export-SomeData | ForEach { $_.FileData | Add-Content C:\MyData.dat -Encoding Byte }.FileData | Add-Content C:\MyData.dat -Encoding Byte }
+```
 
 コマンドが実行されると、次のアクションが発生します。
 

@@ -47,15 +47,21 @@ _**トピックの最終更新日:** 2015-04-08_
 
 添付ファイル フィルターを無効にするには、次のコマンドを実行します。
 
-    Disable-TransportAgent "Attachment Filtering Agent"
+```powershell
+Disable-TransportAgent "Attachment Filtering Agent"
+```
 
 添付ファイル フィルターを有効にするには、次のコマンドを実行します。
 
-    Enable-TransportAgent "Attachment Filtering Agent"
+```powershell
+Enable-TransportAgent "Attachment Filtering Agent"
+```
 
 添付ファイル フィルターを有効まはた無効にしたら、次のコマンドを実行して、Microsoft Exchange トランスポート サービスを再起動します。
 
-    Restart-Service MSExchangeTransport
+```powershell
+Restart-Service MSExchangeTransport
+```
 
 ## 正常な動作を確認する方法
 
@@ -63,7 +69,9 @@ _**トピックの最終更新日:** 2015-04-08_
 
 1.  次のコマンドを実行します。
     
-        Get-TransportAgent "Attachment Filtering Agent"
+    ```powershell
+Get-TransportAgent "Attachment Filtering Agent"
+```
 
 2.  **Enabled** の値が `True` の場合は、添付ファイル フィルターが有効になっています。この値が `False` の場合は、添付ファイル フィルターが無効になっています。
 
@@ -71,19 +79,27 @@ _**トピックの最終更新日:** 2015-04-08_
 
 添付ファイル フィルター エントリは、組織に入れないようにするメッセージの添付ファイルを定義します。添付ファイル フィルター エージェントによって使用される添付ファイル フィルター エントリを表示するには、次のコマンドを実行します。
 
-    Get-AttachmentFilterEntry | Format-Table
+```powershell
+Get-AttachmentFilterEntry | Format-Table
+```
 
 特定の MIME コンテンツ タイプ エントリを表示するには、次の構文を使用します。
 
-    Get-AttachmentFilteringEntry ContentType:<MIMEContentType>
+```powershell
+Get-AttachmentFilteringEntry ContentType:<MIMEContentType>
+```
 
 たとえば、JPEG イメージのコンテンツ タイプ エントリを表示するには、次のコマンドを実行します。
 
-    Get-AttachmentFilteringEntry ContentType:image/jpeg
+```powershell
+Get-AttachmentFilteringEntry ContentType:image/jpeg
+```
 
 特定のファイル名またはファイル名拡張子のエントリを表示するには、次の構文を使用します。
 
-    Get-AttachmentFilteringEntry FileName:<FileName or FileNameExtension>
+```powershell
+Get-AttachmentFilteringEntry FileName:<FileName or FileNameExtension>
+```
 
 たとえば、JPEG の添付ファイルのファイル名拡張子エントリを表示するには、次のコマンドを実行します。
 
@@ -93,15 +109,21 @@ _**トピックの最終更新日:** 2015-04-08_
 
 MIME コンテンツ タイプで添付ファイルを絞り込む添付ファイル フィルター エントリを追加するには、次の構文を使用します。
 
-    Add-AttachmentFilterEntry -Name <MIMEContentType> -Type ContentType
+```powershell
+Add-AttachmentFilterEntry -Name <MIMEContentType> -Type ContentType
+```
 
 次の例では、JPEG イメージを絞り込む MIME コンテンツ タイプ エントリを追加します。
 
-    Add-AttachmentFilterEntry -Name image/jpeg -Type ContentType
+```powershell
+Add-AttachmentFilterEntry -Name image/jpeg -Type ContentType
+```
 
 ファイル名またはファイル名拡張子で添付ファイルを絞り込む添付ファイル フィルター エントリを追加するには、次の構文を使用します。
 
-    Add-AttachmentFilterEntry -Name <FileName or FileNameExtension> -Type FileName
+```powershell
+Add-AttachmentFilterEntry -Name <FileName or FileNameExtension> -Type FileName
+```
 
 次の例では、ファイル名拡張子が .jpg の添付ファイルを絞り込みます。
 
@@ -113,7 +135,9 @@ MIME コンテンツ タイプで添付ファイルを絞り込む添付ファ�
 
 1.  次のコマンドを実行して、フィルター エントリが存在することを確認します。
     
-        Get-AttachmentFilterEntry | Format-Table
+    ```powershell
+Get-AttachmentFilterEntry | Format-Table
+```
 
 2.  外部のメールボックスから内部の受信者への禁止添付ファイルを含むテスト メッセージを送信して、そのメッセージが拒否、除去、または削除されることを確認します。
 
@@ -121,15 +145,21 @@ MIME コンテンツ タイプで添付ファイルを絞り込む添付ファ�
 
 MIME コンテンツ タイプで添付ファイルを絞り込む添付ファイル フィルター エントリを削除するには、次の構文を使用します。
 
-    Remove-AttachmentFilterEntry ContentType:<ContentType>
+```powershell
+Remove-AttachmentFilterEntry ContentType:<ContentType>
+```
 
 次の例では、JPEG 画像用の MIME コンテンツ タイプ エントリを削除します。
 
-    Remove-AttachmentFilterEntry ContentType:image/jpeg
+```powershell
+Remove-AttachmentFilterEntry ContentType:image/jpeg
+```
 
 ファイル名またはファイル名拡張子で添付ファイルを絞り込む添付ファイル フィルター エントリを削除するには、次の構文を使用します。
 
-    Remove-AttachmentFilterEntry FileName:<FileName or FileNameExtension>
+```powershell
+Remove-AttachmentFilterEntry FileName:<FileName or FileNameExtension>
+```
 
 次の例では, .jpg ファイル名拡張子用のファイル名エントリを削除します。
 
@@ -141,7 +171,9 @@ MIME コンテンツ タイプで添付ファイルを絞り込む添付ファ�
 
 1.  次のコマンドを実行して、フィルター エントリが削除されていることを確認します。
     
-        Get-AttachmentFilterEntry | Format-Table
+    ```powershell
+Get-AttachmentFilterEntry | Format-Table
+```
 
 2.  外部のメールボックスから内部の受信者への配信が許可された添付ファイルを含むテスト メッセージを送信して、そのメッセージが添付ファイルと一緒に正常に配信されることを確認します。
 
@@ -149,7 +181,9 @@ MIME コンテンツ タイプで添付ファイルを絞り込む添付ファ�
 
 メッセージ内で禁止添付ファイルが検出されたときに使用される添付ファイル フィルター アクションを表示するには、次のコマンドを実行します。
 
-    Get-AttachmentFilterListConfig
+```powershell
+Get-AttachmentFilterListConfig
+```
 
 ## シェルを使用して添付ファイル フィルター アクションを構成する
 

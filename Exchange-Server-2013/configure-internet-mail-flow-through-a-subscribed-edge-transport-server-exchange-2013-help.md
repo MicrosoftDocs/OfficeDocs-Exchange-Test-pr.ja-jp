@@ -51,7 +51,9 @@ _**トピックの最終更新日:** 2015-04-08_
     
     次の例では、C:\\My Documents フォルダーに EdgeSubscriptionInfo.xml という名前のエッジ サブスクリプション ファイルを作成します。*Force* パラメーターは、無効になるコマンドを確認するプロンプトと、エッジ トランスポート サーバー上の構成データが上書きされることに対する警告が表示されないようにします。
     
-        New-EdgeSubscription -FileName "C:\My Documents\EdgeSubscriptionInfo.xml" -Force
+    ```powershell
+New-EdgeSubscription -FileName "C:\My Documents\EdgeSubscriptionInfo.xml" -Force
+```
 
 2.  作成したエッジ サブスクリプション ファイルを、エッジ トランスポート サーバーの購読先の Active Directory サイト内のメールボックス サーバーにコピーします。
 
@@ -71,7 +73,9 @@ _**トピックの最終更新日:** 2015-04-08_
 
 4.  メールボックス サーバーで、次のコマンドを実行して、最初の EdgeSync 同期を開始します。
     
-        Start-EdgeSynchronization
+    ```powershell
+Start-EdgeSynchronization
+```
 
 5.  終了後に、エッジ サブスクリプション ファイルをエッジ トランスポート サーバーとメールボックス サーバーの両方から削除することをお勧めします。エッジ サブスクリプション ファイルには、LDAP 通信プロセス中に使用する資格情報に関する情報が含まれています。
 

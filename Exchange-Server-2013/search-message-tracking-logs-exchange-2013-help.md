@@ -63,7 +63,9 @@ Exchange 管理シェルで **Get-MessageTrackingLog** コマンドレットを�
 
 サーバー上のメッセージ追跡ログから最新の 1,000 件のエントリを表示するには、次のコマンドを実行します。
 
-    Get-MessageTrackingLog
+```powershell
+Get-MessageTrackingLog
+```
 
 この例では、ローカルサーバー上のメッセージ追跡ログで、2013 年 3 月 28 日午前 8 時から 2013 年 3 月 28 日午後 5 時の間に発生した **FAIL** イベントのうち、メッセージ送信者が pat@contoso.com であるエントリをすべて検索します。
 

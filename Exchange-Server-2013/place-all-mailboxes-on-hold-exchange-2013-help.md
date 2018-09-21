@@ -130,7 +130,9 @@ EAC を使用すると、最大 500 のメールボックスを選択して保�
     Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'CustomAttribute15 -eq "OneYearLitigationHold"'
     ```
     ```
-    Get-Recipient -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'Department -eq "HR"'
+```powershell
+Get-Recipient -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'Department -eq "HR"'
+```
     ```
     ```
     Get-Recipient -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'PostalCode -eq "98052"'
@@ -139,7 +141,9 @@ EAC を使用すると、最大 500 のメールボックスを選択して保�
     Get-Recipient -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'StateOrProvince -eq "WA"'
     ```
     ```
-    Get-Mailbox -ResultSize Unlimited -Filter {RecipientTypeDetails -ne "DiscoveryMailbox"}
+```powershell
+Get-Mailbox -ResultSize Unlimited -Filter {RecipientTypeDetails -ne "DiscoveryMailbox"}
+```
     ```
 
     フィルターで他のユーザーのメールボックス プロパティを使用して、メールボックスを含めたり、除外したりすることができます。詳細については、「[-Filter パラメーターのフィルター可能なプロパティ](https://technet.microsoft.com/ja-jp/library/bb738155\(v=exchg.150\))」を参照してください。

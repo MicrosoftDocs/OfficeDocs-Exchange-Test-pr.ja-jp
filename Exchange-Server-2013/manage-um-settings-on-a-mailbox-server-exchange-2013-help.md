@@ -51,7 +51,9 @@ Microsoft Exchange ユニファイド メッセージング サービスを実�
 
 この例では、セッション開始プロトコル (SIP) のすべてのダイヤル プランから `MyMailboxServer` という名前のメールボックス サーバーを削除します。
 
-    Set-UMService -Identity MyMailboxServer -DialPlans $null
+```powershell
+Set-UMService -Identity MyMailboxServer -DialPlans $null
+```
 
 この例では、`MyMailboxServer` という名前のメールボックス サーバーを `MySIPDialPlanName` という名前の UM SIP ダイヤル プランに追加し、着信の音声呼び出しの最大数も設定しています。
 
@@ -65,9 +67,13 @@ Microsoft Exchange ユニファイド メッセージング サービスを実�
 
 この例では、すべてのメールボックス サーバーの一覧を表示します。
 
-    Get-UMService
+```powershell
+Get-UMService
+```
 
 この例では、`MyMailboxServer` という名前のメールボックス サーバーのプロパティの一覧を書式付きで表示します。
 
-    Get-UMService -Identity MyMailboxServer | Format-List
+```powershell
+Get-UMService -Identity MyMailboxServer | Format-List
+```
 

@@ -41,9 +41,13 @@ Exchange 管理シェルを使用して、リモート ドメイン経由で電�
 
 この例では、Contoso という名前のリモート ドメインの不在メッセージを無効にします。
 
-    Set-RemoteDomain Contoso -AllowedOOFType None
+```powershell
+Set-RemoteDomain Contoso -AllowedOOFType None
+```
 
 この例では、外部向けの不在メッセージのみを許可します。
 
-    Set-RemoteDomain Contoso -AllowedOOFType External
+```powershell
+Set-RemoteDomain Contoso -AllowedOOFType External
+```
 

@@ -175,7 +175,9 @@ Microsoft Cloud で情報を処理すると、優先受信トレイでのメー�
 
 1.  組み込みの Exchange モバイル デバイス アクセス ルールを利用して、Exchange 管理シェルで次を設定することにより、すべてのモバイル デバイスが接続できないようにブロックできます。
     
-        Set-ActiveSyncOrganizationSettings -DefaultAccessLevel Block
+    ```powershell
+Set-ActiveSyncOrganizationSettings -DefaultAccessLevel Block
+```
 
 2.  オンプレミスの Exchange Connector をインストールした後で、オンプレミスの条件付きアクセス ポリシーを Intune 内で利用できます。詳細については、「[Exchange On-Premises と従来の Exchange Online Dedicated の条件付きアクセス ポリシーを作成する](https://docs.microsoft.com/intune/conditional-access-exchange-create#configure-exchange-on-premises-access)」を参照してください。
 

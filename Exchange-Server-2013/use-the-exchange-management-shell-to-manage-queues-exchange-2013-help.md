@@ -314,7 +314,9 @@ Exchange 2013 には、**Get-QueueDigest** という新しいキュー コマン
 
 この例では、Mailbox01、Mailbox02、および Mailbox03 という Exchange 2013 メールボックス サーバー上の空ではない外部キューをすべて返します。
 
-    Get-QueueDigest -Server Mailbox01,Mailbox02,Mailbox03 -Include External -Exclude Empty
+```powershell
+Get-QueueDigest -Server Mailbox01,Mailbox02,Mailbox03 -Include External -Exclude Empty
+```
 
 ページのトップへ
 

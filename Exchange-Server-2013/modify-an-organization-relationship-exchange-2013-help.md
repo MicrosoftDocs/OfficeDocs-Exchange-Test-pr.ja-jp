@@ -91,7 +91,9 @@ _**トピックの最終更新日:** 2015-01-01_
 
   - この例では、組織上の関係 Contoso を無効にします。
     
-        Set-OrganizationRelationship -Identity Contoso -Enabled $false
+    ```powershell
+Set-OrganizationRelationship -Identity Contoso -Enabled $false
+```
 
   - この例では、組織の関係 WoodgroveBank で予定表の空き時間情報アクセスを有効にして、アクセス レベルを `AvailabilityOnly` (時間だけの予定表の空き時間情報) に設定します。
     
@@ -103,7 +105,9 @@ _**トピックの最終更新日:** 2015-01-01_
 
 組織上の関係の更新が成功したかどうかを確認するには、以下のシェル コマンドを実行して組織上の関係情報を確認します。
 
-    Get-OrganizationRelationship | format-list
+```powershell
+Get-OrganizationRelationship | format-list
+```
 
 
 > [!TIP]

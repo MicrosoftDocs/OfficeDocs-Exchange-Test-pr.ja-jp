@@ -29,7 +29,9 @@ _**トピックの最終更新日:** 2015-01-14_
 
 以下の例で示すように、スクリプトが **Get-ClientAccessArray** コマンドレットを使用して必要なすべてのサーバーをターゲットとしていることを、サーバーで確認します。
 
-    Get-ClientAccessArray | fl members
+```powershell
+Get-ClientAccessArray | fl members
+```
 
 更新に失敗しているサーバーが、クライアント アクセス アレイのメンバーであり、依然として正しく更新されない場合は、Exchange セットアップ プログラムを再実行して、クライアント アクセス サーバーの役割をサーバーに再度追加します。パラメーター *ToSpecificServers* を使用して個別にサーバーを指定することもできます。
 
@@ -55,7 +57,9 @@ _**トピックの最終更新日:** 2015-01-14_
 
 サーバーを短時間停止するだけで、Exchange を完全に削除しない場合は、パラメーター *ToSpecificServers* を使用して特定のサーバーに対してスクリプトを実行するよう調整し、アクティブなサーバーのみを対象とするようにできます。または次の例で示すように、**Remove-ClientAccessArray** コマンドレットを使用して、応答しないサーバーの Active Directory オブジェクトから、RPC クライアント アクセス サービスを削除することができます。
 
-    Remove-RPCClientAccess -Server Server.Contoso.com
+```powershell
+Remove-RPCClientAccess -Server Server.Contoso.com
+```
 
 RPC クライアント アクセス サービスを削除した後は、サーバーは [Get-ClientAccessArray](https://technet.microsoft.com/ja-jp/library/dd297976\(v=exchg.150\)) によるアレイのメンバーとしては返されず、スクリプトも対象としません。サーバーが再び機能するとすぐに、**New-RpcClientAccess** コマンドレットを使用して RPC クライアント アクセス サービスを再び追加できます。RPC クライアント アクセス サービスを再び追加したら、影響するサーバー上の Microsoft Exchange アドレス帳サービスを忘れずに再起動してください。
 

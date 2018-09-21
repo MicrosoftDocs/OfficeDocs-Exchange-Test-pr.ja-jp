@@ -41,11 +41,15 @@ RDB に関連する追加の管理タスクについては、「[回復用デー
 
 2.  Eseutil を使用して、そのデータベースをクリーン シャットダウンの状態にします。次の例で、EXX はデータベースのログ生成プレフィックスです (E00、E01、E02 など)。
     
-        Eseutil /R EXX /l <RDBLogFilePath> /d <RDBEdbFolder>
+    ```powershell
+Eseutil /R EXX /l <RDBLogFilePath> /d <RDBEdbFolder>
+```
     
     次の例は、ログ生成プレフィックスが E01、回復用データベースおよびログ ファイルのパスが E:\\Databases\\RDB1 です。
     
-        Eseutil /R E01 /l E:\Databases\RDB1 /d E:\Databases\RDB1
+    ```powershell
+Eseutil /R E01 /l E:\Databases\RDB1 /d E:\Databases\RDB1
+```
 
 3.  回復用データベースを作成します。回復用データベースに一意の名前を付けます。ただし、EdbFilePath パラメーターにはデータベース ファイルの名前とパスを使用し、LogFolderPath パラメーターには復元済みログ ファイルの場所を使用します。
     
@@ -57,15 +61,21 @@ RDB に関連する追加の管理タスクについては、「[回復用デー
 
 4.  Microsoft Exchange Information Store サービスを再開します。
     
-        Restart-Service MSExchangeIS
+    ```powershell
+Restart-Service MSExchangeIS
+```
 
 5.  回復用データベースをマウントします。
     
-        Mount-database <RDBName>
+    ```powershell
+Mount-database <RDBName>
+```
 
 6.  マウントされたデータベースに、復元するメールボックスが含まれていることを確認します。
     
-        Get-MailboxStatistics -Database <RDBName> | ft -auto
+    ```powershell
+Get-MailboxStatistics -Database <RDBName> | ft -auto
+```
 
 7.  New-MailboxRestoreRequest コマンドレットを使用して、メールボックスまたはアイテムを回復用データベースから運用中のメールボックスに復元します。
     
@@ -81,7 +91,9 @@ RDB に関連する追加の管理タスクについては、「[回復用デー
     
     復元の状態が \[完了\] になったら、[Remove-MailboxRestoreRequest](https://technet.microsoft.com/ja-jp/library/ff829910\(v=exchg.150\)) を使用して復元要求を削除します。たとえば、次のようにです。
     
-        Get-MailboxRestoreRequest -Status Completed | Remove-MailboxRestoreRequest
+    ```powershell
+Get-MailboxRestoreRequest -Status Completed | Remove-MailboxRestoreRequest
+```
 
 ## 正常な動作を確認する方法
 

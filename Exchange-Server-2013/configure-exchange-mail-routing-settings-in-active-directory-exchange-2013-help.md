@@ -49,11 +49,15 @@ Active Directory サイト リンクに Exchange 固有のコストを設定す�
 
 この例では、Exchange 固有のコスト 10 を IPSiteLinkAB という名前の IP サイト リンクに設定します。
 
-    Set-AdSiteLink IPSiteLinkAB -ExchangeCost 10
+```powershell
+Set-AdSiteLink IPSiteLinkAB -ExchangeCost 10
+```
 
 この例では、IPSiteLinkAB という名前の IP サイト リンクから Exchange のコストをクリアします。
 
-    Set-AdSiteLink IPSiteLinkAB -ExchangeCost $null
+```powershell
+Set-AdSiteLink IPSiteLinkAB -ExchangeCost $null
+```
 
 ## 正常な動作を確認する方法
 
@@ -61,7 +65,9 @@ Active Directory サイト リンクに Exchange コストが正常に設定さ�
 
 1.  次のコマンドを実行します。
     
-        Get-AdSiteLink | Format-List Name,ExchangeCost
+    ```powershell
+Get-AdSiteLink | Format-List Name,ExchangeCost
+```
 
 2.  Active Directory サイト リンクに Exchange コストが構成されていることを確認します。
 
@@ -71,15 +77,21 @@ Active Directory サイト リンクに Exchange コストが正常に設定さ�
 
 Active Directory サイトをハブ サイトとして構成するには、次のコマンドを実行します。
 
-    Set-AdSite <ADSiteIdentity> -HubSiteEnabled $true
+```powershell
+Set-AdSite <ADSiteIdentity> -HubSiteEnabled $true
+```
 
 この例では、Site A という名前の Active Directory サイトをハブ サイトとして構成します。
 
-    Set-AdSite "Site A" -HubSiteEnabled $true
+```powershell
+Set-AdSite "Site A" -HubSiteEnabled $true
+```
 
 この例では、Site B という名前の Active Directory サイトからハブ サイト属性を削除します。
 
-    Set-AdSite "Site B" -HubSiteEnabled $false
+```powershell
+Set-AdSite "Site B" -HubSiteEnabled $false
+```
 
 ## 正常な動作を確認する方法
 
@@ -87,7 +99,9 @@ Active Directory サイトがハブ サイトとして正常に構成された�
 
 1.  次のコマンドを実行します。
     
-        Get-AdSite | Format-List Name,HubSiteEnabled
+    ```powershell
+Get-AdSite | Format-List Name,HubSiteEnabled
+```
 
 2.  Active Directory サイトの *HubSiteEnabled* の値が `True` であることを確認します。
 

@@ -87,7 +87,9 @@ UM ダイヤル プランに関連するその他の管理タスクについて�
 
 この例では、`MyClientAccessServer` というクライアント アクセス サーバーを `MySIPDialPlan` という SIP URI ダイヤル プランに追加します。また、スタートアップ モードをデュアル モードに設定し、クライアント アクセス サーバーが TCP 要求と TLS 要求を受け付けられるようにします。
 
-    Set-UMCallRouterSettings -DialPlans MySIPDialPlan -Server MyClientAccessServer -UMStartupMode Dual
+```powershell
+Set-UMCallRouterSettings -DialPlans MySIPDialPlan -Server MyClientAccessServer -UMStartupMode Dual
+```
 
 この例では、`MyClientAccessServer` というクライアント アクセス サーバーを `MySIPDialPlan` と `MySIPDialPlan2` という 2 つの SIP ダイヤル プランに追加して、サーバーが IPv4 と IPv6 の両方のアドレスを使用できるようにします。
 

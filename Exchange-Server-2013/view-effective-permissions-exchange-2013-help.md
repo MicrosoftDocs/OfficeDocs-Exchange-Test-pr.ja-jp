@@ -53,11 +53,15 @@ Microsoft Exchange Server 2013 内のアクセス許可は管理役割を使用�
 
 管理役割によって与えられるアクセス許可を付与されているすべてのユーザーを一覧表示するには、次の構文を使用します。
 
-    Get-ManagementRoleAssignment -Role <role name> -GetEffectiveUsers
+```powershell
+Get-ManagementRoleAssignment -Role <role name> -GetEffectiveUsers
+```
 
 この例では、メール受信者の役割によって提供されるアクセス許可を付与されたすべてのユーザーを一覧表示します。
 
-    Get-ManagementRoleAssignment -Role "Mail Recipients" -GetEffectiveUsers
+```powershell
+Get-ManagementRoleAssignment -Role "Mail Recipients" -GetEffectiveUsers
+```
 
 一覧の中で返されるプロパティを変更したり、一覧をコンマ区切り値 (.csv) ファイルにエクスポートする場合は、後の「シェルを使用して出力をカスタマイズし表示する」を参照してください。
 
@@ -85,7 +89,9 @@ Microsoft Exchange Server 2013 内のアクセス許可は管理役割を使用�
 
 この例では、ユーザー Kim Akers にアクセス許可を付与しているすべての役割の割り当てを検索します。
 
-    Get-ManagementRoleAssignment -GetEffectiveUsers | Where { $_.EffectiveUserName -Eq "Kim Akers" }
+```powershell
+Get-ManagementRoleAssignment -GetEffectiveUsers | Where {     Get-ManagementRoleAssignment -GetEffectiveUsers | Where { $_.EffectiveUserName -Eq "Kim Akers" }.EffectiveUserName -Eq "Kim Akers" }
+```
 
 一覧に返されるプロパティを変更したり、CSV ファイルに一覧をエクスポートするには、後の「シェルを使用して出力をカスタマイズし表示する」を参照してください。
 

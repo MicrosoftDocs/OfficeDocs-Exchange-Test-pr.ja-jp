@@ -53,7 +53,9 @@ ASA 資格情報を設定するときに、以下のガイドラインに留意�
     
     **Import-Module** コマンドレットを使用して、Active Directory モジュールをインポートします。
     
-        Import-Module ActiveDirectory
+    ```powershell
+Import-Module ActiveDirectory
+```
 
 2.  **New-ADComputer** コマンドレットを次のコマンドレット構文で使用して、新しい Active Directory コンピューター アカウントを作成します。
     
@@ -71,7 +73,9 @@ ASA 資格情報を設定するときに、以下のガイドラインに留意�
     
     例:   
     
-        Set-ADComputer EXCH2013ASA -add @{"msDS-SupportedEncryptionTypes"="28"}
+    ```powershell
+Set-ADComputer EXCH2013ASA -add @{"msDS-SupportedEncryptionTypes"="28"}
+```
     
     ここで、*EXCH2013ASA* はアカウントの名前であり、変更する属性は 28 の 10 進値を持つ *msDS-SupportedEncryptionTypes* です。これにより、次の暗号が有効になります。RC4-HMAC、AES128-CTS-HMAC-SHA1-96、AES256-CTS-HMAC-SHA1-96。
 
@@ -296,11 +300,15 @@ setspn コマンドを実行して SPN がフォレスト内でアカウント�
 
 2.  コマンド プロンプトで、以下のコマンドを入力します。
     
-        setspn -F -Q <SPN>
+    ```powershell
+setspn -F -Q <SPN>
+```
     
     この \<SPN\> には、ASA 資格情報に関連付ける SPN を入力します。たとえば、次のように入力します。
     
-        setspn -F -Q http/mail.corp.tailspintoys.com
+    ```powershell
+setspn -F -Q http/mail.corp.tailspintoys.com
+```
     
     コマンドは何も返さないはずです。何かを返した場合は、別のアカウントが既に SPN に関連付けられています。ASA 資格情報に関連付ける SPN ごとにこの手順を繰り返します。
 
@@ -310,11 +318,15 @@ setspn コマンドを使用して SPN を ASA 資格情報に関連付ける
 
 2.  コマンド プロンプトで、以下のコマンドを入力します。
     
-        setspn -S <SPN> <Account>$
+    ```powershell
+setspn -S <SPN> <Account>$
+```
     
     この \<SPN\> には、ASA 資格情報に関連付ける SPN を入力します。そして、\<Account\> には、ASA 資格情報に関連付けるアカウントを入力します。たとえば、次のように入力します。
     
-        setspn -S http/mail.corp.tailspintoys.com tailspin\EXCH2013ASA$
+    ```powershell
+setspn -S http/mail.corp.tailspintoys.com tailspin\EXCH2013ASA$
+```
     
     ASA 資格情報に関連付ける SPN ごとにこのコマンドを 1 回実行します。
 
@@ -324,11 +336,15 @@ setspn コマンドを使用して SPN を ASA 資格情報に関連付けたこ
 
 2.  コマンド プロンプトで、以下のコマンドを入力します。
     
-        setspn -L <Account>$
+    ```powershell
+setspn -L <Account>$
+```
     
     この \<Account\> には、ASA 資格情報に関連付けるアカウントを入力します。たとえば、次のように入力します。
     
-        setspn -L tailspin\EXCH2013ASA$
+    ```powershell
+setspn -L tailspin\EXCH2013ASA$
+```
     
     このコマンドは 1 度実行するだけで十分です。
 
@@ -390,7 +406,9 @@ ASA 資格情報を削除するには
 
 1.  Exchange 2013 サーバー上で Exchange 管理シェルを開き、次のコマンドを実行します。
     
-        Set-ClientAccessServer CAS-1 -RemoveAlternateServiceAccountCredentials
+    ```powershell
+Set-ClientAccessServer CAS-1 -RemoveAlternateServiceAccountCredentials
+```
 
 2.  この手順はすぐに実行する必要はありませんが、最後的には、すべてのクライアント コンピューターを再起動して Kerberos チケット キャッシュをコンピューターから消去する必要があります。
 

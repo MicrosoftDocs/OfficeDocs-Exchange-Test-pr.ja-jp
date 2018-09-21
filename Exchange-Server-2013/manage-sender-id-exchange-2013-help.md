@@ -43,11 +43,15 @@ Sender ID 機能は、Sender ID エージェントの機能です。Sender ID �
 
 Sender ID を無効にするには、次のコマンドを実行します。
 
-    Set-SenderIDConfig -Enabled $false
+```powershell
+Set-SenderIDConfig -Enabled $false
+```
 
 Sender ID を有効にするには、次のコマンドを実行します。
 
-    Set-SenderIDConfig -Enabled $true
+```powershell
+Set-SenderIDConfig -Enabled $true
+```
 
 
 > [!NOTE]
@@ -61,7 +65,9 @@ Sender ID を正常に、有効または無効にできたことを確認する�
 
 1.  次のコマンドを実行します。
     
-        Get-SenderIDConfig | Format-List Enabled
+    ```powershell
+Get-SenderIDConfig | Format-List Enabled
+```
 
 2.  表示された値が構成した値であることを確認します。
 
@@ -69,11 +75,15 @@ Sender ID を正常に、有効または無効にできたことを確認する�
 
 スプーフィングされたメッセージに対する Sender ID アクションを構成するには、以下のコマンドを実行します。
 
-    Set-SenderIDConfig -SpoofedDomainAction <StampStatus | Reject | Delete>
+```powershell
+Set-SenderIDConfig -SpoofedDomainAction <StampStatus | Reject | Delete>
+```
 
 この例では、送信サーバーの IP アドレスが、送信ドメインの DNS Sender Policy Framework (SPF) レコードに、権限のある SMTP 送信サーバーとして一覧に掲載されていない場合、すべてのメッセージを拒否するように Sender ID エージェントを構成します。
 
-    Set-SenderIDConfig -SpoofedDomainAction Reject
+```powershell
+Set-SenderIDConfig -SpoofedDomainAction Reject
+```
 
 ## 正常な動作を確認する方法
 
@@ -81,7 +91,9 @@ Sender ID を正常に、有効または無効にできたことを確認する�
 
 1.  次のコマンドを実行します。
     
-        Get-SenderIDConfig | Format-List SpoofedDomainAction
+    ```powershell
+Get-SenderIDConfig | Format-List SpoofedDomainAction
+```
 
 2.  表示された値が構成した値であることを確認します。
 
@@ -89,11 +101,15 @@ Sender ID を正常に、有効または無効にできたことを確認する�
 
 一時的なエラーに対する Sender ID アクションを構成するには、以下のコマンドを実行します。
 
-    Set-SenderIDConfig -TempErrorAction <StampStatus | Reject | Delete>
+```powershell
+Set-SenderIDConfig -TempErrorAction <StampStatus | Reject | Delete>
+```
 
 この例では、一時的な DNS サーバー エラーで Sender ID 状態を判定できないメッセージにスタンプを設定するように Sender ID エージェントを構成します。メッセージは他のスパム対策エージェントによって処理されて、コンテンツ フィルター エージェントはメッセージの SCL 値を特定する際にこのマークを使用します。
 
-    Set-SenderIDConfig -TempErrorAction StampStatus
+```powershell
+Set-SenderIDConfig -TempErrorAction StampStatus
+```
 
 `StampStatus` は、*TempErrorAction* パラメーターの既定値です。
 
@@ -103,7 +119,9 @@ Sender ID を正常に、有効または無効にできたことを確認する�
 
 1.  次のコマンドを実行します。
     
-        Get-SenderIDConfig | Format-List TempErrorAction
+    ```powershell
+Get-SenderIDConfig | Format-List TempErrorAction
+```
 
 2.  表示された値が構成した値であることを確認します。
 
@@ -137,7 +155,9 @@ Sender ID を正常に、有効または無効にできたことを確認する�
 
 1.  次のコマンドを実行します。
     
-        Get-SenderIDConfig | Format-List BypassedRecipients,BypassedSenderDomains
+    ```powershell
+Get-SenderIDConfig | Format-List BypassedRecipients,BypassedSenderDomains
+```
 
 2.  表示された値が構成した値であることを確認します。
 

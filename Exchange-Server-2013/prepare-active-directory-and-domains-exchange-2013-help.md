@@ -87,7 +87,9 @@ Exchange 2013 を使用できるように組織を準備する最初の手順は
 
 3.  次のコマンドを実行して、スキーマを拡張します。
     
-        Setup.exe /PrepareSchema /IAcceptExchangeServerLicenseTerms
+    ```powershell
+Setup.exe /PrepareSchema /IAcceptExchangeServerLicenseTerms
+```
 
 セットアップでスキーマの拡張が終了したら、Active Directory が変更をすべてのドメイン コントローラーにレプリケートするまで待機している必要があります。レプリケートの進行状況を確認する場合は、`repadmin` ツールを使用することができます。`Repadmin` は、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2 の Active Directory ドメイン サービス ツール機能の一部として組み込まれています。Repadmin の使用方法の詳細については、「[Repadmin](https://go.microsoft.com/fwlink/p/?linkid=257879)」を参照してください。
 
@@ -149,7 +151,9 @@ Active Directory フォレストにすべてのドメインを準備する前に
 
 2.  次のコマンドを実行します。
     
-        Setup.exe /PrepareAllDomains /IAcceptExchangeServerLicenseTerms
+    ```powershell
+Setup.exe /PrepareAllDomains /IAcceptExchangeServerLicenseTerms
+```
 
 ## 準備する Active Directory ドメインを選択する
 

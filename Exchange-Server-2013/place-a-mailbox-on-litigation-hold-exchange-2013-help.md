@@ -69,7 +69,9 @@ _**適用先:** Exchange Online, Exchange Server 2013_
 
 この例では、メールボックス bsuneja@contoso.com を訴訟ホールドの対象にします。メールボックス内のアイテムは、無期限にまたは保留が解除されるまで保持されます。
 
-    Set-Mailbox bsuneja@contoso.com -LitigationHoldEnabled $true
+```powershell
+Set-Mailbox bsuneja@contoso.com -LitigationHoldEnabled $true
+```
 
 
 > [!NOTE]
@@ -81,7 +83,9 @@ _**適用先:** Exchange Online, Exchange Server 2013_
 
 この例では、メールボックス bsuneja@contoso.com を訴訟ホールドの対象とし、2555 日間 (約 7 年間) アイテムを保持します。
 
-    Set-Mailbox bsuneja@contoso.com -LitigationHoldEnabled $true -LitigationHoldDuration 2555
+```powershell
+Set-Mailbox bsuneja@contoso.com -LitigationHoldEnabled $true -LitigationHoldDuration 2555
+```
 
 ## シェルを使用してすべてのメールボックスを指定した期間訴訟ホールドの対象にする
 
@@ -101,7 +105,9 @@ _**適用先:** Exchange Online, Exchange Server 2013_
 
 この例では、メールボックス bsuneja@contoso.com を訴訟ホールドから削除します。
 
-    Set-Mailbox bsuneja@contoso.com -LitigationHoldEnabled $false
+```powershell
+Set-Mailbox bsuneja@contoso.com -LitigationHoldEnabled $false
+```
 
 ページのトップへ
 
@@ -150,7 +156,9 @@ _**適用先:** Exchange Online, Exchange Server 2013_
     Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'CustomAttribute15 -eq "OneYearLitigationHold"'
     ```
     ```
-    Get-Recipient -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'Department -eq "HR"'
+```powershell
+Get-Recipient -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'Department -eq "HR"'
+```
     ```
     ```
     Get-Recipient -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'PostalCode -eq "98052"'
@@ -159,7 +167,9 @@ _**適用先:** Exchange Online, Exchange Server 2013_
     Get-Recipient -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'StateOrProvince -eq "WA"'
     ```
     ```
-    Get-Mailbox -ResultSize Unlimited -Filter {RecipientTypeDetails -ne "DiscoveryMailbox"}
+```powershell
+Get-Mailbox -ResultSize Unlimited -Filter {RecipientTypeDetails -ne "DiscoveryMailbox"}
+```
     ```
 
     フィルターで他のユーザーのメールボックス プロパティを使用して、メールボックスを含めたり、除外したりすることができます。詳細については、「[-Filter パラメーターのフィルター可能なプロパティ](https://technet.microsoft.com/ja-jp/library/bb738155\(v=exchg.150\))」を参照してください。

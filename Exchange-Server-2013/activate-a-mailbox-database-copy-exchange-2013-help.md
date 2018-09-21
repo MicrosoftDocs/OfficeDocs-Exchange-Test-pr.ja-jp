@@ -51,31 +51,45 @@ _**トピックの最終更新日:** 2012-11-01_
 
 この例では、MBX3 上でホストされているデータベース DB4 のコピーをアクティブ化して、マウントします。このコマンドにより、DB4 が新しいアクティブ メールボックス データベースになり、MBX3 のデータベース マウント ダイヤル設定は上書きされません。
 
-    Move-ActiveMailboxDatabase DB4 -ActivateOnServer MBX3 -MountDialOverride:None
+```powershell
+Move-ActiveMailboxDatabase DB4 -ActivateOnServer MBX3 -MountDialOverride:None
+```
 
 この例では、データベース DB2 とメールボックス サーバー MBX1 との間の切り替えを実行します。コマンドが完了すると、MBX1 は DB2 のアクティブ コピーをホストします。*MountDialOverride* パラメーターは `None` に設定されているため、MBX1 は独自に定義済みのデータベースの自動マウント ダイヤル設定を使用してデータベースをマウントします。
 
-    Move-ActiveMailboxDatabase DB2 -ActivateOnServer MBX1 -MountDialOverride:None
+```powershell
+Move-ActiveMailboxDatabase DB2 -ActivateOnServer MBX1 -MountDialOverride:None
+```
 
 この例では、データベース DB1 とメールボックス サーバー MBX3 との間の切り替えを実行します。コマンドが完了すると、MBX3 は DB1 のアクティブ コピーをホストします。*MountDialOverride* パラメーターには `Good Availability` の値が指定されているため、MBX3 は、*GoodAvailability* のデータベース自動マウント ダイヤル設定を使用してデータベースをマウントします。
 
-    Move-ActiveMailboxDatabase DB1 -ActivateOnServer MBX3 -MountDialOverride:GoodAvailability
+```powershell
+Move-ActiveMailboxDatabase DB1 -ActivateOnServer MBX3 -MountDialOverride:GoodAvailability
+```
 
 この例では、データベース DB3 とメールボックス サーバー MBX4 との間の切り替えを実行します。コマンドが完了すると、MBX4 は DB3 のアクティブ コピーをホストします。*MountDialOverride* パラメーターは指定されていないため、MBX4 は、*Lossless* のデータベース自動マウント ダイヤル設定を使用してデータベースをマウントします。
 
-    Move-ActiveMailboxDatabase DB3 -ActivateOnServer MBX4
+```powershell
+Move-ActiveMailboxDatabase DB3 -ActivateOnServer MBX4
+```
 
 この例では、メールボックス サーバー MBX1 のサーバー切り替えを実行します。MBX1 上のすべてのアクティブ メールボックス データベース コピーは、MBX1 上のアクティブ データベースの正常なコピーを使用して 1 つまたは複数のその他のメールボックス サーバー上でアクティブ化されます。
 
-    Move-ActiveMailboxDatabase -Server MBX1
+```powershell
+Move-ActiveMailboxDatabase -Server MBX1
+```
 
 この例では、データベース DB4 とメールボックス サーバー MBX5 との間の切り替えを実行します。この例では、MBX5 上のデータベース コピーに、長さが 6 を超える再生キューがあります。そのため、*SkipLagChecks* パラメーターを指定して、MBX5 上のデータベース コピーをアクティブ化する必要があります。
 
-    Move-ActiveMailboxDatabase DB4 MBX5 -SkipLagChecks
+```powershell
+Move-ActiveMailboxDatabase DB4 MBX5 -SkipLagChecks
+```
 
 この例では、データベース DB5 とメールボックス サーバー MBX6 との間の切り替えを実行します。この例では、MBX6 上のデータベース コピーが失敗の *ContentIndexState* になっています。そのため、*SkipClientExperienceChecks* パラメーターを指定して、MBX6 上のデータベース コピーをアクティブ化する必要があります。
 
-    Move-ActiveMailboxDatabase DB5 MBX6 -SkipClientExperienceChecks
+```powershell
+Move-ActiveMailboxDatabase DB5 MBX6 -SkipClientExperienceChecks
+```
 
 ## 正常な動作を確認する方法
 
@@ -85,7 +99,9 @@ _**トピックの最終更新日:** 2012-11-01_
 
   - シェルで次のコマンドを実行して、データベース コピーの状態情報を表示します。
     
-        Get-MailboxDatabaseCopyStatus <DatabaseCopyName> | Format-List
+    ```powershell
+Get-MailboxDatabaseCopyStatus <DatabaseCopyName> | Format-List
+```
 
 ## 詳細情報
 

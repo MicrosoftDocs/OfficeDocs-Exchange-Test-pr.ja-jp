@@ -49,7 +49,9 @@ _**トピックの最終更新日:** 2012-10-16_
 
 受信者フィルターを使用して電子メール アドレス ポリシーを作成するには、次の構文を使用します。
 
-    New-EmailAddressPolicy -Name <String> -RecipientFilter <String>
+```powershell
+New-EmailAddressPolicy -Name <String> -RecipientFilter <String>
+```
 
 この例では、すべての上級管理者に適用する電子メール アドレス ポリシーを作成し、電子メール アドレスのローカル部分を名の最初の 2 文字と姓の全体で構成します。
 

@@ -309,7 +309,9 @@ OAB を作成する場合、New-OfflineAddressBook または Set-OfflineAddressB
 
 この例では、OAB\_FAB という名前の Fabrikam の OAB を作成します。
 
-    New-OfflineAddressBook -Name "OAB_FAB" -AddressLists "GAL_FAB"
+```powershell
+New-OfflineAddressBook -Name "OAB_FAB" -AddressLists "GAL_FAB"
+```
 
 詳細については、「[オフライン アドレス帳の作成](https://docs.microsoft.com/ja-jp/exchange/address-books/offline-address-books/create-offline-address-book)」を参照してください。
 

@@ -67,7 +67,9 @@ Microsoft Exchange Server 2013 のリンクされた管理役割グループを�
 
 2.  変数に外部 Active Directory フォレストの資格情報を格納します。
     
-        $ForeignCredential = Get-Credential
+    ```powershell
+$ForeignCredential = Get-Credential
+```
 
 3.  組織の管理 役割グループに割り当てられたすべての役割を変数に格納します。
     
@@ -93,7 +95,9 @@ Microsoft Exchange Server 2013 のリンクされた管理役割グループを�
 
 この例では、上記の値を使用して 組織の管理 役割グループをリンクされた役割グループとして作成し直します。
 
-    $ForeignCredential = Get-Credential
+```powershell
+$ForeignCredential = Get-Credential
+```
     $OrgMgmt  = Get-RoleGroup "Organization Management"
     New-RoleGroup "Organization Management - Linked" -LinkedForeignGroup "Organization Management Administrators" -LinkedDomainController DC01.users.contoso.com -LinkedCredential $ForeignCredential -Roles $OrgMgmt.Roles
     Get-ManagementRoleAssignment -RoleAssignee "Organization Management - Linked" -Role My* | Remove-ManagementRoleAssignment
@@ -107,11 +111,15 @@ Microsoft Exchange Server 2013 のリンクされた管理役割グループを�
 
 2.  変数に外部 Active Directory フォレストの資格情報を格納します。 これは 1 度実行するだけで十分です。
     
-        $ForeignCredential = Get-Credential
+    ```powershell
+$ForeignCredential = Get-Credential
+```
 
 3.  以下のコマンドレットを使用して役割グループ一覧を取得します。
     
-        Get-RoleGroup
+    ```powershell
+Get-RoleGroup
+```
 
 4.  組織の管理 役割グループ以外の各役割グループに対して、次の操作を実行します。
     
@@ -132,8 +140,12 @@ Microsoft Exchange Server 2013 のリンクされた管理役割グループを�
 
 上記の値を使用して、この例では、Recipient Management と "Server Management/サーバーの管理" 役割グループをリンクされた役割グループとして作成し直します。
 
-    $ForeignCredential = Get-Credential
-    Get-RoleGroup
+```powershell
+$ForeignCredential = Get-Credential
+```
+```powershell
+Get-RoleGroup
+```
     $RoleGroup = Get-RoleGroup "Recipient Management"
     New-RoleGroup "Recipient Management - Linked" -LinkedForeignGroup "Recipient Management Administrators" -LinkedDomainController DC01.users.contoso.com -LinkedCredential $ForeignCredential -Roles $RoleGroup.Roles
     $RoleGroup = Get-RoleGroup "Server Management"

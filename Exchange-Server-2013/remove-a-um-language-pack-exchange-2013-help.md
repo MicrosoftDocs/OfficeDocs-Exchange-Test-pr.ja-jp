@@ -41,7 +41,9 @@ UM 言語に関連する追加のタスクについては、「[UM 言語、プ�
 
 コマンド プロンプトで、次のコマンドを実行します。
 
-    Setup.exe /RemoveUmLanguagePack:<UmLanguagePackName>
+```powershell
+Setup.exe /RemoveUmLanguagePack:<UmLanguagePackName>
+```
 
 このコマンドで、*\<UmLanguagePackName\>* は、たとえば fr-FR のように、UM 言語パックの名前です。
 

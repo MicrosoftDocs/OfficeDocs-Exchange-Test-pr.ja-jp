@@ -212,11 +212,15 @@ Exchange 管理シェルには、コマンド出力の書式設定に使用で�
 
 **Out-Host** コマンドレットは、パイプラインの最後にある、非表示の既定コマンドレットです。すべての書式設定が適用された後で、**Out-Host** コマンドレットによって最終出力がコンソール ウィンドウに送信されて、表示されます。**Out-Host** コマンドレットは既定の出力なので、明示的に呼び出す必要はありません。**Out-File** コマンドレットをコマンド内の最後のコマンドレットとして呼び出すことによって、コンソール ウィンドウへの出力の送信を変更できます。**Out-File** コマンドレットは、次の例に示すように、コマンドに指定されたファイルに出力を書き込みます。
 
-    Get-ChildItem | Format-Wide -Column 4 | Out-File c:\OutputFile.txt
+```powershell
+Get-ChildItem | Format-Wide -Column 4 | Out-File c:\OutputFile.txt
+```
 
 この例では、**Out-File** コマンドレットは、**Get-ChildItem | Format-Wide -Column 4** コマンドで出力された情報を `OutputFile.txt` というファイルに書き込みます。また、リダイレクト演算子 (終わり山かっこ (`>`) を使用して、パイプラインの出力をファイルにリダイレクトすることもできます。コマンドのパイプライン出力で既存のファイルを置き換えるのではなく、パイプライン出力を既存のファイルに追加するには、次の例に示すように、終わり二重山かっこ (`>>`) を使用します。
 
-    Get-ChildItem | Format-Wide -Column 4 >> C:\OutputFile.txt
+```powershell
+Get-ChildItem | Format-Wide -Column 4 >> C:\OutputFile.txt
+```
 
 この例では、**Get-Childitem** コマンドレットからの出力は、書式設定のために **Format-Wide** コマンドレットにパイプ処理されてから、`OutputFile.txt` ファイルの最後に書き込まれます。`OutputFile.txt` ファイルが存在しないときに、終わり二重山かっこ (`>>`) を使用すると、ファイルが作成されます。
 
@@ -249,7 +253,9 @@ Exchange 管理シェルは柔軟で、スクリプトを簡単に実行でき�
 
 `Out-Ie` スクリプトでは、受け取るデータは有効な HTML であることを前提にしています。表示するデータを HTML に変換するには、コマンドの出力を **ConvertTo-Html** コマンドレットにパイプ処理する必要があります。次に、そのコマンドの出力を `Out-Ie` スクリプトにパイプ処理することができます。次の例は、Internet Explorer のウィンドウに一覧表示されるディレクトリの表示方法を示したものです。
 
-    Get-ChildItem | Select Name,Length | ConvertTo-Html | Out-Ie
+```powershell
+Get-ChildItem | Select Name,Length | ConvertTo-Html | Out-Ie
+```
 
 ## データをフィルター処理する方法
 

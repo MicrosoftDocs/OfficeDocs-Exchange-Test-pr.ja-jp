@@ -43,7 +43,9 @@ _**トピックの最終更新日:** 2015-03-09_
 
   - すべてのメールボックス復元要求の *Identity* プロパティの値を表示するには、次のコマンドを実行します。
     
-        Get-MailboxRestoreRequest | Format-Table Identity
+    ```powershell
+Get-MailboxRestoreRequest | Format-Table Identity
+```
     
     このトピックの手順を実行する際には、この ID 値を使用して特定のメールボックス復元要求を指定できます。
 
@@ -63,31 +65,43 @@ _**トピックの最終更新日:** 2015-03-09_
 
 すべてのメールボックス復元要求の *Identity* プロパティの一覧および値を表示するには、次のコマンドを実行します。
 
-    Get-MailboxRestoreRequest | Format-Table Identity
+```powershell
+Get-MailboxRestoreRequest | Format-Table Identity
+```
 
 ID を使用して、特定のメールボックス復元要求に関する情報を入手できます。
 
 この例では、*Identity* パラメーターを使用して、復元要求 "Pilar Pinilla \\MailboxRestore" の状態が返されます。
 
-    Get-MailboxRestoreRequest -Identity "Pilar Pinilla\MailboxRestore"
+```powershell
+Get-MailboxRestoreRequest -Identity "Pilar Pinilla\MailboxRestore"
+```
 
 この例では、Pilar Pinilla ターゲット メールボックスの 2 番目の復元要求に関するすべての情報が返されます。
 
-    Get-MailboxRestoreRequest -Identity "Pilar Pinilla\MailboxRestore1" | Format-List
+```powershell
+Get-MailboxRestoreRequest -Identity "Pilar Pinilla\MailboxRestore1" | Format-List
+```
 
 この例では、復元元データベース MBD01 から復元される復元要求の状態を返します。
 
-    Get-MailboxRestoreRequest -SourceDatabase MBD01
+```powershell
+Get-MailboxRestoreRequest -SourceDatabase MBD01
+```
 
 この例では、現在進行中のすべての復元要求が返されます。
 
-    Get-MailboxRestoreRequest -Status InProgress
+```powershell
+Get-MailboxRestoreRequest -Status InProgress
+```
 
 その他の役立つ状態には、`Queued`、`Completed`、`Suspended`、および `Failed` があります。
 
 この例では、中断されているすべての復元要求が返されます。
 
-    Get-MailboxRestoreRequest -Suspend $true
+```powershell
+Get-MailboxRestoreRequest -Suspend $true
+```
 
 構文およびパラメーターの詳細については、「[Get-MailboxRestoreRequest](https://technet.microsoft.com/ja-jp/library/ff829907\(v=exchg.150\))」を参照してください。
 
@@ -150,7 +164,9 @@ ID を使用して、特定のメールボックス復元要求に関する情�
 
 この例では、復元要求 danp\\MailboxRestore1 に関する既定の統計を返します。既定では、返される情報には、名前、メールボックス、状態、および達成率が含まれます。
 
-    Get-MailboxRestoreRequestStatistics -Identity danp\MailboxRestore1
+```powershell
+Get-MailboxRestoreRequestStatistics -Identity danp\MailboxRestore1
+```
 
 この例では、Dan Park のメールボックスに関する情報を返し、レポートを .csv ファイルへエクスポートします。
 
@@ -401,7 +417,9 @@ ID を使用して、特定のメールボックス復元要求に関する情�
 
 この例では、Debra Garcia のメールボックスに対する復元要求 MailboxRestore1 が 10 個の破損メール ボックス アイテムをスキップすることを指定しています。
 
-    Set-MailboxRestoreRequest -Identity "Debra Garcia\MailboxRestore1" -BadItemLimit 10
+```powershell
+Set-MailboxRestoreRequest -Identity "Debra Garcia\MailboxRestore1" -BadItemLimit 10
+```
 
 この例では、Florence Flipo のメールボックスに対する復元要求 MailboxRestore1 が 100 個の破損アイテムをスキップすることを指定しています。*BadItemLimit* の値が 50 より大きいため、*AcceptLargeDataLoss* パラメーターを指定する必要があります。
 
@@ -421,7 +439,9 @@ ID を使用して、特定のメールボックス復元要求に関する情�
 
 この例では、Pilar Pinilla のメールボックスに対する復元要求 MailboxRestore1 を中断します。
 
-    Suspend-MailboxRestoreRequest -Identity "Pilar Pinilla\MailboxRestore1"
+```powershell
+Suspend-MailboxRestoreRequest -Identity "Pilar Pinilla\MailboxRestore1"
+```
 
 この例では、まずステータスが "`InProgress`" の復元要求をすべて取得し、次に "Resume after FY13Q2 Maintenance" という中断コメントと共に出力を **Suspend-MailboxRestoreRequest** コマンドレットにパイプ処理して、進行中の復元要求をすべて中断します。
 
@@ -433,7 +453,9 @@ ID を使用して、特定のメールボックス復元要求に関する情�
 
 メールボックス復元要求が正常に中断されたことを確認するには、次のコマンドを実行します。
 
-    Get-MailboxRestoreRequest <identity> | Format-List Suspend,Status
+```powershell
+Get-MailboxRestoreRequest <identity> | Format-List Suspend,Status
+```
 
 *Suspend* プロパティの値が `True` と等しい場合は、復元要求が正常に中断されています。また、*Status* プロパティの `Suspended` の値は、復元要求が中断されたことを示します。
 
@@ -443,11 +465,15 @@ ID を使用して、特定のメールボックス復元要求に関する情�
 
 この例では、復元要求 Pilar Pinilla\\MailboxRestore1 を再開します。
 
-    Resume-MailboxRestoreRequest -Identity "Pilar Pinilla\MailboxRestore1"
+```powershell
+Resume-MailboxRestoreRequest -Identity "Pilar Pinilla\MailboxRestore1"
+```
 
 この例では、失敗の状態の復元要求をすべて再開します。
 
-    Get-MailboxRestoreRequest -Status Failed | Resume-MailboxRestoreRequest
+```powershell
+Get-MailboxRestoreRequest -Status Failed | Resume-MailboxRestoreRequest
+```
 
 構文およびパラメーターの詳細については、「[Resume-MailboxRestoreRequest](https://technet.microsoft.com/ja-jp/library/ff829908\(v=exchg.150\))」を参照してください。
 
@@ -455,7 +481,9 @@ ID を使用して、特定のメールボックス復元要求に関する情�
 
 復元要求が再開されたことを確認するには、次のコマンドを実行します。
 
-    Get-MailboxRestoreRequest <identity> | Format-List Suspend,Status
+```powershell
+Get-MailboxRestoreRequest <identity> | Format-List Suspend,Status
+```
 
 *Suspend* プロパティの値が `False` と等しい場合は、復元要求が正常に再開されています。また、*Status* プロパティの `InProgress` の値は、復元要求が再開されたことを示します。
 
@@ -471,15 +499,21 @@ ID を使用して、特定のメールボックス復元要求に関する情�
 
 この例では、復元要求 Pilar Pinilla\\MailboxRestore1 を削除します。
 
-    Remove-MailboxRestoreRequest -Identity "Pilar Pinilla\MailboxRestore1"
+```powershell
+Remove-MailboxRestoreRequest -Identity "Pilar Pinilla\MailboxRestore1"
+```
 
 この例では、Completed の状態の復元要求をすべて削除します。
 
-    Get-MailboxRestoreRequest -Status Completed | Remove-MailboxRestoreRequest
+```powershell
+Get-MailboxRestoreRequest -Status Completed | Remove-MailboxRestoreRequest
+```
 
 この例では、*RequestGuid* パラメーターを使用して、MBXDB01 に格納されている要求に対する復元要求を取り消します。*RequestGuid* および *RequestQueue* パラメーターを必須とするパラメーター セットは、Microsoft Replication Service のデバッグ目的にのみ使用されます。このパラメーター セットは、Microsoft カスタマー サービス & サポートからの指示があった場合に限り使用してください。
 
-    Remove-MailboxRestoreRequest -RequestQueue MBXDB01 -RequestGuid 25e0eaf2-6cc2-4353-b83e-5cb7b72d441f
+```powershell
+Remove-MailboxRestoreRequest -RequestQueue MBXDB01 -RequestGuid 25e0eaf2-6cc2-4353-b83e-5cb7b72d441f
+```
 
 構文およびパラメーターの詳細については、「[Remove-MailboxRestoreRequest](https://technet.microsoft.com/ja-jp/library/ff829910\(v=exchg.150\))」を参照してください。
 
@@ -487,7 +521,9 @@ ID を使用して、特定のメールボックス復元要求に関する情�
 
 メールボックス復元要求が正常に削除されたことを確認するには、次のコマンドを実行します。
 
-    Get-MailboxRestoreRequest -Identity <identity of removed restore request>
+```powershell
+Get-MailboxRestoreRequest -Identity <identity of removed restore request>
+```
 
 このコマンドでは、復元要求が存在しないことを示すエラーが返されます。
 

@@ -93,7 +93,9 @@ Office 365 グループへのバッチ移行では、この記事で後述する
 
 4.  Office 365 テナントに対して移行機能 **PAW** を有効にする必要があります。有効になっていることを確認するには、Exchange Online PowerShell で次のコマンドを実行します。
     
-        Get-MigrationConfig
+    ```powershell
+Get-MigrationConfig
+```
     
     **Features** の下の出力に **PAW** がある場合は、この機能が有効になっており、「*手順 3: .csv ファイルを作成する*」に進むことができます。
     
@@ -109,7 +111,9 @@ Office 365 グループへのバッチ移行では、この記事で後述する
 
   - **TargetGroupMailbox:**  Office 365 のターゲット グループの SMTP アドレスです。次のコマンドを実行して、プライマリ SMTP アドレスを確認できます。
     
-        Get-UnifiedGroup <alias of the group> | Format-Table PrimarySmtpAddress
+    ```powershell
+Get-UnifiedGroup <alias of the group> | Format-Table PrimarySmtpAddress
+```
 
 .csv ファイルの例:
 
@@ -136,7 +140,9 @@ Office 365 グループへのバッチ移行では、この記事で後述する
     
     2.  上記の手順 1 でメモした、Exchange 2013 環境からの MRS プロキシ サーバーの情報を使って、その値を変数 `$Source_RemoteServer` に渡します。
         
-            $Source_RemoteServer = "<MRS proxy endpoint>"
+        ```powershell
+$Source_RemoteServer = "<MRS proxy endpoint>"
+```
 
 3.  Exchange Online の PowerShell で、次のコマンドを実行して移行エンドポイントを作成します。
     
@@ -158,7 +164,9 @@ Office 365 グループへのバッチ移行では、この記事で後述する
 
 5.  Exchange Online の PowerShell で次のコマンドを実行することにより、移行を開始します。このステップが必要になるのは上記の手順 4 でバッチ作成時に `-AutoStart` パラメーターが使用されなかった場合のみであることに注意してください。
     
-        Start-MigrationBatch PublicFolderToGroupMigration
+    ```powershell
+Start-MigrationBatch PublicFolderToGroupMigration
+```
 
 バッチ移行は Exchange Online の PowerShell の `New-MigrationBatch` コマンドレットを使用して作成する必要がありますが、移行の進行状況を Exchange 管理センター で表示および管理できます。移行の進行状況は [Get-MigrationBatch](https://technet.microsoft.com/ja-jp/library/jj219164\(v=exchg.150\)) および [Get-MigrationUser](https://technet.microsoft.com/ja-jp/library/jj218702\(v=exchg.150\)) コマンドレットを実行して表示することもできます。`New-MigrationBatch` コマンドレットは、Office 365 グループ メールボックスごとの移行ユーザーを開始し、メールボックス移行ページを使用してこれらの要求のステータスを表示できます。
 
@@ -220,7 +228,9 @@ Office 365 グループへのバッチ移行では、この記事で後述する
 
 パブリック フォルダーを読み取り専用にしたら、もう一度移行を実行する必要があります。これは、データの最後の増分コピーに必要です。移行を再度実行する前に、既存のバッチを削除する必要があります。これを行うには、次のコマンドを実行します。
 
-    Remove-MigrationBatch <name of migration batch>
+```powershell
+Remove-MigrationBatch <name of migration batch>
+```
 
 次に、以下のコマンドを実行して、同じ .csv ファイルで新しいバッチを作成します。コマンドは次のとおりです。
 
@@ -236,7 +246,9 @@ Office 365 グループへのバッチ移行では、この記事で後述する
 
 新しいバッチが作成されたら、Exchange Online の PowerShell で次のコマンドを実行することにより、移行を開始します。なお、この手順は上記のコマンドで `-AutoStart` パラメーターを使用しなかった場合にのみ必要です。
 
-    Start-MigrationBatch PublicFolderToGroupMigration
+```powershell
+Start-MigrationBatch PublicFolderToGroupMigration
+```
 
 この手順を完了したら (バッチステータスが**完了**になる)、すべてのデータが Office 365 グループにコピーされていることを確認します。その時点で、グループのデータ状況に問題がなければ、移行されたパブリック フォルダーを Exchange 2013 環境から削除することができます。
 

@@ -120,5 +120,7 @@ EAC を使用して、単一のユーザーのモバイル デバイス メー�
 
 2.  シェルで、次のコマンドを実行します。
     
-        Get-CASMailbox -Identity tony@contoso.com
+    ```powershell
+Get-CASMailbox -Identity tony@contoso.com
+```
 

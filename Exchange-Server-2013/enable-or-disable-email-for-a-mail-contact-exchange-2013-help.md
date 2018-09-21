@@ -59,7 +59,9 @@ Exchange 組織内の既存のメール連絡先における電子メールを�
 
 この例では、メール連絡先 Neil Black の電子メールを無効にします。
 
-    Disable-MailContact -Identity "Neil Black"
+```powershell
+Disable-MailContact -Identity "Neil Black"
+```
 
 構文およびパラメーターの詳細については、「[Disable-MailContact](https://technet.microsoft.com/ja-jp/library/aa997465\(v=exchg.150\))」を参照してください。
 
@@ -73,13 +75,17 @@ Exchange 組織内の既存のメール連絡先における電子メールを�
 
 3.  シェルで、次のコマンドを実行します。
     
-        Get-MailContact
+    ```powershell
+Get-MailContact
+```
     
     このコマンドレットはメールが有効な連絡先のみを返すため、電子メールを無効にした連絡先は結果に返されません。
 
 4.  シェルで、次のコマンドを実行します。
     
-        Get-Contact
+    ```powershell
+Get-Contact
+```
     
     このコマンドレットはすべての Active Directory 連絡先オブジェクトを返すため、電子メールを無効にした連絡先が結果に返されます。
 
@@ -91,7 +97,9 @@ Exchange 組織内の既存のメール連絡先における電子メールを�
 
 この例では、連絡先 Rene Valdes のメールを有効にします。外部の電子メール アドレスを指定する必要があります。
 
-    Enable-MailContact -Identity "Rene Valdes" -ExternalEmailAddress renev@tailspintoys.com
+```powershell
+Enable-MailContact -Identity "Rene Valdes" -ExternalEmailAddress renev@tailspintoys.com
+```
 
 ## シェルと CSV ファイルを使用して複数の連絡先のメールを有効にする
 
@@ -141,5 +149,7 @@ Active Directory 連絡先のメールが正常に有効化されたことを確
 
   - シェルで次のコマンドを実行して、新しいメール連絡先の情報を表示します。
     
-        Get-MailContact | Format-Table Name,RecipientTypeDetails,ExternalEmailAddress
+    ```powershell
+Get-MailContact | Format-Table Name,RecipientTypeDetails,ExternalEmailAddress
+```
 

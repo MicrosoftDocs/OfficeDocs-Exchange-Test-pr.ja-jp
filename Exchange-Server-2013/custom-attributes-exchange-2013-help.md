@@ -73,7 +73,9 @@ Exchange 2010 Service Pack 2 (SP2) では、複数の値を持つ 5 つのカス
 
 OU 内の受信者が、部署や場所などのフィルター基準となる共通のプロパティを共有しない場合、次の例で示すようにいずれかのカスタム属性に共通値を設定できます。
 
-    Get-Mailbox -OrganizationalUnit Sales | Set-Mailbox CustomAttribute1 "SalesOU"
+```powershell
+Get-Mailbox -OrganizationalUnit Sales | Set-Mailbox CustomAttribute1 "SalesOU"
+```
 
 この例で示すように、*CustomAttribute1* プロパティを SalesOU に設定したすべての受信者に対して電子メール アドレス ポリシーを作成できました。
 
@@ -97,7 +99,9 @@ OU 内の受信者が、部署や場所などのフィルター基準となる�
 
 この例では、Kweku のメールボックスで *ExtensionCustomAttribute1* を更新して彼が教育クラス MATH307、ECON202、ENGL300 に登録したことを反映します。
 
-    Set-Mailbox -Identity Kweku -ExtensionCustomAttribute1 MATH307,ECON202,ENGL300
+```powershell
+Set-Mailbox -Identity Kweku -ExtensionCustomAttribute1 MATH307,ECON202,ENGL300
+```
 
 次に、MATH307 に登録した全生徒の動的配布グループを *RecipientFilter* パラメーターで作成します。ここで、*ExtensionCustomAttribute1* は MATH307 です。 *ExtentionCustomAttributes* パラメーターを使用するとき、`-like` 演算子の代わりに `-eq` 演算子を使用できます。
 
@@ -105,5 +109,7 @@ OU 内の受信者が、部署や場所などのフィルター基準となる�
 
 この例では、Kweku の *ExtensionCustomAttribute1* 値は更新されて、彼がクラス ENGL210 を追加し、クラス ECON202 を削除したことを反映します。
 
-    Set-Mailbox -Identity Kweku -ExtensionCustomAttribute1 @{Add="ENGL210"; Remove="ECON202"}
+```powershell
+Set-Mailbox -Identity Kweku -ExtensionCustomAttribute1 @{Add="ENGL210"; Remove="ECON202"}
+```
 

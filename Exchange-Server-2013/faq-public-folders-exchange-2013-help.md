@@ -53,7 +53,9 @@ _**トピックの最終更新日:** 2017-03-27_
 
 以下のシェル コマンドを実行すれば、最終処理前 (ソースのロック前) にデルタ同期を強制実行できます。
 
-    Resume-PublicFolderMigrationRequest \PublicFolderMigration
+```powershell
+Resume-PublicFolderMigrationRequest \PublicFolderMigration
+```
 
 構文およびパラメーターの詳細については、「[Resume-PublicFolderMigrationRequest](https://technet.microsoft.com/ja-jp/library/jj218689\(v=exchg.150\))」を参照してください。
 
@@ -103,7 +105,9 @@ Outlook Web App がサポートされていますが、いくつか制限があ�
 
 次のコマンドを実行します。
 
-    Get-OrganizationConfig | Format-List RootPublicFolderMailbox
+```powershell
+Get-OrganizationConfig | Format-List RootPublicFolderMailbox
+```
 
 構文およびパラメーターの詳細については、「[Get-OrganizationConfig](https://technet.microsoft.com/ja-jp/library/aa997571\(v=exchg.150\))」を参照してください。
 
@@ -111,7 +115,9 @@ Outlook Web App がサポートされていますが、いくつか制限があ�
 
 以下のコマンドを実行して最初のマスター階層パブリック フォルダー メールボックスと第 2 の階層メールボックスを作成します。
 
-    New-Mailbox -PublicFolder -Name <name of public folder>
+```powershell
+New-Mailbox -PublicFolder -Name <name of public folder>
+```
 
 詳細については、「[パブリック フォルダーの作成](https://docs.microsoft.com/ja-jp/exchange/collaboration-exo/public-folders/create-public-folder)」を参照してください。
 
@@ -147,7 +153,9 @@ Exchange 2013 では、パブリック フォルダーのアクセス許可は�
 
 Exchange 2007 と Exchange 2010 では、特定のパブリック フォルダーにアクセスできるユーザーを指定できました。Exchange 2013 では、ユーザーごとに既定のパブリック フォルダー メールボックスを指定できます。これを行うには、*DefaultPublicFolderMailbox* パラメーターを指定して [Set-Mailbox](https://technet.microsoft.com/ja-jp/library/bb123981\(v=exchg.150\)) コマンドレットを実行します。
 
-    Set-Mailbox -Identity kweku@contoso.com -DefaultPublicFolderMailbox "PF_Administration"
+```powershell
+Set-Mailbox -Identity kweku@contoso.com -DefaultPublicFolderMailbox "PF_Administration"
+```
 
 ## マスター階層が停止するとユーザーにはどのような影響がありますか?
 

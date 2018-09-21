@@ -55,7 +55,9 @@ UM 言語パックを「[Exchange Server 2013 UM Language Packs](https://go.micr
 
 この例では、setup.exe を使用して日本語 (ja-JP) の UM 言語パックをインストールします。
 
-    setup.exe /AddUmLanguagePack:ja-JP /s:d:\Exchange\UMLanguagePacks /IAcceptExchangeServerLicenseTerms
+```powershell
+setup.exe /AddUmLanguagePack:ja-JP /s:d:\Exchange\UMLanguagePacks /IAcceptExchangeServerLicenseTerms
+```
 
 ## 手順 2:Exchange 2007 のカスタム案内応答、アナウンス、メニュー、および音声ガイダンスを Exchange 2013 システム メールボックスに移動する
 
@@ -65,11 +67,15 @@ UM 言語パックを「[Exchange Server 2013 UM Language Packs](https://go.micr
 
 このコマンドは、すべてのシステム メールボックスの一覧を返します。
 
-    Get-Mailbox -Arbitration
+```powershell
+Get-Mailbox -Arbitration
+```
 
 このコマンドは、システム メールボックスとそれぞれのプロパティまたは設定の一覧を返します。
 
-    Get-Mailbox -Arbitration |fl
+```powershell
+Get-Mailbox -Arbitration |fl
+```
 
 カスタム案内応答、アナウンス、メニュー、および音声ガイダンスを Exchange 2007 から Exchange 2013 にインポートする場合は、MigrateUMCustomPrompts.ps1 スクリプトを使用する必要があります。EAC を使用して、カスタム案内応答、アナウンス、メニュー、および音声ガイダンスをインポートすることはできません。MigrateUMCustomPrompts.ps1 スクリプトは、Exchange Server 2007 UM のカスタム案内応答、アナウンス、メニュー、および音声ガイダンスのすべてのコピーを Exchange 2013 UM に移行します。既定で、MigrateUMCustomPrompts.ps1 スクリプトは Exchange 2013 メールボックス サーバーの *\<Program Files\>*\\Microsoft\\Exchange Server\\V15\\Scripts フォルダーに配置されており、Exchange 2013 メールボックス サーバーから実行する必要があります。このスクリプトを実行するには、以下の手順を実行します。
 
@@ -182,7 +188,9 @@ Exchange 2013 サーバーと、VoIP ゲートウェイ、IP PBX、および SIP
 
 シェルで次のコマンドを実行することによって、Exchange 2013 クライアント アクセス サーバー上の UM スタートアップ モードを構成します。
 
-    Set-UMCallRouterSettings -Server MyUMCallRouter.northwindtraders.com -UMStartupMode Dual
+```powershell
+Set-UMCallRouterSettings -Server MyUMCallRouter.northwindtraders.com -UMStartupMode Dual
+```
 
 ## 手順 5:すべての Exchange 2013 メールボックス サーバー上の UM スタートアップ モードを構成する
 
@@ -242,7 +250,9 @@ UM ダイヤル プランは、ユーザーの内線電話番号が固有にな�
 
 必要に応じて、シェルで次のコマンドを実行することによって、UM ダイヤル プランを作成できます。
 
-    New-UMDialplan -Name MyUMDialPlan -URIType E164 -NumberOfDigitsInExtension 5 -VoIPSecurity Secured
+```powershell
+New-UMDialplan -Name MyUMDialPlan -URIType E164 -NumberOfDigitsInExtension 5 -VoIPSecurity Secured
+```
 
 必要に応じて、EAC を使用して既存の UM ダイヤル プランを構成できます。
 
@@ -286,7 +296,9 @@ UM IP ゲートウェイと UM ハント グループの組み合わせにより
 
 必要に応じて、シェルで次のコマンドを実行することによって、UM IP ゲートウェイを作成できます。
 
-    New-UMIPGateway -Identity MyUMIPGateway -Address "MyUMIPGateway.contoso.com"
+```powershell
+New-UMIPGateway -Identity MyUMIPGateway -Address "MyUMIPGateway.contoso.com"
+```
 
 必要に応じて、EAC を使用して既存の UM IP ゲートウェイを構成できます。
 
@@ -401,7 +413,9 @@ UM IP ゲートウェイと UM ハント グループの組み合わせにより
 
 必要に応じて、次のコマンドを実行することによって、シェルで UM メールボックス ポリシーを作成できます。
 
-    New-UMMailboxPolicy -Name MyUMMailboxPolicy -UMDialPlan MyUMDialPlan
+```powershell
+New-UMMailboxPolicy -Name MyUMMailboxPolicy -UMDialPlan MyUMDialPlan
+```
 
 必要に応じて、EAC を使用して既存の UM メールボックス ポリシーを構成できます。
 
@@ -439,7 +453,9 @@ EAC を使用して Exchange 2007 メールボックスを Exchange 2013 メー�
 
 シェルを使用して Exchange 2007 メールボックスを Exchange 2013 メールボックス サーバーに移動するには、次のコマンドを実行します。
 
-    New-MoveRequest -Identity 'tony@alpineskihouse.com' -TargetDatabase "DB01"
+```powershell
+New-MoveRequest -Identity 'tony@alpineskihouse.com' -TargetDatabase "DB01"
+```
 
 ## 手順 12:新しいユーザーを UM に対して有効にする、または、既存の UM 対応ユーザーの設定を構成する
 
@@ -545,7 +561,9 @@ Exchange 管理コンソールを使用して Exchange 2007 UM サーバー上�
 
 シェルを使用して Exchange 2007 UM サーバー上のユニファイド メッセージングを無効にするには、次のコマンドを実行します。
 
-    Disable-UMServer -Identity MyUMServer -Immediate $true
+```powershell
+Disable-UMServer -Identity MyUMServer -Immediate $true
+```
 
 
 > [!TIP]
@@ -580,11 +598,15 @@ Exchange 管理コンソールを使用して、ダイヤル プランから Exc
 
 この例では、SIP URI ダイヤル プランが 3 つあります:SipDP1、SipDP2、SipDP3 です。この例では、SipDP3 ダイヤル プランから `MyUMServer` という名前の UM サーバーを削除します。
 
-    Set-UMServer -id MyUMServer -DialPlans SipDP1,SipDP2
+```powershell
+Set-UMServer -id MyUMServer -DialPlans SipDP1,SipDP2
+```
 
 この例では、SIP URI ダイヤル プランが 2 つあります:SipDP1 と SipDP2 です。この例では、SipDP2 ダイヤル プランから `MyUMServer` という名前の UM サーバーを削除します。
 
-    Set-UMServer -id MyUMServer -DialPlans SipDP1
+```powershell
+Set-UMServer -id MyUMServer -DialPlans SipDP1
+```
 
 
 > [!TIP]

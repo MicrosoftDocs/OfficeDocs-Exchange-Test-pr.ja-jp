@@ -128,7 +128,9 @@ _**トピックの最終更新日:** 2012-11-27_
 
   - シェルで次のコマンドを実行して、新しいリンクされたメールボックスの情報を表示します。
     
-        Get-Mailbox <Name> | FL Name,RecipientTypeDetails,IsLinked,LinkedMasterAccount
+    ```powershell
+Get-Mailbox <Name> | FL Name,RecipientTypeDetails,IsLinked,LinkedMasterAccount
+```
 
 ## リンクされたメールボックスのプロパティを変更する
 
@@ -398,5 +400,7 @@ _**トピックの最終更新日:** 2012-11-27_
     
     上記の例では、リンクされたマスター アカウントが変更され、次のコマンドの実行により新しい値が確認されます。
     
-        Get-Mailbox "Ayla Kol" | fl LinkedMasterAccount
+    ```powershell
+Get-Mailbox "Ayla Kol" | fl LinkedMasterAccount
+```
 

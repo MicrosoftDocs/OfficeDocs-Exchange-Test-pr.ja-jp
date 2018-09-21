@@ -43,7 +43,9 @@ _**トピックの最終更新日:** 2014-12-16_
 
 1.  コマンド プロンプト ウィンドウで、次のコマンドを実行して、EdgeTransport.exe.config アプリケーション構成ファイルをメモ帳で開きます。
     
-        Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
+    ```powershell
+Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
+```
 
 2.  `<appSettings>` セクションで以下のキーを検索します。
     
@@ -61,7 +63,9 @@ _**トピックの最終更新日:** 2014-12-16_
     
     メールボックス サーバーの Microsoft Exchange Transport サービスで優先度キューを有効にするには、次の値を使用します。
     
-        <add key="PriorityQueuingEnabled" value="true" />
+    ```command line
+<add key="PriorityQueuingEnabled" value="true" />
+```
     
     残りの優先度キューの値を構成するか、既定値のままにしておきます。
 

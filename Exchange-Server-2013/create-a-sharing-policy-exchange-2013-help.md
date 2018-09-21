@@ -109,7 +109,9 @@ _**トピックの最終更新日:** 2015-04-07_
 
   - この例では、外部フェデレーション ドメイン contoso.com に対して、共有ポリシー Contoso を作成します。このポリシーを使用すると、contoso.com ドメイン内のユーザーは、ユーザーの詳細な予定表の空き時間情報を確認できます。既定では、この設定は有効になっています。
     
-        New-SharingPolicy -Name "Contoso" -Domains contoso.com: CalendarSharingFreeBusyDetail
+    ```powershell
+New-SharingPolicy -Name "Contoso" -Domains contoso.com: CalendarSharingFreeBusyDetail
+```
 
   - この例では、2 つの異なるフェデレーション ドメイン (contoso.com および woodgrovebank.com) に対して、ドメインごとに異なる共有アクションを構成した共有ポリシー ContosoWoodgrove を作成します。このポリシーは無効になっています。
     
@@ -119,7 +121,9 @@ _**トピックの最終更新日:** 2015-04-07_
     
     1.  MAIL01 の Web プロキシ URL を設定します。
         
-            Set-ExchangeServer -Identity "Mail01" -InternetWebProxy "<Webproxy URL>"
+        ```powershell
+Set-ExchangeServer -Identity "Mail01" -InternetWebProxy "<Webproxy URL>"
+```
     
     2.  CAS01 で仮想ディレクトリの発行を有効にします。
         
@@ -141,7 +145,9 @@ _**トピックの最終更新日:** 2015-04-07_
 
 共有ポリシーが正常に作成されたことを確認するには、次のシェル コマンドを実行して共有ポリシーの情報を確認します。
 
-    Get-SharingPolicy <policy name> | format-list
+```powershell
+Get-SharingPolicy <policy name> | format-list
+```
 
 
 > [!TIP]

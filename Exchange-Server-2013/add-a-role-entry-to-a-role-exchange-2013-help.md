@@ -55,11 +55,15 @@ _**トピックの最終更新日:** 2012-10-04_
 
 次の構文を使用して親役割に表示されるとおりに役割エントリを役割に追加できます。
 
-    Add-ManagementRoleEntry <child role name>\<cmdlet>
+```powershell
+Add-ManagementRoleEntry <child role name>\<cmdlet>
+```
 
 この例では、**Set-Mailbox** コマンドレットを "Recipient Administrators/受信者管理者" 役割に追加します。
 
-    Add-ManagementRoleEntry "Recipient Administrators\Set-Mailbox"
+```powershell
+Add-ManagementRoleEntry "Recipient Administrators\Set-Mailbox"
+```
 
 このコマンドは、親の役割を確認し、役割エントリが存在する場合、それを子の役割に追加します。 役割エントリが子の役割に既に存在する場合は、既存の役割エントリを上書きするために *Overwrite* パラメーターを指定できます。
 
@@ -73,7 +77,9 @@ _**トピックの最終更新日:** 2012-10-04_
 
 この例では、**Set-Mailbox** コマンドレットを "Help Desk/ヘルプ デスク" 役割に追加しますが、子の役割のエントリに *DisplayName* パラメーターと *EmailAddresses* パラメーターのみを含めます。
 
-    Add-ManagementRoleEntry "Help Desk\Set-Mailbox" -Parameters DisplayName, EmailAddresses
+```powershell
+Add-ManagementRoleEntry "Help Desk\Set-Mailbox" -Parameters DisplayName, EmailAddresses
+```
 
 このコマンドは、親の役割を確認し、役割エントリが存在する場合、それを子の役割に追加します。役割エントリが子の役割に既に存在する場合は、既存の役割エントリを上書きするために *Overwrite* パラメーターを指定できます。
 

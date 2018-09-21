@@ -93,7 +93,9 @@ _**トピックの最終更新日:** 2015-03-09_
 
 2.  コマンド プロンプト ウィンドウで、次のコマンドを実行して、EdgeTransport.exe.config ファイルをメモ帳で開きます。
     
-        Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
+    ```powershell
+Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
+```
 
 3.  `<appSettings>` セクションで以下のキーを変更します。
     
@@ -137,7 +139,9 @@ Microsoft Exchange Transport サービスが適切にシャットダウンしな
 
 2.  コマンド プロンプト ウィンドウで、次のコマンドを実行して、EdgeTransport.exe.config ファイルをメモ帳で開きます。
     
-        Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
+    ```powershell
+Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
+```
 
 3.  `<appSettings>` セクションで以下のキーを変更します。
     
@@ -153,7 +157,9 @@ Microsoft Exchange Transport サービスが適切にシャットダウンしな
 
 5.  次のコマンドを実行して、Microsoft Exchange Transport サービスを停止します。
     
-        net stop MSExchangeTransport
+    ```powershell
+net stop MSExchangeTransport
+```
 
 6.  既存のデータベース ファイル Mail.que および Trn.chk を元の場所から新しい場所に移動します。
 
@@ -161,7 +167,9 @@ Microsoft Exchange Transport サービスが適切にシャットダウンしな
 
 8.  次のコマンドを実行して、Microsoft Exchange Transport サービスを起動します。
     
-        net start MSExchangeTransport
+    ```powershell
+net start MSExchangeTransport
+```
 
 ## 正常な動作を確認する方法
 

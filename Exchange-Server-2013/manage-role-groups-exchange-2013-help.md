@@ -97,7 +97,9 @@ _**トピックの最終更新日:** 2012-10-08_
 
 1.  以下の構文を使用して、変数にコピーする役割グループを格納します。
     
-        $RoleGroup = Get-RoleGroup <name of role group to copy>
+    ```powershell
+$RoleGroup = Get-RoleGroup <name of role group to copy>
+```
 
 2.  以下の構文を使用して、新しい役割グループを作成し、役割グループにメンバーを追加し、新しい役割グループを他のユーザーに委任できる人を指定します。
     
@@ -116,7 +118,9 @@ _**トピックの最終更新日:** 2012-10-08_
 
 1.  以下の構文を使用して、変数にコピーする役割グループを格納します。
     
-        $RoleGroup = Get-RoleGroup <name of role group to copy>
+    ```powershell
+$RoleGroup = Get-RoleGroup <name of role group to copy>
+```
 
 2.  以下の構文を使用して、カスタムのスコープを持つ新しい役割グループを作成します。
     
@@ -137,7 +141,9 @@ _**トピックの最終更新日:** 2012-10-08_
 
 1.  以下の構文を使用して、変数にコピーする役割グループを格納します。
     
-        $RoleGroup = Get-RoleGroup <name of role group to copy>
+    ```powershell
+$RoleGroup = Get-RoleGroup <name of role group to copy>
+```
 
 2.  以下の構文を使用して、カスタムのスコープを持つ新しい役割グループを作成します。
     
@@ -220,11 +226,15 @@ _**トピックの最終更新日:** 2012-10-08_
 
 次の構文を使用して、役割グループにスコープを持たない役割を割り当てます。指定しない場合、役割割り当ての名前は自動的に作成されます。
 
-    New-ManagementRoleAssignment -SecurityGroup <role group name> -Role <role name>
+```powershell
+New-ManagementRoleAssignment -SecurityGroup <role group name> -Role <role name>
+```
 
 この例では、"Seattle Compliance/Seattle 規制順守" という役割グループに対し、トランスポート ルールの管理役割を割り当てています。
 
-    New-ManagementRoleAssignment -SecurityGroup "Seattle Compliance" -Role "Transport Rules"
+```powershell
+New-ManagementRoleAssignment -SecurityGroup "Seattle Compliance" -Role "Transport Rules"
+```
 
 構文およびパラメーターの詳細については、「[New-ManagementRoleAssignment](https://technet.microsoft.com/ja-jp/library/dd335193\(v=exchg.150\))」を参照してください。
 
@@ -450,7 +460,9 @@ EAC を使用して役割グループのスコープを変更する場合、実�
 
 1.  ある役割グループに属するすべての役割の割り当ての名前を検索するには、次のコマンドを使用します。管理役割の割り当てを **Format-List** コマンドレットにパイプ処理すると、その割り当てのフル ネームを表示することができます。
     
-        Get-ManagementRoleAssignment -RoleAssignee <role group name> | Format-List Name
+    ```powershell
+Get-ManagementRoleAssignment -RoleAssignee <role group name> | Format-List Name
+```
 
 2.  変更する役割の割り当ての名前を検索します。役割割り当ての名前は、次の手順で使用します。
 
@@ -506,7 +518,9 @@ EAC を使用して役割グループのスコープを変更する場合、実�
 
 1.  以下のコマンドを使用して、変数に役割グループを格納します。
     
-        $RoleGroup = Get-RoleGroup <role group name>
+    ```powershell
+$RoleGroup = Get-RoleGroup <role group name>
+```
 
 2.  次のコマンドを使用して、変数に格納されている役割グループに代理人を追加します。
     
@@ -522,7 +536,9 @@ EAC を使用して役割グループのスコープを変更する場合、実�
 
 4.  以下のコマンドを使用して、実際の役割グループに対し委任の新しい一覧を適用します。
     
-        Set-RoleGroup <role group name> -ManagedBy $RoleGroup.ManagedBy
+    ```powershell
+Set-RoleGroup <role group name> -ManagedBy $RoleGroup.ManagedBy
+```
 
 この例では、ユーザー David Strome を 組織の管理 役割グループの代理人として追加します。
 
@@ -538,7 +554,9 @@ EAC を使用して役割グループのスコープを変更する場合、実�
 
 1.  以下のコマンドを使用して、変数に役割グループを格納します。
     
-        $RoleGroup = Get-RoleGroup <role group name>
+    ```powershell
+$RoleGroup = Get-RoleGroup <role group name>
+```
 
 2.  次のコマンドを使用して、変数に格納されている役割グループから代理人を削除します。
     
@@ -554,7 +572,9 @@ EAC を使用して役割グループのスコープを変更する場合、実�
 
 4.  以下のコマンドを使用して、実際の役割グループに対し委任の新しい一覧を適用します。
     
-        Set-RoleGroup <role group name> -ManagedBy $RoleGroup.ManagedBy
+    ```powershell
+Set-RoleGroup <role group name> -ManagedBy $RoleGroup.ManagedBy
+```
 
 この例では、ユーザー David Strome を 組織の管理 役割グループの代理人として削除します。
 
@@ -570,7 +590,9 @@ EAC を使用して役割グループのスコープを変更する場合、実�
 
 1.  シェルで、次のコマンドを実行します。
     
-        Get-RoleGroup <role group name> | Format-List ManagedBy
+    ```powershell
+Get-RoleGroup <role group name> | Format-List ManagedBy
+```
 
 2.  *ManagedBy* プロパティに一覧表示された代理人には、役割グループの管理を行うべき代理人だけが含まれることを確認します。
 

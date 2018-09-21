@@ -329,7 +329,9 @@ Microsoft Azure は、サポートされる VPN デバイスに VPN デバイス
 
 2.  DAG 用にミラーリング監視サーバーを構成するには、次のコマンドを実行します。
     
-        Set-DatabaseAvailabilityGroup -Identity DAG1 -WitnessServer Azure-FSW
+    ```powershell
+Set-DatabaseAvailabilityGroup -Identity DAG1 -WitnessServer Azure-FSW
+```
 
 詳細については、以下のトピックを参照してください。
 
@@ -349,11 +351,15 @@ Microsoft Azure は、サポートされる VPN デバイスに VPN デバイス
 
 2.  DAG のノードの数が偶数の場合、ファイル共有監視が構成されます。次のコマンドを実行して、クラスターのプロパティにあるファイル共有監視の設定を検証します。*SharePath* パラメーターの値はファイル サーバーを指し示し、正しいパスを表示するはずです。
     
-        Get-ClusterResource -Cluster MBX1 | Get-ClusterParameter | Format-List
+    ```powershell
+Get-ClusterResource -Cluster MBX1 | Get-ClusterParameter | Format-List
+```
 
 3.  次に、次のコマンドを実行して、「ファイル共有監視」クラスター リソースの状態を確認します。クラスター リソースの *State* が "**Online**" と表示されるはずです。
     
-        Get-ClusterResource -Cluster MBX1
+    ```powershell
+Get-ClusterResource -Cluster MBX1
+```
 
 4.  最後に、ファイル エクスプローラーでフォルダーを確認し、サーバー マネージャーで共有を確認して、ファイル サーバーで共有が正常に作成されていることを確認します。
 

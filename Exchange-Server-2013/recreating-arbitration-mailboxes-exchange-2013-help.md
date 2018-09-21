@@ -97,11 +97,15 @@ Exchange 2013 には、*調停メールボックス*と呼ばれる 5 つのシ�
 
 1.  いずれかの調停メールボックスが見つからない場合には、次のコマンドを実行します。
     
-        .\Setup /preparead /IAcceptExchangeServerLicenseTerms
+    ```powershell
+.\Setup /preparead /IAcceptExchangeServerLicenseTerms
+```
 
 2.  Exchange 管理シェル で、次を実行します。
     
-        Enable-Mailbox -Arbitration -Identity "FederatedEmail.4c1f4d8b-8179-4148-93bf-00a95fa1e042"
+    ```powershell
+Enable-Mailbox -Arbitration -Identity "FederatedEmail.4c1f4d8b-8179-4148-93bf-00a95fa1e042"
+```
 
 ## Microsoft Exchange 承認アシスタント メールボックスを再作成する
 
@@ -109,7 +113,9 @@ Exchange 2013 には、*調停メールボックス*と呼ばれる 5 つのシ�
 
 1.  いずれかの調停メールボックスが見つからない場合には、次のコマンドを実行します。
     
-        .\Setup /preparead /IAcceptExchangeServerLicenseTerms
+    ```powershell
+.\Setup /preparead /IAcceptExchangeServerLicenseTerms
+```
 
 2.  Exchange 管理シェル で、次を実行します。
     
@@ -121,15 +127,21 @@ Exchange 2013 には、*調停メールボックス*と呼ばれる 5 つのシ�
 
 1.  いずれかの調停メールボックスが見つからない場合には、次のコマンドを実行します。
     
-        .\Setup /preparead /IAcceptExchangeServerLicenseTerms
+    ```powershell
+.\Setup /preparead /IAcceptExchangeServerLicenseTerms
+```
 
 2.  Exchange 管理シェル で、次を実行します。
     
-        Enable-Mailbox -Arbitration -Identity "Migration.8f3e7716-2011-43e4-96b1-aba62d229136"
+    ```powershell
+Enable-Mailbox -Arbitration -Identity "Migration.8f3e7716-2011-43e4-96b1-aba62d229136"
+```
 
 3.  Exchange 管理シェル で、次のコマンドを実行して、永続的な機能 (msExchCapabilityIdentifiers) を設定します。
     
-        Set-Mailbox "Migration.8f3e7716-2011-43e4-96b1-aba62d229136" -Arbitration -Management:$True -Force
+    ```powershell
+Set-Mailbox "Migration.8f3e7716-2011-43e4-96b1-aba62d229136" -Arbitration -Management:$True -Force
+```
 
 ## Microsoft Exchange 検出システム メールボックスを再作成する
 
@@ -137,7 +149,9 @@ Exchange 2013 には、*調停メールボックス*と呼ばれる 5 つのシ�
 
 1.  次のコマンドを実行します。
     
-        .\Setup /preparead /IAcceptExchangeServerLicenseTerms
+    ```powershell
+.\Setup /preparead /IAcceptExchangeServerLicenseTerms
+```
 
 ## OAB 用の Microsoft Exchange 組織メールボックスを再作成する
 
@@ -145,11 +159,15 @@ Exchange 2013 には、*調停メールボックス*と呼ばれる 5 つのシ�
 
 1.  いずれかの調停メールボックスが見つからない場合には、次のコマンドを実行します。
     
-        .\Setup /preparead /IAcceptExchangeServerLicenseTerms
+    ```powershell
+.\Setup /preparead /IAcceptExchangeServerLicenseTerms
+```
 
 2.  Exchange 管理シェル で、次を実行します。
     
-        Enable-Mailbox -Arbitration -Identity "SystemMailbox{bb558c35-97f1-4cb9-8ff7-d53741dc928c}"
+    ```powershell
+Enable-Mailbox -Arbitration -Identity "SystemMailbox{bb558c35-97f1-4cb9-8ff7-d53741dc928c}"
+```
 
 3.  Exchange 管理シェル で、次のコマンドを実行して、永続的な機能 (msExchCapabilityIdentifiers) を設定します。
     
@@ -163,7 +181,9 @@ Exchange 2013 には、*調停メールボックス*と呼ばれる 5 つのシ�
 
 調停メールボックスが正常に再作成されたことを確認するには、**Get-Mailbox** コマンドレットを *Arbitration* スイッチ付きで使用してシステム メールボックスを取得します。
 
-    Get-Mailbox -Arbitration | Format-Table Name, DisplayName
+```powershell
+Get-Mailbox -Arbitration | Format-Table Name, DisplayName
+```
 
 コマンドの結果を表示して、上記の表の名前または表示名により、適切なシステム メールボックスが再作成されていることを確認します。
 

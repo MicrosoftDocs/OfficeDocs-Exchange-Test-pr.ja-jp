@@ -41,7 +41,9 @@ _**トピックの最終更新日:** 2012-10-14_
 
 この例では、アドレス一覧の GUID を使用して、アドレス一覧を「All Users\\Sales」コンテナーにある「Building 4」というコンテナーに移動します。
 
-    Move-AddressList -Identity c3fffd8e-026b-41b9-88c4-8c21697ac8ac -Target "\All Users\Sales\Building4"
+```powershell
+Move-AddressList -Identity c3fffd8e-026b-41b9-88c4-8c21697ac8ac -Target "\All Users\Sales\Building4"
+```
 
 「**Y**」と入力してこのアドレス一覧を移動することを確認し、Enter キーを押します。
 

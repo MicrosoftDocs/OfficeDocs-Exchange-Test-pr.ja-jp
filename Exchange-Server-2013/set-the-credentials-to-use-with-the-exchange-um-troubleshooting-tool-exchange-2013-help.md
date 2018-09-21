@@ -59,7 +59,9 @@ Microsoft Exchange 2010 UM トラブルシューティング ツールは **Test
 
 2.  <strong>Microsoft Exchange 2010 UM トラブルシューティング ツール</strong> ウィンドウのプロンプトで、次を入力し、Enter キーを押します。
     
-        $cred=Get-Credential
+    ```powershell
+$cred=Get-Credential
+```
 
 3.  <strong>Windows PowerShell 資格情報の要求</strong> ウィンドウに、ドメイン\\ユーザー名およびパスワードを入力して <strong>OK</strong> をクリックします。
 

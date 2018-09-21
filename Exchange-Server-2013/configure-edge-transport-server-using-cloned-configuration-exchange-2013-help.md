@@ -57,11 +57,15 @@ _**トピックの最終更新日:** 2015-04-13_
 
 2.  移動元のサーバーの構成データを移動元のサーバー上のファイルにエクスポートするには、次の構文を使用します。
     
-        ./ExportEdgeConfig.ps1 -CloneConfigData:"<configuration file>"
+    ```powershell
+./ExportEdgeConfig.ps1 -CloneConfigData:"<configuration file>"
+```
     
     たとえば、移動元のサーバーの構成データを C:\\CloneConfigData.xml ファイルにエクスポートするには、次のコマンドを実行します。
     
-        ./ExportEdgeConfig.ps1 -CloneConfigData:"C:\CloneConfigData.xml"
+    ```powershell
+./ExportEdgeConfig.ps1 -CloneConfigData:"C:\CloneConfigData.xml"
+```
 
 ## このステップの検証方法
 

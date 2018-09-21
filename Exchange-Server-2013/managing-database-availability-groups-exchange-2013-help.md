@@ -423,7 +423,9 @@ DAG ネットワークはレプリケーション トラフィックまたは MA
 
 Exchange 2010 では、DAG ネットワークの手動構成が多くのシナリオで必要でした。Exchange 2013 では、既定で DAG ネットワークがシステムによって自動的に構成されます。DAG ネットワークを作成または変更する前に、最初に次のコマンドを実行して、手動 DAG ネットワーク制御を有効にする必要があります。
 
-    Set-DatabaseAvailabilityGroup <DAGName> -ManualDagNetworkConfiguration $true
+```powershell
+Set-DatabaseAvailabilityGroup <DAGName> -ManualDagNetworkConfiguration $true
+```
 
 手動 DAG ネットワーク構成を有効にした後には、シェル内の **New-DatabaseAvailabilityGroupNetwork** コマンドレットを使用して、DAG ネットワークを作成できます。DAG ネットワークを作成する方法の詳細については、「[データベース可用性グループのネットワークを作成する](create-a-database-availability-group-network-exchange-2013-help.md)」を参照してください。
 
@@ -531,7 +533,9 @@ Exchange 2010 では、DAG ネットワークの手動構成が多くのシナ�
 
 専用のレプリケーション ネットワークとして ReplicationDagNetwork01 を構成するには、次のコマンドを実行して MapiDagNetwork に対してレプリケーションを無効にします。
 
-    Set-DatabaseAvailabilityGroupNetwork -Identity DAG1\MapiDagNetwork -ReplicationEnabled:$false
+```powershell
+Set-DatabaseAvailabilityGroupNetwork -Identity DAG1\MapiDagNetwork -ReplicationEnabled:$false
+```
 
 MapiDagNetwork に対してレプリケーションが無効になると、Microsoft Exchange Replication サービスは ReplicationDagNetwork01 を連続レプリケーションに使用するようになります。ReplicationDagNetwork01 に障害が発生した場合、Microsoft Exchange Replication サービスは元どおり MapiDagNetwork を連続レプリケーションに使用します。この動作は、高可用性を維持するためにシステムによって意図的に行われます。
 
@@ -661,7 +665,9 @@ DAG のメンバーであるメールボックス サーバーには、以下の
 
 次の例では、`GoodAvailability` の *AutoDatabaseMountDial* 設定でメールボックス サーバーを構成します。
 
-    Set-MailboxServer -Identity EX1 -AutoDatabaseMountDial GoodAvailability
+```powershell
+Set-MailboxServer -Identity EX1 -AutoDatabaseMountDial GoodAvailability
+```
 
 ## データベース コピーの自動アクティブ化ポリシー
 
@@ -677,7 +683,9 @@ DAG のメンバーであるメールボックス サーバーには、以下の
 
 次の例では、`Blocked` の *DatabaseCopyAutoActivationPolicy* 設定でメールボックス サーバーを構成します。
 
-    Set-MailboxServer -Identity EX1 -DatabaseCopyAutoActivationPolicy Blocked
+```powershell
+Set-MailboxServer -Identity EX1 -DatabaseCopyAutoActivationPolicy Blocked
+```
 
 ## 最大アクティブ データベース
 
@@ -689,7 +697,9 @@ DAG のメンバーであるメールボックス サーバーには、以下の
 
 次の例では、最大 20 のアクティブ データベースをサポートするようにメールボックス サーバーを構成します。
 
-    Set-MailboxServer -Identity EX1 -MaximumActiveDatabases 20
+```powershell
+Set-MailboxServer -Identity EX1 -MaximumActiveDatabases 20
+```
 
 DAG の作成
 

@@ -85,7 +85,9 @@ EAC またはシェルを使用して、無効にされたメールボックス�
 
 この例では、ユーザー メールボックスを接続しています。*Identity* パラメーターでは、Exchange データベースの切断されたメールボックスを指定します。*User* パラメーターでは、メールボックスを再接続する Active Directory ユーザー アカウントを指定します。
 
-    Connect-Mailbox -Identity "Jeffrey Zeng" -Database MBXDB01 -User "Jeffrey Zeng"
+```powershell
+Connect-Mailbox -Identity "Jeffrey Zeng" -Database MBXDB01 -User "Jeffrey Zeng"
+```
 
 この例では、リンクされたメールボックスを接続しています。*Identity* パラメーターでは、Exchange データベースの切断されたメールボックスを指定します。*LinkedMasterAccount* パラメーターでは、メールボックスを再接続するアカウント フォレスト内の Active Directory ユーザー アカウントを指定します。*Alias* パラメーターではエイリアスを指定します。これは、再接続されたメールボックスでの、電子メール アドレスの @ 記号の左に表示される部分です。
 
@@ -113,7 +115,9 @@ EAC またはシェルを使用して、無効にされたメールボックス�
 
   - シェルで、次のコマンドを実行します。
     
-        Get-User <identity>
+    ```powershell
+Get-User <identity>
+```
     
     *RecipientType* プロパティの **UserMailbox** 値は、ユーザー アカウントとメールボックスが接続されていることを示します。**Get-Mailbox** コマンドレットを実行して、メールボックスの存在を確認することもできます。
 

@@ -53,21 +53,29 @@ _**トピックの最終更新日:** 2015-04-08_
 
 接続フィルターを無効にするには、次のコマンドを実行します。
 
-    Disable-TransportAgent "Connection Filtering Agent"
+```powershell
+Disable-TransportAgent "Connection Filtering Agent"
+```
 
 接続フィルターを有効にするには、次のコマンドを実行します。
 
-    Enable-TransportAgent "Connection Filtering Agent"
+```powershell
+Enable-TransportAgent "Connection Filtering Agent"
+```
 
 変更を有効にするには、次のコマンドを実行して Microsoft Exchange トランスポート サービスを再起動します。
 
-    Restart-Service MSExchangeTransport
+```powershell
+Restart-Service MSExchangeTransport
+```
 
 ## 正常な動作を確認する方法
 
 接続フィルターが正常に有効または無効にされたことを確認するには、次のコマンドを実行し、構成した値が表示されることを確認します。
 
-    Get-TransportAgent "Connection Filtering Agent" | Format-List Enabled
+```powershell
+Get-TransportAgent "Connection Filtering Agent" | Format-List Enabled
+```
 
 ## IP 禁止一覧の手順
 
@@ -85,17 +93,23 @@ IP 禁止一覧の構成を表示するには、次のコマンドを実行し�
 
 IP 禁止一覧を無効にするには、次のコマンドを実行します。
 
-    Set-IPBlockListConfig -Enabled $false
+```powershell
+Set-IPBlockListConfig -Enabled $false
+```
 
 IP 禁止一覧を有効にするには、次のコマンドを実行します。
 
-    Set-IPBlockListConfig -Enabled $true
+```powershell
+Set-IPBlockListConfig -Enabled $true
+```
 
 ## 正常な動作を確認する方法
 
 IP 禁止一覧が正常に有効または無効にされたことを確認するには、次のコマンドを実行し、構成した値が表示されることを確認します。
 
-    Get-IPBlockListConfig | Format-List Enabled
+```powershell
+Get-IPBlockListConfig | Format-List Enabled
+```
 
 ## シェルを使用して IP 禁止一覧を構成する
 
@@ -125,17 +139,23 @@ IP 禁止一覧が正常に構成されたことを確認するには、次の�
 
 IP 禁止一覧のすべてのエントリを表示するには、次のコマンドを実行します。
 
-    Get-IPBlockListEntry
+```powershell
+Get-IPBlockListEntry
+```
 
 IP 禁止一覧の各エントリは、整数値によって識別されます。IP 禁止一覧および IP 許可一覧にエントリを追加すると、それらを識別する整数値が昇順に割り当てられます。
 
 IP 禁止一覧から特定のエントリを表示するには、次の構文を使用します。
 
-    Get-IPBlockListEntry <-Identity IdentityInteger | -IPAddress IPAddress>
+```powershell
+Get-IPBlockListEntry <-Identity IdentityInteger | -IPAddress IPAddress>
+```
 
 たとえば、IP 禁止一覧で IP アドレス 192.168.1.13 を含むエントリを表示するには、次のコマンドを実行します。
 
-    Get-IPBlockListEntry -IPAddress 192.168.1.13
+```powershell
+Get-IPBlockListEntry -IPAddress 192.168.1.13
+```
 
 
 > [!NOTE]
@@ -151,33 +171,45 @@ IP 禁止一覧のエントリを追加するには、次の構文を使用し�
 
 次の例では、IP 禁止一覧に IP アドレス範囲が 192.168.1.10 - 192.168.1.15 のエントリを追加し、この IP 禁止一覧エントリが 2014 年 7 月 4 日 15:00 に有効期限切れになるように構成します。
 
-    Add-IPBlockListEntry -IPRange 192.168.1.10-192.168.1.15 -ExpirationTime "7/4/2014 15:00"
+```powershell
+Add-IPBlockListEntry -IPRange 192.168.1.10-192.168.1.15 -ExpirationTime "7/4/2014 15:00"
+```
 
 ## 正常な動作を確認する方法
 
 IP 禁止一覧にエントリが正常に追加されたことを確認するには、次のコマンドを実行し、新しい IP 禁止一覧エントリが表示されることを確認します。
 
-    Get-IPBlockListEntry
+```powershell
+Get-IPBlockListEntry
+```
 
 ## シェルを使用して IP 禁止一覧のエントリを削除する
 
 IP 禁止一覧のエントリを削除するには、次の構文を使用します。
 
-    Remove-IPBlockListEntry <IdentityInteger>
+```powershell
+Remove-IPBlockListEntry <IdentityInteger>
+```
 
 次の例では、*Identity* の値が 3 であるエントリを IP 禁止一覧から削除します。
 
-    Remove-IPBlockListEntry 3
+```powershell
+Remove-IPBlockListEntry 3
+```
 
 次の例では、*Identity* 整数値を使用せずに、IP アドレス 192.168.1.12 を含む IP 禁止一覧エントリを削除します。IP 禁止一覧のエントリには、個別の IP アドレスの場合と IP アドレス範囲の場合があります。
 
-    Get-IPBlockListEntry -IPAddress 192.168.1.12 | Remove-IPBlockListEntry
+```powershell
+Get-IPBlockListEntry -IPAddress 192.168.1.12 | Remove-IPBlockListEntry
+```
 
 ## 正常な動作を確認する方法
 
 IP 禁止一覧エントリが正常に削除されたことを確認するには、次のコマンドを実行し、削除した IP 禁止一覧エントリが表示されないことを確認します。
 
-    Get-IPBlockListEntry
+```powershell
+Get-IPBlockListEntry
+```
 
 ## IP 禁止一覧プロバイダーの手順
 
@@ -195,17 +227,23 @@ IP 禁止一覧エントリが正常に削除されたことを確認するに�
 
 すべての IP 禁止一覧プロバイダーを無効にするには、次のコマンドを実行します。
 
-    Set-IPBlockListProvidersConfig -Enabled $false
+```powershell
+Set-IPBlockListProvidersConfig -Enabled $false
+```
 
 すべての IP 禁止一覧プロバイダーを有効にするには、次のコマンドを実行します。
 
-    Set-IPBlockListProvidersConfig -Enabled $true
+```powershell
+Set-IPBlockListProvidersConfig -Enabled $true
+```
 
 ## 正常な動作を確認する方法
 
 すべての IP 禁止一覧プロバイダーが有効または無効にされたことを確認するには、次のコマンドを実行し、構成した値が表示されることを確認します。
 
-    Get-IPBlockListProvidersConfig | Format-List Enabled
+```powershell
+Get-IPBlockListProvidersConfig | Format-List Enabled
+```
 
 ## シェルを使用してすべての IP 禁止一覧プロバイダーを構成する
 
@@ -235,11 +273,15 @@ IP 禁止一覧エントリが正常に削除されたことを確認するに�
 
 すべての IP 禁止一覧プロバイダーの要約リストを表示するには、次のコマンドを実行します。
 
-    Get-IPBlockListProvider
+```powershell
+Get-IPBlockListProvider
+```
 
 特定のプロバイダーの詳細を表示するには、次の構文を使用します。
 
-    Get-IPBlockListProvider <IPBlockListProviderIdentity>
+```powershell
+Get-IPBlockListProvider <IPBlockListProviderIdentity>
+```
 
 次の例では、Contoso IP Block List Provider というプロバイダーの詳細を表示します。
 
@@ -273,27 +315,37 @@ IP 禁止一覧プロバイダーを追加するには、次の構文を使用�
 
 IP 禁止一覧プロバイダーが正常に追加されたことを確認するには、次のコマンドを実行し、新しい IP 禁止一覧プロバイダーが表示されることを確認します。
 
-    Get-IPBlockListProvider
+```powershell
+Get-IPBlockListProvider
+```
 
 ## シェルを使用して IP 禁止一覧プロバイダーを有効または無効にする
 
 特定の IP 禁止一覧プロバイダーを有効または無効にするには、次の構文を使用します。
 
-    Set-IPBlockListProvider <IPBlockListProviderIdentity> -Enabled <$true | $false>
+```powershell
+Set-IPBlockListProvider <IPBlockListProviderIdentity> -Enabled <$true | $false>
+```
 
 次の例では、Contoso IP Block List Provider というプロバイダーを無効にします。
 
-    Set-IPBlockListProvider "Contoso IP Block List Provider" -Enabled $false
+```powershell
+Set-IPBlockListProvider "Contoso IP Block List Provider" -Enabled $false
+```
 
 次の例では、Contoso IP Block List Provider というプロバイダーを有効にします。
 
-    Set-IPBlockListProvider "Contoso IP Block List Provider" -Enabled $true
+```powershell
+Set-IPBlockListProvider "Contoso IP Block List Provider" -Enabled $true
+```
 
 ## 正常な動作を確認する方法
 
 IP 禁止一覧プロバイダーが正常に有効または無効にされたことを確認するには、次のコマンドを実行し、構成した値が表示されることを確認します。
 
-    Get-IPBlockListProvider <IPBlockListProviderIdentity> | Format-List Enabled
+```powershell
+Get-IPBlockListProvider <IPBlockListProviderIdentity> | Format-List Enabled
+```
 
 ## シェルを使用して IP 禁止一覧プロバイダーを構成する
 
@@ -305,7 +357,9 @@ IP 禁止一覧プロバイダーが正常に有効または無効にされた�
 
 たとえば、Contoso IP Block List Provider というプロバイダーの既存の状態コードの一覧に IP アドレス状態コード 127.0.0.1 を追加するには、次のコマンドを実行します。
 
-    Set-IPBlockListProvider "Contoso IP Block List Provider" -IPAddressesMatch @{Add="127.0.0.1"}
+```powershell
+Set-IPBlockListProvider "Contoso IP Block List Provider" -IPAddressesMatch @{Add="127.0.0.1"}
+```
 
 詳細については、「[Set-IPBlockListProvider](https://technet.microsoft.com/ja-jp/library/bb124979\(v=exchg.150\))」をご覧ください。
 
@@ -313,33 +367,45 @@ IP 禁止一覧プロバイダーが正常に有効または無効にされた�
 
 IP 禁止一覧プロバイダーが正常に構成されたことを確認するには、次のコマンドを実行し、構成した値が表示されることを確認します。
 
-    Get-IPBlockListProvider <IPBlockListProviderIdentity> | Format-List
+```powershell
+Get-IPBlockListProvider <IPBlockListProviderIdentity> | Format-List
+```
 
 ## シェルを使用して IP 禁止一覧プロバイダーをテストする
 
 IP 禁止一覧プロバイダーをテストするには、次の構文を使用します。
 
-    Test-IPBlockListProvider <IPBlockListProviderIdentity> -IPAddress <IPAddressToTest>
+```powershell
+Test-IPBlockListProvider <IPBlockListProviderIdentity> -IPAddress <IPAddressToTest>
+```
 
 次の例では、IP アドレス 192.168.1.1 を参照して Contoso IP Block List Provider というプロバイダーをテストします。
 
-    Test-IPBlockListProvider "Contoso IP Block List Provider" -IPAddress 192.168.1.1
+```powershell
+Test-IPBlockListProvider "Contoso IP Block List Provider" -IPAddress 192.168.1.1
+```
 
 ## シェルを使用して IP 禁止一覧プロバイダーを削除する
 
 IP 禁止一覧プロバイダーを削除するには、次の構文を使用します。
 
-    Remove-IPBlockListProvider <IPBlockListProviderIdentity>
+```powershell
+Remove-IPBlockListProvider <IPBlockListProviderIdentity>
+```
 
 次の例では、Contoso IP Block List Provider という IP 禁止一覧プロバイダーを削除します。
 
-    Remove-IPBlockListProvider "Contoso IP Block list Provider"
+```powershell
+Remove-IPBlockListProvider "Contoso IP Block list Provider"
+```
 
 ## 正常な動作を確認する方法
 
 IP 禁止一覧プロバイダーが正常に削除されたことを確認するには、次のコマンドを実行し、削除した IP 禁止一覧プロバイダーが表示されないことを確認します。
 
-    Get-IPBlockListProvider
+```powershell
+Get-IPBlockListProvider
+```
 
 ## IP 許可一覧の手順
 
@@ -357,17 +423,23 @@ IP 許可一覧の構成を表示するには、次のコマンドを実行し�
 
 IP 許可一覧を無効にするには、次のコマンドを実行します。
 
-    Set-IPAllowListConfig -Enabled $false
+```powershell
+Set-IPAllowListConfig -Enabled $false
+```
 
 IP 許可一覧を有効にするには、次のコマンドを実行します。
 
-    Set-IPAllowListConfig -Enabled $true
+```powershell
+Set-IPAllowListConfig -Enabled $true
+```
 
 ## 正常な動作を確認する方法
 
 IP 許可一覧が正常に有効または無効にされたことを確認するには、次のコマンドを実行し、構成した値が表示されることを確認します。
 
-    Get-IPAllowListConfig | Format-List Enabled
+```powershell
+Get-IPAllowListConfig | Format-List *Enabled
+```
 
 ## シェルを使用して IP 許可一覧を構成する
 
@@ -377,7 +449,9 @@ IP 許可一覧を構成するには、次の構文を使用します。
 
 この例では、内部および外部メール サーバーからの受信接続をフィルター処理する IP 許可一覧を構成します。既定では、外部メール サーバーからの接続のみがフィルター処理されます (*ExternalMailEnabled* は `$true`、*InternalMailEnabled* は `$false` に設定されます)。外部パートナーからの接続は、認証済みかどうかにかかわらず、すべて外部と見なされます。
 
-    Set-IPAllowListConfig -InternalMailEnabled $true
+```powershell
+Set-IPAllowListConfig -InternalMailEnabled $true
+```
 
 ## 正常な動作を確認する方法
 
@@ -389,17 +463,23 @@ IP 許可一覧が正常に構成されたことを確認するには、次の�
 
 IP 許可一覧のすべてのエントリを表示するには、次のコマンドを実行します。
 
-    Get-IPAllowListEntry
+```powershell
+Get-IPAllowListEntry
+```
 
 IP 許可一覧の各エントリは、整数値によって識別されます。IP 禁止一覧および IP 許可一覧にエントリを追加すると、それらを識別する整数値が昇順に割り当てられます。
 
 IP 許可一覧から特定のエントリを表示するには、次の構文を使用します。
 
-    Get-IPAllowListEntry <-Identity IdentityInteger | -IPAddress IPAddress>
+```powershell
+Get-IPAllowListEntry <-Identity IdentityInteger | -IPAddress IPAddress>
+```
 
 たとえば、IP 許可一覧で IP アドレス 192.168.1.13 を含むエントリを表示するには、次のコマンドを実行します。
 
-    Get-IPAllowListEntry -IPAddress 192.168.1.13
+```powershell
+Get-IPAllowListEntry -IPAddress 192.168.1.13
+```
 
 
 > [!NOTE]
@@ -415,33 +495,45 @@ IP 許可一覧のエントリを追加するには、次の構文を使用し�
 
 この例では、IP 許可一覧に IP アドレス範囲が 192.168.1.10 - 192.168.1.15 のエントリを追加し、この IP 許可一覧エントリが 2014 年 7 月 4 日 15:00 に有効期限切れになるように構成します。
 
-    Add-IPAllowListEntry -IPRange 192.168.1.10-192.168.1.15 -ExpirationTime "7/4/2014 15:00"
+```powershell
+Add-IPAllowListEntry -IPRange 192.168.1.10-192.168.1.15 -ExpirationTime "7/4/2014 15:00"
+```
 
 ## 正常な動作を確認する方法
 
 IP 許可一覧にエントリが正常に追加されたことを確認するには、次のコマンドを実行し、新しい IP 許可一覧エントリが表示されることを確認します。
 
-    Get-IPAllowListEntry
+```powershell
+Get-IPAllowListEntry
+```
 
 ## シェルを使用して IP 許可一覧のエントリを削除する
 
 IP 許可一覧のエントリを削除するには、次の構文を使用します。
 
-    Remove-IPAllowListEntry <IdentityInteger>
+```powershell
+Remove-IPAllowListEntry <IdentityInteger>
+```
 
 次の例では、*Identity* の値が 3 であるエントリを IP 許可一覧から削除します。
 
-    Remove-IPAllowListEntry 3
+```powershell
+Remove-IPAllowListEntry 3
+```
 
 この例では、*Identity* 整数値を使用せずに、IP アドレス 192.168.1.12 を含む IP 許可一覧エントリを削除します。IP 許可一覧のエントリには、個別の IP アドレスの場合と IP アドレス範囲の場合があります。
 
-    Get-IPAllowListEntry -IPAddress 192.168.1.12 | Remove-IPAllowListEntry
+```powershell
+Get-IPAllowListEntry -IPAddress 192.168.1.12 | Remove-IPAllowListEntry
+```
 
 ## 正常な動作を確認する方法
 
 IP 許可一覧エントリが正常に削除されたことを確認するには、次のコマンドを実行し、削除した IP 許可一覧エントリが表示されないことを確認します。
 
-    Get-IPAllowListEntry
+```powershell
+Get-IPAllowListEntry
+```
 
 ## IP 許可一覧プロバイダーの手順
 
@@ -459,17 +551,23 @@ IP 許可一覧エントリが正常に削除されたことを確認するに�
 
 すべての IP 許可一覧プロバイダーを無効にするには、次のコマンドを実行します。
 
-    Set-IPAllowListProvidersConfig -Enabled $false
+```powershell
+Set-IPAllowListProvidersConfig -Enabled $false
+```
 
 すべての IP 許可一覧プロバイダーを有効にするには、次のコマンドを実行します。
 
-    Set-IPAllowListProvidersConfig -Enabled $true
+```powershell
+Set-IPAllowListProvidersConfig -Enabled $true
+```
 
 ## 正常な動作を確認する方法
 
 すべての IP 許可一覧プロバイダーが有効または無効にされたことを確認するには、次のコマンドを実行し、構成した値が表示されることを確認します。
 
-    Get-IPAllowListProvidersConfig | Format-List Enabled
+```powershell
+Get-IPAllowListProvidersConfig | Format-List Enabled
+```
 
 ## シェルを使用してすべての IP 許可一覧プロバイダーを構成する
 
@@ -479,7 +577,9 @@ IP 許可一覧エントリが正常に削除されたことを確認するに�
 
 この例では、すべての IP 許可一覧プロバイダーが内部および外部メール サーバーからの受信接続をフィルター処理するように構成します。既定では、外部メール サーバーからの接続のみがフィルター処理されます (*ExternalMailEnabled* は `$true`、*InternalMailEnabled* は `$false` に設定されます)。外部パートナーからの接続は、認証済みかどうかにかかわらず、すべて外部と見なされます。
 
-    Set-IPAllowListProvidersConfig -InternalMailEnabled $true
+```powershell
+Set-IPAllowListProvidersConfig -InternalMailEnabled $true
+```
 
 詳細については、「[Set-IPBlockListProvidersConfig](https://technet.microsoft.com/ja-jp/library/aa998543\(v=exchg.150\))」をご覧ください。
 
@@ -493,11 +593,15 @@ IP 許可一覧エントリが正常に削除されたことを確認するに�
 
 すべての IP 許可一覧プロバイダーの要約リストを表示するには、次のコマンドを実行します。
 
-    Get-IPAllowListProvider
+```powershell
+Get-IPAllowListProvider
+```
 
 特定のプロバイダーの詳細を表示するには、次の構文を使用します。
 
-    Get-IPAllowListProvider <IPAllowListProviderIdentity>
+```powershell
+Get-IPAllowListProvider <IPAllowListProviderIdentity>
+```
 
 この例では、Contoso IP Allow List Provider というプロバイダーの詳細を表示します。
 
@@ -531,27 +635,37 @@ IP 許可一覧プロバイダーを追加するには、次の構文を使用�
 
 IP 許可一覧プロバイダーが正常に追加されたことを確認するには、次のコマンドを実行し、新しい IP 許可一覧プロバイダーが表示されることを確認します。
 
-    Get-IPAllowListProvider
+```powershell
+Get-IPAllowListProvider
+```
 
 ## シェルを使用して IP 許可一覧プロバイダーを有効または無効にする
 
 特定の IP 許可一覧プロバイダーを有効または無効にするには、次の構文を使用します。
 
-    Set-IPAllowListProvider <IPAllowListProviderIdentity> -Enabled <$true | $false>
+```powershell
+Set-IPAllowListProvider <IPAllowListProviderIdentity> -Enabled <$true | $false>
+```
 
 この例では、Contoso IP Allow List Provider というプロバイダーを無効にします。
 
-    Set-IPAllowListProvider "Contoso IP Allow List Provider" -Enabled $false
+```powershell
+Set-IPAllowListProvider "Contoso IP Allow List Provider" -Enabled $false
+```
 
 この例では、Contoso IP Allow List Provider というプロバイダーを有効にします。
 
-    Set-IPAllowListProvider "Contoso IP Allow List Provider" -Enabled $true
+```powershell
+Set-IPAllowListProvider "Contoso IP Allow List Provider" -Enabled $true
+```
 
 ## 正常な動作を確認する方法
 
 IP 許可一覧プロバイダーが正常に有効または無効にされたことを確認するには、次のコマンドを実行し、構成した値が表示されることを確認します。
 
-    Get-IPAllowListProvider <IPAllowListProviderIdentity> | Format-List Enabled
+```powershell
+Get-IPAllowListProvider <IPAllowListProviderIdentity> | Format-List Enabled
+```
 
 ## シェルを使用して IP 許可一覧プロバイダーを構成する
 
@@ -563,7 +677,9 @@ IP 許可一覧プロバイダーが正常に有効または無効にされた�
 
 たとえば、Contoso IP Allow List Provider というプロバイダーの既存の状態コードの一覧に IP アドレス状態コード 127.0.0.1 を追加するには、次のコマンドを実行します。
 
-    Set-IPAllowListProvider "Contoso IP Allow List Provider" -IPAddressesMatch @{Add="127.0.0.1"}
+```powershell
+Set-IPAllowListProvider "Contoso IP Allow List Provider" -IPAddressesMatch @{Add="127.0.0.1"}
+```
 
 詳細については、「[Set-IPBlockListProvider](https://technet.microsoft.com/ja-jp/library/bb124979\(v=exchg.150\))」をご覧ください。
 
@@ -571,31 +687,43 @@ IP 許可一覧プロバイダーが正常に有効または無効にされた�
 
 IP 許可一覧プロバイダーが正常に構成されたことを確認するには、次のコマンドを実行し、構成した値が表示されることを確認します。
 
-    Get-IPAllowListProvider <IPAllowListProviderIdentity> | Format-List
+```powershell
+Get-IPAllowListProvider <IPAllowListProviderIdentity> | Format-List
+```
 
 ## シェルを使用して IP 許可一覧プロバイダーをテストする
 
 IP 許可一覧プロバイダーをテストするには、次の構文を使用します。
 
-    Test-IPAllowListProvider <IPAllowListProviderIdentity> -IPAddress <IPAddressToTest>
+```powershell
+Test-IPAllowListProvider <IPAllowListProviderIdentity> -IPAddress <IPAddressToTest>
+```
 
 次の例では、IP アドレス 192.168.1.1 を参照して Contoso IP Allow List Provider というプロバイダーをテストします。
 
-    Test-IPAllowListProvider "Contoso IP Allow List Provider" -IPAddress 192.168.1.1
+```powershell
+Test-IPAllowListProvider "Contoso IP Allow List Provider" -IPAddress 192.168.1.1
+```
 
 ## シェルを使用して IP 許可一覧プロバイダーを削除する
 
 IP 許可一覧プロバイダーを削除するには、次の構文を使用します。
 
-    Remove-IPAllowListProvider <IPAllowListProviderIdentity>
+```powershell
+Remove-IPAllowListProvider <IPAllowListProviderIdentity>
+```
 
 この例では、Contoso IP Allow List Provider という IP 許可一覧プロバイダーを削除します。
 
-    Remove-IPAllowListProvider "Contoso IP Allow List Provider"
+```powershell
+Remove-IPAllowListProvider "Contoso IP Allow List Provider"
+```
 
 ## 正常な動作を確認する方法
 
 IP 許可一覧プロバイダーが正常に削除されたことを確認するには、次のコマンドを実行し、削除した IP 許可一覧プロバイダーが表示されないことを確認します。
 
-    Get-IPAllowListProvider
+```powershell
+Get-IPAllowListProvider
+```
 

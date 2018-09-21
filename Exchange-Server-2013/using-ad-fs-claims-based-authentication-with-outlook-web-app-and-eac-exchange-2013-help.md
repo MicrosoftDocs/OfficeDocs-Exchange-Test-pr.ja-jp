@@ -431,7 +431,9 @@ Web アプリケーション プロキシを展開するには、Web アプリ�
 
 次の Windows PowerShell コマンドレットは、上記の手順と同じ操作を実行します。
 
-    Install-WindowsFeature Web-Application-Proxy -IncludeManagementTools
+```powershell
+Install-WindowsFeature Web-Application-Proxy -IncludeManagementTools
+```
 
 ## ステップ 5: Web アプリケーション プロキシの役割サービスを構成する (省略可能)
 
@@ -564,7 +566,9 @@ Exchange 仮想ディレクトリに変更を加えることを含め、必要�
 
   - Windows PowerShell を使用:
     
-        Restart-Service W3SVC,WAS -noforce
+    ```powershell
+Restart-Service W3SVC,WAS -noforce
+```
 
   - コマンド ラインを使用: <strong>スタート</strong> ボタンをクリックし、<strong>ファイル名を指定して実行</strong> をクリックします。次に、「`IISReset /noforce`」と入力し、<strong>OK</strong> をクリックします。
 

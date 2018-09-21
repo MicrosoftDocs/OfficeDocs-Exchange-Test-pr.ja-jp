@@ -61,7 +61,9 @@ _**トピックの最終更新日:** 2012-10-09_
 
 メールボックスに手動で割り当てることができる明示的な割り当てポリシーを作成するには、次の構文を使用します。
 
-    New-RoleAssignmentPolicy <assignment policy name> -Roles <roles to assign>
+```powershell
+New-RoleAssignmentPolicy <assignment policy name> -Roles <roles to assign>
+```
 
 この例では、明示的な割り当てポリシー Limited Mailbox Configuration を作成し、これに `MyBaseOptions`、`MyAddressInformation`、および `MyDisplayName` の役割を割り当てます。
 
@@ -73,7 +75,9 @@ _**トピックの最終更新日:** 2012-10-09_
 
 新しいメールボックスに対して割り当てる既定の割り当てポリシーを作成するには、次の構文を使用します。
 
-    New-RoleAssignmentPolicy <assignment policy name> -Roles <roles to assign> -IsDefault
+```powershell
+New-RoleAssignmentPolicy <assignment policy name> -Roles <roles to assign> -IsDefault
+```
 
 この例では、既定の割り当てポリシー Limited Mailbox Configuration を作成し、これに `MyBaseOptions`、`MyAddressInformation`、および `MyDisplayName` の役割を割り当てます。
 
@@ -103,11 +107,15 @@ _**トピックの最終更新日:** 2012-10-09_
 
 割り当てポリシーを削除するには、次の構文を使用します。
 
-    Remove-RoleAssignmentPolicy <role assignment policy>
+```powershell
+Remove-RoleAssignmentPolicy <role assignment policy>
+```
 
 この例では、New York Temporary Users 割り当てポリシーを削除します。
 
-    Remove-RoleAssignmentPolicy "New York Temporary Users"
+```powershell
+Remove-RoleAssignmentPolicy "New York Temporary Users"
+```
 
 構文およびパラメーターの詳細については、「[Remove-RoleAssignmentPolicy](https://technet.microsoft.com/ja-jp/library/dd638190\(v=exchg.150\))」を参照してください。
 
@@ -135,15 +143,21 @@ EAC では、割り当てポリシーと、その割り当てポリシーに割�
 
 組織内のすべての割り当てポリシーの一覧を返すには、以下のコマンドレットを使用します。
 
-    Get-RoleAssignmentPolicy
+```powershell
+Get-RoleAssignmentPolicy
+```
 
 組織内のすべての割り当てポリシーの特定のプロパティの一覧を返すには、結果を **Format-Table** コマンドレットにパイプ処理して、結果の一覧に含めるプロパティを指定します。以下の構文を使用します。
 
-    Get-RoleAssignmentPolicy | Format-Table <property 1>, <property 2...>
+```powershell
+Get-RoleAssignmentPolicy | Format-Table <property 1>, <property 2...>
+```
 
 この例では、組織内のすべての割り当てポリシーの一覧を返し、**Name** と **IsDefault** プロパティを含めます。
 
-    Get-RoleAssignmentPolicy | Format-Table Name, IsDefault
+```powershell
+Get-RoleAssignmentPolicy | Format-Table Name, IsDefault
+```
 
 構文およびパラメーターの詳細については、「[Get-Mailbox](https://technet.microsoft.com/ja-jp/library/bb123685\(v=exchg.150\))」または「[Get-RoleAssignmentPolicy](https://technet.microsoft.com/ja-jp/library/dd638195\(v=exchg.150\))」を参照してください。
 
@@ -159,11 +173,15 @@ EAC では、割り当てポリシーと、その割り当てポリシーに割�
 
 特定の割り当てポリシーの詳細を表示するには、以下の構文を使用します。
 
-    Get-RoleAssignmentPolicy <assignment policy name> | Format-List
+```powershell
+Get-RoleAssignmentPolicy <assignment policy name> | Format-List
+```
 
 この例では、"Redmond Users/Redmond ユーザー" に関する詳細を表示します (テキスト メッセージング割り当てポリシーは表示しません)。
 
-    Get-RoleAssignmentPolicy "Redmond Users - no Text Messaging" | Format-List
+```powershell
+Get-RoleAssignmentPolicy "Redmond Users - no Text Messaging" | Format-List
+```
 
 構文およびパラメーターの詳細については、「[Get-Mailbox](https://technet.microsoft.com/ja-jp/library/bb123685\(v=exchg.150\))」または「[Get-RoleAssignmentPolicy](https://technet.microsoft.com/ja-jp/library/dd638195\(v=exchg.150\))」を参照してください。
 
@@ -179,7 +197,9 @@ EAC では、割り当てポリシーと、その割り当てポリシーに割�
 
 この例では、既定の割り当てポリシーが返されます。
 
-    Get-RoleAssignmentPolicy | Where { $_.IsDefault -eq $True }
+```powershell
+Get-RoleAssignmentPolicy | Where {     Get-RoleAssignmentPolicy | Where { $_.IsDefault -eq $True }.IsDefault -eq $True }
+```
 
 構文およびパラメーターの詳細については、「[Get-Mailbox](https://technet.microsoft.com/ja-jp/library/bb123685\(v=exchg.150\))」または「[Get-RoleAssignmentPolicy](https://technet.microsoft.com/ja-jp/library/dd638195\(v=exchg.150\))」を参照してください。
 
@@ -195,11 +215,15 @@ EAC では、割り当てポリシーと、その割り当てポリシーに割�
 
 以下の構文を使用します。
 
-    Get-Mailbox | Where { $_.RoleAssignmentPolicy -Eq "<role assignment policy>" }
+```powershell
+Get-Mailbox | Where {     Get-Mailbox | Where { $_.RoleAssignmentPolicy -Eq "<role assignment policy>" }.RoleAssignmentPolicy -Eq "<role assignment policy>" }
+```
 
 この例では、ポリシー Vancouver エンドユーザーが割り当てられているすべてのメールボックスを検索します。
 
-    Get-Mailbox | Where { $_.RoleAssignmentPolicy -Eq "Vancouver End Users" }
+```powershell
+Get-Mailbox | Where {     Get-Mailbox | Where { $_.RoleAssignmentPolicy -Eq "Vancouver End Users" }.RoleAssignmentPolicy -Eq "Vancouver End Users" }
+```
 
 構文およびパラメーターの詳細については、「[Get-Mailbox](https://technet.microsoft.com/ja-jp/library/bb123685\(v=exchg.150\))」または「[Get-RoleAssignmentPolicy](https://technet.microsoft.com/ja-jp/library/dd638195\(v=exchg.150\))」を参照してください。
 
@@ -217,11 +241,15 @@ EAC では、割り当てポリシーと、その割り当てポリシーに割�
 
 既定の割り当てポリシーを変更するには、次の構文を使用します。
 
-    Set-RoleAssignmentPolicy <assignment policy name> -IsDefault
+```powershell
+Set-RoleAssignmentPolicy <assignment policy name> -IsDefault
+```
 
 この例では、Vancouver End Users という割り当てポリシーを既定の割り当てポリシーとして設定します。
 
-    Set-RoleAssignmentPolicy "Vancouver End Users" -IsDefault
+```powershell
+Set-RoleAssignmentPolicy "Vancouver End Users" -IsDefault
+```
 
 
 > [!IMPORTANT]

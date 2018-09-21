@@ -131,7 +131,9 @@ Exchange 2013 のインストール方法の詳細については、「[計画�
     
     2.  次のコマンドを実行します。
         
-            Add-PSSnapin Microsoft.Exchange.Management.PowerShell.SnapIn
+        ```powershell
+Add-PSSnapin Microsoft.Exchange.Management.PowerShell.SnapIn
+```
     
     3.  通常どおりトランスポート エージェント管理タスクを実行します。
     

@@ -47,7 +47,9 @@ Exchange Server 2013 や 2016 の Exchange Server 上にメールボックスの
     
     Exchange 2007 では、次のコマンドを実行します。
     
-        New-MailboxDatabase -StorageGroup "<PFServerName>\StorageGroup>" -Name <NewMDBforPFs>
+    ```powershell
+New-MailboxDatabase -StorageGroup "<PFServerName>\StorageGroup>" -Name <NewMDBforPFs>
+```
     
 
     > [!NOTE]
@@ -60,12 +62,16 @@ Exchange Server 2013 や 2016 の Exchange Server 上にメールボックスの
     New-Mailbox -Name <PFMailbox1> -Database <NewMDBforPFs> 
     ```
     ```
-    Set-Mailbox -Identity <PFMailbox1> -HiddenFromAddressListsEnabled $true
+```powershell
+Set-Mailbox -Identity <PFMailbox1> -HiddenFromAddressListsEnabled $true
+```
     ```
 
 4.  Exchange 2010 では、プロキシ パブリック フォルダー メールボックスを返すように、自動検出を有効にします。この手順は Exchange 2007 には必要ありません。
     
-        Set-MailboxDatabase <NewMDBforPFs> -RPCClientAccessServer <PFServerName_with_CASRole>
+    ```powershell
+Set-MailboxDatabase <NewMDBforPFs> -RPCClientAccessServer <PFServerName_with_CASRole>
+```
 
 5.  組織内のすべてのパブリック フォルダー サーバーに対して、前述の手順を繰り返します。
 

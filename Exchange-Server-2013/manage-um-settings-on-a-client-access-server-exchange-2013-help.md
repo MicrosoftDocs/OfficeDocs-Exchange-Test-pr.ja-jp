@@ -49,11 +49,15 @@ Microsoft Exchange ユニファイド メッセージング呼び出しルータ
 
 この例では、すべてのセッション開始プロトコル (SIP) ダイヤル プランから `MyClientAccessServer` という名前のクライアント アクセス サーバーを削除します。
 
-    Set-UMCallRouterSettings -DialPlans $null - Server MyClientAccessServer
+```powershell
+Set-UMCallRouterSettings -DialPlans $null - Server MyClientAccessServer
+```
 
 この例では、`MyClientAccessServer` という名前のクライアント アクセス サーバーを `MySIPDialPlan` という名前の SIP ダイヤル プランに追加し、着信音声呼び出しの最大数も設定しています。
 
-    Set-UMCallRouterSettings -DialPlans MySIPDialPlan -MaxCalls 150 -Server MyClientAccessServer
+```powershell
+Set-UMCallRouterSettings -DialPlans MySIPDialPlan -MaxCalls 150 -Server MyClientAccessServer
+```
 
 この例では、`MyClientAccessServer` という名前のクライアント アクセス サーバーで SIP TCP リスニング ポートを 5077 に設定し、スタートアップ モードをデュアル モードに設定します。
 
@@ -63,9 +67,13 @@ Microsoft Exchange ユニファイド メッセージング呼び出しルータ
 
 この例を実行すると、すべてのクライアント アクセス サーバーの一覧が表示されます。
 
-    Get-UMCallRouterSettings
+```powershell
+Get-UMCallRouterSettings
+```
 
 この例では、クライアント アクセス サーバーのプロパティの一覧を書式付きで表示します。
 
-    Get-UMCallRouterSettings | Format-List
+```powershell
+Get-UMCallRouterSettings | Format-List
+```
 

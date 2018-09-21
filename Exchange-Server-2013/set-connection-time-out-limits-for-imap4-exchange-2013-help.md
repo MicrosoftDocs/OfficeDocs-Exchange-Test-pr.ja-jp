@@ -61,11 +61,15 @@ IMAP4 に関連する詳細情報については、「[Exchange Server 2013 で�
 
 この例では、認証済みのアイドル接続の接続タイムアウト制限を設定します。
 
-    Set -ImapSettings -Identity CAS01 -AuthenticatedConnectionTimeout TimeValue
+```powershell
+Set -ImapSettings -Identity CAS01 -AuthenticatedConnectionTimeout TimeValue
+```
 
 この例では、認証されていないアイドル接続の接続タイムアウト制限を設定します。
 
-    Set -ImapSettings -Identity CAS01 -PreAuthenticatedConnectionTimeout TimeValue
+```powershell
+Set -ImapSettings -Identity CAS01 -PreAuthenticatedConnectionTimeout TimeValue
+```
 
 設定を有効にするには、IMAP4 の接続タイムアウト制限を設定した後、IMAP4 サービスを再起動する必要があります。IMAP4 サービスを再起動する方法の詳細については、「[IMAP4 サービスの開始および停止](start-and-stop-the-imap4-services-exchange-2013-help.md)」を参照してください。
 
@@ -89,7 +93,9 @@ IMAP4 に関連する詳細情報については、「[Exchange Server 2013 で�
 
 1.  シェルで、次のコマンドを実行します。
     
-        Get-ImapSettings | format-list
+    ```powershell
+Get-ImapSettings | format-list
+```
 
 2.  接続設定が正しいことを確認します。
 

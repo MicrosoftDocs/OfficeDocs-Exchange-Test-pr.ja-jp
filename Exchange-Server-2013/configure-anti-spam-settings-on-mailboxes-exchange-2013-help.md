@@ -55,7 +55,9 @@ _**トピックの最終更新日:** 2016-11-17_
 
 この例では、Jeff Phillips という名前のユーザーのメールボックスを構成して、すべてのスパム対策フィルターをバイパスし、迷惑メール フォルダーの SCL しきい値が 5 以上のメッセージを Microsoft Outlook 内のそのユーザーの迷惑メール フォルダーに配信するようにします。
 
-    Set-Mailbox "Jeff Phillips" -AntispamBypassEnabled $true -SCLJunkEnabled $true -SCLJunkThreshold 4
+```powershell
+Set-Mailbox "Jeff Phillips" -AntispamBypassEnabled $true -SCLJunkEnabled $true -SCLJunkThreshold 4
+```
 
 ## 正常な動作を確認する方法
 
@@ -91,11 +93,15 @@ _**トピックの最終更新日:** 2016-11-17_
 
 次のコマンドを実行します。
 
-    Set-OrganizationConfig -SCLJunkThreshold <Integer>
+```powershell
+Set-OrganizationConfig -SCLJunkThreshold <Integer>
+```
 
 この例では、組織の迷惑メールのしきい値を 5 に設定します。
 
-    Set-OrganizationConfig -SCLJunkThreshold 5
+```powershell
+Set-OrganizationConfig -SCLJunkThreshold 5
+```
 
 ## 正常な動作を確認する方法
 
@@ -103,7 +109,9 @@ _**トピックの最終更新日:** 2016-11-17_
 
 1.  次のコマンドを実行します。
     
-        Get-OrganizationConfig | Format-List SCLJunkThreshold
+    ```powershell
+Get-OrganizationConfig | Format-List SCLJunkThreshold
+```
 
 2.  表示された値が構成した値であることを確認します。
 

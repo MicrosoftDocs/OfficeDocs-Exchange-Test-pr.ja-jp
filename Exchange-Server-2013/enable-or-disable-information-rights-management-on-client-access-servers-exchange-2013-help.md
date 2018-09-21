@@ -63,7 +63,9 @@ IRM に関連する追加の管理タスクについては、「[Information Rig
 
 この例では、Exchange 組織のクライアント アクセス サーバーで IRM を有効にします。
 
-    Set-IRMConfiguration -ClientAccessServerEnabled $true
+```powershell
+Set-IRMConfiguration -ClientAccessServerEnabled $true
+```
 
 構文およびパラメーターの詳細については、「[Set-IRMConfiguration](https://technet.microsoft.com/ja-jp/library/dd979792\(v=exchg.150\))」を参照してください。
 
@@ -71,7 +73,9 @@ IRM に関連する追加の管理タスクについては、「[Information Rig
 
 この例では、Exchange 組織のクライアント アクセス サーバーで IRM を無効にします。
 
-    Set-IRMConfiguration -ClientAccessServerEnabled $false
+```powershell
+Set-IRMConfiguration -ClientAccessServerEnabled $false
+```
 
 構文およびパラメーターの詳細については、「[Set-IRMConfiguration](https://technet.microsoft.com/ja-jp/library/dd979792\(v=exchg.150\))」を参照してください。
 

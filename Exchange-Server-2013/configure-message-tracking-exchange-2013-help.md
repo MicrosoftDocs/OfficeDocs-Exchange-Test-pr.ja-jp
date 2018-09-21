@@ -87,11 +87,15 @@ _**トピックの最終更新日:** 2013-02-18_
 
 この例では、Mailbox01 という名前のメールボックス サーバーのメッセージ追跡ログで、メッセージの件名のログを無効にします。
 
-    Set-TransportService Mailbox01 -MessageTrackingLogSubjectLoggingEnabled $false
+```powershell
+Set-TransportService Mailbox01 -MessageTrackingLogSubjectLoggingEnabled $false
+```
 
 この例では、Mailbox01 という名前のメールボックス サーバーのメッセージ追跡を無効にします。
 
-    Set-TransportService Mailbox01 -MessageTrackingLogEnabled $false
+```powershell
+Set-TransportService Mailbox01 -MessageTrackingLogEnabled $false
+```
 
 ## 正常な動作を確認する方法
 

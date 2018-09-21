@@ -111,11 +111,15 @@ Exchange 2003 からパブリック フォルダーを直接移行すること�
     
       - 移行元のフォルダー構造のスナップショットを取得するには、次のコマンドを実行します。
         
-            Get-PublicFolder -Recurse | Export-CliXML C:\PFMigration\Legacy_PFStructure.xml
+        ```powershell
+Get-PublicFolder -Recurse | Export-CliXML C:\PFMigration\Legacy_PFStructure.xml
+```
     
       - アイテム数、サイズ、所有者などのパブリック フォルダーの統計情報のスナップショットを取得するには、次のコマンドを実行します。
         
-            Get-PublicFolderStatistics | Export-CliXML C:\PFMigration\Legacy_PFStatistics.xml
+        ```powershell
+Get-PublicFolderStatistics | Export-CliXML C:\PFMigration\Legacy_PFStatistics.xml
+```
     
       - アクセス許可のスナップショットを取得するには、次のコマンドを実行します。
         
@@ -135,19 +139,25 @@ Exchange 2003 からパブリック フォルダーを直接移行すること�
     
     3.  パブリック フォルダーが返された場合、次のコマンドを実行することで、名前を変更することができます。
         
-            Set-PublicFolder -Identity <public folder identity> -Name <new public folder name>
+        ```powershell
+Set-PublicFolder -Identity <public folder identity> -Name <new public folder name>
+```
 
 3.  以前に成功した移行の記録がないことを確認します。
     
     1.  次の例では、パブリック フォルダーの移行ステータスを確認します。
         
-            Get-OrganizationConfig | Format-List PublicFoldersLockedforMigration, PublicFolderMigrationComplete
+        ```powershell
+Get-OrganizationConfig | Format-List PublicFoldersLockedforMigration, PublicFolderMigrationComplete
+```
         
         以前に移行が成功したことがある場合、*PublicFoldersLockedforMigration* または *PublicFolderMigrationComplete* プロパティの値は `$true` です。手順 3b のコマンドを使用して、この値を `$false` に設定します。値が `$true` に設定されていると移行要求が失敗します。
     
     2.  *PublicFoldersLockedforMigration* プロパティまたは *PublicFolderMigrationComplete* プロパティの状態が `$true` の場合は、以下のコマンドを実行して値を `$false` に設定します。
         
-            Set-OrganizationConfig -PublicFoldersLockedforMigration:$false -PublicFolderMigrationComplete:$false
+        ```powershell
+Set-OrganizationConfig -PublicFoldersLockedforMigration:$false -PublicFolderMigrationComplete:$false
+```
     
 
     > [!WARNING]
@@ -188,7 +198,9 @@ Exchange 2003 からパブリック フォルダーを直接移行すること�
     
     次の例では、既存のパブリック フォルダーのシリアル移行要求を削除します。
     
-        Get-PublicFolderMigrationRequest | Remove-PublicFolderMigrationRequest
+    ```powershell
+Get-PublicFolderMigrationRequest | Remove-PublicFolderMigrationRequest
+```
     
     次の例では、既存のバッチ移行要求を検出します。
     
@@ -196,7 +208,9 @@ Exchange 2003 からパブリック フォルダーを直接移行すること�
     
     次の例では、既存のパブリック フォルダーのバッチ移行要求を削除します。
     
-        $batch | Remove-MigrationBatch -Confirm:$false
+    ```powershell
+$batch | Remove-MigrationBatch -Confirm:$false
+```
 
 2.  Exchange 2013 サーバーにパブリック フォルダーまたはパブリック フォルダー メールボックスが存在しないことを確認します。
     
@@ -206,7 +220,9 @@ Exchange 2003 からパブリック フォルダーを直接移行すること�
     
     2.  コマンドを実行しても、パブリック フォルダー メールボックスが返されなかった場合は、Step 3: Generate the CSV files に進んでください。上記のコマンドによってパブリック フォルダーが返された場合は、以下のコマンドを使って、パブリック フォルダーが存在するかどうかを確認します。
         
-            Get-PublicFolder
+        ```powershell
+Get-PublicFolder
+```
     
     3.  パブリック フォルダーが存在する場合は、次の PowerShell コマンドを実行し、パブリック フォルダーを削除します。パブリック フォルダーに含まれている情報が保存してあることを確認してください。
         
@@ -299,7 +315,9 @@ Exchange 2007 のパブリック フォルダーを移行する手順は、Excha
 
 3.  次のコマンドを使用して移行を開始します。
     
-        Start-MigrationBatch PFMigration
+    ```powershell
+Start-MigrationBatch PFMigration
+```
 
 **Exchange 2010 のパブリック フォルダーの移行**
 
@@ -311,7 +329,9 @@ Exchange 2007 のパブリック フォルダーを移行する手順は、Excha
 
 2.  次のコマンドを使用して移行を開始します。
     
-        Start-MigrationBatch PFMigration
+    ```powershell
+Start-MigrationBatch PFMigration
+```
     
     または
     
@@ -351,7 +371,9 @@ Exchange 2007 のパブリック フォルダーを移行する手順は、Excha
 
 従来の Exchange サーバーで次のコマンドを実行すると、最終処理のために従来のパブリック フォルダーがロックされます。
 
-    Set-OrganizationConfig -PublicFoldersLockedForMigration:$true
+```powershell
+Set-OrganizationConfig -PublicFoldersLockedForMigration:$true
+```
 
 
 > [!NOTE]
@@ -367,11 +389,15 @@ Exchange 2007 のパブリック フォルダーを移行する手順は、Excha
 
 最初に、次のコマンドレットを実行して、Exchange 2013 の展開の種類を**リモート**に変更します。
 
-    Set-OrganizationConfig -PublicFoldersEnabled Remote
+```powershell
+Set-OrganizationConfig -PublicFoldersEnabled Remote
+```
 
 完了したら、次のコマンドを実行して、パブリック フォルダーの移行を実行できます。
 
-    Complete-MigrationBatch PublicFolderMigration
+```powershell
+Complete-MigrationBatch PublicFolderMigration
+```
 
 または EAC で <strong>この移行バッチの完了</strong> をクリックして、移行を完了できます。
 
@@ -397,7 +423,9 @@ Exchange 2007 のパブリック フォルダーを移行する手順は、Excha
 
 3.  問題が発生した場合は、後述する「Roll back the migration」を参照してください。パブリック フォルダーのコンテンツと階層に特に問題がなく期待どおりに機能している場合には、次のコマンドを実行して他のすべてのユーザーが使えるようにパブリック フォルダーをロック解除します。
     
-        Get-Mailbox -PublicFolder | Set-Mailbox -PublicFolder -IsExcludedFromServingHierarchy $false
+    ```powershell
+Get-Mailbox -PublicFolder | Set-Mailbox -PublicFolder -IsExcludedFromServingHierarchy $false
+```
     
 
     > [!IMPORTANT]
@@ -407,11 +435,15 @@ Exchange 2007 のパブリック フォルダーを移行する手順は、Excha
 
 4.  従来の Exchange サーバーで次のコマンドを実行すると、パブリック フォルダーの移行が完了したことが示されます。
     
-        Set-OrganizationConfig -PublicFolderMigrationComplete:$true
+    ```powershell
+Set-OrganizationConfig -PublicFolderMigrationComplete:$true
+```
 
 5.  移行が完了したことを確認したら、次のコマンドを実行します。
     
-        Set-OrganizationConfig -PublicFoldersEnabled Local
+    ```powershell
+Set-OrganizationConfig -PublicFoldersEnabled Local
+```
 
 6.  最後に、移行済みのメールが有効なパブリック フォルダーに外部の送信者がメールを送信する場合、<strong>匿名</strong> ユーザーに <strong>アイテムの作成</strong> 以上のアクセス許可が付与されている必要があります。このアクセス許可の付与を行っていない場合、外部のユーザーは配信失敗の通知を受け取り、メッセージは移行済みのメールが有効なパブリック フォルダーに配信されません。
     
@@ -423,7 +455,9 @@ Exchange 2007 のパブリック フォルダーを移行する手順は、Excha
 
 1.  新しいフォルダー構造のスナップショットを取得するには、次のコマンドを実行します。
     
-        Get-PublicFolder -Recurse | Export-CliXML C:\PFMigration\Cloud_PFStructure.xml
+    ```powershell
+Get-PublicFolder -Recurse | Export-CliXML C:\PFMigration\Cloud_PFStructure.xml
+```
 
 2.  アイテム数、サイズ、所有者などのパブリック フォルダーの統計情報のスナップショットを取得するには、次のコマンドを実行します。
     
@@ -453,7 +487,9 @@ Exchange 2007 のパブリック フォルダーを移行する手順は、Excha
 
 1.  従来の Exchange サーバーで次のコマンドを実行すると、従来の Exchange パブリック フォルダーのロックが解除されます。この処理には数時間かかる場合があります。
     
-        Set-OrganizationConfig -PublicFoldersLockedForMigration:$False
+    ```powershell
+Set-OrganizationConfig -PublicFoldersLockedForMigration:$False
+```
 
 2.  Exchange 2013 サーバーで、次のコマンドを実行してパブリック フォルダー メールボックスを削除します。
     
@@ -463,5 +499,7 @@ Exchange 2007 のパブリック フォルダーを移行する手順は、Excha
 
 3.  従来の Exchange サーバーで次のコマンドを実行すると、`PublicFolderMigrationComplete` フラグが `$false` に設定されます。
     
-        Set-OrganizationConfig -PublicFolderMigrationComplete:$False
+    ```powershell
+Set-OrganizationConfig -PublicFolderMigrationComplete:$False
+```
 

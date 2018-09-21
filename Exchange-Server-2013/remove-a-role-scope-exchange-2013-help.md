@@ -41,9 +41,13 @@ _**トピックの最終更新日:** 2012-10-02_
 
 スコープを削除するには、次の構文を使用します。
 
-    Remove-ManagementScope <scope name>
+```powershell
+Remove-ManagementScope <scope name>
+```
 
 たとえば、"Dublin Servers" スコープを削除するには、次のコマンドを使用します。
 
-    Remove-ManagementScope "Dublin Servers"
+```powershell
+Remove-ManagementScope "Dublin Servers"
+```
 

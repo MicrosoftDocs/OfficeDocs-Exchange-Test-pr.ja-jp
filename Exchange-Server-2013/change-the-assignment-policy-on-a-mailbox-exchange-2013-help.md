@@ -49,11 +49,15 @@ _**トピックの最終更新日:** 2012-10-08_
 
 メールボックスに割り当てられている割り当てポリシーを変更するには、次の構文を使用します。
 
-    Set-Mailbox <mailbox alias or name> -RoleAssignmentPolicy <assignment policy>
+```powershell
+Set-Mailbox <mailbox alias or name> -RoleAssignmentPolicy <assignment policy>
+```
 
 この例では、Brian というメールボックスの割り当てポリシーを "Unified Messaging Users/ユニファイド メッセージング ユーザー" に設定します。
 
-    Set-Mailbox Brian -RoleAssignmentPolicy "Unified Messaging Users"
+```powershell
+Set-Mailbox Brian -RoleAssignmentPolicy "Unified Messaging Users"
+```
 
 ## シェルを使用して、特定の割り当てポリシーが割り当てられているメールボックスのグループの割り当てポリシーを変更する
 

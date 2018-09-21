@@ -53,5 +53,7 @@ Microsoft Exchange Unified Messaging サービスを実行しているメール�
 
 この例では、`MyMailboxServer1` という名前のメールボックス サーバーによって受け付けることができる着信音声、Outlook Voice Access、および FAX 呼び出しの数を 50 に設定します。
 
-    Set-UMService -Identity MyMailboxServer1 -MaxCallsAllowed 50
+```powershell
+Set-UMService -Identity MyMailboxServer1 -MaxCallsAllowed 50
+```
 

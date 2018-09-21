@@ -67,7 +67,9 @@ _**トピックの最終更新日:** 2016-12-09_
 
 この例では、April Stewart のメールボックスの削除済みアイテムを 30 日間保存するように構成します。
 
-    Set-Mailbox -Identity - "April Stewart" -RetainDeletedItemsFor 30
+```powershell
+Set-Mailbox -Identity - "April Stewart" -RetainDeletedItemsFor 30
+```
 
 構文およびパラメーターの詳細については、「[Set-Mailbox](https://technet.microsoft.com/ja-jp/library/bb123981\(v=exchg.150\))」を参照してください。
 
@@ -101,7 +103,9 @@ _**トピックの最終更新日:** 2016-12-09_
 
 この例では、メールボックス データベース MDB2 の削除済みアイテムの保存期間を 10 日間に構成します。
 
-    Set-MailboxDatabase -Identity MDB2 -DeletedItemRetention 10
+```powershell
+Set-MailboxDatabase -Identity MDB2 -DeletedItemRetention 10
+```
 
 構文およびパラメーターの詳細については、「[Set-MailboxDatabase](https://technet.microsoft.com/ja-jp/library/bb123971\(v=exchg.150\))」を参照してください。
 
@@ -115,7 +119,9 @@ _**トピックの最終更新日:** 2016-12-09_
 
 この例では、メールボックス データベース MDB2 の回復可能なアイテムの警告クォータを 15 GB に、回復可能なアイテムのクォータを 20 GB に構成します。
 
-    Set-MailboxDatabase -Identity MDB2 -RecoverableItemsWarningQuota 15GB -RecoverableItemsQuota 20GB
+```powershell
+Set-MailboxDatabase -Identity MDB2 -RecoverableItemsWarningQuota 15GB -RecoverableItemsQuota 20GB
+```
 
 構文およびパラメーターの詳細については、「[Set-MailboxDatabase](https://technet.microsoft.com/ja-jp/library/bb123971\(v=exchg.150\))」を参照してください。
 

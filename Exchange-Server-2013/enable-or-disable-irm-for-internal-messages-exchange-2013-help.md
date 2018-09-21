@@ -47,7 +47,9 @@ IRM に関連する追加の管理タスクについては、「[Information Rig
 
 この例では、Exchange 組織の内部メッセージの IRM を有効にします。
 
-    Set-IRMConfiguration -InternalLicensingEnabled $true
+```powershell
+Set-IRMConfiguration -InternalLicensingEnabled $true
+```
 
 構文およびパラメーターの詳細については、「[Set-IRMConfiguration](https://technet.microsoft.com/ja-jp/library/dd979792\(v=exchg.150\))」を参照してください。
 
@@ -55,7 +57,9 @@ IRM に関連する追加の管理タスクについては、「[Information Rig
 
 この例では、Exchange 組織の内部メッセージの IRM を無効にします。
 
-    Set-IRMConfiguration -InternalLicensingEnabled $false
+```powershell
+Set-IRMConfiguration -InternalLicensingEnabled $false
+```
 
 構文およびパラメーターの詳細については、「[Set-IRMConfiguration](https://technet.microsoft.com/ja-jp/library/dd979792\(v=exchg.150\))」を参照してください。
 

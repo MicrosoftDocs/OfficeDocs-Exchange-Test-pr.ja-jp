@@ -61,7 +61,9 @@ IRM に関連する追加の管理タスクについては、「[Information Rig
 
 この例では、Exchange 2013 組織のトランスポート復号化を有効にします。復号化できないメッセージは拒否され、サーバーに NDR が返されます。
 
-    Set-IRMConfiguration -TransportDecryptionSetting Mandatory
+```powershell
+Set-IRMConfiguration -TransportDecryptionSetting Mandatory
+```
 
 構文およびパラメーターの詳細については、「[Set-IRMConfiguration](https://technet.microsoft.com/ja-jp/library/dd979792\(v=exchg.150\))」を参照してください。
 
@@ -69,7 +71,9 @@ IRM に関連する追加の管理タスクについては、「[Information Rig
 
 この例では、Exchange 2013 組織のトランスポート復号化を無効にします。
 
-    Set-IRMConfiguration -TransportDecryptionSetting Disabled
+```powershell
+Set-IRMConfiguration -TransportDecryptionSetting Disabled
+```
 
 構文およびパラメーターの詳細については、「[Set-IRMConfiguration](https://technet.microsoft.com/ja-jp/library/dd979792\(v=exchg.150\))」を参照してください。
 

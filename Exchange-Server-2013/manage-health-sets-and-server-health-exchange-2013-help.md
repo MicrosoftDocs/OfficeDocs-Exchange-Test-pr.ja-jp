@@ -76,7 +76,9 @@ Get-ExchangeServer | Get-HealthReport -RollupGroup -HealthSetName <HealthSet>
 
 次のコマンドを実行して、Exchange 2013 を稼働しているサーバーの正常性セットを表示します。
 
-    Get-HealthReport -Server <ServerName>
+```powershell
+Get-HealthReport -Server <ServerName>
+```
 
 ## 正常性セットのプローブ、モニター、レスポンダーの表示
 

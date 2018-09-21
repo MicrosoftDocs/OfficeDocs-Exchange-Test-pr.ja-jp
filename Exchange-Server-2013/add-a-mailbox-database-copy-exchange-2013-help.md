@@ -71,11 +71,15 @@ _**トピックの最終更新日:** 2012-10-30_
 
 この例では、メールボックス データベース DB1 のコピーをメールボックス サーバー MBX3 に追加します。再生ラグ タイムと切り詰めラグ タイムは、既定値 0 のままであり、ライセンス認証の設定は値 2 で構成されます。
 
-    Add-MailboxDatabaseCopy -Identity DB1 -MailboxServer MBX3 -ActivationPreference 2
+```powershell
+Add-MailboxDatabaseCopy -Identity DB1 -MailboxServer MBX3 -ActivationPreference 2
+```
 
 この例では、メールボックス データベース DB2 のコピーをメールボックス サーバー MBX4 に追加します。再生ラグ タイムと切り詰めラグ タイムは、既定値 0 のままであり、ライセンス認証の設定は値 `5` で構成されます。さらに、現在のアクティブなデータベース コピーの代わりに、MBX4 とは地理的に離れた場所にあるローカルのシード元サーバーを使用してシードできるように、このコピーのシード処理は延期されます。
 
-    Add-MailboxDatabaseCopy -Identity DB2 -MailboxServer MBX4 -ActivationPreference 5 -SeedingPostponed
+```powershell
+Add-MailboxDatabaseCopy -Identity DB2 -MailboxServer MBX4 -ActivationPreference 5 -SeedingPostponed
+```
 
 この例では、メールボックス データベース DB3 のコピーをメールボックス サーバー MBX5 に追加します。再生ラグ タイムは 3 日に設定され、切り詰めラグ タイムは既定値 0 のままであり、ライセンス認証の設定は値 `4` で構成されます。
 
@@ -89,7 +93,9 @@ _**トピックの最終更新日:** 2012-10-30_
 
   - シェルで次のコマンドを実行して、メールボックス データベースのコピーが作成され、かつ正常な状態にあることを確認します。
     
-        Get-MailboxDatabaseCopyStatus <DatabaseCopyName>
+    ```powershell
+Get-MailboxDatabaseCopyStatus <DatabaseCopyName>
+```
     
     ステータスとコンテンツ インデックス ステータスの両方が正常である必要があります。
 

@@ -41,9 +41,13 @@ Exchange 管理シェルを使用して、リモート ドメイン経由での�
 
 この例では、Contoso という名前のリモート ドメインへの配信レポートを無効にします。既定では、この設定は有効になっています。
 
-    Set-RemoteDomain Contoso -DeliveryReportEnabled $false
+```powershell
+Set-RemoteDomain Contoso -DeliveryReportEnabled $false
+```
 
 この例では、リモート ドメインへの配信不能レポートを無効にします。既定では、この設定は有効になっています。
 
-    Set-RemoteDomain Contoso -NDREnabled $false
+```powershell
+Set-RemoteDomain Contoso -NDREnabled $false
+```
 

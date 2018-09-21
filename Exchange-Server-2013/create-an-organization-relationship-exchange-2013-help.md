@@ -113,7 +113,9 @@ _**トピックの最終更新日:** 2015-04-07_
 
 組織の関係が正常に作成されたことをさらに確認するには、次のシェル コマンドを実行して組織の関係の情報を確認します。
 
-    Get-OrganizationRelationship | format-list
+```powershell
+Get-OrganizationRelationship | format-list
+```
 
 
 > [!TIP]

@@ -87,7 +87,9 @@ Microsoft Exchange Server 2013 での管理役割スコープおよび割り当�
 
 サーバー フィルター スコープを作成するには、次の構文を使用します。
 
-    New-ManagementScope -Name <scope name> -ServerRestrictionFilter <filter query>
+```powershell
+New-ManagementScope -Name <scope name> -ServerRestrictionFilter <filter query>
+```
 
 この例では、すべてのサーバーを 'CN=Redmond,CN=Sites,CN=Configuration,DC=contoso,DC=com' AD (Active Directory) サイト内に含めるスコープを作成します。
 
@@ -101,11 +103,15 @@ Microsoft Exchange Server 2013 での管理役割スコープおよび割り当�
 
 サーバー リスト スコープを作成するには、次の構文を使用します。
 
-    New-ManagementScope -Name <scope name> -ServerList <server 1>, <server 2...>
+```powershell
+New-ManagementScope -Name <scope name> -ServerList <server 1>, <server 2...>
+```
 
 この例では、MBX1、MBX3、および MBX5 のみに適用されるスコープを作成します。
 
-    New-ManagementScope -Name "Mailbox servers" -ServerList MBX1,MBX3,MBX5
+```powershell
+New-ManagementScope -Name "Mailbox servers" -ServerList MBX1,MBX3,MBX5
+```
 
 構文およびパラメーターの詳細については、「[New-ManagementScope](https://technet.microsoft.com/ja-jp/library/dd335137\(v=exchg.150\))」を参照してください。
 
@@ -123,7 +129,9 @@ Microsoft Exchange Server 2013 での管理役割スコープおよび割り当�
 
 データベース制限フィルターを作成するには、次の構文を使用します。
 
-    New-ManagementScope -Name <scope name> -DatabaseRestrictionFilter <filter query>
+```powershell
+New-ManagementScope -Name <scope name> -DatabaseRestrictionFilter <filter query>
+```
 
 この例では、データベースの **Name** プロパティに "Executive" という文字列が含まれる全データベースを含むスコープを作成します。
 
@@ -143,11 +151,15 @@ Microsoft Exchange Server 2013 での管理役割スコープおよび割り当�
 
 データベース リスト スコープを作成するには、次の構文を使用します。
 
-    New-ManagementScope -Name <scope name> -DatabaseList <database 1>, <database 2...>
+```powershell
+New-ManagementScope -Name <scope name> -DatabaseList <database 1>, <database 2...>
+```
 
 この例では、"Database 1"、"Database 2"、および "Database 3" のみに適用されるスコープを作成します。
 
-    New-ManagementScope -Name "Primary databases" -DatabaseList "Database 1", "Database 2", "Database 3"
+```powershell
+New-ManagementScope -Name "Primary databases" -DatabaseList "Database 1", "Database 2", "Database 3"
+```
 
 構文およびパラメーターの詳細については、「[New-ManagementScope](https://technet.microsoft.com/ja-jp/library/dd335137\(v=exchg.150\))」を参照してください。
 

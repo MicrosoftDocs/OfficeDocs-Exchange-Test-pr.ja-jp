@@ -119,7 +119,9 @@ Exchange の特定のバージョンのグローバル オーバーライドを�
 
 グローバル オーバーライドが正常に作成されたことを確認するには、**Get-GlobalMonitoringOverride** コマンドレットを使ってグローバル オーバーライドの一覧を表示します。
 
-    Get-GlobalMonitoringOverride
+```powershell
+Get-GlobalMonitoringOverride
+```
 
 作成したオーバーライドが一覧に表示されます。
 
@@ -137,7 +139,9 @@ Exchange の特定のバージョンのグローバル オーバーライドを�
 
 グローバル オーバーライドが正常に削除されたことを確認するには、**Get-GlobalMonitoringOverride** コマンドレットを使ってグローバル オーバーライドの一覧を表示します。
 
-    Get-GlobalMonitoringOverride
+```powershell
+Get-GlobalMonitoringOverride
+```
 
 削除されたオーバーライドは、一覧には表示されません。
 

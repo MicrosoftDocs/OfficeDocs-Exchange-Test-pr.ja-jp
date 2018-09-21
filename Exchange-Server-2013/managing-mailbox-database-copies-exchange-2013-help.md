@@ -165,7 +165,9 @@ Exchange 2013 でデータベース コピーと訴訟ホールド機能を用�
 
 遅延コピーのログ再生動作は既定では無効で、有効にするには次のコマンドを実行します。
 
-    Set-DatabaseAvailabilityGroup <DAGName> -ReplayLagManagerEnabled $true
+```powershell
+Set-DatabaseAvailabilityGroup <DAGName> -ReplayLagManagerEnabled $true
+```
 
 有効にすると、コピーが 3 つ未満の場合にログ再生が発生します。次の DWORD レジストリ値を変更することで、既定値の 3 を変更できます。
 
@@ -614,11 +616,15 @@ RedistributeActiveDatabases.ps1 スクリプトを使用すると、DAG 全体�
 
 この例は、優先順位カウント一覧を含む DAG の現在のデータベース配布を示します。
 
-    RedistributeActiveDatabases.ps1 -DagName DAG1 -ShowDatabaseDistributionByServer | Format-Table
+```powershell
+RedistributeActiveDatabases.ps1 -DagName DAG1 -ShowDatabaseDistributionByServer | Format-Table
+```
 
 この例では、入力を促すメッセージを表示しないで、アクティブ化優先順位を使用して、DAG 内のアクティブなメールボックス データベース コピーを再配布しバランスをとります。
 
-    RedistributeActiveDatabases.ps1 -DagName DAG1 -BalanceDbsByActivationPreference -Confirm:$False
+```powershell
+RedistributeActiveDatabases.ps1 -DagName DAG1 -BalanceDbsByActivationPreference -Confirm:$False
+```
 
 この例では、アクティブ化優先順位を使用して、DAG 内のアクティブなメールボックス データベース コピーを再配布しバランスをとり、配布の概要を生成します。
 

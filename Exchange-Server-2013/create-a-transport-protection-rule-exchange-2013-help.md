@@ -76,7 +76,9 @@ Information Rights Management (IRM) に関連するその他の管理タスク�
 
   - トランスポート保護ルールは、AD RMS 展開に既存の RMS テンプレートがないと作成できません。この例では、AD RMS クラスターから使用できるテンプレートを取得します。
     
-        Get-RMSTemplate | format-list
+    ```powershell
+Get-RMSTemplate | format-list
+```
     
     構文およびパラメーターの詳細については、「[Get-RMSTemplate](https://technet.microsoft.com/ja-jp/library/dd297960\(v=exchg.150\))」を参照してください。
 

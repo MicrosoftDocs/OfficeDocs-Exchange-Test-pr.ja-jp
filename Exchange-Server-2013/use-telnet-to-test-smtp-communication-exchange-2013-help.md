@@ -127,7 +127,9 @@ Telnet をポート 25 で使用して相手先の SMTP サーバーに接続�
 
 8.  「**DATA**」と入力し、Enter キーを押します。以下のような応答を受信します。
     
-        354 Start mail input; end with <CLRF>.<CLRF>
+    ```powershell
+354 Start mail input; end with <CLRF>.<CLRF>
+```
 
 9.  「**Subject:Test from Contoso**」と入力し、Enter キーを押します。
 
@@ -137,11 +139,15 @@ Telnet をポート 25 で使用して相手先の SMTP サーバーに接続�
 
 12. Enter キーを押し、ピリオド ( **.** ) を入力して、再度 Enter キーを押します。以下のような応答を受信します。
     
-        250 2.6.0 <GUID> Queued mail for delivery
+    ```powershell
+250 2.6.0 <GUID> Queued mail for delivery
+```
 
 13. 相手先の SMTP サーバーとの接続を解除するには、「**QUIT**」と入力し、Enter キーを押します。以下のような応答を受信します。
     
-        221 2.0.0 Service closing transmission channel
+    ```powershell
+221 2.0.0 Service closing transmission channel
+```
 
 14. Telnet セッションを閉じるには、「**quit**」と入力し、Enter キーを押します。
 

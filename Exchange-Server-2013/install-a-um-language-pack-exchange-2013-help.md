@@ -67,7 +67,9 @@ UM 言語に関連した追加タスクについては、「[UM 言語、プロ�
 
 この例では、メールボックス サーバーの D:\\Exchange\\UMLanguagePacks フォルダーにダウンロードした日本語 (ja-JP) の UM 言語パックをインストールします。
 
-    setup.exe /AddUmLanguagePack:ja-JP /s:d:\Exchange\UMLanguagePacks /IAcceptExchangeServerLicenseTerms
+```powershell
+setup.exe /AddUmLanguagePack:ja-JP /s:d:\Exchange\UMLanguagePacks /IAcceptExchangeServerLicenseTerms
+```
 
 この例では、メールボックス サーバーの D:\\Exchange\\UMLanguagePacks フォルダーにダウンロードしたメキシコのスペイン語 (es-MX) の UM 言語パックおよびドイツ語 (de-DE) の UM 言語パックをインストールします。
 

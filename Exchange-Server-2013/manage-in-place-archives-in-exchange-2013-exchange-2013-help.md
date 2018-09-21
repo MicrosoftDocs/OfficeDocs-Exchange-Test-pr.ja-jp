@@ -124,7 +124,9 @@ _**トピックの最終更新日:** 2016-02-01_
 
 この例では、Tony Smith のメールボックスのアーカイブを有効にします。
 
-    Enable-Mailbox "Tony Smith" -Archive
+```powershell
+Enable-Mailbox "Tony Smith" -Archive
+```
 
 この例では、社内またはクラウドベースのアーカイブが有効化されておらず、名前の先頭に DiscoverySearchMailbox が付いていないデータベース DB01 内のメールボックスを取得します。**Enable-Mailbox** コマンドレットに結果をパイプして、メールボックス データベース DB01 のすべてのメールボックスに対してアーカイブを有効にします。
 
@@ -174,7 +176,9 @@ _**トピックの最終更新日:** 2016-02-01_
 
 次の使用例は、Chris Ashton のメールボックス用のアーカイブを無効にします。これは、メールボックスを無効にしません。
 
-    Disable-Mailbox -Identity "Chris Ashton" -Archive
+```powershell
+Disable-Mailbox -Identity "Chris Ashton" -Archive
+```
 
 構文およびパラメーターの詳細については、「[Disable-Mailbox](https://technet.microsoft.com/ja-jp/library/aa997210\(v=exchg.150\))」を参照してください。
 

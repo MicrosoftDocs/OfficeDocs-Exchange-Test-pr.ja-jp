@@ -59,7 +59,9 @@ _**トピックの最終更新日:** 2013-08-13_
 
 メールボックス データベースを自動配布から除外するには、次のコマンドを使用します。
 
-    Set-MailboxDatabase <database name> -IsExcludedFromProvisioning $True
+```powershell
+Set-MailboxDatabase <database name> -IsExcludedFromProvisioning $True
+```
 
 メールボックス データベースが自動配布から除外されている場合、そのデータベースにメールボックスを作成する、またはメールボックスを移動するには、**New-Mailbox** および **Enable-Mailbox** コマンドレットの *Database* パラメーター、または **New-MoveRequest** コマンドレットの *TargetDatabase* パラメーターを使用するのが唯一の方法です。
 

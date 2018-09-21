@@ -101,7 +101,9 @@ EAC またはシェルを使用して、削除済みメールボックスを Act
 
 この例では、ユーザー メールボックスを接続しています。*Identity* パラメーターでは、MBXDB01 という名前のメールボックス データベースに保持された、削除済みメールボックスの表示名を指定します。*User* パラメーターでは、メールボックスを接続する Active Directory ユーザー アカウントを指定します。
 
-    Connect-Mailbox -Identity "Paul Cannon" -Database MBXDB01 -User "Robin Wood" -Alias robinw
+```powershell
+Connect-Mailbox -Identity "Paul Cannon" -Database MBXDB01 -User "Robin Wood" -Alias robinw
+```
 
 
 > [!NOTE]
@@ -143,7 +145,9 @@ EAC またはシェルを使用して、削除済みメールボックスを Act
 
   - シェルで、次のコマンドを実行します。
     
-        Get-User <identity>
+    ```powershell
+Get-User <identity>
+```
     
     *RecipientType* プロパティの **UserMailbox** 値は、ユーザー アカウントとメールボックスが接続されていることを示します。**Get-Mailbox \<identity\>** コマンドを実行して、メールボックスが接続されたことを確認することもできます。
 
@@ -183,7 +187,9 @@ EAC またはシェルを使用して、削除済みメールボックスを Act
 
 1.  次のコマンドレットを実行して Active Directory フォレストとドメイン コント ローラーの完全修飾ドメイン名 (FQDN) を取得します。
     
-        Get-OrganizationConfig | fl OriginatingServer
+    ```powershell
+Get-OrganizationConfig | fl OriginatingServer
+```
 
 2.  手順 1 で返される情報を使用して、パブリック フォルダー メールボックスの GUID と、削除されたパブリック フォルダー メールボックスが含まれていたメールボックス データベースの GUID または名前を、Active Directory の削除済みオブジェクト コンテナーで検索します。
     

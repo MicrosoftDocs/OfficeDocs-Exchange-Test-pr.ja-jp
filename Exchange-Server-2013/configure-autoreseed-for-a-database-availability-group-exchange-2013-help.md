@@ -53,11 +53,15 @@ DAG に関連する追加の管理タスクについては、「[データベー
 
 この例では、データベースのルート パスを構成する方法を示します。
 
-    Set-DatabaseAvailabilityGroup DAG1 -AutoDagDatabasesRootFolderPath "C:\ExchDbs"
+```powershell
+Set-DatabaseAvailabilityGroup DAG1 -AutoDagDatabasesRootFolderPath "C:\ExchDbs"
+```
 
 この例では、ストレージ ボリュームのルート パスを構成する方法を示します。
 
-    Set-DatabaseAvailabilityGroup DAG1 -AutoDagVolumesRootFolderPath "C:\ExchVols"
+```powershell
+Set-DatabaseAvailabilityGroup DAG1 -AutoDagVolumesRootFolderPath "C:\ExchVols"
+```
 
 ## このステップの検証方法
 
@@ -73,7 +77,9 @@ DAG に関連する追加の管理タスクについては、「[データベー
 
 この例では、ボリュームごとに 4 つずつのデータベースで構成されている DAG にこの AutoReseed 設定を構成する方法を示します。
 
-    Set-DatabaseAvailabilityGroup DAG1 -AutoDagDatabaseCopiesPerVolume 4
+```powershell
+Set-DatabaseAvailabilityGroup DAG1 -AutoDagDatabaseCopiesPerVolume 4
+```
 
 ## このステップの検証方法
 
@@ -94,7 +100,9 @@ DAG に関連する追加の管理タスクについては、「[データベー
 
 データベースとボリュームのルート ディレクトリが正常に構成されたことを確認するには、次のコマンドを実行します。
 
-    Dir C:\
+```powershell
+Dir C:\
+```
 
 作成されたディレクトリの出力の一覧が表示されます。
 
@@ -114,7 +122,9 @@ DAG に関連する追加の管理タスクについては、「[データベー
 
 ボリューム フォルダーが正常にマウントされたことを確認するには、次のコマンドを実行します。
 
-    Dir C:\
+```powershell
+Dir C:\
+```
 
 マウントされたボリュームの出力の一覧が表示されます。
 
@@ -138,7 +148,9 @@ md c:\ExchangeDatabases\db004
 
 データベース フォルダーが正常にマウントされたことを確認するには、次のコマンドを実行します。
 
-    Dir C:\ExchangeDatabases
+```powershell
+Dir C:\ExchangeDatabases
+```
 
 作成されたディレクトリの出力の一覧が表示されます。
 
@@ -152,7 +164,9 @@ md c:\ExchangeDatabases\db004
 
 データベースのマウント ポイントが正常に作成されたことを確認するには、次のコマンドを実行します。
 
-    Mountvol.exe C:\ExchangeDatabases\db001 /L
+```powershell
+Mountvol.exe C:\ExchangeDatabases\db001 /L
+```
 
 マウントされたボリュームのマウント ポイントの一覧が表示されます。
 
@@ -196,7 +210,9 @@ md c:\ExchangeDatabases\db004\db004.log
 
 データベースのディレクトリ構造が正常に作成されたことを確認するには、次のコマンドを実行します。
 
-    Dir C:\ExchangeDatabases /s
+```powershell
+Dir c:\ExchangeDatabases /s
+```
 
 作成されたディレクトリの出力の一覧が表示されます。
 
@@ -224,8 +240,12 @@ DAG に AutoReseed が構成されたことを確認するには、次の手順�
 
 2.  ディレクトリ構造が正しく構成されていることを確認するには、次のコマンドを実行します (既定のパスは以下のとおりです。必要に応じて、パスを使用しているパスに置き換えてください)。
     ```
-    Dir c:\ExchangeDatabases /s
+```powershell
+Dir c:\ExchangeDatabases /s
+```
     ```
     ```
-    Dir c:\ExchangeVolumes /s
+```powershell
+Dir c:\ExchangeVolumes /s
+```
     ```

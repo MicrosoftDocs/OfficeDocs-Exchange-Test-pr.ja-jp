@@ -45,11 +45,15 @@ _**トピックの最終更新日:** 2012-10-03_
 
 役割から全体的な管理役割エントリを削除するには、次の構文を使用します。
 
-    Remove-ManagementRoleEntry <management role>\<management role entry>
+```powershell
+Remove-ManagementRoleEntry <management role>\<management role entry>
+```
 
 この例では、"Seattle Server Administrators/Seattle のサーバー管理者" という役割から **Enable-MailUser** コマンドレットを削除します。
 
-    Remove-ManagementRoleEntry "Seattle Server Administrators\Enable-MailUser"
+```powershell
+Remove-ManagementRoleEntry "Seattle Server Administrators\Enable-MailUser"
+```
 
 構文およびパラメーターの詳細については、「[Remove-ManagementRoleEntry](https://technet.microsoft.com/ja-jp/library/dd351187\(v=exchg.150\))」を参照してください。
 

@@ -73,10 +73,14 @@ Exchange 2013 の仮想ディレクトリを構成するには、次のコマン
     
     Outlook Web App の仮想ディレクトリを設定したら、コマンド プロンプトで次のコマンドを実行します。
       ```
-      Net stop IISAdmin /y
+  ```powershell
+Net stop IISAdmin /y
+```
       ```
       ```
-      Net start W3SVC
+  ```powershell
+Net start W3SVC
+```
       ```
       
 2.  外部 EAC アクセスを構成するには、Exchange 管理シェルで次のコマンドを実行します。

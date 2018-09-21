@@ -57,11 +57,15 @@ _**トピックの最終更新日:** 2012-11-02_
 
 この例では、サーバー MBX2 上にあるデータベース DB1 のコピーのアクティブ化をブロックします。
 
-    Suspend-MailboxDatabaseCopy -Identity DB1\MBX2 -ActivationOnly
+```powershell
+Suspend-MailboxDatabaseCopy -Identity DB1\MBX2 -ActivationOnly
+```
 
 この例では、サーバー MBX2 上にあるデータベース DB1 のコピーのアクティブ化を再開します。
 
-    Resume-MailboxDatabaseCopy -Identity DB1\MBX2
+```powershell
+Resume-MailboxDatabaseCopy -Identity DB1\MBX2
+```
 
 構文およびパラメーターの詳細については、「[Suspend-MailboxDatabaseCopy](https://technet.microsoft.com/ja-jp/library/dd351074\(v=exchg.150\))」または「[Resume-MailboxDatabaseCopy](https://technet.microsoft.com/ja-jp/library/dd335220\(v=exchg.150\))」を参照してください。
 
@@ -69,15 +73,21 @@ _**トピックの最終更新日:** 2012-11-02_
 
 この例では、サーバー MBX2 上のデータベース コピーについて、アクティブ化をブロックするように構成します。
 
-    Set-MailboxServer -Identity MBX2 -DatabaseCopyAutoActivationPolicy Blocked
+```powershell
+Set-MailboxServer -Identity MBX2 -DatabaseCopyAutoActivationPolicy Blocked
+```
 
 この例では、サーバー MBX3 上のデータベース コピーについて、サイト外のアクティブ化をブロックするように構成します。
 
-    Set-MailboxServer -Identity MBX3 -DatabaseCopyAutoActivationPolicy IntrasiteOnly
+```powershell
+Set-MailboxServer -Identity MBX3 -DatabaseCopyAutoActivationPolicy IntrasiteOnly
+```
 
 この例では、サーバー MBX4 上のデータベース コピーについて、アクティブ化のブロックを解除するように構成します。
 
-    Set-MailboxServer -Identity MBX4 -DatabaseCopyAutoActivationPolicy Unrestricted
+```powershell
+Set-MailboxServer -Identity MBX4 -DatabaseCopyAutoActivationPolicy Unrestricted
+```
 
 構文およびパラメーターの詳細については、「[Suspend-MailboxDatabaseCopy](https://technet.microsoft.com/ja-jp/library/dd351074\(v=exchg.150\))」、「[Resume-MailboxDatabaseCopy](https://technet.microsoft.com/ja-jp/library/dd335220\(v=exchg.150\))」または「[Set-MailboxServer](https://technet.microsoft.com/ja-jp/library/aa998651\(v=exchg.150\))」を参照してください。
 
@@ -87,9 +97,13 @@ _**トピックの最終更新日:** 2012-11-02_
 
   - シェルで次のコマンドを実行して、データベース コピーのアクティブ化設定を確認します。
     
-        Get-MailboxDatabaseCopyStatus <DatabaseCopyName> | Format-List ActivationSuspended
+    ```powershell
+Get-MailboxDatabaseCopyStatus <DatabaseCopyName> | Format-List ActivationSuspended
+```
 
   - シェルで次のコマンドを実行して、DAG メンバーのアクティブ化設定を確認します。
     
-        Get-MailboxServer <ServerName> | Format-List DatabaseCopyAutoActivationPolicy
+    ```powershell
+Get-MailboxServer <ServerName> | Format-List DatabaseCopyAutoActivationPolicy
+```
 

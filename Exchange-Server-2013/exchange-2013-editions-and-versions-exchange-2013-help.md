@@ -37,7 +37,9 @@ Exchange 2013 バージョンの一覧と、Exchange 2013 の最新バージョ�
 
 実行している Exchange 2013 バージョンのビルド番号を表示するには、Exchange 管理シェルで次のコマンドを実行します。
 
-    Get-ExchangeServer | fl name,edition,admindisplayversion
+```powershell
+Get-ExchangeServer | fl name,edition,admindisplayversion
+```
 
 ## Exchange 2013 ライセンスの種類
 

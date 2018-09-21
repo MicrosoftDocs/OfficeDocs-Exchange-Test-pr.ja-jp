@@ -79,15 +79,21 @@ _**トピックの最終更新日:** 2015-04-08_
 
 1.  コマンド プロンプト ウィンドウで、次のコマンドを実行して、EdgeTransport.exe.config アプリケーション構成ファイルをメモ帳で開きます。
     
-        Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
+    ```powershell
+Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
+```
 
 2.  `<appSettings>` セクションで以下のキーを変更します。
     
-        <add key="RoutingConfigReloadInterval" value="<hh:mm:ss>" />
+    ```command line
+<add key="RoutingConfigReloadInterval" value="<hh:mm:ss>" />
+```
     
     たとえば、ルーティング テーブルの自動再計算の間隔を 10 時間に変更するには、次の値を使用します。
     
-        <add key="RoutingConfigReloadInterval" value="10:00:00" />
+    ```command line
+<add key="RoutingConfigReloadInterval" value="10:00:00" />
+```
 
 3.  完了したら、EdgeTransport.exe.config ファイルを保存して閉じます。
 

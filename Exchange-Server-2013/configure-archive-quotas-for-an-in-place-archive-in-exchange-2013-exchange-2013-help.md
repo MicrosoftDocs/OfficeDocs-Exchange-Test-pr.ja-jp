@@ -61,7 +61,9 @@ _**トピックの最終更新日:** 2012-12-04_
 
 この例では、Chris Ashton のメールボックスのアーカイブ クォータを 10 ギガバイト (GB) に設定します。この値に達すると、インプレース アーカイブがいっぱいで、項目をアーカイブに移動できなくなることを伝える警告メッセージがユーザーに送信されます。また、この例では、アーカイブ警告クォータを 9.5 GB に設定します。この値に達すると、インプレース アーカイブがほぼいっぱいになったことを伝える警告メッセージがユーザーに送信されます。
 
-    Set-Mailbox -Identity "Chris Ashton" -ArchiveQuota 10GB -ArchiveWarningQuota 9.5GB
+```powershell
+Set-Mailbox -Identity "Chris Ashton" -ArchiveQuota 10GB -ArchiveWarningQuota 9.5GB
+```
 
 構文およびパラメーターの詳細については、「[Set-Mailbox](https://technet.microsoft.com/ja-jp/library/bb123981\(v=exchg.150\))」を参照してください。
 

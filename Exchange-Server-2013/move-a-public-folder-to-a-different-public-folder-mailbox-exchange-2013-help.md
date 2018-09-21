@@ -89,7 +89,9 @@ _**トピックの最終更新日:** 2016-11-16_
 
 パブリック フォルダーの移動要求が成功したことを確認するには、次のコマンドを実行します。
 
-    Get-PublicFolderMoveRequest | Format-List Status
+```powershell
+Get-PublicFolderMoveRequest | Format-List Status
+```
 
 状態が `Completed` であれば、移動要求は成功しています。
 

@@ -65,11 +65,15 @@ Microsoft Exchange Server 2013 では、Exchange ツールボックスのキュ�
 
 この例では、"Win Big" という件名を持つメッセージを、NDR を送信せずにキューから削除します。
 
-    Remove-Message -Filter {Subject -eq "Win Big"} -WithNDR $false
+```powershell
+Remove-Message -Filter {Subject -eq "Win Big"} -WithNDR $false
+```
 
 この例では、Mailbox01 というサーバーの到達不能キューからメッセージ ID 3 のメッセージを削除して、NDR を送信します。
 
-    Remove-Message -Identity Mailbox01\Unreachable\3 -WithNDR $true
+```powershell
+Remove-Message -Identity Mailbox01\Unreachable\3 -WithNDR $true
+```
 
 ## 正常な動作を確認する方法
 
@@ -107,7 +111,9 @@ Microsoft Exchange Server 2013 では、Exchange ツールボックスのキュ�
 
 メッセージを再開するには、次の構文を使用します。
 
-    Resume-Message <-Identity MessageIdentity | -Filter {MessageFilter}>
+```powershell
+Resume-Message <-Identity MessageIdentity | -Filter {MessageFilter}>
+```
 
 この例では、Contoso.com ドメインの送信者から送信されるすべてのメッセージを再開します。
 
@@ -115,7 +121,9 @@ Microsoft Exchange Server 2013 では、Exchange ツールボックスのキュ�
 
 この例では、サーバー Hub01 上の到達不能キュー内にあるメッセージ ID 3 のメッセージを再開します。
 
-    Resume-Message -Identity Hub01\Unreachable\3
+```powershell
+Resume-Message -Identity Hub01\Unreachable\3
+```
 
 有害メッセージ キューからメッセージを再送信するには、次の手順に従います。
 
@@ -149,7 +157,9 @@ Microsoft Exchange Server 2013 では、Exchange ツールボックスのキュ�
 
 メッセージを中断するには、次の構文を使用します。
 
-    Suspend-Message <-Identity MessageIdentity | -Filter {MessageFilter}>
+```powershell
+Suspend-Message <-Identity MessageIdentity | -Filter {MessageFilter}>
+```
 
 この例では、ドメイン contoso.com 内の任意の送信者から送信されたキュー内のすべてのメッセージを中断します。
 
@@ -157,7 +167,9 @@ Microsoft Exchange Server 2013 では、Exchange ツールボックスのキュ�
 
 この例では、Mailbox01 というサーバー上の到達不能キュー内のメッセージ ID 3 のメッセージを中断します。
 
-    Suspend-Message -Identity Mailbox01\Unreachable\3
+```powershell
+Suspend-Message -Identity Mailbox01\Unreachable\3
+```
 
 ## 正常な動作を確認する方法
 

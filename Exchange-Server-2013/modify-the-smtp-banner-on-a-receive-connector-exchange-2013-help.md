@@ -25,7 +25,9 @@ _**トピックの最終更新日:** 2015-04-08_
 
 受信コネクタの SMTP バナーにカスタム値を指定した場合、その SMTP 受信コネクタに接続するリモート SMTP メッセージング サーバーは、次の応答を受信します。
 
-    220 <Banner Text>
+```powershell
+220 <Banner Text>
+```
 
 サーバー名やメッセージング サーバー ソフトウェアが SMTP バナーによって外部に知られないように、インターネット側の SMTP 受信コネクタの SMTP バナーを変更できます。
 
@@ -51,15 +53,21 @@ _**トピックの最終更新日:** 2015-04-08_
 
 次のコマンドを実行します。
 
-    Set-ReceiveConnector <ConnectorIdentity> -Banner "220 <Banner Text>"
+```powershell
+Set-ReceiveConnector <ConnectorIdentity> -Banner "220 <Banner Text>"
+```
 
 この例では、既存の From the Internet という名前の受信コネクタの SMTP バナーを変更して、SMTP バナーで `220 Contoso Corporation` が表示されるようにします。
 
-    Set-ReceiveConnector "From the Internet" -Banner "220 Contoso Corporation"
+```powershell
+Set-ReceiveConnector "From the Internet" -Banner "220 Contoso Corporation"
+```
 
 この例では、From the Internet という名前の受信コネクタからカスタムの SMTP バナーを削除して、SMTP バナーを既定の値に戻します。
 
-    Set-ReceiveConnector "From the Internet" -Banner $null
+```powershell
+Set-ReceiveConnector "From the Internet" -Banner $null
+```
 
 ## 正常な動作を確認する方法
 
@@ -67,7 +75,9 @@ SMTP バナーの変更が正しく行われたことを確認するには、以
 
 1.  受信コネクタにアクセスできるコンピューター上で Telnet クライアントを開き、次のコマンドを実行します。
     
-        open <Connector FQDN or IP address> <Port>
+    ```powershell
+open <Connector FQDN or IP address> <Port>
+```
 
 2.  受信コネクタの応答に構成した SMTP バナーが含まれていることを確認します。
 

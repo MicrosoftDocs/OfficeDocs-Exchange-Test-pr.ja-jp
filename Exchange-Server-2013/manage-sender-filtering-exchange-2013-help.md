@@ -45,11 +45,15 @@ _**トピックの最終更新日:** 2015-04-08_
 
 送信者のフィルターを無効にするには、次のコマンドを実行します。
 
-    Set-SenderFilterConfig -Enabled $false
+```powershell
+Set-SenderFilterConfig -Enabled $false
+```
 
 送信者フィルターを有効にするには、次のコマンドを実行します。
 
-    Set-SenderFilterConfig -Enabled $true
+```powershell
+Set-SenderFilterConfig -Enabled $true
+```
 
 
 > [!NOTE]
@@ -63,7 +67,9 @@ _**トピックの最終更新日:** 2015-04-08_
 
 1.  次のコマンドを実行します。
     
-        Get-SenderFilterConfig | Format-List Enabled
+    ```powershell
+Get-SenderFilterConfig | Format-List Enabled
+```
 
 2.  表示された値が構成した値であることを確認します。
 
@@ -99,7 +105,9 @@ _**トピックの最終更新日:** 2015-04-08_
 
 1.  次のコマンドを実行します。
     
-        Get-SenderFilterConfig | Format-List BlockedSenders,BlockedDomains,BlockedDomainsAndSubdomains
+    ```powershell
+Get-SenderFilterConfig | Format-List BlockedSenders,BlockedDomains,BlockedDomainsAndSubdomains
+```
 
 2.  表示された値が構成した値であることを確認します。
 
@@ -107,11 +115,15 @@ _**トピックの最終更新日:** 2015-04-08_
 
 送信者が空白のメッセージに対する受信拒否を有効または無効にするには、次のコマンドを実行します。
 
-    Set-SenderFilterConfig -BlankSenderBlockingenabled <$true | $false>
+```powershell
+Set-SenderFilterConfig -BlankSenderBlockingenabled <$true | $false>
+```
 
 この例では、MAIL FROM 欄に送信者が指定されていないメッセージを受信拒否するよう送信者フィルターが構成されています。SMTP コマンド:
 
-    Set-SenderFilterConfig -BlankSenderBlockingEnabled $true
+```powershell
+Set-SenderFilterConfig -BlankSenderBlockingEnabled $true
+```
 
 ## 正常な動作を確認する方法
 
@@ -119,7 +131,9 @@ _**トピックの最終更新日:** 2015-04-08_
 
 1.  次のコマンドを実行します。
     
-        Get-SenderFilterConfig | Format-List BlankSenderBlockingEnabled
+    ```powershell
+Get-SenderFilterConfig | Format-List BlankSenderBlockingEnabled
+```
 
 2.  表示された値が構成した値であることを確認します。
 

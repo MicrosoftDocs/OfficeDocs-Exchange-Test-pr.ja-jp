@@ -61,7 +61,9 @@ _**適用先:** Exchange Online, Exchange Server 2013_
 
 1.  この Exchange 管理シェル コマンドを実行して、ディレクトリを Exchange のインストール先パスの **Scripts** サブディレクトリに変更します。
     
-        Cd $Env:ExchangeInstallPath\Scripts
+    ```powershell
+Cd $Env:ExchangeInstallPath\Scripts
+```
 
 2.  Export-RetentionTags.ps1 スクリプトを実行して保持タグを XML ファイルにエクスポートします。
     
@@ -70,7 +72,9 @@ _**適用先:** Exchange Online, Exchange Server 2013_
     > 保持タグとアイテム保持ポリシーを Exchange Online にインポートまたはエクスポートする場合は、Windows PowerShell セッションを Exchange Online に接続する必要があります。詳細については、「<A href="https://technet.microsoft.com/ja-jp/library/jj984289(v=exchg.150)">リモート PowerShell による Exchange への接続</A>」を参照してください。
 
     
-        .\Export-RetentionTags.ps1 "c:\docs\ExportedRetentionTags.xml"
+    ```powershell
+.\Export-RetentionTags.ps1 "c:\docs\ExportedRetentionTags.xml"
+```
 
 ## 正常な動作を確認する方法
 
@@ -84,7 +88,9 @@ _**適用先:** Exchange Online, Exchange Server 2013_
 
 1.  この Exchange 管理シェル コマンドを実行して、ディレクトリを Exchange のインストール先パスの **Scripts** サブディレクトリに変更します。
     
-        Cd $Env:ExchangeInstallPath\Scripts
+    ```powershell
+Cd $Env:ExchangeInstallPath\Scripts
+```
 
 2.  Import-RetentionTags.ps1 スクリプトを実行し、以前にエクスポートされた XML ファイルから保持タグをインポートします。
     
@@ -98,7 +104,9 @@ _**適用先:** Exchange Online, Exchange Server 2013_
     > このスクリプトを Exchange Online に対して実行すると、信頼されていない発行元からのソフトウェアの実行の確認を求められる可能性があります。発行元の名前が <CODE>CN=Microsoft Corporation, OU=MOPR, O=Microsoft Corporation, L=Redmond, S=Washington, C=US</CODE> と表示されているのを確認してから、<STRONG>[R]</STRONG> をクリックしてスクリプトを 1 回だけ実行するようにするか、<STRONG>[A]</STRONG> をクリックして常に実行するようにします。
 
     
-        .\Import-RetentionTags.ps1 "c:\docs\ExportedRetentionTags.xml"
+    ```powershell
+.\Import-RetentionTags.ps1 "c:\docs\ExportedRetentionTags.xml"
+```
 
 ## 正常な動作を確認する方法
 

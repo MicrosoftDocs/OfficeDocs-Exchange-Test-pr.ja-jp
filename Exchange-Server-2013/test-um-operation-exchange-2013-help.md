@@ -47,15 +47,21 @@ _**トピックの最終更新日:** 2013-06-25_
 
 この例では、ローカルのメールボックス サーバーで接続テストと動作テストを実行し、次にボイス オーバー IP (VoIP) 接続情報を表示します。
 
-    Test-UMConnectivity
+```powershell
+Test-UMConnectivity
+```
 
 この例では、ローカル クライアント アクセス サーバーが TCP ポート 5060 上で、暗号化されていない着信 SIP 要求を待機できるかどうかをテストします。
 
-    Test-UMConnectivity -ListenPort 5060
+```powershell
+Test-UMConnectivity -ListenPort 5060
+```
 
 この例では、ローカル クライアント アクセス サーバーが TCP ポート 5061 上で、暗号化されている着信 SIP 要求を待機できるかどうかをテストします。
 
-    Test-UMConnectivity -ListenPort 5061
+```powershell
+Test-UMConnectivity -ListenPort 5061
+```
 
 
 > [!NOTE]

@@ -51,15 +51,21 @@ _**トピックの最終更新日:** 2016-12-09_
 
 外部ポストマスターのアドレスを構成するには、次の構文を使用します。
 
-    Set-TransportConfig -ExternalPostmasterAddress <postmaster address>
+```powershell
+Set-TransportConfig -ExternalPostmasterAddress <postmaster address>
+```
 
 たとえば、外部ポストマスター アドレスの値を `postmaster@contoso.com` に設定するには、次のコマンドを実行します
 
-    Set-TransportConfig -ExternalPostmasterAddress postmaster@contoso.com
+```powershell
+Set-TransportConfig -ExternalPostmasterAddress postmaster@contoso.com
+```
 
 外部ポストマスターのアドレスを既定値に戻すには、次のコマンドを実行します。
 
-    Set-TransportConfig -ExternalPostmasterAddress $null
+```powershell
+Set-TransportConfig -ExternalPostmasterAddress $null
+```
 
 ## 正常な動作を確認する方法
 
@@ -67,7 +73,9 @@ _**トピックの最終更新日:** 2016-12-09_
 
 1.  メールボックス サーバーで次のコマンドを実行し、外部ポストマスター アドレス値を確認します。
     
-        Get-TransportConfig | Format-List ExternalPostmasterAddress
+    ```powershell
+Get-TransportConfig | Format-List ExternalPostmasterAddress
+```
 
 2.  外部メール アカウントから Exchange 組織にメッセージを送信します。これにより Exchange 組織は配信状態通知 (DSN) を生成します。たとえば、トランスポート ルールを構成して、特定のキーワードを含む送信者からのメッセージに対して、配信不能レポート (NDR) を送信することができます。DSN にある送信者のメール アドレスと、指定した値が一致することを確認します。
 

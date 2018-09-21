@@ -49,7 +49,9 @@ Information Rights Management (IRM) に関連するその他の管理タスク�
 
 この例では、Exchange 組織のジャーナル レポート復号を有効にします。
 
-    Set-IRMConfiguration -JournalReportDecryptionEnabled $true
+```powershell
+Set-IRMConfiguration -JournalReportDecryptionEnabled $true
+```
 
 構文およびパラメーターの詳細については、「[Set-IRMConfiguration](https://technet.microsoft.com/ja-jp/library/dd979792\(v=exchg.150\))」を参照してください。
 
@@ -57,7 +59,9 @@ Information Rights Management (IRM) に関連するその他の管理タスク�
 
 この例では、Exchange 組織のジャーナル レポート復号を無効にします。
 
-    Set-IRMConfiguration -JournalReportDecryptionEnabled $false
+```powershell
+Set-IRMConfiguration -JournalReportDecryptionEnabled $false
+```
 
 構文およびパラメーターの詳細については、「[Set-IRMConfiguration](https://technet.microsoft.com/ja-jp/library/dd979792\(v=exchg.150\))」を参照してください。
 

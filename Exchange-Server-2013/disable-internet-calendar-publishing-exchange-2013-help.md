@@ -69,11 +69,15 @@ _**トピックの最終更新日:** 2014-02-15_
 
 この例では、インターネットの予定表公開に特化した共有ポリシー **インターネット**を無効にします。
 
-    Set-SharingPolicy -Identity "Internet" -Enabled $false
+```powershell
+Set-SharingPolicy -Identity "Internet" -Enabled $false
+```
 
 この例では、インターネットの予定表公開に特化した共有ポリシー **インターネット**を削除します。
 
-    Remove-SharingPolicy -Identity "Internet"
+```powershell
+Remove-SharingPolicy -Identity "Internet"
+```
 
 構文およびパラメーターの詳細については、「[Set-SharingPolicy](https://technet.microsoft.com/ja-jp/library/dd297931\(v=exchg.150\))」を参照してください。
 
@@ -81,7 +85,9 @@ _**トピックの最終更新日:** 2014-02-15_
 
 共有ポリシーが正常に削除または更新されたことを確認するには、次のシェル コマンドを実行して共有ポリシーの情報を確認します。
 
-    Get-SharingPolicy <policy name> | format-list
+```powershell
+Get-SharingPolicy <policy name> | format-list
+```
 
 インターネット予定表公開に特化した共有ポリシーを削除した場合は、コマンドレットの結果にポリシーは表示されません。
 
@@ -105,7 +111,9 @@ _**トピックの最終更新日:** 2014-02-15_
 
 この例では、クライアント アクセス サーバー CAS01 上の Outlook Web App 仮想ディレクトリに対する匿名機能を無効にします。
 
-    Set-OwaVirtualDirectory -Identity "CAS01" - AnonymousFeaturesEnabled -$false
+```powershell
+Set-OwaVirtualDirectory -Identity "CAS01" - AnonymousFeaturesEnabled -$false
+```
 
 構文およびパラメーターの詳細については、「[Set-OwaVirtualDirectory](https://technet.microsoft.com/ja-jp/library/bb123515\(v=exchg.150\))」を参照してください。
 
@@ -113,7 +121,9 @@ _**トピックの最終更新日:** 2014-02-15_
 
 クライアント アクセス サーバー上で Outlook Web App 仮想ディレクトリの匿名機能を正常に無効にしたことを検証するには、次のシェルコマンドを実行して、*AnonymousFeaturesEnabled* パラメーターが `$false` になっていることを確認します。
 
-    Get-OwaVirtualDirectory | format-list
+```powershell
+Get-OwaVirtualDirectory | format-list
+```
 
 構文およびパラメーターの詳細については、「[Get-OwaVirtualDirectory](https://technet.microsoft.com/ja-jp/library/aa998588\(v=exchg.150\))」を参照してください。
 

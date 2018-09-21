@@ -94,7 +94,9 @@ GAL 同期を有効にするには、メールが有効なユーザー、連絡�
 
 この例では、空き時間情報構成オブジェクトの組織全体のアカウントを設定して、ターゲット フォレストの空き時間情報のアクセス レベルを構成します。
 
-    Set-AvailabilityConfig -OrgWideAccount "Contoso.com\User"
+```powershell
+Set-AvailabilityConfig -OrgWideAccount "Contoso.com\User"
+```
 
 この例では、ソース フォレストの空き時間情報アドレス空間構成オブジェクトを追加します。
 

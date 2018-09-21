@@ -127,7 +127,9 @@ ESRA アカウントの詳細、およびこのアカウントを使用して Ed
 
 この例では、エッジ サブスクリプション ファイルをエクスポートします。
 
-    New-EdgeSubscription -FileName "C:\EdgeSubscriptionInfo.xml"
+```powershell
+New-EdgeSubscription -FileName "C:\EdgeSubscriptionInfo.xml"
+```
 
 
 > [!NOTE]  

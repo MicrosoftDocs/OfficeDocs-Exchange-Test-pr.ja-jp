@@ -69,7 +69,9 @@ Multiple namespaces
 
 SMTP が "`550 5.1.1 User unknown`" エラーを返すまでに遅延を構成するには、**Set-ReceiveConnector** コマンドレットで、*TarpitInterval* パラメーターを使用して、タールピット間隔を設定します。構文は次のようになります。
 
-    Set-ReceiveConnector <Receive Connector> -TarpitInterval <00:00:00 to 00:10:00>
+```powershell
+Set-ReceiveConnector <Receive Connector> -TarpitInterval <00:00:00 to 00:10:00>
+```
 
 既定値は `00:00:05`、つまり 5 秒間です。エッジ トランスポート サーバーの既定の受信コネクタの名前は `Default internal receive connector <server name>` です。
 

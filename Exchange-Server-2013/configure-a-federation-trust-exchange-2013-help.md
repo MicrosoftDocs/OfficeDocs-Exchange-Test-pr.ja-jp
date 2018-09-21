@@ -63,7 +63,9 @@ _**トピックの最終更新日:** 2017-07-26_
     
     すべての Exchange 組織で、フェデレーション信頼に Azure AD 認証システムのビジネス インスタンスを使用することをお勧めします。2 つの Exchange 組織間でフェデレーション共有を構成する前に、各 Exchange 組織で既存のフェデレーション信頼に Azure AD 認証システムのどちらのインスタンスが使用されているかを確認する必要があります。Exchange 組織で既存のフェデレーション信頼に使用されている Azure AD 認証システムのインスタンスを判別するには、次のシェル コマンドを実行します。
     
-        Get-FederationInformation -DomainName <hosted Exchange domain namespace>
+    ```powershell
+Get-FederationInformation -DomainName <hosted Exchange domain namespace>
+```
     
     ビジネス インスタンスは、*TokenIssuerURIs* パラメーターに `<uri:federation:MicrosoftOnline>` という値を返します。
     
@@ -137,11 +139,15 @@ _**トピックの最終更新日:** 2017-07-26_
 
 4.  この構文を使用して、フェデレーション信頼用に構成するドメインに必要な、ドメイン所有権の証明の TXT レコードを返します。
     
-        Get-FederatedDomainProof -DomainName <domain>
+    ```powershell
+Get-FederatedDomainProof -DomainName <domain>
+```
     
     この例では、プライマリ共有ドメイン contoso.com に必要なドメイン所有権の証明の TXT レコードを返します。
     
-        Get-FederatedDomainProof -DomainName contoso.com
+    ```powershell
+Get-FederatedDomainProof -DomainName contoso.com
+```
     
     **メモ:** 
     
@@ -153,7 +159,9 @@ _**トピックの最終更新日:** 2017-07-26_
 
 6.  次のコマンドを実行して、Azure AD からメタデータおよび証明書を取得します。
     
-        Set-FederationTrust -RefreshMetadata -Identity "Azure AD authentication"
+    ```powershell
+Set-FederationTrust -RefreshMetadata -Identity "Azure AD authentication"
+```
 
 7.  この構文を使用して、ステップ 3 で作成したフェデレーション信頼のプライマリ共有ドメインを構成します。指定したドメインは、フェデレーション信頼の組織識別子 (OrgID) を構成するために使用されます。OrgID の詳細については、「[フェデレーション組織識別子](federation-exchange-2013-help.md)」を参照してください。
     
@@ -165,11 +173,15 @@ _**トピックの最終更新日:** 2017-07-26_
 
 8.  フェデレーション信頼に他のドメインを追加するには、次の構文を使用します。
     
-        Add-FederatedDomain -DomainName <AdditionalDomain>
+    ```powershell
+Add-FederatedDomain -DomainName <AdditionalDomain>
+```
     
     sales.contoso.com ドメインのメール アドレスを持つユーザーにフェデレーション共有機能が必要なため、この例では、サブドメイン sales.contoso.com をフェデレーション信頼に追加します。
     
-        Add-FederatedDomain -DomainName sales.contoso.com
+    ```powershell
+Add-FederatedDomain -DomainName sales.contoso.com
+```
     
     フェデレーション信頼に追加するドメインまたはサブドメインには、ドメイン所有権の証明の TXT レコードが必要です。
 
@@ -183,11 +195,15 @@ _**トピックの最終更新日:** 2017-07-26_
 
 1.  次のシェル コマンドを実行して、フェデレーション信頼情報を確認します。
     
-        Get-FederationTrust | Format-List
+    ```powershell
+Get-FederationTrust | Format-List
+```
 
 2.  *\<PrimarySharedDomain\>* をプライマリ共有ドメインに置き換え、次のシェル コマンドを実行し、フェデレーション情報を組織から取得できることを確認します。
     
-        Get-FederationInformation -DomainName <PrimarySharedDomain>
+    ```powershell
+Get-FederationInformation -DomainName <PrimarySharedDomain>
+```
 
 構文およびパラメーターの詳細については、「[Get-FederationTrust](https://technet.microsoft.com/ja-jp/library/dd351262\(v=exchg.150\))」と「[Get-FederationInformation](https://technet.microsoft.com/ja-jp/library/dd351221\(v=exchg.150\))」を参照してください。
 

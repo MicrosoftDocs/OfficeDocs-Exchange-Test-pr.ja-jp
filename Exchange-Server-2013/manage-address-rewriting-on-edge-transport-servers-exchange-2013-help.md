@@ -73,7 +73,9 @@ _**トピックの最終更新日:** 2015-04-08_
 
 1.  次のコマンドを実行します。
     
-        Get-TransportAgent
+    ```powershell
+Get-TransportAgent
+```
 
 2.  受信用アドレス書き換えエージェントと送信用アドレス書き換えエージェントの **Enabled** プロパティの値が構成した値になっていることを確認します。
 
@@ -81,15 +83,21 @@ _**トピックの最終更新日:** 2015-04-08_
 
 すべてのアドレス書き換えエントリの要約リストを表示するには、次のコマンドを実行します。
 
-    Get-AddressRewriteEntry
+```powershell
+Get-AddressRewriteEntry
+```
 
 アドレス書き換えエントリの詳細を表示するには、次の構文を使用します。
 
-    Get-AddressRewriteEntry <AddressRewriteEntryIdentity> | Format-List
+```powershell
+Get-AddressRewriteEntry <AddressRewriteEntryIdentity> | Format-List
+```
 
 次の例では、Rewrite Contoso.com to Northwindtraders.com という名前のアドレス書き換えエントリの詳細を表示します。
 
-    Get-AddressRewriteEntry "Rewrite Contoso.com to Northwindtraders.com" | Format-List
+```powershell
+Get-AddressRewriteEntry "Rewrite Contoso.com to Northwindtraders.com" | Format-List
+```
 
 ## シェルを使用してアドレス書き換えエントリを作成する
 
@@ -171,7 +179,9 @@ _**トピックの最終更新日:** 2015-04-08_
 
 次の例では、"Northwind Traders to Contoso" いう名前の単一ドメイン アドレス書き換えエントリの内部アドレス値を変更します。
 
-    Set-AddressRewriteEntry "Northwindtraders to Contoso" -InternalAddress northwindtraders.net
+```powershell
+Set-AddressRewriteEntry "Northwindtraders to Contoso" -InternalAddress northwindtraders.net
+```
 
 ## 複数のサブドメイン内の受信者のアドレス書き換えエントリを変更する
 
@@ -209,11 +219,15 @@ _**トピックの最終更新日:** 2015-04-08_
 
 単一のアドレス書き換えエントリを削除するには、次の構文を使用します。
 
-    Remove-AddressRewriteEntry <AddressRewriteEntryIdentity>
+```powershell
+Remove-AddressRewriteEntry <AddressRewriteEntryIdentity>
+```
 
 次の例では、"Contoso.com to Northwindtraders.com"という名前のアドレス書き換えエントリを削除します。
 
-    Remove-AddressRewriteEntry "Contoso.com to Northwindtraders.com"
+```powershell
+Remove-AddressRewriteEntry "Contoso.com to Northwindtraders.com"
+```
 
 複数のアドレス書き換えエントリを削除するには、次の構文を使用します。
 
@@ -221,7 +235,9 @@ _**トピックの最終更新日:** 2015-04-08_
 
 次の例では、すべてのアドレス書き換えエントリを削除します。
 
-    Get-AddressRewriteEntry | Remove-AddressRewriteEntry
+```powershell
+Get-AddressRewriteEntry | Remove-AddressRewriteEntry
+```
 
 次の例は、名前に "to contoso.com" というテキストが含まれるアドレス書き換えエントリの削除をシミュレートします。*WhatIf* スイッチを使用すれば、変更をコミットせずに、結果をプレビューすることができます。
 

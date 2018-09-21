@@ -95,11 +95,15 @@ _**トピックの最終更新日:** 2012-10-03_
 
 1 つの役割エントリの詳細を表示するには、次の構文を使用します。
 
-    Get-ManagementRoleEntry <role name>\<cmdlet name> | Format-List
+```powershell
+Get-ManagementRoleEntry <role name>\<cmdlet name> | Format-List
+```
 
 この例では、`Recipient Administrators` 役割にある **Set-Mailbox** 役割エントリの詳細を取得します。
 
-    Get-ManagementRoleEntry "Recipient Administrators\Set-Mailbox" | Format-List
+```powershell
+Get-ManagementRoleEntry "Recipient Administrators\Set-Mailbox" | Format-List
+```
 
 **Format-List** コマンドレットを使用して表示する役割エントリに、非常に多くのパラメーターが含まれている場合は、このトピックの後で紹介する「1 つの役割エントリのパラメーターを表示する」を参照してください。
 

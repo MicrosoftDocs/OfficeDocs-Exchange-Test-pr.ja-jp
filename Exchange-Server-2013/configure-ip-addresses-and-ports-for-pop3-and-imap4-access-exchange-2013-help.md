@@ -73,11 +73,15 @@ POP3 および IMAP4 に関連する詳細情報については、「[Exchange S
 
 この例では SSL (Secure Sockets Layer) と共に POP3 を使用して Exchange と通信するための IP アドレスとポートを設定します。
 
-    Set-PopSettings -SSLBindings: IPaddress:Port
+```powershell
+Set-PopSettings -SSLBindings: IPaddress:Port
+```
 
 この例では暗号化なしまたは TLS (Transport Layer Security) 暗号化と共に POP3 を使用して Exchange と通信するための IP アドレスとポートを設定します。
 
-    Set-PopSettings -UnencryptedOrTLSBindings IPaddress:Port
+```powershell
+Set-PopSettings -UnencryptedOrTLSBindings IPaddress:Port
+```
 
 設定を有効にするには、POP3 の IP アドレスおよびポートを設定した後、POP3 サービスを再起動する必要があります。POP3 サービスを再起動する方法の詳細については、「[POP3 サービスの開始および停止](start-and-stop-the-pop3-services-exchange-2013-help.md)」を参照してください。
 
@@ -89,7 +93,9 @@ POP3 および IMAP4 に関連する詳細情報については、「[Exchange S
 
 1.  シェルで、次のコマンドを実行します。
     
-        Get-PopSettings | format-list
+    ```powershell
+Get-PopSettings | format-list
+```
 
 2.  *UnencryptedOrTLSBindings* および *SSLBindings* の設定が正しいことを確認します。
 
@@ -123,7 +129,9 @@ POP3 および IMAP4 に関連する詳細情報については、「[Exchange S
 
 この例では IMAP4 を使用して Exchange と通信するための IP アドレスとポートを設定します。
 
-    Set-ImapSettings -SSLBindings: IPaddress:Port
+```powershell
+Set-ImapSettings -SSLBindings: IPaddress:Port
+```
 
 この例では暗号化なしまたは TLS 暗号化と共に IMAP4 を使用して Exchange と通信するための IP アドレスとポートを設定します。
 
@@ -139,7 +147,9 @@ POP3 および IMAP4 に関連する詳細情報については、「[Exchange S
 
 1.  シェルで、次のコマンドを実行します。
     
-        Get-ImapSettings | format-list
+    ```powershell
+Get-ImapSettings | format-list
+```
 
 2.  *UnencryptedOrTLSBindings* および *SSLBindings* の設定が正しいことを確認します。
 

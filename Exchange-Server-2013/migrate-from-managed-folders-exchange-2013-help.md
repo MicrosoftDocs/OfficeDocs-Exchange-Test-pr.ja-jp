@@ -314,7 +314,9 @@ MRM に関連するその他の管理タスクについては、「[メッセー
 
 この例では、Ken Kwok のメールボックスから、管理フォルダー メールボックス ポリシーとすべての管理フォルダーを削除します。メッセージがある管理フォルダーは削除されません。
 
-    Set-Mailbox -Identity Kwok -RemoveManagedFolderAndPolicy RP-Corp
+```powershell
+Set-Mailbox -Identity Kwok -RemoveManagedFolderAndPolicy RP-Corp
+```
 
 ## 手順 4:アイテム保持ポリシーをユーザーのメールボックスに適用する
 
@@ -328,7 +330,9 @@ MRM に関連するその他の管理タスクについては、「[メッセー
 
 この例では、新しく作成したアイテム保持ポリシー RP-Corp をメールボックス ユーザー Ken Kwok に適用します。
 
-    Set-Mailbox -Identity Kwok -RetentionPolicy RP-Corp
+```powershell
+Set-Mailbox -Identity Kwok -RetentionPolicy RP-Corp
+```
 
 構文およびパラメーターの詳細については、「[Set-Mailbox](https://technet.microsoft.com/ja-jp/library/bb123981\(v=exchg.150\))」を参照してください。
 
@@ -346,5 +350,7 @@ MRM に関連するその他の管理タスクについては、「[メッセー
     
     このコマンドは、実際に April Stewart のメールボックスに適用されている保持タグを取得します。
     
-        Get-RetentionPolicyTag -Mailbox astewart
+    ```powershell
+Get-RetentionPolicyTag -Mailbox astewart
+```
 

@@ -133,11 +133,15 @@ Microsoft Exchange Server 2013 では、複数の権限のあるドメインを�
 
 更新した電子メール アドレス ポリシーを受信者に適用するには、次の構文を使用します。
 
-    Update-EmailAddressPolicy <EamilAddressPolicyIdentity>
+```powershell
+Update-EmailAddressPolicy <EamilAddressPolicyIdentity>
+```
 
 たとえば、"Default Policy" という名前の更新済みの電子メール アドレス ポリシーを適用するには、次のコマンドを実行します。
 
-    Update-EmailAddressPolicy "Default Policy"
+```powershell
+Update-EmailAddressPolicy "Default Policy"
+```
 
 ## フィルター処理された一連の受信者の既存のプライマリ電子メール アドレスを置き換える
 
@@ -197,7 +201,9 @@ Microsoft Exchange Server 2013 では、複数の権限のあるドメインを�
 
 該当する受信者に新しい電子メール アドレス ポリシーを適用するには、次のコマンドを実行します。
 
-    Update-EmailAddressPolicy "Fourth Coffee Recipients"
+```powershell
+Update-EmailAddressPolicy "Fourth Coffee Recipients"
+```
 
 ## このステップの検証方法
 

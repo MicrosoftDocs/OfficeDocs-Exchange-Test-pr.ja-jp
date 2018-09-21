@@ -51,11 +51,15 @@ Microsoft Exchange Server 2013 での管理役割スコープおよび割り当�
 
 スコープの名前を変更するには、以下の構文を使用します。
 
-    Set-ManagementScope <current scope name> -Name <new scope name>
+```powershell
+Set-ManagementScope <current scope name> -Name <new scope name>
+```
 
 この例では、シアトルの Exchange サーバーに対するシアトルのサーバーのスコープを変更します。
 
-    Set-ManagementScope "Seattle Servers" -Name "Seattle Exchange Servers"
+```powershell
+Set-ManagementScope "Seattle Servers" -Name "Seattle Exchange Servers"
+```
 
 構文およびパラメーターの詳細については、「[Set-ManagementScope](https://technet.microsoft.com/ja-jp/library/dd297996\(v=exchg.150\))」を参照してください。
 
@@ -63,11 +67,15 @@ Microsoft Exchange Server 2013 での管理役割スコープおよび割り当�
 
 スコープの受信者フィルターを変更するには、以下の構文を使用します。
 
-    Set-ManagementScope <scope name> -RecipientRestrictionFilter { <new recipient filter> }
+```powershell
+Set-ManagementScope <scope name> -RecipientRestrictionFilter { <new recipient filter> }
+```
 
 この例では、**Company** プロパティが contoso に設定されているすべての受信者オブジェクトに一致させるように受信者フィルターを変更します。
 
-    Set-ManagementScope "Company Scope" -RecipientRestrictionFilter { Company -eq 'contoso' }
+```powershell
+Set-ManagementScope "Company Scope" -RecipientRestrictionFilter { Company -eq 'contoso' }
+```
 
 構文およびパラメーターの詳細については、「[Set-ManagementScope](https://technet.microsoft.com/ja-jp/library/dd297996\(v=exchg.150\))」を参照してください。
 
@@ -77,11 +85,15 @@ Microsoft Exchange Server 2013 での管理役割スコープおよび割り当�
 
 スコープの OU ルートを変更するには、以下の構文を使用します。
 
-    Set-ManagementScope <scope name> -RecipientRoot <OU>
+```powershell
+Set-ManagementScope <scope name> -RecipientRoot <OU>
+```
 
 この例では、OU ルートを、contoso.com ドメインの下の North America/Sales Sales Users OU に変更します。
 
-    Set-ManagementScope "Sales Users" -RecipientRoot "contoso.com/North America/Sales"
+```powershell
+Set-ManagementScope "Sales Users" -RecipientRoot "contoso.com/North America/Sales"
+```
 
 構文およびパラメーターの詳細については、「[Set-ManagementScope](https://technet.microsoft.com/ja-jp/library/dd297996\(v=exchg.150\))」を参照してください。
 
@@ -89,7 +101,9 @@ Microsoft Exchange Server 2013 での管理役割スコープおよび割り当�
 
 スコープのサーバー フィルターを変更するには、以下の構文を使用します。
 
-    Set-ManagementScope <scope name> -ServerRestrictionFilter { <new server filter> }
+```powershell
+Set-ManagementScope <scope name> -ServerRestrictionFilter { <new server filter> }
+```
 
 この例では、サーバー フィルターを、**ServerSite** プロパティが 'CN=Redmond,CN=Sites,CN=Configuration,DC=contoso,DC=com' に設定されているすべてのサーバー オブジェクトに一致するように変更します。
 
@@ -115,7 +129,9 @@ Microsoft Exchange Server 2013 での管理役割スコープおよび割り当�
 
 スコープのデータベース フィルターを変更するには、以下の構文を使用します。
 
-    Set-ManagementScope <scope name> -DatabaseRestrictionFilter { <new database filter> }
+```powershell
+Set-ManagementScope <scope name> -DatabaseRestrictionFilter { <new database filter> }
+```
 
 この例では、**Name** プロパティに文字列 "Executive" が含まれているすべてのデータベース オブジェクトに一致させるようにデータベース フィルターを変更します。
 

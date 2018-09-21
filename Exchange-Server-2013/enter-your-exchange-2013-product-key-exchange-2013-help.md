@@ -86,7 +86,9 @@ _**トピックの最終更新日:** 2016-12-09_
 
 
 
-    Set-ExchangeServer ExServer01 -ProductKey aaaaa-aaaaa-aaaaa-aaaaa-aaaaa
+```powershell
+Set-ExchangeServer ExServer01 -ProductKey aaaaa-aaaaa-aaaaa-aaaaa-aaaaa
+```
 
 構文およびパラメーターの詳細については、「[Set-ExchangeServer](https://technet.microsoft.com/ja-jp/library/bb123716\(v=exchg.150\))」を参照してください。
 

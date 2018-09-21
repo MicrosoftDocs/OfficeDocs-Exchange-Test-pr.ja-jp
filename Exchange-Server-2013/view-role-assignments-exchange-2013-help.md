@@ -57,11 +57,15 @@ _**トピックの最終更新日:** 2012-10-03_
 
 **Get-ManagementRoleAssignment** コマンドレットの結果を **Format-List** コマンドレットにパイプ処理することで、役割割り当ての詳細を表示できます。以下の構文を使用します。
 
-    Get-ManagementRoleAssignment <assignment name> | Format-List
+```powershell
+Get-ManagementRoleAssignment <assignment name> | Format-List
+```
 
 この例では、"Help Desk Assignment/ヘルプ デスク割り当て" という役割の割り当ての詳細を取得します。
 
-    Get-ManagementRoleAssignment "Help Desk Assignment" | Format-List
+```powershell
+Get-ManagementRoleAssignment "Help Desk Assignment" | Format-List
+```
 
 構文およびパラメーターの詳細については、「[Get-ManagementRoleAssignment](https://technet.microsoft.com/ja-jp/library/dd351024\(v=exchg.150\))」を参照してください。
 
@@ -69,11 +73,15 @@ _**トピックの最終更新日:** 2012-10-03_
 
 管理役割グループ、役割、役割の割り当てポリシーに関連付けられているか、ユーザーやユニバーサル セキュリティ グループ (USG) に関連付けられている役割の割り当ての一覧を表示するには、次の構文を使用します。
 
-    Get-ManagementRoleAssignment -RoleAssignee <role assignee name>
+```powershell
+Get-ManagementRoleAssignment -RoleAssignee <role assignee name>
+```
 
 この例では、"Server Management/サーバーの管理" 役割グループに関連付けられている役割の割り当てをすべて取得します。
 
-    Get-ManagementRoleAssignment -RoleAssignee "Server Management"
+```powershell
+Get-ManagementRoleAssignment -RoleAssignee "Server Management"
+```
 
 構文およびパラメーターの詳細については、「[Get-ManagementRoleAssignment](https://technet.microsoft.com/ja-jp/library/dd351024\(v=exchg.150\))」を参照してください。
 
@@ -83,11 +91,15 @@ _**トピックの最終更新日:** 2012-10-03_
 
 指定された役割に関連付けられている役割の割り当ての一覧を表示するには、次の構文を使用します。
 
-    Get-ManagementRoleAssignment -Role <role name>
+```powershell
+Get-ManagementRoleAssignment -Role <role name>
+```
 
 この例では、"Mail Recipient/メール受信者" 役割に関連付けられている役割の割り当てをすべて取得します。
 
-    Get-ManagementRoleAssignment -Role "Mail Recipients"
+```powershell
+Get-ManagementRoleAssignment -Role "Mail Recipients"
+```
 
 構文およびパラメーターの詳細については、「[Get-ManagementRoleAssignment](https://technet.microsoft.com/ja-jp/library/dd351024\(v=exchg.150\))」を参照してください。
 
@@ -99,7 +111,9 @@ _**トピックの最終更新日:** 2012-10-03_
 
 この例では、組織という定義済みスコープを使用している役割の割り当てをすべて取得します。
 
-    Get-ManagementRoleAssignment -RecipientWriteScope Organization
+```powershell
+Get-ManagementRoleAssignment -RecipientWriteScope Organization
+```
 
 構文およびパラメーターの詳細については、「[Get-ManagementRoleAssignment](https://technet.microsoft.com/ja-jp/library/dd351024\(v=exchg.150\))」を参照してください。
 
@@ -107,7 +121,9 @@ _**トピックの最終更新日:** 2012-10-03_
 
 スコープが特定の組織単位 (OU) に設定されている役割の割り当ての一覧を表示するには、次の構文を使用します。
 
-    Get-ManagementRoleAssignment -RecipientOrganizationalUnitScope <OU>
+```powershell
+Get-ManagementRoleAssignment -RecipientOrganizationalUnitScope <OU>
+```
 
 この例では、スコープが contoso.com ドメイン内の North America\\Engineering\\Users OU に設定されている役割の割り当てをすべて取得します。
 
@@ -131,11 +147,15 @@ _**トピックの最終更新日:** 2012-10-03_
 
 この例では、Vancouver Recipients という受信者スコープを使用している役割の割り当てをすべて取得します。
 
-    Get-ManagementRoleAssignment -CustomRecipientWriteScope "Vancouver Recipients"
+```powershell
+Get-ManagementRoleAssignment -CustomRecipientWriteScope "Vancouver Recipients"
+```
 
 この例では、Seattle AD Site という排他的構成スコープを使用している役割の割り当てをすべて取得します。
 
-    Get-ManagementRoleAssignment -ExclusiveConfigWriteScope "Seattle AD Site"
+```powershell
+Get-ManagementRoleAssignment -ExclusiveConfigWriteScope "Seattle AD Site"
+```
 
 構文およびパラメーターの詳細については、「[Get-ManagementRoleAssignment](https://technet.microsoft.com/ja-jp/library/dd351024\(v=exchg.150\))」を参照してください。
 
@@ -143,15 +163,21 @@ _**トピックの最終更新日:** 2012-10-03_
 
 排他的または正規の役割の割り当ての一覧を表示するには、次の構文を使用します。
 
-    Get-ManagementRoleAssignment -Exclusive < $True | $False >
+```powershell
+Get-ManagementRoleAssignment -Exclusive < $True | $False >
+```
 
 たとえば、排他的スコープの一覧を表示するには、次のコマンドを実行します。
 
-    Get-ManagementRoleAssignment -Exclusive $True
+```powershell
+Get-ManagementRoleAssignment -Exclusive $True
+```
 
 この例では、排他的スコープなしで、正規のスコープの一覧を取得します。
 
-    Get-ManagementRoleAssignment -Exclusive $False
+```powershell
+Get-ManagementRoleAssignment -Exclusive $False
+```
 
 構文およびパラメーターの詳細については、「[Get-ManagementRoleAssignment](https://technet.microsoft.com/ja-jp/library/dd351024\(v=exchg.150\))」を参照してください。
 
@@ -161,7 +187,9 @@ _**トピックの最終更新日:** 2012-10-03_
 
 この例では、Brian という受信者を変更できる役割の割り当ての一覧を取得します。
 
-    Get-ManagementRoleAssignment -WritableRecipient "Brian"
+```powershell
+Get-ManagementRoleAssignment -WritableRecipient "Brian"
+```
 
 *WritableRecipient* パラメーターと *WritableServer* パラメーターを、*RoleAssignee* パラメーターや *GetEffectiveUsers* スイッチなどの他のパラメーターと組み合わせると、クエリの精度を高め、役割グループや USG を展開できます。この例では、サーバー EX02 を変更できるユーザーと "Server Management/サーバーの管理" 役割グループが割り当てられているユーザーをすべて取得します。
 
@@ -173,11 +201,15 @@ _**トピックの最終更新日:** 2012-10-03_
 
 役割の割り当てからアクセス許可を受け取るユーザーの一覧を表示するには、次の構文を使用します。
 
-    Get-ManagementRoleAssignment <assignment name> -GetEffectiveUsers
+```powershell
+Get-ManagementRoleAssignment <assignment name> -GetEffectiveUsers
+```
 
 この例では、"Help Desk Assignment/ヘルプ デスク割り当て" という役割の割り当てのユーザーの一覧を取得します。
 
-    Get-ManagementRoleAssignment "Help Desk Assignment" -GetEffectiveUsers
+```powershell
+Get-ManagementRoleAssignment "Help Desk Assignment" -GetEffectiveUsers
+```
 
 また、*GetEffectiveUsers* スイッチを **Get-ManagementRoleAssignment** コマンドレットの他のいくつかのパラメーターと組み合わせると、役割割り当てが割り当てられている役割グループと USG を展開することもできます。*GetEffectiveUsers* スイッチを他のパラメーターと共に使用する方法の例については、このトピックの「特定の受信者またはサーバーを変更できるユーザーを表示する」を参照してください。
 
@@ -187,11 +219,15 @@ _**トピックの最終更新日:** 2012-10-03_
 
 有効または無効になっている役割の割り当ての一覧を表示するには、次の構文を使用します。
 
-    Get-ManagementRoleAssignment -Enabled < $True | $False >
+```powershell
+Get-ManagementRoleAssignment -Enabled < $True | $False >
+```
 
 この例では、無効になっている役割の割り当ての一覧を取得します。
 
-    Get-ManagementRoleAssignment -Enabled $False
+```powershell
+Get-ManagementRoleAssignment -Enabled $False
+```
 
 構文およびパラメーターの詳細については、「[Get-ManagementRoleAssignment](https://technet.microsoft.com/ja-jp/library/dd351024\(v=exchg.150\))」を参照してください。
 

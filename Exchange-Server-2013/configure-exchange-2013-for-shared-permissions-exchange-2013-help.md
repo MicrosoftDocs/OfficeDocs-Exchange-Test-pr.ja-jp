@@ -141,7 +141,9 @@ Active Directory 分割型アクセス許可から共有アクセス許可に切
 
 1.  Windows コマンド シェルで、Exchange 2013 インストール メディアから次のコマンドを実行して Active Directory 分割型アクセス許可を無効にします。
     
-        setup.exe /PrepareAD /ActiveDirectorySplitPermissions:false
+    ```powershell
+setup.exe /PrepareAD /ActiveDirectorySplitPermissions:false
+```
 
 2.  Exchange 管理シェルで、次のコマンドを実行して、"Mail Recipient Creation/メール受信者の作成" 役割および "Security Group Creation and Management/セキュリティ グループの作成と管理" 役割と、組織の管理 および Recipient Management 役割グループの間に正規の役割割り当てを追加します。
     

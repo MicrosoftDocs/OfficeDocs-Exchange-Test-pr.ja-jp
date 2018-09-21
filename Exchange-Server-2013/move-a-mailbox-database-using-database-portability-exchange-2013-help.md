@@ -44,7 +44,9 @@ _**トピックの最終更新日:** 2014-06-16_
     
     コミットされていないすべてのログ ファイルをデータベースにコミットするには、コマンド プロンプトから次のコマンドを実行します。
     
-        ESEUTIL /R <Enn>
+    ```powershell
+ESEUTIL /R <Enn>
+```
     
 
     > [!NOTE]
@@ -58,13 +60,17 @@ _**トピックの最終更新日:** 2014-06-16_
 
 3.  次の構文を使用して、*This database can be over written by restore* 属性を設定します。
     
-        Set-MailboxDatabase <DatabaseName> -AllowFileRestore $true
+    ```powershell
+Set-MailboxDatabase <DatabaseName> -AllowFileRestore $true
+```
 
 4.  元のデータベース ファイル (.edb ファイル、ログ ファイル、Exchange Search カタログ) を、上で新しいデータベースを作成した時に指定したデータベース フォルダーに移動します。
 
 5.  次の構文を使用して、データベースをマウントします。
     
-        Mount-Database <DatabaseName>
+    ```powershell
+Mount-Database <DatabaseName>
+```
 
 6.  データベースがマウントされたら、[Set-Mailbox](https://technet.microsoft.com/ja-jp/library/bb123981\(v=exchg.150\)) コマンドレットを使用して、ユーザー アカウントが新しいメールボックス サーバーのメールボックスを参照するようにユーザー アカウントの設定を変更します。古いデータベースから新しいデータベースにすべてのユーザーを移動するには、次の構文を使用します。
     
@@ -72,7 +78,9 @@ _**トピックの最終更新日:** 2014-06-16_
 
 7.  以下の構文を使用して、キュー内に残っているすべてのメッセージの配信をトリガーします。
     
-        Get-Queue <QueueName> | Retry-Queue -Resubmit $true
+    ```powershell
+Get-Queue <QueueName> | Retry-Queue -Resubmit $true
+```
 
 Active Directory のレプリケーションが完了したら、すべてのユーザーが新しい Exchange サーバーのメールボックスにアクセスできます。大半のクライアントは、自動検出によってリダイレクトされます。Microsoft Office Outlook Web App ユーザーも自動的にリダイレクトされます。
 

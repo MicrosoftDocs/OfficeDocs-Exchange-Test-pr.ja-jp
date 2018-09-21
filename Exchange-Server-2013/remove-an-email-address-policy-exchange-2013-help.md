@@ -55,7 +55,9 @@ _**トピックの最終更新日:** 2012-10-13_
 
 この例では、電子メール アドレス ポリシー South East Offices を削除します。
 
-    Remove-EmailAddressPolicy -Identity "South East Offices"
+```powershell
+Remove-EmailAddressPolicy -Identity "South East Offices"
+```
 
 「**Y**」と入力してポリシーの削除を確認し、Enter キーを押します。
 

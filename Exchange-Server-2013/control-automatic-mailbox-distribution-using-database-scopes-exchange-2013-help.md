@@ -63,7 +63,9 @@ _**トピックの最終更新日:** 2015-04-07_
 
 このスコープに含める必要があるメールボックス データベースの静的な一覧を定義する場合は、データベース リストを使用します。データベース リスト スコープを作成するには、次の構文を使用します。
 
-    New-ManagementScope -Name <scope name> -DatabaseList <database 1>, <database 2...>
+```powershell
+New-ManagementScope -Name <scope name> -DatabaseList <database 1>, <database 2...>
+```
 
 この例では、"Database 1"、"Database 2"、および "Database 3" のみに適用されるスコープを作成します。
 
@@ -79,7 +81,9 @@ _**トピックの最終更新日:** 2015-04-07_
 
 データベース フィルター スコープを作成するには、次の構文を使用します。
 
-    New-ManagementScope -Name <scope name> -DatabaseRestrictionFilter <filter query>
+```powershell
+New-ManagementScope -Name <scope name> -DatabaseRestrictionFilter <filter query>
+```
 
 この例では、データベースの **Name** プロパティに "ACCT" という文字列が含まれる全データベースを含むスコープを作成します。
 

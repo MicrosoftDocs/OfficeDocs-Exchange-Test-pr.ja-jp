@@ -55,5 +55,7 @@ Microsoft 管理コンソール (MMC) でサービス スナップインを、�
 
 2.  <strong>開く</strong> ボックスに次のコマンドを入力し、Enter キーを押します。
     
-        net stop MSExchangeUMCR
+    ```powershell
+net stop MSExchangeUMCR
+```
 

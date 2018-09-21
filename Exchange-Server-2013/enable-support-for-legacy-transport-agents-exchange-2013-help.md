@@ -112,11 +112,15 @@ Microsoft Exchange Server 2013 では、Microsoft .NET Framework バージョン
 
 1.  従来のトランスポート エージェント サポートを構成する Exchange 2013 サーバーのコマンド プロンプト ウィンドウで、次のコマンドを実行することによって、適切なアプリケーション構成ファイルをメモ帳で開きます。
     
-        Notepad %ExchangeInstallPath%Bin\<AppConfigFile>
+    ```powershell
+Notepad %ExchangeInstallPath%Bin\<AppConfigFile>
+```
     
     たとえば、メールボックス サーバーの EdgeTransport.exe.config ファイルを開くには、次のコマンドを実行します。
     
-        Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
+    ```powershell
+Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
+```
 
 2.  ファイルの終わりにある *\</configuration\>* キーを探して、次のキーを *\</configuration\>* キーの前に貼り付けます。
     

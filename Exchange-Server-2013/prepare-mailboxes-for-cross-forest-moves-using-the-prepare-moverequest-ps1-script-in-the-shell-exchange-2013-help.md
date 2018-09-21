@@ -187,7 +187,9 @@ _**トピックの最終更新日:** 2017-11-22_
 
 1.  次のコマンドを実行します。
     
-        $UserCredentials = Get-Credential
+    ```powershell
+$UserCredentials = Get-Credential
+```
 
 2.  次のコマンドを実行して、資格情報を Prepare-MoveRequest.ps1 スクリプト内の *RemoteForestCredential* パラメーターに渡します。
     
@@ -211,7 +213,9 @@ Cindy@contoso.com
 
 1.  次のコマンドを実行して、リモート フォレストの資格情報を取得します。
     
-        $UserCredentials = Get-Credential
+    ```powershell
+$UserCredentials = Get-Credential
+```
 
 2.  次のコマンドを実行して、資格情報を Prepare-MoveRequest.ps1 スクリプト内の *RemoteForestCredential* パラメーターに渡します。
     

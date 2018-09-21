@@ -71,7 +71,9 @@ MRS プロキシ エンドポイントを有効にするクライアント ア�
 
 次のコマンドは、Exchange 組織内のすべてのクライアント アクセス サーバー上の MRS プロキシ エンドポイントを有効にします。
 
-    Get-WebServicesVirtualDirectory | Set-WebServicesVirtualDirectory -MRSProxyEnabled $true
+```powershell
+Get-WebServicesVirtualDirectory | Set-WebServicesVirtualDirectory -MRSProxyEnabled $true
+```
 
 
 > [!IMPORTANT]
@@ -93,7 +95,9 @@ MRS プロキシ エンドポイントが正常に有効になったことを確
 
 管理シェルで、次のコマンドを実行します。
 
-    Get-WebServicesVirtualDirectory | FL Identity,MRSProxyEnabled
+```powershell
+Get-WebServicesVirtualDirectory | FL Identity,MRSProxyEnabled
+```
 
 *MRSProxyEnabled* パラメーターが `True` に設定されていることを確認します。
 

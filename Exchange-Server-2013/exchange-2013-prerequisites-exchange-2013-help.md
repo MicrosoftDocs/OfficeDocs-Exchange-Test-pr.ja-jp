@@ -85,11 +85,15 @@ Active Directory の準備に使用するコンピューターに、次のソフ
     
       - Windows Server 2012 R2 または Windows Server 2012 コンピューター上で、以下のコマンドを実行します。
         
-            Install-WindowsFeature RSAT-ADDS
+        ```powershell
+Install-WindowsFeature RSAT-ADDS
+```
     
       - Windows Server 2008 R2 SP1 コンピューター上で、以下のコマンドを実行します。
         
-            Add-WindowsFeature RSAT-ADDS
+        ```powershell
+Add-WindowsFeature RSAT-ADDS
+```
 
 ## Windows Server 2012 R2 と Windows Server 2012 の前提条件
 
@@ -137,7 +141,9 @@ Exchange 2013 を Windows Server 2012 R2 または Windows Server 2012 コンピ
 
 2.  次のコマンドを実行して、必要な Windows コンポーネントをインストールします。
     
-        Install-WindowsFeature ADLDS
+    ```powershell
+Install-WindowsFeature ADLDS
+```
 
 インストール中の Exchange 2013 のバージョンに対応する Microsoft .NET Framework のバージョンをインストールします。
 
@@ -171,7 +177,9 @@ Exchange 2013 を Windows Server 2008 R2 SP1 コンピューター上にイン�
 
 2.  次のコマンドを実行して、サーバー マネージャー モジュールをロードします。
     
-        Import-Module ServerManager
+    ```powershell
+Import-Module ServerManager
+```
 
 3.  次のコマンドを実行して、必要な Windows コンポーネントをインストールします。
     
@@ -213,11 +221,15 @@ Exchange 2013 を Windows Server 2008 R2 SP1 コンピューター上にイン�
 
 2.  次のコマンドを実行して、サーバー マネージャー モジュールをロードします。
     
-        Import-Module ServerManager
+    ```powershell
+Import-Module ServerManager
+```
 
 3.  次のコマンドを実行して、必要な Windows コンポーネントをインストールします。
     
-        Add-WindowsFeature NET-Framework, ADLDS
+    ```powershell
+Add-WindowsFeature NET-Framework, ADLDS
+```
 
 オペレーティング システムの役割と機能をインストールした後で、次のソフトウェアを表示されている順序でインストールします。
 

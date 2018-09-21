@@ -135,5 +135,7 @@ EAC を使用してモバイル デバイス メールボックス ポリシー�
 
 2.  シェルで、次のコマンドを実行します。
     
-        Get-MobileDeviceMailboxPolicy -Identity <PolicyName>
+    ```powershell
+Get-MobileDeviceMailboxPolicy -Identity <PolicyName>
+```
 

@@ -47,11 +47,15 @@ _**トピックの最終更新日:** 2015-04-13_
 
 新しいリモート ドメイン エントリを作成するには、次の構文を使用します。
 
-    New-RemoteDomain -Name <Descriptive Name> -DomainName <SMTP address space>
+```powershell
+New-RemoteDomain -Name <Descriptive Name> -DomainName <SMTP address space>
+```
 
 この例では、contoso.com ドメインに送信されるメッセージのリモート ドメイン エントリを作成します。
 
-    New-RemoteDomain -Name Contoso -DomainName contoso.com
+```powershell
+New-RemoteDomain -Name Contoso -DomainName contoso.com
+```
 
 この例では、fabrikam.com ドメインとすべてのサブドメインに送信されるメッセージのリモート ドメイン エントリを作成します。
 
@@ -81,11 +85,15 @@ _**トピックの最終更新日:** 2015-04-13_
 
 リモート ドメイン エントリを削除するには、次の構文を使用します。
 
-    Remove-RemoteDomain <RemoteDomainName>
+```powershell
+Remove-RemoteDomain <RemoteDomainName>
+```
 
 この例では、Contoso という名前のリモート ドメイン エントリを削除します。
 
-    Remove-RemoteDomain Contoso
+```powershell
+Remove-RemoteDomain Contoso
+```
 
 ## 正常な動作を確認する方法
 

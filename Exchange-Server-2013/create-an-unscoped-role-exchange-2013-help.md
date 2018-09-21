@@ -67,11 +67,15 @@ _**トピックの最終更新日:** 2014-06-09_
 
 対象範囲外の最上位の役割には親の役割がありません。親なしで役割を作成するには、*UnscopedTopLevel* スイッチを指定する必要があります。新しい役割を作成するには、次の構文を使用します。
 
-    New-ManagementRole <name of new role> -UnscopedTopLevel
+```powershell
+New-ManagementRole <name of new role> -UnscopedTopLevel
+```
 
 この例では、IT スクリプトの対象範囲外の最上位役割を作成します。
 
-    New-ManagementRole "IT Scripts" -UnscopedTopLevel
+```powershell
+New-ManagementRole "IT Scripts" -UnscopedTopLevel
+```
 
 作成した後、役割はスクリプトまたは Exchange 以外のコマンドレットを追加するまで空です。
 
@@ -159,7 +163,9 @@ Windows サーバー上でコマンドレットを含む Exchange 2013 PowerShel
 
 この例では、"IT Global Scripts/IT グローバル スクリプト" 役割とその管理役割エントリを "Diagnostic IT Scripts/診断 IT スクリプト" 役割にコピーします。
 
-    New-ManagementRole -Parent "IT Global Scripts" -Name "Diagnostic IT Scripts"
+```powershell
+New-ManagementRole -Parent "IT Global Scripts" -Name "Diagnostic IT Scripts"
+```
 
 構文およびパラメーターの詳細については、「[New-ManagementRole](https://technet.microsoft.com/ja-jp/library/dd298073\(v=exchg.150\))」を参照してください。
 

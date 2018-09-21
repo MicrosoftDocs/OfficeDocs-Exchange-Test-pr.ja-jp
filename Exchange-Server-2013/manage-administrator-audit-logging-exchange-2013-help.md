@@ -115,7 +115,9 @@ Microsoft Exchange Server 2013 の管理者監査ログにより、指定され
 
 この例では、有効期限を 2 年 6 か月に指定します。
 
-    Set-AdminAuditLogConfig -AdminAuditLogAgeLimit 913.00:00:00
+```powershell
+Set-AdminAuditLogConfig -AdminAuditLogAgeLimit 913.00:00:00
+```
 
 構文およびパラメーターの詳細については、「[Set-AdminAuditLogConfig](https://technet.microsoft.com/ja-jp/library/dd298169\(v=exchg.150\))」を参照してください。
 
@@ -125,11 +127,15 @@ Microsoft Exchange Server 2013 の管理者監査ログにより、指定され
 
 このコマンドは、**Test** コマンドレットを有効にします。
 
-    Set-AdminAuditLogConfig -TestCmdletLoggingEnabled $True
+```powershell
+Set-AdminAuditLogConfig -TestCmdletLoggingEnabled $True
+```
 
 このコマンドは、**Test** コマンドレットを無効にします。
 
-    Set-AdminAuditLogConfig -TestCmdletLoggingEnabled $False
+```powershell
+Set-AdminAuditLogConfig -TestCmdletLoggingEnabled $False
+```
 
 構文およびパラメーターの詳細については、「[Set-AdminAuditLogConfig](https://technet.microsoft.com/ja-jp/library/dd298169\(v=exchg.150\))」を参照してください。
 
@@ -137,17 +143,23 @@ Microsoft Exchange Server 2013 の管理者監査ログにより、指定され
 
 管理者監査ログを無効にするには、次のコマンドを使用します。
 
-    Set-AdminAuditLogConfig -AdminAuditLogEnabled $False
+```powershell
+Set-AdminAuditLogConfig -AdminAuditLogEnabled $False
+```
 
 ## 管理者監査ログを有効にする
 
 管理者の監査ログを有効にするには、次のコマンドを使用します。
 
-    Set-AdminAuditLogConfig -AdminAuditLogEnabled $True
+```powershell
+Set-AdminAuditLogConfig -AdminAuditLogEnabled $True
+```
 
 ## 管理者監査ログの設定を表示する
 
 組織に対して既に設定した、管理者の監査ログ構成の設定を表示するには、次のコマンドを使用します。
 
-    Get-AdminAuditLogConfig
+```powershell
+Get-AdminAuditLogConfig
+```
 

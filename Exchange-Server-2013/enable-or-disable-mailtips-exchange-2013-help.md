@@ -39,7 +39,9 @@ Exchange 管理シェルを使用すると、組織内でメール ヒントを�
 
 組織でメール ヒントを有効または無効にするには、**Set-OrganizationConfig** コマンドレットを使用します。新しい Exchange 組織をインストールするとメール ヒントが既定で有効になります。この例では、組織内でメール ヒントを有効にする方法を示します。
 
-    Set-OrganizationConfig -MailTipsAllTipsEnabled $true
+```powershell
+Set-OrganizationConfig -MailTipsAllTipsEnabled $true
+```
 
 構文およびパラメーターの詳細については、「[Set-OrganizationConfig](https://technet.microsoft.com/ja-jp/library/aa997443\(v=exchg.150\))」を参照してください。
 

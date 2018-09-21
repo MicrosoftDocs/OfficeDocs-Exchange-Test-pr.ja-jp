@@ -252,7 +252,9 @@ ActiveSync クライアントの最大メッセージ サイズを変更する�
 
 4.  次のコマンドを実行して IIS を再起動します。
     
-        IISReset /noforce
+    ```powershell
+IISReset /noforce
+```
 
 ## コマンド ラインからクライアント固有のメッセージのサイズ制限を構成する
 

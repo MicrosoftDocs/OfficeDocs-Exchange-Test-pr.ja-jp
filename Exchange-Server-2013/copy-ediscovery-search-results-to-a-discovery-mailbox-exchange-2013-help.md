@@ -75,7 +75,9 @@ _**適用先:** Exchange Server 2013_
 
 たとえば、次のコマンドを実行して、*Fabrikam Investigation* という名前の電子情報開示検索を開始し、検索結果を指定した探索メールボックスにコピーする場合を考えます。
 
-    Start-MailboxSearch "Fabrikam Investigation"
+```powershell
+Start-MailboxSearch "Fabrikam Investigation"
+```
 
 *EstimateOnly* スイッチを使用して検索結果を推定した場合は、検索結果をコピーする前にそのスイッチを外す必要があります。検索結果をコピーする探索メールボックスを指定する必要もあります。たとえば、次のコマンドを使用して、推定のみの検索を作成したとします。
 

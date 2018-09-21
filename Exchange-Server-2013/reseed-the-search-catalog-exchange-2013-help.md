@@ -70,7 +70,9 @@ DAG の一部であるサーバー上にメールボックス データベース
 
 この例では、データベースのコピーを持つ DAG の送信元サーバーから、メールボックス サーバー MBX1 上のデータベース コピー DB1 のコンテンツ インデックス カタログを再シードします。
 
-    Update-MailboxDatabaseCopy -Identity DB1\MBX1 -CatalogOnly
+```powershell
+Update-MailboxDatabaseCopy -Identity DB1\MBX1 -CatalogOnly
+```
 
 構文およびパラメーターの詳細については、「[Update-MailboxDatabaseCopy](https://technet.microsoft.com/ja-jp/library/dd335201\(v=exchg.150\))」を参照してください。
 
@@ -78,7 +80,9 @@ DAG の一部であるサーバー上にメールボックス データベース
 
 この例では、メールボックス サーバー MBX1 のデータベース コピー DB1 のコンテンツ インデックス カタログを、このデータベースのコピーを持つメールボックス サーバー MBX2 から再シードします。
 
-    Update-MailboxDatabaseCopy -Identity DB1\MBX1 -SourceServer MBX2 -CatalogOnly
+```powershell
+Update-MailboxDatabaseCopy -Identity DB1\MBX1 -SourceServer MBX2 -CatalogOnly
+```
 
 構文およびパラメーターの詳細については、「[Update-MailboxDatabaseCopy](https://technet.microsoft.com/ja-jp/library/dd335201\(v=exchg.150\))」を参照してください。
 
@@ -88,10 +92,14 @@ DAG の一部であるサーバー上にメールボックス データベース
 
 1.  次のコマンドを実行して、Microsoft Exchange Search サービスと Microsoft Exchange Search Host Controller サービスを停止します。
     ```
-    Stop-Service MSExchangeFastSearch
+```powershell
+Stop-Service MSExchangeFastSearch
+```
     ```
     ```
-    Stop-Service HostControllerService
+```powershell
+Stop-Service HostControllerService
+```
     ```
 2.  Exchange コンテンツ インデックス カタログを格納するフォルダーを削除、移動、または名前変更します。このフォルダーは、`%ExchangeInstallPath\Mailbox\<name of mailbox database>_Catalog\<GUID>12.1.Single` という名前になります。たとえば、フォルダー `C:\Program Files\Microsoft\Exchange Server\V15\Mailbox\Mailbox Database 0657134726_Catalog\F0627A72-9F1D-494A-839A-D7C915C279DB12.1.Single_OLD` を名前変更するかもしれません。
     
@@ -103,10 +111,14 @@ DAG の一部であるサーバー上にメールボックス データベース
 
 3.  次のコマンドを実行して、Microsoft Exchange Search サービスと Microsoft Exchange Search Host Controller サービスを再起動します。
     ```
-    Start-Service MSExchangeFastSearch
+```powershell
+Start-Service MSExchangeFastSearch
+```
     ```
     ```
-    Start-Service HostControllerService
+```powershell
+Start-Service HostControllerService
+```
     ```
     これらのサービスを再起動すると、Exchange Search はコンテンツ インデックス カタログを再構築します。
 

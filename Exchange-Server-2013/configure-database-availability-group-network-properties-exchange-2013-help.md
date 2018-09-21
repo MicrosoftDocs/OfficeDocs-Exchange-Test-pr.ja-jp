@@ -55,7 +55,9 @@ DAG に関連する他の管理タスクについては、「[データベース
 
 この例では、10.0.0.0 のサブネットと 255.0.0.0 のサブネット マスクを DAG DAG1 の DAG ネットワーク MapiDagNetwork に追加します。
 
-    Set-DatabaseAvailabilityGroupNetwork -Subnets 10.0.0.0/8 -Identity DAG1\MapiDagNetwork
+```powershell
+Set-DatabaseAvailabilityGroupNetwork -Subnets 10.0.0.0/8 -Identity DAG1\MapiDagNetwork
+```
 
 ## 正常な動作を確認する方法
 
@@ -63,7 +65,9 @@ DAG ネットワークが正常に構成されたことを確認するには、�
 
   - シェルで次のコマンドを実行して、DAG ネットワーク構成の設定を表示し、DAG ネットワークが正常に構成されたことを確認します。
     
-        Get-DatabaseAvailabilityGroupNetwork <DAGNetworkName> | Format-List
+    ```powershell
+Get-DatabaseAvailabilityGroupNetwork <DAGNetworkName> | Format-List
+```
 
 ## 詳細情報
 

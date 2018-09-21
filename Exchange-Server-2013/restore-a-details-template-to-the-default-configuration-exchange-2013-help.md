@@ -51,7 +51,9 @@ _**トピックの最終更新日:** 2012-10-12_
 
 この例では、英語 (米国) の連絡先の詳細テンプレートを復元します。
 
-    Restore-DetailsTemplate -Identity "en-US\Contact"
+```powershell
+Restore-DetailsTemplate -Identity "en-US\Contact"
+```
 
 構文およびパラメーターの詳細については、「[Restore-DetailsTemplate](https://technet.microsoft.com/ja-jp/library/bb125188\(v=exchg.150\))」を参照してください。
 

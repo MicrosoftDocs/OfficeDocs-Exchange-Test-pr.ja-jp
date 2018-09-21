@@ -53,11 +53,15 @@ _**トピックの最終更新日:** 2012-10-03_
 
 特定の役割の詳細を表示するには、次の構文を使用します。
 
-    Get-ManagementRole <role name> | Format-List
+```powershell
+Get-ManagementRole <role name> | Format-List
+```
 
 この例では、"Mail Recipient/メール受信者" 管理役割に関する詳細を取得します。
 
-    Get-ManagementRole "Mail Recipients" | Format-List
+```powershell
+Get-ManagementRole "Mail Recipients" | Format-List
+```
 
 構文およびパラメーターの詳細については、「[Get-ManagementRole](https://technet.microsoft.com/ja-jp/library/dd351125\(v=exchg.150\))」を参照してください。
 
@@ -67,11 +71,15 @@ _**トピックの最終更新日:** 2012-10-03_
 
 この例では、組織内のすべての役割の一覧を返します。
 
-    Get-ManagementRole
+```powershell
+Get-ManagementRole
+```
 
 組織内のすべての役割に関する特定のプロパティの一覧を返すには、**Format-Table** コマンドレットの結果をパイプ処理し、結果の一覧で目的のプロパティを指定します。 以下の構文を使用します。
 
-    Get-ManagementRole | Format-Table <property 1>, <property 2...>
+```powershell
+Get-ManagementRole | Format-Table <property 1>, <property 2...>
+```
 
 この例では、組織内のすべての役割の一覧を返し、**Name** プロパティ、およびプロパティ名の先頭に単語 **Implicit** を持つ任意のプロパティを含めます。
 
@@ -85,11 +93,15 @@ _**トピックの最終更新日:** 2012-10-03_
 
 指定したコマンドレットを含む役割の一覧を返すには、次の構文を使用します。
 
-    Get-ManagementRole -Cmdlet <cmdlet>
+```powershell
+Get-ManagementRole -Cmdlet <cmdlet>
+```
 
 この例では、**New-Mailbox** コマンドレットを含む役割の一覧を返します。
 
-    Get-ManagementRole -Cmdlet New-Mailbox
+```powershell
+Get-ManagementRole -Cmdlet New-Mailbox
+```
 
 構文およびパラメーターの詳細については、「[Get-ManagementRole](https://technet.microsoft.com/ja-jp/library/dd351125\(v=exchg.150\))」を参照してください。
 
@@ -105,11 +117,15 @@ _**トピックの最終更新日:** 2012-10-03_
 
 この例では、パラメーターが存在しているコマンドレットに無関係に、*Database* パラメーターと *Server* パラメーターを含む役割の一覧を返します。
 
-    Get-ManagementRole -CmdletParameters Database, Server
+```powershell
+Get-ManagementRole -CmdletParameters Database, Server
+```
 
 この例では、*EmailAddresses* パラメーターが **Set-Mailbox** コマンドレット上にのみ存在している役割の一覧を返します。
 
-    Get-ManagementRole -Cmdlet Set-Mailbox -CmdletParameters EmailAddresses
+```powershell
+Get-ManagementRole -Cmdlet Set-Mailbox -CmdletParameters EmailAddresses
+```
 
 *Cmdlet* パラメーターまたは *CmdletParameters* パラメーターと共にワイルドカード文字 (\*) を使用すると、コマンドレット名またはパラメーター名の一部を指定して一致するものを検索することもできます。
 
@@ -121,11 +137,15 @@ _**トピックの最終更新日:** 2012-10-03_
 
 指定した役割の種類に一致する役割の一覧を返すには、次の構文を使用します。
 
-    Get-ManagementRole -RoleType <roletype>
+```powershell
+Get-ManagementRole -RoleType <roletype>
+```
 
 この例では、`UmMailboxes` 役割の種類に基づいて役割の一覧を返します。
 
-    Get-ManagementRole -RoleType UmMailboxes
+```powershell
+Get-ManagementRole -RoleType UmMailboxes
+```
 
 構文およびパラメーターの詳細については、「[Get-ManagementRole](https://technet.microsoft.com/ja-jp/library/dd351125\(v=exchg.150\))」を参照してください。
 
@@ -135,11 +155,15 @@ _**トピックの最終更新日:** 2012-10-03_
 
 親役割の直下の子役割の一覧を返すには、次の構文を使用します。
 
-    Get-ManagementRole <parent role name> -GetChildren
+```powershell
+Get-ManagementRole <parent role name> -GetChildren
+```
 
 この例では、"Disaster Recovery/障害回復" 役割の直下の子の一覧を返します。
 
-    Get-ManagementRole "Disaster Recovery" -GetChildren
+```powershell
+Get-ManagementRole "Disaster Recovery" -GetChildren
+```
 
 構文およびパラメーターの詳細については、「[Get-ManagementRole](https://technet.microsoft.com/ja-jp/library/dd351125\(v=exchg.150\))」を参照してください。
 
@@ -149,11 +173,15 @@ _**トピックの最終更新日:** 2012-10-03_
 
 この例では、親役割のすべての子役割の一覧を返します。
 
-    Get-ManagementRole <parent role name> -Recurse
+```powershell
+Get-ManagementRole <parent role name> -Recurse
+```
 
 この例では、"Mail Recipient/メール受信者" 役割のすべての子役割を返します。
 
-    Get-ManagementRole "Mail Recipients" -Recurse
+```powershell
+Get-ManagementRole "Mail Recipients" -Recurse
+```
 
 構文およびパラメーターの詳細については、「[Get-ManagementRole](https://technet.microsoft.com/ja-jp/library/dd351125\(v=exchg.150\))」を参照してください。
 

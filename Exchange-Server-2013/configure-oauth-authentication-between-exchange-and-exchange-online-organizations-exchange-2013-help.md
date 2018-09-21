@@ -89,7 +89,9 @@ Exchange 2013 および Exchange Online とのハイブリッド展開を実装�
 
 2.  社内 Exchange 組織の Exchange PowerShell で、直前の手順で作成した PowerShell スクリプトを実行します。たとえば、
     
-        .\ExportAuthCert.ps1
+    ```powershell
+.\ExportAuthCert.ps1
+```
 
 ## ステップ 4:オンプレミスの認証証明書を Azure Active Directory ACS にアップロードする
 
@@ -119,7 +121,9 @@ Exchange 2013 および Exchange Online とのハイブリッド展開を実装�
 
 3.  直前の手順で作成した PowerShell スクリプトを実行します。たとえば、
     
-        .\UploadAuthCert.ps1
+    ```powershell
+.\UploadAuthCert.ps1
+```
 
 4.  スクリプトを起動した後に、\[資格情報\] ダイアログ ボックスが表示されます。Microsoft Online Azure AD 組織のテナント管理者アカウントの資格情報を入力します。スクリプトの実行後、Azure AD 用 Windows PowerShell セッションを開いたままにします。これは、次のステップで PowerShell スクリプトを実行するために使用します。
 
@@ -129,7 +133,9 @@ Exchange 2013 および Exchange Online とのハイブリッド展開を実装�
 
 社内の Exchange 組織にある外部 Exchange エンドポイントが不明な場合は、社内の Exchange 組織の Exchange PowerShell で以下のコマンドを実行することにより、外部の構成済み Web サービス エンドポイントのリストを取得できます。
 
-    Get-WebServicesVirtualDirectory | FL ExternalUrl
+```powershell
+Get-WebServicesVirtualDirectory | FL ExternalUrl
+```
 
 
 > [!NOTE]
@@ -152,7 +158,9 @@ Exchange 2013 および Exchange Online とのハイブリッド展開を実装�
 
 2.  Azure Active Directory 用 Windows PowerShell で、直前のステップで作成した Windows PowerShell スクリプトを実行します。たとえば、次のようにです。
     
-        .\RegisterEndpoints.ps1
+    ```powershell
+.\RegisterEndpoints.ps1
+```
 
 ## ステップ 6:社内の組織から Office 365 への IntraOrganizationConnector を作成する
 
@@ -212,7 +220,9 @@ Exchange 2013/2010 または Exchange 2013/2007 が含まれる混在展開で�
 
 Exchange 2013 より前のクライアント アクセス サーバーでは、*AvailabilityAddressSpace* は、社内 Exchange 2013 SP1 クライアント アクセス サーバーの Exchange Web サービス エンドポイントを指すよう構成する必要があります。このエンドポイントは、手順 5 で概説したエンドポイントと同じものですが、社内の Exchange 2013 SP1 クライアント アクセス サーバーから、次のコマンドレットを実行することで判別できます。
 
-    Get-WebServicesVirtualDirectory | FL AdminDisplayVersion,ExternalUrl
+```powershell
+Get-WebServicesVirtualDirectory | FL AdminDisplayVersion,ExternalUrl
+```
 
 
 > [!NOTE]

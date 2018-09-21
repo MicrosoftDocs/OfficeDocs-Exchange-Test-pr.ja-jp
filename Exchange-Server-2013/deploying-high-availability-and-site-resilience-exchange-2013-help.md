@@ -138,11 +138,15 @@ Microsoft Exchange Server 2013 では、高可用性とサイト復元に*増分
 
 MBX1 および MBX2 のレプリケーション ネットワーク アダプターのルーティングを構成するため、各サーバー上で以下のコマンドを実行します。
 
-    netsh interface ipv4 add route 10.0.2.0/24 <NetworkName> 10.0.1.254
+```powershell
+netsh interface ipv4 add route 10.0.2.0/24 <NetworkName> 10.0.1.254
+```
 
 MBX3 および MBX4 のレプリケーション ネットワーク アダプターのルーティングを構成するため、各サーバー上で以下のコマンドを実行します。
 
-    netsh interface ipv4 add route 10.0.1.0/24 <NetworkName> 10.0.2.254
+```powershell
+netsh interface ipv4 add route 10.0.1.0/24 <NetworkName> 10.0.2.254
+```
 
 次の追加のネットワーク設定も構成されています。
 
@@ -189,7 +193,9 @@ MBX3 および MBX4 のレプリケーション ネットワーク アダプタ�
 
 このコマンドは、各メールボックス サーバーを 1 回に付き 1 つずつ DAG に追加します。上記のコマンドはまた、各メールボックス サーバーに Windows フェールオーバー クラスタリング コンポーネントをインストールし (未インストールの場合)、フェールオーバー クラスターを作成し、新しく作成したクラスターに各メールボックス サーバーを参加させます。
 
-    Set-DatabaseAvailabilityGroup -Identity DAG1 -DatacenterActivationMode DagOnly
+```powershell
+Set-DatabaseAvailabilityGroup -Identity DAG1 -DatacenterActivationMode DagOnly
+```
 
 上記のコマンドは、DAG の DAC モードを有効にします。
 

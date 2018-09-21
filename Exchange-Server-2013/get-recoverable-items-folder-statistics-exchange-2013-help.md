@@ -47,7 +47,9 @@ _**トピックの最終更新日:** 2015-01-22_
 
 この例では、Soumya Singhi の \[回復可能なアイテム\] フォルダーの統計情報を取得し、リスト形式でその出力を表示します。
 
-    Get-MailboxFolderStatistics -Identity "Soumya Singhi" -FolderScope RecoverableItems | Format-List
+```powershell
+Get-MailboxFolderStatistics -Identity "Soumya Singhi" -FolderScope RecoverableItems | Format-List
+```
 
 この例では、Soumya Singhi の \[回復可能なアイテム\] フォルダーの統計情報を取得し、フォルダー名、フォルダー パス、フォルダー内のアイテム数、およびフォルダー サイズを表形式で表示します。
 

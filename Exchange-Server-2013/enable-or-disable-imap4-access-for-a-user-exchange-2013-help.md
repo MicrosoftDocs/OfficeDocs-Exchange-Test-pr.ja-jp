@@ -65,11 +65,15 @@ POP3 および IMAP4 に関連する詳細情報については、「[Exchange S
 
 この例では、ユーザー John Smith の IMAP4 を有効にします。
 
-    Set-CASMailbox -Identity "John Smith" -IMAPEnabled $true
+```powershell
+Set-CASMailbox -Identity "John Smith" -IMAPEnabled $true
+```
 
 この例では、ユーザー John Smith の IMAP4 を無効にします。
 
-    Set-CASMailbox -Identity "John Smith" -IMAPEnabled $false
+```powershell
+Set-CASMailbox -Identity "John Smith" -IMAPEnabled $false
+```
 
 ## 正常な動作を確認する方法
 

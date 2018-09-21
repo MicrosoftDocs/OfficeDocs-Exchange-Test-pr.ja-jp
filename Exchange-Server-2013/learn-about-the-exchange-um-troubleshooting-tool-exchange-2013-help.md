@@ -191,7 +191,9 @@ UM トラブルシューティング ツールは社内外にわたる展開で�
 
 次の例では、Office Communications Server 2007 R2 または Lync Server を含まない環境での呼び出しフローをテストするために、ゲートウェイ モードが使用されています。この例では、VoIP ゲートウェイ、PBX、および IP PBX、さらにユニファイド メッセージング コンポーネントを含むテレフォニー装置をテストします。この例では、ボイス オーバー IP (VoIP) セキュリティ モードを \[セキュリティ保護なし\] に設定し、IP アドレス 10.1.1.1 を次ホップとして使用し、迂回路情報に内線番号を含めます。
 
-    Test-ExchangeUMCallFlow -Mode Gateway -VoIPSecurity Unsecured -NextHop 10.1.1.1 -Diversion 12345
+```powershell
+Test-ExchangeUMCallFlow -Mode Gateway -VoIPSecurity Unsecured -NextHop 10.1.1.1 -Diversion 12345
+```
 
 概要
 

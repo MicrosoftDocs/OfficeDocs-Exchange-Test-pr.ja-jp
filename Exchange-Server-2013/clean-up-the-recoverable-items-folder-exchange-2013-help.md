@@ -108,7 +108,9 @@ _**トピックの最終更新日:** 2015-09-30_
 
 4.  現在の管理フォルダー アシスタントのワーク サイクル構成を取得します。後で使用するために、設定を忘れずにメモします。
     
-        Get-MailboxServer "My Mailbox Server" | Format-List Name,ManagedFolderWorkCycle
+    ```powershell
+Get-MailboxServer "My Mailbox Server" | Format-List Name,ManagedFolderWorkCycle
+```
 
 5.  メールボックスへのクライアント アクセスを無効にし、この手順の実行中にメールボックス データに対して変更が行われないようにします。
     
@@ -120,7 +122,9 @@ _**トピックの最終更新日:** 2015-09-30_
 
 7.  メールボックス サーバーの管理フォルダー アシスタントを無効にする。
     
-        Set-MailboxServer MyMailboxServer -ManagedFolderWorkCycle $null
+    ```powershell
+Set-MailboxServer MyMailboxServer -ManagedFolderWorkCycle $null
+```
     
 
     > [!IMPORTANT]
@@ -130,7 +134,9 @@ _**トピックの最終更新日:** 2015-09-30_
 
 8.  単一アイテムの回復を無効にし、訴訟ホールドからメールボックスを削除します。
     
-        Set-Mailbox "Gurinder Singh" -SingleItemRecoveryEnabled $false -LitigationHoldEnabled $false
+    ```powershell
+Set-Mailbox "Gurinder Singh" -SingleItemRecoveryEnabled $false -LitigationHoldEnabled $false
+```
     
 
     > [!IMPORTANT]
@@ -154,7 +160,9 @@ _**トピックの最終更新日:** 2015-09-30_
 
 10. メールボックスが訴訟ホールドの対象だった場合または以前に単一アイテムの回復が有効だった場合は、それらの機能を再度有効にします。
     
-        Set-Mailbox "Gurinder Singh" -SingleItemRecoveryEnabled $true -LitigationHoldEnabled $true
+    ```powershell
+Set-Mailbox "Gurinder Singh" -SingleItemRecoveryEnabled $true -LitigationHoldEnabled $true
+```
     
 
     > [!IMPORTANT]
@@ -184,7 +192,9 @@ _**トピックの最終更新日:** 2015-09-30_
 
 12. ワーク サイクルの設定を手順 4 でメモした値に戻すことで、管理フォルダー アシスタントを有効にします。この例ではワーク サイクルを 1 日に設定します。
     
-        Set-MailboxServer MyMailboxServer -ManagedFolderWorkCycle 1
+    ```powershell
+Set-MailboxServer MyMailboxServer -ManagedFolderWorkCycle 1
+```
 
 13. クライアント アクセスを有効にします。
     

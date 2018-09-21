@@ -72,7 +72,9 @@ DAG ネットワークが正常に作成されたことを確認するには、�
 
   - シェルで次のコマンドを実行して、DAG ネットワークが作成されたことを確認し、DAG ネットワークの構成情報を表示します。
     
-        Get-DatabaseAvailabilityGroupNetwork <DAGNetworkName> | Format-List
+    ```powershell
+Get-DatabaseAvailabilityGroupNetwork <DAGNetworkName> | Format-List
+```
 
 ## 詳細情報
 

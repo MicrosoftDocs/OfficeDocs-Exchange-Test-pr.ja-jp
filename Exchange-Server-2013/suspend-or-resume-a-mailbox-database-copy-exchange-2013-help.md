@@ -65,21 +65,29 @@ _**トピックの最終更新日:** 2012-11-02_
 
 この例では、サーバー MBX1 上でホストされているデータベース DB1 のコピーの連続レプリケーションを中断します。オプションのコメントも指定されています。
 
-    Suspend-MailboxDatabaseCopy -Identity DB1\MBX1 -SuspendComment "Maintenance on MBX1" -Confirm:$False
+```powershell
+Suspend-MailboxDatabaseCopy -Identity DB1\MBX1 -SuspendComment "Maintenance on MBX1" -Confirm:$False
+```
 
 この例では、サーバー MBX2 上でホストされているデータベース DB2 のコピーのアクティブ化を中断します。
 
-    Suspend-MailboxDatabaseCopy -Identity DB2\MBX2 -ActivationOnly -Confirm:$False
+```powershell
+Suspend-MailboxDatabaseCopy -Identity DB2\MBX2 -ActivationOnly -Confirm:$False
+```
 
 ## シェルを使用してメールボックス データベース コピーを再開する
 
 この例では、サーバー MBX1 上にあるデータベース DB1 のコピーを再開します。
 
-    Resume-MailboxDatabaseCopy -Identity DB1\MBX1
+```powershell
+Resume-MailboxDatabaseCopy -Identity DB1\MBX1
+```
 
 この例では、レプリケーション専用のサーバー MBX2 上にあるデータベース DB2 のコピーを再開します。
 
-    Resume-MailboxDatabaseCopy -Identity DB2\MBX2 -ReplicationOnly
+```powershell
+Resume-MailboxDatabaseCopy -Identity DB2\MBX2 -ReplicationOnly
+```
 
 ## 正常な動作を確認する方法
 
@@ -89,5 +97,7 @@ _**トピックの最終更新日:** 2012-11-02_
 
   - シェルで次のコマンドを実行して、データベース コピーの状態情報を表示します。
     
-        Get-MailboxDatabaseCopyStatus <DatabaseCopyName> | Format-List
+    ```powershell
+Get-MailboxDatabaseCopyStatus <DatabaseCopyName> | Format-List
+```
 

@@ -113,15 +113,21 @@ _**トピックの最終更新日:** 2015-03-09_
 
 この例では、データベース DB2 のすべてのコピーの状態情報を返します。
 
-    Get-MailboxDatabaseCopyStatus -Identity DB2 | Format-List
+```powershell
+Get-MailboxDatabaseCopyStatus -Identity DB2 | Format-List
+```
 
 この例では、メールボックス サーバー MBX2 上のすべてのデータベース コピーの状態を返します。
 
-    Get-MailboxDatabaseCopyStatus -Server MBX2 | Format-List
+```powershell
+Get-MailboxDatabaseCopyStatus -Server MBX2 | Format-List
+```
 
 この例では、ローカル メールボックス サーバー上のすべてのデータベース コピーの状態を返します。
 
-    Get-MailboxDatabaseCopyStatus -Local | Format-List
+```powershell
+Get-MailboxDatabaseCopyStatus -Local | Format-List
+```
 
 **Get-MailboxDatabaseCopyStatus** コマンドレットの使用方法の詳細については、「[Get-MailboxDatabaseCopyStatus](https://technet.microsoft.com/ja-jp/library/dd298044\(v=exchg.150\))」を参照してください。
 
@@ -225,7 +231,9 @@ _**トピックの最終更新日:** 2015-03-09_
 
 この例では、**Test-ReplicationHealth** コマンドレットを使用して、メールボックス サーバー MBX1 のレプリケーションの状態をテストします。
 
-    Test-ReplicationHealth -Identity MBX1
+```powershell
+Test-ReplicationHealth -Identity MBX1
+```
 
 ## クリムゾン チャネルのイベント ログ
 
@@ -448,7 +456,9 @@ CollectReplicationMetrics.ps1 スクリプトでは、スクリプトの動作�
 
 次の例では、DAG1 という DAG 内のすべてのサーバーから、1 分間隔でサンプリングして 1 時間分のデータを収集し、その後概要レポートを生成します。さらに、*ReportPath* パラメーターが使用されています。このパラメーターによって、すべてのファイルが現在のディレクトリに保存されます。
 
-    CollectReplicationMetrics.ps1 -DagName DAG1 -Duration "01:00:00" -Frequency "00:01:00" -ReportPath
+```powershell
+CollectReplicationMetrics.ps1 -DagName DAG1 -Duration "01:00:00" -Frequency "00:01:00" -ReportPath
+```
 
 次の例では、CounterData\* と一致するすべてのファイルからデータを読み込み、その後概要レポートを生成します。
 

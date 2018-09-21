@@ -71,7 +71,9 @@ POP3 のメッセージ取得形式を設定した後、POP3 サービスを再�
 
 この例では、サーバー CAS01 上のすべての POP3 ユーザーに対してメッセージ取得形式オプションをテキスト専用に設定します。
 
-    Set-PopSettings -Identity CAS01 -MessageRetrievalMimeFormat TextOnly
+```powershell
+Set-PopSettings -Identity CAS01 -MessageRetrievalMimeFormat TextOnly
+```
 
 次の設定から選択できます。数値またはテキスト文字列を使用して、*MessageRetrievalMimeFormat* パラメーターの値を指定できます。
 
@@ -128,7 +130,9 @@ POP3 のメッセージ取得形式を設定した後、POP3 サービスを再�
 
 1.  シェルで、次のコマンドを実行します。
     
-        Get-PopSettings | format-list
+    ```powershell
+Get-PopSettings | format-list
+```
 
 2.  *MessageRetrievalMimeFormat* 設定が正しいことを確認します。
 
@@ -166,7 +170,9 @@ IMAP4 のメッセージ取得形式を設定した後、IMAP4 サービスを�
 
 この例では、サーバー CAS01 上のすべての IMAP4 ユーザーに対してメッセージ取得形式オプションをテキスト専用に設定します。
 
-    Set-ImapSettings -Identity CAS01 -MessageRetrievalMimeFormat TextOnly
+```powershell
+Set-ImapSettings -Identity CAS01 -MessageRetrievalMimeFormat TextOnly
+```
 
 次の設定から選択できます。数値またはテキスト文字列を使用して、*MessageRetrievalMimeFormat* パラメーターの値を指定できます。
 
@@ -223,7 +229,9 @@ IMAP4 のメッセージ取得形式を設定した後、IMAP4 サービスを�
 
 1.  シェルで、次のコマンドを実行します。
     
-        Get-ImapSettings | format-list
+    ```powershell
+Get-ImapSettings | format-list
+```
 
 2.  *MessageRetrievalMimeFormat* 設定が正しいことを確認します。
 
@@ -233,7 +241,9 @@ IMAP4 のメッセージ取得形式を設定した後、IMAP4 サービスを�
 
 この例では、`USER01` の POP3 アクセスについてメッセージ取得形式をテキスト専用に設定します。
 
-    Set-CASMailbox -Identity USER01 -PopMessagesRetrievalMimeFormat TextOnly
+```powershell
+Set-CASMailbox -Identity USER01 -PopMessagesRetrievalMimeFormat TextOnly
+```
 
 次の設定から選択できます。数値またはテキスト文字列を使用して、*PopMessagesRetrievalMimeFormat* パラメーターの値を指定できます。
 
@@ -290,7 +300,9 @@ POP3 のメッセージ取得形式を設定した後、POP3 サービスを再�
 
 1.  シェルで、次のコマンドを実行します。
     
-        Get-CAS Mailbox <identity> | format-list
+    ```powershell
+Get-CAS Mailbox <identity> | format-list
+```
 
 2.  *PopMessagesRetrievalMimeFormat* の値が正しいことを確認します。
 
@@ -300,7 +312,9 @@ POP3 のメッセージ取得形式を設定した後、POP3 サービスを再�
 
 この例では、`USER01` の IMAP4 アクセスについてメッセージ取得形式をテキスト専用に設定します。
 
-    Set-CASMailbox -Identity USER01 -ImapMessagesRetrievalMimeFormat TextOnly
+```powershell
+Set-CASMailbox -Identity USER01 -ImapMessagesRetrievalMimeFormat TextOnly
+```
 
 数値またはテキスト文字列を使用して、*ImapMessagesRetrievalMimeFormat* パラメーターの値を指定できます。
 
@@ -357,7 +371,9 @@ IMAP4 のメッセージ取得形式を設定した後、IMAP4 サービスを�
 
 1.  シェルで、次のコマンドを実行します。
     
-        Get-CAS Mailbox <identity> | format-list
+    ```powershell
+Get-CAS Mailbox <identity> | format-list
+```
 
 2.  *ImapMessagesRetrievalMimeFormat* の値が正しいことを確認します。
 

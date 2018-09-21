@@ -43,7 +43,9 @@ Microsoft Exchange Server 2013 では、メールボックス サーバーおよ
 
 1.  メールボックス サーバーまたはエッジ トランスポート サーバーのコマンド プロンプト ウィンドウで、次のコマンドを実行して EdgeTransport.exe.config をメモ帳で開きます。
     
-        Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
+    ```powershell
+Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
+```
 
 2.  `<appSettings>` セクションで以下のキーを検索します。
     
@@ -145,11 +147,15 @@ Microsoft Exchange Server 2013 では、メールボックス サーバーおよ
 
 メッセージの再試行間隔を設定するには、次の構文を使用します。
 
-    Set-TransportService <ServerIdentity> -MessageRetryInterval <dd.hh:mm:ss>
+```powershell
+Set-TransportService <ServerIdentity> -MessageRetryInterval <dd.hh:mm:ss>
+```
 
 この例では、Mailbox01 というメールボックス サーバーで、メッセージの再試行間隔を 20 分に変更します。
 
-    Set-TransportService Mailbox01 -MessageRetryInterval 00:20:00
+```powershell
+Set-TransportService Mailbox01 -MessageRetryInterval 00:20:00
+```
 
 ## 遅延 DSN タイムアウト設定を構成する
 
@@ -173,11 +179,15 @@ EAC またはシェルを使用して、遅延 DSN 通知のタイムアウト�
 
 メッセージの再試行間隔を設定するには、次の構文を使用します。
 
-    Set-TransportService <ServerIdentity> -DelayNotificationTimeout <dd.hh:mm:ss>
+```powershell
+Set-TransportService <ServerIdentity> -DelayNotificationTimeout <dd.hh:mm:ss>
+```
 
 この例では、Mailbox01 というメールボックス サーバーで、遅延 DSN メッセージ通知のタイムアウト間隔を 6 時間に変更します。
 
-    Set-TransportService Mailbox01 -DelayNotificationTimeout 06:00:00
+```powershell
+Set-TransportService Mailbox01 -DelayNotificationTimeout 06:00:00
+```
 
 ## シェルを使用して、外部または内部のメッセージ送信者への遅延 DSN 通知の送信を有効または無効にする
 
@@ -187,11 +197,15 @@ EAC またはシェルを使用して、遅延 DSN 通知のタイムアウト�
 
 この例では、外部の送信者に遅延 DSN 通知メッセージを送信しないようにします。
 
-    Set-TransportConfig -ExternalDelayDSNEnabled $false
+```powershell
+Set-TransportConfig -ExternalDelayDSNEnabled $false
+```
 
 この例では、内部の送信者に遅延 DSN 通知メッセージを送信しないようにします。
 
-    Set-TransportConfig -InternalDelayDSNEnabled $false
+```powershell
+Set-TransportConfig -InternalDelayDSNEnabled $false
+```
 
 ## メッセージの有効期限のタイムアウト間隔を構成する
 
@@ -207,9 +221,13 @@ EAC またはシェルを使用して、遅延 DSN 通知のタイムアウト�
 
 メッセージの有効期限のタイムアウト間隔を構成するには、次の構文を使用します。
 
-    Set-TransportService <ServerIdentity> -MessageExpirationTimeout <dd.hh:mm:ss>
+```powershell
+Set-TransportService <ServerIdentity> -MessageExpirationTimeout <dd.hh:mm:ss>
+```
 
 この例では、Mailbox01 という Exchange サーバーで、メッセージの有効期限のタイムアウト間隔を 4 日に変更します。
 
-    Set-TransportService Mailbox01 -MessageExpirationTimeout 4.00:00:00
+```powershell
+Set-TransportService Mailbox01 -MessageExpirationTimeout 4.00:00:00
+```
 

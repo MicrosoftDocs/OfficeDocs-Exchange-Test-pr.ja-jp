@@ -97,7 +97,9 @@ RBAC 分割型アクセス許可を構成するには、次の操作を行いま
     
     1.  Exchange 2013 インストール メディアから次のコマンドを実行して、Active Directory 分割型アクセス許可を無効にします。
         
-            setup.exe /PrepareAD /ActiveDirectorySplitPermissions:false
+        ```powershell
+setup.exe /PrepareAD /ActiveDirectorySplitPermissions:false
+```
     
     2.  組織内の Exchange 2013 サーバーを再起動するか、Active Directory アクセス トークンがすべての Exchange 2013 サーバーにレプリケートされるのを待ちます。
         
@@ -125,11 +127,15 @@ RBAC 分割型アクセス許可を構成するには、次の操作を行いま
     
     3.  以下のコマンドを使用して、新しい役割グループにメンバーを追加します。
         
-            Add-RoleGroupMember "Active Directory Administrators" -Member <user to add>
+        ```powershell
+Add-RoleGroupMember "Active Directory Administrators" -Member <user to add>
+```
     
     4.  役割グループのメンバーのみがメンバーを追加または削除することができるように、新しい役割グループの代理人の一覧を置き換えます。
         
-            Set-RoleGroup "Active Directory Administrators" -ManagedBy "Active Directory Administrators"
+        ```powershell
+Set-RoleGroup "Active Directory Administrators" -ManagedBy "Active Directory Administrators"
+```
         
 
         > [!IMPORTANT]
@@ -142,7 +148,9 @@ RBAC 分割型アクセス許可を構成するには、次の操作を行いま
     
     6.  以下のコマンドを使用して、新しい役割グループやその他の役割グループ、USG、または保持する必要がある直接的な役割に関連付けられていない "Mail Recipient Creation/メール受信者の作成" 役割へのすべての正規および委任の役割の割り当てを削除します。
         
-            Remove-ManagementRoleAssignment <Mail Recipient Creation role assignment to remove>
+        ```powershell
+Remove-ManagementRoleAssignment <Mail Recipient Creation role assignment to remove>
+```
         
 
         > [!NOTE]
@@ -222,7 +230,9 @@ Exchange 管理者とサーバーは、既存の Active Directory セキュリ�
 
 1.  Windows コマンド シェルで、Exchange 2013 インストール メディアから次のコマンドを実行して Active Directory 分割型アクセス許可を有効にします。
     
-        setup.exe /PrepareAD /ActiveDirectorySplitPermissions:true
+    ```powershell
+setup.exe /PrepareAD /ActiveDirectorySplitPermissions:true
+```
 
 2.  組織内に複数の Active Directory ドメインがある場合、Exchange サーバーまたはオブジェクトを含むそれぞれの子ドメインで `setup.exe /PrepareDomain` を実行するか、すべてのドメインの Active Directory サーバーがあるサイトから `setup.exe /PrepareAllDomains` を実行します。
 

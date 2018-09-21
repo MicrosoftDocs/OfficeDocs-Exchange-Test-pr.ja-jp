@@ -71,7 +71,9 @@ _**トピックの最終更新日:** 2013-02-14_
 
 このシェルの例では、メールボックス jpeoples からアイテム保持ポリシーを削除します。
 
-    Set-Mailbox jpeoples -RetentionPolicy $null.
+```powershell
+Set-Mailbox jpeoples -RetentionPolicy $null.
+```
 
 このシェルの例では、Exchange 組織内のすべてのメールボックスからアイテム保持ポリシーを削除します。
 
@@ -111,7 +113,9 @@ _**トピックの最終更新日:** 2013-02-14_
 
 このコマンドでは、Exchange 組織から Corp-Users 保持ポリシーが削除されます。
 
-    Remove-RetentionPolicy Corp-Users
+```powershell
+Remove-RetentionPolicy Corp-Users
+```
 
 構文およびパラメーターの詳細については、以下のトピックを参照してください。
 
