@@ -37,9 +37,9 @@ Exchange 2013 を使用すると、SharePoint 2013 がフェデレーション�
 
 詳細については、以下のトピックを参照してください。
 
-  - [インプレース電子情報開示 (eDiscovery)](in-place-ediscovery-exchange-2013-help.md)
+  - [インプレース電子情報開示 (eDiscovery)](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery)
 
-  - [インプレース保持と訴訟ホールド](in-place-hold-and-litigation-hold-exchange-2013-help.md)
+  - [インプレース保持と訴訟ホールド](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/in-place-and-litigation-holds)
 
   - [電子情報開示を構成する (SharePoint 2013)](https://go.microsoft.com/fwlink/p/?linkid=257727)
 

@@ -114,7 +114,7 @@ _**トピックの最終更新日:** 2016-12-09_
 <td><p><a href="discovery-management-exchange-2013-help.md">検出の管理</a></p>
 
 > [!NOTE]  
-> 既定では、"Discovery Management/検出の管理" 役割グループにはメンバーが存在しません。管理者を含むユーザーには、メールボックスを検索するのに必要なアクセス許可がありません。詳細については、「<A href="assign-ediscovery-permissions-in-exchange-exchange-2013-help.md">Exchange の電子情報開示のアクセス許可を割り当てる</A>」を参照してください。
+> 既定では、"Discovery Management/検出の管理" 役割グループにはメンバーが存在しません。管理者を含むユーザーには、メールボックスを検索するのに必要なアクセス許可がありません。詳細については、「<A href="https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/in-place-ediscovery/assign-ediscovery-permissions">Exchange の電子情報開示のアクセス許可を割り当てる</A>」を参照してください。
 
 
 </td>

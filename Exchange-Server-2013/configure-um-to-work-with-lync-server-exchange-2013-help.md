@@ -23,7 +23,7 @@ Microsoft Lync Server を Exchange ユニファイド メッセージング (UM)
     
 
     > [!IMPORTANT]
-    > ExchUcUtil.ps1 スクリプトは、1 つまたは複数の UM IP ゲートウェイを作成します。スクリプトで作成した 1 つのゲートウェイを除き、すべての UM IP ゲートウェイでの発信呼び出しを無効にする必要があります。これにはスクリプトを実行する前に作成した UM IP ゲートウェイでの発信呼び出しを無効にすることが含まれます。UM IP ゲートウェイでの発信呼び出しを無効にするには、「<A href="disable-outgoing-calls-on-um-ip-gateways-exchange-2013-help.md">UM IP ゲートウェイで送信呼び出しを無効にする</A>」を参照してください。
+    > ExchUcUtil.ps1 スクリプトは、1 つまたは複数の UM IP ゲートウェイを作成します。スクリプトで作成した 1 つのゲートウェイを除き、すべての UM IP ゲートウェイでの発信呼び出しを無効にする必要があります。これにはスクリプトを実行する前に作成した UM IP ゲートウェイでの発信呼び出しを無効にすることが含まれます。UM IP ゲートウェイでの発信呼び出しを無効にするには、「<A href="disable-outgoing-calls-on-https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/connect-voice-mail-system/um-ip-gateways">UM IP ゲートウェイで送信呼び出しを無効にする</A>」を参照してください。
 
 
 
@@ -59,7 +59,7 @@ Microsoft Lync Server と同じトポロジにある組織の Exchange サーバ
 
 
 > [!IMPORTANT]
-> ExchUcUtil.ps1 スクリプトは、1 つまたは複数の UM IP ゲートウェイを作成します。スクリプトで作成した 1 つのゲートウェイを除き、すべての UM IP ゲートウェイでの発信呼び出しを無効にする必要があります。これにはスクリプトを実行する前に作成した UM IP ゲートウェイでの発信呼び出しを無効にすることが含まれます。UM IP ゲートウェイでの発信呼び出しを無効にするには、「<A href="disable-outgoing-calls-on-um-ip-gateways-exchange-2013-help.md">UM IP ゲートウェイで送信呼び出しを無効にする</A>」を参照してください。
+> ExchUcUtil.ps1 スクリプトは、1 つまたは複数の UM IP ゲートウェイを作成します。スクリプトで作成した 1 つのゲートウェイを除き、すべての UM IP ゲートウェイでの発信呼び出しを無効にする必要があります。これにはスクリプトを実行する前に作成した UM IP ゲートウェイでの発信呼び出しを無効にすることが含まれます。UM IP ゲートウェイでの発信呼び出しを無効にするには、「<A href="disable-outgoing-calls-on-https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/connect-voice-mail-system/um-ip-gateways">UM IP ゲートウェイで送信呼び出しを無効にする</A>」を参照してください。
 
 
 

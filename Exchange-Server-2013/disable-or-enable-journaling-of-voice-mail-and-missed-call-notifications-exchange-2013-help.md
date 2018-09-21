@@ -19,7 +19,7 @@ _**トピックの最終更新日:** 2015-04-08_
 
 Microsoft Exchange Server 2013 では、Exchange 組織内の受信者または送信者との間で送受信される電子メール メッセージをジャーナリングするためのジャーナル ルールを作成するとき、ユニファイド メッセージング サービスによって生成されるボイス メールおよび不在着信通知が含まれます。このトピックの手順を使用して、この機能を組織全体に対してオンまたはオフにします。
 
-ジャーナリングに関連する他の管理タスクについては、「[ジャーナリングの管理](manage-journaling-exchange-2013-help.md)」を参照してください。
+ジャーナリングに関連する他の管理タスクについては、「[ジャーナリングの管理](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/journaling/manage-journaling)」を参照してください。
 
 ## 始める前に把握しておくべき情報
 
@@ -53,5 +53,5 @@ Microsoft Exchange Server 2013 では、Exchange 組織内の受信者または�
 
 [ジャーナル](journaling-exchange-2013-help.md)
 
-[ジャーナリングの管理](manage-journaling-exchange-2013-help.md)
+[ジャーナリングの管理](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/journaling/manage-journaling)
 

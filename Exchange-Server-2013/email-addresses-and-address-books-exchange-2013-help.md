@@ -64,11 +64,11 @@ _**トピックの最終更新日:** 2015-03-09_
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><a href="address-lists-exchange-2013-help.md">アドレス一覧</a></p></td>
+<td><p><a href="https://docs.microsoft.com/ja-jp/exchange/address-books/address-lists/address-lists">アドレス一覧</a></p></td>
 <td><p>受信者を整理し、エンドユーザーにアクセスしやすくするためのアドレス一覧および GAL の詳細情報:</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="address-book-policies-exchange-2013-help.md">アドレス帳ポリシー</a></p></td>
+<td><p><a href="https://docs.microsoft.com/ja-jp/exchange/address-books/address-book-policies/address-book-policies">アドレス帳ポリシー</a></p></td>
 <td><p>アドレス一覧および GAL を別々の仮想組織に区分するための詳細情報:</p></td>
 </tr>
 <tr class="odd">
@@ -80,7 +80,7 @@ _**トピックの最終更新日:** 2015-03-09_
 <td><p>受信者を見つけやすくするプロキシ電子メール アドレスについての詳細情報:</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="hierarchical-address-books-exchange-2013-help.md">階層型アドレス帳</a></p></td>
+<td><p><a href="https://docs.microsoft.com/ja-jp/exchange/address-books/hierarchical-address-books/hierarchical-address-books">階層型アドレス帳</a></p></td>
 <td><p>組織固有のビジネス構造に合わせて GAL およびアドレス一覧をカスタマイズするための詳細情報:</p></td>
 </tr>
 <tr class="even">

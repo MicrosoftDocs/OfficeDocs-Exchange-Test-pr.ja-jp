@@ -23,23 +23,23 @@ _**トピックの最終更新日:** 2017-04-28_
 
 Exchange Online におけるメール フロー ルールの情報については、「[Exchange Online のメール フロー ルール (トランスポート ルール)](https://technet.microsoft.com/ja-jp/library/jj919238\(v=exchg.150\))」を参照してください。Exchange Online Protection におけるメール フロー ルールの情報については、「[Exchange Online Protection のメール フロー ルール (トランスポート ルール)](https://technet.microsoft.com/ja-jp/library/dn271424\(v=exchg.150\))」を参照してください。
 
-メール フロー ルールを管理するために、Exchange 管理センター (EAC)、または Exchange 管理シェル を使用できます。トランスポート ルールを管理する方法の詳細については、[メール フロー ルールを管理します](manage-mail-flow-rules-exchange-2013-help.md) を参照してください。
+メール フロー ルールを管理するために、Exchange 管理センター (EAC)、または Exchange 管理シェル を使用できます。トランスポート ルールを管理する方法の詳細については、[メール フロー ルールを管理します](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules) を参照してください。
 
-ルールごとに、ルールを適用、ルールをテスト、ルールをテストして送信者に通知するという、いずれかのオプションを選択できます。テストのオプションについては、[メール フロー ルールのテスト](test-a-mail-flow-rule-exchange-2013-help.md) および [ポリシー ヒント](technical-overview-of-policy-tips-in-exchange-online-and-exchange-2013.md)を参照してください。
+ルールごとに、ルールを適用、ルールをテスト、ルールをテストして送信者に通知するという、いずれかのオプションを選択できます。テストのオプションについては、[メール フロー ルールのテスト](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/mail-flow-rules/test-mail-flow-rules) および [ポリシー ヒント](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/data-loss-prevention/policy-tips)を参照してください。
 
 メール フロー ルールを使用して特定のメッセージング ポリシーを実装するには、次のトピックを参照してください。
 
   - [トランスポート ルールを使用してメッセージの添付を検査する](use-transport-rules-to-inspect-message-attachments-exchange-2013-help.md)
 
-  - [添付ファイル ブロックの一般的なシナリオ](common-attachment-blocking-scenarios-for-mail-flow-rules-exchange-2013-help.md)
+  - [添付ファイル ブロックの一般的なシナリオ](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/mail-flow-rules/common-attachment-blocking-scenarios)
 
   - [組織全体の免責事項、署名、フッター、またはヘッダー](organization-wide-disclaimers-signatures-footers-or-headers-exchange-online-help.md)
 
-  - [メッセージが低優先メール機能を迂回できるメール フロー ルールを使用する](use-mail-flow-rules-so-messages-can-bypass-clutter-exchange-2013-help.md)
+  - [メッセージが低優先メール機能を迂回できるメール フロー ルールを使用する](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/mail-flow-rules/use-rules-to-bypass-clutter)
 
-  - [単語、語句、パターンの一覧に基づいてメールをルーティングするメール フロー ルールの使用](use-mail-flow-rules-to-route-email-based-on-a-list-of-words-phrases-or-patterns-exchange-2013-help.md)
+  - [単語、語句、パターンの一覧に基づいてメールをルーティングするメール フロー ルールの使用](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/mail-flow-rules/use-rules-to-route-email)
 
-  - [一般的なメッセージの承認シナリオ](common-message-approval-scenarios-exchange-2013-help.md)
+  - [一般的なメッセージの承認シナリオ](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/mail-flow-rules/common-message-approval-scenarios)
 
 ## メール フロー ルールの構成要素
 
@@ -131,14 +131,14 @@ Exchange Online におけるメール フロー ルールの情報について�
 <td><p>メッセージにルールを適用する順番を示します。優先度の既定値はルールの作成時期に基づいています (古いルールのほうが新しいルールより優先度が高く、優先度の高いルールが優先度の低いルールよりも先に処理されます)。</p>
 <p>EAC 内でのルールの優先度は、ルール一覧内でそのルールを上下に移動させることで変更します。PowerShell では、優先度番号を設定します (0 が最高優先度)。</p>
 <p>たとえば、クレジット カード番号が含まれるメッセージを拒否するルールと、承認を必要とする別のルールがある場合、拒否のルールを最初に適用して、他のルールの適用を停止する必要があります。</p>
-<p>詳細に関しては、「<a href="manage-mail-flow-rules-exchange-2013-help.md">メール フロー ルールの優先度の設定</a>」を参照してください。</p></td>
+<p>詳細に関しては、「<a href="https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules">メール フロー ルールの優先度の設定</a>」を参照してください。</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>[モード]</strong></p></td>
 <td><p><em>Mode</em></p></td>
 <td><p>ルールにすぐにメッセージの処理を開始させるか、あるいはメッセージの配信に影響を与えずにルールをテストするかどうかを指定することができます (データ紛失防止、DLP ポリシー ヒントの有無を問わず)。</p>
-<p>ポリシー ヒントは、メッセージを作成しているユーザーにそれがポリシー違反の可能性があることを通知する短いメモを、Outlook または Web 上の Outlook で提示します。詳細については、「<a href="technical-overview-of-policy-tips-in-exchange-online-and-exchange-2013.md">ポリシー ヒント</a>」を参照してください。</p>
-<p>モードの詳細については、「<a href="test-a-mail-flow-rule-exchange-2013-help.md">メール フロー ルールのテスト</a>」を参照してください。</p></td>
+<p>ポリシー ヒントは、メッセージを作成しているユーザーにそれがポリシー違反の可能性があることを通知する短いメモを、Outlook または Web 上の Outlook で提示します。詳細については、「<a href="https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/data-loss-prevention/policy-tips">ポリシー ヒント</a>」を参照してください。</p>
+<p>モードの詳細については、「<a href="https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/mail-flow-rules/test-mail-flow-rules">メール フロー ルールのテスト</a>」を参照してください。</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>次の日付でこのルールを有効にする</strong></p>
@@ -259,7 +259,7 @@ Exchange 2013 では、この間隔および展開されたグループ キャ�
 
   - 各メールボックス サーバーは、展開された配布グループをキャッシュして、グループのメンバーシップを特定するために Active Directory クエリが繰り返し実行されないようにします。既定では、拡張されたグループ キャッシュは 4 時間ごとに期限切れになります。したがって、グループのメンバーシップに対する変更は、展開されたグループ キャッシュが更新されるまでメールフロー ルールには検出されません。メールボックス サーバーに対してすぐにキャッシュを更新するように強制するには、Microsoft Exchange トランスポート サービスを再起動します。キャッシュを強制的に更新する各メールボックス サーバーのサービスを再起動する必要があります。
 
-エッジ トランスポート サーバー上で作成、構成されるメール フロー ルールは、サーバー上の AD LDS のローカル インスタンスに格納されます。エッジ トランスポート サーバーでは、メール フロー ルールの自動レプリケーションは発生しません。エッジ トランスポート サーバー上のルールは、そのローカル サーバーを流れるメッセージのみに適用されます。複数のエッジ トランスポート サーバーに同じメール フロー ルールのセットを適用する必要がある場合、エッジ トランスポート サーバーの構成を複製したり、メール フロー ルールをエクスポートおよびインポートすることができます。詳細については、[エッジ トランスポート サーバーの複製構成](edge-transport-server-cloned-configuration-exchange-2013-help.md) と「[メール フロー ルール コレクションのインポートまたはエクスポート](manage-mail-flow-rules-exchange-2013-help.md)」をご覧ください。
+エッジ トランスポート サーバー上で作成、構成されるメール フロー ルールは、サーバー上の AD LDS のローカル インスタンスに格納されます。エッジ トランスポート サーバーでは、メール フロー ルールの自動レプリケーションは発生しません。エッジ トランスポート サーバー上のルールは、そのローカル サーバーを流れるメッセージのみに適用されます。複数のエッジ トランスポート サーバーに同じメール フロー ルールのセットを適用する必要がある場合、エッジ トランスポート サーバーの構成を複製したり、メール フロー ルールをエクスポートおよびインポートすることができます。詳細については、[エッジ トランスポート サーバーの複製構成](edge-transport-server-cloned-configuration-exchange-2013-help.md) と「[メール フロー ルール コレクションのインポートまたはエクスポート](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules)」をご覧ください。
 
 メールボックス サーバーまたはエッジ トランスポート サーバー上のトランスポート サービスがメール フロー ルールの変更を検出すると、イベント ビューアーのアプリケーション ログにイベントが記録されます (メールボックス サーバーのイベント ID 4002 と、エッジ トランスポート サーバーのイベント ID 16028)。
 
@@ -285,7 +285,7 @@ Exchange 2013 の一般的な混在環境のシナリオは 2 つあります。
 
 ## 詳細情報
 
-[メール フロー ルールを管理します](manage-mail-flow-rules-exchange-2013-help.md)
+[メール フロー ルールを管理します](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules)
 
 [トランスポート ルールの条件 (述語)](mail-flow-rule-conditions-and-exceptions-predicates-in-exchange-2013-exchange-2013-help.md)
 

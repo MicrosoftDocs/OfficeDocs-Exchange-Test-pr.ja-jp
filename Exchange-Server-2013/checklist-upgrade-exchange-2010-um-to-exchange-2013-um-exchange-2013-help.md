@@ -23,9 +23,9 @@ _**トピックの最終更新日:** 2016-12-09_
 
   - [ユニファイド メッセージングの計画](planning-for-unified-messaging-exchange-2013-help.md)
 
-  - [電話システムの UM との統合](telephone-system-integration-with-um-exchange-2013-help.md)
+  - [電話システムの UM との統合](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/telephone-system-integration-with-um)
 
-  - [電話ネットワークへのボイス メール システムの接続](connect-your-voice-mail-system-to-your-telephone-network-exchange-2013-help.md)
+  - [電話ネットワークへのボイス メール システムの接続](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/connect-voice-mail-system/connect-voice-mail-system)
 
 Exchange 2007 UM から Exchange 2013 UM にアップグレードする方法の詳細な手順については、「[Exchange 2007 UM から Exchange 2013 UM へのアップグレード](upgrade-exchange-2007-um-to-exchange-2013-um-exchange-2013-help.md)」を参照してください。
 
@@ -111,31 +111,31 @@ Exchange 2007 UM から Exchange 2013 UM にアップグレードする方法の
 <tr class="odd">
 <td><p></p></td>
 <td><p>既存の UM ダイヤル プランを作成または構成します。</p></td>
-<td><p><a href="create-a-um-dial-plan-exchange-2013-help.md">UM ダイヤル プランを作成する</a></p>
-<p><a href="manage-a-um-dial-plan-exchange-2013-help.md">UM ダイヤル プランの管理</a></p></td>
+<td><p><a href="https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-dial-plan">UM ダイヤル プランを作成する</a></p>
+<p><a href="https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/connect-voice-mail-system/manage-um-dial-plan">UM ダイヤル プランの管理</a></p></td>
 </tr>
 <tr class="even">
 <td><p></p></td>
 <td><p>既存の UM IP ゲートウェイを作成または構成します。</p></td>
-<td><p><a href="create-a-um-ip-gateway-exchange-2013-help.md">UM IP ゲートウェイを作成する</a></p>
-<p><a href="manage-a-um-ip-gateway-exchange-2013-help.md">UM IP ゲートウェイの管理</a></p></td>
+<td><p><a href="https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-ip-gateway">UM IP ゲートウェイを作成する</a></p>
+<p><a href="https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/connect-voice-mail-system/manage-um-ip-gateway">UM IP ゲートウェイの管理</a></p></td>
 </tr>
 <tr class="odd">
 <td><p></p></td>
 <td><p>UM ハント グループを作成します。</p></td>
-<td><p><a href="create-a-um-hunt-group-exchange-2013-help.md">UM ハント グループを作成する</a></p></td>
+<td><p><a href="https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-hunt-group">UM ハント グループを作成する</a></p></td>
 </tr>
 <tr class="even">
 <td><p></p></td>
 <td><p>UM 自動応答を作成または構成します。</p></td>
-<td><p><a href="create-a-um-auto-attendant-exchange-2013-help.md">UM 自動応答を作成する</a></p>
-<p><a href="manage-a-um-auto-attendant-exchange-2013-help.md">UM 自動応答の管理</a></p></td>
+<td><p><a href="https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/create-a-um-auto-attendant">UM 自動応答を作成する</a></p>
+<p><a href="https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/manage-um-auto-attendant">UM 自動応答の管理</a></p></td>
 </tr>
 <tr class="odd">
 <td><p></p></td>
 <td><p>UM メールボックス ポリシーを作成または構成します。</p></td>
-<td><p><a href="create-a-um-mailbox-policy-exchange-2013-help.md">UM メールボックス ポリシーの作成</a></p>
-<p><a href="manage-a-um-mailbox-policy-exchange-2013-help.md">UM メールボックス ポリシーの管理</a></p></td>
+<td><p><a href="https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-voice-mail/create-um-mailbox-policy">UM メールボックス ポリシーの作成</a></p>
+<p><a href="https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-voice-mail/manage-um-mailbox-policy">UM メールボックス ポリシーの管理</a></p></td>
 </tr>
 <tr class="even">
 <td><p></p></td>
@@ -145,13 +145,13 @@ Exchange 2007 UM から Exchange 2013 UM にアップグレードする方法の
 <tr class="odd">
 <td><p></p></td>
 <td><p>UM の新しいユーザーを有効にするか、既存の UM が有効なユーザーの設定を構成します。</p></td>
-<td><p><a href="enable-a-user-for-voice-mail-exchange-2013-help.md">ボイス メール用にユーザーを有効にする</a></p>
-<p><a href="manage-voice-mail-settings-for-a-user-exchange-2013-help.md">ユーザーのボイス メール設定の管理</a></p></td>
+<td><p><a href="https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-voice-mail/enable-a-user-for-voice-mail">ボイス メール用にユーザーを有効にする</a></p>
+<p><a href="https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-voice-mail/manage-voice-mail-settings">ユーザーのボイス メール設定の管理</a></p></td>
 </tr>
 <tr class="even">
 <td><p></p></td>
 <td><p>すべての着信呼び出しを Exchange 2013 クライアント アクセス サーバーに送信するよう、VoIP ゲートウェイ、IP PBX および SIP 対応 PBX を構成します。</p></td>
-<td><p><a href="configuration-notes-for-supported-voip-gateways-ip-pbxs-and-pbxs-exchange-2013-help.md">サポートされる VoIP ゲートウェイ、IP Pbx、および PBX の構成に関する注意事項</a> <a href="connect-a-voip-gateway-ip-pbx-or-session-border-controller-to-um-exchange-2013-help.md">VoIP ゲートウェイ、IP PBX、またはセッション ボーダー コント ローラーを UM に接続する</a></p></td>
+<td><p><a href="https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/configuration-notes-for-voip-gateways">サポートされる VoIP ゲートウェイ、IP Pbx、および PBX の構成に関する注意事項</a> <a href="connect-a-voip-gateway-ip-pbx-or-session-border-controller-to-um-exchange-2013-help.md">VoIP ゲートウェイ、IP PBX、またはセッション ボーダー コント ローラーを UM に接続する</a></p></td>
 </tr>
 <tr class="odd">
 <td><p></p></td>

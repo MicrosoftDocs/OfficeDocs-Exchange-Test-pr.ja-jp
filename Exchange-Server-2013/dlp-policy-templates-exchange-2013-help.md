@@ -57,7 +57,7 @@ Exchange 以外に、Microsoft が提供する特定の XML スキーマ定義�
 
   -  [Exchange Online のメール フロー ルール (トランスポート ルール)](https://technet.microsoft.com/ja-jp/library/jj919238\(v=exchg.150\)) (Exchange Online)
 
-  -  [メール フロー ルールを管理します](manage-mail-flow-rules-exchange-2013-help.md)
+  -  [メール フロー ルールを管理します](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules)
     
   -  [ポリシーとコンプライアンスのコマンドレット](https://technet.microsoft.com/ja-jp/library/dd298082\(v=exchg.150\))
 
@@ -65,11 +65,11 @@ Exchange 以外に、Microsoft が提供する特定の XML スキーマ定義�
 
 Microsoft から多数の DLP ポリシーが提供されています。これは、柔軟かつ単純に実施できる DLP ソリューションを開始するもっとも簡単な方法です。いつでもこれら提供されたポリシーを開始点として使用して、自らの要件に合わせてカスタマイズすることができます。これを開始するには、次の情報を参照してください。
 
-  - [Exchange で提供される DLP ポリシー テンプレート](dlp-policy-templates-supplied-in-exchange-exchange-2013-help.md)
+  - [Exchange で提供される DLP ポリシー テンプレート](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/data-loss-prevention/dlp-policy-templates)
 
-  - [テンプレートからの DLP ポリシーの作成](how-to-new-dlp-data-loss-prevention-policy-template.md)
+  - [テンプレートからの DLP ポリシーの作成](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/data-loss-prevention/create-dlp-policy-from-template)
 
 ## 詳細情報
 
-[データ損失防止](technical-overview-of-dlp-data-loss-prevention-in-exchange.md)
+[データ損失防止](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention)
 

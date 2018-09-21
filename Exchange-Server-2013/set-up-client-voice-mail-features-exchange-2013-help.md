@@ -41,15 +41,15 @@ Outlook Voice Access
 
 ## Outlook Voice Access
 
-Exchange UM では、UM が有効なユーザーが、UM ダイヤル プランで構成されている内部または外部の電話番号に呼び出しを行って、自分のメールボックスにアクセスしたり、Outlook Voice Access のメニュー システムを使用したりできます。UM が有効なユーザーは、このメニューを使用して、電子メールを読む、音声メッセージを聞く、Outlook 予定表を操作する、個人用連絡先にアクセスする、タスクを実行する (Outlook Voice Access PIN の構成やボイス メールの録音) などの操作ができます。詳細については、「[Outlook Voice Access の設定](setting-up-outlook-voice-access-exchange-2013-help.md)」を参照してください。
+Exchange UM では、UM が有効なユーザーが、UM ダイヤル プランで構成されている内部または外部の電話番号に呼び出しを行って、自分のメールボックスにアクセスしたり、Outlook Voice Access のメニュー システムを使用したりできます。UM が有効なユーザーは、このメニューを使用して、電子メールを読む、音声メッセージを聞く、Outlook 予定表を操作する、個人用連絡先にアクセスする、タスクを実行する (Outlook Voice Access PIN の構成やボイス メールの録音) などの操作ができます。詳細については、「[Outlook Voice Access の設定](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/set-up-outlook-voice-access)」を参照してください。
 
 ## 呼び出しの転送
 
-UM が有効なユーザーは、Outlook または Outlook Web App を使用して、通話応答ルールを作成および構成できます。通話応答ルールを使用すると、ユーザーは着信呼び出しの処理方法を制御できます。このルールが着信呼び出しに適用される方法は、受信トレイ ルールが受信電子メール メッセージに適用される方法と似ていて、ユーザーのメールボックス内の他のボイス設定と共に保存されます。UM が有効なそれぞれのメールボックスに対して、最大 9 つの通話応答ルールを設定できます。これらのルールは受信トレイ ルールから独立し、ユーザーの受信トレイ ルールの格納域の制限を消費しません。詳細については、「[ボイス メール ユーザーの呼び出し転送を許可する](allow-voice-mail-users-to-forward-calls-exchange-2013-help.md)」を参照してください。
+UM が有効なユーザーは、Outlook または Outlook Web App を使用して、通話応答ルールを作成および構成できます。通話応答ルールを使用すると、ユーザーは着信呼び出しの処理方法を制御できます。このルールが着信呼び出しに適用される方法は、受信トレイ ルールが受信電子メール メッセージに適用される方法と似ていて、ユーザーのメールボックス内の他のボイス設定と共に保存されます。UM が有効なそれぞれのメールボックスに対して、最大 9 つの通話応答ルールを設定できます。これらのルールは受信トレイ ルールから独立し、ユーザーの受信トレイ ルールの格納域の制限を消費しません。詳細については、「[ボイス メール ユーザーの呼び出し転送を許可する](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/allow-voice-mail-users-to-forward-calls)」を参照してください。
 
 ## ボイス メールのプレビュー
 
-ボイス メール プレビューは、UM ボイス メール システムからボイス メール メッセージを受信するユーザーが使用できる機能です。ボイス メールのプレビューでは、テキスト形式による録音出力により、ボイス メールのエクスペリエンスを強化しました。詳細については、「[ユーザーがボイス メールのトランスクリプトを表示できるようにする](allow-users-to-see-a-voice-mail-transcript-exchange-2013-help.md)」を参照してください。
+ボイス メール プレビューは、UM ボイス メール システムからボイス メール メッセージを受信するユーザーが使用できる機能です。ボイス メールのプレビューでは、テキスト形式による録音出力により、ボイス メールのエクスペリエンスを強化しました。詳細については、「[ユーザーがボイス メールのトランスクリプトを表示できるようにする](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/allow-users-to-see-a-voice-mail-transcript)」を参照してください。
 
 ## ファックスの受信
 

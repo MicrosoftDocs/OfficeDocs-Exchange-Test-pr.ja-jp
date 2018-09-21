@@ -19,15 +19,15 @@ _**トピックの最終更新日:** 2014-11-16_
 
 オフライン アドレス帳 (OAB) はダウンロードされたアドレス一覧の集合のコピーであり、Microsoft Outlook ユーザーはサーバーに接続していないときでもアドレス帳にアクセスできます。Microsoft Exchange は新しい OAB ファイルを生成し、そのファイルを圧縮してローカルの共有に格納します。オフラインで作業するユーザーに対して、どのアドレス一覧を使用可能にするかを決定できます。また、アドレス帳の配布方法を構成することもできます。
 
-アドレス一覧の詳細については、「[アドレス一覧](address-lists-exchange-2013-help.md)」を参照してください。
+アドレス一覧の詳細については、「[アドレス一覧](https://docs.microsoft.com/ja-jp/exchange/address-books/address-lists/address-lists)」を参照してください。
 
 
 > [!IMPORTANT]
-> OAB データは、メールボックス アシスタントである Microsoft Exchange OABGen サービスにより生成されます。セキュリティ記述子を使用して、Active Directory の特定の受信者をユーザーが表示できないようにしている場合、OAB をダウンロードしたユーザーは、このような非表示の受信者を表示することができます。したがって、アドレス一覧から受信者を非表示にするには、<A href="https://technet.microsoft.com/ja-jp/library/aa998596(v=exchg.150)">Set-PublicFolder</A>、<A href="https://technet.microsoft.com/ja-jp/library/aa995950(v=exchg.150)">Set-MailContact</A>、<A href="https://technet.microsoft.com/ja-jp/library/aa995971(v=exchg.150)">Set-MailUser</A>、<A href="https://technet.microsoft.com/ja-jp/library/bb123796(v=exchg.150)">Set-DynamicDistributionGroup</A>、<A href="https://technet.microsoft.com/ja-jp/library/bb123981(v=exchg.150)">Set-Mailbox</A>、および <A href="https://technet.microsoft.com/ja-jp/library/bb124955(v=exchg.150)">Set-DistributionGroup</A> の各コマンドレットで、<EM>HiddenFromAddressListsEnabled</EM> パラメーターを設定します。または、非表示の受信者を含まない新しい既定の OAB を作成できます。OAB のアドレス一覧を追加または削除する方法の詳細については、「<A href="add-an-address-list-to-or-remove-an-address-list-from-an-offline-address-book-exchange-2013-help.md">オフライン アドレス帳でのアドレス一覧の追加または削除</A>」を参照してください。
+> OAB データは、メールボックス アシスタントである Microsoft Exchange OABGen サービスにより生成されます。セキュリティ記述子を使用して、Active Directory の特定の受信者をユーザーが表示できないようにしている場合、OAB をダウンロードしたユーザーは、このような非表示の受信者を表示することができます。したがって、アドレス一覧から受信者を非表示にするには、<A href="https://technet.microsoft.com/ja-jp/library/aa998596(v=exchg.150)">Set-PublicFolder</A>、<A href="https://technet.microsoft.com/ja-jp/library/aa995950(v=exchg.150)">Set-MailContact</A>、<A href="https://technet.microsoft.com/ja-jp/library/aa995971(v=exchg.150)">Set-MailUser</A>、<A href="https://technet.microsoft.com/ja-jp/library/bb123796(v=exchg.150)">Set-DynamicDistributionGroup</A>、<A href="https://technet.microsoft.com/ja-jp/library/bb123981(v=exchg.150)">Set-Mailbox</A>、および <A href="https://technet.microsoft.com/ja-jp/library/bb124955(v=exchg.150)">Set-DistributionGroup</A> の各コマンドレットで、<EM>HiddenFromAddressListsEnabled</EM> パラメーターを設定します。または、非表示の受信者を含まない新しい既定の OAB を作成できます。OAB のアドレス一覧を追加または削除する方法の詳細については、「<A href="https://docs.microsoft.com/ja-jp/exchange/address-books/offline-address-books/add-or-remove-an-address-list">オフライン アドレス帳でのアドレス一覧の追加または削除</A>」を参照してください。
 
 
 
-OAB に関連する管理タスクについては、「[オフライン アドレス帳の手順](offline-address-book-procedures-exchange-2013-help.md)」を参照してください。
+OAB に関連する管理タスクについては、「[オフライン アドレス帳の手順](https://docs.microsoft.com/ja-jp/exchange/address-books/offline-address-books/offline-address-book-procedures)」を参照してください。
 
 **目次**
 
@@ -75,7 +75,7 @@ Web ベースの配布は、正しく機能するために以下のコンポー�
 
   - **OAB の配布** クライアントが OAB の配布要求を開始する場合、要求はクライアント アクセス サーバーを介して転送されます。クライアント アクセス サーバーは、OAB ファイルをホストしているメールボックス サーバーに要求を転送します。その後、OAB ファイルはメールボックス サーバーからクライアントに直接配布されます。
 
-  - **OAB 仮想ディレクトリ** OAB 仮想ディレクトリは、Web ベースの配布方法で使用される配布ポイントです。既定では、Exchange がインストールされると、インターネット インフォメーション サービス (IIS) の既定の内部 Web サイトに **OAB** という名前の新しい仮想ディレクトリが作成されます。組織のファイアウォールの外部から Outlook に接続するクライアント側のユーザーがいる場合は、外部の Web サイトを追加できます。また、シェルで **New-OABVirtualDirectory** コマンドレットを実行すると、ローカルの Exchange サーバー上の既定の IIS Web サイトに OAB という名前の新しい仮想ディレクトリが作成されます。詳細については、「[オフライン アドレス帳仮想ディレクトリを作成する](create-an-offline-address-book-virtual-directory-exchange-2013-help.md)」を参照してください。
+  - **OAB 仮想ディレクトリ** OAB 仮想ディレクトリは、Web ベースの配布方法で使用される配布ポイントです。既定では、Exchange がインストールされると、インターネット インフォメーション サービス (IIS) の既定の内部 Web サイトに **OAB** という名前の新しい仮想ディレクトリが作成されます。組織のファイアウォールの外部から Outlook に接続するクライアント側のユーザーがいる場合は、外部の Web サイトを追加できます。また、シェルで **New-OABVirtualDirectory** コマンドレットを実行すると、ローカルの Exchange サーバー上の既定の IIS Web サイトに OAB という名前の新しい仮想ディレクトリが作成されます。詳細については、「[オフライン アドレス帳仮想ディレクトリを作成する](https://docs.microsoft.com/ja-jp/exchange/address-books/offline-address-books/create-virtual-directory)」を参照してください。
 
   - **自動検出サービス**   これは、Outlook 2013、Outlook 2010、Outlook 2007、および Exchange にアクセスするようにクライアントが自動的に構成される一部のモバイル デバイスで使用可能な機能です。このサービスはクライアント アクセス サーバーで実行され、特定のクライアント接続に対して正しい OAB URL を返します。
 

@@ -15,13 +15,13 @@ ms.translationtype: HT
 
 _**適用先:** Exchange Server 2013_
 
-[アイテム保持ポリシーの作成](create-a-retention-policy-exchange-2013-help.md)
+[アイテム保持ポリシーの作成](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/messaging-records-management/create-a-retention-policy)
 
-[アイテム保持ポリシーへの保持タグの追加、またはアイテム保持ポリシーからの保持タグの削除](add-retention-tags-to-or-remove-retention-tags-from-a-retention-policy-exchange-2013-help.md)
+[アイテム保持ポリシーへの保持タグの追加、またはアイテム保持ポリシーからの保持タグの削除](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/messaging-records-management/add-or-remove-retention-tags)
 
-[メールボックスにアイテム保持ポリシーを適用する](apply-a-retention-policy-to-mailboxes-exchange-2013-help.md)
+[メールボックスにアイテム保持ポリシーを適用する](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/messaging-records-management/apply-retention-policy)
 
 [管理フォルダー アシスタントの構成](configure-the-managed-folder-assistant-exchange-2013-help.md)
 
-[メールボックスの保存機能を有効にする](place-a-mailbox-on-retention-hold-exchange-2013-help.md)
+[メールボックスの保存機能を有効にする](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/messaging-records-management/mailbox-retention-hold)
 

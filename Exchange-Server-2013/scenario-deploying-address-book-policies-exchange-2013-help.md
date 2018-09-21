@@ -205,7 +205,7 @@ CEO が各組織の配布グループに追加され、各企業の ABP の範�
 
   - Exchange 2010 クライアント アクセス サーバーの役割をグローバル カタログ サーバー上で実行しないでください。実行すると、Microsoft Exchange アドレス帳サービスではなく、Active Directory が NSPI (Name Service Provider Interface) に使用されます。Exchange 2013 サーバーの役割をグローバル カタログ サーバー上で実行し、ABP を正しく動作させることは可能ですが、ドメイン コントローラーに Exchange をインストールすることはお勧めしません。
 
-  - 階層型アドレス帳 (HAB) と ABP を同時に使用することはできません。詳細については、「[階層型アドレス帳](hierarchical-address-books-exchange-2013-help.md)」を参照してください。
+  - 階層型アドレス帳 (HAB) と ABP を同時に使用することはできません。詳細については、「[階層型アドレス帳](https://docs.microsoft.com/ja-jp/exchange/address-books/hierarchical-address-books/hierarchical-address-books)」を参照してください。
 
   - ABP を割り当てられているどのユーザーも、各自の GAL に含まれている必要があります。
 
@@ -267,7 +267,7 @@ ABP を使用しており、個別の仮想組織内のユーザーにお互い�
 
   - CustomAttributeX 属性は、組織をカスタマイズするために明示的に予約され、組織の管理者によって完全に制御されます。
 
-組織を分割する際に実装を考慮すべきもう 1 つのベスト プラクティスとして、配布グループと動的配布グループの名前に企業識別子を使用する例があります。Exchange には、配布グループ名にサフィックスまたはプレフィックスを自動的に追加するグループの名前付けポリシーがあります。このポリシーは、配布グループを作成しているユーザーの多くの属性 (配布グループの作成者の \[会社名\]、\[都道府県\]、\[役職\]、CustomAttribute1 から CustomAttribute15 など) に基づいてサフィックスまたはプレフィックスを追加します。グループの名前付けポリシーは、ユーザーが独自の配布グループを作成できるようにする場合に、特に重要です。詳細については、「[配布グループ名前付けポリシーを作成する](create-a-distribution-group-naming-policy-exchange-2013-help.md)」を参照してください。
+組織を分割する際に実装を考慮すべきもう 1 つのベスト プラクティスとして、配布グループと動的配布グループの名前に企業識別子を使用する例があります。Exchange には、配布グループ名にサフィックスまたはプレフィックスを自動的に追加するグループの名前付けポリシーがあります。このポリシーは、配布グループを作成しているユーザーの多くの属性 (配布グループの作成者の \[会社名\]、\[都道府県\]、\[役職\]、CustomAttribute1 から CustomAttribute15 など) に基づいてサフィックスまたはプレフィックスを追加します。グループの名前付けポリシーは、ユーザーが独自の配布グループを作成できるようにする場合に、特に重要です。詳細については、「[配布グループ名前付けポリシーを作成する](https://docs.microsoft.com/ja-jp/exchange/recipients-in-exchange-online/manage-distribution-groups/create-group-naming-policy)」を参照してください。
 
 グループ名前付けポリシーは動的配布グループに適用されないため、これらのグループを手動で分割し、名前付けポリシーを手動で適用する必要があります。
 
@@ -289,7 +289,7 @@ ABP を作成する際に、ユーザーが Outlook または Outlook Web App �
 
     New-AddressList -Name "AL_TAIL_Users_DGs" -RecipientFilter {((RecipientType -eq 'UserMailbox') -or (RecipientType -eq "MailUniversalDistributionGroup") -or (RecipientType -eq "DynamicDistributionGroup")) -and (CustomAttribute15 -eq "TAIL")}
 
-受信者フィルターを使用したアドレス一覧の作成の詳細については、「[受信者フィルターを使用したアドレス一覧の作成](create-an-address-list-by-using-recipient-filters-exchange-2013-help.md)」を参照してください。
+受信者フィルターを使用したアドレス一覧の作成の詳細については、「[受信者フィルターを使用したアドレス一覧の作成](https://docs.microsoft.com/ja-jp/exchange/address-books/address-lists/use-recipient-filters-to-create-an-address-list)」を参照してください。
 
 ABP を作成するには、会議室アドレス一覧を指定する必要があります。組織に会議室や備品用メールボックスなどのリソース メールボックスがない場合、空の会議室アドレス一覧を作成することをお勧めします。次の例では、組織に会議室メールボックスがないため、空の会議室アドレス一覧を作成します。
 
@@ -303,7 +303,7 @@ ABP で使用されるグローバル アドレス一覧は、アドレス一覧
 
     New-GlobalAddressList -Name "GAL_TAIL" -RecipientFilter {(CustomAttribute15 -eq "TAIL")}
 
-詳細については、「[グローバル アドレス一覧の作成](create-a-global-address-list-exchange-2013-help.md)」を参照してください。
+詳細については、「[グローバル アドレス一覧の作成](https://docs.microsoft.com/ja-jp/exchange/address-books/address-lists/create-global-address-list)」を参照してください。
 
 OAB を作成する場合、New-OfflineAddressBook または Set-OfflineAddressBook の *AddressLists* パラメーターの入力時に適切な GAL を含めて、意図せずエントリが漏れないようにします。基本的に、New/Set-OfflineAddressBook の AddressLists パラメーターにアドレス一覧を指定することで、ユーザーが閲覧するエントリのセットをカスタマイズしたり、OAB のダウンロード サイズを削減したりできます。ただし、ユーザーが OAB の GAL エントリのフル セットを閲覧できるようにする場合は、必ず AddressLists パラメーターに GAL を含めてください。
 
@@ -311,7 +311,7 @@ OAB を作成する場合、New-OfflineAddressBook または Set-OfflineAddressB
 
     New-OfflineAddressBook -Name "OAB_FAB" -AddressLists "GAL_FAB"
 
-詳細については、「[オフライン アドレス帳の作成](create-an-offline-address-book-exchange-2013-help.md)」を参照してください。
+詳細については、「[オフライン アドレス帳の作成](https://docs.microsoft.com/ja-jp/exchange/address-books/offline-address-books/create-offline-address-book)」を参照してください。
 
 ## 手順 4:ABP の作成
 
@@ -319,7 +319,7 @@ OAB を作成する場合、New-OfflineAddressBook または Set-OfflineAddressB
 
     New-AddressBookPolicy -Name "ABP_TAIL" -AddressLists "AL_TAIL_Users_DGs"," AL_TAIL_Contacts" -OfflineAddressBook "\OAB_TAIL" -GlobalAddressList "\GAL_TAIL" -RoomList "\AL_TAIL_Rooms"
 
-詳細については、「[アドレス帳ポリシーの作成](create-an-address-book-policy-exchange-2013-help.md)」を参照してください。
+詳細については、「[アドレス帳ポリシーの作成](https://docs.microsoft.com/ja-jp/exchange/address-books/address-book-policies/create-an-address-book-policy)」を参照してください。
 
 ## 手順 5:メールボックスに ABP を割り当てる
 
@@ -329,5 +329,5 @@ OAB を作成する場合、New-OfflineAddressBook または Set-OfflineAddressB
 
     Get-Mailbox -resultsize unlimited | where {$_.CustomAttribute15 -eq "TAIL"} | Set-Mailbox -AddressBookPolicy "ABP_TAIL"
 
-詳細については、「[メール ユーザーへのアドレス帳ポリシーの割り当て](assign-an-address-book-policy-to-mail-users-exchange-2013-help.md)」を参照してください。
+詳細については、「[メール ユーザーへのアドレス帳ポリシーの割り当て](https://docs.microsoft.com/ja-jp/exchange/address-books/address-book-policies/assign-an-address-book-policy-to-mail-users)」を参照してください。
 

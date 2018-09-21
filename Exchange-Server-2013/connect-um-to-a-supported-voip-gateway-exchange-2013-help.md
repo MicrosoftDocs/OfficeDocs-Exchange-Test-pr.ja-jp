@@ -45,7 +45,7 @@ _**トピックの最終更新日:** 2013-04-19_
 
 ## 手順 2: UM ダイヤル プランを作成して構成する
 
-必要なサーバーをインストールした後には、UM ダイヤル プランを最初に作成する必要があります。UM ダイヤル プランには、単一または複数の UM IP ゲートウェイへのリンクによりテレフォニー ネットワークへの接続を可能にする構成設定が含まれています。UM ゲートウェイおよび UM ハント グループは UM ダイヤル プランに直接リンクされるため、これらもまた必要です。詳細については、「[UM ダイヤル プランを作成する](create-a-um-dial-plan-exchange-2013-help.md)」を参照してください。
+必要なサーバーをインストールした後には、UM ダイヤル プランを最初に作成する必要があります。UM ダイヤル プランには、単一または複数の UM IP ゲートウェイへのリンクによりテレフォニー ネットワークへの接続を可能にする構成設定が含まれています。UM ゲートウェイおよび UM ハント グループは UM ダイヤル プランに直接リンクされるため、これらもまた必要です。詳細については、「[UM ダイヤル プランを作成する](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-dial-plan)」を参照してください。
 
 UM ダイヤル プランによって、ユーザーの内線電話番号から UM が有効なメールボックスへのリンクが確立されます。UM ダイヤル プランを作成するときに、内線番号の桁数、Uniform Resource Identifier (URI) タイプ、およびダイヤル プランの VoIP セキュリティ設定を構成できます。
 
@@ -65,13 +65,13 @@ Exchange ユニファイド メッセージングでは、さまざまな VoIP �
 
 VoIP ゲートウェイの詳細については、次のトピックを参照してください。
 
-  - [UM IP ゲートウェイを作成する](create-a-um-ip-gateway-exchange-2013-help.md)
+  - [UM IP ゲートウェイを作成する](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-ip-gateway)
 
-  - [サポートされる VoIP ゲートウェイ、IP Pbx、および PBX の構成に関する注意事項](configuration-notes-for-supported-voip-gateways-ip-pbxs-and-pbxs-exchange-2013-help.md)
+  - [サポートされる VoIP ゲートウェイ、IP Pbx、および PBX の構成に関する注意事項](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/configuration-notes-for-voip-gateways)
 
   - [VoIP ゲートウェイ、IP PBX、またはセッション ボーダー コント ローラーを UM に接続する](connect-a-voip-gateway-ip-pbx-or-session-border-controller-to-um-exchange-2013-help.md)
 
-詳細については、「[電話ネットワークへのボイス メール システムの接続](connect-your-voice-mail-system-to-your-telephone-network-exchange-2013-help.md)」を参照してください。
+詳細については、「[電話ネットワークへのボイス メール システムの接続](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/connect-voice-mail-system/connect-voice-mail-system)」を参照してください。
 
 ## 手順 4: 新しい UM ハント グループを作成します (必要な場合)。
 
@@ -81,5 +81,5 @@ UM ハント グループは、PBX および IP PBX 上で使用されるハン�
 
 UM IP ゲートウェイの作成方法によっては、1 つまたは複数の新しい UM ハント グループを作成する必要があります。UM IP ゲートウェイの作成時に UM IP ゲートウェイをダイヤル プランにリンクしない場合は、1 つの UM ハント グループが既定で作成されます。UM IP ゲートウェイの作成時に UM IP ゲートウェイを UM ダイヤル プランにリンクする場合は、すべての着信呼び出しが UM IP ゲートウェイを介して送信され、これらの呼び出しはクライアント アクセス サーバーおよびメールボックス サーバーにより受け付けられます。UM IP ゲートウェイの作成時に UM IP ゲートウェイをダイヤル プランにリンクしない場合は、着信呼び出しが UM IP ゲートウェイからダイヤル プランに転送されるように、正しいパイロット ID を使用して UM ハント グループを作成する必要があります。
 
-複数の Outlook Voice Access 番号および自動応答番号があり、UM IP ゲートウェイをダイヤル プランにリンクしている場合は、既定で作成された UM ハント グループを削除し、複数の UM ハント グループを作成する必要があります。UM ハント グループを作成する方法の詳細については、「[UM ハント グループを作成する](create-a-um-hunt-group-exchange-2013-help.md)」を参照してください。
+複数の Outlook Voice Access 番号および自動応答番号があり、UM IP ゲートウェイをダイヤル プランにリンクしている場合は、既定で作成された UM ハント グループを削除し、複数の UM ハント グループを作成する必要があります。UM ハント グループを作成する方法の詳細については、「[UM ハント グループを作成する](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-hunt-group)」を参照してください。
 

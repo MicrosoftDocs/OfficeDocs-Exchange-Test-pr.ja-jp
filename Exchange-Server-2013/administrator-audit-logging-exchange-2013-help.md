@@ -141,11 +141,11 @@ Exchange 管理シェルで直接実行されるコマンドレットが監査�
 </tr>
 <tr class="even">
 <td><p><code>CmdletParameters</code></p></td>
-<td><p>このフィールドには、<code>CmdletName</code> フィールドのコマンドレットが実行されたときに指定されたパラメーターが含まれます。パラメーターで指定された値があれば、それもこのフィールドに格納されます (既定の出力では表示されません)。このフィールドの追加情報にアクセスする方法の詳細については、「<a href="search-the-role-group-changes-or-administrator-audit-logs-exchange-2013-help.md">役割グループの変更または管理者監査ログを検索する</a>」を参照してください。</p></td>
+<td><p>このフィールドには、<code>CmdletName</code> フィールドのコマンドレットが実行されたときに指定されたパラメーターが含まれます。パラメーターで指定された値があれば、それもこのフィールドに格納されます (既定の出力では表示されません)。このフィールドの追加情報にアクセスする方法の詳細については、「<a href="https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/exchange-auditing-reports/search-role-group-changes">役割グループの変更または管理者監査ログを検索する</a>」を参照してください。</p></td>
 </tr>
 <tr class="odd">
 <td><p><code>ModifiedProperties</code></p></td>
-<td><p>このフィールドには、<code>ObjectModified</code> フィールドのオブジェクトで変更されたプロパティが含まれます。プロパティの以前の値と格納された新しい値も、このフィールドに格納されます (既定の出力では表示されません)。このフィールドの追加情報にアクセスする方法の詳細については、「<a href="search-the-role-group-changes-or-administrator-audit-logs-exchange-2013-help.md">役割グループの変更または管理者監査ログを検索する</a>」を参照してください。</p>
+<td><p>このフィールドには、<code>ObjectModified</code> フィールドのオブジェクトで変更されたプロパティが含まれます。プロパティの以前の値と格納された新しい値も、このフィールドに格納されます (既定の出力では表示されません)。このフィールドの追加情報にアクセスする方法の詳細については、「<a href="https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/exchange-auditing-reports/search-role-group-changes">役割グループの変更または管理者監査ログを検索する</a>」を参照してください。</p>
 
 > [!IMPORTANT]
 > このフィールドは、<STRONG>Set-AdminAuditLogConfig</STRONG> コマンドレットで <EM>LogLevel</EM> パラメーターが <CODE>Verbose</CODE> に設定される場合にのみ読み込まれます。
@@ -199,9 +199,9 @@ EAC の <strong>監査</strong> ページには、さまざまな種類の規制
 
   - **管理者監査ログ**   このレポートでは、指定された期間内に記録された監査ログ エントリを XML ファイルにエクスポートし、ファイルを指定した受信者に電子メールで送信できます。XML ファイルの内容の詳細については、「[管理者監査ログの構造](administrator-audit-log-structure-exchange-2013-help.md)」を参照してください。
 
-これらのレポートを使用する方法については、「[役割グループの変更または管理者監査ログを検索する](search-the-role-group-changes-or-administrator-audit-logs-exchange-2013-help.md)」を参照してください。
+これらのレポートを使用する方法については、「[役割グループの変更または管理者監査ログを検索する](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/exchange-auditing-reports/search-role-group-changes)」を参照してください。
 
-<strong>監査</strong> ページに含まれるその他のレポートについては、「[Exchange 監査レポート](exchange-auditing-reports-exchange-2013-help.md)」を参照してください。
+<strong>監査</strong> ページに含まれるその他のレポートについては、「[Exchange 監査レポート](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/exchange-auditing-reports/exchange-auditing-reports)」を参照してください。
 
 ## Search-AdminAuditLog コマンドレット
 
@@ -223,7 +223,7 @@ EAC の <strong>監査</strong> ページには、さまざまな種類の規制
 
 それぞれの監査ログ エントリには、「Audit Log Contents」の表に記載されている情報が含まれます。既定では、指定した条件に一致するログ エントリのうち、最初の 1,000 エントリのみが返されます。しかし、*ResultSize* パラメーターを使用してこの既定値を変更し、より多くのエントリまたはより少ないエントリを返すようにすることも可能です。`Unlimited` の値を *ResultSize* パラメーターと共に指定し、指定した条件に一致するログ エントリをすべて返すことができます。
 
-**Search-AdminAuditLog** コマンドレットを使用する方法については、「[役割グループの変更または管理者監査ログを検索する](search-the-role-group-changes-or-administrator-audit-logs-exchange-2013-help.md)」を参照してください。
+**Search-AdminAuditLog** コマンドレットを使用する方法については、「[役割グループの変更または管理者監査ログを検索する](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/exchange-auditing-reports/search-role-group-changes)」を参照してください。
 
 ## New-AdminAuditLogSearch コマンドレット
 
@@ -239,7 +239,7 @@ EAC の <strong>監査</strong> ページには、さまざまな種類の規制
 
 
 
-**New-AdminAuditLogSearch** コマンドレットを使用する方法については、「[役割グループの変更または管理者監査ログを検索する](search-the-role-group-changes-or-administrator-audit-logs-exchange-2013-help.md)」を参照してください。
+**New-AdminAuditLogSearch** コマンドレットを使用する方法については、「[役割グループの変更または管理者監査ログを検索する](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/exchange-auditing-reports/search-role-group-changes)」を参照してください。
 
 ページのトップへ
 
@@ -257,7 +257,7 @@ Exchange コマンドレットの実行時のログ記録に加えて、Exchange
 
 手動による監査ログ エントリは、EAC の <strong>監査</strong> ページ、**Search-AdminAuditLog** コマンドレットまたは **New-AdminAuditLogSearch** コマンドレットを使用して、他のログ エントリと同様の方法で取得できます。
 
-手動による監査ログエントリで、**Write-AdminAuditLog** コマンドレットの *Comment* パラメーターの内容を確認するには、「[役割グループの変更または管理者監査ログを検索する](search-the-role-group-changes-or-administrator-audit-logs-exchange-2013-help.md)」を参照してください。
+手動による監査ログエントリで、**Write-AdminAuditLog** コマンドレットの *Comment* パラメーターの内容を確認するには、「[役割グループの変更または管理者監査ログを検索する](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/exchange-auditing-reports/search-role-group-changes)」を参照してください。
 
 ## Active Directory のレプリケーション
 

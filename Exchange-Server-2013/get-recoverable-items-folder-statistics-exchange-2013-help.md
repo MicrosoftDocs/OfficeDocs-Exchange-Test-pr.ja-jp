@@ -27,7 +27,7 @@ _**トピックの最終更新日:** 2015-01-22_
 
   - [\[回復可能なアイテム\] フォルダー](recoverable-items-folder-exchange-2013-help.md)
 
-  - [インプレース保持と訴訟ホールド](in-place-hold-and-litigation-hold-exchange-2013-help.md)
+  - [インプレース保持と訴訟ホールド](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/in-place-and-litigation-holds)
 
 ## 始める前に把握しておくべき情報
 

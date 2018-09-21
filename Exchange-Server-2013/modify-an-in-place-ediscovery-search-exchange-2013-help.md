@@ -49,7 +49,7 @@ _**適用先:** Exchange Server 2013_
         
 
         > [!IMPORTANT]
-        > <STRONG>[すべてのメールボックスを検索する]</STRONG> オプションで Exchange 2013 メールボックス サーバーのすべてのメールボックスを保持することはできません。インプレース ホールドを作成するには、<STRONG>[検索するメールボックスを指定する]</STRONG> を選択する必要があります。詳細については、「<A href="create-or-remove-an-in-place-hold-exchange-2013-help.md">インプレース保持を作成または削除する</A>」を参照してください。
+        > <STRONG>[すべてのメールボックスを検索する]</STRONG> オプションで Exchange 2013 メールボックス サーバーのすべてのメールボックスを保持することはできません。インプレース ホールドを作成するには、<STRONG>[検索するメールボックスを指定する]</STRONG> を選択する必要があります。詳細については、「<A href="https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/create-or-remove-in-place-holds">インプレース保持を作成または削除する</A>」を参照してください。
 
     
       - <strong>検索クエリ</strong> ページでは、以下のフィールドを変更します。

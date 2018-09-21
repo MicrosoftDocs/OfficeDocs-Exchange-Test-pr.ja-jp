@@ -41,15 +41,15 @@ PBX に接続する VoIP ゲートウェイ インターフェイスがアナロ
 
 次に、Exchange TechCenter にあるリソースの一覧を示します。これらのリソースは、VoIP ゲートウェイ、IP PBX、および SBC を正しく構成するのに役立ちます。
 
-  - **サポートされる IP ゲートウェイ、IP PBX、および PBX のドキュメント**   「[Exchange 2013 のテレフォニー アドバイザー](telephony-advisor-for-exchange-2013-exchange-2013-help.md)」には、VoIP ゲートウェイ、IP PBX、PBX、および SBC を構成するときに使用できる構成ファイルとセットアップ情報が記載されています。
+  - **サポートされる IP ゲートウェイ、IP PBX、および PBX のドキュメント**   「[Exchange 2013 のテレフォニー アドバイザー](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/telephony-advisor-for-exchange-2013)」には、VoIP ゲートウェイ、IP PBX、PBX、および SBC を構成するときに使用できる構成ファイルとセットアップ情報が記載されています。
 
-  - **構成および技術的な注記**   「[サポートされる VoIP ゲートウェイ、IP Pbx、および PBX の構成に関する注意事項](configuration-notes-for-supported-voip-gateways-ip-pbxs-and-pbxs-exchange-2013-help.md)」には、VoIP ゲートウェイ、IP PBX、および PBX を構成するときに使用できる構成ファイルとセットアップ情報が記載されています。
+  - **構成および技術的な注記**   「[サポートされる VoIP ゲートウェイ、IP Pbx、および PBX の構成に関する注意事項](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/configuration-notes-for-voip-gateways)」には、VoIP ゲートウェイ、IP PBX、および PBX を構成するときに使用できる構成ファイルとセットアップ情報が記載されています。
 
-  - **オンラインの Exchange UM に関する構成の注記**   「[サポートされているセッション ボーダー コントローラーの構成に関する注意事項](configuration-notes-for-supported-session-border-controllers-exchange-2013-help.md)」には、SBC を構成するときに使用できる構成ファイルとセットアップ情報が記載されています。
+  - **オンラインの Exchange UM に関する構成の注記**   「[サポートされているセッション ボーダー コントローラーの構成に関する注意事項](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/configuration-notes-for-session-border-controllers)」には、SBC を構成するときに使用できる構成ファイルとセットアップ情報が記載されています。
 
 ユニファイド メッセージングの専門家は、テレフォニーまたは IP ベースのネットワーク デバイスの構成を支援します。ユニファイド メッセージングの専門家は、従来の/サードパーティ製のボイス メール システムからユニファイド メッセージングへのスムーズな移行が実行されることを確保し、Exchange ユニファイド メッセージングを使用した新しいボイス メール システムの計画および展開を支援します。新しいボイス メール システムの展開または従来のボイス メール システムのアップグレードを行うには、VoIP ゲートウェイ、IP PBX、PBX、およびユニファイド メッセージングについての多くの知識が必要です。ユニファイド メッセージングの専門家に問い合わせる方法の詳細については、「[Microsoft Exchange Server 2013 ユニファイド メッセージング (UM) の専門家](http://go.microsoft.com/fwlink/p/?linkid=262708)」を参照してください。または、「[Microsoft Pinpoint](https://go.microsoft.com/fwlink/p/?linkid=261951)」の認定 UM パートナーにお問い合わせください。
 
-VoIP ゲートウェイ、IP PBX、または SBC の IP インターフェイス を構成した後には、展開した各デバイスを表示するために UM IP ゲートウェイを作成および構成する必要があります。UM IP ゲートウェイの作成方法の詳細については、「[UM IP ゲートウェイを作成する](create-a-um-ip-gateway-exchange-2013-help.md)」を参照してください。
+VoIP ゲートウェイ、IP PBX、または SBC の IP インターフェイス を構成した後には、展開した各デバイスを表示するために UM IP ゲートウェイを作成および構成する必要があります。UM IP ゲートウェイの作成方法の詳細については、「[UM IP ゲートウェイを作成する](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-ip-gateway)」を参照してください。
 
 UM IP ゲートウェイを作成した後には、その UM IP ゲートウェイと関連付けられたクライアント アクセス サーバーおよびメールボックス サーバーにより、VoIP ゲートウェイ、IP PBX または SBC に対して SIP OPTIONS 要求が送信され、これらが反応することが確認されます。VoIP ゲートウェイ、IP PBX、または SBC が応答しない場合は、メールボックス サーバーで要求が失敗したことを示す ID 1088 のイベントがログに出力されます。この問題を解決するには、VoIP ゲートウェイ、IP PBX、または SBC が使用可能でオンラインであること、ユニファイド メッセージングの構成が正しいことを確認します。
 

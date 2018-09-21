@@ -19,9 +19,9 @@ _**トピックの最終更新日:** 2013-04-17_
 
 [UM 言語パックをインストールする](install-a-um-language-pack-exchange-2013-help.md)
 
-[ダイヤル プランの既定言語を設定する](set-the-default-language-on-a-dial-plan-exchange-2013-help.md)
+[ダイヤル プランの既定言語を設定する](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/greetings-announcements-menus-and-prompts/set-dial-plan-default-language)
 
-[自動応答で使う言語を選択する](select-the-language-for-an-auto-attendant-exchange-2013-help.md)
+[自動応答で使う言語を選択する](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/greetings-announcements-menus-and-prompts/select-auto-attendant-language)
 
 [UM 言語パックの削除](remove-a-um-language-pack-exchange-2013-help.md)
 
@@ -29,5 +29,5 @@ _**トピックの最終更新日:** 2013-04-17_
 
 [Exchange 2007 のカスタム音声ガイダンスを Exchange 2013 にインポートする](import-custom-prompts-from-exchange-2007-to-exchange-2013-exchange-2013-help.md)
 
-[電話ユーザー インターフェイスでカスタム プロンプト録音を有効にする](enable-custom-prompt-recording-using-the-telephone-user-interface-exchange-2013-help.md)
+[電話ユーザー インターフェイスでカスタム プロンプト録音を有効にする](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/greetings-announcements-menus-and-prompts/enable-custom-prompt-recording)
 

@@ -168,7 +168,7 @@ EAC において、**この規則のプロパティ** セクションで、**メ
 <td><p><em>HasSenderOverride</em></p>
 <p><em>ExceptIfHasSenderOverride</em></p></td>
 <td><p>該当なし</p></td>
-<td><p>送信者がデータ損失防止 (DLP) ポリシーを上書きすることを選択したメッセージです。DLP ポリシーの詳細については、<a href="technical-overview-of-dlp-data-loss-prevention-in-exchange.md">データ損失防止</a> を参照してください。</p></td>
+<td><p>送信者がデータ損失防止 (DLP) ポリシーを上書きすることを選択したメッセージです。DLP ポリシーの詳細については、<a href="https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention">データ損失防止</a> を参照してください。</p></td>
 <td><p>Exchange 2013 以降</p></td>
 </tr>
 <tr class="odd">

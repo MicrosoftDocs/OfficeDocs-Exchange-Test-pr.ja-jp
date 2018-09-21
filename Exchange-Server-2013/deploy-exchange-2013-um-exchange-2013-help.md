@@ -31,19 +31,19 @@ _**トピックの最終更新日:** 2016-12-09_
 
 ユニファイド メッセージングを展開する前に、以下のトピックの概念を理解しておくことを推奨します。
 
-  - [UM ダイヤル プラン](um-dial-plans-exchange-2013-help.md)
+  - [UM ダイヤル プラン](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/connect-voice-mail-system/um-dial-plans)
 
-  - [UM IP ゲートウェイ](um-ip-gateways-exchange-2013-help.md)
+  - [UM IP ゲートウェイ](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/connect-voice-mail-system/um-ip-gateways)
 
   - [UM サービス](um-services-exchange-2013-help.md)
 
-  - [UM ハント グループ](um-hunt-groups-exchange-2013-help.md)
+  - [UM ハント グループ](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/connect-voice-mail-system/um-hunt-groups)
 
-  - [着信呼び出しへの自動応答とルーティング](automatically-answer-and-route-incoming-calls-exchange-2013-help.md)
+  - [着信呼び出しへの自動応答とルーティング](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/automatically-answer-and-route-calls)
 
-  - [UM メールボックス ポリシー](um-mailbox-policies-exchange-2013-help.md)
+  - [UM メールボックス ポリシー](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-voice-mail/um-mailbox-policies)
 
-  - [ユーザーのボイス メール](voice-mail-for-users-exchange-2013-help.md)
+  - [ユーザーのボイス メール](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-voice-mail/voice-mail-for-users)
 
 ## ユニファイド メッセージングを展開する
 
@@ -196,7 +196,7 @@ UM IP ゲートウェイとは、VoIP ゲートウェイ ハードウェア デ�
 
 UM IP ゲートウェイを作成して、その UM IP ゲートウェイを UM ダイヤル プランと関連付けると、既定の UM ハント グループが作成されます。これまでに作成した UM IP ゲートウェイの個数に応じて、別の UM ハント グループを同じ、または別の UM IP ゲートウェイに関連付けることができます。
 
-UM ハント グループを作成すると、UM ダイヤル プラン内で指定されているすべてのメールボックス サーバーが、VoIP ゲートウェイと通信できるようになります。詳細については、「[UM ハント グループ](um-hunt-groups-exchange-2013-help.md)」を参照してください。
+UM ハント グループを作成すると、UM ダイヤル プラン内で指定されているすべてのメールボックス サーバーが、VoIP ゲートウェイと通信できるようになります。詳細については、「[UM ハント グループ](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/connect-voice-mail-system/um-hunt-groups)」を参照してください。
 
 ## UM ハント グループを作成する
 
@@ -292,7 +292,7 @@ UM ダイヤル プランを作成するたびに、UM メールボックス ポ
 
 ## ユーザーのボイス メールを有効にする
 
-VoIP ゲートウェイまたは IP PBX を展開し、クライアント アクセス サーバーおよびメールボックス サーバーをインストールし、ユニファイド メッセージングに必要なコンポーネントを作成した後、ユーザーがユニファイド メッセージングを利用できるようにする必要があります。詳細については、「[ボイス メール用にユーザーを有効にする](enable-a-user-for-voice-mail-exchange-2013-help.md)」を参照してください。
+VoIP ゲートウェイまたは IP PBX を展開し、クライアント アクセス サーバーおよびメールボックス サーバーをインストールし、ユニファイド メッセージングに必要なコンポーネントを作成した後、ユーザーがユニファイド メッセージングを利用できるようにする必要があります。詳細については、「[ボイス メール用にユーザーを有効にする](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-voice-mail/enable-a-user-for-voice-mail)」を参照してください。
 
 ## ボイス メールを保護する
 
@@ -308,25 +308,25 @@ VoIP ゲートウェイまたは IP PBX を展開し、クライアント アク
 
   - 組織内の VoIP ゲートウェイ、IP PBX、およびクライアント アクセス サーバー/メールボックス サーバーに、必要な証明書をインポートします。
 
-  - UM ダイヤル プランで VoIP セキュリティを構成します。詳細については、「[VoIP セキュリティ設定の構成](configure-the-voip-security-setting-exchange-2013-help.md)」を参照してください。
+  - UM ダイヤル プランで VoIP セキュリティを構成します。詳細については、「[VoIP セキュリティ設定の構成](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/connect-voice-mail-system/configure-voip-security-setting)」を参照してください。
 
   - クライアント アクセス サーバーおよびメールボックス サーバー上での起動モードを構成します。詳細については、「[メールボックス サーバーのスタートアップ モードを構成する](configure-the-startup-mode-on-a-mailbox-server-exchange-2013-help.md)」および「[クライアント アクセス サーバーのスタートアップ モードを構成する](configure-the-startup-mode-on-a-client-access-server-exchange-2013-help.md)」を参照してください。
 
-  - ポート 5061 をリッスンするように UM IP ゲートウェイを構成します。詳細については、「[リスニング ポートの構成](configure-the-listening-port-exchange-2013-help.md)」を参照してください。
+  - ポート 5061 をリッスンするように UM IP ゲートウェイを構成します。詳細については、「[リスニング ポートの構成](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/connect-voice-mail-system/configure-listening-port)」を参照してください。
 
 ## UM が有効なユーザーの PIN ポリシー
 
-ユニファイド メッセージングでは、PIN ポリシーは UM メールボックス ポリシーで定義および構成されます。ユーザーのユニファイド メッセージングを有効にするときに、そのユーザーを既存の UM メールボックス ポリシーに関連付けます。UM メールボックス ポリシーで構成されている UM PIN ポリシーは、組織のセキュリティ要件に基づくものにする必要があります。UM が有効なユーザーの PIN 設定を構成する方法の詳細については、「[Outlook Voice Access PIN セキュリティの設定](set-outlook-voice-access-pin-security-exchange-2013-help.md)」を参照してください。
+ユニファイド メッセージングでは、PIN ポリシーは UM メールボックス ポリシーで定義および構成されます。ユーザーのユニファイド メッセージングを有効にするときに、そのユーザーを既存の UM メールボックス ポリシーに関連付けます。UM メールボックス ポリシーで構成されている UM PIN ポリシーは、組織のセキュリティ要件に基づくものにする必要があります。UM が有効なユーザーの PIN 設定を構成する方法の詳細については、「[Outlook Voice Access PIN セキュリティの設定](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-outlook-voice-access-pin-security/set-outlook-voice-access-pin-security)」を参照してください。
 
 ## クライアント ボイス メール機能をセットアップする
 
 サーバーおよび必要な UM コンポーネントを展開した後、オプションでいくつかのボイス メール関連機能を構成できます。詳細については、以下のトピックを参照してください。
 
-  - [Outlook Voice Access の設定](setting-up-outlook-voice-access-exchange-2013-help.md)
+  - [Outlook Voice Access の設定](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/set-up-outlook-voice-access)
 
-  - [ボイス メール ユーザーの呼び出し転送を許可する](allow-voice-mail-users-to-forward-calls-exchange-2013-help.md)
+  - [ボイス メール ユーザーの呼び出し転送を許可する](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/allow-voice-mail-users-to-forward-calls)
 
-  - [ユーザーがボイス メールのトランスクリプトを表示できるようにする](allow-users-to-see-a-voice-mail-transcript-exchange-2013-help.md)
+  - [ユーザーがボイス メールのトランスクリプトを表示できるようにする](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/allow-users-to-see-a-voice-mail-transcript)
 
   - [ボイス メール ユーザーが FAX を受信できるようにする](enable-voice-mail-users-to-receive-faxes-exchange-2013-help.md)
 

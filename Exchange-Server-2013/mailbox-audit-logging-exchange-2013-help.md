@@ -29,7 +29,7 @@ _**トピックの最終更新日:** 2016-12-09_
 
 既定では、メールボックス監査ログ エントリはメールボックスに 90 日間保存されてから、削除されます。この保存期間を変更するには、[Set-Mailbox](https://technet.microsoft.com/ja-jp/library/bb123981\(v=exchg.150\)) コマンドレットで *AuditLogAgeLimit* パラメーターを使用します。メールボックスがインプレース保持または訴訟ホールドになっている場合、メールボックスの監査ログの保存期間が終わる時点までに限って、監査ログ エントリは保持されます。監査ログ エントリをさらに長く保存するには、*AuditLogAgeLimit* パラメーターの値を変更することで保存期間を長くする必要があります。また、保存期限に達する前に監査ログのエントリをエクスポートすることもできます。詳細については、次のトピックを参照してください。
 
-  - [メールボックス監査ログをエクスポートする](export-mailbox-audit-logs-exchange-2013-help.md)
+  - [メールボックス監査ログをエクスポートする](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/exchange-auditing-reports/export-mailbox-audit-logs)
 
   - [メールボックス監査ログの検索を作成する](create-a-mailbox-audit-log-search-exchange-2013-help.md)
 
@@ -159,9 +159,9 @@ _**トピックの最終更新日:** 2016-12-09_
 
   - **Exchange 管理センター (EAC) の監査レポートを使用**   EAC の <strong>監査</strong> タブを使用して、所有者以外のメールボックス アクセスのレポートを実行したり、メールボックス監査ログからエントリをエクスポートしたりできます。詳細については、以下を参照してください。
     
-      - [所有者以外のメールボックス アクセスのレポートの実行](run-a-non-owner-mailbox-access-report-exchange-online-help.md)
+      - [所有者以外のメールボックス アクセスのレポートの実行](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/exchange-auditing-reports/non-owner-mailbox-access-report)
     
-      - [メールボックス監査ログをエクスポートする](export-mailbox-audit-logs-exchange-2013-help.md)
+      - [メールボックス監査ログをエクスポートする](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/exchange-auditing-reports/export-mailbox-audit-logs)
 
 ## メールボックス監査ログ エントリ
 
@@ -336,7 +336,7 @@ _**トピックの最終更新日:** 2016-12-09_
 
   - **メールボックスに対する管理者アクセス**   以下のシナリオでは、管理者だけがメールボックスにアクセスすると見なしています。
     
-      - [インプレース電子情報開示 (eDiscovery)](in-place-ediscovery-exchange-2013-help.md) をメールボックスの検索に使用する。
+      - [インプレース電子情報開示 (eDiscovery)](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery) をメールボックスの検索に使用する。
     
       - [New-MailboxExportRequest](https://technet.microsoft.com/ja-jp/library/ff607299\(v=exchg.150\)) コマンドレットを使用してメールボックスをエクスポートする。
     

@@ -21,7 +21,7 @@ Exchange 組織内の既存のメール連絡先における電子メールを�
 
 メール連絡先の電子メールを無効にした後には、シェルで **Enable-MailContact** コマンドレットを使用して、連絡先のメールを再度有効にできます。また、このコマンドレットを使用して、任意の Active Directory の連絡先のメールを有効にできます。
 
-メール連絡先に関連する追加の管理タスクについては、「[メール連絡先の管理](manage-mail-contacts-exchange-2013-help.md)」を参照してください。
+メール連絡先に関連する追加の管理タスクについては、「[メール連絡先の管理](https://docs.microsoft.com/ja-jp/exchange/recipients-in-exchange-online/manage-mail-contacts)」を参照してください。
 
 ## 始める前に把握しておくべき情報
 

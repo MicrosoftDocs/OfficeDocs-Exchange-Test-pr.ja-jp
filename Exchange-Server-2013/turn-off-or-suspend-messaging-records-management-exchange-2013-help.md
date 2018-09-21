@@ -45,9 +45,9 @@ _**トピックの最終更新日:** 2013-02-14_
 
 メールボックスの保存機能を有効にして、MRM を一時的に無効にすることができます (ユーザーが休暇中の場合など)。これにより、保存機能を無効にするまで、そのメールボックスのアイテム保持ポリシーの処理が中断されます。これは、メールボックスをインプレース保持または訴訟ホールドに置くこととは異なります。
 
-メールボックスの保存機能を有効にする方法の詳細については、「[メールボックスの保存機能を有効にする](place-a-mailbox-on-retention-hold-exchange-2013-help.md)」を参照してください。
+メールボックスの保存機能を有効にする方法の詳細については、「[メールボックスの保存機能を有効にする](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/messaging-records-management/mailbox-retention-hold)」を参照してください。
 
-インプレース保持と訴訟ホールドの詳細については、「[インプレース保持と訴訟ホールド](in-place-hold-and-litigation-hold-exchange-2013-help.md)」を参照してください。
+インプレース保持と訴訟ホールドの詳細については、「[インプレース保持と訴訟ホールド](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/in-place-and-litigation-holds)」を参照してください。
 
 ## メールボックスから保持タグを削除する
 

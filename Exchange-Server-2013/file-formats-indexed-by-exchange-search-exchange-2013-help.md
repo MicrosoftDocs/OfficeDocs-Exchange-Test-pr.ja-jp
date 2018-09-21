@@ -25,7 +25,7 @@ MicrosoftExchange Server 2013 および Exchange Online では、Exchange Search
 
 
 
-Exchange Search と依存機能 ([インプレース電子情報開示 (eDiscovery)](in-place-ediscovery-exchange-2013-help.md) など) を管理または使用する場合は、検索不能アイテムと、インデックス処理が無効か、またはインデックス処理できないコンテンツを含むファイル形式との相違点を考慮してください。
+Exchange Search と依存機能 ([インプレース電子情報開示 (eDiscovery)](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery) など) を管理または使用する場合は、検索不能アイテムと、インデックス処理が無効か、またはインデックス処理できないコンテンツを含むファイル形式との相違点を考慮してください。
 
   - **検索不能アイテム**   フィルターがインストールされていないなどの理由で、Exchange Search が特定の種類のファイルをインデックス処理できない場合、そのファイルの種類の検索は失敗します。このような添付ファイルを含むメッセージは、*部分的にインデックス処理された*ものとしてマークされます。検索不能アイテムは、[Get-FailedContentIndexDocuments](https://technet.microsoft.com/ja-jp/library/dd351154\(v=exchg.150\)) コマンドレットを使用して取得することができます。インプレース電子情報開示の検索結果を探索メールボックスにコピーする場合、または検索結果を PST ファイルにエクスポートする場合、検索不能アイテムを含めることができます。詳細については、「[Exchange 電子情報開示の検索不能アイテム](unsearchable-items-in-exchange-ediscovery-exchange-2013-help.md)」を参照してください。
 

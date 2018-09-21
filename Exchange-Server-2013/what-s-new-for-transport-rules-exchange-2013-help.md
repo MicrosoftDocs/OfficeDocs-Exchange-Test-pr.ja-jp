@@ -23,9 +23,9 @@ Microsoft Exchange Server 2013 で、トランスポート ルールにいくつ
 
 Exchange 2013 のデータ損失防止 (DLP) 機能を使用すると、組織は機密データの過失による公開を減らすことができます。トランスポート ルールは、DLP ポリシーを付帯および適用するルールの作成をサポートするように、更新されました。トランスポート ルールでの DLP サポートの詳細については、次のトピックを参照してください。
 
-[機密情報ルールとトランスポート ルールの統合](integrating-sensitive-information-rules-with-transport-rules-exchange-2013-help.md)
+[機密情報ルールとトランスポート ルールの統合](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/data-loss-prevention/integrate-sensitive-information-rules)
 
-[データ損失防止](technical-overview-of-dlp-data-loss-prevention-in-exchange.md)
+[データ損失防止](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention)
 
 ## 新しい述語とアクション
 

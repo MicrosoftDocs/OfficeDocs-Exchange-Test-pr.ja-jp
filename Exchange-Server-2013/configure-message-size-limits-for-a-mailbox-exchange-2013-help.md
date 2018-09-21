@@ -21,7 +21,7 @@ _**トピックの最終更新日:** 2012-11-12_
 
 Exchange 組織では、メールボックスで送受信できる最大メッセージ サイズを決定する設定は他にもあります (たとえばメールボックス サーバーで構成される最大メッセージ サイズなど)。Exchange でのメッセージ サイズの制限の種類や、範囲、優先順位などの詳細については、「[メッセージ サイズの制限](message-size-limits-exchange-2013-help.md)」を参照してください。
 
-ユーザー メールボックスに関するその他の管理タスクについては、「[ユーザー メールボックスの管理](manage-user-mailboxes-exchange-2013-help.md)」を参照してください。
+ユーザー メールボックスに関するその他の管理タスクについては、「[ユーザー メールボックスの管理](https://docs.microsoft.com/ja-jp/exchange/recipients-in-exchange-online/manage-user-mailboxes/manage-user-mailboxes)」を参照してください。
 
 
 > [!NOTE]

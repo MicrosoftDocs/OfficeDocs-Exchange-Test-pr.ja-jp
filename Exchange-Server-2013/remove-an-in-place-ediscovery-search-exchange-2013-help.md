@@ -27,7 +27,7 @@ Microsoft Exchange Server 2013 では、インプレースの電子証拠開示�
 
   - 推定完了時間: 2 ～ 5 分。
 
-  - インプレース保持が有効になっているインプレースの電子証拠開示検索を削除するには、最初に検索からインプレース保持を削除する必要があります。詳細については、「[インプレース保持を作成または削除する](create-or-remove-an-in-place-hold-exchange-2013-help.md)」を参照してください。
+  - インプレース保持が有効になっているインプレースの電子証拠開示検索を削除するには、最初に検索からインプレース保持を削除する必要があります。詳細については、「[インプレース保持を作成または削除する](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/create-or-remove-in-place-holds)」を参照してください。
 
   - この手順を実行する際には、あらかじめアクセス許可を割り当てる必要があります。必要なアクセス許可の一覧については、以下を参照してください。「[メッセージング ポリシーとコンプライアンスのアクセス許可](messaging-policy-and-compliance-permissions-exchange-2013-help.md)」の「インプレース電子情報開示」。
 

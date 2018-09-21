@@ -63,7 +63,7 @@ Microsoft Exchange Server 2013 のメールボックスの情報へのアクセ�
 <td><p>Outlook Web App に関する詳細。Outlook Web App は、Web ブラウザーを介した Exchange 2013 メールボックスへのアクセスをユーザーに提供します。</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="mailtips-exchange-2013-help.md">MailTips</a></p></td>
+<td><p><a href="https://docs.microsoft.com/ja-jp/exchange/clients-and-mobile-in-exchange-online/mailtips/mailtips">MailTips</a></p></td>
 <td><p>メール ヒントに関する詳細。メール ヒントは、メッセージの作成中にユーザーに表示される情報メッセージです。</p></td>
 </tr>
 </tbody>

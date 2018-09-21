@@ -25,7 +25,7 @@ Exchange Server 2013 や 2016 の Exchange Server 上にメールボックスの
 
 
 > [!NOTE]
-> この記事の手順を実行すると、Outlook 2016 for Mac のユーザーは従来のパブリック フォルダーにアクセスできます。組織内のクライアントが Outlook 2016 for Mac を使用している場合は、2016 年 4 月の更新プログラムをインストールしていることをご確認ください。さもないと、それらのユーザーは共存またはハイブリッド トポロジ内のパブリック フォルダーにアクセスすることができません。詳細については、「<A href="accessing-public-folders-with-outlook-2016-for-mac-exchange-2013-help.md">Outlook 2016 for Mac によるパブリック フォルダーへのアクセス</A>」をご覧ください。
+> この記事の手順を実行すると、Outlook 2016 for Mac のユーザーは従来のパブリック フォルダーにアクセスできます。組織内のクライアントが Outlook 2016 for Mac を使用している場合は、2016 年 4 月の更新プログラムをインストールしていることをご確認ください。さもないと、それらのユーザーは共存またはハイブリッド トポロジ内のパブリック フォルダーにアクセスすることができません。詳細については、「<A href="https://docs.microsoft.com/ja-jp/exchange/collaboration-exo/public-folders/access-public-folders-with-outlook-2016-for-mac">Outlook 2016 for Mac によるパブリック フォルダーへのアクセス</A>」をご覧ください。
 
 
 
@@ -73,7 +73,7 @@ Exchange Server 2013 や 2016 の Exchange Server 上にメールボックスの
 
 この手順の最終ステップは、社内のレガシ パブリック フォルダーにアクセスできるようにユーザー メールボックスを構成することです。
 
-Exchange Server 2013 の社内ユーザーがレガシ パブリック フォルダーにアクセスできるようにします。[Step 2: Make remote public folders discoverable](configure-legacy-on-premises-public-folders-for-a-hybrid-deployment-exchange-2013-help.md) で作成したすべてのプロキシ パブリック フォルダー メールボックスを指すことになります。CU5 以降の更新プログラムがインストールされた Exchange 2013 サーバーから次のコマンドを実行します。
+Exchange Server 2013 の社内ユーザーがレガシ パブリック フォルダーにアクセスできるようにします。[Step 2: Make remote public folders discoverable](https://docs.microsoft.com/ja-jp/exchange/collaboration-exo/public-folders/set-up-legacy-hybrid-public-folders) で作成したすべてのプロキシ パブリック フォルダー メールボックスを指すことになります。CU5 以降の更新プログラムがインストールされた Exchange 2013 サーバーから次のコマンドを実行します。
 
     Set-OrganizationConfig -PublicFoldersEnabled Remote -RemotePublicFolderMailboxes ProxyMailbox1,ProxyMailbox2,ProxyMailbox3
 

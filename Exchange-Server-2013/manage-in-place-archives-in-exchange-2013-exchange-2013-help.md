@@ -75,7 +75,7 @@ _**トピックの最終更新日:** 2016-02-01_
         
         詳細については、「[Exchange 2013 のインプレース アーカイブ](in-place-archiving-in-exchange-2013-exchange-2013-help.md)」を参照してください。
     
-      - <strong>アドレス帳ポリシー</strong>   メールボックスのアドレス帳ポリシー (ABP) を選択するには、この一覧を使用します。ABP には、グローバル アドレス一覧 (GAL)、オフライン アドレス帳 (OAB)、会議室一覧、およびアドレス一覧のセットが含まれます。ABP をメールボックス ユーザーに割り当て、各ユーザーに Outlook および Outlook Web App のカスタマイズされた GAL へのアクセス権を付与します。詳細については、「[アドレス帳ポリシー](address-book-policies-exchange-2013-help.md)」を参照してください。
+      - <strong>アドレス帳ポリシー</strong>   メールボックスのアドレス帳ポリシー (ABP) を選択するには、この一覧を使用します。ABP には、グローバル アドレス一覧 (GAL)、オフライン アドレス帳 (OAB)、会議室一覧、およびアドレス一覧のセットが含まれます。ABP をメールボックス ユーザーに割り当て、各ユーザーに Outlook および Outlook Web App のカスタマイズされた GAL へのアクセス権を付与します。詳細については、「[アドレス帳ポリシー](https://docs.microsoft.com/ja-jp/exchange/address-books/address-book-policies/address-book-policies)」を参照してください。
 
 6.  完了したら、<strong>保存</strong> をクリックしてメールボックスを作成します。
 

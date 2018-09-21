@@ -19,9 +19,9 @@ _**トピックの最終更新日:** 2009-12-09_
 
 Windows 信頼性とパフォーマンス モニター (Perfmon.exe) を使用して、メッセージング レコード管理 (MRM) のパフォーマンス カウンターを選択および表示できます。パフォーマンス カウンターを使用すると、多くのリソースを消費する MRM プロセスの実行時に、管理されたフォルダー アシスタントを監視できます。
 
-MRM のパフォーマンス カウンターの一覧については、「[メッセージング レコード管理用のパフォーマンス カウンター](performance-counters-for-messaging-records-management-exchange-2013-help.md)」を参照してください。
+MRM のパフォーマンス カウンターの一覧については、「[メッセージング レコード管理用のパフォーマンス カウンター](performance-counters-for-https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/messaging-records-management/messaging-records-management)」を参照してください。
 
-MRM の監視に関連するその他のタスクについては、「[メッセージング レコード管理の監視](monitoring-messaging-records-management-exchange-2013-help.md)」を参照してください。
+MRM の監視に関連するその他のタスクについては、「[メッセージング レコード管理の監視](monitoring-https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/messaging-records-management/messaging-records-management)」を参照してください。
 
 ## Windows の信頼性およびパフォーマンス モニターを使用して、MRM のパフォーマンス カウンターを表示する
 

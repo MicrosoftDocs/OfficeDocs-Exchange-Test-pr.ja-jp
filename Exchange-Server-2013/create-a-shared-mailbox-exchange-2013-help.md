@@ -82,7 +82,7 @@ _**適用先:** Exchange Online, Exchange Server 2013, Office 365 Enterprise_
 
 
 > [!NOTE]
-> この例では、セキュリティ グループの MarketingSG を既に作成していて、そのセキュリティ グループはメールが有効と想定します。「<A href="manage-mail-enabled-security-groups-exchange-2013-help.md">メールが有効なセキュリティ グループの管理</A>」を参照してください。
+> この例では、セキュリティ グループの MarketingSG を既に作成していて、そのセキュリティ グループはメールが有効と想定します。「<A href="https://docs.microsoft.com/ja-jp/exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups">メールが有効なセキュリティ グループの管理</A>」を参照してください。
 
 
 

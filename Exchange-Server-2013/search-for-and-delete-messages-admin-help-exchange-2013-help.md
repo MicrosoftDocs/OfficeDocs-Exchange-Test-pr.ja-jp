@@ -31,11 +31,11 @@ _**トピックの最終更新日:** 2017-12-20_
 
   - ユーザーのメールボックスにあるメッセージを検索し、削除するためには、次の両方の管理役割を割り当てられる必要があります。
     
-      - **Mailbox Search**   この役割が割り当てられると、組織内の複数のメールボックスでメッセージを検索できます。既定ではこの役割は管理者には割り当てられません。メールボックスを検索できるようにこの役割を自分自身に割り当てるには、探索管理役割グループのメンバーとして自身を追加します。「[Exchange の電子情報開示のアクセス許可を割り当てる](assign-ediscovery-permissions-in-exchange-exchange-2013-help.md)」を参照してください。
+      - **Mailbox Search**   この役割が割り当てられると、組織内の複数のメールボックスでメッセージを検索できます。既定ではこの役割は管理者には割り当てられません。メールボックスを検索できるようにこの役割を自分自身に割り当てるには、探索管理役割グループのメンバーとして自身を追加します。「[Exchange の電子情報開示のアクセス許可を割り当てる](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/in-place-ediscovery/assign-ediscovery-permissions)」を参照してください。
     
       - **Mailbox Import Export**   この役割が割り当てられると、ユーザーのメールボックスからメッセージを削除できます。既定では、この役割はどの役割グループにも割り当てられていません。ユーザーのメールボックスからメッセージを削除するために、"Mailbox Import Export" 役割を "組織管理" 役割グループに追加できます。詳細については、「[役割グループの管理](manage-role-groups-exchange-2013-help.md)」の「役割グループに役割を追加する」を参照してください。
 
-  - メッセージの削除を行うメールボックスで単一アイテムの回復が有効になっている場合は、最初にその機能を無効にする必要があります。詳細については、「[メールボックスの単一アイテムの回復を有効または無効にする](enable-or-disable-single-item-recovery-for-a-mailbox-exchange-2013-help.md)」を参照してください。
+  - メッセージの削除を行うメールボックスで単一アイテムの回復が有効になっている場合は、最初にその機能を無効にする必要があります。詳細については、「[メールボックスの単一アイテムの回復を有効または無効にする](https://docs.microsoft.com/ja-jp/exchange/recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-single-item-recovery)」を参照してください。
 
   - メッセージの削除を行うメールボックスがホールドの対象になっている場合は、ホールドを解除してメールボックスのコンテンツを削除する前に、レコード管理または法務部門に確認することをお勧めします。承認を得た後、トピック「[回復可能なアイテム フォルダーのクリーンアップ](clean-up-the-recoverable-items-folder-exchange-2013-help.md)」に一覧表示されている手順に従います。
 

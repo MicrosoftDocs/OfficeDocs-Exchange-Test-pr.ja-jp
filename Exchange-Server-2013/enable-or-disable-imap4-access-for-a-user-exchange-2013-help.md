@@ -25,7 +25,7 @@ _**トピックの最終更新日:** 2013-01-18_
 
 
 
-ユーザーのメールボックスの管理に関連した追加情報については、「[ユーザー メールボックスの管理](manage-user-mailboxes-exchange-2013-help.md)」を参照してください。
+ユーザーのメールボックスの管理に関連した追加情報については、「[ユーザー メールボックスの管理](https://docs.microsoft.com/ja-jp/exchange/recipients-in-exchange-online/manage-user-mailboxes/manage-user-mailboxes)」を参照してください。
 
 POP3 および IMAP4 に関連する詳細情報については、「[Exchange Server 2013 での POP3 と IMAP4](pop3-and-imap4-in-exchange-server-2013-exchange-2013-help.md)」を参照してください。
 

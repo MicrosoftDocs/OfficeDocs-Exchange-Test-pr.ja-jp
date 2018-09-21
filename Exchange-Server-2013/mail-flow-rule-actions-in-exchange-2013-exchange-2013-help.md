@@ -61,7 +61,7 @@ Exchange Online におけるメール フロー ルールのアクションの�
 <p><strong>[メッセージを転送して承認を受ける]</strong> &gt; <strong>[次のユーザーに]</strong></p></td>
 <td><p><em>ModerateMessageByUser</em></p></td>
 <td><p><code>Addresses</code></p></td>
-<td><p>メッセージを承認要求でラップされた添付ファイルとして特定のモデレーターに転送します。詳細については <a href="common-message-approval-scenarios-exchange-2013-help.md">一般的なメッセージの承認シナリオ</a> をご覧ください。配布グループをモデレーターとして使用することはできません。</p></td>
+<td><p>メッセージを承認要求でラップされた添付ファイルとして特定のモデレーターに転送します。詳細については <a href="https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/mail-flow-rules/common-message-approval-scenarios">一般的なメッセージの承認シナリオ</a> をご覧ください。配布グループをモデレーターとして使用することはできません。</p></td>
 <td><p>Exchange 2010 以降</p></td>
 </tr>
 <tr class="even">
@@ -632,7 +632,7 @@ Exchange Online におけるメール フロー ルールのアクションの�
 
 ## 詳細情報
 
-[メール フロー ルールを管理します](manage-mail-flow-rules-exchange-2013-help.md)
+[メール フロー ルールを管理します](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules)
 
 [メール フローやトランスポート ルール](mail-flow-rules-transport-rules-in-exchange-2013-exchange-2013-help.md)
 

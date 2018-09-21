@@ -17,7 +17,7 @@ _**適用先:** Exchange Server 2013_
 
 _**トピックの最終更新日:** 2015-04-07_
 
-Microsoft Exchange Server 2013 では、メッセージング レコード管理 (MRM) は保持タグとアイテム保持ポリシーを使用して実行されます。アイテム保持ポリシーは、メールボックスに適用可能な保持タグのグループです。詳細については、「[保持タグおよびアイテム保持ポリシー](retention-tags-and-retention-policies-exchange-2013-help.md)」を参照してください。Exchange Server 2007 で導入された MRM テクノロジである管理フォルダーはサポートされていません。
+Microsoft Exchange Server 2013 では、メッセージング レコード管理 (MRM) は保持タグとアイテム保持ポリシーを使用して実行されます。アイテム保持ポリシーは、メールボックスに適用可能な保持タグのグループです。詳細については、「[保持タグおよびアイテム保持ポリシー](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/messaging-records-management/retention-tags-and-policies)」を参照してください。Exchange Server 2007 で導入された MRM テクノロジである管理フォルダーはサポートされていません。
 
 管理フォルダーのあるメールボックスで、メールボックス ポリシーが適用されたものは、アイテム保持ポリシーを使用するように移行できます。そうするには、ユーザーの管理フォルダーのメールボックス ポリシーにリンクした管理フォルダーと同等の保持タグを作成する必要があります。
 
@@ -29,7 +29,7 @@ Microsoft Exchange Server 2013 では、メッセージング レコード管理
 
 
 > [!TIP]
-> メールボックスの保存機能を有効にして、アイテム保持ポリシーまたは管理フォルダー メールボックス ポリシーの処理を中止できます。メールボックスの保存機能を有効にすると、新しいポリシー設定がテスト メールボックスまたは運用メールボックスのいくつかでテストされるまで、メッセージの削除やアーカイブへの移動ができなくなり、移行シナリオで役に立ちます。詳細については、「<A href="place-a-mailbox-on-retention-hold-exchange-2013-help.md">メールボックスの保存機能を有効にする</A>」を参照してください。
+> メールボックスの保存機能を有効にして、アイテム保持ポリシーまたは管理フォルダー メールボックス ポリシーの処理を中止できます。メールボックスの保存機能を有効にすると、新しいポリシー設定がテスト メールボックスまたは運用メールボックスのいくつかでテストされるまで、メッセージの削除やアーカイブへの移動ができなくなり、移行シナリオで役に立ちます。詳細については、「<A href="https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/messaging-records-management/mailbox-retention-hold">メールボックスの保存機能を有効にする</A>」を参照してください。
 
 
 
@@ -276,7 +276,7 @@ MRM に関連するその他の管理タスクについては、「[メッセー
 
 
 > [!NOTE]
-> また、EAC を使用すると、(管理フォルダーの設定をベースとせずに) 保持タグを手動で作成することもできます。詳細については、「<A href="create-a-retention-policy-exchange-2013-help.md">アイテム保持ポリシーの作成</A>」を参照してください。
+> また、EAC を使用すると、(管理フォルダーの設定をベースとせずに) 保持タグを手動で作成することもできます。詳細については、「<A href="https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/messaging-records-management/create-a-retention-policy">アイテム保持ポリシーの作成</A>」を参照してください。
 
 
 
@@ -298,7 +298,7 @@ MRM に関連するその他の管理タスクについては、「[メッセー
 
 
 > [!NOTE]
-> また、EAC を使用すると、アイテム保持ポリシーを作成し、そのポリシーに保持タグを追加できます。詳細については、「<A href="create-a-retention-policy-exchange-2013-help.md">アイテム保持ポリシーの作成</A>」を参照してください。
+> また、EAC を使用すると、アイテム保持ポリシーを作成し、そのポリシーに保持タグを追加できます。詳細については、「<A href="https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/messaging-records-management/create-a-retention-policy">アイテム保持ポリシーの作成</A>」を参照してください。
 
 
 
@@ -322,7 +322,7 @@ MRM に関連するその他の管理タスクについては、「[メッセー
 
 
 > [!NOTE]
-> また、EAC を使用するとアイテム保持ポリシーをユーザーに適用できます。詳細については、「<A href="apply-a-retention-policy-to-mailboxes-exchange-2013-help.md">メールボックスにアイテム保持ポリシーを適用する</A>」を参照してください。
+> また、EAC を使用するとアイテム保持ポリシーをユーザーに適用できます。詳細については、「<A href="https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/messaging-records-management/apply-retention-policy">メールボックスにアイテム保持ポリシーを適用する</A>」を参照してください。
 
 
 

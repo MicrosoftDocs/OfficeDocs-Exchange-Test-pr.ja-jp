@@ -29,17 +29,17 @@ _**トピックの最終更新日:** 2015-03-27_
 
   - トランスポート ルールと一致するメッセージを送信した場合に、ユーザーに警告する通知を作成する。
 
-  - 添付ファイルを含むすべてのメッセージをブロックする。例については、「[添付ファイル ブロックの一般的なシナリオ](common-attachment-blocking-scenarios-for-mail-flow-rules-exchange-2013-help.md)」を参照してください。
+  - 添付ファイルを含むすべてのメッセージをブロックする。例については、「[添付ファイル ブロックの一般的なシナリオ](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/mail-flow-rules/common-attachment-blocking-scenarios)」を参照してください。
 
 Exchange 管理者は、<strong>Exchange 管理センター</strong> \> <strong>メール フロー</strong> \> <strong>ルール</strong> で、トランスポート ルールを作成できます。この手順を実行する際には、あらかじめアクセス許可を割り当てる必要があります。新しいルールの作成を開始した後、<strong>次の場合にこのルールを適用</strong> で <strong>その他のオプション</strong> \> <strong>いずれかの添付ファイル</strong> をクリックすれば、添付ファイルに関連した条件の完全な一覧を表示できます。次の図に、添付ファイルに関連するオプションを示します。
 
 ![添付ファイルに関連するルールを選択するダイアログ ボックス](images/JJ674307.2ae4a179-bfd2-4a0e-abe1-53ed4e9e3368(EXCHG.150).jpg "添付ファイルに関連するルールを選択するダイアログ ボックス")
 
-選択できる条件や操作の範囲全般を含むトランスポート ルールの詳細については、「[メール フローやトランスポート ルール](mail-flow-rules-transport-rules-in-exchange-2013-exchange-2013-help.md)」を参照してください。Exchange Online Protection (EOP) およびハイブリッド環境では、[EOP を構成するためのベスト プラクティス](https://technet.microsoft.com/ja-jp/library/jj723164\(v=exchg.150\)) で提供されるトランスポート ルールのベスト プラクティスを活用できます。ルールの作成を開始する準備ができている場合は、「[メール フロー ルールを管理します](manage-mail-flow-rules-exchange-2013-help.md)」を参照してください。
+選択できる条件や操作の範囲全般を含むトランスポート ルールの詳細については、「[メール フローやトランスポート ルール](mail-flow-rules-transport-rules-in-exchange-2013-exchange-2013-help.md)」を参照してください。Exchange Online Protection (EOP) およびハイブリッド環境では、[EOP を構成するためのベスト プラクティス](https://technet.microsoft.com/ja-jp/library/jj723164\(v=exchg.150\)) で提供されるトランスポート ルールのベスト プラクティスを活用できます。ルールの作成を開始する準備ができている場合は、「[メール フロー ルールを管理します](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules)」を参照してください。
 
 ## 添付ファイル内のコンテンツの検査
 
-次の表にあるトランスポート ルールの条件を使用して、メッセージの添付ファイルのコンテンツを調べることができます。これらの条件では、添付ファイルの最初の 150 KB だけが検査されます。メッセージを検査するときに、これらの条件の使用を開始するためには、トランスポート ルールに条件を追加する必要があります。ルールの作成や変更の詳細については、「[メール フロー ルールを管理します](manage-mail-flow-rules-exchange-2013-help.md)」を参照してください。
+次の表にあるトランスポート ルールの条件を使用して、メッセージの添付ファイルのコンテンツを調べることができます。これらの条件では、添付ファイルの最初の 150 KB だけが検査されます。メッセージを検査するときに、これらの条件の使用を開始するためには、トランスポート ルールに条件を追加する必要があります。ルールの作成や変更の詳細については、「[メール フロー ルールを管理します](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules)」を参照してください。
 
 
 <table>
@@ -158,7 +158,7 @@ Exchange 管理者は、<strong>Exchange 管理センター</strong> \> <strong>
 
 ## 添付ファイルのファイル プロパティの検査
 
-次のトランスポート ルールの条件は、メッセージに添付されているファイルのプロパティを検査します。メッセージを検査するときに、これらの条件の使用を開始するためには、トランスポート ルールに条件を追加する必要があります。トランスポート ルールのコンテキスト内でチェックできる、実行可能コードを持つサポート対象ファイルの種類の一覧は次のとおりです。ルールの作成または変更に関する詳細については、「[メール フロー ルールを管理します](manage-mail-flow-rules-exchange-2013-help.md)」を参照してください。
+次のトランスポート ルールの条件は、メッセージに添付されているファイルのプロパティを検査します。メッセージを検査するときに、これらの条件の使用を開始するためには、トランスポート ルールに条件を追加する必要があります。トランスポート ルールのコンテキスト内でチェックできる、実行可能コードを持つサポート対象ファイルの種類の一覧は次のとおりです。ルールの作成または変更に関する詳細については、「[メール フロー ルールを管理します](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules)」を参照してください。
 
 
 <table>
@@ -312,11 +312,11 @@ Exchange 管理者は、<strong>Exchange 管理センター</strong> \> <strong>
 
   - 保護されたファイル以外のところパスポート番号が存在するメールに対して実行するアクションを定義します。
 
-DLP ポリシーおよび添付ファイル関連の条件は、ビジネスのニーズをトランスポート ルール条件、例外、アクションとして定義することで、それらのニーズを満たすのに役立ちます。DLP ポリシーに機密情報の検査を含めた場合、メッセージの添付ファイルはその情報についてだけスキャンされます。ただし、サイズやファイル種類などの添付ファイルに関連する条件は、このトピックに一覧表示されている条件を追加するまでは含まれません。DLP はすべてのバージョンの Exchange で利用できるわけではありません。詳しくは、「[データ損失防止](technical-overview-of-dlp-data-loss-prevention-in-exchange.md)」を参照してください。
+DLP ポリシーおよび添付ファイル関連の条件は、ビジネスのニーズをトランスポート ルール条件、例外、アクションとして定義することで、それらのニーズを満たすのに役立ちます。DLP ポリシーに機密情報の検査を含めた場合、メッセージの添付ファイルはその情報についてだけスキャンされます。ただし、サイズやファイル種類などの添付ファイルに関連する条件は、このトピックに一覧表示されている条件を追加するまでは含まれません。DLP はすべてのバージョンの Exchange で利用できるわけではありません。詳しくは、「[データ損失防止](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention)」を参照してください。
 
 ## 詳細情報
 
-[データ損失防止](technical-overview-of-dlp-data-loss-prevention-in-exchange.md)
+[データ損失防止](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention)
 
 [メール フローやトランスポート ルール](mail-flow-rules-transport-rules-in-exchange-2013-exchange-2013-help.md)
 

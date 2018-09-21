@@ -109,7 +109,7 @@ EAC を使用して Outlook Web App 仮想ディレクトリのプロパティ�
     
 
     > [!NOTE]
-    > 個々のユーザーの機能の設定は、仮想ディレクトリの設定より優先されます。個々のユーザーのセグメンテーション設定は、<STRONG>Set-CASMailbox</STRONG> コマンドレットを使用するか、Outlook Web App&nbsp;メールボックス ポリシーを使用します。詳細については、「<A href="outlook-web-app-mailbox-policies-exchange-2013-help.md">Outlook Web App メールボックス ポリシー</A>」を参照してください。
+    > 個々のユーザーの機能の設定は、仮想ディレクトリの設定より優先されます。個々のユーザーのセグメンテーション設定は、<STRONG>Set-CASMailbox</STRONG> コマンドレットを使用するか、Outlook Web App&nbsp;メールボックス ポリシーを使用します。詳細については、「<A href="https://docs.microsoft.com/ja-jp/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/outlook-web-app-mailbox-policies">Outlook Web App メールボックス ポリシー</A>」を参照してください。
 
     
     このチェック ボックスを使用して、機能を有効または無効にします。既定では、最も一般的な機能が表示されます。有効または無効にできるすべての機能を表示するには、<strong>その他のオプション</strong> をクリックします。

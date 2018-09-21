@@ -168,7 +168,7 @@ Exchange 2013 では、*単一アイテムの回復*により、バックアッ�
 </table>
 
 
-Exchange 2013 では、新規メールボックスまたは以前のバージョンの Exchange から移動したメールボックスについては、既定で単一アイテムの回復は無効になっています。Exchange 管理シェルを使用して、メールボックスの単一アイテムの回復を有効にしてから、削除済みアイテムの保存期間を構成して変更します。単一アイテムの回復を実行する方法の詳細については、「[ユーザーのメールボックス内の削除済みメッセージを復元する](recover-deleted-messages-in-a-user-s-mailbox-exchange-2013-help.md)」を参照してください。
+Exchange 2013 では、新規メールボックスまたは以前のバージョンの Exchange から移動したメールボックスについては、既定で単一アイテムの回復は無効になっています。Exchange 管理シェルを使用して、メールボックスの単一アイテムの回復を有効にしてから、削除済みアイテムの保存期間を構成して変更します。単一アイテムの回復を実行する方法の詳細については、「[ユーザーのメールボックス内の削除済みメッセージを復元する](https://docs.microsoft.com/ja-jp/exchange/recipients-in-exchange-online/manage-user-mailboxes/recover-deleted-messages)」を参照してください。
 
 ページのトップへ
 
@@ -220,9 +220,9 @@ Exchange 2013 および Exchange Online では、検出マネージャーが、�
 
 インプレース電子証拠開示、インプレース保持、訴訟ホールドの詳細については、次のトピックを参照してください。
 
-  - [インプレース電子情報開示 (eDiscovery)](in-place-ediscovery-exchange-2013-help.md)
+  - [インプレース電子情報開示 (eDiscovery)](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery)
 
-  - [インプレース保持と訴訟ホールド](in-place-hold-and-litigation-hold-exchange-2013-help.md)
+  - [インプレース保持と訴訟ホールド](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/in-place-and-litigation-holds)
 
 ページのトップへ
 

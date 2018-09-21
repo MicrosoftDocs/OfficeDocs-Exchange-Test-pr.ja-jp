@@ -179,5 +179,5 @@ IP PBX および PBX の構成の詳細については、「[PBX および IP PB
 
 [UM プロトコル、ポート、およびサービス](um-protocols-ports-and-services-exchange-2013-help.md)
 
-[Exchange 2013 のテレフォニー アドバイザー](telephony-advisor-for-exchange-2013-exchange-2013-help.md)
+[Exchange 2013 のテレフォニー アドバイザー](https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/telephony-advisor-for-exchange-2013)
 

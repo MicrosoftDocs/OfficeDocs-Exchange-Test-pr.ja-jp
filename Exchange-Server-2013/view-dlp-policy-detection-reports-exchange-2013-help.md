@@ -269,7 +269,7 @@ S:TRA=ETRP|ruleId=C27D21EECA0311E0BCB896154924019B|LoadW=200|LoadC=100|ExecW=550
 
 ## 詳細情報
 
-[データ損失防止](technical-overview-of-dlp-data-loss-prevention-in-exchange.md)
+[データ損失防止](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention)
 
 [DLP ポリシー検出のインシデント レポートの作成](create-incident-reports-for-dlp-policy-detections-exchange-2013-help.md)
 

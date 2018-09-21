@@ -29,7 +29,7 @@ _**トピックの最終更新日:** 2013-11-01_
 
 [トランスポート解読を有効または無効にする](enable-or-disable-transport-decryption-exchange-2013-help.md)
 
-[Exchange 検索およびインプレース電子情報開示のための IRM の構成](configure-irm-for-exchange-search-and-in-place-ediscovery-exchange-2013-help.md)
+[Exchange 検索およびインプレース電子情報開示のための IRM の構成](configure-irm-for-exchange-search-and-https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery)
 
 [ジャーナル レポート復号化を有効または無効にする](enable-or-disable-journal-report-decryption-exchange-2013-help.md)
 

@@ -25,11 +25,11 @@ _<strong>トピックの最終更新日:</strong>2017-06-14_
 
 [ハイブリッド展開においてオンプレミスの組織と Exchange Online 組織間でメールボックスを移動する](move-mailboxes-between-on-premises-and-exchange-online-organizations-in-hybrid-deployments-exchange-2013-help.md)
 
-[ハイブリッド展開用に従来の社内パブリック フォルダーを構成する](configure-legacy-on-premises-public-folders-for-a-hybrid-deployment-exchange-2013-help.md)
+[ハイブリッド展開用に従来の社内パブリック フォルダーを構成する](https://docs.microsoft.com/ja-jp/exchange/collaboration-exo/public-folders/set-up-legacy-hybrid-public-folders)
 
-[ハイブリッド展開用に Exchange 2013 パブリック フォルダーを構成する](configure-exchange-2013-public-folders-for-a-hybrid-deployment-exchange-2013-help.md)
+[ハイブリッド展開用に Exchange 2013 パブリック フォルダーを構成する](https://docs.microsoft.com/ja-jp/exchange/collaboration-exo/public-folders/set-up-modern-hybrid-public-folders)
 
-[ハイブリッド展開用に Exchange Online パブリック フォルダーを構成する](configure-exchange-online-public-folders-for-a-hybrid-deployment-exchange-2013-help.md)
+[ハイブリッド展開用に Exchange Online パブリック フォルダーを構成する](https://docs.microsoft.com/ja-jp/exchange/collaboration-exo/public-folders/set-up-exo-hybrid-public-folders)
 
 [ハイブリッド展開で委任されたメールボックスへのアクセス許可をサポートするように Exchange を構成する](configure-exchange-to-support-delegated-mailbox-permissions-in-a-hybrid-deployment-exchange-2013-help.md)
 

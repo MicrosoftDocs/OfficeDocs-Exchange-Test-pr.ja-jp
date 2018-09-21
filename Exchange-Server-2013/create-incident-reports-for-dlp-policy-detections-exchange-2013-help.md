@@ -139,5 +139,5 @@ Exchange Server 2013 では、DLP ポリシー ルール セット内にイン�
 
 [DLP ポリシー検出のレポートの表示](view-dlp-policy-detection-reports-exchange-2013-help.md)
 
-[データ損失防止](technical-overview-of-dlp-data-loss-prevention-in-exchange.md)
+[データ損失防止](https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention)
 
