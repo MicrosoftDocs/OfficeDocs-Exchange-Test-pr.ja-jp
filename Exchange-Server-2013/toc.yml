@@ -669,7 +669,7 @@
       - name: インプレース アーカイブ (社内) のアーカイブ クォータの構成
         href: configure-archive-quotas-for-an-in-place-archive-in-exchange-2013-exchange-2013-help.md
       - name: Lync 会話と会議コンテンツを Exchange にアーカイブする
-        href: archive-lync-conversations-and-meeting-content-to-exchange-exchange-2013-help.md
+        href: https://docs.microsoft.com/ja-jp/Office365/SecurityCompliance/eop/exchange-online-protection-overview
       - name: OAuth 認証を使用する Exchange ハイブリッド展開での Archiving のサポート
         href: using-oauth-authentication-to-support-archiving-in-an-exchange-hybrid-deployment-exchange-2013-help.md
     - name: インプレース保持と訴訟ホールド
@@ -678,36 +678,36 @@
       - name: インプレース保持を作成または削除する
         href: https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/create-or-remove-in-place-holds
       - name: メールボックスを訴訟ホールドの対象にする
-        href: place-a-mailbox-on-litigation-hold-exchange-2013-help.md
+        href: https://docs.microsoft.com/ja-jp/office365/SecurityCompliance/place-a-mailbox-on-litigation-hold
       - name: すべてのメールボックスを保持に設定する
-        href: place-all-mailboxes-on-hold-exchange-2013-help.md
+        href: https://docs.microsoft.com/ja-jp/office365/securitycompliance/change-the-hold-duration-for-an-inactive-mailbox
       - name: 電子情報開示のために Bcc および展開された配布グループの受信者を保持する
-        href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery-exchange-2013-help.md
+        href: https://docs.microsoft.com/ja-jp/office365/SecurityCompliance/preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery
     - name: インプレース電子情報開示 (eDiscovery)
       href: https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery
       items:
       - name: Exchange の電子情報開示のアクセス許可を割り当てる
         href: https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/in-place-ediscovery/assign-ediscovery-permissions
       - name: インプレース電子情報開示検索を作成する
-        href: create-an-in-place-ediscovery-search-exchange-2013-help.md
+        href: https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/in-place-ediscovery/create-in-place-ediscovery-search
       - name: 電子情報開示検索結果を探索メールボックスにコピーする
         href: copy-ediscovery-search-results-to-a-discovery-mailbox-exchange-2013-help.md
       - name: 電子情報開示検索の結果を PST ファイルへエクスポート
-        href: export-ediscovery-search-results-to-a-pst-file-exchange-2013-help.md
+        href: https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/in-place-ediscovery/export-search-results
       - name: インプレース電子情報開示のためのメッセージ プロパティと検索演算子
         href: https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/in-place-ediscovery/message-properties-and-search-operators
       - name: 探索メールボックスの作成
         href: https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/in-place-ediscovery/create-a-discovery-mailbox
       - name: インプレース電子情報開示の検索の開始または停止
-        href: start-or-stop-an-in-place-ediscovery-search-exchange-2013-help.md
+        href: https://docs.microsoft.com/ja-jp/office365/securitycompliance/use-content-search-in-ediscovery
       - name: インプレース電子情報開示検索の変更
-        href: modify-an-in-place-ediscovery-search-exchange-2013-help.md
+        href: https://docs.microsoft.com/ja-jp/office365/securitycompliance/search-for-ediscovery-activities-in-the-audit-log
       - name: インプレース電子情報開示検索用のカスタム管理スコープを作成する
         href: https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/in-place-ediscovery/create-custom-management-scope
       - name: インプレース電子情報開示検索の削除
-        href: remove-an-in-place-ediscovery-search-exchange-2013-help.md
+        href: https://docs.microsoft.com/ja-jp/SharePoint/governance/create-and-run-queries-in-the-ediscovery-center
       - name: メッセージを検索して削除する - 管理者向けヘルプ
-        href: search-for-and-delete-messages-admin-help-exchange-2013-help.md
+        href: https://docs.microsoft.com/ja-jp/office365/SecurityCompliance/search-for-and-delete-messagesadmin-help
       - name: Exchange の証拠開示用メールボックスのサイズを小さくする
         href: https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/in-place-ediscovery/reduce-discovery-mailbox-size
       - name: Exchange で既定の探索メールボックスを削除して再作成する
@@ -726,25 +726,25 @@
       - name: Exchange 2013 のメッセージング レコード管理用語
         href: messaging-records-management-terminology-in-exchange-2013-exchange-2013-help.md
       - name: 保持タグおよびアイテム保持ポリシー
-        href: retention-tags-and-retention-policies-exchange-2013-help.md
+        href: https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/messaging-records-management/retention-tags-and-policies
         items:
         - name: 既定のアイテム保持ポリシー
           href: https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/messaging-records-management/default-retention-policy
         - name: アイテム保持ポリシー タグをサポートする既定のフォルダー
           href: https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/messaging-records-management/default-folders
         - name: 保存期間の計算方法
-          href: how-retention-age-is-calculated-exchange-2013-help.md
+          href: https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/messaging-records-management/retention-age
         - name: 'チェックリスト: アイテム保持ポリシーの展開'
           href: checklist-deploying-retention-policies-exchange-2013-help.md
         - name: メッセージング レコード管理の手順
-          href: messaging-records-management-procedures-exchange-2013-help.md
+          href: https://docs.microsoft.com/ja-jp/office365/securitycompliance/inactive-mailboxes-in-office-365
           items:
           - name: アイテム保持ポリシーの作成
             href: https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/messaging-records-management/create-a-retention-policy
           - name: アイテム保持ポリシーへの保持タグの追加、またはアイテム保持ポリシーからの保持タグの削除
             href: https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/messaging-records-management/add-or-remove-retention-tags
           - name: メールボックスにアイテム保持ポリシーを適用する
-            href: apply-a-retention-policy-to-mailboxes-exchange-2013-help.md
+            href: https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/messaging-records-management/apply-retention-policy
           - name: 管理フォルダー アシスタントの構成
             href: configure-the-managed-folder-assistant-exchange-2013-help.md
           - name: メールボックスの保存機能を有効にする
@@ -792,7 +792,7 @@
         href: mail-flow-or-transport-rule-procedures-exchange-2013-help.md
         items:
         - name: メール フロー ルールを管理します
-          href: manage-mail-flow-rules-exchange-2013-help.md
+          href: https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules
         - name: メール フロー ルールのテスト
           href: https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/mail-flow-rules/test-mail-flow-rules
         - name: メッセージが低優先メール機能を迂回できるメール フロー ルールを使用する
@@ -818,50 +818,50 @@
       - name: 機密情報の種類の検索基準：
         href: what-the-sensitive-information-types-in-exchange-look-for-exchange-online-help.md
       - name: DLP ポリシー テンプレート
-        href: dlp-policy-templates-exchange-2013-help.md
+        href: https://docs.microsoft.com/ja-jp/office365/securitycompliance/what-the-dlp-policy-templates-include
         items:
         - name: Exchange で提供される DLP ポリシー テンプレート
-          href: dlp-policy-templates-supplied-in-exchange-exchange-2013-help.md
+          href: https://docs.microsoft.com/ja-jp/office365/securitycompliance/create-a-dlp-policy-from-a-template
         - name: Microsoft パートナーからのポリシー テンプレート
-          href: policy-templates-from-microsoft-partners-exchange-2013-help.md
+          href: https://docs.microsoft.com/ja-jp/office365/securitycompliance/eop/exchange-online-protection-overview
       - name: DLP の手順
         href: dlp-procedures-exchange-2013-help.md
         items:
         - name: DLP ポリシーの管理
-          href: manage-dlp-policies-exchange-2013-help.md
+          href: https://docs.microsoft.com/ja-jp/office365/securitycompliance/data-loss-prevention-policies
         - name: テンプレートからの DLP ポリシーの作成
           href: https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/data-loss-prevention/create-dlp-policy-from-template
         - name: カスタム DLP ポリシーの作成
           href: https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/data-loss-prevention/create-custom-dlp-policy
         - name: ファイルからカスタムの DLP ポリシー テンプレートをインポートする
-          href: import-a-custom-dlp-policy-template-from-a-file-exchange-2013-help.md
+          href: https://docs.microsoft.com/ja-jp/office365/securitycompliance/create-a-dlp-policy-from-a-template
         - name: DLP ポリシー検出のレポートの表示
           href: view-dlp-policy-detection-reports-exchange-2013-help.md
         - name: DLP ポリシー検出のインシデント レポートの作成
           href: create-incident-reports-for-dlp-policy-detections-exchange-2013-help.md
         - name: 独自の DLP テンプレートおよび情報の種類の定義
-          href: define-your-own-dlp-templates-and-information-types-exchange-2013-help.md
+          href: https://docs.microsoft.com/ja-jp/office365/securitycompliance/create-a-dlp-policy-from-a-template
           items:
           - name: DLP ポリシー テンプレート ファイルの作成
-            href: xml-rule-schema-and-rule-structure-guide-for-dlp-policy-files.md
+            href: https://docs.microsoft.com/ja-jp/office365/securitycompliance/create-a-dlp-policy-from-a-template
           - name: 機密情報のルール パッケージの作成
-            href: technical-description-of-xml-schema-for-dlp-rule-packages.md
+            href: https://docs.microsoft.com/ja-jp/Office365/SecurityCompliance/eop/exchange-online-protection-overview
           - name: ルール パッケージの照合の方法と手法
-            href: technical-description-of-xsd-rule-matching-for-dlp-rule-packages.md
+            href: https://docs.microsoft.com/ja-jp/office365/securitycompliance/eop/exchange-online-protection-overview
           - name: 組み込みの DLP 機密情報の種類をカスタマイズする
-            href: customize-the-built-in-dlp-sensitive-information-types-exchange-2013-help.md
+            href: https://docs.microsoft.com/ja-jp/office365/securitycompliance/customize-a-built-in-sensitive-information-type
           - name: Exchange からの DLP 機密情報の種類のエクスポート
-            href: export-dlp-sensitive-information-types-from-exchange-2013-exchange-2013-help.md
+            href: https://docs.microsoft.com/ja-jp/office365/securitycompliance/eop/exchange-online-protection-overview
       - name: ポリシー ヒント
         href: https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/data-loss-prevention/policy-tips
         items:
         - name: ポリシー ヒントの管理
-          href: how-to-configure-and-manage-policy-tips-a-dlp-feature-exchange.md
+          href: https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/data-loss-prevention/manage-policy-tips
       - name: ドキュメント フィンガープリンティング
         href: https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/data-loss-prevention/document-fingerprinting
         items:
         - name: ドキュメント フィンガープリンティングを使用してフォーム データを保護する
-          href: protect-form-data-with-document-fingerprinting-exchange-2013-help.md
+          href: https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/data-loss-prevention/protect-data-with-fingerprinting
     - name: Information Rights Management
       href: information-rights-management-exchange-2013-help.md
       items:
@@ -903,14 +903,14 @@
         - name: Information Rights Management のログ出力を有効または無効にする
           href: enable-or-disable-information-rights-management-logging-exchange-2013-help.md
     - name: S/MIME によるメッセージの署名と暗号化
-      href: s-mime-for-message-signing-and-encryption-exchange-2013-help.md
+      href: https://docs.microsoft.com/ja-jp/office365/SecurityCompliance/s-mime-for-message-signing-and-encryption
       items:
       - name: Outlook Web App 用 S/MIME 設定値の構成
-        href: configure-s-mime-settings-for-outlook-web-app-exchange-2013-help.md
+        href: https://docs.microsoft.com/ja-jp/office365/SecurityCompliance/configure-s-mime-settings-for-outlook-web-app
       - name: S/MIME を検証するための仮想証明書コレクションをセットアップする
-        href: set-up-virtual-certificate-collection-to-validate-s-mime-exchange-2013-help.md
+        href: https://docs.microsoft.com/ja-jp/office365/SecurityCompliance/set-up-virtual-certificate-collection-to-validate-s-mime
       - name: S/MIME 署名および暗号化された電子メールを送受信する
-        href: send-and-receive-s-mime-signed-and-encrypted-email-exchange-2013-help.md
+        href: https://docs.microsoft.com/ja-jp/office365/SecurityCompliance/send-and-receive-s-mime-signed-and-encrypted-email
     - name: メールボックスの監査ログの出力
       href: mailbox-audit-logging-exchange-2013-help.md
       items:
@@ -938,11 +938,11 @@
       - name: メールボックス監査ログをエクスポートする
         href: https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/exchange-auditing-reports/export-mailbox-audit-logs
       - name: 所有者以外のメールボックス アクセスのレポートの実行
-        href: run-a-non-owner-mailbox-access-report-exchange-online-help.md
+        href: https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/exchange-auditing-reports/non-owner-mailbox-access-report
       - name: メールボックスごとの訴訟ホールド レポートの実行
-        href: run-a-per-mailbox-litigation-hold-report-exchange-2013-help.md
+        href: https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/exchange-auditing-reports/per-mailbox-litigation-hold-report
       - name: 役割グループの変更または管理者監査ログを検索する
-        href: search-the-role-group-changes-or-administrator-audit-logs-exchange-2013-help.md
+        href: https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/exchange-auditing-reports/search-role-group-changes
       - name: 管理者監査ログを表示する
         href: https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/exchange-auditing-reports/view-administrator-audit-log
   - name: スパム対策およびマルウェア対策保護
@@ -1278,11 +1278,11 @@
       - name: メールボックスの Exchange ActiveSync を有効または無効にする
         href: https://docs.microsoft.com/ja-jp/exchange/recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-exchange-activesync
       - name: メールボックスの MAPI を有効または無効にする
-        href: enable-or-disable-mapi-for-a-mailbox-exchange-online-help.md
+        href: https://docs.microsoft.com/ja-jp/exchange/recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-mapi
       - name: メールボックスに対して Outlook Web App を有効または無効にする
         href: https://docs.microsoft.com/ja-jp/exchange/recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-outlook-web-app
       - name: メールボックスの単一アイテムの回復を有効または無効にする
-        href: enable-or-disable-single-item-recovery-for-a-mailbox-exchange-2013-help.md
+        href: https://docs.microsoft.com/ja-jp/exchange/recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-single-item-recovery
     - name: リンクされたメールボックスの管理
       href: manage-linked-mailboxes-exchange-2013-help.md
     - name: 配布グループの作成と管理
@@ -1291,9 +1291,9 @@
       - name: 配布グループ名前付けポリシーを作成する
         href: https://docs.microsoft.com/ja-jp/exchange/recipients-in-exchange-online/manage-distribution-groups/create-group-naming-policy
       - name: 配布グループ名前付けポリシーの上書き
-        href: override-the-distribution-group-naming-policy-exchange-2013-help.md
+        href: https://docs.microsoft.com/ja-jp/exchange/recipients-in-exchange-online/manage-distribution-groups/override-group-naming-policy
     - name: メールが有効なセキュリティ グループの管理
-      href: manage-mail-enabled-security-groups-exchange-2013-help.md
+      href: https://docs.microsoft.com/ja-jp/exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups
     - name: 動的配布グループの管理
       href: https://docs.microsoft.com/ja-jp/exchange/recipients-in-exchange-online/manage-dynamic-distribution-groups/manage-dynamic-distribution-groups
       items:
@@ -1312,7 +1312,7 @@
     - name: 会議室メールボックスの作成と管理
       href: https://docs.microsoft.com/ja-jp/exchange/recipients-in-exchange-online/manage-room-mailboxes
     - name: 備品用メールボックスの管理
-      href: manage-equipment-mailboxes-exchange-2013-help.md
+      href: https://docs.microsoft.com/ja-jp/exchange/recipients-in-exchange-online/manage-equipment-mailboxes
     - name: 未接続のメールボックス
       href: disconnected-mailboxes-exchange-2013-help.md
       items:
@@ -1331,7 +1331,7 @@
     - name: カスタム属性
       href: custom-attributes-exchange-2013-help.md
     - name: 受信者のアクセス許可を管理する
-      href: manage-permissions-for-recipients-exchange-online-help.md
+      href: https://docs.microsoft.com/ja-jp/exchange/recipients-in-exchange-online/manage-permissions-for-recipients
     - name: Exchange 2013 オブジェクト名でサポートされていない文字
       href: unsupported-characters-for-exchange-2013-object-names-exchange-2013-help.md
     - name: メールボックスの自動配布
@@ -1356,7 +1356,7 @@
       - name: Outlook 2016 for Mac によるパブリック フォルダーへのアクセス
         href: https://docs.microsoft.com/ja-jp/exchange/collaboration-exo/public-folders/access-public-folders-with-outlook-2016-for-mac
       - name: パブリック フォルダーを Office 365 グループに移行する
-        href: migrate-your-public-folders-to-office-365-groups-exchange-2013-help.md
+        href: https://docs.microsoft.com/ja-jp/exchange/collaboration-exo/public-folders/migrate-your-public-folders-to-office-365-groups
       - name: パブリック フォルダーの手順
         href: public-folder-procedures-exchange-2013-help.md
         items:
@@ -1384,7 +1384,7 @@
         - name: バッチ移行を使用して、Exchange 2013 のパブリック フォルダーを Office 365 グループに移行する
           href: use-batch-migration-to-migrate-exchange-2013-public-folders-to-office-365-groups-exchange-2013-help.md
         - name: パブリック フォルダー メールボックスを作成する
-          href: create-a-public-folder-mailbox-exchange-2013-help.md
+          href: https://docs.microsoft.com/ja-jp/exchange/collaboration-exo/public-folders/create-public-folder-mailbox
         - name: パブリック フォルダーの作成
           href: https://docs.microsoft.com/ja-jp/exchange/collaboration-exo/public-folders/create-public-folder
         - name: パブリック フォルダーのメールの有効化またはメールの無効化
@@ -1402,7 +1402,7 @@
         - name: 失敗した移動からパブリック フォルダーとパブリック フォルダー メールボックスを復元する
           href: restore-public-folders-and-public-folder-mailboxes-from-failed-moves-exchange-2013-help.md
         - name: パブリック フォルダーおよびパブリック フォルダー アイテムの統計情報の表示
-          href: view-statistics-for-public-folders-and-public-folder-items-exchange-2013-help.md
+          href: https://docs.microsoft.com/ja-jp/exchange/collaboration-exo/public-folders/view-public-folder-statistics
     - name: 共有メールボックス
       href: shared-mailboxes-exchange-2013-help.md
       items:
@@ -1412,7 +1412,7 @@
     href: email-addresses-and-address-books-exchange-2013-help.md
     items:
     - name: アドレス帳ポリシー
-      href: address-book-policies-exchange-2013-help.md
+      href: https://docs.microsoft.com/ja-jp/exchange/address-books/address-book-policies/address-book-policies
       items:
       - name: 'シナリオ: アドレス帳ポリシーの展開'
         href: scenario-deploying-address-book-policies-exchange-2013-help.md
@@ -1459,19 +1459,19 @@
         - name: オフライン アドレス帳の作成
           href: https://docs.microsoft.com/ja-jp/exchange/address-books/offline-address-books/create-offline-address-book
         - name: オフライン アドレス帳でのアドレス一覧の追加または削除
-          href: add-an-address-list-to-or-remove-an-address-list-from-an-offline-address-book-exchange-2013-help.md
+          href: https://docs.microsoft.com/ja-jp/exchange/address-books/offline-address-books/add-or-remove-an-address-list
         - name: 既定のオフライン アドレス帳を変更する
           href: https://docs.microsoft.com/ja-jp/exchange/address-books/offline-address-books/change-default-offline-address-book
         - name: オフライン アドレス帳のダウンロードのために受信者を準備する
           href: https://docs.microsoft.com/ja-jp/exchange/address-books/offline-address-books/provision-recipients
         - name: オフライン アドレス帳を削除する
-          href: remove-an-offline-address-book-exchange-2013-help.md
+          href: https://docs.microsoft.com/ja-jp/exchange/address-books/offline-address-books/remove-offline-address-book
         - name: オフライン アドレス帳の更新
           href: https://docs.microsoft.com/ja-jp/exchange/address-books/offline-address-books/update-offline-address-book
         - name: オフライン アドレス帳仮想ディレクトリを作成する
           href: https://docs.microsoft.com/ja-jp/exchange/address-books/offline-address-books/create-virtual-directory
         - name: オフライン アドレス帳の生成スケジュールを変更する
-          href: change-the-offline-address-book-generation-schedule-exchange-2013-help.md
+          href: https://docs.microsoft.com/ja-jp/exchange/address-books/offline-address-books/change-address-book-generation-schedule
         - name: オフライン アドレス帳配布のプロパティの構成
           href: https://docs.microsoft.com/ja-jp/exchange/address-books/offline-address-books/configure-distribution-properties
     - name: アドレス一覧
@@ -1586,7 +1586,7 @@
         - name: 携帯電話とタブレットの機能
           href: mobile-phone-and-tablet-features-exchange-2013-help.md
         - name: 携帯電話でリモート ワイプを実行する
-          href: perform-a-remote-wipe-on-a-mobile-phone-exchange-2013-help.md
+          href: https://docs.microsoft.com/ja-jp/exchange/clients-and-mobile-in-exchange-online/mobile-access/remote-wipe-on-mobile-phone
         - name: 電子メールにアクセスできるように携帯電話を構成する
           href: https://docs.microsoft.com/ja-jp/exchange/clients-and-mobile-in-exchange-online/mobile-access/configure-email-on-mobile-phone
     - name: POP3 と IMAP4
@@ -1655,7 +1655,7 @@
       href: outlook-web-app-exchange-2013-help.md
       items:
       - name: Outlook Web App メールボックス ポリシー
-        href: outlook-web-app-mailbox-policies-exchange-2013-help.md
+        href: https://docs.microsoft.com/ja-jp/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/outlook-web-app-mailbox-policies
         items:
         - name: Outlook Web App メールボックス ポリシーの手順
           href: https://docs.microsoft.com/ja-jp/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/outlook-web-app-mailbox-policy-procedures
@@ -1663,11 +1663,11 @@
           - name: Outlook Web App のメールボックス ポリシーの作成
             href: https://docs.microsoft.com/ja-jp/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/create-outlook-web-app-mailbox-policy
           - name: Outlook Web App のメールボックス ポリシーをメールボックスで適用または削除する
-            href: apply-or-remove-an-outlook-web-app-mailbox-policy-on-a-mailbox-exchange-2013-help.md
+            href: https://docs.microsoft.com/ja-jp/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/apply-or-remove-outlook-web-app-mailbox-policy
           - name: Exchange から Outlook Web App のメールボックス ポリシーを削除する
-            href: remove-an-outlook-web-app-mailbox-policy-from-exchange-exchange-2013-help.md
+            href: https://docs.microsoft.com/ja-jp/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/remove-outlook-web-app-mailbox-policy
           - name: Outlook Web App メールボックス ポリシーのプロパティの表示または構成
-            href: view-or-configure-outlook-web-app-mailbox-policy-properties-exchange-2013-help.md
+            href: https://docs.microsoft.com/ja-jp/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/configure-outlook-web-app-mailbox-policy-properties
       - name: Outlook Web App と Lync Server を統合する
         href: integrate-outlook-web-app-with-lync-server-exchange-2013-help.md
       - name: Outlook Web App 仮想ディレクトリの表示や構成
@@ -1697,7 +1697,7 @@
         href: https://docs.microsoft.com/ja-jp/exchange/clients-and-mobile-in-exchange-online/mailtips/mailtips-over-organization-relationships
         items:
         - name: 組織上の関係のメール ヒントの管理
-          href: manage-mailtips-for-organization-relationships-exchange-2013-help.md
+          href: https://docs.microsoft.com/ja-jp/exchange/clients-and-mobile-in-exchange-online/mailtips/manage-mailtips-for-organization-relationships
       - name: グループ メトリックとメール ヒント
         href: group-metrics-and-mailtips-exchange-2013-help.md
         items:
@@ -1707,7 +1707,7 @@
       href: https://docs.microsoft.com/ja-jp/exchange/clients-and-mobile-in-exchange-online/add-ins-for-outlook/add-ins-for-outlook
       items:
       - name: 組織の Outlook 用アプリをインストールまたは削除する
-        href: install-or-remove-add-ins-for-outlook-for-your-organization-exchange-2013-help.md
+        href: https://docs.microsoft.com/ja-jp/exchange/clients-and-mobile-in-exchange-online/add-ins-for-outlook/install-or-remove-outlook-add-ins
       - name: Outlook 用アプリへのユーザー アクセスを管理する
         href: https://docs.microsoft.com/ja-jp/exchange/clients-and-mobile-in-exchange-online/add-ins-for-outlook/manage-user-access-to-add-ins
       - name: Outlook 用のアドインをインストールおよび管理できる管理者とユーザーを指定する
@@ -1779,7 +1779,7 @@
         - name: ダイヤル プランの既定言語を設定する
           href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/greetings-announcements-menus-and-prompts/set-dial-plan-default-language
         - name: 自動応答で使う言語を選択する
-          href: select-the-language-for-an-auto-attendant-exchange-2013-help.md
+          href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/greetings-announcements-menus-and-prompts/select-auto-attendant-language
         - name: UM 言語パックの削除
           href: remove-a-um-language-pack-exchange-2013-help.md
         - name: カスタム案内応答、アナウンス、メニュー、およびプロンプトのインポートとエクスポート
@@ -1789,7 +1789,7 @@
         - name: 電話ユーザー インターフェイスでカスタム プロンプト録音を有効にする
           href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/greetings-announcements-menus-and-prompts/enable-custom-prompt-recording
     - name: 電話システムの UM との統合
-      href: telephone-system-integration-with-um-exchange-2013-help.md
+      href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/telephone-system-integration-with-um
       items:
       - name: テレフォニーの概念とコンポーネント
         href: telephony-concepts-and-components-exchange-2013-help.md
@@ -1834,7 +1834,7 @@
           - name: オーディオ コーデックの変更
             href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/connect-voice-mail-system/change-audio-codec
           - name: 最大通話時間の構成
-            href: configure-the-maximum-call-duration-exchange-2013-help.md
+            href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/connect-voice-mail-system/configure-maximum-call-duration
           - name: 最大録音時間の構成
             href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/connect-voice-mail-system/configure-maximum-recording-duration
           - name: 録音アイドル タイムアウトの値の構成
@@ -1849,34 +1849,34 @@
         href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/connect-voice-mail-system/um-ip-gateways
         items:
         - name: UM IP ゲートウェイ手順
-          href: um-ip-gateway-procedures-exchange-2013-help.md
+          href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/connect-voice-mail-system/um-ip-gateway-procedures
           items:
           - name: UM IP ゲートウェイを作成する
             href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-ip-gateway
           - name: UM IP ゲートウェイの管理
-            href: manage-a-um-ip-gateway-exchange-2013-help.md
+            href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/connect-voice-mail-system/manage-um-ip-gateway
           - name: UM IP ゲートウェイを有効にする
             href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/connect-voice-mail-system/enable-um-ip-gateway
           - name: UM IP ゲートウェイを無効にする
             href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/connect-voice-mail-system/disable-um-ip-gateway
           - name: 完全修飾ドメイン名の構成
-            href: configure-a-fully-qualified-domain-name-exchange-2013-help.md
+            href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/connect-voice-mail-system/configure-fully-qualified-domain-name
           - name: IP アドレスの構成
             href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/connect-voice-mail-system/configure-ip-address
           - name: リスニング ポートの構成
-            href: configure-the-listening-port-exchange-2013-help.md
+            href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/connect-voice-mail-system/configure-listening-port
           - name: UM IP ゲートウェイを削除する
             href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/connect-voice-mail-system/delete-um-ip-gateway
       - name: UM ハント グループ
         href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/connect-voice-mail-system/um-hunt-groups
         items:
         - name: UM ハント グループ手順
-          href: um-hunt-group-procedures-exchange-2013-help.md
+          href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/connect-voice-mail-system/um-hunt-group-procedures
           items:
           - name: UM ハント グループを作成する
-            href: create-a-um-hunt-group-exchange-2013-help.md
+            href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-hunt-group
           - name: UM ハント グループの表示
-            href: view-a-um-hunt-group-exchange-2013-help.md
+            href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/connect-voice-mail-system/view-um-hunt-group
           - name: UM ハント グループを削除する
             href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/connect-voice-mail-system/delete-um-hunt-group
       - name: UM サービス
@@ -1922,20 +1922,20 @@
         href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/um-auto-attendant-procedures
         items:
         - name: UM 自動応答の設定
-          href: set-up-a-um-auto-attendant-exchange-2013-help.md
+          href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/set-up-um-auto-attendant
           items:
           - name: UM 自動応答を作成する
-            href: create-a-um-auto-attendant-exchange-2013-help.md
+            href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/create-a-um-auto-attendant
           - name: 自動応答の内線番号の追加
-            href: add-an-auto-attendant-extension-number-exchange-2013-help.md
+            href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/add-an-auto-attendant-extension-number
           - name: 営業時間の構成
-            href: configure-business-hours-exchange-2013-help.md
+            href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/configure-business-hours
           - name: 祝日のスケジュールの作成
-            href: create-a-holiday-schedule-exchange-2013-help.md
+            href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/create-a-holiday-schedule
           - name: 会社名を入力する
             href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/enter-a-business-name
           - name: ビジネスの場所を設定する
-            href: set-a-business-location-exchange-2013-help.md
+            href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/set-a-business-location
           - name: タイム ゾーンの構成
             href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/configure-the-time-zone
           - name: カスタマイズされた勤務時間案内応答を有効にする
@@ -1943,25 +1943,25 @@
           - name: カスタマイズされた勤務時間メニュー プロンプトを有効にする
             href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/enable-a-customized-business-hours-menu-prompt
           - name: カスタマイズされた勤務時間外案内応答を有効にする
-            href: enable-a-customized-non-business-hours-greeting-exchange-2013-help.md
+            href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/enable-a-customized-non-business-hours-greeting
           - name: カスタマイズされた勤務時間外メニュー プロンプトの有効化
             href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/enable-a-customized-non-business-hours-menu-prompt
           - name: 情報アナウンスの有効化
             href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/enable-an-informational-announcement
           - name: メニューのナビゲーションの作成
-            href: create-menu-navigation-exchange-2013-help.md
+            href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/create-menu-navigation
           - name: 営業時間のナビゲーション メニューの作成
             href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/create-business-hours-navigation-menus
           - name: 営業時間外のナビゲーション メニューの作成
             href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/create-non-business-hours-navigation-menus
         - name: UM 自動応答の管理
-          href: manage-a-um-auto-attendant-exchange-2013-help.md
+          href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/manage-um-auto-attendant
         - name: DTMF フォールバック自動応答の構成
           href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/configure-dtmf-fallback-auto-attendant
         - name: UM 自動応答を有効にする
           href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/enable-um-auto-attendant
         - name: UM 自動応答を無効にする
-          href: disable-a-um-auto-attendant-exchange-2013-help.md
+          href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/disable-um-auto-attendant
         - name: UM 自動応答を削除する
           href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/delete-um-auto-attendant
         - name: 自動音声認識を有効または無効にする
@@ -1983,7 +1983,7 @@
         href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-voice-mail/um-mailbox-policies
         items:
         - name: UM メールボックス ポリシー手順
-          href: um-mailbox-policy-procedures-exchange-2013-help.md
+          href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-voice-mail/um-mailbox-policy-procedures
           items:
           - name: UM メールボックス ポリシーの作成
             href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-voice-mail/create-um-mailbox-policy
@@ -1995,7 +1995,7 @@
         href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-voice-mail/voice-mail-for-users
         items:
         - name: ボイス メールが有効なユーザーの手順
-          href: voice-mail-enabled-user-procedures-exchange-2013-help.md
+          href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-voice-mail/voice-mail-enabled-user-procedures
           items:
           - name: ボイス メール用にユーザーを有効にする
             href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-voice-mail/enable-a-user-for-voice-mail
@@ -2010,7 +2010,7 @@
           - name: UM が有効になっていないユーザーからの呼び出しを有効にする
             href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-voice-mail/enable-calls-from-users-who-aren-t-um-enabled
           - name: UM が有効になっていないユーザーからの呼び出しを無効にする
-            href: disable-calls-from-users-who-aren-t-um-enabled-exchange-2013-help.md
+            href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-voice-mail/disable-calls-from-users-who-aren-t-um-enabled
           - name: 呼び出し ID のない発信者による音声メッセージの録音を許可する
             href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-voice-mail/allow-callers-without-caller-id-to-leave-voice-message
           - name: 音声メッセージの受信時に送信される電子メール メッセージにテキストを含める
@@ -2020,33 +2020,33 @@
           - name: ユーザーのボイス メールを無効にする
             href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-voice-mail/disable-voice-mail
           - name: SIP アドレスの変更
-            href: change-a-sip-address-exchange-2013-help.md
+            href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-voice-mail/change-sip-address
           - name: 内線番号の変更
             href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-voice-mail/change-extension-number
           - name: SIP アドレスの追加
-            href: add-a-sip-address-exchange-2013-help.md
+            href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-voice-mail/add-sip-address
           - name: SIP アドレスの削除
             href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-voice-mail/remove-sip-address
           - name: 内線番号の追加
             href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-voice-mail/add-extension-number
           - name: 内線番号の削除
-            href: remove-an-extension-number-exchange-2013-help.md
+            href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-voice-mail/remove-extension-number
           - name: E.164 番号の変更
-            href: change-an-e-164-number-exchange-2013-help.md
+            href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-voice-mail/change-e-164-number
           - name: E.164 番号の追加
-            href: add-an-e-164-number-exchange-2013-help.md
+            href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-voice-mail/add-e-164-number
           - name: E.164 番号の削除
             href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-voice-mail/remove-e-164-number
     - name: クライアント ボイス メール機能をセットアップする
       href: set-up-client-voice-mail-features-exchange-2013-help.md
       items:
       - name: Outlook Voice Access の設定
-        href: setting-up-outlook-voice-access-exchange-2013-help.md
+        href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/set-up-outlook-voice-access
         items:
         - name: Outlook Voice Access コマンド
           href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/outlook-voice-access-commands
         - name: Outlook Voice Access によるメニューの操作
-          href: navigating-menus-with-outlook-voice-access-exchange-2013-help.md
+          href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/navigating-menus-with-outlook-voice-access
         - name: 電話での再生
           href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/play-on-phone
         - name: Outlook Voice Access 手順
@@ -2083,7 +2083,7 @@
           - name: Outlook Voice Access ユーザーが切断されるまでのサインインの失敗回数を構成する
             href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/configure-number-of-sign-in-failures
           - name: Outlook Voice Access ユーザーが切断されるまでの入力の失敗回数を構成する
-            href: configure-the-number-of-input-failures-before-outlook-voice-access-users-are-disconnected-exchange-2013-help.md
+            href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/configure-number-of-input-failures
           - name: 個人用案内応答の制限を構成する
             href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/configure-personal-greetings-limit
       - name: ボイス メール ユーザーの呼び出し転送を許可する
@@ -2097,7 +2097,7 @@
           - name: 同じ UM メールボックス ポリシーのユーザーによる通話応答ルールの作成を許可または禁止する
             href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/call-answering-rules-in-the-same-mailbox-policy
           - name: 通話応答ルールを作成する
-            href: create-a-call-answering-rule-exchange-2013-help.md
+            href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/create-a-call-answering-rule
           - name: 通話応答ルールの表示と管理
             href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/view-and-manage-a-call-answering-rule
           - name: ユーザーの通話応答ルールを有効または無効にする
@@ -2105,7 +2105,7 @@
           - name: ユーザーの通話応答ルールを削除する
             href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/remove-a-call-answering-rule-for-a-user
       - name: ユーザーの通話を許可する
-        href: allow-users-to-make-calls-exchange-2013-help.md
+        href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/allow-users-to-make-calls
         items:
         - name: ダイヤル コード、番号のプレフィックス、および番号の形式
           href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/dial-codes-number-prefixes-number-formats
@@ -2117,11 +2117,11 @@
           - name: UM IP ゲートウェイで送信呼び出しを無効にする
             href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/disable-outgoing-calls-on-um-ip-gateways
           - name: ダイヤル コードを構成する
-            href: configure-dial-codes-exchange-2013-help.md
+            href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/configure-dial-codes
           - name: ユーザーのダイヤル ルールを作成する
-            href: create-dialing-rules-for-users-exchange-2013-help.md
+            href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/create-dialing-rules
           - name: ダイヤル ルールを使用して呼び出しを承認する
-            href: authorize-calls-using-dialing-rules-exchange-2013-help.md
+            href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/authorize-calls-using-dialing-rules
             items:
             - name: 自動応答の呼び出し元の呼び出しを承認する
               href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/authorize-calls-for-auto-attendant-callers
@@ -2147,7 +2147,7 @@
             - name: ボイス メール プレビュー パートナーの最大メッセージ時間を設定する
               href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/set-the-maximum-message-duration-for-a-voice-mail-preview-partner
             - name: ボイス メール プレビュー パートナーの配信遅延の最大値を設定する
-              href: set-the-maximum-delivery-delay-for-a-voice-mail-preview-partner-exchange-2013-help.md
+              href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/set-the-maximum-delivery-delay-for-a-voice-mail-preview-partner
           - name: ユーザーのボイス メール プレビューを有効にする
             href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/enable-voice-mail-preview
           - name: ユーザーのボイス メール プレビューを無効にする
@@ -2170,25 +2170,25 @@
             - name: 同じダイヤル プランのユーザーが FAX を受信できるようにする
               href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/allow-users-in-the-same-dial-plan-to-receive-faxes
             - name: 同じダイヤル プランのユーザーが FAX を受信できないようにする
-              href: prevent-users-in-the-same-dial-plan-from-receiving-faxes-exchange-2013-help.md
+              href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/prevent-users-in-the-same-dial-plan-from-receiving-faxes
             - name: ユーザー グループの FAX 送受信を有効にする
               href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/enable-faxing-for-a-group-of-users
             - name: ユーザー グループの FAX 送受信を無効にする
               href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/disable-faxing-for-a-group-of-users
             - name: ユーザーが FAX を受信できるようにする
-              href: enable-a-user-to-receive-faxes-exchange-2013-help.md
+              href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/enable-a-user-to-receive-faxes
             - name: ユーザーが FAX を受信できないようにする
               href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/prevent-a-user-from-receiving-faxes
       - name: ボイス メールを保護する
         href: protect-voice-mail-exchange-2013-help.md
         items:
         - name: 保護されているボイス メールの手順
-          href: protected-voice-mail-procedures-exchange-2013-help.md
+          href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/protected-voice-mail-procedures
           items:
           - name: 認証されている発信者からの保護されたボイス メールを構成する
             href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/configure-protected-voice-mail-from-authenticated-callers
           - name: 認証されていない発信者からの保護されたボイス メールを構成する
-            href: configure-protected-voice-mail-from-unauthenticated-callers-exchange-2013-help.md
+            href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/configure-protected-voice-mail-from-unauthenticated-callers
           - name: 保護された音声メッセージのマルチメディア再生を有効または無効にする
             href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/enable-or-disable-multimedia-playback
           - name: Windows Rights Management をサポートしていない電子メール クライアントに表示するテキストを指定する
@@ -2197,7 +2197,7 @@
         href: allow-message-waiting-indicator-exchange-2013-help.md
         items:
         - name: メッセージ待機インジケーターの許可手順
-          href: allow-message-waiting-indicator-procedures-exchange-2013-help.md
+            href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/specify-text-to-display-for-clients-that-don-t-support-windows-rights-management
           items:
           - name: UM IP ゲートウェイ上でメッセージ待機インジケーター (MWI) を許可する
             href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/allow-mwi-on-um-ip-gateway
@@ -2206,13 +2206,13 @@
           - name: ユーザーのメッセージ待機インジケーター (MWI) を有効にする
             href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/enable-mwi-for-users
           - name: ユーザーのメッセージ待機インジケーター (MWI) を無効にする
-            href: disable-message-waiting-indicator-mwi-for-users-exchange-2013-help.md
+            href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/disable-mwi-for-users
           - name: ユーザーの不在着信通知を有効にする
             href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/enable-missed-call-notifications
           - name: ユーザーに対する不在着信通知を無効にする
             href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/disable-missed-call-notifications
     - name: Outlook Voice Access PIN セキュリティの設定
-      href: set-outlook-voice-access-pin-security-exchange-2013-help.md
+      href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-outlook-voice-access-pin-security/set-outlook-voice-access-pin-security
       items:
       - name: PIN セキュリティ手順
         href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-outlook-voice-access-pin-security/pin-security-procedures
@@ -2224,17 +2224,17 @@
         - name: ボイス メール PIN 情報を取得する
           href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-outlook-voice-access-pin-security/retrieve-voice-mail-pin-information
         - name: PIN リセット時に送信される電子メール メッセージにテキストを含める
-          href: include-text-with-the-email-message-sent-when-a-pin-is-reset-exchange-2013-help.md
+          href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-outlook-voice-access-pin-security/include-text-in-email-sent-when-pin-is-reset
         - name: ボイス メールの PIN の最小の長さを設定する
           href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-outlook-voice-access-pin-security/set-minimum-pin-length
         - name: ボイス メールの PIN の有効期限を設定する
-          href: set-the-pin-lifetime-for-voice-mail-exchange-2013-help.md
+          href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-outlook-voice-access-pin-security/set-pin-lifetime.md
         - name: リサイクルするまでに使う必要があるボイス メール PIN の数を設定する
           href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-outlook-voice-access-pin-security/set-number-of-previous-pins-to-recycle
         - name: ボイス メールの共通 PIN パターンを無効にする
           href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-outlook-voice-access-pin-security/disable-common-pin-patterns
         - name: ボイス メールの共通 PIN パターンを有効にする
-          href: enable-common-pin-patterns-for-voice-mail-exchange-2013-help.md
+          href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-outlook-voice-access-pin-security/enable-common-pin-patterns
         - name: ボイス メール PIN がリセットされるまでのサインイン失敗回数を設定する
           href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-outlook-voice-access-pin-security/set-number-of-sign-in-failures-before-pin-reset
         - name: ボイス メール ユーザーがロックアウトされるまでのサインインの失敗回数を設定する
@@ -2242,7 +2242,7 @@
         - name: ボイス メールの PIN なしサインインを有効にする
           href: enable-pin-less-sign-ins-for-voice-mail-exchange-2013-help.md
     - name: ボイス メール通話のレポートを実行する
-      href: run-reports-for-voice-mail-calls-exchange-2013-help.md
+      href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/run-voice-mail-call-reports/run-voice-mail-call-reports
       items:
       - name: UM レポート手順
         href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/run-voice-mail-call-reports/um-reports-procedures
@@ -2252,7 +2252,7 @@
         - name: ユーザーのボイス メール呼び出しの確認
           href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/run-voice-mail-call-reports/review-voice-mail-calls-for-user
         - name: 組織の音声呼び出しの音質を調査する
-          href: investigate-the-audio-quality-of-voice-calls-in-your-organization-exchange-2013-help.md
+          href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/run-voice-mail-call-reports/audio-quality-of-voice-calls-in-organization
         - name: ユーザーの音声呼び出しの音質の調査
           href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/run-voice-mail-call-reports/audio-quality-of-voice-calls-for-user
         - name: ボイス メール呼び出しレコードを解釈する
@@ -2279,7 +2279,7 @@
         - name: VoIP ゲートウェイと PBX への UM 接続をテストする
           href: test-um-connectivity-to-voip-gateways-and-pbxs-exchange-2013-help.md
     - name: UM とボイス メールに関する用語
-      href: um-and-voice-mail-terminology-exchange-2013-help.md
+      href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/um-and-voice-mail-terminology
   - name: メールボックスおよびクライアント アクセス サーバー
     href: mailbox-and-client-access-servers-exchange-2013-help.md
     items:
@@ -2581,9 +2581,9 @@
       - name: 組織内のすべてのユーザーのユーザー調整設定を変更する
         href: change-user-throttling-settings-for-all-users-in-your-organization-exchange-2013-help.md
   - name: Exchange マニュアルについて
-    href: about-exchange-documentation-exchange-2013-help.md
+    href: https://docs.microsoft.com/ja-jp/exchange/about-exchange-documentation
     items:
     - name: 障碍がある方のためのユーザー補助機能
-      href: accessibility-for-people-with-disabilities-exchange-2013-help.md
+      href: https://docs.microsoft.com/ja-jp/office365/SecurityCompliance/eop/accessibility-for-people-with-disabilities
     - name: サード パーティの著作権に関する通知
       href: https://docs.microsoft.com/ja-jp/exchange/about-exchange-documentation/third-party-copyright-notices
