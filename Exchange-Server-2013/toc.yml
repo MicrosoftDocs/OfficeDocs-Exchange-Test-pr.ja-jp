@@ -756,14 +756,14 @@
           - name: 管理フォルダーからの移行
             href: migrate-from-managed-folders-exchange-2013-help.md
           - name: メッセージング レコード管理を無効化または中断する
-            href: turn-off-or-suspend-https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/messaging-records-management/messaging-records-management
+            href: turn-off-or-suspend-messaging-records-management-exchange-2013-help.md
       - name: メッセージング レコード管理の監視
-        href: monitoring-https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/messaging-records-management/messaging-records-management
+        href: monitoring-messaging-records-management-exchange-2013-help.md
         items:
         - name: メッセージング レコード管理用のパフォーマンス カウンターを表示する
-          href: view-performance-counters-for-https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/messaging-records-management/messaging-records-management
+          href: view-performance-counters-for-messaging-records-management-exchange-2013-help.md
         - name: メッセージング レコード管理用のパフォーマンス カウンター
-          href: performance-counters-for-https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/messaging-records-management/messaging-records-management
+          href: performance-counters-for-messaging-records-management-exchange-2013-help.md
         - name: メッセージング レコード管理のエラーおよびイベント
           href: messaging-records-management-errors-and-events-exchange-2013-help.md
     - name: ジャーナル
@@ -895,7 +895,7 @@
         - name: トランスポート解読を有効または無効にする
           href: enable-or-disable-transport-decryption-exchange-2013-help.md
         - name: Exchange 検索およびインプレース電子情報開示のための IRM の構成
-          href: configure-irm-for-exchange-search-and-https://docs.microsoft.com/ja-jp/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery
+          href: configure-irm-for-exchange-search-and-in-place-ediscovery-exchange-2013-help.md
         - name: ジャーナル レポート復号化を有効または無効にする
           href: enable-or-disable-journal-report-decryption-exchange-2013-help.md
         - name: クライアント アクセス サーバーで Information Rights Management を有効または無効にする
@@ -1502,7 +1502,7 @@
       href: https://docs.microsoft.com/ja-jp/exchange/address-books/hierarchical-address-books/hierarchical-address-books
       items:
       - name: 階層型アドレス帳を有効または無効にする
-        href: enable-or-disable-https://docs.microsoft.com/ja-jp/exchange/address-books/hierarchical-address-books/hierarchical-address-books
+        href: https://docs.microsoft.com/ja-jp/exchange/address-books/hierarchical-address-books/enable-or-disable-hierarchical-address-books
   - name: 共有
     href: sharing-exchange-2013-help.md
     items:
@@ -1688,7 +1688,7 @@
       href: https://docs.microsoft.com/ja-jp/exchange/clients-and-mobile-in-exchange-online/mailtips/mailtips
       items:
       - name: メール ヒントの有効化または無効化
-        href: enable-or-disable-https://docs.microsoft.com/ja-jp/exchange/clients-and-mobile-in-exchange-online/mailtips/mailtips
+        href: enable-or-disable-mailtips-exchange-2013-help.md
       - name: 組織の大きなオーディエンス サイズの構成
         href: https://docs.microsoft.com/ja-jp/exchange/clients-and-mobile-in-exchange-online/mailtips/configure-large-audience-size
       - name: 受信者向けのカスタム メール ヒントを構成する
@@ -1699,7 +1699,7 @@
         - name: 組織上の関係のメール ヒントの管理
           href: manage-mailtips-for-organization-relationships-exchange-2013-help.md
       - name: グループ メトリックとメール ヒント
-        href: group-metrics-and-https://docs.microsoft.com/ja-jp/exchange/clients-and-mobile-in-exchange-online/mailtips/mailtips
+        href: group-metrics-and-mailtips-exchange-2013-help.md
         items:
         - name: グループ測定値を構成する
           href: configure-group-metrics-exchange-2013-help.md
@@ -1711,7 +1711,7 @@
       - name: Outlook 用アプリへのユーザー アクセスを管理する
         href: https://docs.microsoft.com/ja-jp/exchange/clients-and-mobile-in-exchange-online/add-ins-for-outlook/manage-user-access-to-add-ins
       - name: Outlook 用のアドインをインストールおよび管理できる管理者とユーザーを指定する
-        href: specify-the-administrators-and-users-who-can-install-and-manage-https://docs.microsoft.com/ja-jp/exchange/clients-and-mobile-in-exchange-online/add-ins-for-outlook/add-ins-for-outlook
+        href: https://docs.microsoft.com/ja-jp/exchange/clients-and-mobile-in-exchange-online/add-ins-for-outlook/specify-who-can-install-and-manage-add-ins
     - name: Exchange 2013 での SSL オフロードの構成
       href: configuring-ssl-offloading-in-exchange-2013-exchange-2013-help.md
   - name: ユニファイド メッセージング
@@ -1977,7 +1977,7 @@
         - name: 同じような名前を持つユーザーの自動応答を構成する
           href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/automatically-answer-and-route-calls/configure-auto-attendant-for-users-with-similar-names
     - name: ユーザーのボイス メールのセットアップ
-      href: set-up-https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-voice-mail/voice-mail-for-users
+      href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-voice-mail/set-up-voice-mail
       items:
       - name: UM メールボックス ポリシー
         href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-voice-mail/um-mailbox-policies
@@ -2115,7 +2115,7 @@
           - name: 送信呼び出しを有効にする
             href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/enable-outgoing-calls-on-um-ip-gateways
           - name: UM IP ゲートウェイで送信呼び出しを無効にする
-            href: disable-outgoing-calls-on-https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/connect-voice-mail-system/um-ip-gateways
+            href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/disable-outgoing-calls-on-um-ip-gateways
           - name: ダイヤル コードを構成する
             href: configure-dial-codes-exchange-2013-help.md
           - name: ユーザーのダイヤル ルールを作成する
