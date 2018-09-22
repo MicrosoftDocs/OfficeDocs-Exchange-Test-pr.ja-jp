@@ -2197,7 +2197,7 @@
         href: allow-message-waiting-indicator-exchange-2013-help.md
         items:
         - name: メッセージ待機インジケーターの許可手順
-            href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/specify-text-to-display-for-clients-that-don-t-support-windows-rights-management
+          href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/specify-text-to-display-for-clients-that-don-t-support-windows-rights-management
           items:
           - name: UM IP ゲートウェイ上でメッセージ待機インジケーター (MWI) を許可する
             href: https://docs.microsoft.com/ja-jp/exchange/voice-mail-unified-messaging/set-up-client-voice-mail-features/allow-mwi-on-um-ip-gateway
