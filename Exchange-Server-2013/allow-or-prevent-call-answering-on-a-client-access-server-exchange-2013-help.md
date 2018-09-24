@@ -55,9 +55,13 @@ Exchange 2007 および Exchange 2010 では、ユニファイド メッセー�
 
 この例では、クライアント アクセス サーバー `UMCallRouter-05x.contoso.com` において、VoIP ゲートウェイ、IP PBX、SIP 対応 PBX、または SBC からの音声、FAX、自動応答、および Outlook Voice Access の着信呼び出しへの応答を有効にし、UMCallRouter-05x サーバー上のレジストリに変更を書き込みます。
 
+```powershell
     Set-ServerComponentState -Component UnifiedMessaging -Identity UMCallRouter-05x.contoso.com -Requester Maintenance -State Active -LocalOnly
+```
 
 この例では、クライアント アクセス サーバー `UMCallRouter-05x.contoso.com` において、VoIP ゲートウェイ、IP PBX、SIP 対応 PBX、または SBC からの音声、FAX、自動応答、および Outlook Voice Access の着信呼び出しへの応答を禁止し、Active Directory にのみ変更を書き込みます。
 
+```powershell
     Set-ServerComponentState -Component UnifiedMessaging -Identity UMCallRouter-05x.contoso.com -Requester Maintenance -State Inactive -RemoteOnly
+```
 

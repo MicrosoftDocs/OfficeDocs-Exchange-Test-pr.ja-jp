@@ -98,6 +98,6 @@ Resume-MailboxDatabaseCopy -Identity DB2\MBX2 -ReplicationOnly
   - シェルで次のコマンドを実行して、データベース コピーの状態情報を表示します。
     
     ```powershell
-Get-MailboxDatabaseCopyStatus <DatabaseCopyName> | Format-List
-```
+    Get-MailboxDatabaseCopyStatus <DatabaseCopyName> | Format-List
+    ```
 

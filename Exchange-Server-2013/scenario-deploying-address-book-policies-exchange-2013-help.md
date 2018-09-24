@@ -231,8 +231,10 @@ CEO が各組織の配布グループに追加され、各企業の ABP の範�
 
   - ABP の展開によって、仮想組織のユーザーが他の仮想組織のユーザーに電子メールを送信できないようにすることはできません。ユーザーが組織外に電子メールを送信しないようにする場合は、トランスポート ルールを作成することをお勧めします。たとえば、Contoso のユーザーが Fabrikam のユーザーからメッセージを受信できず、Fabrikam の幹部が Contoso のユーザーにメッセージを送信できるようにトランスポート ルールを作成するには、次のシェル コマンドを実行します。
     
+    ```powershell
         New-TransportRule -Name "StopFabrikamtoContosoMail" -FromMemberOf "AllFabrikamEmployees" -SentToMemberOf "AllContosoEmployees" -DeleteMessage -ExceptIfFrom seniorleadership@fabrikam.com
-
+    ```
+    
   - Lync クライアントに ABP と同様の機能を適用するには、特定のユーザー オブジェクトに `msRTCSIP-GroupingID` 属性を設定します。詳細については、「[PartitionByOU から msRTCSIP-GroupingID への置き換え](https://go.microsoft.com/fwlink/p/?linkid=232306)」を参照してください。
 
 ## 一般的な展開手順
@@ -287,21 +289,29 @@ ABP を作成する際に、ユーザーが Outlook または Outlook Web App �
 
 この例では、アドレス一覧 list AL\_TAIL\_Users\_DGs を作成します。このアドレス一覧には、CustomAttribute15 が TAIL となっているすべてのユーザーと配布グループが含まれています。
 
+```powershell
     New-AddressList -Name "AL_TAIL_Users_DGs" -RecipientFilter {((RecipientType -eq 'UserMailbox') -or (RecipientType -eq "MailUniversalDistributionGroup") -or (RecipientType -eq "DynamicDistributionGroup")) -and (CustomAttribute15 -eq "TAIL")}
+```
 
 受信者フィルターを使用したアドレス一覧の作成の詳細については、「[受信者フィルターを使用したアドレス一覧の作成](https://docs.microsoft.com/ja-jp/exchange/address-books/address-lists/use-recipient-filters-to-create-an-address-list)」を参照してください。
 
 ABP を作成するには、会議室アドレス一覧を指定する必要があります。組織に会議室や備品用メールボックスなどのリソース メールボックスがない場合、空の会議室アドレス一覧を作成することをお勧めします。次の例では、組織に会議室メールボックスがないため、空の会議室アドレス一覧を作成します。
 
+```powershell
     New-AddressList -Name AL_BlankRoom -RecipientFilter {(Alias -ne $null) -and ((RecipientDisplayType -eq 'ConferenceRoomMailbox') -or (RecipientDisplayType -eq 'SyncedConferenceRoomMailbox'))}
+```
 
 ただし、このシナリオでは、Fabrikam と Contoso 両社に会議室メールボックスがあります。この例では、CustomAttribute15 が FAB の受信者フィルターを使用して Fabrikam の会議室一覧を作成します。
 
+```powershell
     New-AddressList -Name AL_FAB_Room -RecipientFilter {(Alias -ne $null) -and (CustomAttribute15 -eq "FAB")-and (RecipientDisplayType -eq 'ConferenceRoomMailbox') -or (RecipientDisplayType -eq 'SyncedConferenceRoomMailbox')}
+```
 
 ABP で使用されるグローバル アドレス一覧は、アドレス一覧のスーパーセットである必要があります。ABP 内のどのアドレス一覧よりも含まれているオブジェクトが少ない GAL は作成しないでください。この例では、Tailspin Toys のグローバル アドレス一覧を作成します。これには、アドレス一覧と会議室アドレス一覧内に存在するすべての受信者が含まれています。
 
+```powershell
     New-GlobalAddressList -Name "GAL_TAIL" -RecipientFilter {(CustomAttribute15 -eq "TAIL")}
+```
 
 詳細については、「[グローバル アドレス一覧の作成](https://docs.microsoft.com/ja-jp/exchange/address-books/address-lists/create-global-address-list)」を参照してください。
 
@@ -319,7 +329,9 @@ New-OfflineAddressBook -Name "OAB_FAB" -AddressLists "GAL_FAB"
 
 必要なオブジェクトをすべて作成した後に、ABP を作成できます。この例では、ABP\_TAIL という名前の ABP を作成します。
 
+```powershell
     New-AddressBookPolicy -Name "ABP_TAIL" -AddressLists "AL_TAIL_Users_DGs"," AL_TAIL_Contacts" -OfflineAddressBook "\OAB_TAIL" -GlobalAddressList "\GAL_TAIL" -RoomList "\AL_TAIL_Rooms"
+```
 
 詳細については、「[アドレス帳ポリシーの作成](https://docs.microsoft.com/ja-jp/exchange/address-books/address-book-policies/create-an-address-book-policy)」を参照してください。
 
@@ -329,7 +341,9 @@ New-OfflineAddressBook -Name "OAB_FAB" -AddressLists "GAL_FAB"
 
 この例では、ABP\_FAB を、CustomAttribute15 が "FAB" となっているすべてのメールボックスに割り当てます。
 
+```powershell
     Get-Mailbox -resultsize unlimited | where {$_.CustomAttribute15 -eq "TAIL"} | Set-Mailbox -AddressBookPolicy "ABP_TAIL"
+```
 
 詳細については、「[メール ユーザーへのアドレス帳ポリシーの割り当て](https://docs.microsoft.com/ja-jp/exchange/address-books/address-book-policies/assign-an-address-book-policy-to-mail-users)」を参照してください。
 

@@ -45,7 +45,9 @@ Set-PopSettings -Identity CAS01 -CalendarItemRetrievalOption iCalendar
 
 この例では、POP3 ユーザーが内部のサーバーから予定表情報にアクセスできるようにします。
 
-    Set-PopSettings -Identity CAS01 -CalendarItemRetrievalOption IntranetUrl 
+  ```powershell
+  Set-PopSettings -Identity CAS01 -CalendarItemRetrievalOption IntranetUrl 
+  ```
 
 この例では、POP3 ユーザーが外部のサーバー上のインターネットから予定表の情報にアクセスできるようにします。
 

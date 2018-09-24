@@ -67,7 +67,9 @@ New-RoleAssignmentPolicy <assignment policy name> -Roles <roles to assign>
 
 この例では、明示的な割り当てポリシー Limited Mailbox Configuration を作成し、これに `MyBaseOptions`、`MyAddressInformation`、および `MyDisplayName` の役割を割り当てます。
 
+```powershell
     New-RoleAssignmentPolicy "Limited Mailbox Configuration" -Roles MyBaseOptions, MyAddressInformation, MyDisplayName
+```
 
 構文およびパラメーターの詳細については、「[New-RoleAssignmentPolicy](https://technet.microsoft.com/ja-jp/library/dd638101\(v=exchg.150\))」を参照してください。
 
@@ -81,7 +83,9 @@ New-RoleAssignmentPolicy <assignment policy name> -Roles <roles to assign> -IsDe
 
 この例では、既定の割り当てポリシー Limited Mailbox Configuration を作成し、これに `MyBaseOptions`、`MyAddressInformation`、および `MyDisplayName` の役割を割り当てます。
 
+```powershell
     New-RoleAssignmentPolicy "Limited Mailbox Configuration" -Roles MyBaseOptions, MyAddressInformation, MyDisplayName -IsDefault
+```
 
 構文およびパラメーターの詳細については、「[New-RoleAssignmentPolicy](https://technet.microsoft.com/ja-jp/library/dd638101\(v=exchg.150\))」を参照してください。
 
@@ -275,11 +279,15 @@ Set-RoleAssignmentPolicy "Vancouver End Users" -IsDefault
 
 役割と割り当てポリシーの間に管理役割の割り当てを作成するには、次の構文を使用します。
 
+```powershell
     New-ManagementRoleAssignment -Name <role assignment name> -Role <role name> -Policy <assignment policy name>
+```
 
 この例では、"MyVoicemail/自分のボイス メール" 役割と "Seattle Users/Seattle ユーザー" 割り当てポリシーの間に "Seattle Users - Voicemail/Seattle ユーザー - ボイス メール" 役割の割り当てを作成します。
 
+```powershell
     New-ManagementRoleAssignment -Name "Seattle Users - Voicemail" -Role MyVoicemail -Policy "Seattle Users"
+```
 
 構文およびパラメーターの詳細については、「[New-ManagementRoleAssignment](https://technet.microsoft.com/ja-jp/library/dd335193\(v=exchg.150\))」を参照してください。
 
@@ -307,11 +315,15 @@ Set-RoleAssignmentPolicy "Vancouver End Users" -IsDefault
 
 割り当てポリシーから役割を削除するには、次の構文を使用します。
 
+```powershell
     Get-ManagementRoleAssignment -RoleAssignee <assignment policy name> -Role <role name> | Remove-ManagementRoleAssignment
+```
 
 この例では、ボイス メール オプションを管理できるようにする "MyVoicemail" 管理役割を、"Seattle Users/Seattle ユーザー" という割り当てポリシーから削除しています。
 
+```powershell
     Get-ManagementRoleAssignment -RoleAssignee "Seattle Users" -Role MyVoicemail | Remove-ManagementRoleAssignment
+```
 
 構文およびパラメーターの詳細については、「[Remove-ManagementRoleAssignment](https://technet.microsoft.com/ja-jp/library/dd351205\(v=exchg.150\))」を参照してください。
 

@@ -49,7 +49,9 @@ _**トピックの最終更新日:** 2012-10-03_
 
 **Get-ManagementRoleAssignment** コマンドレットを実行すると、組織内に構成されているすべての役割の割り当ての一覧を表示できます。指定した文字列と部分的に一致する役割割り当ての一覧を取得するには、ワイルドカード文字 (\*) を使用してください。この例では、「Tier 1」という文字列で始まるすべての役割割り当ての一覧が取得されます。
 
-    Get-ManagementRoleAssignment "Tier 1*"
+```powershell
+Get-ManagementRoleAssignment "Tier 1*"
+```
 
 構文およびパラメーターの詳細については、「[Get-ManagementRoleAssignment](https://technet.microsoft.com/ja-jp/library/dd351024\(v=exchg.150\))」を参照してください。
 
@@ -107,7 +109,9 @@ Get-ManagementRoleAssignment -Role "Mail Recipients"
 
 特定の定義済みスコープを使用している役割の割り当ての一覧を表示するには、次の構文を使用します。
 
-    Get-ManagementRoleAssignment -RecipientWriteScope < MyGAL | MyDistributionGroups | Organization | Self | CustomRecipientScope | ExecutiveRecipientScope >
+```powershell
+Get-ManagementRoleAssignment -RecipientWriteScope < MyGAL | MyDistributionGroups | Organization | Self | CustomRecipientScope | ExecutiveRecipientScope >
+```
 
 この例では、組織という定義済みスコープを使用している役割の割り当てをすべて取得します。
 
@@ -127,7 +131,9 @@ Get-ManagementRoleAssignment -RecipientOrganizationalUnitScope <OU>
 
 この例では、スコープが contoso.com ドメイン内の North America\\Engineering\\Users OU に設定されている役割の割り当てをすべて取得します。
 
-    Get-ManagementRoleAssignment -RecipientOrganizationalUnitScope "contoso.com/North America/Engineering/Users"
+```powershell
+Get-ManagementRoleAssignment -RecipientOrganizationalUnitScope "contoso.com/North America/Engineering/Users"
+```
 
 構文およびパラメーターの詳細については、「[Get-ManagementRoleAssignment](https://technet.microsoft.com/ja-jp/library/dd351024\(v=exchg.150\))」を参照してください。
 
@@ -193,7 +199,9 @@ Get-ManagementRoleAssignment -WritableRecipient "Brian"
 
 *WritableRecipient* パラメーターと *WritableServer* パラメーターを、*RoleAssignee* パラメーターや *GetEffectiveUsers* スイッチなどの他のパラメーターと組み合わせると、クエリの精度を高め、役割グループや USG を展開できます。この例では、サーバー EX02 を変更できるユーザーと "Server Management/サーバーの管理" 役割グループが割り当てられているユーザーをすべて取得します。
 
-    Get-ManagementRoleAssignment -WritableServer EX02 -RoleAssignee "Server Management" -GetEffectiveUsers
+```powershell
+Get-ManagementRoleAssignment -WritableServer EX02 -RoleAssignee "Server Management" -GetEffectiveUsers
+```
 
 構文およびパラメーターの詳細については、「[Get-ManagementRoleAssignment](https://technet.microsoft.com/ja-jp/library/dd351024\(v=exchg.150\))」を参照してください。
 

@@ -143,7 +143,9 @@ Active Directory ユーザー アカウントはあっても対応するメー�
 
 <!-- end list -->
 
-    New-Mailbox -Alias pilarp -Name "Pilar Pinilla" -FirstName Pilar -LastName Pinilla -DisplayName "Pilar Pinilla" -UserPrincipalName pilarp@contoso.com -Password (ConvertTo-SecureString -String 'Pa$$word1' -AsPlainText -Force)
+  ```powershell
+  New-Mailbox -Alias pilarp -Name "Pilar Pinilla" -FirstName Pilar -LastName Pinilla -DisplayName "Pilar Pinilla" -UserPrincipalName pilarp@contoso.com -Password (ConvertTo-SecureString -String 'Pa$$word1' -AsPlainText -Force)
+  ```
 
 構文およびパラメーターの詳細については、「[New-Mailbox](https://technet.microsoft.com/ja-jp/library/aa997663\(v=exchg.150\))」を参照してください。
 
@@ -156,8 +158,8 @@ Active Directory ユーザー アカウントはあっても対応するメー�
   - シェルで次のコマンドを実行して、新しいユーザーのメールボックスに関する情報を表示します。
     
     ```powershell
-Get-Mailbox <Name> | FL Name,RecipientTypeDetails,PrimarySmtpAddress
-```
+    Get-Mailbox <Name> | FL Name,RecipientTypeDetails,PrimarySmtpAddress
+    ```
 
 ## 既存のユーザーのメールボックスの作成
 
@@ -234,8 +236,8 @@ Get-User -RecipientTypeDetails User -Filter { UserPrincipalName -ne $Null } | En
   - シェルで次のコマンドを実行して、メールボックスが有効な新しいユーザーに関する情報を表示します。
     
     ```powershell
-Get-Mailbox <Name> | FL Name,RecipientTypeDetails,PrimarySmtpAddress
-```
+    Get-Mailbox <Name> | FL Name,RecipientTypeDetails,PrimarySmtpAddress
+    ```
     
     *RecipientTypeDetails* プロパティの値は `UserMailbox` であることに注意してください。
 

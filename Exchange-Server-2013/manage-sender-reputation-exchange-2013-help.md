@@ -62,12 +62,14 @@ Set-SenderReputationConfig -Enabled $true
 1.  次のコマンドを実行して、プロトコル分析エージェントがインストールされ有効になっていることを確認します。
     
     ```powershell
-Get-TransportAgent
-```
+    Get-TransportAgent
+    ```
 
 2.  次のコマンドを実行して、構成した送信者評価の値を確認します。
     
-        Get-SenderReputationConfig | Format-List Enabled,*MailEnabled
+    ```powershell
+    Get-SenderReputationConfig | Format-List Enabled,*MailEnabled
+    ```
 
 ## シェルを使用して、内部メッセージまたは外部メッセージの送信者評価を有効または無効にする
 
@@ -103,7 +105,9 @@ Set-SenderReputationConfig -InternalMailEnabled $true
 
 1.  次のコマンドを実行します。
     
-        Get-SenderReputationConfig | Format-List Enabled,*MailEnabled
+    ```powershell
+    Get-SenderReputationConfig | Format-List Enabled,*MailEnabled
+    ```
 
 2.  表示される値が設定値と一致することを確認します。
 
@@ -128,8 +132,8 @@ Set-SenderReputationConfig -SrlBlockThreshold 6 -SenderBlockingPeriod 36
 1.  次のコマンドを実行します。
     
     ```powershell
-Get-SenderReputationConfig
-```
+    Get-SenderReputationConfig
+    ```
 
 2.  表示される値が設定値と一致することを確認します。
 
@@ -168,11 +172,15 @@ Get-SenderReputationConfig
 
 オープン プロキシ サーバーを検出するための送信アクセスを構成するには、次のコマンドを実行します。
 
-    Set-SenderReputationConfig -ProxyServerName <String> -ProxyServerPort <Port> -ProxyServerType <String>
+```powershell
+Set-SenderReputationConfig -ProxyServerName <String> -ProxyServerPort <Port> -ProxyServerType <String>
+```
 
 この例では、HTTP 接続プロトコルをポート 80 で使用する SERVER01 という名前のオープン プロキシ サーバーを使用するように送信者評価を構成します。
 
-    Set-SenderReputationConfig - ProxyServerName SERVER01 -ProxyServerPort 80 -ProxyServerType HttpConnect
+```powershell
+Set-SenderReputationConfig - ProxyServerName SERVER01 -ProxyServerPort 80 -ProxyServerType HttpConnect
+```
 
 ## 正常な動作を確認する方法
 
@@ -180,7 +188,9 @@ Get-SenderReputationConfig
 
 1.  次のコマンドを実行します。
     
-        Get-SenderReputationConfig | Format-List ProxyServer*
+    ```powershell
+    Get-SenderReputationConfig | Format-List ProxyServer*
+    ```
 
 2.  表示された値が構成した値であることを確認します。
 

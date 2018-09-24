@@ -59,7 +59,9 @@ New-RemoteDomain -Name Contoso -DomainName contoso.com
 
 この例では、fabrikam.com ドメインとすべてのサブドメインに送信されるメッセージのリモート ドメイン エントリを作成します。
 
-    New-RemoteDomain -Name Fabrikam -DomainName *.fabrikam.com
+  ```powershell
+  New-RemoteDomain -Name Fabrikam -DomainName *.fabrikam.com
+  ```
 
 ## 正常な動作を確認する方法
 

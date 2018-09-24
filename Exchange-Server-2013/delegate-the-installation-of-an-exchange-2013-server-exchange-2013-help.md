@@ -68,22 +68,22 @@ Exchange 用のサーバーを準備するには、Exchange 2013 コマンドラ
 3.  Exchange 2013 インストール ファイルをダウンロードして展開した場所にディレクトリを変更します。インストール ファイルが `C:\Downloads\Exchange 2013` にある場合、次のコマンドを使用します。
     
     ```powershell
-CD "C:\Downloads\Exchange 2013"
-```
+    CD "C:\Downloads\Exchange 2013"
+    ```
 
 4.  セットアップ プログラムを実行する場所に一致するコマンドを選択します。
     
       - **準備を行うコンピューターでセットアップ プログラムを実行する場合**、次のコマンドを実行します。
         
         ```powershell
-Setup.exe /NewProvisionedServer /IAcceptExchangeServerLicenseTerms
-```
+        Setup.exe /NewProvisionedServer /IAcceptExchangeServerLicenseTerms
+        ```
     
       - **別のコンピューターでセットアップ プログラムを実行する場合**、次のコマンドを実行します。
         
         ```powershell
-Setup.exe /NewProvisionedServer:<ComputerName> /IAcceptExchangeServerLicenseTerms
-```
+        Setup.exe /NewProvisionedServer:<ComputerName> /IAcceptExchangeServerLicenseTerms
+        ```
 
 5.  サーバーを準備した後、準備したサーバーで Exchange をインストールできるユーザーを委任セットアップ役割グループに追加したことを確認する必要があります。ユーザーを役割グループに追加する方法については、「[Add members to a role group](manage-role-group-members-exchange-2013-help.md)」を参照してください。
 

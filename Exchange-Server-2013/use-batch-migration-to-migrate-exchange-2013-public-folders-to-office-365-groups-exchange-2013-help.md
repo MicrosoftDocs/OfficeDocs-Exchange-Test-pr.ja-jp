@@ -94,8 +94,8 @@ Office 365 グループへのバッチ移行では、この記事で後述する
 4.  Office 365 テナントに対して移行機能 **PAW** を有効にする必要があります。有効になっていることを確認するには、Exchange Online PowerShell で次のコマンドを実行します。
     
     ```powershell
-Get-MigrationConfig
-```
+    Get-MigrationConfig
+    ```
     
     **Features** の下の出力に **PAW** がある場合は、この機能が有効になっており、「*手順 3: .csv ファイルを作成する*」に進むことができます。
     
@@ -112,14 +112,16 @@ Get-MigrationConfig
   - **TargetGroupMailbox:**  Office 365 のターゲット グループの SMTP アドレスです。次のコマンドを実行して、プライマリ SMTP アドレスを確認できます。
     
     ```powershell
-Get-UnifiedGroup <alias of the group> | Format-Table PrimarySmtpAddress
-```
+    Get-UnifiedGroup <alias of the group> | Format-Table PrimarySmtpAddress
+    ```
 
 .csv ファイルの例:
 
-    "FolderPath","TargetGroupMailbox"
-    "\Sales","sales@contoso.onmicrosoft.com"
-    "\Sales\EMEA","emeasales@contoso.onmicrosoft.com"
+  ```powershell
+  "FolderPath","TargetGroupMailbox"
+  "\Sales","sales@contoso.onmicrosoft.com"
+  "\Sales\EMEA","emeasales@contoso.onmicrosoft.com"
+  ```
 
 なお、メール フォルダーとカレンダー フォルダーは、Office 365 の 1 つのグループにマージすることができます。ただし、一度の移行バッチ内で複数のパブリック フォルダーを 1 つのグループにマージする、その他のシナリオはサポートされていません。同じ Office 365 グループに複数のパブリック フォルダーをマップする必要がある場合は、連続して実行する必要がある異なる移行バッチを 1 つずつ実行することで達成することができます。移行バッチごとに最大で 500 のエントリを持つことができます。
 
@@ -135,18 +137,22 @@ Get-UnifiedGroup <alias of the group> | Format-Table PrimarySmtpAddress
     
     1.  Exchange 2013 環境で管理者アクセス許可を持つユーザーの資格情報を、変数 `$Source_Credential` に渡します。最終的に Exchange Online で移行要求を実行する際に、内容を Exchange Online にコピーするために、この資格情報を使って Exchange 2013 サーバーにアクセスします。
         
-            $Source_Credential = Get-Credential
-            <source_domain>\<PublicFolder_Administrator_Account>
+          ```powershell
+          $Source_Credential = Get-Credential
+          <source_domain>\<PublicFolder_Administrator_Account>
+          ```
     
     2.  上記の手順 1 でメモした、Exchange 2013 環境からの MRS プロキシ サーバーの情報を使って、その値を変数 `$Source_RemoteServer` に渡します。
         
         ```powershell
-$Source_RemoteServer = "<MRS proxy endpoint>"
-```
+        $Source_RemoteServer = "<MRS proxy endpoint>"
+        ```
 
 3.  Exchange Online の PowerShell で、次のコマンドを実行して移行エンドポイントを作成します。
     
-        $PfEndpoint = New-MigrationEndpoint -PublicFolderToUnifiedGroup -Name PFToGroupEndpoint -RemoteServer $Source_RemoteServer -Credentials $Source_Credential
+      ```powershell
+      $PfEndpoint = New-MigrationEndpoint -PublicFolderToUnifiedGroup -Name PFToGroupEndpoint -RemoteServer $Source_RemoteServer -Credentials $Source_Credential
+      ```
 
 4.  次のコマンドを実行して、パブリック フォルダーから Office 365 グループへの新しい移行バッチを作成します。コマンドは次のとおりです。
     
@@ -160,13 +166,15 @@ $Source_RemoteServer = "<MRS proxy endpoint>"
     
     <!-- end list -->
     
-        New-MigrationBatch -Name PublicFolderToGroupMigration -CSVData (Get-Content <path to .csv file> -Encoding Byte) -PublicFolderToUnifiedGroup -SourceEndpoint $PfEndpoint.Identity [-NotificationEmails <email addresses for migration notifications>] [-AutoStart]
+      ```powershell
+      New-MigrationBatch -Name PublicFolderToGroupMigration -CSVData (Get-Content <path to .csv file> -Encoding Byte) -PublicFolderToUnifiedGroup -SourceEndpoint $PfEndpoint.Identity [-NotificationEmails <email addresses for migration notifications>] [-AutoStart]
+      ```
 
 5.  Exchange Online の PowerShell で次のコマンドを実行することにより、移行を開始します。このステップが必要になるのは上記の手順 4 でバッチ作成時に `-AutoStart` パラメーターが使用されなかった場合のみであることに注意してください。
     
     ```powershell
-Start-MigrationBatch PublicFolderToGroupMigration
-```
+    Start-MigrationBatch PublicFolderToGroupMigration
+    ```
 
 バッチ移行は Exchange Online の PowerShell の `New-MigrationBatch` コマンドレットを使用して作成する必要がありますが、移行の進行状況を Exchange 管理センター で表示および管理できます。移行の進行状況は [Get-MigrationBatch](https://technet.microsoft.com/ja-jp/library/jj219164\(v=exchg.150\)) および [Get-MigrationUser](https://technet.microsoft.com/ja-jp/library/jj218702\(v=exchg.150\)) コマンドレットを実行して表示することもできます。`New-MigrationBatch` コマンドレットは、Office 365 グループ メールボックスごとの移行ユーザーを開始し、メールボックス移行ページを使用してこれらの要求のステータスを表示できます。
 
@@ -196,7 +204,9 @@ Start-MigrationBatch PublicFolderToGroupMigration
 
 <!-- end list -->
 
-    .\AddMembersToGroups.ps1 -MappingCsv <path to .csv file> -BackupDir <path to backup directory> -ArePublicFoldersOnPremises $true -Credential (Get-Credential)
+  ```powershell
+  .\AddMembersToGroups.ps1 -MappingCsv <path to .csv file> -BackupDir <path to backup directory> -ArePublicFoldersOnPremises $true -Credential (Get-Credential)
+  ```
 
 ユーザーが Office 365 のグループに追加されると、グループの使用を開始できます。
 
@@ -222,7 +232,9 @@ Start-MigrationBatch PublicFolderToGroupMigration
 
 <!-- end list -->
 
-    .\LockAndSavePublicFolderProperties.ps1 -MappingCsv <path to .csv file> -BackupDir <path to backup directory> -ArePublicFoldersOnPremises $true -Credential (Get-Credential)
+  ```powershell
+  .\LockAndSavePublicFolderProperties.ps1 -MappingCsv <path to .csv file> -BackupDir <path to backup directory> -ArePublicFoldersOnPremises $true -Credential (Get-Credential)
+  ```
 
 ## 手順 7: パブリック フォルダーの Office 365 グループへの移行を完了する
 
@@ -242,7 +254,9 @@ Remove-MigrationBatch <name of migration batch>
 
 <!-- end list -->
 
-    New-MigrationBatch -Name PublicFolderToGroupMigration -CSVData (Get-Content <path to .csv file> -Encoding Byte) -PublicFolderToUnifiedGroup -SourceEndpoint $PfEndpoint.Identity [-NotificationEmails <email addresses for migration notifications>] [-AutoStart]
+  ```powershell
+  New-MigrationBatch -Name PublicFolderToGroupMigration -CSVData (Get-Content <path to .csv file> -Encoding Byte) -PublicFolderToUnifiedGroup -SourceEndpoint $PfEndpoint.Identity [-NotificationEmails <email addresses for migration notifications>] [-AutoStart]
+  ```
 
 新しいバッチが作成されたら、Exchange Online の PowerShell で次のコマンドを実行することにより、移行を開始します。なお、この手順は上記のコマンドで `-AutoStart` パラメーターを使用しなかった場合にのみ必要です。
 
@@ -428,7 +442,9 @@ Exchange 2013 サーバーで次のコマンドを実行します。コマンド
 
 <!-- end list -->
 
-    .\UnlockAndRestorePublicFolderProperties.ps1 -BackupDir <path to backup directory> -ArePublicFoldersOnPremises $true -Credential (Get-Credential)
+  ```powershell
+  .\UnlockAndRestorePublicFolderProperties.ps1 -BackupDir <path to backup directory> -ArePublicFoldersOnPremises $true -Credential (Get-Credential)
+  ```
 
 Office 365 グループに追加されたアイテムやグループ内で実行された編集操作はパブリック フォルダーにコピーされないことに注意してください。したがって、パブリック フォルダーがグループだった間に追加された新しいデータがある場合、データの損失が生じることになります。
 

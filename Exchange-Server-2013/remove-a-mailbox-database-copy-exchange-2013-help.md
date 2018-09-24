@@ -74,8 +74,8 @@ Remove-MailboxDatabaseCopy -Identity DB1\MBX1 -Confirm:$False
   - シェルで次のコマンドを実行して、コピーの削除を確認します。
     
     ```powershell
-Get-MailboxDatabase <DatabaseName> | Format-List DatabaseCopies
-```
+    Get-MailboxDatabase <DatabaseName> | Format-List DatabaseCopies
+    ```
     
     削除されたパッシブ コピーは表示されなくなります。
 

@@ -274,7 +274,9 @@ Cd $env:ExchangeInstallPath\Scripts
 
 Scripts フォルダーのスクリプトを実行するには、次の構文を使用します。
 
-    .\Get-AntiSpamFilteringReport.ps1 -report <ReportValue> [<OptionalParameters>]
+  ```powershell
+  .\Get-AntiSpamFilteringReport.ps1 -report <ReportValue> [<OptionalParameters>]
+  ```
 
 スクリプトの使用方法の詳細を確認するには、次のコマンドを実行します。
 

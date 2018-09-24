@@ -74,26 +74,26 @@ Exchange 組織から、または、Exchange 組織とエッジ トランスポ�
 1.  エッジ トランスポート サーバーからエッジ サブスクリプションを削除するには、次の構文を使用します。
     
     ```powershell
-Remove-EdgeSubscription <EdgeTransportServerIdentity>
-```
+    Remove-EdgeSubscription <EdgeTransportServerIdentity>
+    ```
     
     たとえば、Edge01 という名前のエッジ トランスポート サーバー上のエッジ サブスクリプションを削除するには、次のコマンドを実行します。
     
     ```powershell
-Remove-EdgeSubscription Edge01
-```
+    Remove-EdgeSubscription Edge01
+    ```
 
 2.  メールボックス サーバーからエッジ サブスクリプションを削除するには、次の構文を使用します。
     
     ```powershell
-Remove-EdgeSubscription <MailboxServerIdentity>
-```
+    Remove-EdgeSubscription <MailboxServerIdentity>
+    ```
     
     たとえば、Mailbox01 という名前のメールボックス サーバー上のエッジ サブスクリプションを削除するには、次のコマンドを実行します。
     
     ```powershell
-Remove-EdgeSubscription Mailbox01
-```
+    Remove-EdgeSubscription Mailbox01
+    ```
 
 エッジ サブスクリプションを削除する必要があるのは、次のような場合です。
 
@@ -151,7 +151,9 @@ Active Directory 内の構成または受信者を大幅に変更して、その
 
 EdgeSyn を手動で実行するには、次の構文を使用します。
 
-    Start-EdgeSynchronization [-Server <MailboxServerIdentity>] [-TargetServer <EdgeTransportServerIdentity> [-ForceFullSync]
+  ```powershell
+  Start-EdgeSynchronization [-Server <MailboxServerIdentity>] [-TargetServer <EdgeTransportServerIdentity> [-ForceFullSync]
+  ```
 
 次の例では、以下のオプションで EdgeSync を起動します。
 

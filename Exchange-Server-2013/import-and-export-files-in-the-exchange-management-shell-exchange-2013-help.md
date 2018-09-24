@@ -49,11 +49,15 @@ Exchange 2013 のリモート シェルには、ローカル セッションと�
 
 Exchange 2013 コマンドレットに送信するファイル、およびデータを許可するパラメーターを、シェルに認識させる必要があります。それには、次の構文を使用します。
 
+```powershell
     <Cmdlet> -FileData ([Byte[]]$(Get-Content -Path <local path to file> -Encoding Byte -ReadCount 0))
+```
 
 たとえば、次のコマンドにより、**Import-SomeData** 架空コマンドレット上の *FileData* パラメーターに、ファイル C:\\MyData.dat がインポートされます。
 
+```powershell
     Import-SomeData -FileData (Byte[]]$(Get-Content -Path "C:\MyData.dat" -Encoding Byte -ReadCount 0))
+```
 
 コマンドが実行されると、次のアクションが発生します。
 
@@ -71,8 +75,10 @@ Exchange 2013 コマンドレットに送信するファイル、およびデー
 
 一部のコマンドレットでは、次に示すように、前述の構文と同じ処理をする代替の構文が使用されます。
 
+```powershell
     [Byte[]]$Data = Get-Content -Path <local path to file> -Encoding Byte -ReadCount 0
     Import-SomeData -FileData $Data
+```
 
 この代替の構文を使用しても、発生するプロセスは同じです。唯一の違いは、操作全体が一度に実行されず、ローカル ファイルから取得されたデータが、作成後に参照可能な変数に保存されることです。次に、ローカル ファイルの内容を **Import-SomeData** コマンドレットに渡すために、変数がインポート コマンドで使用されます。この 2 つの手順からなるプロセスは、ローカル ファイルのデータを複数のコマンドで使用する場合に役立ちます。
 

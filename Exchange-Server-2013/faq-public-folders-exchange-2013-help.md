@@ -65,7 +65,9 @@ Resume-PublicFolderMigrationRequest \PublicFolderMigration
 
 入力 .csv ファイルは、ディレクトリ \<*Exchange Installation Directory*\>\\V15\\Scripts にあるスクリプト `AggregatePFData.ps1` を実行すれば生成できます。スクリプトは以下のように実行します。
 
-    .\AggregatePFData.ps1 | Select-Object -property @{Name="FolderName"; Expression = {$_.Identity}}, @{Name="FolderSize"; Expression = {$_.TotalItemSize.Value.ToBytes()}} | Export-CSV -Path <Path followed by the name of the CSV>
+```powershell
+.\AggregatePFData.ps1 | Select-Object -property @{Name="FolderName"; Expression = {$_.Identity}}, @{Name="FolderSize"; Expression = {$_.TotalItemSize.Value.ToBytes()}} | Export-CSV -Path <Path followed by the name of the CSV>
+```
 
 ## 既存のパブリック フォルダー アクセス許可は移行しますか?
 

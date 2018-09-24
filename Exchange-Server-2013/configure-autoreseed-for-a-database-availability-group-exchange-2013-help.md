@@ -67,7 +67,9 @@ Set-DatabaseAvailabilityGroup DAG1 -AutoDagVolumesRootFolderPath "C:\ExchVols"
 
 データベースとボリュームのルート パスが正常に構成されたことを確認するには、次のコマンドを実行します。
 
-    Get-DatabaseAvailabilityGroup DAG1 | Format-List *auto*
+```powershell
+Get-DatabaseAvailabilityGroup DAG1 | Format-List *auto*
+```  
 
 *AutoDagDatabasesRootFolderPath* と *AutoDagVolumesRootFolderPath* の出力は、構成したパスを反映する必要があります。
 
@@ -85,7 +87,9 @@ Set-DatabaseAvailabilityGroup DAG1 -AutoDagDatabaseCopiesPerVolume 4
 
 ボリュームごとのデータベース数が正常に構成されたことを確認するには、次のコマンドを実行します。
 
-    Get-DatabaseAvailabilityGroup DAG1 | Format-List *auto*
+```powershell
+Get-DatabaseAvailabilityGroup DAG1 | Format-List *auto*
+``` 
 
 *AutoDagDatabaseCopiesPerVolume* の出力は、構成した値を反映する必要があります。
 
@@ -93,8 +97,10 @@ Set-DatabaseAvailabilityGroup DAG1 -AutoDagDatabaseCopiesPerVolume 4
 
 次に、手順 1 で構成したルート ディレクトリに対応するディレクトリを作成します。この例では、コマンド プロンプトを使用して既定のディレクトリを作成する方法を示します。
 
-    md C:\ExchangeDatabases
-    md C:\ExchangeVolumes
+```powershell
+md C:\ExchangeDatabases
+md C:\ExchangeVolumes
+```
 
 ## このステップの検証方法
 
@@ -131,16 +137,16 @@ Dir C:\
 ## 手順 5: データベース フォルダーを作成する
 
 次に、ルート パス C:\\ExchangeDatabases の下にデータベース ディレクトリを作成します。この例では、各ボリューム上に 4 つのデータベースが存在するストレージ構成のディレクトリの作成方法を示します。
-```
+```powershell
 md c:\ExchangeDatabases\db001
 ```
-```
+```powershell
 md c:\ExchangeDatabases\db002
 ```
-```
+```powershell
 md c:\ExchangeDatabases\db003
 ```
-```
+```powershell
 md c:\ExchangeDatabases\db004
 ```
 
@@ -158,7 +164,9 @@ Dir C:\ExchangeDatabases
 
 各データベースのマウント ポイントを作成し、マウント ポイントを適切なボリュームにリンクします。たとえば、db001 のマウントされたフォルダーは、C:\\ExchangeDatabases\\db001 にあることが必要です。これを行うには、diskmgmt.msc または mountvol.exe を使用します。この例では、mountvol.exe を使用して db001 を C:\\ExchangeDatabases\\db001 にマウントする方法を示します。
 
-    Mountvol.exe c:\ExchangeDatabases\db001 \\?\Volume (GUID)
+```powershell
+Mountvol.exe c:\ExchangeDatabases\db001 \\?\Volume (GUID)
+```  
 
 ## このステップの検証方法
 
@@ -179,28 +187,28 @@ C:\\\< *DatabaseFolderName*\>\\*DatabaseName*\\\<*DatabaseName*\>.db
 C:\\\< *DatabaseFolderName*\>\\*DatabaseName*\\\<*DatabaseName*\>.log
 
 この例では、ボリューム 1 に保存される 4 つのデータベース用のディレクトリを作成する方法を示します。
-```
+```powershell
 md c:\ExchangeDatabases\db001\db001.db
 ```
-```
+```powershell
 md c:\ExchangeDatabases\db001\db001.log
 ```
-```
+```powershell
 md c:\ExchangeDatabases\db002\db002.db
 ```
-```
+```powershell
 md c:\ExchangeDatabases\db002\db002.log
 ```
-```
+```powershell
 md c:\ExchangeDatabases\db003\db003.db
 ```
-```
+```powershell
 md c:\ExchangeDatabases\db003\db003.log
 ```
-```
+```powershell
 md c:\ExchangeDatabases\db004\db004.db
 ```
-```
+```powershell
 md c:\ExchangeDatabases\db004\db004.log
 ```
 
@@ -220,13 +228,17 @@ Dir c:\ExchangeDatabases /s
 
 適切なフォルダーを使用して構成されたログ パスとデータベース パスでデータベースを作成します。この例では、新しく作成したディレクトリとマウント ポイント構造に保存されるデータベースを作成する方法を示します。
 
-    New-MailboxDatabase -Name db001 -Server MBX1 -LogFolderPath C:\ExchangeDatabases\db001\db001.log -EdbFilePath C:\ExchangeDatabases\db001\db001.db\db001.edb
+```powershell
+New-MailboxDatabase -Name db001 -Server MBX1 -LogFolderPath C:\ExchangeDatabases\db001\db001.log -EdbFilePath C:\ExchangeDatabases\db001\db001.db\db001.edb
+```  
 
 ## このステップの検証方法
 
 適切なフォルダーにデータベースが正常に作成されたことを確認するには、次のコマンドを実行します。
 
-    Get-MailboxDatabase db001 | Format List *path*
+```powershell
+Get-MailboxDatabase db001 | Format List *path*
+```  
 
 返されるデータベース プロパティが、データベース ファイルとログ ファイルが上記のフォルダーに保存されようとしていることを示す必要があります。
 
@@ -236,16 +248,15 @@ DAG に AutoReseed が構成されたことを確認するには、次の手順�
 
 1.  DAG が正しく構成されていることを確認するには、次のコマンドを実行します。
     
-        Get-DatabaseAvailabilityGroup DAG1 | Format-List *auto*
+    ```powershell
+    Get-DatabaseAvailabilityGroup DAG1 | Format-List *auto*
+    ```  
 
 2.  ディレクトリ構造が正しく構成されていることを確認するには、次のコマンドを実行します (既定のパスは以下のとおりです。必要に応じて、パスを使用しているパスに置き換えてください)。
+
+    ```powershell
+    Dir c:\ExchangeDatabases /s
     ```
-```powershell
-Dir c:\ExchangeDatabases /s
-```
-    ```
-    ```
-```powershell
-Dir c:\ExchangeVolumes /s
-```
+    ```powershell
+    Dir c:\ExchangeVolumes /s
     ```

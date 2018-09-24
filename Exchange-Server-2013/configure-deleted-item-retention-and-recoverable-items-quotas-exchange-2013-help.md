@@ -83,7 +83,9 @@ Set-Mailbox -Identity - "April Stewart" -RetainDeletedItemsFor 30
 
 この例では、April Stewart のメールボックスの回復可能なアイテムの警告クォータを 12 GB に、回復可能なアイテムのクォータを 15 GB に構成します。
 
-    Set-Mailbox -Identity "April Stewart" -RecoverableItemsWarningQuota 12GB -RecoverableItemsQuota 15GB -UseDatabaseQuotaDefaults $false
+  ```powershell
+  Set-Mailbox -Identity "April Stewart" -RecoverableItemsWarningQuota 12GB -RecoverableItemsQuota 15GB -UseDatabaseQuotaDefaults $false
+  ```
 
 
 > [!NOTE]

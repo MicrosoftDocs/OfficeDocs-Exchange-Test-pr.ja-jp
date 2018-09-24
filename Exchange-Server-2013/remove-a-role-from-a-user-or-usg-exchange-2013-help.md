@@ -53,9 +53,12 @@ Remove-ManagementRoleAssignment "Tier 2 Help Desk Assignment"
 
 削除する役割の割り当ての名前がわからない場合は、次の構文を使用します。
 
+```powershell
     Get-ManagementRoleAssignment -RoleAssignee <user or USG> -Role <role name> -Delegating <$true | $false> | Remove-ManagementRoleAssignment 
+```
 
 たとえば、ユーザー "davids" から正規の役割の割り当て "Mail Recipients/メール受信者" を削除する場合、次のコマンドを使用します。
 
+```powershell
     Get-ManagementRoleAssignment -RoleAssignee davids -Role "Mail Recipients" -Delegating $false | Remove-ManagementRoleAssignment
-
+```

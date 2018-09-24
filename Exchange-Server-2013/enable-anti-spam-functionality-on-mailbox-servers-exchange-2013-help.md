@@ -55,7 +55,9 @@ Microsoft Exchange Server 2013 では、メールボックス サーバー上の
 
 次のコマンドを実行します。
 
-    & $env:ExchangeInstallPath\Scripts\Install-AntiSpamAgents.ps1
+  ```powershell
+  & $env:ExchangeInstallPath\Scripts\Install-AntiSpamAgents.ps1
+  ```
 
 ## このステップの検証方法
 
@@ -96,8 +98,8 @@ Set-TransportConfig -InternalSMTPServers @{Add="10.0.1.10","10.0.1.11"}
 1.  次のコマンドを実行します。
     
     ```powershell
-Get-TransportConfig | Format-List InternalSMTPServers
-```
+    Get-TransportConfig | Format-List InternalSMTPServers
+    ```
 
 2.  少なくとも 1 つの有効な内部 SMTP サーバーの IP アドレスが表示されていることを確認します。
 

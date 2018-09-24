@@ -82,16 +82,16 @@ Disable-MailUser -Identity "Yan Li"
 3.  シェルで、次のコマンドを実行します。
     
     ```powershell
-Get-MailUser
-```
+    Get-MailUser
+    ```
     
     このコマンドレットはメールが有効なユーザーのみを返すため、電子メールを無効にしたメール ユーザーは結果として返されません。
 
 4.  シェルで、次のコマンドを実行します。
     
     ```powershell
-Get-User
-```
+    Get-User
+    ```
     
     このコマンドレットはすべての Active Directory ユーザー オブジェクトを返すため、電子メールを無効にしたメール ユーザーが結果として返されます。
 
@@ -113,8 +113,10 @@ Enable-MailUser -Identity "Sanjay Shah" -ExternalEmailAddress renev@tailspintoys
 
 1.  次のコマンドを実行すると、メールが有効でない既存のユーザーまたは組織内のメールボックスを持っていない既存のユーザーの一覧が管理者のデスクトップ上の UsersToMailEnable.csv というファイルにエクスポートされます。
     
-        Get-User | Where { $_.RecipientType -eq "User" } | Out-File "C:\Users\Administrator\Desktop\UsersToMailEnable.csv"
-    
+    ```powershell
+    Get-User | Where { $_.RecipientType -eq "User" } | Out-File "C:\Users\Administrator\Desktop\UsersToMailEnable.csv"
+    ```
+
     この結果, .csv ファイルは次のようになります。
     
         Name            RecipientType
@@ -140,19 +142,23 @@ Enable-MailUser -Identity "Sanjay Shah" -ExternalEmailAddress renev@tailspintoys
     
     更新した CSV ファイルは次のようになります。
     
-        Name,EmailAddress
-        David Pelton,davidp@contoso.com
-        Kim Akers,kakers@tailspintoys.com
-        Janet Schorr,janet.schorr@adatum.com
-        Jeffrey Zang,jzang@tailspintoys.com
-        Spencer Low,spencerl@fouthcoffee.com
-        Toni Poe,tonip@contoso.com
-        ...
+    ```powershell
+    Name,EmailAddress
+    David Pelton,davidp@contoso.com
+    Kim Akers,kakers@tailspintoys.com
+    Janet Schorr,janet.schorr@adatum.com
+    Jeffrey Zang,jzang@tailspintoys.com
+    Spencer Low,spencerl@fouthcoffee.com
+    Toni Poe,tonip@contoso.com
+    ...
+    ```
 
 3.  次のコマンドを実行して、CSV ファイルのデータを使用し、ファイルに記載されたユーザーのメールを有効にします。
     
-        Import-CSV "C:\Users\Administrator\Desktop\UsersToMailEnable.csv" | ForEach-Object {Enable-MailUser -Identity $_.Name -ExternalEmailAddress $_.EmailAddress}
-    
+    ```powershell
+    Import-CSV "C:\Users\Administrator\Desktop\UsersToMailEnable.csv" | ForEach-Object {Enable-MailUser -Identity $_.Name -ExternalEmailAddress $_.EmailAddress}
+    ```
+
     コマンドの結果には、新しくメールを有効にしたユーザーに関する情報が表示されます。
 
 ## 正常な動作を確認する方法
@@ -170,6 +176,6 @@ Active Directory ユーザーのメールが正常に有効化されたことを
   - シェルで、次のコマンドを実行して新しいメール ユーザーの情報を表示します。
     
     ```powershell
-Get-MailUser | Format-Table Name,RecipientTypeDetails,ExternalEmailAddress
-```
+    Get-MailUser | Format-Table Name,RecipientTypeDetails,ExternalEmailAddress
+    ```
 

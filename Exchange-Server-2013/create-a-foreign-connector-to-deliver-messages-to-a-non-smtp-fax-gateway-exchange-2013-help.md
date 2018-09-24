@@ -49,7 +49,9 @@ SMTP をプライマリ トランスポート メカニズムとして使用し�
 
 1.  外部コネクタを作成するには、次のコマンドを実行します。
     
-        New-ForeignConnector -Name "Contoso Foreign Connector" -AddressSpaces "X400:c=US;a=Fabrikam;P=Contoso;5" -SourceTransportServers Hub01,Hub02
+    ```powershell
+    New-ForeignConnector -Name "Contoso Foreign Connector" -AddressSpaces "X400:c=US;a=Fabrikam;P=Contoso;5" -SourceTransportServers Hub01,Hub02
+    ```
     
     この例では、Hub01 および Hub02 はメッセージを外部システムに配信するように指定した組織内の送信元サーバーです。複数の送信元サーバーを使用することでフォールト トレランスを実現できます。
 
@@ -59,7 +61,9 @@ SMTP をプライマリ トランスポート メカニズムとして使用し�
 
 外部コネクタが正常に作成されたことを確認するために、次のコマンドを実行します。
 
-    Get-ForeignConnector | Format-List Name
+```powershell
+Get-ForeignConnector | Format-List Name
+```
 
 作成した外部コネクタの名前が表示されることを確認します。
 
@@ -71,13 +75,17 @@ SMTP をプライマリ トランスポート メカニズムとして使用し�
 
 1.  次のスクリプトを実行して、外部コネクタにドロップ ディレクトリを指定します (*DropDirectory* パラメーターの値をお使いの環境に合わせて変更します)。
     
-        Set-ForeignConnector "Contoso Foreign Connector" -DropDirectory "C:\Drop Directory"
+    ```powershell
+    Set-ForeignConnector "Contoso Foreign Connector" -DropDirectory "C:\Drop Directory"
+    ```
 
 ## このステップの検証方法
 
 ドロップ ディレクトリが正常に設定されたことを確認するには、次のコマンドレット スクリプトを実行して、*DropDirectory* パラメーターの値を確認します。
 
-    Get-ForeignConnector "Contoso Foreign Connector" | Format-List
+```powershell
+Get-ForeignConnector "Contoso Foreign Connector" | Format-List
+```
 
 外部コネクタを作成してドロップ ディレクトリを指定したら、外部コネクタを作成したメールボックス サーバーを使用してメッセージを配信し、ファイルがドロップ ディレクトリに配信されていることを確認します。
 
@@ -91,7 +99,9 @@ SMTP をプライマリ トランスポート メカニズムとして使用し�
 
 ピックアップ ディレクトリが正常に設定されたことを確認するには、次のコマンド スクリプトを実行して、*PickupDirectoryPath* パラメーターの値を確認します。
 
-    Get-TransportService | Format-List PickupDirectoryPath
+```powershell
+Get-TransportService | Format-List PickupDirectoryPath
+```
 
 ## 手順 4: シェルを使用して、メールボックス サーバー上に再生ディレクトリを構成する
 
@@ -103,7 +113,9 @@ SMTP をプライマリ トランスポート メカニズムとして使用し�
 
 再生ディレクトリが正常に設定されたことを確認するには、次のコマンド スクリプトを実行して、*ReplayDirectoryPath* パラメーターの値を確認します。
 
-    Get-TransportService | Format-List ReplayDirectoryPath
+```powershell
+Get-TransportService | Format-List ReplayDirectoryPath
+```
 
 ## 詳細情報
 

@@ -84,8 +84,8 @@ New-MoveRequest -Identity 'tony@alpineskihouse.com' -TargetDatabase DB01 -WhatIf
   - シェルから次のコマンドを実行して、メールボックスの移行情報を取得します。
     
     ```powershell
-Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
-```
+    Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+    ```
 
 詳細については、「[Get-MigrationUserStatistics](https://technet.microsoft.com/ja-jp/library/jj218695\(v=exchg.150\))」を参照してください。
 
@@ -110,10 +110,10 @@ EAC にログ インし、以下の手順を実行します。
 ## シェルを使用してバッチ移動要求を作成する
 
 この例では、ローカル移動の移行バッチを作成します。ここでは、指定した .csv ファイル内のメールボックスが、別のメールボックス データベースに移動されます。この .csv ファイルには、移動するメールボックスの電子メール アドレスが 1 列に格納されています。この列のヘッダーは、**EmailAddress** という名前にする必要があります。この例の移行バッチは、**Start-MigrationBatch** コマンドレットまたは Exchange 管理センター (EAC) を使用して手動で開始する必要があります。または、*AutoStart* パラメーターを使用して移行バッチを自動で開始することもできます。
-```
+```powershell
 New-MigrationBatch -Local -Name LocalMove1 -CSVData ([System.IO.File]::ReadAllBytes("C:\Users\Administrator\Desktop\LocalMove1.csv")) -TargetDatabases MBXDB2 -TimeZone "Pacific Standard Time"
 ```
-```
+```powershell
 Start-MigrationBatch -Identity LocalMove1
 ```
 
@@ -128,8 +128,8 @@ Start-MigrationBatch -Identity LocalMove1
   - シェルから次のコマンドを実行して、メールボックスの移行情報を取得します。
     
     ```powershell
-Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
-```
+    Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+    ```
 
 詳細については、「[Get-MigrationUserStatistics](https://technet.microsoft.com/ja-jp/library/jj218695\(v=exchg.150\))」を参照してください。
 
@@ -166,8 +166,8 @@ New-MoveRequest -Identity 'tony@alpineskihouse.com' -PrimaryOnly -TargetDatabase
   - シェルから次のコマンドを実行して、メールボックスの移行情報を取得します。
     
     ```powershell
-Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
-```
+    Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+    ```
 
 詳細については、「[Get-MigrationUserStatistics](https://technet.microsoft.com/ja-jp/library/jj218695\(v=exchg.150\))」を参照してください。
 
@@ -197,8 +197,8 @@ Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
   - シェルから次のコマンドを実行して、メールボックスの移行情報を取得します。
     
     ```powershell
-Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
-```
+    Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+    ```
 
 詳細については、「[Get-MigrationUserStatistics](https://technet.microsoft.com/ja-jp/library/jj218695\(v=exchg.150\))」を参照してください。
 
@@ -229,8 +229,8 @@ New-MoveRequest -Identity 'tony@alpineskihouse.com' -ArchiveOnly -ArchiveTargetD
   - シェルから次のコマンドを実行して、メールボックスの移行情報を取得します。
     
     ```powershell
-Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
-```
+    Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+    ```
 
 詳細については、「[Get-MigrationUserStatistics](https://technet.microsoft.com/ja-jp/library/jj218695\(v=exchg.150\))」を参照してください。
 
@@ -249,8 +249,8 @@ Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
   - シェルから次のコマンドを実行して、メールボックスの移行情報を取得します。
     
     ```powershell
-Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
-```
+    Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+    ```
 
 詳細については、「[Get-MigrationUserStatistics](https://technet.microsoft.com/ja-jp/library/jj218695\(v=exchg.150\))」を参照してください。
 
@@ -281,8 +281,8 @@ Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
   - シェルから次のコマンドを実行して、メールボックスの移行情報を取得します。
     
     ```powershell
-Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
-```
+    Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+    ```
 
 詳細については、「[Get-MigrationUserStatistics](https://technet.microsoft.com/ja-jp/library/jj218695\(v=exchg.150\))」を参照してください。
 

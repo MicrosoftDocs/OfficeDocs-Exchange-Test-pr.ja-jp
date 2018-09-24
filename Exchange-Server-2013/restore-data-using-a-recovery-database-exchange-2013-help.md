@@ -42,58 +42,65 @@ RDB に関連する追加の管理タスクについては、「[回復用デー
 2.  Eseutil を使用して、そのデータベースをクリーン シャットダウンの状態にします。次の例で、EXX はデータベースのログ生成プレフィックスです (E00、E01、E02 など)。
     
     ```powershell
-Eseutil /R EXX /l <RDBLogFilePath> /d <RDBEdbFolder>
-```
+    Eseutil /R EXX /l <RDBLogFilePath> /d <RDBEdbFolder>
+    ```
     
     次の例は、ログ生成プレフィックスが E01、回復用データベースおよびログ ファイルのパスが E:\\Databases\\RDB1 です。
     
     ```powershell
-Eseutil /R E01 /l E:\Databases\RDB1 /d E:\Databases\RDB1
-```
+    Eseutil /R E01 /l E:\Databases\RDB1 /d E:\Databases\RDB1
+    ```
 
 3.  回復用データベースを作成します。回復用データベースに一意の名前を付けます。ただし、EdbFilePath パラメーターにはデータベース ファイルの名前とパスを使用し、LogFolderPath パラメーターには復元済みログ ファイルの場所を使用します。
     
+    ```powershell
         New-MailboxDatabase -Recovery -Name <RDBName> -Server <ServerName> -EdbFilePath <RDBPathandFileName> -LogFolderPath <LogFilePath>
-    
-    次の例では、E:\\Databases\\RDB1 にある DB1.edb とそのログ ファイルの復元に使用される回復用データベースの作成方法を示します。
-    
-        New-MailboxDatabase -Recovery -Name <RDBName> -Server <ServerName> -EdbFilePath "E:\Databases\RDB1\DB1.EDB" -LogFolderPath "E:\Databases\RDB1"
+    ```
 
+    次の例では、E:\\Databases\\RDB1 にある DB1.edb とそのログ ファイルの復元に使用される回復用データベースの作成方法を示します。
+
+    ```powershell
+        New-MailboxDatabase -Recovery -Name <RDBName> -Server <ServerName> -EdbFilePath "E:\Databases\RDB1\DB1.EDB" -LogFolderPath "E:\Databases\RDB1"
+    ```
 4.  Microsoft Exchange Information Store サービスを再開します。
     
     ```powershell
-Restart-Service MSExchangeIS
-```
+    Restart-Service MSExchangeIS
+    ```
 
 5.  回復用データベースをマウントします。
     
     ```powershell
-Mount-database <RDBName>
-```
+    Mount-database <RDBName>
+    ```
 
 6.  マウントされたデータベースに、復元するメールボックスが含まれていることを確認します。
     
     ```powershell
-Get-MailboxStatistics -Database <RDBName> | ft -auto
-```
+    Get-MailboxStatistics -Database <RDBName> | ft -auto
+    ```
 
 7.  New-MailboxRestoreRequest コマンドレットを使用して、メールボックスまたはアイテムを回復用データベースから運用中のメールボックスに復元します。
     
     次の例では、メールボックス データベース DB1 にある MailboxGUID が 1d20855f-fd54-4681-98e6-e249f7326ddd の復元元メールボックスを、エイリアスが Morris の復元先メールボックスに復元します。
     
+    ```powershell
         New-MailboxRestoreRequest -SourceDatabase DB1 -SourceStoreMailbox 1d20855f-fd54-4681-98e6-e249f7326ddd -TargetMailbox Morris
-    
+    ```
+
     次の例では、メールボックス データベース DB1 の表示名が Morris Cornejo である復元元メールボックスの内容を Morris@contoso.com のアーカイブ メールボックスに復元します。
     
+    ```powershell
         New-MaiboxRestoreRequest -SourceDatabase DB1 -SourceStoreMailbox "Morris Cornejo" -TargetMailbox Morris@contoso.com -TargetIsArchive
+    ```
 
 8.  [Get-MailboxRestoreRequest](https://technet.microsoft.com/ja-jp/library/ff829907\(v=exchg.150\)) を使用してメールボックス復元要求の状態を定期的に確認します。
     
     復元の状態が \[完了\] になったら、[Remove-MailboxRestoreRequest](https://technet.microsoft.com/ja-jp/library/ff829910\(v=exchg.150\)) を使用して復元要求を削除します。たとえば、次のようにです。
     
     ```powershell
-Get-MailboxRestoreRequest -Status Completed | Remove-MailboxRestoreRequest
-```
+    Get-MailboxRestoreRequest -Status Completed | Remove-MailboxRestoreRequest
+    ```
 
 ## 正常な動作を確認する方法
 

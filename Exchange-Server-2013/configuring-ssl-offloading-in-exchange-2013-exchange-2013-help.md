@@ -88,28 +88,28 @@ Outlook Web App 用に SSL オフロードを有効にするには、**既定の
       - コマンドラインを使用して次の入力を行い、Enter キーを押します。
         
         ```powershell
-appcmd set config "Default Web Site/owa" /section:access /sslFlags:None /commit:APPHOST
-```
+        appcmd set config "Default Web Site/owa" /section:access /sslFlags:None /commit:APPHOST
+        ```
 
   - **ステップ 2**   次のいずれかの方法で正しいアプリケーション プールをリサイクルするか、またはインターネット インフォメーション サービスを再起動する必要があります。
     
       - コマンドラインを使用: <strong>スタート</strong> \> <strong>実行</strong> を選択し、<strong>「cmd」</strong>と入力してから Enter キーを押します。コマンド プロンプト ウィンドウで次を入力し、Enter キーを押します。
         
         ```powershell
-appcmd Recycle AppPool MSExchangeOWAAppPool
-```
+        appcmd Recycle AppPool MSExchangeOWAAppPool
+        ```
     
       - Windows PowerShell コマンドレットを使用して次を入力し、Enter キーを押します。
         
         ```powershell
-IIS:\>Restart-WebAppPool MSExchangeOWAAppPool
-```
-    
+        IIS:\>Restart-WebAppPool MSExchangeOWAAppPool
+        ```
+            
       - コマンドラインを使用: <strong>スタート</strong> \> <strong>実行</strong> を選択し、<strong>「cmd」</strong>と入力してから Enter キーを押します。コマンド プロンプト ウィンドウで次を入力し、Enter キーを押します。
         
         ```powershell
-iisreset /noforce
-```
+        iisreset /noforce
+        ```
     
       - インターネット インフォメーション サービス (IIS) マネージャーを使用: インターネット インフォメーション サービス (IIS) マネージャーの <strong>アクション</strong> ウィンドウで、<strong>再起動</strong> をクリックします。
 
@@ -126,9 +126,9 @@ EAC 用に SSL オフロードを有効にするには、**既定の Web サイ�
       - コマンドラインを使用して次の入力を行い、Enter キーを押します。
         
         ```powershell
-appcmd set config "Default Web Site/ecp" /section:access /sslFlags:None /commit:APPHOST
-```
-        
+        appcmd set config "Default Web Site/ecp" /section:access /sslFlags:None /commit:APPHOST
+        ```
+                
 
 
   - **ステップ 2**   次のいずれかの方法で正しいアプリケーション プールをリサイクルするか、またはインターネット インフォメーション サービスを再起動する必要があります。
@@ -136,20 +136,20 @@ appcmd set config "Default Web Site/ecp" /section:access /sslFlags:None /commit:
       - コマンドラインを使用: <strong>スタート</strong> \> <strong>実行</strong> を選択し、<strong>「cmd」</strong>と入力してから Enter キーを押します。コマンド プロンプト ウィンドウで次を入力し、Enter キーを押します。
         
         ```powershell
-appcmd Recycle AppPool MSExchangeECPAppPool
-```
+        appcmd Recycle AppPool MSExchangeECPAppPool
+        ```
     
       - Windows PowerShell コマンドレットを使用して次を入力し、Enter キーを押します。
         
         ```powershell
-IIS:\>Restart-WebAppPool MSExchangeECPAppPool
-```
-    
+        IIS:\>Restart-WebAppPool MSExchangeECPAppPool
+        ```
+            
       - コマンドラインを使用: <strong>スタート</strong> \> <strong>実行</strong> を選択し、<strong>「cmd」</strong>と入力してから Enter キーを押します。コマンド プロンプト ウィンドウで次を入力し、Enter キーを押します。
         
         ```powershell
-iisreset /noforce
-```
+        iisreset /noforce
+        ```
     
       - インターネット インフォメーション サービス (IIS) マネージャーを使用: インターネット インフォメーション サービス (IIS) マネージャーの <strong>アクション</strong> ウィンドウで、<strong>再起動</strong> をクリックします。
 
@@ -165,7 +165,9 @@ Outlook Anywhere 用の SSL オフロードは既定で有効です。Outlook An
     
       - Exchange 管理シェルを使用して <strong>開始</strong> をクリックし、<strong>開始</strong> メニューで <strong>Exchange 管理シェル</strong> をクリックします。このウィンドウで次を入力してから、Enter キーを押します。
         
-            Set-OutlookAnywhere -Identity ClientAccessServer1\Rpc* -Externalhostname ClientAccessServer1.contoso.com -ExternalClientsRequireSsl:$True -ExternalClientAuthenticationMethod Basic
+          ```powershell
+          Set-OutlookAnywhere -Identity ClientAccessServer1\Rpc* -Externalhostname ClientAccessServer1.contoso.com -ExternalClientsRequireSsl:$True -ExternalClientAuthenticationMethod Basic
+          ```
 
   - **ステップ 2** 既定では SSL オフロードが有効になっています。しかし、SSL オフロードが無効にされており、これを有効にする場合は、EAC または Exchange 管理シェルを使用できます。
     
@@ -173,7 +175,9 @@ Outlook Anywhere 用の SSL オフロードは既定で有効です。Outlook An
     
       - シェルを使用して次を入力し、Enter キーを押します。
         
-            Set-OutlookAnywhere -Identity ClientAccessServer1\Rpc* -SSLOffloading $true
+          ```powershell
+          Set-OutlookAnywhere -Identity ClientAccessServer1\Rpc* -SSLOffloading $true
+          ```
 
   - **ステップ 3**   既定で <strong>SSL が必要</strong> は **Rpc** 仮想ディレクトリで選択されていませんが、SSL が無効になっていることを確認したい場合はインターネット インフォメーション サービス (IIS) マネージャーを使用できます。
     
@@ -184,21 +188,21 @@ Outlook Anywhere 用の SSL オフロードは既定で有効です。Outlook An
       - コマンドラインを使用: <strong>スタート</strong> \> <strong>実行</strong> を選択し、<strong>「cmd」</strong>と入力してから Enter キーを押します。コマンド プロンプト ウィンドウで次を入力し、Enter キーを押します。
         
         ```powershell
-appcmd Recycle AppPool MSExchangeRpcProxyFrontEndAppPool
-```
-    
+        appcmd Recycle AppPool MSExchangeRpcProxyFrontEndAppPool
+        ```
+          
       - Windows PowerShell コマンドレットを使用して次を入力し、Enter キーを押します。
         
         ```powershell
-IIS:\>Restart-WebAppPool MSExchangeRpcProxyFrontEndAppPool
-```
+        IIS:\>Restart-WebAppPool MSExchangeRpcProxyFrontEndAppPool
+        ```
     
       - コマンドラインを使用: <strong>スタート</strong> \> <strong>実行</strong> を選択し、<strong>「cmd」</strong>と入力してから Enter キーを押します。コマンド プロンプト ウィンドウで次を入力し、Enter キーを押します。
         
         ```powershell
-iisreset /noforce
-```
-    
+        iisreset /noforce
+        ```
+            
       - インターネット インフォメーション サービス (IIS) マネージャーを使用: インターネット インフォメーション サービス (IIS) マネージャーの <strong>アクション</strong> ウィンドウで、<strong>再起動</strong> をクリックします。
 
 
@@ -220,28 +224,28 @@ iisreset /noforce
       - コマンドラインを使用して次の入力を行い、Enter キーを押します。
         
         ```powershell
-appcmd set config "Default Web Site/OAB" /section:access /sslFlags:None /commit:APPHOST
-```
+        appcmd set config "Default Web Site/OAB" /section:access /sslFlags:None /commit:APPHOST
+        ```
 
   - **ステップ 2**   次のいずれかの方法で正しいアプリケーション プールをリサイクルするか、またはインターネット インフォメーション サービスを再起動する必要があります。
     
       - コマンドラインを使用: <strong>スタート</strong> \> <strong>実行</strong> を選択し、<strong>「cmd」</strong>と入力してから Enter キーを押します。コマンド プロンプト ウィンドウで次を入力し、Enter キーを押します。
         
         ```powershell
-appcmd Recycle AppPool MSExchangeOABAppPool
-```
+        appcmd Recycle AppPool MSExchangeOABAppPool
+        ```
     
       - Windows PowerShell コマンドレットを使用して次を入力し、Enter キーを押します。
         
         ```powershell
-IIS:\>Restart-WebAppPool MSExchangeOABAppPool
-```
-    
+        IIS:\>Restart-WebAppPool MSExchangeOABAppPool
+        ```
+            
       - コマンドラインを使用: <strong>スタート</strong> \> <strong>実行</strong> を選択し、<strong>「cmd」</strong>と入力してから Enter キーを押します。コマンド プロンプト ウィンドウで次を入力し、Enter キーを押します。
         
         ```powershell
-iisreset /noforce
-```
+        iisreset /noforce
+        ```
     
       - インターネット インフォメーション サービス (IIS) マネージャーを使用: インターネット インフォメーション サービス (IIS) マネージャーの <strong>アクション</strong> ウィンドウで、<strong>再起動</strong> をクリックします。
 
@@ -257,27 +261,29 @@ Exchange ActiveSync (EAS) 用に SSL オフロードを有効にするには、*
     
       - コマンドラインを使用して次の入力を行い、Enter キーを押します。
         
-            appcmd set config "Default Web Site/MSExchangeSyncAppPool" /section:access /sslFlags:None /commit:APPHOST
+          ```powershell
+          appcmd set config "Default Web Site/MSExchangeSyncAppPool" /section:access /sslFlags:None /commit:APPHOST
+          ```
 
   - **ステップ 2**   次のいずれかの方法で正しいアプリケーション プールをリサイクルするか、またはインターネット インフォメーション サービスを再起動する必要があります。
     
       - コマンドラインを使用: <strong>スタート</strong> \> <strong>実行</strong> を選択し、<strong>「cmd」</strong>と入力してから Enter キーを押します。コマンド プロンプト ウィンドウで次を入力し、Enter キーを押します。
         
         ```powershell
-appcmd Recycle AppPool MSExchangeSyncAppPool
-```
-    
+        appcmd Recycle AppPool MSExchangeSyncAppPool
+        ```
+            
       - Windows PowerShell コマンドレットを使用して次を入力し、Enter キーを押します。
         
         ```powershell
-IIS:\>Restart-WebAppPool MSExchangeSyncAppPool
-```
-    
+        IIS:\>Restart-WebAppPool MSExchangeSyncAppPool
+        ```
+            
       - コマンドラインを使用: <strong>スタート</strong> \> <strong>実行</strong> を選択し、<strong>「cmd」</strong>と入力してから Enter キーを押します。コマンド プロンプト ウィンドウで次を入力し、Enter キーを押します。
         
         ```powershell
-iisreset /noforce
-```
+        iisreset /noforce
+        ```
     
       - インターネット インフォメーション サービス (IIS) マネージャーを使用: インターネット インフォメーション サービス (IIS) マネージャーの <strong>アクション</strong> ウィンドウで、<strong>再起動</strong> をクリックします。
 
@@ -294,28 +300,28 @@ Exchange Web サービス (EWS) 用に SSL オフロードを有効にするに�
       - コマンドラインを使用して次の入力を行い、Enter キーを押します。
         
         ```powershell
-appcmd set config "Default Web Site/EWS" /section:access /sslFlags:None /commit:APPHOST
-```
+        appcmd set config "Default Web Site/EWS" /section:access /sslFlags:None /commit:APPHOST
+        ```
 
   - **ステップ 2**   次のいずれかの方法で正しいアプリケーション プールをリサイクルするか、またはインターネット インフォメーション サービスを再起動する必要があります。
     
       - コマンドラインを使用: <strong>スタート</strong> \> <strong>実行</strong> を選択し、<strong>「cmd」</strong>と入力してから Enter キーを押します。コマンド プロンプト ウィンドウで次を入力し、Enter キーを押します。
         
         ```powershell
-appcmd Recycle AppPool MSExchangeServicesAppPool
-```
+        appcmd Recycle AppPool MSExchangeServicesAppPool
+        ```
     
       - Windows PowerShell コマンドレットを使用して次を入力し、Enter キーを押します。
         
         ```powershell
-IIS:\>Restart-WebAppPool MSExchangeServicesAppPool
-```
+        IIS:\>Restart-WebAppPool MSExchangeServicesAppPool
+        ```
     
       - コマンドラインを使用: <strong>スタート</strong> \> <strong>実行</strong> を選択し、<strong>「cmd」</strong>と入力してから Enter キーを押します。コマンド プロンプト ウィンドウで次を入力し、Enter キーを押します。
         
         ```powershell
-iisreset /noforce
-```
+        iisreset /noforce
+        ```
     
       - インターネット インフォメーション サービス (IIS) マネージャーを使用: インターネット インフォメーション サービス (IIS) マネージャーの <strong>アクション</strong> ウィンドウで、<strong>再起動</strong> をクリックします。
 
@@ -332,28 +338,28 @@ iisreset /noforce
       - コマンドラインを使用して次の入力を行い、Enter キーを押します。
         
         ```powershell
-appcmd set config "Default Web Site/autodiscover" /section:access /sslFlags:None /commit:APPHOST
-```
+        appcmd set config "Default Web Site/autodiscover" /section:access /sslFlags:None /commit:APPHOST
+        ```
 
   - **ステップ 2**   次のいずれかの方法で正しいアプリケーション プールをリサイクルするか、またはインターネット インフォメーション サービスを再起動する必要があります。
     
       - コマンドラインを使用: <strong>スタート</strong> \> <strong>実行</strong> を選択し、<strong>「cmd」</strong>と入力してから Enter キーを押します。コマンド プロンプト ウィンドウで次を入力し、Enter キーを押します。
         
         ```powershell
-appcmd Recycle AppPool MSExchangeAutodiscoverAppPool
-```
+        appcmd Recycle AppPool MSExchangeAutodiscoverAppPool
+        ```
     
       - Windows PowerShell コマンドレットを使用して次を入力し、Enter キーを押します。
         
         ```powershell
-IIS:\>Restart-WebAppPool MSExchangeAutodiscoverAppPool
-```
+        IIS:\>Restart-WebAppPool MSExchangeAutodiscoverAppPool
+        ```
     
       - コマンドラインを使用: <strong>スタート</strong> \> <strong>実行</strong> を選択し、<strong>「cmd」</strong>と入力してから Enter キーを押します。コマンド プロンプト ウィンドウで次を入力し、Enter キーを押します。
         
         ```powershell
-iisreset /noforce
-```
+        iisreset /noforce
+        ```
     
       - インターネット インフォメーション サービス (IIS) マネージャーを使用: インターネット インフォメーション サービス (IIS) マネージャーの <strong>アクション</strong> ウィンドウで、<strong>再起動</strong> をクリックします。
 
@@ -380,28 +386,28 @@ Outlook クライアント用に SSL オフロードを有効にするには、*
       - コマンドラインを使用して次の入力を行い、Enter キーを押します。
         
         ```powershell
-appcmd set config "Default Web Site/MAPI" /section:access /sslFlags:None /commit:APPHOST
-```
+        appcmd set config "Default Web Site/MAPI" /section:access /sslFlags:None /commit:APPHOST
+        ```
 
   - **ステップ 2**   次のいずれかの方法で正しいアプリケーション プールをリサイクルするか、またはインターネット インフォメーション サービスを再起動する必要があります。
     
       - コマンドラインを使用: <strong>スタート</strong> \> <strong>実行</strong> を選択し、<strong>「cmd」</strong>と入力してから Enter キーを押します。コマンド プロンプト ウィンドウで次を入力し、Enter キーを押します。
         
         ```powershell
-appcmd Recycle AppPool MSExchangeMapiFrontEndAppPool
-```
+        appcmd Recycle AppPool MSExchangeMapiFrontEndAppPool
+        ```
     
       - Windows PowerShell コマンドレットを使用して次を入力し、Enter キーを押します。
         
         ```powershell
-IIS:\>Restart-WebAppPool MSExchangeMapiFrontEndAppPool
-```
+        IIS:\>Restart-WebAppPool MSExchangeMapiFrontEndAppPool
+        ```
     
       - コマンドラインを使用: <strong>スタート</strong> \> <strong>実行</strong> を選択し、<strong>「cmd」</strong>と入力してから Enter キーを押します。コマンド プロンプト ウィンドウで次を入力し、Enter キーを押します。
         
         ```powershell
-iisreset /noforce
-```
+        iisreset /noforce
+        ```
     
       - インターネット インフォメーション サービス (IIS) マネージャーを使用: インターネット インフォメーション サービス (IIS) マネージャーの <strong>アクション</strong> ウィンドウで、<strong>再起動</strong> をクリックします。
 
@@ -419,15 +425,17 @@ iisreset /noforce
 
 **Set-WebConfigurationProperty の使用**
 
-    Set-OutlookAnywhere -Identity MyServer\Rpc* -Externalhostname MyServer.mail.contoso.com -ExternalClientsRequireSsl $True -ExternalClientAuthenticationMethod Basic
-    Set-OutlookAnywhere -Identity MyServer\Rpc* -SSLOffloading $true
-    Set-WebConfigurationProperty -Filter //security/access -name sslflags -Value "None" -PSPath IIS:  -Location "Default Web Site/OWA"
-    Set-WebConfigurationProperty -Filter //security/access -name sslflags -Value "None" -PSPath IIS: -Location "Default Web Site/ecp"
-    Set-WebConfigurationProperty -Filter //security/access -name sslflags -Value "None" -PSPath IIS: -Location "Default Web Site/EWS"
-    Set-WebConfigurationProperty -Filter //security/access -name sslflags -Value "None" -PSPath IIS: -Location "Default Web Site/Autodiscover"
-    Set-WebConfigurationProperty -Filter //security/access -name sslflags -Value "None" -PSPath IIS: -Location "Default Web Site/Microsoft-Server-ActiveSync"
-    Set-WebConfigurationProperty -Filter //security/access -name sslflags -Value "None" -PSPath IIS: -Location "Default Web Site/OAB"
-    Set-WebConfigurationProperty -Filter //security/access -name sslflags -Value "None" -PSPath IIS: -Location "Default Web Site/MAPI"
+  ```powershell
+  Set-OutlookAnywhere -Identity MyServer\Rpc* -Externalhostname MyServer.mail.contoso.com -ExternalClientsRequireSsl $True -ExternalClientAuthenticationMethod Basic
+  Set-OutlookAnywhere -Identity MyServer\Rpc* -SSLOffloading $true
+  Set-WebConfigurationProperty -Filter //security/access -name sslflags -Value "None" -PSPath IIS:  -Location "Default Web Site/OWA"
+  Set-WebConfigurationProperty -Filter //security/access -name sslflags -Value "None" -PSPath IIS: -Location "Default Web Site/ecp"
+  Set-WebConfigurationProperty -Filter //security/access -name sslflags -Value "None" -PSPath IIS: -Location "Default Web Site/EWS"
+  Set-WebConfigurationProperty -Filter //security/access -name sslflags -Value "None" -PSPath IIS: -Location "Default Web Site/Autodiscover"
+  Set-WebConfigurationProperty -Filter //security/access -name sslflags -Value "None" -PSPath IIS: -Location "Default Web Site/Microsoft-Server-ActiveSync"
+  Set-WebConfigurationProperty -Filter //security/access -name sslflags -Value "None" -PSPath IIS: -Location "Default Web Site/OAB"
+  Set-WebConfigurationProperty -Filter //security/access -name sslflags -Value "None" -PSPath IIS: -Location "Default Web Site/MAPI"
+  ```
 ```powershell
 iisreset /noforce
 ```
@@ -440,15 +448,17 @@ iisreset /noforce
 
 
 
-    Set-OutlookAnywhere -Identity MyServer\Rpc* -Externalhostname MyServer.mail.contoso.com -ExternalClientsRequireSsl $True -ExternalClientAuthenticationMethod Basic
-    Set-OutlookAnywhere -Identity MyServer\Rpc* -SSLOffloading $true
-    &$env:systemroot\system32\inetsrv\appcmd set config "Default Web Site/owa" /section:access /sslFlags:None /commit:APPHOST
-    &$env:systemroot\system32\inetsrv\appcmd set config "Default Web Site/ecp" /section:access /sslFlags:None /commit:APPHOST
-    &$env:systemroot\system32\inetsrv\appcmd set config "Default Web Site/EWS" /section:access /sslFlags:None /commit:APPHOST
-    &$env:systemroot\system32\inetsrv\appcmd set config "Default Web Site/Autodiscover" /section:access /sslFlags:None /commit:APPHOST
-    &$env:systemroot\system32\inetsrv\appcmd set config "Default Web Site/Microsoft-Server-ActiveSync" /section:access /sslFlags:None /commit:APPHOST
-    &$env:systemroot\system32\inetsrv\appcmd set config "Default Web Site/OAB" /section:access /sslFlags:None /commit:APPHOST
-    &$env:systemroot\system32\inetsrv\appcmd set config "Default Web Site/MAPI" /section:access /sslFlags:None /commit:APPHOST
+  ```powershell
+  Set-OutlookAnywhere -Identity MyServer\Rpc* -Externalhostname MyServer.mail.contoso.com -ExternalClientsRequireSsl $True -ExternalClientAuthenticationMethod Basic
+  Set-OutlookAnywhere -Identity MyServer\Rpc* -SSLOffloading $true
+  &$env:systemroot\system32\inetsrv\appcmd set config "Default Web Site/owa" /section:access /sslFlags:None /commit:APPHOST
+  &$env:systemroot\system32\inetsrv\appcmd set config "Default Web Site/ecp" /section:access /sslFlags:None /commit:APPHOST
+  &$env:systemroot\system32\inetsrv\appcmd set config "Default Web Site/EWS" /section:access /sslFlags:None /commit:APPHOST
+  &$env:systemroot\system32\inetsrv\appcmd set config "Default Web Site/Autodiscover" /section:access /sslFlags:None /commit:APPHOST
+  &$env:systemroot\system32\inetsrv\appcmd set config "Default Web Site/Microsoft-Server-ActiveSync" /section:access /sslFlags:None /commit:APPHOST
+  &$env:systemroot\system32\inetsrv\appcmd set config "Default Web Site/OAB" /section:access /sslFlags:None /commit:APPHOST
+  &$env:systemroot\system32\inetsrv\appcmd set config "Default Web Site/MAPI" /section:access /sslFlags:None /commit:APPHOST
+  ```
 ```powershell
 iisreset /noforce
 ```

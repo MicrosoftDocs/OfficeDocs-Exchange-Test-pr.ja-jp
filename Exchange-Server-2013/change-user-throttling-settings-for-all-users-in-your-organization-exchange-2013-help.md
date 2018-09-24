@@ -56,16 +56,16 @@ New-ThrottlingPolicy -Name AllUsersEWSPolicy EwsMaxConcurrency 4 -ThrottlingPoli
 1.  次のコマンドを実行します。
     
     ```powershell
-Get-ThrottlingPolicy | Format-List
-```
+    Get-ThrottlingPolicy | Format-List
+    ```
 
 2.  作成したばかりの組織調整ポリシーが、GlobalThrottlingPolicy を示す列に表示されていることを確認します。
 
 3.  次のコマンドを実行します。
     
     ```powershell
-Get-ThrottlingPolicy | Format-List
-```
+    Get-ThrottlingPolicy | Format-List
+    ```
 
 4.  新しい組織ポリシーのプロパティが構成した値と一致していることを確認します。
 

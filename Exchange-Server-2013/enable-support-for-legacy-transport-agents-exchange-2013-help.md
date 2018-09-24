@@ -113,23 +113,25 @@ Microsoft Exchange Server 2013 では、Microsoft .NET Framework バージョン
 1.  従来のトランスポート エージェント サポートを構成する Exchange 2013 サーバーのコマンド プロンプト ウィンドウで、次のコマンドを実行することによって、適切なアプリケーション構成ファイルをメモ帳で開きます。
     
     ```powershell
-Notepad %ExchangeInstallPath%Bin\<AppConfigFile>
-```
+    Notepad %ExchangeInstallPath%Bin\<AppConfigFile>
+    ```
     
     たとえば、メールボックス サーバーの EdgeTransport.exe.config ファイルを開くには、次のコマンドを実行します。
     
     ```powershell
-Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
-```
+    Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
+    ```
 
 2.  ファイルの終わりにある *\</configuration\>* キーを探して、次のキーを *\</configuration\>* キーの前に貼り付けます。
     
-        <startup useLegacyV2RuntimeActivationPolicy="true">
-           <supportedRuntime version="v4.0" />
-           <supportedRuntime version="v3.5" />
-           <supportedRuntime version="v3.0" />
-           <supportedRuntime version="v2.0" />
-        </startup>
+    ```powershell
+    <startup useLegacyV2RuntimeActivationPolicy="true">
+        <supportedRuntime version="v4.0" />
+        <supportedRuntime version="v3.5" />
+        <supportedRuntime version="v3.0" />
+        <supportedRuntime version="v2.0" />
+    </startup>
+    ```
 
 3.  完了したら、アプリケーション構成ファイルを保存して閉じます。
 
@@ -137,11 +139,15 @@ Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
 
 5.  次のコマンドを実行して、関連する Windows サービスを再起動します。
     
-        net stop <service> && net start <service>
+    ```powershell
+    net stop <service> && net start <service>
+    ```
     
     たとえば、EdgeTransport.exe.config ファイルを変更した場合、次のコマンドを実行して Microsoft Exchange トランスポート サービスを再起動する必要があります。
     
-        net stop MSExchangeTransport && net start MSExchangeTransport
+    ```powershell
+    net stop MSExchangeTransport && net start MSExchangeTransport
+    ```
 
 6.  手順 5 を繰り返して、他の変更済みアプリケーション構成ファイルに関連付けられたサービスを再起動します。
 
@@ -149,5 +155,7 @@ Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
 
 従来のトランスポート エージェントが正常にインストールされたら、この手順が機能したことがわかります。このトピックの手順を実行せずに従来のトランスポート エージェントをインストールしようとすると、次のようなエラーが表示されます。
 
-    Mixed mode assembly is built against version '<version>' of the runtime and cannot be loaded in the 4.0 runtime without additional configuration information.
+```powershell
+Mixed mode assembly is built against version '<version>' of the runtime and cannot be loaded in the 4.0 runtime without additional configuration information.
+```
 

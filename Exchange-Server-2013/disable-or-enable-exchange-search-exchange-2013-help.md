@@ -53,11 +53,15 @@ Exchange Search に関連するその他の管理タスクについては、「[
 
 このコマンドは、EXCH01 という名前のメールボックス データベースの Exchange Search を無効にします。
 
-    Set-MailboxDatabase "Mailbox Database (EXCH01)" -IndexEnabled $false
+```powershell
+Set-MailboxDatabase "Mailbox Database (EXCH01)" -IndexEnabled $false
+```
 
 このコマンドは、EXCH01 という名前のメールボックス データベースの Exchange Search を有効にします。
 
-    Set-MailboxDatabase "Mailbox Database (EXCH01)" -IndexEnabled $true
+```powershell
+Set-MailboxDatabase "Mailbox Database (EXCH01)" -IndexEnabled $true
+```
 
 構文およびパラメーターの詳細については、「[Set-MailboxDatabase](https://technet.microsoft.com/ja-jp/library/bb123971\(v=exchg.150\))」を参照してください。
 
@@ -88,17 +92,17 @@ Exchange Search に関連するその他の管理タスクについては、「[
 **シェルを使用する**
 
 次のコマンドを実行して、Microsoft Exchange Search サービスを停止して無効にします。
-```
+```powershell
 Stop-Service MSExchangeFastSearch
 ```
-```
+```powershell
 Set-Service MSExchangeFastSearch -StartupType Disabled
 ```
 
 次のコマンドを実行して、Exchange Search サービスを自動的に起動するように構成してから、サービスを開始します。
-```
+```powershell
 Set-Service MSExchangeFastSearch -StartupType Automatic
 ```
-```
+```powershell
 Start-Service MSExchangeFastSearch
 ```

@@ -93,7 +93,9 @@ Get-ExchangeServer | format-list
 
 この例では、クライアント アクセス サーバー CAS01 の仮想ディレクトリの公開を有効にします。
 
-    Set-OwaVirtualDirectory -Identity "CAS01\owa (Default Web Site)" -ExternalUrl "<URL for CAS01>" -CalendarEnabled $true
+```powershell
+Set-OwaVirtualDirectory -Identity "CAS01\owa (Default Web Site)" -ExternalUrl "<URL for CAS01>" -CalendarEnabled $true
+```
 
 ID `CAS01\owa (Default Web Site)` は、サーバー名と Outlook Web App 仮想ディレクトリになります。
 
@@ -149,7 +151,9 @@ Get-OwaVirtualDirectory | format-list
 
 この例では、Internet という名前のインターネット予定表の公開の共有ポリシーを作成し、空き時間情報のみを共有するようにポリシーを構成します。このポリシーは有効になっています。
 
-    New-SharingPolicy -Name "Internet" -Domains 'Anonymous: CalendarSharingFreeBusySimple' -Enabled $true
+```powershell
+New-SharingPolicy -Name "Internet" -Domains 'Anonymous: CalendarSharingFreeBusySimple' -Enabled $true
+```
 
 この例では、共有ポリシー Internet をユーザーのメールボックスに追加します。
 
@@ -203,7 +207,9 @@ Get-SharingPolicy <policy name> | format-list
 
 この例では、\[既定の共有ポリシー\] を更新し、空き時間情報のみを共有するようにポリシーを構成します。このポリシーは有効になっています。
 
-    Set-SharingPolicy -Name "Default Sharing Policy" -Domains 'Anonymous: CalendarSharingFreeBusySimple' -Enabled $true
+```powershell
+Set-SharingPolicy -Name "Default Sharing Policy" -Domains 'Anonymous: CalendarSharingFreeBusySimple' -Enabled $true
+```
 
 構文およびパラメーターの詳細については、「[Set-Mailbox](https://technet.microsoft.com/ja-jp/library/bb123981\(v=exchg.150\))」を参照してください。
 

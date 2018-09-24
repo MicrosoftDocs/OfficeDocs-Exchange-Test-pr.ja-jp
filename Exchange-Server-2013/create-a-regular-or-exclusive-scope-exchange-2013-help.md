@@ -65,11 +65,15 @@ Microsoft Exchange Server 2013 での管理役割スコープおよび割り当�
 
 次の構文を使用して、ベース OU を指定したドメイン制限フィルター スコープを作成します。
 
+```powershell
     New-ManagementScope -Name <scope name> -RecipientRestrictionFilter <filter query> [-RecipientRoot <OU>]
+```
 
 この例では、contoso.com/Sales OU 内のすべてのメールボックスを取り込むスコープを作成します。
 
+```powershell
     New-ManagementScope -Name "Mailboxes in Sales OU" -RecipientRestrictionFilter { RecipientType -eq 'UserMailbox' } -RecipientRoot "contoso.com/Sales OU"
+```
 
 
 > [!NOTE]
@@ -93,7 +97,9 @@ New-ManagementScope -Name <scope name> -ServerRestrictionFilter <filter query>
 
 この例では、すべてのサーバーを 'CN=Redmond,CN=Sites,CN=Configuration,DC=contoso,DC=com' AD (Active Directory) サイト内に含めるスコープを作成します。
 
+```powershell
     New-ManagementScope -Name "Servers in Seattle AD site" -ServerRestrictionFilter { ServerSite -eq 'CN=Redmond,CN=Sites,CN=Configuration,DC=contoso,DC=com' }
+```
 
 構文およびパラメーターの詳細については、「[New-ManagementScope](https://technet.microsoft.com/ja-jp/library/dd335137\(v=exchg.150\))」を参照してください。
 
@@ -135,7 +141,9 @@ New-ManagementScope -Name <scope name> -DatabaseRestrictionFilter <filter query>
 
 この例では、データベースの **Name** プロパティに "Executive" という文字列が含まれる全データベースを含むスコープを作成します。
 
+```powershell
     New-ManagementScope -Name "Executive Databases" -DatabaseRestrictionFilter { Name -Like '*Executive*' }
+```
 
 構文およびパラメーターの詳細については、「[New-ManagementScope](https://technet.microsoft.com/ja-jp/library/dd335137\(v=exchg.150\))」を参照してください。
 
@@ -175,11 +183,15 @@ New-ManagementScope -Name "Primary databases" -DatabaseList "Database 1", "Datab
 
 この例では、Executives 部門のユーザーに一致する排他的な受信者フィルター ベース スコープを作成します。
 
+```powershell
     New-ManagementScope "Executive Users Exclusive Scope" -RecipientRestrictionFilter { Department -Eq "Executives" } -Exclusive
+```
 
 既定では、排他的スコープを作成すると、排他的スコープを作成したこと、および既存の排他的でない役割割り当てに対する排他的スコープの影響を認識していることの確認を求められます。警告を表示しないようにするには、*Force* スイッチを使用します。この例では、前の例と同じですが、警告のないスコープを作成します。
 
+```powershell
     New-ManagementScope "Executive Users Exclusive Scope" -RecipientRestrictionFilter { Department -Eq "Executives" } -Exclusive -Force
+```
 
 構文およびパラメーターの詳細については、「[New-ManagementScope](https://technet.microsoft.com/ja-jp/library/dd335137\(v=exchg.150\))」を参照してください。
 

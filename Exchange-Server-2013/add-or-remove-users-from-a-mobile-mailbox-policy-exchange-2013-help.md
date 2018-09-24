@@ -67,7 +67,9 @@ EAC を使用して、単一のユーザーのモバイル デバイス メー�
 
 1.  シェルで、次のコマンドを実行します。
     
-        Get-CASMailbox -Identity tony@contoso.com -ActiveSyncMailboxPolicy "Sales" 
+    ```powershell 
+        Get-CASMailbox -Identity tony@contoso.com -ActiveSyncMailboxPolicy "Sales"
+    ```
 
 ## 正常な動作を確認する方法
 
@@ -77,7 +79,10 @@ EAC を使用して、単一のユーザーのモバイル デバイス メー�
 
 2.  シェルで、次のコマンドを実行します。
     
-        Get-CASMailbox -Identity tony@contoso.com 
+    ```powershell
+        Get-CASMailbox -Identity tony@contoso.com
+    ```
+
 
 ## 複数のユーザーのモバイル デバイス メールボックス ポリシーを同時に変更するには
 
@@ -103,8 +108,10 @@ EAC を使用して、単一のユーザーのモバイル デバイス メー�
 
 1.  シェルで、次のコマンドを実行します。
     
+    ```powershell
         Get-Mailbox | where { $_.CustomAttribute1 -match "Manager"
          } | Set-CASMailbox -activesyncmailboxpolicy(Get-ActiveSyncMailboxPolicy "Contoso").Identity
+    ```
     
 
     > [!NOTE]
@@ -121,6 +128,6 @@ EAC を使用して、単一のユーザーのモバイル デバイス メー�
 2.  シェルで、次のコマンドを実行します。
     
     ```powershell
-Get-CASMailbox -Identity tony@contoso.com
-```
+        Get-CASMailbox -Identity tony@contoso.com
+    ```
 

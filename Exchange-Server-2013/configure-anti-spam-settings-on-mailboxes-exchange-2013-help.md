@@ -51,7 +51,9 @@ _**トピックの最終更新日:** 2016-11-17_
 
 1 つのメールボックスのスパム対策設定を構成するには、以下の構文を使用します。
 
-    Set-Mailbox <MailboxIdentity> -AntispamBypassEnabled <$true | $false> -RequireSenderAuthenticationEnabled <$true | $false> -SCLDeleteEnabled <$true | $false | $null> -SCLDeleteThreshold <0-9 | $null> -SCLJunkEnabled <$true | $false | $null > -SCLJunkThreshold <0-9 | $null> -SCLQuarantineEnabled <$true | $false | $null > -SCLQuarantineThreshold <0-9 | $null> -SCLRejectEnabled <$true | $false | $null > -SCLRejectThreshold <0-9 | $null>
+```powershell
+Set-Mailbox <MailboxIdentity> -AntispamBypassEnabled <$true | $false> -RequireSenderAuthenticationEnabled <$true | $false> -SCLDeleteEnabled <$true | $false | $null> -SCLDeleteThreshold <0-9 | $null> -SCLJunkEnabled <$true | $false | $null > -SCLJunkThreshold <0-9 | $null> -SCLQuarantineEnabled <$true | $false | $null > -SCLQuarantineThreshold <0-9 | $null> -SCLRejectEnabled <$true | $false | $null > -SCLRejectThreshold <0-9 | $null>
+```
 
 この例では、Jeff Phillips という名前のユーザーのメールボックスを構成して、すべてのスパム対策フィルターをバイパスし、迷惑メール フォルダーの SCL しきい値が 5 以上のメッセージを Microsoft Outlook 内のそのユーザーの迷惑メール フォルダーに配信するようにします。
 
@@ -65,7 +67,9 @@ Set-Mailbox "Jeff Phillips" -AntispamBypassEnabled $true -SCLJunkEnabled $true -
 
 1.  次のコマンドを実行します。
     
-        Get-Mailbox <MailboxIdentity> | Format-List SCL*,Bypass*,*SenderAuth*
+    ```powershell
+    Get-Mailbox <MailboxIdentity> | Format-List SCL*,Bypass*,*SenderAuth*
+    ```
 
 2.  表示された値が構成した値であることを確認します。
 
@@ -73,11 +77,15 @@ Set-Mailbox "Jeff Phillips" -AntispamBypassEnabled $true -SCLJunkEnabled $true -
 
 複数のメールボックスのすべてのスパム対策設定を構成するには、以下の構文を使用します。
 
-    Get-Mailbox [<Filter>]| Set-Mailbox <Anti-Spam Settings>
+```powershell
+Get-Mailbox [<Filter>]| Set-Mailbox <Anti-Spam Settings>
+```
 
 この例では、Contoso.com ドメインの Users コンテナーにあるすべてのメールボックスで、SCL による検疫のしきい値 7 を有効にします。
 
-    Get-Mailbox -OrganizationalUnit Contoso.com/Users | Set-Mailbox -SCLQuarantineEnabled $true -SCLQuarantineThreshold 7
+```powershell
+Get-Mailbox -OrganizationalUnit Contoso.com/Users | Set-Mailbox -SCLQuarantineEnabled $true -SCLQuarantineThreshold 7
+```
 
 ## 正常な動作を確認する方法
 
@@ -85,7 +93,9 @@ Set-Mailbox "Jeff Phillips" -AntispamBypassEnabled $true -SCLJunkEnabled $true -
 
 1.  次のコマンドを実行します。
     
-        Get-Mailbox [<Filter>] | Format-List Name,SCL*,*SenderAuth*
+    ```powershell
+    Get-Mailbox [<Filter>] | Format-List Name,SCL*,*SenderAuth*
+    ```
 
 2.  表示された値が構成した値であることを確認します。
 
@@ -110,8 +120,8 @@ Set-OrganizationConfig -SCLJunkThreshold 5
 1.  次のコマンドを実行します。
     
     ```powershell
-Get-OrganizationConfig | Format-List SCLJunkThreshold
-```
+    Get-OrganizationConfig | Format-List SCLJunkThreshold
+    ```
 
 2.  表示された値が構成した値であることを確認します。
 

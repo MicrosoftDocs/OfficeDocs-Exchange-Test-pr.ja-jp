@@ -47,7 +47,9 @@ Microsoft Exchange Server 2013 の管理者監査ログにより、指定され
 
 既定では、監査ログによって実行されるすべてのコマンドレットのログ エントリが作成されます。初めて監査ログを有効にしてこの動作を望む場合、コマンドレットの監査リストを変更する必要はありません。以前は監査するコマンドレットを指定していて、今回はすべてのコマンドレットを監査する場合、次のコマンドで示すように、**Set-AdminAuditLogConfig** コマンドレットの *AdminAuditLogCmdlets* パラメーターでアスタリスク (\*) ワイルドカード文字を指定すると、すべてのコマンドレットを監査できます。
 
+```powershell
     Set-AdminAuditLogConfig -AdminAuditLogCmdlets *
+```
 
 監査するコマンドレットを指定するには、*AdminAuditLogCmdlets* パラメーターを使用してコマンドレットの一覧を提供する必要があります。監査するコマンドレットの一覧を提供する場合、単一のコマンドレット、アスタリスク (\*) ワイルドカード文字を指定したコマンドレット、またはその両方が混在したものを提供できます。一覧の各エントリはコンマで区切られています。次の値はすべて有効です。
 
@@ -61,7 +63,9 @@ Microsoft Exchange Server 2013 の管理者監査ログにより、指定され
 
 この例では、上記の一覧で指定されたコマンドレットを監査します。
 
+```powershell
     Set-AdminAuditLogConfig -AdminAuditLogCmdlets New-Mailbox, *TransportRule, *Management*, Set-Transport*
+```
 
 構文およびパラメーターの詳細については、「[Set-AdminAuditLogConfig](https://technet.microsoft.com/ja-jp/library/dd298169\(v=exchg.150\))」を参照してください。
 
@@ -69,7 +73,9 @@ Microsoft Exchange Server 2013 の管理者監査ログにより、指定され
 
 既定では、監査ログによって、指定されたパラメーターに無関係に実行されるすべてのコマンドレットのログ エントリが作成されます。初めて監査ログを有効にしてこの動作を望む場合、パラメーターの監査リストを変更する必要はありません。以前は監査するパラメーターを指定していて、今回はすべてのパラメーターを監査する場合、次のコマンドで示すように、**Set-AdminAuditLogConfig** コマンドレットの *AdminAuditLogParameters* パラメーターでアスタリスク (\*) ワイルドカード文字を指定すると、すべてのパラメーターを監査できます。
 
+```powershell
     Set-AdminAuditLogConfig -AdminAuditLogParameters *
+```
 
 *AdminAuditLogParameters* パラメーターを使用すると、監査するパラメーターを指定できます。監査するパラメーターの一覧を提供する場合、単一のパラメーター、アスタリスク (\*) ワイルドカード文字を指定したパラメーター、またはその両方が混在したものを提供できます。一覧の各エントリはコンマで区切られています。次の値はすべて有効です。
 
@@ -89,7 +95,9 @@ Microsoft Exchange Server 2013 の管理者監査ログにより、指定され
 
 この例では、上記の一覧で指定されたパラメーターを監査します。
 
+```powershell
     Set-AdminAuditLogConfig -AdminAuditLogParameters Database, *Address*, Custom*, *Region
+```
 
 構文およびパラメーターの詳細については、「[Set-AdminAuditLogConfig](https://technet.microsoft.com/ja-jp/library/dd298169\(v=exchg.150\))」を参照してください。
 

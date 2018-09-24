@@ -44,14 +44,14 @@ _**トピックの最終更新日:** 2013-02-19_
 1.  コンテンツ フィルター エージェントが Exchange サーバーにインストールされ、有効になっていることを確認するには、次のコマンドを実行します。
     
     ```powershell
-Get-TransportAgent "Content Filter Agent"
-```
+    Get-TransportAgent "Content Filter Agent"
+    ```
 
 2.  コンテンツ フィルターが有効になっていることを確認するには、次のコマンドを実行します。
     
     ```powershell
-Get-ContentFilterConfig | Format-List Enabled
-```
+    Get-ContentFilterConfig | Format-List Enabled
+    ```
 
 詳細については、「[コンテンツ フィルターの管理](manage-content-filtering-exchange-2013-help.md)」を参照してください。
 
@@ -96,8 +96,8 @@ Set-ContentFilterConfig -QuarantineMailbox spamQ@contoso.com
 1.  次のコマンドを実行します。
     
     ```powershell
-Get-ContentFilterConfig | Format-List QuarantineMailbox
-```
+    Get-ContentFilterConfig | Format-List QuarantineMailbox
+    ```
 
 2.  表示された値が構成した値であることを確認します。
 

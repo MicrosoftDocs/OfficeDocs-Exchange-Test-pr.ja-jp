@@ -77,11 +77,15 @@ Set-Mailbox Brian -RoleAssignmentPolicy "Unified Messaging Users"
 
 特定のポリシーが割り当てられているメールボックスのグループの割り当てポリシーを変更する場合、次の構文を使用します。
 
-    Get-Mailbox | Where { $_.RoleAssignmentPolicy -Eq "<assignment policy to find>" } | Set-Mailbox -RoleAssignmentPolicy <assignment policy to set>
+```powershell
+Get-Mailbox | Where { $_.RoleAssignmentPolicy -Eq "<assignment policy to find>" } | Set-Mailbox -RoleAssignmentPolicy <assignment policy to set>
+```
 
 この例では、"Redmond Users - No Voicemail/Redmond ユーザー - ボイスメールなし" の割り当てポリシーに割り当てられているすべてのメールボックスを検索し、割り当てポリシーを "Redmond Users - Voicemail Enabled/Redmond ユーザー - ボイスメール有効" に変更します。
 
-    Get-Mailbox | Where { $_.RoleAssignmentPolicy -Eq "Redmond Users - No Voicemail" } | Set-Mailbox -RoleAssignmentPolicy "Redmond Users - Voicemail Enabled"
+```powershell
+Get-Mailbox | Where { $_.RoleAssignmentPolicy -Eq "Redmond Users - No Voicemail" } | Set-Mailbox -RoleAssignmentPolicy "Redmond Users - Voicemail Enabled"
+```
 
 この例では、実際に変更を行わずに変更されるすべてのメールボックスを表示できるように、*WhatIf* パラメーターが含まれています。
 

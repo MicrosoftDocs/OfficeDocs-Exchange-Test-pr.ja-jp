@@ -60,8 +60,8 @@ _**トピックの最終更新日:** 2013-04-29_
   - シェルから次のコマンドを実行して、サーバー Mailbox01 上にデータベースが作成されたことを確認します。
     
     ```powershell
-Get-MailboxDatabase -Server "Mailbox01"
-```
+    Get-MailboxDatabase -Server "Mailbox01"
+    ```
 
 ## メールボックス データベースのプロパティの取得
 
@@ -153,8 +153,8 @@ Get-MailboxDatabase -Server "Mailbox01"
   - シェルから次のコマンドを実行して、メールボックス データベースのプロパティを取得します。
     
     ```powershell
-Get-MailboxDatabase -Identity MailboxDatabase01 -Status | Format-List
-```
+    Get-MailboxDatabase -Identity MailboxDatabase01 -Status | Format-List
+    ```
 
 ## メールボックス データベース パスを移動する
 
@@ -187,8 +187,8 @@ Get-MailboxDatabase -Identity MailboxDatabase01 -Status | Format-List
   - シェルから次のコマンドを実行して、すべてのメールボックス データベースに対するメールボックス データベースのプロパティを取得します。
     
     ```powershell
-Get-MailboxDatabase -IncludePreExchange2013
-```
+    Get-MailboxDatabase -IncludePreExchange2013
+    ```
 
 ## メールボックス データベースをマウント解除する
 
@@ -221,8 +221,8 @@ Get-MailboxDatabase -IncludePreExchange2013
 1.  メールボックス データベース MyDatabase を削除するには、次のコマンドを実行します。
     
     ```powershell
-Remove-MailboxDatabase -Identity "MyDatabase"
-```
+    Remove-MailboxDatabase -Identity "MyDatabase"
+    ```
 
 2.  操作を実行するかどうかを確認するメッセージが表示されたら、「**Y**」と入力します。
 

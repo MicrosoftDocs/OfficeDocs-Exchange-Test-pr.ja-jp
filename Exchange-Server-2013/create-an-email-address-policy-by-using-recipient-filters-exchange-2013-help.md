@@ -55,7 +55,9 @@ New-EmailAddressPolicy -Name <String> -RecipientFilter <String>
 
 この例では、すべての上級管理者に適用する電子メール アドレス ポリシーを作成し、電子メール アドレスのローカル部分を名の最初の 2 文字と姓の全体で構成します。
 
-    New-EmailAddressPolicy -Name 'Execs' -EnabledEmailAddressTemplates 'SMTP:%2g%s@contoso.com' -RecipientFilter {((RecipientType -eq 'UserMailbox') -and (Title -like 'executive'))}
+  ```powershell
+  New-EmailAddressPolicy -Name 'Execs' -EnabledEmailAddressTemplates 'SMTP:%2g%s@contoso.com' -RecipientFilter {((RecipientType -eq 'UserMailbox') -and (Title -like 'executive'))}
+  ```
 
 構文およびパラメーターの詳細については、「[New-EmailAddressPolicy](https://technet.microsoft.com/ja-jp/library/aa996800\(v=exchg.150\))」を参照してください。
 

@@ -77,7 +77,9 @@ New-MobileDeviceMailboxPolicy コマンドレットを使用して、新しい�
 
 1.  シェルで、次のコマンドを実行します。
     
+    ```powershell
         New-MobileDeviceMailboxPolicy -Name:"Management" -AllowBluetooth:$true -AllowBrowser:$true -AllowCamera:$true -AllowPOPIMAPEmail:$false -PasswordEnabled:$true -AlphanumericPasswordRequired:$true -PasswordRecoveryEnabled:$true -MaxEmailAgeFilter:10 -AllowWiFi:$true -AllowStorageCard:$true -AllowPOPIMAPEmail:$false
+    ```
 
 ## 正常な動作を確認する方法
 
@@ -87,8 +89,10 @@ New-MobileDeviceMailboxPolicy コマンドレットを使用して、新しい�
 
 2.  シェルで、次のコマンドを実行します。
     
+    ```powershell
         Get-MobileDeviceMailboxPolicy -Identity <PolicyName> 
-
+    ```
+    
 ## 既存のモバイル メールボックス ポリシーを編集する
 
 EAC またはシェルを使用してモバイル デバイス メールボックス ポリシーを編集できます。
@@ -124,8 +128,10 @@ EAC を使用してモバイル デバイス メールボックス ポリシー�
 
 
 1.  シェルで、次のコマンドを実行します。
-    
+
+    ```powershell
         Set-MobileDeviceMailboxPolicy -Identity:Default -DevicePasswordEnabled:$true -AlphanumericDevicePasswordRequired:$true -PasswordRecoveryEnabled:$true -MaxEmailAgeFilter:ThreeDays -AllowWiFi:$false -AllowStorageCard:$true -AllowPOPIMAPEmail:$false -IsDefault:$true -AllowTextMessaging:$true -Confirm:$true
+    ```
 
 ## 正常な動作を確認する方法
 
@@ -136,6 +142,6 @@ EAC を使用してモバイル デバイス メールボックス ポリシー�
 2.  シェルで、次のコマンドを実行します。
     
     ```powershell
-Get-MobileDeviceMailboxPolicy -Identity <PolicyName>
-```
+        Get-MobileDeviceMailboxPolicy -Identity <PolicyName>
+    ```
 

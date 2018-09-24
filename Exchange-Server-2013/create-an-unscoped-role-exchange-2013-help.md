@@ -91,11 +91,15 @@ Windows PowerShell スクリプトを対象範囲外の最上位の役割に追�
 
 スクリプトを適切な Exchange 2013 サーバーにコピーし、どのスクリプト パラメーターを使用するか決定したら、次の構文を使用して役割エントリを作成します。
 
-    Add-ManagementRoleEntry <unscoped top-level role name>\<script filename> -Parameters <parameter 1, parameter 2, parameter...> -Type Script -UnscopedTopLevel
+```powershell
+Add-ManagementRoleEntry <unscoped top-level role name>\<script filename> -Parameters <parameter 1, parameter 2, parameter...> -Type Script -UnscopedTopLevel
+```
 
 この例では、BulkProvisionUsers.ps1 スクリプトを、*Name* および *Location* パラメーターを持つ IT Scripts 役割に追加します。
 
-    Add-ManagementRoleEntry "IT Scripts\BulkProvisionUsers.ps1" -Parameters Name, Location -Type Script -UnscopedTopLevel
+```powershell
+Add-ManagementRoleEntry "IT Scripts\BulkProvisionUsers.ps1" -Parameters Name, Location -Type Script -UnscopedTopLevel
+```
 
 
 > [!NOTE]
@@ -113,11 +117,15 @@ Exchange 以外のコマンドレットを新しい役割に追加する場合�
 
 Windows サーバー上でコマンドレットを含む Exchange 2013 PowerShell スナップインをインストールして、使用すべきコマンドレット パラメーターを決定した後で、次の構文で役割エントリを作成します。
 
-    Add-ManagementRoleEntry <unscoped top-level role name>\<cmdlet name> -PSSnapinName <snap-in name> -Parameters <parameter 1, parameter 2, parameter...> -Type Cmdlet -UnscopedTopLevel
+```powershell
+Add-ManagementRoleEntry <unscoped top-level role name>\<cmdlet name> -PSSnapinName <snap-in name> -Parameters <parameter 1, parameter 2, parameter...> -Type Cmdlet -UnscopedTopLevel
+```
 
 この例では、Contoso.Admin.Cmdlets スナップインの **Set-WidgetConfiguration** コマンドレットを、*Database* および *Size* パラメーターを持つ Widget Cmdlets 役割に追加します。
 
-    Add-ManagementRoleEntry "Widget Cmdlets\Set-WidgetConfiguration" -PSSnapinName Contoso.Admin.Cmdlets -Parameters Database, Size -Type Cmdlet -UnscopedTopLevel
+```powershell
+Add-ManagementRoleEntry "Widget Cmdlets\Set-WidgetConfiguration" -PSSnapinName Contoso.Admin.Cmdlets -Parameters Database, Size -Type Cmdlet -UnscopedTopLevel
+```
 
 
 > [!NOTE]
@@ -159,7 +167,9 @@ Windows サーバー上でコマンドレットを含む Exchange 2013 PowerShel
 
 新しい役割を作成するには、次の構文を使用します。
 
-    New-ManagementRole -Parent <existing unscoped role to copy> -Name <name of new unscoped role>
+```powershell
+New-ManagementRole -Parent <existing unscoped role to copy> -Name <name of new unscoped role>
+```
 
 この例では、"IT Global Scripts/IT グローバル スクリプト" 役割とその管理役割エントリを "Diagnostic IT Scripts/診断 IT スクリプト" 役割にコピーします。
 

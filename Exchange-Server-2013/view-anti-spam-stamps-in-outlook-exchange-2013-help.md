@@ -43,9 +43,11 @@ Microsoft Outlook を使用して、Microsoft Exchange によって電子メー�
 
 3.  次の例に示すように、<strong>プロパティ</strong> ダイアログ ボックスの <strong>インターネット ヘッダー</strong> セクションで、スクロール バーを使用してスパム対策スタンプを表示します。
     
+    ```powershell
         X-MS-Exchange-Organization-PCL:7
         X-MS-Exchange-Organization-SCL:6
         X-MS-Exchange-Organization-Antispam-Report: DV:3.1.3924.1409;SID:SenderIDStatus Fail;PCL:PhishingLevel SUSPICIOUS;CW:CustomList;PP:Presolved;TIME:TimeBasedFeatures
+    ```
 
 ## Outlook 2007 を使用してスパム対策スタンプを表示する
 
@@ -55,7 +57,9 @@ Microsoft Outlook を使用して、Microsoft Exchange によって電子メー�
 
 3.  次の例に示すように、<strong>メッセージ オプション</strong> ダイアログ ボックスの <strong>インターネット ヘッダー</strong> セクションで、スクロール バーを使用してスパム対策スタンプを表示します。
     
+    ```powershell
         X-MS-Exchange-Organization-PCL:7
         X-MS-Exchange-Organization-SCL:6
         X-MS-Exchange-Organization-Antispam-Report: DV:3.1.3924.1409;SID:SenderIDStatus Fail;PCL:PhishingLevel SUSPICIOUS;CW:CustomList;PP:Presolved;TIME:TimeBasedFeatures
+    ```
 

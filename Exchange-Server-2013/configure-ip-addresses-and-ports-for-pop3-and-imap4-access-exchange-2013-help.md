@@ -94,8 +94,8 @@ Set-PopSettings -UnencryptedOrTLSBindings IPaddress:Port
 1.  シェルで、次のコマンドを実行します。
     
     ```powershell
-Get-PopSettings | format-list
-```
+    Get-PopSettings | format-list
+    ```
 
 2.  *UnencryptedOrTLSBindings* および *SSLBindings* の設定が正しいことを確認します。
 
@@ -135,7 +135,9 @@ Set-ImapSettings -SSLBindings: IPaddress:Port
 
 この例では暗号化なしまたは TLS 暗号化と共に IMAP4 を使用して Exchange と通信するための IP アドレスとポートを設定します。
 
-    Set-ImapSettings -UnencryptedOrTLSBindings IPaddress:Port 
+```powershell
+Set-ImapSettings -UnencryptedOrTLSBindings IPaddress:Port 
+```
 
 設定を有効にするには、IMAP4 の IP アドレス/ポート設定を設定した後、IMAP4 サービスを再起動する必要があります。IMAP4 サービスを再起動する方法の詳細については、「[IMAP4 サービスの開始および停止](start-and-stop-the-imap4-services-exchange-2013-help.md)」を参照してください。
 
@@ -148,8 +150,8 @@ Set-ImapSettings -SSLBindings: IPaddress:Port
 1.  シェルで、次のコマンドを実行します。
     
     ```powershell
-Get-ImapSettings | format-list
-```
+    Get-ImapSettings | format-list
+    ```
 
 2.  *UnencryptedOrTLSBindings* および *SSLBindings* の設定が正しいことを確認します。
 

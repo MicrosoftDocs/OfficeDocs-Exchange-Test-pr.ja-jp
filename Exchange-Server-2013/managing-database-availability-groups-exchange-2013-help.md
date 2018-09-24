@@ -633,7 +633,9 @@ MapiDagNetwork に対してレプリケーションが無効になると、Micro
 
 既定では、DAG はその基になるクラスターによって使用するために検出および構成されるすべてのネットワークの探索を実行します。これには、1 つまたは複数の DAG メンバーに iSCSI ストレージを使用する結果として使用されているインターネット SCSI (iSCSI) ネットワークが含まれます。ベスト プラクティスとして、iSCSI ストレージが専用ネットワークおよびネットワーク アダプターを使用する必要があります。これらのネットワークは、DAG またはそのクラスターによって管理することも、DAG ネットワーク (MAPI またはレプリケーション) として使用することもできません。その代わりに、これらのネットワークでは DAG による使用を手動で無効化する必要があります。そのため、iSCSI ストレージ トラフィック専用にすることができます。iSCSI ネットワークの検出を無効化にして、DAG ネットワークとして使用できないようにするには、次の例のように [Set-DatabaseAvailabilityGroupNetwork](https://technet.microsoft.com/ja-jp/library/dd298008\(v=exchg.150\)) コマンドレットを使用して、現在検出されている iSCSI ネットワークを無視するように DAG を構成します。
 
+```powershell
     Set-DatabaseAvailabilityGroupNetwork -Identity DAG2\DAGNetwork02 -ReplicationEnabled:$false -IgnoreNetwork:$true
+```
 
 また、このコマンドは、ネットワークがクラスターに使用されないようにします。iSCSI ネットワークは引き続き DAG ネットワークとして表示されますが、上記のコマンドを実行した後は、MAPI またはレプリケーション トラフィックに使用されません。
 

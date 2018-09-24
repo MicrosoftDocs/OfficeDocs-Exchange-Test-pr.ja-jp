@@ -172,11 +172,15 @@ netsh interface ipv4 add route 10.0.1.0/24 <NetworkName> 10.0.2.254
 
 スクリプトで使用するコマンドを次に示します。
 
-    New-DatabaseAvailabilityGroup -Name DAG1 -WitnessServer CAS1 -WitnessDirectory C:\DAGWitness\DAG1.contoso.com -DatabaseAvailabilityGroupIPAddresses 192.168.1.8,192.168.2.8
+```powershell
+New-DatabaseAvailabilityGroup -Name DAG1 -WitnessServer CAS1 -WitnessDirectory C:\DAGWitness\DAG1.contoso.com -DatabaseAvailabilityGroupIPAddresses 192.168.1.8,192.168.2.8
+```
 
 上記のコマンドは DAG DAG1 を作成し、ミラーリング監視サーバーとして機能するように CAS1 を構成し、特定のミラーリング監視ディレクトリ (C:\\DAGWitness\\DAG1.contoso.com) を構成し、DAG 用の 2 つの IP アドレス (MAPI ネットワークの各サブネット用) に構成します。
 
-    Set-DatabaseAvailabilityGroup -Identity DAG1 -AlternateWitnessDirectory C:\DAGWitness\DAG1.contoso.com -AlternateWitnessServer CAS4
+```powershell
+Set-DatabaseAvailabilityGroup -Identity DAG1 -AlternateWitnessDirectory C:\DAGWitness\DAG1.contoso.com -AlternateWitnessServer CAS4
+```
 
 上記のコマンドは、CAS4 という代替ミラーリング監視サーバーと、CAS1 で構成されたのと同じパスを使用する CAS4 上の代替ミラーリング監視ディレクトリを使用するように、DAG1 を構成します。
 
@@ -186,10 +190,12 @@ netsh interface ipv4 add route 10.0.1.0/24 <NetworkName> 10.0.2.254
 
 
 
-    Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer MBX1
-    Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer MBX3
-    Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer MBX2
-    Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer MBX4
+```powershell
+Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer MBX1
+Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer MBX3
+Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer MBX2
+Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer MBX4
+```
 
 このコマンドは、各メールボックス サーバーを 1 回に付き 1 つずつ DAG に追加します。上記のコマンドはまた、各メールボックス サーバーに Windows フェールオーバー クラスタリング コンポーネントをインストールし (未インストールの場合)、フェールオーバー クラスターを作成し、新しく作成したクラスターに各メールボックス サーバーを参加させます。
 
@@ -217,39 +223,47 @@ DAG を作成して DAG にメールボックス サーバーを追加した後�
 
 MBX1 では、次のコマンドを実行します。
 
-    Add-MailboxDatabaseCopy -Identity DB1 -MailboxServer MBX2
-    Add-MailboxDatabaseCopy -Identity DB1 -MailboxServer MBX4
-    Add-MailboxDatabaseCopy -Identity DB1 -MailboxServer MBX3 -ReplayLagTime 3.00:00:00 -SeedingPostponed
-    Suspend-MailboxDatabaseCopy -Identity DB1\MBX3 -SuspendComment "Seed from MBX4" -Confirm:$False
-    Update-MailboxDatabaseCopy -Identity DB1\MBX3 -SourceServer MBX4
-    Suspend-MailboxDatabaseCopy -Identity DB1\MBX3 -ActivationOnly
+```powershell
+Add-MailboxDatabaseCopy -Identity DB1 -MailboxServer MBX2
+Add-MailboxDatabaseCopy -Identity DB1 -MailboxServer MBX4
+Add-MailboxDatabaseCopy -Identity DB1 -MailboxServer MBX3 -ReplayLagTime 3.00:00:00 -SeedingPostponed
+Suspend-MailboxDatabaseCopy -Identity DB1\MBX3 -SuspendComment "Seed from MBX4" -Confirm:$False
+Update-MailboxDatabaseCopy -Identity DB1\MBX3 -SourceServer MBX4
+Suspend-MailboxDatabaseCopy -Identity DB1\MBX3 -ActivationOnly
+```
 
 MBX2 では、次のコマンドを実行します。
 
-    Add-MailboxDatabaseCopy -Identity DB2 -MailboxServer MBX1
-    Add-MailboxDatabaseCopy -Identity DB2 -MailboxServer MBX3
-    Add-MailboxDatabaseCopy -Identity DB2 -MailboxServer MBX4 -ReplayLagTime 3.00:00:00 -SeedingPostponed
-    Suspend-MailboxDatabaseCopy -Identity DB2\MBX4 -SuspendComment "Seed from MBX3" -Confirm:$False
-    Update-MailboxDatabaseCopy -Identity DB2\MBX4 -SourceServer MBX3
-    Suspend-MailboxDatabaseCopy -Identity DB2\MBX4 -ActivationOnly
+```powershell
+Add-MailboxDatabaseCopy -Identity DB2 -MailboxServer MBX1
+Add-MailboxDatabaseCopy -Identity DB2 -MailboxServer MBX3
+Add-MailboxDatabaseCopy -Identity DB2 -MailboxServer MBX4 -ReplayLagTime 3.00:00:00 -SeedingPostponed
+Suspend-MailboxDatabaseCopy -Identity DB2\MBX4 -SuspendComment "Seed from MBX3" -Confirm:$False
+Update-MailboxDatabaseCopy -Identity DB2\MBX4 -SourceServer MBX3
+Suspend-MailboxDatabaseCopy -Identity DB2\MBX4 -ActivationOnly
+```
 
 MBX3 では、次のコマンドを実行します。
 
-    Add-MailboxDatabaseCopy -Identity DB3 -MailboxServer MBX4
-    Add-MailboxDatabaseCopy -Identity DB3 -MailboxServer MBX2
-    Add-MailboxDatabaseCopy -Identity DB3 -MailboxServer MBX1 -ReplayLagTime 3.00:00:00 -SeedingPostponed
-    Suspend-MailboxDatabaseCopy -Identity DB3\MBX1 -SuspendComment "Seed from MBX2" -Confirm:$False
-    Update-MailboxDatabaseCopy -Identity DB3\MBX1 -SourceServer MBX2
-    Suspend-MailboxDatabaseCopy -Identity DB3\MBX1 -ActivationOnly
+```powershell
+Add-MailboxDatabaseCopy -Identity DB3 -MailboxServer MBX4
+Add-MailboxDatabaseCopy -Identity DB3 -MailboxServer MBX2
+Add-MailboxDatabaseCopy -Identity DB3 -MailboxServer MBX1 -ReplayLagTime 3.00:00:00 -SeedingPostponed
+Suspend-MailboxDatabaseCopy -Identity DB3\MBX1 -SuspendComment "Seed from MBX2" -Confirm:$False
+Update-MailboxDatabaseCopy -Identity DB3\MBX1 -SourceServer MBX2
+Suspend-MailboxDatabaseCopy -Identity DB3\MBX1 -ActivationOnly
+```
 
 MBX4 では、次のコマンドを実行します。
 
-    Add-MailboxDatabaseCopy -Identity DB4 -MailboxServer MBX3
-    Add-MailboxDatabaseCopy -Identity DB4 -MailboxServer MBX1
-    Add-MailboxDatabaseCopy -Identity DB4 -MailboxServer MBX2 -ReplayLagTime 3.00:00:00 -SeedingPostponed
-    Suspend-MailboxDatabaseCopy -Identity DB4\MBX2 -SuspendComment "Seed from MBX1" -Confirm:$False
-    Update-MailboxDatabaseCopy -Identity DB4\MBX2 -SourceServer MBX1
-    Suspend-MailboxDatabaseCopy -Identity DB4\MBX2 -ActivationOnly
+```powershell
+Add-MailboxDatabaseCopy -Identity DB4 -MailboxServer MBX3
+Add-MailboxDatabaseCopy -Identity DB4 -MailboxServer MBX1
+Add-MailboxDatabaseCopy -Identity DB4 -MailboxServer MBX2 -ReplayLagTime 3.00:00:00 -SeedingPostponed
+Suspend-MailboxDatabaseCopy -Identity DB4\MBX2 -SuspendComment "Seed from MBX1" -Confirm:$False
+Update-MailboxDatabaseCopy -Identity DB4\MBX2 -SourceServer MBX1
+Suspend-MailboxDatabaseCopy -Identity DB4\MBX2 -ActivationOnly
+```
 
 **Add-MailboxDatabaseCopy** コマンドレットの上記の例では、*ActivationPreference* パラメーターは指定されていませんでした。タスクは、追加される各コピーと共にアクティベーション優先番号を自動的に増大させます。元データベースは、常に優先番号 1 を持ちます。**Add-MailboxDatabaseCopy** コマンドレットによって最初に追加されたコピーには、自動的に優先番号 2 が割り当てられます。コピーが削除されなければ、次に追加されるコピーには優先番号 3 が割り当てられるというように続きます。このため、上記の例では、アクティブ コピーと同じデータセンターのパッシブ コピーはアクティベーション優先番号 2 を、リモート データセンターの時間差なしパッシブ コピーはアクティベーション優先番号 3 を、リモート データセンターの時間差パッシブ コピーはアクティベーション優先番号 4 を持ちます。
 

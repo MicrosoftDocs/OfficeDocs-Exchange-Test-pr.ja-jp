@@ -65,11 +65,15 @@ Exchange 組織のトポロジによっては、送信コネクタの自動作�
 
   - 送信エッジ トランスポート サーバーの場合、メールボックス サーバー上で次のコマンドを実行します。
     
-        New-EdgeSubscription -FileData ([byte[]]$(Get-Content -Path "C:\EdgeServerSubscription.xml" -Encoding Byte -ReadCount 0)) -Site "Site-A" -CreateInboundSendConnector $false -CreateInternetSendConnector $true
+    ```powershell
+    New-EdgeSubscription -FileData ([byte[]]$(Get-Content -Path "C:\EdgeServerSubscription.xml" -Encoding Byte -ReadCount 0)) -Site "Site-A" -CreateInboundSendConnector $false -CreateInternetSendConnector $true
+    ```
 
   - 受信エッジ トランスポート サーバーの場合、メールボックス サーバー上で次のコマンドを実行します。
     
-        New-EdgeSubscription -FileData ([byte[]]$(Get-Content -Path "C:\EdgeServerSubscription.xml" -Encoding Byte -ReadCount 0)) -Site "Site-A" -CreateInboundSendConnector $true -CreateInternetSendConnector $false
+    ```powershell
+    New-EdgeSubscription -FileData ([byte[]]$(Get-Content -Path "C:\EdgeServerSubscription.xml" -Encoding Byte -ReadCount 0)) -Site "Site-A" -CreateInboundSendConnector $true -CreateInternetSendConnector $false
+    ```
 
 ## スマート ホストへの送信電子メールのルーティング
 
@@ -77,13 +81,17 @@ Exchange 組織がすべての送信電子メールをスマート ホスト経�
 
 インターネットへの送信コネクタの自動作成を抑制するには、メールボックス サーバー上で次のコマンドを実行します。
 
-    New-EdgeSubscription -FileData ([byte[]]$(Get-Content -Path "C:\EdgeServerSubscription.xml" -Encoding Byte -ReadCount 0)) -Site "Site-A" -CreateInternetSendConnector $false
+```powershell
+New-EdgeSubscription -FileData ([byte[]]$(Get-Content -Path "C:\EdgeServerSubscription.xml" -Encoding Byte -ReadCount 0)) -Site "Site-A" -CreateInternetSendConnector $false
+```
 
 エッジ サブスクリプション プロセスが完了した後で、インターネットへの送信コネクタを手動で作成します。Exchange 組織内部に送信コネクタを作成し、このコネクタの送信元サーバーとしてエッジ サブスクリプションを選択します。使用法の種類として `Custom` を選択し、1 つ以上のスマート ホストを構成します。この新しい送信コネクタは、EdgeSync が構成データを次回同期するときにエッジ トランスポート サーバー上の AD LDS インスタンスにレプリケートされます。メールボックス サーバー上で **Start-EdgeSynchronization** コマンドレットを実行することによって、EdgeSync の同期を強制的に直ちに開始することもできます。
 
 例: シェルを使用して、すべてのインターネット アドレス スペース宛てのメッセージをスマート ホスト経由でルーティングするように、購読済みのエッジ トランスポート サーバー用の送信コネクタを構成します。このタスクは、エッジ トランスポート サーバー上ではなく、Exchange 組織内部のメールボックス サーバー上で実行します。
 
-    New-SendConnector -Name "EdgeSync - Site-A to Internet" -Usage Custom -AddressSpaces SMTP:*;100 -DNSRoutingEnabled $false -SmartHosts 192.168.10.1 -SmartHostAuthMechanism None -SourceTransportServers EdgeSubscriptionName
+```powershell
+New-SendConnector -Name "EdgeSync - Site-A to Internet" -Usage Custom -AddressSpaces SMTP:*;100 -DNSRoutingEnabled $false -SmartHosts 192.168.10.1 -SmartHostAuthMechanism None -SourceTransportServers EdgeSubscriptionName
+```
 
 
 > [!IMPORTANT]

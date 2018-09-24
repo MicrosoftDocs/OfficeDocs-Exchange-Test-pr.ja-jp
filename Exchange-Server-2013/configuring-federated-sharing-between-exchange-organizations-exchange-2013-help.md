@@ -95,7 +95,9 @@ _**トピックの最終更新日:** 2016-12-09_
         
         Exhange 2007 組織内の Exchange 2010 クライアント アクセス サーバー上で可用性アドレス スペースを構成するには、Exchange 管理シェルで次のコマンドを実行します。
         
-            Add-AvailabilityAddressSpace -AccessMethod InternalProxy -ProxyUrl https://<Exchange 2010 CAS server name>/ews/exchange.asmx -ForestName <SMTP domain of the remote Exchange organization> -UseServiceAccount $True
+          ```powershell
+          Add-AvailabilityAddressSpace -AccessMethod InternalProxy -ProxyUrl https://<Exchange 2010 CAS server name>/ews/exchange.asmx -ForestName <SMTP domain of the remote Exchange organization> -UseServiceAccount $True
+          ```
         
         構文およびパラメーターの詳細については、「[Add-AvailabilityAddressSpace](https://go.microsoft.com/fwlink/p/?linkid=268413)」を参照してください。
 

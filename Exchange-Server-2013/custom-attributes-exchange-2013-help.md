@@ -79,7 +79,9 @@ Get-Mailbox -OrganizationalUnit Sales | Set-Mailbox CustomAttribute1 "SalesOU"
 
 この例で示すように、*CustomAttribute1* プロパティを SalesOU に設定したすべての受信者に対して電子メール アドレス ポリシーを作成できました。
 
+```powershell
     New-EmailAddressPolicy -Name "Sales" -RecipientFilter { CustomAttribute1 -eq "SalesOU"} -EnabledEmailAddressTemplates "SMTP:%s%2g@sales.contoso.com"
+```
 
 ## ConditionalCustomAttributes パラメーターを使用するカスタム属性の例
 
@@ -87,7 +89,9 @@ Get-Mailbox -OrganizationalUnit Sales | Set-Mailbox CustomAttribute1 "SalesOU"
 
 この例では、*CustomAttribute1* の設定値が SalesOU の受信者を基準に動的配布グループを作成します。
 
+```powershell
     New-DynamicDistributionGroup -Name "Sales Users and Contacts" -IncludedRecipients "MailboxUsers,MailContacts" -ConditionalCustomAttribute1 "SalesOU"
+```
 
 
 > [!NOTE]
@@ -105,7 +109,9 @@ Set-Mailbox -Identity Kweku -ExtensionCustomAttribute1 MATH307,ECON202,ENGL300
 
 次に、MATH307 に登録した全生徒の動的配布グループを *RecipientFilter* パラメーターで作成します。ここで、*ExtensionCustomAttribute1* は MATH307 です。 *ExtentionCustomAttributes* パラメーターを使用するとき、`-like` 演算子の代わりに `-eq` 演算子を使用できます。
 
+```powershell
     New-DynamicDistributionGroup -Name Students_MATH307 -RecipientFilter {ExtensionCustomAttribute1 -eq "MATH307"}
+```
 
 この例では、Kweku の *ExtensionCustomAttribute1* 値は更新されて、彼がクラス ENGL210 を追加し、クラス ECON202 を削除したことを反映します。
 

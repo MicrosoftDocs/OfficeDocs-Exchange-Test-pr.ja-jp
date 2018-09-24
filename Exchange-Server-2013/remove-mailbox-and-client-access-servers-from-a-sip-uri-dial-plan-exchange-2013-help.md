@@ -53,10 +53,12 @@ UM ダイヤル プランに関連するその他の管理タスクについて�
 
 この例では、`MyMailboxServer` という名前のメールボックス サーバーを `MySIPDialPlan` という名前の SIP URI ダイヤル プランから削除します。
 
+```powershell
     $dp= Get-UMDialPlan "MySIPDialPlan"
     $s=Get-UMService MyMailboxServer
     $s.dialplans-=$dp.identity
     Set-UMService -id MyMailboxServer -dialplans:$s.dialplans
+```
 
 この例では、SipDP1、SipDP2、および SipDP3 という 3 つの SIP URI ダイヤル プランがあります。この例は、SipDP3 ダイヤル プランから `MyMailboxServer` という名前のメールボックス サーバーを削除します。
 
@@ -90,10 +92,12 @@ Set-UMService -id MyUMServer -DialPlans $null
 
 この例では、`MyClientAccessServer` というクライアント アクセス サーバーを `MySIPDialPlan` という SIP URI ダイヤル プランから削除します。
 
+```powershell
     $dp= Get-UMDialPlan "MySIPDialPlan"
     $s=Get-UMCallRouterSettings MyClientAccessServer
     $s.dialplans-=$dp.identity
     Set-UMCallRouterSettings -id MyClientAccessServer -dialplans:$s.dialplans
+```
 
 この例では、SipDP1、SipDP2、および SipDP3 という 3 つの SIP URI ダイヤル プランがあります。この例は、SipDP3 ダイヤル プランから `MyClientAccessServer` という名前のクライアント アクセス サーバーを削除します。
 

@@ -59,7 +59,9 @@ Exchange 管理シェルで **Get-MessageTrackingLog** コマンドレットを�
 
 特定のイベントについてメッセージ追跡ログのエントリを検索するには、次の構文を使用します。
 
-    Get-MessageTrackingLog [-Server <ServerIdentity.] [-ResultSize <Integer> | Unlimited] [-Start <DateTime>] [-End <DateTime>] [-EventId <EventId>] [-InternalMessageId <InternalMessageId>] [-MessageId <MessageId>] [-MessageSubject <Subject>] [-Recipients <RecipientAddress1,RecipientAddress2...>] [-Reference <Reference>] [-Sender <SenderAddress>]
+```powershell
+Get-MessageTrackingLog [-Server <ServerIdentity.] [-ResultSize <Integer> | Unlimited] [-Start <DateTime>] [-End <DateTime>] [-EventId <EventId>] [-InternalMessageId <InternalMessageId>] [-MessageId <MessageId>] [-MessageSubject <Subject>] [-Recipients <RecipientAddress1,RecipientAddress2...>] [-Reference <Reference>] [-Sender <SenderAddress>]
+```
 
 サーバー上のメッセージ追跡ログから最新の 1,000 件のエントリを表示するには、次のコマンドを実行します。
 
@@ -69,13 +71,17 @@ Get-MessageTrackingLog
 
 この例では、ローカルサーバー上のメッセージ追跡ログで、2013 年 3 月 28 日午前 8 時から 2013 年 3 月 28 日午後 5 時の間に発生した **FAIL** イベントのうち、メッセージ送信者が pat@contoso.com であるエントリをすべて検索します。
 
-    Get-MessageTrackingLog -ResultSize Unlimited -Start "3/28/2013 8:00AM" -End "3/28/2013 5:00PM" -EventId "Fail" -Sender "pat@contoso.com"
+```powershell
+Get-MessageTrackingLog -ResultSize Unlimited -Start "3/28/2013 8:00AM" -End "3/28/2013 5:00PM" -EventId "Fail" -Sender "pat@contoso.com"
+```
 
 ## シェルを使用してメッセージ追跡ログの検索結果を制御する
 
 以下の構文を使用します。
 
-    Get-MessageTrackingLog <SearchFilters> | <Format-Table | Format-List> [<FieldNames>] [<OutputFileOptions>]
+```powershell
+Get-MessageTrackingLog <SearchFilters> | <Format-Table | Format-List> [<FieldNames>] [<OutputFileOptions>]
+```
 
 この例では、以下の検索条件でメッセージ追跡ログを検索します。
 
@@ -89,7 +95,9 @@ Get-MessageTrackingLog
 
 <!-- end list -->
 
-    Get-MessageTrackingLog -EventId Send | Format-List Send*,Recipient* > "D:\Send Search.txt"
+```powershell
+Get-MessageTrackingLog -EventId Send | Format-List Send*,Recipient* > "D:\Send Search.txt"
+```
 
 ## シェルを使用して複数のサーバー上のメッセージ追跡ログからメッセージ エントリを検索する
 
@@ -97,7 +105,9 @@ Get-MessageTrackingLog
 
 すべてのメールボックス サーバーで特定のメッセージに関するメッセージ追跡ログ エントリを検索するには、次の構文を使用します。
 
-    Get-ExchangeServer | where {$_.isHubTransportServer -eq $true -or $_.isMailboxServer -eq $true} | Get-MessageTrackingLog -MessageId <MessageID> | Select-Object <CommaSeparatedFieldNames> | Sort-Object -Property <FieldName>
+```powershell
+Get-ExchangeServer | where {$_.isHubTransportServer -eq $true -or $_.isMailboxServer -eq $true} | Get-MessageTrackingLog -MessageId <MessageID> | Select-Object <CommaSeparatedFieldNames> | Sort-Object -Property <FieldName>
+```
 
 この例では以下の検索条件で、すべての Exchange 2013 メールボックス サーバー上のメッセージ追跡ログを検索します。
 
@@ -109,7 +119,9 @@ Get-MessageTrackingLog
 
 <!-- end list -->
 
-    Get-ExchangeServer | where {$_.isHubTransportServer -eq $true -or $_.isMailboxServer -eq $true} | Get-MessageTrackingLog -MessageId ba18339e-8151-4ff3-aeea-87ccf5fc9796@mailbox01.contoso.com | Select-Object Timestamp,ServerHostname,ClientHostname,Source,EventId,Recipients | Sort-Object -Property Timestamp
+```powershell
+Get-ExchangeServer | where {$_.isHubTransportServer -eq $true -or $_.isMailboxServer -eq $true} | Get-MessageTrackingLog -MessageId ba18339e-8151-4ff3-aeea-87ccf5fc9796@mailbox01.contoso.com | Select-Object Timestamp,ServerHostname,ClientHostname,Source,EventId,Recipients | Sort-Object -Property Timestamp
+```
 
 ## EAC を使用してメッセージ追跡ログを検索する
 

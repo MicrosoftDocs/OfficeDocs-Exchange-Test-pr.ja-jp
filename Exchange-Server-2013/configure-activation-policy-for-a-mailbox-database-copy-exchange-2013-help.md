@@ -98,12 +98,12 @@ Set-MailboxServer -Identity MBX4 -DatabaseCopyAutoActivationPolicy Unrestricted
   - シェルで次のコマンドを実行して、データベース コピーのアクティブ化設定を確認します。
     
     ```powershell
-Get-MailboxDatabaseCopyStatus <DatabaseCopyName> | Format-List ActivationSuspended
-```
+    Get-MailboxDatabaseCopyStatus <DatabaseCopyName> | Format-List ActivationSuspended
+    ```
 
   - シェルで次のコマンドを実行して、DAG メンバーのアクティブ化設定を確認します。
     
     ```powershell
-Get-MailboxServer <ServerName> | Format-List DatabaseCopyAutoActivationPolicy
-```
+    Get-MailboxServer <ServerName> | Format-List DatabaseCopyAutoActivationPolicy
+    ```
 

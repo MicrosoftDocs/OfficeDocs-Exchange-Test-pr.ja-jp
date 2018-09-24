@@ -69,11 +69,15 @@ _**トピックの最終更新日:** 2012-10-03_
 
 次の構文を使用して、スコープを持たない USG に役割を割り当てます。
 
-    New-ManagementRoleAssignment -Name <assignment name> -SecurityGroup <USG> -Role <role name>
+```powershell
+New-ManagementRoleAssignment -Name <assignment name> -SecurityGroup <USG> -Role <role name>
+```
 
 この例では、"Exchange Servers/Exchange サーバー" という役割を SeattleAdmins という USG に割り当てます。
 
-    New-ManagementRoleAssignment -Name "Exchange Servers_SeattleAdmins" -SecurityGroup SeattleAdmins -Role "Exchange Servers"
+```powershell
+New-ManagementRoleAssignment -Name "Exchange Servers_SeattleAdmins" -SecurityGroup SeattleAdmins -Role "Exchange Servers"
+```
 
 構文およびパラメーターの詳細については、「[New-ManagementRoleAssignment](https://technet.microsoft.com/ja-jp/library/dd335193\(v=exchg.150\))」を参照してください。
 
@@ -83,11 +87,15 @@ _**トピックの最終更新日:** 2012-10-03_
 
 次の構文を使用して、定義済みスコープを持つ USG に役割を割り当てます。
 
-    New-ManagementRoleAssignment -Name <assignment name> -SecurityGroup < USG> -Role <role name> -RecipientRelativeWriteScope < MyDistributionGroups | Organization | Self >
+```powershell
+New-ManagementRoleAssignment -Name <assignment name> -SecurityGroup < USG> -Role <role name> -RecipientRelativeWriteScope < MyDistributionGroups | Organization | Self >
+```
 
 この例では、"Exchange Servers/Exchange サーバー" という役割を SeattleAdmins という USG に割り当て、Organization 定義済みスコープを適用します。
 
-    New-ManagementRoleAssignment -Name "Exchange Servers_SeattleAdmins" -SecurityGroup SeattleAdmins -Role "Exchange Servers" -RecipientRelativeWriteScope Organization
+```powershell
+New-ManagementRoleAssignment -Name "Exchange Servers_SeattleAdmins" -SecurityGroup SeattleAdmins -Role "Exchange Servers" -RecipientRelativeWriteScope Organization
+```
 
 構文およびパラメーターの詳細については、「[New-ManagementRoleAssignment](https://technet.microsoft.com/ja-jp/library/dd335193\(v=exchg.150\))」を参照してください。
 
@@ -99,11 +107,15 @@ _**トピックの最終更新日:** 2012-10-03_
 
 次の構文を使用して、受信者フィルター ベースのスコープを持つ USG に役割を割り当てます。
 
-    New-ManagementRoleAssignment -Name <assignment name> -SecurityGroup < USG> -Role <role name> -CustomRecipientWriteScope <role scope name>
+```powershell
+New-ManagementRoleAssignment -Name <assignment name> -SecurityGroup < USG> -Role <role name> -CustomRecipientWriteScope <role scope name>
+```
 
 この例では、"Seattle Recipient Admins/シアトルの受信者管理者" という USG に "Mail Recipients/メール受信者" の役割を割り当て、"Seattle Recipients/シアトルの受信者" というスコープを適用します。
 
-    New-ManagementRoleAssignment -Name "Mail Recipients_Seattle Recipient Admins" -SecurityGroup "Seattle Recipient Admins" -Role "Mail Recipients" -CustomRecipientWriteScope "Seattle Recipients"
+```powershell
+New-ManagementRoleAssignment -Name "Mail Recipients_Seattle Recipient Admins" -SecurityGroup "Seattle Recipient Admins" -Role "Mail Recipients" -CustomRecipientWriteScope "Seattle Recipients"
+```
 
 構文およびパラメーターの詳細については、「[New-ManagementRoleAssignment](https://technet.microsoft.com/ja-jp/library/dd335193\(v=exchg.150\))」を参照してください。
 
@@ -115,11 +127,15 @@ _**トピックの最終更新日:** 2012-10-03_
 
 次の構文を使用して、構成スコープを持つ USG に役割を割り当てます。
 
-    New-ManagementRoleAssignment -Name <assignment name> -SecurityGroup <USG> -Role <role name> -CustomConfigWriteScope <role scope name>
+```powershell
+New-ManagementRoleAssignment -Name <assignment name> -SecurityGroup <USG> -Role <role name> -CustomConfigWriteScope <role scope name>
+```
 
 この例では、"Exchange Servers/Exchange サーバー" という役割を MailboxAdmins という USG に割り当て、"Mailbox Servers/メールボックス サーバー"というスコープを適用します。
 
-    New-ManagementRoleAssignment -Name "Exchange Servers_MailboxAdmins" -SecurityGroup MailboxAdmins -Role "Exchange Servers" -CustomConfigWriteScope "Mailbox Servers"
+```powershell
+New-ManagementRoleAssignment -Name "Exchange Servers_MailboxAdmins" -SecurityGroup MailboxAdmins -Role "Exchange Servers" -CustomConfigWriteScope "Mailbox Servers"
+```
 
 前の例では、サーバー構成スコープとともに役割割り当てを追加する方法を示しています。 データベース構成スコープを追加するための構文は同じです。 サーバー スコープではなくデータベース スコープの名前を指定します。
 
@@ -131,11 +147,15 @@ _**トピックの最終更新日:** 2012-10-03_
 
 次の構文を使用して役割を USG に割り当て、役割の書き込みスコープを特定の OU に限定できます。
 
-    New-ManagementRoleAssignment -Name <assignment name> -SecurityGroup <USG> -Role <role name> -RecipientOrganizationalUnitScope <OU>
+```powershell
+New-ManagementRoleAssignment -Name <assignment name> -SecurityGroup <USG> -Role <role name> -RecipientOrganizationalUnitScope <OU>
+```
 
 この例では、"Mail Recipients/メール受信者" という役割を SalesRecipientAdmins という USG に割り当て、その割り当てを contoso.com ドメイン内の "sales/users" という OU にスコープします。
 
-    New-ManagementRoleAssignment -Name "Mail Recipients_SalesRecipientAdmins" -SecurityGroup SalesRecipientAdmins -Role "Mail Recipients" -RecipientOrganizationalUnitScope contoso.com/sales/users
+```powershell
+New-ManagementRoleAssignment -Name "Mail Recipients_SalesRecipientAdmins" -SecurityGroup SalesRecipientAdmins -Role "Mail Recipients" -RecipientOrganizationalUnitScope contoso.com/sales/users
+```
 
 構文およびパラメーターの詳細については、「[New-ManagementRoleAssignment](https://technet.microsoft.com/ja-jp/library/dd335193\(v=exchg.150\))」を参照してください。
 
@@ -153,7 +173,9 @@ _**トピックの最終更新日:** 2012-10-03_
 
 この例では、"Protected User Admins/保護されたユーザー管理者" という USG に "Mail Recipients/メール受信者" の役割を割り当て、"Protected Users/保護されたユーザー" という排他的スコープを適用します。
 
-    New-ManagementRoleAssignment -Name "Mail Recipients_Protected User Admins" -SecurityGroup "Protected User Admins" -Role "Mail Recipients" -ExclusiveRecipientWriteScope "Protected Users"
+```powershell
+New-ManagementRoleAssignment -Name "Mail Recipients_Protected User Admins" -SecurityGroup "Protected User Admins" -Role "Mail Recipients" -ExclusiveRecipientWriteScope "Protected Users"
+```
 
 構文およびパラメーターの詳細については、「[New-ManagementRoleAssignment](https://technet.microsoft.com/ja-jp/library/dd335193\(v=exchg.150\))」を参照してください。
 

@@ -75,5 +75,7 @@ Set-Mailbox -Identity "Chris Ashton" -ArchiveQuota 10GB -ArchiveWarningQuota 9.5
 
   - シェルで、次のコマンドを実行して、アーカイブに関するクォータ情報を表示します。
     
-        Get-Mailbox <Name> | FL Name,Archive*Quota
+      ```powershell
+      Get-Mailbox <Name> | FL Name,Archive*Quota
+      ```
 

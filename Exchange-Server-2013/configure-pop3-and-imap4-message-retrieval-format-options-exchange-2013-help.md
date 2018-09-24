@@ -131,8 +131,8 @@ POP3 のメッセージ取得形式を設定した後、POP3 サービスを再�
 1.  シェルで、次のコマンドを実行します。
     
     ```powershell
-Get-PopSettings | format-list
-```
+    Get-PopSettings | format-list
+    ```
 
 2.  *MessageRetrievalMimeFormat* 設定が正しいことを確認します。
 
@@ -230,8 +230,8 @@ IMAP4 のメッセージ取得形式を設定した後、IMAP4 サービスを�
 1.  シェルで、次のコマンドを実行します。
     
     ```powershell
-Get-ImapSettings | format-list
-```
+    Get-ImapSettings | format-list
+    ```
 
 2.  *MessageRetrievalMimeFormat* 設定が正しいことを確認します。
 
@@ -301,8 +301,8 @@ POP3 のメッセージ取得形式を設定した後、POP3 サービスを再�
 1.  シェルで、次のコマンドを実行します。
     
     ```powershell
-Get-CAS Mailbox <identity> | format-list
-```
+    Get-CAS Mailbox <identity> | format-list
+    ```
 
 2.  *PopMessagesRetrievalMimeFormat* の値が正しいことを確認します。
 
@@ -372,8 +372,8 @@ IMAP4 のメッセージ取得形式を設定した後、IMAP4 サービスを�
 1.  シェルで、次のコマンドを実行します。
     
     ```powershell
-Get-CAS Mailbox <identity> | format-list
-```
+    Get-CAS Mailbox <identity> | format-list
+    ```
 
 2.  *ImapMessagesRetrievalMimeFormat* の値が正しいことを確認します。
 

@@ -43,7 +43,9 @@ Outlook Anywhere に関連する追加の管理タスクについては、「[Ou
 
 次のコマンドを実行します。
 
-    Test-OutlookConnectivity -ProbeIdentity 'OutlookMailboxDeepTestProbe' -MailboxId tony@contoso.com -Hostname contoso.com
+  ```powershell
+  Test-OutlookConnectivity -ProbeIdentity 'OutlookMailboxDeepTestProbe' -MailboxId tony@contoso.com -Hostname contoso.com
+  ```
 
 
 > [!NOTE]

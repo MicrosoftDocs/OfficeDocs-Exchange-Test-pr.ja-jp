@@ -132,8 +132,10 @@ Exchange 2013 サーバーと、VoIP ゲートウェイ、IP PBX、および SIP
     
     シェルで次のコマンドを実行することによって、Exchange 自己署名証明書を作成します。
     
-        New-ExchangeCertificate -Services 'UM, UMCallRouter' -DomainName '*.northwindtraders.com' -FriendlyName 'UMSelfSigned' -SubjectName 'C=US,S=WA,L=Redmond,O=Northwindtraders,OU=Servers,CN= Northwindtraders.com' -PrivateKeyExportable $true
-    
+    ```powershell
+    New-ExchangeCertificate -Services 'UM, UMCallRouter' -DomainName '*.northwindtraders.com' -FriendlyName 'UMSelfSigned' -SubjectName 'C=US,S=WA,L=Redmond,O=Northwindtraders,OU=Servers,CN= Northwindtraders.com' -PrivateKeyExportable $true
+    ```
+
 
     > [!TIP]
     > <EM>Services</EM> パラメーターを使用して有効にするサービスを指定した場合は、作成した証明書に対してサービスを有効にするように要求されます。この例では、ユニファイド メッセージング サービスとユニファイド メッセージング呼び出しルーター サービスに対して証明書を有効にするように要求されます。サービスの証明書を有効にする方法については、「<A href="assign-a-certificate-to-the-um-and-um-call-router-services-exchange-2013-help.md">UM および UM 呼び出しルーター サービスへの証明書の割り当て</A>」を参照してください。
@@ -152,7 +154,9 @@ Exchange 2013 サーバーと、VoIP ゲートウェイ、IP PBX、および SIP
     
     シェルで次のコマンドを実行することによって、Exchange 自己署名証明書を有効にします。
     
-        Enable-ExchangeCertificate -Thumbprint 5113ae0233a72fccb75b1d0198628675333d010e -Services 'UM, UMCallRouter'
+    ```powershell
+    Enable-ExchangeCertificate -Thumbprint 5113ae0233a72fccb75b1d0198628675333d010e -Services 'UM, UMCallRouter'
+    ```
 
   - 新しいまたは既存の UM ダイヤル プランのすべてを、\[セキュリティで保護された SIP\] または \[セキュリティで保護\] として構成します。
 
@@ -216,7 +220,9 @@ Set-UMCallRouterSettings -Server MyUMCallRouter.northwindtraders.com -UMStartupM
 
 シェルで次のコマンドを実行することによって、Exchange 2013 メールボックス サーバー上の UM スタートアップ モードを構成します。
 
-    Set-UMService -Identity MyUMServer -ExternalHostFqdn host.external.contoso.com -IPAddressFamily Any -UMStartupMode Dual
+```powershell
+Set-UMService -Identity MyUMServer -ExternalHostFqdn host.external.contoso.com -IPAddressFamily Any -UMStartupMode Dual
+```
 
 ## 手順 6:UM ダイヤル プランを作成または既存の UM ダイヤル プランを構成する
 
@@ -264,7 +270,9 @@ New-UMDialplan -Name MyUMDialPlan -URIType E164 -NumberOfDigitsInExtension 5 -Vo
 
 必要に応じて、シェルで次のコマンドを実行することによって、既存の UM ダイヤル プランを構成できます。
 
-    Set-UMDialplan -Identity MyDialPlan -AccessTelephoneNumbers 4255551234 -AudioCodec Wma -CallAnsweringRulesEnabled $false -OutsideLineAccessCode 9 -VoIPSecurity SIPSecured
+```powershell
+Set-UMDialplan -Identity MyDialPlan -AccessTelephoneNumbers 4255551234 -AudioCodec Wma -CallAnsweringRulesEnabled $false -OutsideLineAccessCode 9 -VoIPSecurity SIPSecured
+```
 
 Exchange 2007 ユニファイド メッセージを展開した場合は、着信呼び出しに応答するためにユニファイド メッセージング サーバーを UM ダイヤル プランに追加する必要がありました。この作業を行う必要はなくなりました。Exchange 2013 では、クライアント アクセス サーバーとメールボックス サーバーを内線電話番号または E.164 ダイヤル プランにリンクすることはできませんが、SIP URI ダイヤル プランにリンクする必要があります。クライアント アクセス サーバーおよびメールボックス サーバーは、すべての種類のダイヤル プランにおけるすべての着信呼び出しに応答します。
 
@@ -308,7 +316,9 @@ New-UMIPGateway -Identity MyUMIPGateway -Address "MyUMIPGateway.contoso.com"
 
 必要に応じて、シェルで次のコマンドを実行することによって、既存の UM IP ゲートウェイを構成できます。
 
-    Set-UMIPGateway -Identity MyUMIPGateway -Address fe80::39bd:88f7:6969:d223%11 -IPAddressFamily Any -Status Disabled -OutcallsAllowed $false
+```powershell
+Set-UMIPGateway -Identity MyUMIPGateway -Address fe80::39bd:88f7:6969:d223%11 -IPAddressFamily Any -Status Disabled -OutcallsAllowed $false
+```
 
 ## 手順 8:UM ハント グループを作成する
 
@@ -334,7 +344,9 @@ New-UMIPGateway -Identity MyUMIPGateway -Address "MyUMIPGateway.contoso.com"
 
 必要に応じて、シェルで次のコマンドを実行することによって、UM ハント グループを作成できます。
 
-    New-UMHuntGroup -Name MyUMHuntGroup -PilotIdentifier 5551234,55555 -UMDialPlan MyUMDialPlan -UMIPGateway MyUMIPGateway
+```powershell
+New-UMHuntGroup -Name MyUMHuntGroup -PilotIdentifier 5551234,55555 -UMDialPlan MyUMDialPlan -UMIPGateway MyUMIPGateway
+```
 
 
 > [!TIP]
@@ -373,7 +385,9 @@ New-UMIPGateway -Identity MyUMIPGateway -Address "MyUMIPGateway.contoso.com"
 
 必要に応じて、シェルで次のコマンドを実行することによって、UM 自動応答を作成できます。
 
-    New-UMAutoAttendant -Name MyUMAutoAttendant -UMDialPlan MyUMDialPlan -PilotIdentifierList 56000,56100 -SpeechEnabled $true -Status Enabled
+```powershell
+New-UMAutoAttendant -Name MyUMAutoAttendant -UMDialPlan MyUMDialPlan -PilotIdentifierList 56000,56100 -SpeechEnabled $true -Status Enabled
+```
 
 必要に応じて、EAC を使用して既存の自動応答を構成できます。
 
@@ -383,7 +397,9 @@ New-UMIPGateway -Identity MyUMIPGateway -Address "MyUMIPGateway.contoso.com"
 
 必要に応じて、シェルで次のコマンドを実行することによって、既存の自動応答を構成できます。
 
-    Set-UMAutoAttendant -Identity MySpeechEnabledAA -DTMFFallbackAutoAttendant MyDTMFAA -OperatorExtension 50100 -AfterHoursTransferToOperatorEnabled $true -StaroutToDialPlanEnabled $true
+```powershell
+Set-UMAutoAttendant -Identity MySpeechEnabledAA -DTMFFallbackAutoAttendant MyDTMFAA -OperatorExtension 50100 -AfterHoursTransferToOperatorEnabled $true -StaroutToDialPlanEnabled $true
+```
 
 ## 手順 10:UM メールボックス ポリシーを作成または構成する
 
@@ -425,7 +441,9 @@ New-UMMailboxPolicy -Name MyUMMailboxPolicy -UMDialPlan MyUMDialPlan
 
 必要に応じて、シェルで次のコマンドを実行することによって、既存の UM メールボックス ポリシーを構成できます。
 
-    Set-UMMailboxPolicy -Identity MyUMMailboxPolicy -LogonFailuresBeforePINReset 8 -MaxLogonAttempts 12 -MinPINLength 8 -PINHistoryCount 10 -PINLifetime 60 -ResetPINText "The PIN used to allow you access to your mailbox using Outlook Voice Access has been reset."
+```powershell
+Set-UMMailboxPolicy -Identity MyUMMailboxPolicy -LogonFailuresBeforePINReset 8 -MaxLogonAttempts 12 -MinPINLength 8 -PINHistoryCount 10 -PINLifetime 60 -ResetPINText "The PIN used to allow you access to your mailbox using Outlook Voice Access has been reset."
+```
 
 ## 手順 11:既存の UM 対応メールボックスを Exchange 2013 に移動する
 
@@ -493,7 +511,9 @@ EAC を使用してユーザーをユニファイド メッセージングに対
 
 シェルでユニファイド メッセージングに対してユーザーを有効にし、次のコマンドを実行します。
 
-    Enable-UMMailbox -Identity tonysmith@contoso.com -UMMailboxPolicy MyUMMailboxPolicy -Extensions 51234 -PIN 5643892 -NotifyEmail administrator@contoso.com -PINExpired $true
+```powershell
+Enable-UMMailbox -Identity tonysmith@contoso.com -UMMailboxPolicy MyUMMailboxPolicy -Extensions 51234 -PIN 5643892 -NotifyEmail administrator@contoso.com -PINExpired $true
+```
 
 必要に応じて、EAC を使用して UM に対して有効にしたユーザーを構成できます。
 
@@ -523,7 +543,9 @@ EAC を使用してユーザーをユニファイド メッセージングに対
 
 必要に応じて、シェルで次のコマンドを実行することによって、UM に対して有効にしたユーザーを構成できます。
 
-    Set-UMMailbox -Identity tony@contoso.com -CallAnsweringAudioCodec Wma -CallAnsweringRulesEnabled $false -FaxEnabled $false -UMSMSNotificationOption VoiceMail
+```powershell
+Set-UMMailbox -Identity tony@contoso.com -CallAnsweringAudioCodec Wma -CallAnsweringRulesEnabled $false -FaxEnabled $false -UMSMSNotificationOption VoiceMail
+```
 
 ## 手順 13:すべての着信呼び出しを Exchange 2013 クライアント アクセス サーバーに送信するように VoIP ゲートウェイ、IP PBX、および SIP 対応 PBX を構成する
 
@@ -591,10 +613,12 @@ Exchange 管理コンソールを使用して、ダイヤル プランから Exc
 
 シェルを使用してダイヤル プランから Exchange 2007 UM サーバーを削除するには、次のコマンドを実行します。
 
-    $dp= Get-UMDialPlan "MySIPDialPlan"
-    $s=Get-UMServer -id MyUMServer
-    $s.dialplans-=$dp.identity
-    Set-UMServer -id MyUMServer -dialplans:$s.dialplans
+```powershell
+$dp= Get-UMDialPlan "MySIPDialPlan"
+$s=Get-UMServer -id MyUMServer
+$s.dialplans-=$dp.identity
+Set-UMServer -id MyUMServer -dialplans:$s.dialplans
+```
 
 この例では、SIP URI ダイヤル プランが 3 つあります:SipDP1、SipDP2、SipDP3 です。この例では、SipDP3 ダイヤル プランから `MyUMServer` という名前の UM サーバーを削除します。
 

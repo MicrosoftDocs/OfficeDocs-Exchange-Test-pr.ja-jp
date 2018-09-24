@@ -100,8 +100,8 @@ Move-ActiveMailboxDatabase DB5 MBX6 -SkipClientExperienceChecks
   - シェルで次のコマンドを実行して、データベース コピーの状態情報を表示します。
     
     ```powershell
-Get-MailboxDatabaseCopyStatus <DatabaseCopyName> | Format-List
-```
+    Get-MailboxDatabaseCopyStatus <DatabaseCopyName> | Format-List
+    ```
 
 ## 詳細情報
 

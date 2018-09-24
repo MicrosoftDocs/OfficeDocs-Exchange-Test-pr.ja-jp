@@ -64,8 +64,8 @@ DAG が正常に削除されたことを確認するには、次のいずれか�
   - シェルで、次のコマンドを実行して、DAG がまだ存在するかどうかを確認します。
     
     ```powershell
-Get-DatabaseAvailabilityGroup <DAGName>
-```
+    Get-DatabaseAvailabilityGroup <DAGName>
+    ```
     
     DAG が正常に削除された場合、前述コマンドにより、オブジェクトが見つからなかったことを示すエラー メッセージが表示されます。
 

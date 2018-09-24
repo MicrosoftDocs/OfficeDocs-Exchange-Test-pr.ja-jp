@@ -42,8 +42,8 @@ Exchange 2013 へのアップグレードの詳細については、以下のト
   - Exchange 2013 の次のコマンドを実行して、組織のシステム メールボックスを含む Exchange サーバーとメールボックス データベースの ID とバージョンを取得してください。
     
     ```powershell
-Get-Mailbox -Arbitration | FL Name,DisplayName,ServerName,Database,AdminDisplayVersion
-```
+    Get-Mailbox -Arbitration | FL Name,DisplayName,ServerName,Database,AdminDisplayVersion
+    ```
     
     **AdminDisplayVersion** プロパティは、サーバーが実行されている Exchange のバージョンを示します。`Version 14.x` の値は Exchange 2010 を示し、`Version 15.x` の値は Exchange 2013 を示します。
 
@@ -91,13 +91,17 @@ Get-MailboxDatabase -IncludePreExchange2013 | FL Name,Server,AdminDisplayVersion
 
 組織のメールボックス データベースの名前を特定したら、Exchange 2013 で次のコマンドを実行して Microsoft Exchange システム メールボックスを Exchange 2013 サーバーにあるメールボックス データベースに移動します。
 
+```powershell
     Get-Mailbox -Arbitration -Identity "SystemMailbox{e0dc1c29-89c3-4034-b678-e6c29d823ed9}" | New-MoveRequest -TargetDatabase <name of Exchange 2013 database>
+```
 
 ## 正常な動作を確認する方法
 
 Microsoft Exchange システム メールボックスを Exchange 2013 サーバー上のメールボックス データベースに正常に移行したことを確認するには、シェルで次のコマンドを実行します。
 
+```powershell
     Get-Mailbox -Arbitration -Identity "SystemMailbox{e0dc1c29-89c3-4034-b678-e6c29d823ed9}" | FL Database,ServerName,AdminDisplayVersion
+```
 
 **AdminDisplayVersion** プロパティの値が **Version 15.x (Build xxx.x)** の場合、システム メールボックスは Exchange 2013 サーバー上のメールボックス データベースに存在しています。
 

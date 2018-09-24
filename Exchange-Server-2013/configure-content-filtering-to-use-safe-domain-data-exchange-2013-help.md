@@ -46,20 +46,22 @@ _**トピックの最終更新日:** 2014-12-16_
 1.  コマンド プロンプト ウィンドウで、次のコマンドを実行して、MSExchangeMailboxAssistants.exe.config ファイルをメモ帳で開きます。
     
     ```powershell
-Notepad %ExchangeInstallPath%Bin\MSExchangeMailboxAssistants.exe.config
-```
+    Notepad %ExchangeInstallPath%Bin\MSExchangeMailboxAssistants.exe.config
+    ```
 
 2.  ファイルの終わりにある *\</appsettings\>* キーを探して、次のキーを *\</appsettings\>* キーの前に貼り付けます。
     
     ```command line
-<add key="IncludeSafeDomains" value="true" />
-```
+    <add key="IncludeSafeDomains" value="true" />
+    ```
 
 3.  完了したら、MSExchangeMailboxAssistants.exe.config ファイルを保存して閉じます。
 
 4.  次のコマンドを実行して、Microsoft Exchange Mailbox Assistants サービスを再起動します。
     
-        net stop MSExchangeMailboxAssistants && net start MSExchangeMailboxAssistants
+    ```powershell
+    net stop MSExchangeMailboxAssistants && net start MSExchangeMailboxAssistants
+    ```
 
 ## 正常な動作を確認する方法
 

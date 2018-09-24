@@ -69,7 +69,7 @@ Exchange Server 2013 から Office 365 への社内実装のためのサーバ�
     > [!WARNING]  
     > コードをコピーしてメモ帳などのテキスト エディターに貼り付け、拡張子 .ps1 として保存しておくと、シェル スクリプトの実行が非常に楽になります。
 
-    
+    ```powershell
         # Make sure to update the following $tenantDomain with your Office 365 tenant domain.
         
         $tenantDomain = "Fabrikam.com"
@@ -129,12 +129,15 @@ Exchange Server 2013 から Office 365 への社内実装のためのサーバ�
             Write-Host "AuthServer Config already exists."
         }
         Write-Host "Complete."
+    ```
     
     予期される結果は、以下の出力のようなものになるはずです。
-    
+
+    ```powershell
         Configured Certificate Thumbprint is: 7595DBDEA83DACB5757441D44899BCDB9911253C
         Exporting certificate...
         Complete.
+    ```
     
 
     > [!WARNING]  
@@ -144,73 +147,81 @@ Exchange Server 2013 から Office 365 への社内実装のためのサーバ�
 
   - **ステップ 2 – Exchange 2013 オンプレミスとの通信が可能になるよう Office 365 を構成する。** Exchange Server 2013 の通信相手となる Office 365 サーバーを構成し、パートナー アプリケーションとなるように構成します。たとえば、Exchange Server 2013 社内で Office 365 と通信することが必要になった場合は、社内 Exchange をパートナー アプリケーションとなるよう設定する必要があります。パートナー アプリケーションは、サード パーティ セキュリティ トークン サーバーを使用せずに、Exchange 2013 が直接セキュリティ トークンを交換できるアプリケーションです。社内 Exchange 2013 管理者は、Exchange Management の以下のシェル スクリプトを使用して、Exchange 2013 の通信相手である Office 365 テナントをパートナー アプリケーションとなるよう設定する必要があります。実行中に、Office 365 テナント ドメインの管理者ユーザー名 (administrator@fabrikam.com など) とパスワードを入力するよう求めるプロンプトが表示されます。証明書が前のスクリプトから作成されたのではない場合、*$CertFile* の値を更新し証明書の場所を設定します。そのためには、以下のコードをコピーおよび貼り付けてください。
     
-        # Make sure to update the following $CertFile with the path to the cert if not using the previous script.
-        
-        $CertFile = "$env:SYSTEMDRIVE\OAuthConfig\OAuthCert.cer"
-        
-        If (Test-Path $CertFile)
-        {
-            $ServiceName = "00000002-0000-0ff1-ce00-000000000000";
-        
-            $objFSO = New-Object -ComObject Scripting.FileSystemObject;
-            $CertFile = $objFSO.GetAbsolutePathName($CertFile);
-        
-            $cer = New-Object System.Security.Cryptography.X509Certificates.X509Certificate
-            $cer.Import($CertFile);
-            $binCert = $cer.GetRawCertData();
-            $credValue = [System.Convert]::ToBase64String($binCert);
-        
-            Write-Host "Please enter the administrator user name and password of the Office 365 tenant domain..."
-        
-            Connect-MsolService;
-            Import-Module msonlineextended;
-        
-            Write-Host "Adding a key to Service Principal..."
-        
-            $p = Get-MsolServicePrincipal -ServicePrincipalName $ServiceName
-            New-MsolServicePrincipalCredential -AppPrincipalId $p.AppPrincipalId -Type asymmetric -Usage Verify -Value $credValue -StartDate $cer.GetEffectiveDateString() -EndDate $cer.GetExpirationDateString()
-        }
-        Else
-        {
-            Write-Error "Cannot find certificate."
-        } 
+    ```powershell
+    # Make sure to update the following $CertFile with the path to the cert if not using the previous script.
+    
+    $CertFile = "$env:SYSTEMDRIVE\OAuthConfig\OAuthCert.cer"
+    
+    If (Test-Path $CertFile)
+    {
+        $ServiceName = "00000002-0000-0ff1-ce00-000000000000";
+    
+        $objFSO = New-Object -ComObject Scripting.FileSystemObject;
+        $CertFile = $objFSO.GetAbsolutePathName($CertFile);
+    
+        $cer = New-Object System.Security.Cryptography.X509Certificates.X509Certificate
+        $cer.Import($CertFile);
+        $binCert = $cer.GetRawCertData();
+        $credValue = [System.Convert]::ToBase64String($binCert);
+    
+        Write-Host "Please enter the administrator user name and password of the Office 365 tenant domain..."
+    
+        Connect-MsolService;
+        Import-Module msonlineextended;
+    
+        Write-Host "Adding a key to Service Principal..."
+    
+        $p = Get-MsolServicePrincipal -ServicePrincipalName $ServiceName
+        New-MsolServicePrincipalCredential -AppPrincipalId $p.AppPrincipalId -Type asymmetric -Usage Verify -Value $credValue -StartDate $cer.GetEffectiveDateString() -EndDate $cer.GetExpirationDateString()
+    }
+    Else
+    {
+        Write-Error "Cannot find certificate."
+    } 
+    ```
     
     予期される結果は、以下のようなものになります。
     
-        Please enter the administrator user name and password of the Office 365 tenant domain...
-        Adding a key to Service Principal...
-        Complete.
+    ```powershell
+    Please enter the administrator user name and password of the Office 365 tenant domain...
+    Adding a key to Service Principal...
+    Complete.
+    ```
 
 ## プッシュ通知のプロキシを有効にする
 
 前述の手順に従って OAuth 認証が正常に設定されたら、社内管理者は、以下のスクリプトを使用して、プッシュ通知のプロキシを有効にする必要があります。*$tenantDomain* の値を、実際のドメイン名に必ず更新してください。そのためには、以下のコードをコピーおよび貼り付けてください。
 
-    $tenantDomain = "Fabrikam.com"
-    Enable-PushNotificationProxy -Organization:$tenantDomain
+```powershell
+$tenantDomain = "Fabrikam.com"
+Enable-PushNotificationProxy -Organization:$tenantDomain
+```
 
 予期される結果は、以下の出力のようなものになるはずです。
 
-    RunspaceId        : 4f2eb5cc-b696-482f-92bb-5b254cd19d60
-    DisplayName       : On Premises Proxy app
-    Enabled           : True
-    Organization      : fabrikam.com
-    Uri               : https://outlook.office365.com/PushNotifications
-    Identity          : OnPrem-Proxy
-    IsValid           : True
-    ExchangeVersion   : 0.20 (15.0.0.0)
-    Name              : OnPrem-Proxy
-    DistinguishedName : CN=OnPrem-Proxy,CN=Push Notifications Settings,CN=First Organization,CN=Microsoft
-                        Exchange,CN=Services,CN=Configuration,DC=Domain,DC=extest,DC=microsoft,DC=com
-    Guid              : 8b567958-58a4-403c-a8f0-524d7f1e9279
-    ObjectCategory    : fabrikam.com/Configuration/Schema/ms-Exch-Push-Notifications-App
-    ObjectClass       : {top, msExchPushNotificationsApp}
-    WhenChanged       : 8/27/2013 7:23:47 PM
-    WhenCreated       : 8/14/2013 1:30:27 PM
-    WhenChangedUTC    : 8/28/2013 2:23:47 AM
-    WhenCreatedUTC    : 8/14/2013 8:30:27 PM
-    OrganizationId    :
-    OriginatingServer : server.fabrikam.com
-    ObjectState       : Unchanged
+```powershell
+RunspaceId        : 4f2eb5cc-b696-482f-92bb-5b254cd19d60
+DisplayName       : On Premises Proxy app
+Enabled           : True
+Organization      : fabrikam.com
+Uri               : https://outlook.office365.com/PushNotifications
+Identity          : OnPrem-Proxy
+IsValid           : True
+ExchangeVersion   : 0.20 (15.0.0.0)
+Name              : OnPrem-Proxy
+DistinguishedName : CN=OnPrem-Proxy,CN=Push Notifications Settings,CN=First Organization,CN=Microsoft
+                    Exchange,CN=Services,CN=Configuration,DC=Domain,DC=extest,DC=microsoft,DC=com
+Guid              : 8b567958-58a4-403c-a8f0-524d7f1e9279
+ObjectCategory    : fabrikam.com/Configuration/Schema/ms-Exch-Push-Notifications-App
+ObjectClass       : {top, msExchPushNotificationsApp}
+WhenChanged       : 8/27/2013 7:23:47 PM
+WhenCreated       : 8/14/2013 1:30:27 PM
+WhenChangedUTC    : 8/28/2013 2:23:47 AM
+WhenCreatedUTC    : 8/14/2013 8:30:27 PM
+OrganizationId    :
+OriginatingServer : server.fabrikam.com
+ObjectState       : Unchanged
+```
 
 ## プッシュ通知の動作検証
 
@@ -228,31 +239,35 @@ Exchange Server 2013 から Office 365 への社内実装のためのサーバ�
 
   - **モニターを有効にする。** プッシュ通知のテスト、あるいは通知が失敗する原因を調べる別の方法として、組織内のメールボックス サーバーに対するモニターを有効にするという方法があります。社内 Exchange 2013 サーバー管理者は、以下のスクリプトを使用して、プッシュ通知プロキシのモニターを起動する必要があります。そのためには、以下のコードをコピーおよび貼り付けてください。
     
-        # Send a push notification to verify connectivity.
-        
-        $s = Get-ExchangeServer | ?{$_.ServerRole -match "Mailbox"}
-        If ($s.Count -gt 1)
-        {
-            $s = $s[0]
-        }
-        If ($s.Count -ne 0)
-        {
-            # Restart the monitoring service to clear the cache from when push was previously disabled.
-            Restart-Service MSExchangeHM
-        
-            # Give the monitoring service enough time to load.
-            Start-Sleep -Seconds:120
-        
-            Invoke-MonitoringProbe PushNotifications.Proxy\PushNotificationsEnterpriseConnectivityProbe -Server:$s.Fqdn | fl ResultType, Error, Exception
-        }
-        Else
-        {
-            Write-Error "Cannot find a Mailbox server in the current site."
-        }
+    ```powershell
+    # Send a push notification to verify connectivity.
+    
+    $s = Get-ExchangeServer | ?{$_.ServerRole -match "Mailbox"}
+    If ($s.Count -gt 1)
+    {
+        $s = $s[0]
+    }
+    If ($s.Count -ne 0)
+    {
+        # Restart the monitoring service to clear the cache from when push was previously disabled.
+        Restart-Service MSExchangeHM
+    
+        # Give the monitoring service enough time to load.
+        Start-Sleep -Seconds:120
+    
+        Invoke-MonitoringProbe PushNotifications.Proxy\PushNotificationsEnterpriseConnectivityProbe -Server:$s.Fqdn | fl ResultType, Error, Exception
+    }
+    Else
+    {
+        Write-Error "Cannot find a Mailbox server in the current site."
+    }
+    ```
     
     予期される結果は、以下の出力のようなものになるはずです。
     
-        ResultType : Succeeded
-        Error      :
-        Exception  :
+    ```powershell
+    ResultType : Succeeded
+    Error      :
+    Exception  :
+    ```
 

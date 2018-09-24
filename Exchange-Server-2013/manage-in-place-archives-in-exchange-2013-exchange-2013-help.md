@@ -83,8 +83,10 @@ _**トピックの最終更新日:** 2016-02-01_
 
 この例では、Active Directory に Chris Ashton というユーザーを作成し、メールボックス データベース DB01 にメールボックスを作成して、アーカイブを有効にします。次回のログオン時に、パスワードを再設定する必要があります。パスワードの初期値を設定するために、この例では $password という変数を作成し、パスワードの入力を求めるメッセージを表示して、そのパスワードを SecureString オブジェクトとして変数に設定します。
 
-    $password = Read-Host "Enter password" -AsSecureString
-    New-Mailbox -UserPrincipalName chris@contoso.com -Alias chris -Archive -Database "DB01" -Name ChrisAshton -OrganizationalUnit Users -Password $password -FirstName Chris -LastName Ashton -DisplayName "Chris Ashton" 
+```powershell
+$password = Read-Host "Enter password" -AsSecureString
+New-Mailbox -UserPrincipalName chris@contoso.com -Alias chris -Archive -Database "DB01" -Name ChrisAshton -OrganizationalUnit Users -Password $password -FirstName Chris -LastName Ashton -DisplayName "Chris Ashton"
+```
 
 構文およびパラメーターの詳細については、「[New-Mailbox](https://technet.microsoft.com/ja-jp/library/aa997663\(v=exchg.150\))」を参照してください。
 
@@ -96,7 +98,9 @@ _**トピックの最終更新日:** 2016-02-01_
 
   - シェルで、次のコマンドを実行して、新しいユーザー メールボックスとアーカイブについての情報を表示します。
     
-        Get-Mailbox <Name> | FL Name,RecipientTypeDetails,PrimarySmtpAddress,*Archive*
+    ```powershell
+    Get-Mailbox <Name> | FL Name,RecipientTypeDetails,PrimarySmtpAddress,*Archive*
+    ```  
 
   - シェルで **Test-ArchiveConnectivity** コマンドレットを使用して、アーカイブへの接続をテストします。アーカイブ接続をテストする方法の例は、「[Test-ArchiveConnectivity](https://technet.microsoft.com/ja-jp/library/hh529914\(v=exchg.150\))」の「例」セクションを参照してください。
 
@@ -130,7 +134,9 @@ Enable-Mailbox "Tony Smith" -Archive
 
 この例では、社内またはクラウドベースのアーカイブが有効化されておらず、名前の先頭に DiscoverySearchMailbox が付いていないデータベース DB01 内のメールボックスを取得します。**Enable-Mailbox** コマンドレットに結果をパイプして、メールボックス データベース DB01 のすべてのメールボックスに対してアーカイブを有効にします。
 
-    Get-Mailbox -Database DB01 -Filter {ArchiveGuid -Eq $null -AND ArchiveDomain -eq $null -AND Name -NotLike "DiscoverySearchMailbox*"} | Enable-Mailbox -Archive
+```powershell
+Get-Mailbox -Database DB01 -Filter {ArchiveGuid -Eq $null -AND ArchiveDomain -eq $null -AND Name -NotLike "DiscoverySearchMailbox*"} | Enable-Mailbox -Archive
+```  
 
 構文およびパラメーターの詳細については、「[Enable-Mailbox](https://technet.microsoft.com/ja-jp/library/aa998251\(v=exchg.150\))」と「[Get-Mailbox](https://technet.microsoft.com/ja-jp/library/bb123685\(v=exchg.150\))」を参照してください。
 
@@ -142,7 +148,9 @@ Enable-Mailbox "Tony Smith" -Archive
 
   - シェルで、次のコマンドを実行して、新しいアーカイブについての情報を表示します。
     
-        Get-Mailbox <Name> | FL Name,*Archive*
+    ```powershell
+    Get-Mailbox <Name> | FL Name,*Archive*
+    ```  
 
   - シェルで **Test-ArchiveConnectivity** コマンドレットを使用して、アーカイブへの接続をテストします。アーカイブ接続をテストする方法の例は、「[Test-ArchiveConnectivity](https://technet.microsoft.com/ja-jp/library/hh529914\(v=exchg.150\))」の例を参照してください。
 
@@ -190,7 +198,9 @@ Disable-Mailbox -Identity "Chris Ashton" -Archive
 
   - シェルで、次のコマンドを実行して、メールボックス ユーザーのアーカイブ プロパティを確認します。
     
-        Get-Mailbox -Identity "Chris Ashton" | Format-List *Archive*
+    ```powershell
+    Get-Mailbox -Identity "Chris Ashton" | Format-List *Archive*
+    ```  
     
     アーカイブが無効になると、アーカイブ関連プロパティに次の値が返されます。
     
@@ -247,11 +257,15 @@ Disable-Mailbox -Identity "Chris Ashton" -Archive
 
 1.  アーカイブの名前がわからない場合は、次のコマンドを実行してシェルで名前を表示できます。この例では、メールボックス データベース DB01 を取得して **Get-MailboxStatistics** コマンドレットにパイプ処理し、データベース上のすべてのメールボックスのメールボックス統計を取得します。次に、**Where-Object** コマンドレットを使用して、結果をフィルター処理し、切断されたアーカイブの一覧を取得します。このコマンドを実行すると、GUID やアイテム数などの各アーカイブについての追加情報が表示されます。
     
-        Get-MailboxDatabase "DB01" | Get-MailboxStatistics | Where {($_.DisconnectDate -ne $null) -and ($_.IsArchiveMailbox -eq $true)} | Format-List
+    ```powershell
+    Get-MailboxDatabase "DB01" | Get-MailboxStatistics | Where {($_.DisconnectDate -ne $null) -and ($_.IsArchiveMailbox -eq $true)} | Format-List
+    ```  
 
 2.  アーカイブをプライマリ メールボックスに接続します。この例では、Chris Ashton のアーカイブを Chris Ashton のプライマリ メールボックスに接続して、アーカイブの ID として GUID を使用します。
     
-        Enable-Mailbox -ArchiveGuid "8734c04e-981e-4ccf-a547-1c1ac7ebf3e2" -ArchiveDatabase "DB01" -Identity "Chris Ashton"
+    ```powershell
+    Enable-Mailbox -ArchiveGuid "8734c04e-981e-4ccf-a547-1c1ac7ebf3e2" -ArchiveDatabase "DB01" -Identity "Chris Ashton"
+    ```  
 
 構文およびパラメーターの詳細については、以下のトピックを参照してください。
 
@@ -265,5 +279,7 @@ Disable-Mailbox -Identity "Chris Ashton" -Archive
 
 切断したアーカイブがメールボックス ユーザーに正常に接続されたことを確認するには、次のシェル コマンドを実行して、メールボックス ユーザーのアーカイブ プロパティを取得して、*ArchiveGuid* および *ArchiveDatabase* プロパティに返された値を確認します。
 
-    Get-Mailbox -Identity "Chris Ashton" | Format-List *Archive*
+```powershell
+Get-Mailbox -Identity "Chris Ashton" | Format-List *Archive*
+```
 

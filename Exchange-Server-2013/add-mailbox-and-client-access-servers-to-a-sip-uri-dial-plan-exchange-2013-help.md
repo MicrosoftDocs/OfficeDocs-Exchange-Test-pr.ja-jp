@@ -57,7 +57,9 @@ UM ダイヤル プランに関連するその他の管理タスクについて�
 
 この例では `MyMailboxServer` というメールボックス サーバーを `MySIPDialPlan` という SIP URI ダイヤル プランに追加し、新しい呼び出しを受け入れないようにします。また、スタートアップ モードをデュアル モードに設定し、メールボックス サーバーが TCP 要求と TLS 要求を受け付けられるようにします。
 
-    Set-UMService -Identity MyMailboxServer -DialPlans MySIPDialPlan -Status Disabled -UMStartupMode Dual
+```powershell
+Set-UMService -Identity MyMailboxServer -DialPlans MySIPDialPlan -Status Disabled -UMStartupMode Dual
+```
 
 この例では `MyMailboxServer` というメールボックス サーバーを `MySIPDialPlan` および `MySIPDialPlan2` という 2 つの SIP ダイヤル プランに追加して次の設定を行います。
 
@@ -69,7 +71,9 @@ UM ダイヤル プランに関連するその他の管理タスクについて�
 
 <!-- end list -->
 
-    Set-UMService -Identity MyMailboxServer -DialPlans MySIPDialPlan, MySIPDialPlan2 -IPAddressFamily Any -MaxCallsAllowed 50 -SipAccessService northamerica.lyncpoolna.contoso.com
+```powershell
+Set-UMService -Identity MyMailboxServer -DialPlans MySIPDialPlan, MySIPDialPlan2 -IPAddressFamily Any -MaxCallsAllowed 50 -SipAccessService northamerica.lyncpoolna.contoso.com
+```
 
 ## EAC を使用してクライアント アクセス サーバーを SIP URI ダイヤル プランに追加する
 
@@ -89,9 +93,11 @@ UM ダイヤル プランに関連するその他の管理タスクについて�
 
 ```powershell
 Set-UMCallRouterSettings -DialPlans MySIPDialPlan -Server MyClientAccessServer -UMStartupMode Dual
-```
+```  
 
 この例では、`MyClientAccessServer` というクライアント アクセス サーバーを `MySIPDialPlan` と `MySIPDialPlan2` という 2 つの SIP ダイヤル プランに追加して、サーバーが IPv4 と IPv6 の両方のアドレスを使用できるようにします。
 
-    Set-UMCallRouterSettings -DialPlans MySIPDialPlan, MySIPDialPlan2 -IPAddressFamily Any -Server MyClientAccessServer
+```powershell
+Set-UMCallRouterSettings -DialPlans MySIPDialPlan, MySIPDialPlan2 -IPAddressFamily Any -Server MyClientAccessServer
+```
 

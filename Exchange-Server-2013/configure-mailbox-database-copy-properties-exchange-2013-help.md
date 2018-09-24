@@ -79,7 +79,9 @@ Set-MailboxDatabaseCopy -Identity DB3\EX3 -ActivationPreference 3
 
 この例では、再生ラグ タイム、切り詰めラグ タイムが1日、アクティブ化優先順位番号が 2 の設定で Server1 上にホストされる、データベース DB1 のコピーを構成します。
 
+```powershell
     Set-MailboxDatabaseCopy -Identity DB1\Server1 -ReplayLagTime 1.0:0:0 -TruncationLagTime 1.0:0:0 -ActivationPreference 2
+```
 
 ## 正常な動作を確認する方法
 
@@ -90,8 +92,8 @@ Set-MailboxDatabaseCopy -Identity DB3\EX3 -ActivationPreference 3
   - シェルで次のコマンドを実行して、データベース コピーの構成情報を表示します。
     
     ```powershell
-Get-MailboxDatabaseCopyStatus <DatabaseCopyName> | Format-List
-```
+    Get-MailboxDatabaseCopyStatus <DatabaseCopyName> | Format-List
+    ```
 
 ## 詳細情報
 

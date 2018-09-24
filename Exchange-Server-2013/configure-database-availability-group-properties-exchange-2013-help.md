@@ -84,7 +84,9 @@ Set-DatabaseAvailabilityGroup -Identity DAG1 -WitnessDirectory C:\DAG1DIR
 
 この例では、DAG1 という DAG に対して、代替ミラーリング監視サーバーを CAS3 に、代替監視ディレクトリを C:\\DAGFileShareWitnesses\\DAG1.contoso.com に事前に構成します。
 
-    Set-DatabaseAvailabilityGroup -Identity DAG1 -AlternateWitnessDirectory C:\DAGFileShareWitnesses\DAG1.contoso.com -AlternateWitnessServer CAS3
+```powershell
+Set-DatabaseAvailabilityGroup -Identity DAG1 -AlternateWitnessDirectory C:\DAGFileShareWitnesses\DAG1.contoso.com -AlternateWitnessServer CAS3
+```
 
 この例では、動的ホスト構成プロトコル (DHCP) を使用して IP アドレスを取得するように、DAG1 という DAG を構成します。
 
@@ -129,8 +131,8 @@ DAG が正常に構成されたことを確認するには、次の手順を実�
   - シェルで次のコマンドを実行して、DAG の構成設定を表示し、DAG が正常に構成されたことを確認します。
     
     ```powershell
-Get-DatabaseAvailabilityGroup <DAGName> | Format-List
-```
+	Get-DatabaseAvailabilityGroup <DAGName> | Format-List
+	```
 
 ## 詳細情報
 

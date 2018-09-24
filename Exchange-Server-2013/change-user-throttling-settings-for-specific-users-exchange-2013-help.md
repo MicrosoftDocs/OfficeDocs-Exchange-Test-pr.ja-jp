@@ -54,10 +54,10 @@ Set-ThrottlingPolicyAssociation -Identity tonysmith -ThrottlingPolicy ITStaffPol
 ```
 
 ユーザーとポリシーの関連付けに **Set-ThrottlingPolicyAssociation** コマンドレットを使用する必要はありません。次のコマンドは、tonysmith を調整ポリシー ITStaffPolicy に関連付ける別の方法を表します。
-```
+```powershell
 $b = Get-ThrottlingPolicy ITStaffPolicy
 ```
-```
+```powershell
 Set-Mailbox -Identity tonysmith -ThrottlingPolicy $b
 ```
 
@@ -70,24 +70,24 @@ Set-Mailbox -Identity tonysmith -ThrottlingPolicy $b
 1.  次のコマンドを実行します。
     
     ```powershell
-Get-ThrottlingPolicy | Format-List
-```
+    Get-ThrottlingPolicy | Format-List
+    ```
 
 2.  作成したばかりの正規調整ポリシーが、GlobalThrottlingPolicy を示す列に表示されていることを確認します。
 
 3.  次のコマンドを実行します。
     
     ```powershell
-Get-ThrottlingPolicy | Format-List
-```
+    Get-ThrottlingPolicy | Format-List
+    ```
 
 4.  新しい正規ポリシーのプロパティが構成した値と一致していることを確認します。
 
 5.  次のコマンドを実行します。
     
     ```powershell
-Get-ThrottlingPolicyAssociation
-```
+    Get-ThrottlingPolicyAssociation
+    ```
 
 6.  新しい正規ポリシーが、関連付けを行った目的のユーザーに関連付けられていることを確認します。
 

@@ -55,7 +55,9 @@ _**トピックの最終更新日:** 2013-02-13_
 
 この例では、パブリック フォルダー \\Dev\\CustomerEnagagements が対象のパブリック フォルダー メールボックス Development01 に復元されます。
 
-    New-MailboxRestoreRequest -SourceStoreMailbox Development -SourceDatabase MBX_DB01 -TargetMailbox Development01 -AllowLegacyDNMismatch -IncludeFolders \Dev\CustomerEngagements
+  ```powershell
+  New-MailboxRestoreRequest -SourceStoreMailbox Development -SourceDatabase MBX_DB01 -TargetMailbox Development01 -AllowLegacyDNMismatch -IncludeFolders \Dev\CustomerEngagements
+  ```
 
 構文およびパラメーターの詳細については、「[New-MailboxRestoreRequest](https://technet.microsoft.com/ja-jp/library/ff829875\(v=exchg.150\))」を参照してください。
 
@@ -63,7 +65,9 @@ _**トピックの最終更新日:** 2013-02-13_
 
 この例では、パブリック フォルダー メールボックス PF\_Singapore が新しいパブリック フォルダー メールボックス PF\_Singapore\_Restore に復元されます。
 
-    New-MailboxRestoreRequest -SourceStoreMailbox PF_Singapore -SourceDatabase MBX_DB01 -TargetMailbox PF_Singapore_Restore -AllowLegacyDNMismatch
+  ```powershell
+  New-MailboxRestoreRequest -SourceStoreMailbox PF_Singapore -SourceDatabase MBX_DB01 -TargetMailbox PF_Singapore_Restore -AllowLegacyDNMismatch
+  ```
 
 構文およびパラメーターの詳細については、「[New-MailboxRestoreRequest](https://technet.microsoft.com/ja-jp/library/ff829875\(v=exchg.150\))」を参照してください。
 

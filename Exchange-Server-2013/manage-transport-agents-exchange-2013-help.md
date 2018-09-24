@@ -54,16 +54,16 @@ Exchange 管理シェルを使用して、クライアント アクセス サー
 1.  クライアント アクセス サーバーで、Windows PowerShell を開いて次のコマンドを実行します。
     
     ```powershell
-Add-PSSnapin Microsoft.Exchange.Management.PowerShell.SnapIn
-```
+    Add-PSSnapin Microsoft.Exchange.Management.PowerShell.SnapIn
+    ```
 
 2.  コマンドは記述どおりに実行してください。ただし、次の値を追加してください。`-TransportService FrontEnd`.
     
     たとえば、クライアント アクセス サーバー上のフロントエンド トランスポート サービスのトランスポート エージェントを表示するには、次のコマンドを実行します。
     
     ```powershell
-Get-TransportAgent -TransportService FrontEnd
-```
+    Get-TransportAgent -TransportService FrontEnd
+    ```
 
 ## シェルを使用してトランスポート エージェントをインストールする
 
@@ -75,11 +75,15 @@ Get-TransportAgent -TransportService FrontEnd
 
 次の構文を使用してトランスポート エージェントをインストールします。
 
-    Install-TransportAgent -Name <TransportAgentIdentity> -TransportAgentFactory <"TransportAgentFactory"> -AssemblyPath <"FilePath">
+```powershell
+Install-TransportAgent -Name <TransportAgentIdentity> -TransportAgentFactory <"TransportAgentFactory"> -AssemblyPath <"FilePath">
+```
 
 この例では、メールボックス サーバーのトランスポート サービスで Contoso Transport Agent という架空のトランスポート エージェントがインストールされます。
 
-    Install-TransportAgent -Name "Contoso Transport Agent" -TransportAgentFactory "vendor.exchange.ContosoTransportAgentfactory" -AssemblyPath "C:\Program Files\Vendor\TransportAgent\ContosoTransportAgentFactory.dll"
+```powershell
+Install-TransportAgent -Name "Contoso Transport Agent" -TransportAgentFactory "vendor.exchange.ContosoTransportAgentfactory" -AssemblyPath "C:\Program Files\Vendor\TransportAgent\ContosoTransportAgentFactory.dll"
+```
 
 ## 正常な動作を確認する方法
 

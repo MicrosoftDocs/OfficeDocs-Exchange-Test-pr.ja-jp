@@ -79,7 +79,9 @@ Set-TransportService Mailbox01 -UseDowngradedExchangeServerAuth $true
 
 メールボックス サーバー上で受信コネクタを作成するには、次のコマンドを実行します。
 
-    New-ReceiveConnector -Name <Name> -Server <ServerIdentity> -RemoteIPRanges <IPAddressRange> -Internal
+  ```powershell
+  New-ReceiveConnector -Name <Name> -Server <ServerIdentity> -RemoteIPRanges <IPAddressRange> -Internal
+  ```
 
 この例では、次の設定を使用して、WAN という受信コネクタを Mailbox01 というサーバー上に作成します。
 

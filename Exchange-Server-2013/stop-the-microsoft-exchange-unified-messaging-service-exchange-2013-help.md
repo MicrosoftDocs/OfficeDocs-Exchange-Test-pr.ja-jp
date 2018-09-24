@@ -56,6 +56,6 @@ Microsoft 管理コンソール (MMC) でサービス スナップインを、�
 2.  <strong>名前</strong> ボックスに次のコマンドを入力し、Enter キーを押します。
     
     ```powershell
-net stop MSExchangeUM
-```
+    net stop MSExchangeUM
+    ```
 

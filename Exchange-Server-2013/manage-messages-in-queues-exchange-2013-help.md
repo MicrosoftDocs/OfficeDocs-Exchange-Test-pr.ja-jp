@@ -61,7 +61,9 @@ Microsoft Exchange Server 2013 では、Exchange ツールボックスのキュ�
 
 キューからメッセージを削除するには、次の構文を使用します。
 
-    Remove-Message <-Identity MessageIdentity | -Filter {MessageFilter}> -WithNDR <$true | $false>
+```powershell
+Remove-Message <-Identity MessageIdentity | -Filter {MessageFilter}> -WithNDR <$true | $false>
+```
 
 この例では、"Win Big" という件名を持つメッセージを、NDR を送信せずにキューから削除します。
 
@@ -117,7 +119,9 @@ Resume-Message <-Identity MessageIdentity | -Filter {MessageFilter}>
 
 この例では、Contoso.com ドメインの送信者から送信されるすべてのメッセージを再開します。
 
-    Resume-Message -Filter {FromAddress -eq "*contoso.com"}
+```powershell
+Resume-Message -Filter {FromAddress -eq "*contoso.com"}
+```
 
 この例では、サーバー Hub01 上の到達不能キュー内にあるメッセージ ID 3 のメッセージを再開します。
 
@@ -163,7 +167,9 @@ Suspend-Message <-Identity MessageIdentity | -Filter {MessageFilter}>
 
 この例では、ドメイン contoso.com 内の任意の送信者から送信されたキュー内のすべてのメッセージを中断します。
 
-    Suspend-Message -Filter {FromAddress -eq "*contoso.com"}
+```powershell
+Suspend-Message -Filter {FromAddress -eq "*contoso.com"}
+```
 
 この例では、Mailbox01 というサーバー上の到達不能キュー内のメッセージ ID 3 のメッセージを中断します。
 

@@ -43,7 +43,7 @@ Exchange のコストを設定する Active Directory IP サイト リンクの�
 
 Active Directory サイト リンクに Exchange 固有のコストを設定するには、次のコマンドを実行します。
 
-``` 
+```powershell 
  Set-AdSiteLink <ADSiteLinkIdentity> -ExchangeCost <Integer | $null>
 ```
 
@@ -66,8 +66,8 @@ Active Directory サイト リンクに Exchange コストが正常に設定さ�
 1.  次のコマンドを実行します。
     
     ```powershell
-Get-AdSiteLink | Format-List Name,ExchangeCost
-```
+    Get-AdSiteLink | Format-List Name,ExchangeCost
+    ```
 
 2.  Active Directory サイト リンクに Exchange コストが構成されていることを確認します。
 
@@ -100,8 +100,8 @@ Active Directory サイトがハブ サイトとして正常に構成された�
 1.  次のコマンドを実行します。
     
     ```powershell
-Get-AdSite | Format-List Name,HubSiteEnabled
-```
+    Get-AdSite | Format-List Name,HubSiteEnabled
+    ```
 
 2.  Active Directory サイトの *HubSiteEnabled* の値が `True` であることを確認します。
 

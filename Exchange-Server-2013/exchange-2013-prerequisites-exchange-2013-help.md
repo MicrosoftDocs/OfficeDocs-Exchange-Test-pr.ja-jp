@@ -86,14 +86,14 @@ Active Directory の準備に使用するコンピューターに、次のソフ
       - Windows Server 2012 R2 または Windows Server 2012 コンピューター上で、以下のコマンドを実行します。
         
         ```powershell
-Install-WindowsFeature RSAT-ADDS
-```
+        Install-WindowsFeature RSAT-ADDS
+        ```
     
       - Windows Server 2008 R2 SP1 コンピューター上で、以下のコマンドを実行します。
         
         ```powershell
-Add-WindowsFeature RSAT-ADDS
-```
+        Add-WindowsFeature RSAT-ADDS
+        ```
 
 ## Windows Server 2012 R2 と Windows Server 2012 の前提条件
 
@@ -115,8 +115,10 @@ Exchange 2013 を Windows Server 2012 R2 または Windows Server 2012 コンピ
 
 2.  次のコマンドを実行して、必要な Windows コンポーネントをインストールします。
     
+    ```powershell
         Install-WindowsFeature AS-HTTP-Activation, Desktop-Experience, NET-Framework-45-Features, RPC-over-HTTP-proxy, RSAT-Clustering, RSAT-Clustering-CmdInterface, RSAT-Clustering-Mgmt, RSAT-Clustering-PowerShell, Web-Mgmt-Console, WAS-Process-Model, Web-Asp-Net45, Web-Basic-Auth, Web-Client-Auth, Web-Digest-Auth, Web-Dir-Browsing, Web-Dyn-Compression, Web-Http-Errors, Web-Http-Logging, Web-Http-Redirect, Web-Http-Tracing, Web-ISAPI-Ext, Web-ISAPI-Filter, Web-Lgcy-Mgmt-Console, Web-Metabase, Web-Mgmt-Console, Web-Mgmt-Service, Web-Net-Ext45, Web-Request-Monitor, Web-Server, Web-Stat-Compression, Web-Static-Content, Web-Windows-Auth, Web-WMI, Windows-Identity-Foundation, RSAT-ADDS
-
+    ```
+    
 オペレーティング システムの役割と機能をインストールした後で、次のソフトウェアを表示されている順序でインストールします。
 
 1.  [.NET Framework 4.6.2](https://go.microsoft.com/fwlink/p/?linkid=808659)
@@ -142,8 +144,8 @@ Exchange 2013 を Windows Server 2012 R2 または Windows Server 2012 コンピ
 2.  次のコマンドを実行して、必要な Windows コンポーネントをインストールします。
     
     ```powershell
-Install-WindowsFeature ADLDS
-```
+    Install-WindowsFeature ADLDS
+    ```
 
 インストール中の Exchange 2013 のバージョンに対応する Microsoft .NET Framework のバージョンをインストールします。
 
@@ -178,13 +180,15 @@ Exchange 2013 を Windows Server 2008 R2 SP1 コンピューター上にイン�
 2.  次のコマンドを実行して、サーバー マネージャー モジュールをロードします。
     
     ```powershell
-Import-Module ServerManager
-```
+    Import-Module ServerManager
+    ```
 
 3.  次のコマンドを実行して、必要な Windows コンポーネントをインストールします。
     
+    ```powershell
         Add-WindowsFeature Desktop-Experience, NET-Framework, NET-HTTP-Activation, RPC-over-HTTP-proxy, RSAT-Clustering, RSAT-Web-Server, WAS-Process-Model, Web-Asp-Net, Web-Basic-Auth, Web-Client-Auth, Web-Digest-Auth, Web-Dir-Browsing, Web-Dyn-Compression, Web-Http-Errors, Web-Http-Logging, Web-Http-Redirect, Web-Http-Tracing, Web-ISAPI-Ext, Web-ISAPI-Filter, Web-Lgcy-Mgmt-Console, Web-Metabase, Web-Mgmt-Console, Web-Mgmt-Service, Web-Net-Ext, Web-Request-Monitor, Web-Server, Web-Stat-Compression, Web-Static-Content, Web-Windows-Auth, Web-WMI, RSAT-ADDS
-
+    ```
+    
 オペレーティング システムの役割と機能をインストールした後で、次のソフトウェアを表示されている順序でインストールします。
 
 1.  [.NET Framework 4.6.2](https://go.microsoft.com/fwlink/p/?linkid=808659)
@@ -222,14 +226,14 @@ Import-Module ServerManager
 2.  次のコマンドを実行して、サーバー マネージャー モジュールをロードします。
     
     ```powershell
-Import-Module ServerManager
-```
+    Import-Module ServerManager
+    ```
 
 3.  次のコマンドを実行して、必要な Windows コンポーネントをインストールします。
     
     ```powershell
-Add-WindowsFeature NET-Framework, ADLDS
-```
+    Add-WindowsFeature NET-Framework, ADLDS
+    ```
 
 オペレーティング システムの役割と機能をインストールした後で、次のソフトウェアを表示されている順序でインストールします。
 

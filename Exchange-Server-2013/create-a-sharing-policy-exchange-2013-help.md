@@ -110,28 +110,34 @@ _**トピックの最終更新日:** 2015-04-07_
   - この例では、外部フェデレーション ドメイン contoso.com に対して、共有ポリシー Contoso を作成します。このポリシーを使用すると、contoso.com ドメイン内のユーザーは、ユーザーの詳細な予定表の空き時間情報を確認できます。既定では、この設定は有効になっています。
     
     ```powershell
-New-SharingPolicy -Name "Contoso" -Domains contoso.com: CalendarSharingFreeBusyDetail
-```
+    New-SharingPolicy -Name "Contoso" -Domains contoso.com: CalendarSharingFreeBusyDetail
+    ```
 
   - この例では、2 つの異なるフェデレーション ドメイン (contoso.com および woodgrovebank.com) に対して、ドメインごとに異なる共有アクションを構成した共有ポリシー ContosoWoodgrove を作成します。このポリシーは無効になっています。
     
-        New-SharingPolicy -Name "ContosoWoodgrove" -Domains 'contoso.com: CalendarSharingFreeBusySimple', 'woodgrovebank.com: CalendarSharingFreeBusyDetail -Enabled $false
+      ```powershell
+      New-SharingPolicy -Name "ContosoWoodgrove" -Domains 'contoso.com: CalendarSharingFreeBusySimple', 'woodgrovebank.com: CalendarSharingFreeBusyDetail -Enabled $false
+      ```
 
   - この例では、クライアント アクセス サーバー CAS01 およびメールボックス サーバー MAIL01 を持つ Exchange 組織に対して、限定的な予定表の空き時間情報を提供する共有アクションを構成した共有ポリシー Anonymous を作成します。このポリシーでは、Exchange 組織内のユーザーはリンクを送信して、インターネットへのアクセスが可能なユーザーが予定表の空き時間情報を表示できるよう招待できます。このポリシーは有効になっています。
     
     1.  MAIL01 の Web プロキシ URL を設定します。
         
         ```powershell
-Set-ExchangeServer -Identity "Mail01" -InternetWebProxy "<Webproxy URL>"
-```
-    
+        Set-ExchangeServer -Identity "Mail01" -InternetWebProxy "<Webproxy URL>"
+        ```
+            
     2.  CAS01 で仮想ディレクトリの発行を有効にします。
         
-            Set-OwaVirtualDirectory -Identity "CAS01" -ExternalURL "<URL for CAS01>" -CalendarPublishingEnabled $true
+          ```powershell
+          Set-OwaVirtualDirectory -Identity "CAS01" -ExternalURL "<URL for CAS01>" -CalendarPublishingEnabled $true
+          ```
     
     3.  共有ポリシー Anonymous を作成し、限定的な予定表情報の共有を構成します。
-        
-            New-SharingPolicy -Name "Anonymous" -Domains 'Anonymous: CalendarSharingFreeBusySimple' -Enabled $true
+      
+          ```powershell
+          New-SharingPolicy -Name "Anonymous" -Domains 'Anonymous: CalendarSharingFreeBusySimple' -Enabled $true
+          ```
 
 構文およびパラメーターの詳細については、以下のトピックを参照してください。
 

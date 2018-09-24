@@ -29,7 +29,9 @@ _**トピックの最終更新日:** 2016-12-09_
 
 スパム対策レポートは、メール メッセージに適用されたスパム対策フィルターの結果の要約レポートです。コンテンツ フィルター エージェントは、次のような X-header の形式で、メッセージ エンベロープにこのスタンプを適用します。
 
-    X-MS-Exchange-Organization-Antispam-Report: DV:<DATVersion>;CW:CustomList;PCL:PhishingVerdict <verdict>;P100:PhishingBlock;PP:Presolve;SID:SenderIDStatus <status>;TIME:<SendReceiveDelta>;MIME:MimeCompliance 
+```powershell
+X-MS-Exchange-Organization-Antispam-Report: DV:<DATVersion>;CW:CustomList;PCL:PhishingVerdict <verdict>;P100:PhishingBlock;PP:Presolve;SID:SenderIDStatus <status>;TIME:<SendReceiveDelta>;MIME:MimeCompliance 
+```
 
 次の表は、スパム対策レポートに記載されることがあるフィルター情報を示します。
 

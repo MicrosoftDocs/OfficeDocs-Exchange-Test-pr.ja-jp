@@ -337,26 +337,30 @@ SSL 証明書を構成する方法など、Exchange Server 2013 メール フロ
 2.  クライアント アクセス サーバーのホスト名を、次の手順で使用する変数に保存します。たとえば、Ex2013CAS です。
     
     ```powershell
-$HostName = "Ex2013CAS"
-```
+    $HostName = "Ex2013CAS"
+    ```
 
 3.  シェルで次の各コマンドを実行して、仮想ディレクトリの外部 URL と一致するように各内部 URL を構成します。
     
-        Set-EcpVirtualDirectory "$HostName\ECP (Default Web Site)" -InternalUrl ((Get-EcpVirtualDirectory "$HostName\ECP (Default Web Site)").ExternalUrl)
-        
-        Set-WebServicesVirtualDirectory "$HostName\EWS (Default Web Site)" -InternalUrl ((get-WebServicesVirtualDirectory "$HostName\EWS (Default Web Site)").ExternalUrl)
-        
-        Set-ActiveSyncVirtualDirectory "$HostName\Microsoft-Server-ActiveSync (Default Web Site)" -InternalUrl ((Get-ActiveSyncVirtualDirectory "$HostName\Microsoft-Server-ActiveSync (Default Web Site)").ExternalUrl)
-        
-        Set-OabVirtualDirectory "$HostName\OAB (Default Web Site)" -InternalUrl ((Get-OabVirtualDirectory "$HostName\OAB (Default Web Site)").ExternalUrl)
-        
-        Set-OwaVirtualDirectory "$HostName\OWA (Default Web Site)" -InternalUrl ((Get-OwaVirtualDirectory "$HostName\OWA (Default Web Site)").ExternalUrl)
-        
-        Set-PowerShellVirtualDirectory "$HostName\PowerShell (Default Web Site)" -InternalUrl ((Get-PowerShellVirtualDirectory "$HostName\PowerShell (Default Web Site)").ExternalUrl)
+    ```powershell
+    Set-EcpVirtualDirectory "$HostName\ECP (Default Web Site)" -InternalUrl ((Get-EcpVirtualDirectory "$HostName\ECP (Default Web Site)").ExternalUrl)
+    
+    Set-WebServicesVirtualDirectory "$HostName\EWS (Default Web Site)" -InternalUrl ((get-WebServicesVirtualDirectory "$HostName\EWS (Default Web Site)").ExternalUrl)
+    
+    Set-ActiveSyncVirtualDirectory "$HostName\Microsoft-Server-ActiveSync (Default Web Site)" -InternalUrl ((Get-ActiveSyncVirtualDirectory "$HostName\Microsoft-Server-ActiveSync (Default Web Site)").ExternalUrl)
+    
+    Set-OabVirtualDirectory "$HostName\OAB (Default Web Site)" -InternalUrl ((Get-OabVirtualDirectory "$HostName\OAB (Default Web Site)").ExternalUrl)
+    
+    Set-OwaVirtualDirectory "$HostName\OWA (Default Web Site)" -InternalUrl ((Get-OwaVirtualDirectory "$HostName\OWA (Default Web Site)").ExternalUrl)
+    
+    Set-PowerShellVirtualDirectory "$HostName\PowerShell (Default Web Site)" -InternalUrl ((Get-PowerShellVirtualDirectory "$HostName\PowerShell (Default Web Site)").ExternalUrl)
+    ```
 
 4.  引き続き、シェル上でオフライン アドレス帳 (OAB) を構成し、自動検出を使って、OAB を配布する上で正しい仮想ディレクトリを選択できるようにします。この手順を行うには、次のコマンドを実行します。
     
-        Get-OfflineAddressBook | Set-OfflineAddressBook -GlobalWebDistributionEnabled $True -VirtualDirectories $Null
+    ```powershell
+    Get-OfflineAddressBook | Set-OfflineAddressBook -GlobalWebDistributionEnabled $True -VirtualDirectories $Null
+    ```
 
 クライアント アクセス サーバーの仮想ディレクトリに内部 URL を構成したら、Outlook Web App とその他の接続用に個人用の DNS レコードを構成する必要があります。構成に応じて、クライアント アクセス サーバーの内部または外部 IP アドレスまたは完全修飾ドメイン名 (FQDN) をポイントするように、プライベート DNS レコードを構成する必要があります。内部クライアント接続を有効にする場合に作成する推奨 DNS レコードの例を以下に示します。
 
@@ -478,7 +482,9 @@ $HostName = "Ex2013CAS"
 
 8.  最後に、シェルを開いてオフライン アドレス帳 (OAB) を構成し、自動検出を使って、OAB を配布する上で正しい仮想ディレクトリを選択できるようにします。この手順を行うには、次のコマンドを実行します。
     
-        Get-OfflineAddressBook | Set-OfflineAddressBook -GlobalWebDistributionEnabled $True -VirtualDirectories $Null
+    ```powershell
+    Get-OfflineAddressBook | Set-OfflineAddressBook -GlobalWebDistributionEnabled $True -VirtualDirectories $Null
+    ```
 
 クライアント アクセス サーバーの仮想ディレクトリに内部 URL を構成したら、Outlook Web App とその他の接続用に個人用の DNS レコードを構成する必要があります。構成に応じて、クライアント アクセス サーバーの内部または外部 IP アドレスまたは FQDN をポイントするように、プライベート DNS レコードを構成する必要があります。仮想ディレクトリの内部 URL で internal.contoso.com を使用するよう構成した場合に、内部クライアントの接続を有効にするために作成する必要がある推奨の DNS レコードの例を以下に示します。
 

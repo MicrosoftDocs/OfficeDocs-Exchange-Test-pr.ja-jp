@@ -35,8 +35,10 @@ Exchange 2013 のオブジェクトの主要な一意の識別子は常に GUID 
 
 次の例では、受信コネクタの一意の *Name* パラメーター値を使用して、*Identity* パラメーターを使用する方法を示しています。また、この例は、*Identity* が位置パラメーターであるため、*Identity* パラメーター名を省略できる方法も示しています。
 
-    Get-ReceiveConnector -Identity "From the Internet"
-    Get-ReceiveConnector "From the Internet"
+```powershell
+Get-ReceiveConnector -Identity "From the Internet"
+Get-ReceiveConnector "From the Internet"
+```
 
 Exchange 2013 のすべてのオブジェクトと同様、受信コネクタは一意の GUID で参照することもできます。たとえば、`"From the Internet"` という名前の受信コネクタが GUID `63d64005-42c5-4f8f-b310-14f6cb125bf3` も割り当てられている場合、次のコマンドを使用して受信コネクタを取得することもできます。
 
@@ -90,15 +92,21 @@ Mail Recipients\Set-Mailbox
 
 `Mail Recipients\Set-Mailbox` 役割エントリは、`Mail Recipients` 役割にいくつかあるエントリのうちの 1 つです。`Mail Recipients` 役割のすべての役割エントリを表示するには、次のコマンドを使用します。
 
-    Get-ManagementRoleEntry "Mail Recipients\*"
+```powershell
+Get-ManagementRoleEntry "Mail Recipients\*"
+```
 
 "`Mailbox`" という文字列を含む `Mail Recipients` 役割のすべての役割エントリを表示するには、次のコマンドを使用します。
 
-    Get-ManagementRoleEntry "Mail Recipients\*Mailbox*"
+```powershell
+Get-ManagementRoleEntry "Mail Recipients\*Mailbox*"
+```
 
 **Set-Mailbox** が役割エントリの 1 つとなっている管理役割をすべて表示するには、次のコマンドを使用します。
 
-    Get-ManagementRoleEntry *\Set-Mailbox
+```powershell
+Get-ManagementRoleEntry *\Set-Mailbox
+```
 
 役割エントリによって、ワイルドカード文字をさまざまな方法で使用し、Exchange 2013 を照会して必要な情報を入手できます。
 

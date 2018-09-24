@@ -44,8 +44,8 @@ _**トピックの最終更新日:** 2015-03-09_
   - すべてのメールボックス復元要求の *Identity* プロパティの値を表示するには、次のコマンドを実行します。
     
     ```powershell
-Get-MailboxRestoreRequest | Format-Table Identity
-```
+    Get-MailboxRestoreRequest | Format-Table Identity
+    ```
     
     このトピックの手順を実行する際には、この ID 値を使用して特定のメールボックス復元要求を指定できます。
 
@@ -170,15 +170,21 @@ Get-MailboxRestoreRequestStatistics -Identity danp\MailboxRestore1
 
 この例では、Dan Park のメールボックスに関する情報を返し、レポートを .csv ファイルへエクスポートします。
 
-    Get-MailboxRestoreRequestStatistics -Identity "Dan Park\MailboxRestore" | Export-CSV \\SERVER01\RestoreRequest_Reports\DanPark_Restorestats.csv
+```powershell
+Get-MailboxRestoreRequestStatistics -Identity "Dan Park\MailboxRestore" | Export-CSV \\SERVER01\RestoreRequest_Reports\DanPark_Restorestats.csv
+```
 
 この例では、*IncludeReport* パラメーターを使用し、結果を **Format-List** コマンドレットにパイプ処理することによって、Pilar Pinilla のメールボックスに対する復元要求に関する追加情報を返します。
 
-    Get-MailboxRestoreRequestStatistics -Identity "Pilar Pinilla\MailboxRestore" -IncludeReport | Format-List 
+```powershell
+Get-MailboxRestoreRequestStatistics -Identity "Pilar Pinilla\MailboxRestore" -IncludeReport | Format-List 
+```
 
 この例では、*IncludeReport* パラメーターを使用し、`Failed` の状態のすべての復元要求に関する追加情報を返し、コマンドを実行した場所にあるファイル AllRestoreReports.txt 内に情報を保存します。
 
-    Get-MailboxRestoreRequest -Status Failed | Get-MailboxRestoreRequestStatistics -IncludeReport | Format-List > AllRestoreReports.txt
+```powershell
+Get-MailboxRestoreRequest -Status Failed | Get-MailboxRestoreRequestStatistics -IncludeReport | Format-List > AllRestoreReports.txt
+```
 
 構文およびパラメーターの詳細については、「[Get-MailboxRestoreRequestStatistics](https://technet.microsoft.com/ja-jp/library/ff829912\(v=exchg.150\))」と「[Get-MailboxRestoreRequest](https://technet.microsoft.com/ja-jp/library/ff829907\(v=exchg.150\))」を参照してください。
 
@@ -423,7 +429,9 @@ Set-MailboxRestoreRequest -Identity "Debra Garcia\MailboxRestore1" -BadItemLimit
 
 この例では、Florence Flipo のメールボックスに対する復元要求 MailboxRestore1 が 100 個の破損アイテムをスキップすることを指定しています。*BadItemLimit* の値が 50 より大きいため、*AcceptLargeDataLoss* パラメーターを指定する必要があります。
 
-    Set-MailboxRestoreRequest -Identity "Florence Flipo\MailboxRestore1" -BadItemLimit 100 -AcceptLargeDataLoss
+```powershell
+Set-MailboxRestoreRequest -Identity "Florence Flipo\MailboxRestore1" -BadItemLimit 100 -AcceptLargeDataLoss
+```
 
 構文およびパラメーターの詳細については、「[Set-MailboxRestoreRequest](https://technet.microsoft.com/ja-jp/library/ff829909\(v=exchg.150\))」を参照してください。
 
