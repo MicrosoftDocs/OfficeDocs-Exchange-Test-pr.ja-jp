@@ -140,8 +140,8 @@ Exchange 2013 の管理の詳細については、「[Exchange 2013 の Exchange
 
     
     ```powershell
-Setup.exe /Role:ManagementTools /IAcceptExchangeServerLicenseTerms
-```
+    Setup.exe /Role:ManagementTools /IAcceptExchangeServerLicenseTerms
+    ```
 
 詳細については、「[無人モードを使用した Exchange 2013 のインストール](install-exchange-2013-using-unattended-mode-exchange-2013-help.md)」を参照してください。
 

@@ -53,7 +53,9 @@ _**トピックの最終更新日:** 2013-02-21_
 
 <!-- end list -->
 
-    New-SiteMailboxProvisioningPolicy -Name SM_ProvisioningPolicy -IsDefault -IssueWarningQuota 9GB -ProhibitSendReceiveQuota 10GB -MaxReceiveSize 50MB
+```powershell
+New-SiteMailboxProvisioningPolicy -Name SM_ProvisioningPolicy -IsDefault -IssueWarningQuota 9GB -ProhibitSendReceiveQuota 10GB -MaxReceiveSize 50MB
+```
 
 ## サイト メールボックス プロビジョニング ポリシーの設定を表示する
 
@@ -79,7 +81,9 @@ Set-SiteMailboxProvisioningPolicy -Identity Default -MaxReceiveSize 25MB
 
 この例では、警告表示クォータを 9.5 GB、送受信禁止クォータを 10 GB に変更します。
 
-    Set-SiteMailboxProvisioningPolicy -Identity Default -IssueWarningQuota 9GB -ProhibitSendReceiveQuota 10GB
+```powershell
+Set-SiteMailboxProvisioningPolicy -Identity Default -IssueWarningQuota 9GB -ProhibitSendReceiveQuota 10GB
+```
 
 ## サイト メールボックス名のプレフィックスを構成する
 
@@ -87,7 +91,9 @@ Set-SiteMailboxProvisioningPolicy -Identity Default -MaxReceiveSize 25MB
 
 この例では *DefaultAliasPrefixEnabled* パラメーターを $false に設定し、プレフィックスが付けられないようにします。
 
-    Set-SiteMailboxProvisioningPolicy -Identity Default -DefaultAliasPrefixEnabled $false -AliasPrefix $null
+```powershell
+Set-SiteMailboxProvisioningPolicy -Identity Default -DefaultAliasPrefixEnabled $false -AliasPrefix $null
+```
 
 この例では既定のプロビジョニング ポリシーを変更し、*AliasPrefix* を FOREST01 に設定します。
 
@@ -97,7 +103,9 @@ Set-SiteMailboxProvisioningPolicy -Identity Default -MaxReceiveSize 25MB
 
 
 
-    Set-SiteMailboxProvisioningPolicy -Identity Default -AliasPrefix FOREST01 -DefaultAliasPrefixEnabled $false
+```powershell
+Set-SiteMailboxProvisioningPolicy -Identity Default -AliasPrefix FOREST01 -DefaultAliasPrefixEnabled $false
+```
 
 
 > [!NOTE]

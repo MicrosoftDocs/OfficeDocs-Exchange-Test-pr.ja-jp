@@ -57,11 +57,15 @@ Set-UMService -Identity MyMailboxServer -DialPlans $null
 
 この例では、`MyMailboxServer` という名前のメールボックス サーバーを `MySIPDialPlanName` という名前の UM SIP ダイヤル プランに追加し、着信の音声呼び出しの最大数も設定しています。
 
-    Set-UMService -Identity MyMailboxServer -DialPlans MySIPDialPlanName -MaxCalls 150 
+```powershell
+Set-UMService -Identity MyMailboxServer -DialPlans MySIPDialPlanName -MaxCalls 150 
+```
 
 この例では、`MyUMServer` という名前のメールボックス サーバーでスタートアップ モードをデュアル モードに設定します。
 
-    Set-UMService -Identity MyMailboxServer -DialPlans MySIPDialPlanName -UMStartUpMode -Dual 
+```powershell
+Set-UMService -Identity MyMailboxServer -DialPlans MySIPDialPlanName -UMStartUpMode -Dual 
+```
 
 ## シェルを使用して、メールボックス サーバーのプロパティを表示する
 

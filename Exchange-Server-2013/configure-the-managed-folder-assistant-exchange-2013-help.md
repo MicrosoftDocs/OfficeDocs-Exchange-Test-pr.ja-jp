@@ -57,7 +57,9 @@ Set-MailboxServer MyMailboxServer -ManagedFolderWorkCycle 1
 
 このコマンドは、組織内のすべてのメールボックス サーバーを取得し、各サーバーの管理フォルダー アシスタントの作業サイクルのプロパティを表形式で出力します。*Auto* スイッチを使用すると、列の幅が自動的に調節されます。
 
-    Get-MailboxServer | Format-Table Name,ManagedFolderWorkCycle* -Auto
+  ```powershell
+  Get-MailboxServer | Format-Table Name,ManagedFolderWorkCycle* -Auto
+  ```
 
 ## シェルを使用して管理フォルダー アシスタントを開始する
 

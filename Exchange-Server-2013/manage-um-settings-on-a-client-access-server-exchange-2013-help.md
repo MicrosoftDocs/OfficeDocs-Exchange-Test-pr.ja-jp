@@ -61,7 +61,9 @@ Set-UMCallRouterSettings -DialPlans MySIPDialPlan -MaxCalls 150 -Server MyClient
 
 この例では、`MyClientAccessServer` という名前のクライアント アクセス サーバーで SIP TCP リスニング ポートを 5077 に設定し、スタートアップ モードをデュアル モードに設定します。
 
-    Set-UMCallRouterSettings  -Server MyClientAccessServer-SipTCPListeningPort 5077 -UMStartUpMode -Dual 
+  ```powershell
+  Set-UMCallRouterSettings  -Server MyClientAccessServer-SipTCPListeningPort 5077 -UMStartUpMode -Dual 
+  ```
 
 ## シェルを使用してクライアント アクセス サーバー プロパティを表示する
 

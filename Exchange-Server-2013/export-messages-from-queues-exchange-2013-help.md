@@ -53,36 +53,47 @@ _**トピックの最終更新日:** 2014-05-05_
 
 特定のキューから特定のメッセージをエクスポートするには、次のコマンドを実行します。
 
+```powershell
     Export-Message -Identity <MessageIdentity> | AssembleMessage -Path <FilePath>\<FileName>.eml
+```
 
 この例では、Mailbox01 というサーバー上の contoso.com 配信キューにある **InternalMessageID** 値が 1234 のメッセージのコピーを、D:\\Contoso Export パスにある export.eml というファイルにエクスポートします。
 
+```powershell
     Export-Message -Identity Exchange01\Contoso.com\1234 | AssembleMessage -Path "D:\Contoso Export\export.eml"
+```
 
 ## シェルを使用して、特定のキューからすべてのメッセージをエクスポートする
 
 特定のキューからすべてのメッセージをエクスポートして、各メッセージの **InternetMessageID** 値をファイル名として使用するには、次の構文を使用します。
 
+```powershell
     Get-Message -Queue <QueueIdentity> | ForEach-Object {$Temp=<Path>+$_.InternetMessageID+".eml";$Temp=$Temp.Replace("<","_");$Temp=$Temp.Replace(">","_");Export-Message $_.Identity | AssembleMessage -Path $Temp}
+```
 
 **InternetMessageID** 値には角括弧 (\> および \<) が含まれることに注意してください。この記号はファイル名に使用できないため、削除する必要があります。
 
 この例では、Mailbox01 というサーバー上の contoso.com 配信キューからすべてのメッセージのコピーを、D:\\Contoso Export というローカル ディレクトリにエクスポートします。
 
+```powershell
     Get-Message -Queue Mailbox01\Contoso.com | ForEach-Object {$Temp="D:\Contoso Export\"+$_.InternetMessageID+".eml";$Temp=$Temp.Replace("<","_");$Temp=$Temp.Replace(">","_");Export-Message $_.Identity | AssembleMessage -Path $Temp}
+```
 
 ## シェルを使用して、サーバー上にあるすべてのキューから特定のメッセージをエクスポートする
 
 サーバー上のすべてのキューから特定のメッセージをエクスポートして、各メッセージの **InternetMessageID** 値をファイル名として使用するには、次の構文を使用します。
 
+```powershell
     Get-Message -Filter {<MessageFilter>} [-Server <ServerIdentity>] | ForEach-Object {$Temp=<Path>+$_.InternetMessageID+".eml";$Temp=$Temp.Replace("<","_");$Temp=$Temp.Replace(">","_");Export-Message $_.Identity | AssembleMessage -Path $Temp}
+```
 
 **InternetMessageID** 値には角括弧 (\> および \<) が含まれることに注意してください。この記号はファイル名に使用できないため、削除する必要があります。
 
 この例では、Mailbox01 というサーバー上のすべてのキューから contoso.com ドメイン内の送信者が送信したすべてのメッセージのコピーを、D:\\Contoso Export というローカル ディレクトリにエクスポートします。
 
+```powershell
     Get-Message -Filter {FromAddress -like "*@contoso.com"} -Server Mailbox01 | ForEach-Object {$Temp="D:\Contoso Export\"+$_.InternetMessageID+".eml";$Temp=$Temp.Replace("<","_");$Temp=$Temp.Replace(">","_");Export-Message $_.Identity | AssembleMessage -Path $Temp}
-
+```
 
 > [!NOTE]
 > <EM>Server</EM> パラメーターを省略すると、コマンドはローカル サーバー上で動作します。

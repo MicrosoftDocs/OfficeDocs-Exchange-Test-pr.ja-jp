@@ -43,8 +43,8 @@ _**トピックの最終更新日:** 2018-01-17_
     検出システム メールボックスを再作成するには、次のコマンドを実行します。
     
     ```powershell
-.\Setup /preparead /IAcceptExchangeServerLicenseTerms
-```
+    .\Setup /preparead /IAcceptExchangeServerLicenseTerms
+    ```
 
 ## 設定が適用されたことを確認する方法
 

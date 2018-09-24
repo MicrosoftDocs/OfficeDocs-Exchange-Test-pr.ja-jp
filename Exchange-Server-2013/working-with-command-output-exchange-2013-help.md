@@ -51,60 +51,68 @@ Exchange 管理シェルには、コマンド出力の書式設定に使用で�
 
 次の例は、**Get-Mailbox** コマンドレットによって返される同じデータを異なる方法で表示したものです。
 
-    Get-Mailbox TestUser1
-    
-    Name                      Alias                ServerName       ProhibitSendQuo
-                                                                    ta
-    ----                      -----                ----------       ---------------
-    TestUser1                 TestUser1            mbx              unlimited
+```powershell
+Get-Mailbox TestUser1
+
+Name                      Alias                ServerName       ProhibitSendQuo
+                                                                ta
+----                      -----                ----------       ---------------
+TestUser1                 TestUser1            mbx              unlimited
+```
 
 最初の例では、**Get-Mailbox** コマンドレットは特定の書式設定を指定されずに呼び出されているので、既定の出力は表形式で、事前に設定されていたプロパティ セットが表示されます。
 
-    Get-Mailbox TestUser1 | Format-List -Property Name,Alias,EmailAddresses
-    
-    Name           : TestUser1
-    Alias          : TestUser1
-    EmailAddresses : {SMTP:TestUser1@contoso.com}
+```powershell
+Get-Mailbox TestUser1 | Format-List -Property Name,Alias,EmailAddresses
+
+Name           : TestUser1
+Alias          : TestUser1
+EmailAddresses : {SMTP:TestUser1@contoso.com}
+```
 
 2 番目の例では、**Get-Mailbox** コマンドレットの出力は、特定のプロパティを指定した **Format-List** コマンドレットにパイプ処理されます。ご覧のとおり、出力の形式と内容は大幅に異なります。
 
-    Get-Mailbox TestUser1 | Format-List -Property Name, Alias, Email*
-    Name                      : Test User
-    Alias                     : TestUser1
-    EmailAddresses            : {SMTP:TestUser1@contoso.com}
-    EmailAddressPolicyEnabled : True
+```powershell
+Get-Mailbox TestUser1 | Format-List -Property Name, Alias, Email*
+Name                      : Test User
+Alias                     : TestUser1
+EmailAddresses            : {SMTP:TestUser1@contoso.com}
+EmailAddressPolicyEnabled : True
+```
 
 最後の例では、**Get-Mailbox** コマンドレットの出力は 2 番目の例と同じように、**Format-List** コマンドレットにパイプ処理されます。ただし、最後の例では、ワイルドカード文字を使用して、`Email` で始まるすべてのプロパティと一致させています。
 
 **Format-List** コマンドレットに複数のオブジェクトが渡された場合、オブジェクトの指定されたプロパティはすべて、オブジェクトごとに表示され、グループ化されます。表示される順序は、コマンドレットの既定のパラメーターによって決まります。既定のパラメーターは通常、*Name* パラメーターまたは *Identity* パラメーターです。たとえば、**Get-Childitem** コマンドレットが呼び出された場合、既定の表示順序はファイル名のアルファベット順です。この動作を変更するには、*GroupBy* パラメーター、および出力をグループ化する対象のプロパティ値の名前を指定して、**Format-List** コマンドレットを呼び出す必要があります。たとえば、次のコマンドでは、ディレクトリ内のすべてのファイルの一覧が拡張子ごとにグループ化されて表示されます。
 
-    Get-Childitem | Format-List Name,Length -GroupBy Extension
-    
-        Extension: .xml
-    
-    Name   : Config_01.xml
-    Length : 5627
-    
-    Name   : Config_02.xml
-    Length : 3901
-    
-    
-        Extension: .bmp
-    
-    Name   : Image_01.bmp
-    Length : 746550
-    
-    Name   : Image_02.bmp
-    Length : 746550
-    
-    
-        Extension: .txt
-    
-    Name   : Text_01.txt
-    Length : 16822
-    
-    Name   : Text_02.txt
-    Length : 9835
+```powershell
+Get-Childitem | Format-List Name,Length -GroupBy Extension
+
+    Extension: .xml
+
+Name   : Config_01.xml
+Length : 5627
+
+Name   : Config_02.xml
+Length : 3901
+
+
+    Extension: .bmp
+
+Name   : Image_01.bmp
+Length : 746550
+
+Name   : Image_02.bmp
+Length : 746550
+
+
+    Extension: .txt
+
+Name   : Text_01.txt
+Length : 16822
+
+Name   : Text_02.txt
+Length : 9835
+```
 
 この例では、**Format-List** コマンドレットは、*GroupBy* パラメーターで指定された *Extension* プロパティごとに項目をグループ化します。パイプライン ストリームでは、オブジェクトの有効なプロパティを指定して、*GroupBy* パラメーターを使用できます。
 
@@ -116,39 +124,43 @@ Exchange 管理シェルには、コマンド出力の書式設定に使用で�
 
 最初の例では、**Get-Command** コマンドレットを使用して **Get-Process** コマンドレットに関するコマンド情報が表示された場合、*Definition* プロパティの情報は切り捨てられています。
 
-    Get-Command Get-Process | Format-Table Name,Definition
-    
-    Name                                    Definition
-    ----                                    ----------
-    get-process                             get-process [[-ProcessName] String[]...
+```powershell
+Get-Command Get-Process | Format-Table Name,Definition
+
+Name                                    Definition
+----                                    ----------
+get-process                             get-process [[-ProcessName] String[]...
+```
 
 2 番目の例では、コマンドに *Wrap* パラメーターを追加して、*Definition* プロパティの完全な内容が表示されるように設定しています。
 
-    Get-Command Get-Process | Format-Table Name,Definition -Wrap
-    
-    Get-Process                             Get-Process [[-Name] <String[]>] [-Comp
-                                            uterName <String[]>] [-Module] [-FileVe
-                                            rsionInfo] [-Verbose] [-Debug] [-ErrorA
-                                            ction <ActionPreference>] [-WarningActi
-                                            on <ActionPreference>] [-ErrorVariable
-                                            <String>] [-WarningVariable <String>] [
-                                            -OutVariable <String>] [-OutBuffer <Int
-                                            32>]
-                                            Get-Process -Id <Int32[]> [-ComputerNam
-                                            e <String[]>] [-Module] [-FileVersionIn
-                                            fo] [-Verbose] [-Debug] [-ErrorAction <
-                                            ActionPreference>] [-WarningAction <Act
-                                            ionPreference>] [-ErrorVariable <String
-                                            >] [-WarningVariable <String>] [-OutVar
-                                            iable <String>] [-OutBuffer <Int32>]
-                                            Get-Process [-ComputerName <String[]>]
-                                            [-Module] [-FileVersionInfo] -InputObje
-                                            ct <Process[]> [-Verbose] [-Debug] [-Er
-                                            rorAction <ActionPreference>] [-Warning
-                                            Action <ActionPreference>] [-ErrorVaria
-                                            ble <String>] [-WarningVariable <String
-                                            >] [-OutVariable <String>] [-OutBuffer
-                                            <Int32>]
+```powershell
+Get-Command Get-Process | Format-Table Name,Definition -Wrap
+
+Get-Process                             Get-Process [[-Name] <String[]>] [-Comp
+                                    uterName <String[]>] [-Module] [-FileVe
+                                    rsionInfo] [-Verbose] [-Debug] [-ErrorA
+                                    ction <ActionPreference>] [-WarningActi
+                                    on <ActionPreference>] [-ErrorVariable
+                                    <String>] [-WarningVariable <String>] [
+                                    -OutVariable <String>] [-OutBuffer <Int
+                                    32>]
+                                    Get-Process -Id <Int32[]> [-ComputerNam
+                                    e <String[]>] [-Module] [-FileVersionIn
+                                    fo] [-Verbose] [-Debug] [-ErrorAction <
+                                    ActionPreference>] [-WarningAction <Act
+                                    ionPreference>] [-ErrorVariable <String
+                                    >] [-WarningVariable <String>] [-OutVar
+                                    iable <String>] [-OutBuffer <Int32>]
+                                    Get-Process [-ComputerName <String[]>]
+                                    [-Module] [-FileVersionInfo] -InputObje
+                                    ct <Process[]> [-Verbose] [-Debug] [-Er
+                                    rorAction <ActionPreference>] [-Warning
+                                    Action <ActionPreference>] [-ErrorVaria
+                                    ble <String>] [-WarningVariable <String
+                                    >] [-OutVariable <String>] [-OutBuffer
+                                    <Int32>]
+```
 
 **Format-List** コマンドレットの場合と同じように、ここでもプロパティ名の一部にワイルドカード文字 "`*`" を使用できます。ワイルドカード文字を使用すると、各プロパティ名を個々に入力しなくても、複数のプロパティに一致させることができます。
 
@@ -158,51 +170,57 @@ Exchange 管理シェルには、コマンド出力の書式設定に使用で�
 
 最も基本的な使用方法として、パラメーターを指定しないで **Format-Wide** コマンドレットを呼び出すと、ページに収まる限りの多くの列に出力が表示されます。たとえば、**Get-Childitem** コマンドレットを実行して、その出力を **Format-Wide** コマンドレットにパイプ処理すると、次のような情報が表示されます。
 
-    Get-ChildItem | Format-Wide
-    
-        Directory: FileSystem::C:\WorkingFolder
-    
-    Config_01.xml                           Config_02.xml
-    Config_03.xml                           Config_04.xml
-    Config_05.xml                           Config_06.xml
-    Config_07.xml                           Config_08.xml
-    Config_09.xml                           Image_01.bmp
-    Image_02.bmp                            Image_03.bmp
-    Image_04.bmp                            Image_05.bmp
-    Image_06.bmp                            Text_01.txt
-    Text_02.txt                             Text_03.txt
-    Text_04.txt                             Text_05.txt
-    Text_06.txt                             Text_07.txt
-    Text_08.txt                             Text_09.txt
-    Text_10.txt                             Text_11.txt
-    Text_12.txt
+```powershell
+Get-ChildItem | Format-Wide
+
+    Directory: FileSystem::C:\WorkingFolder
+
+Config_01.xml                           Config_02.xml
+Config_03.xml                           Config_04.xml
+Config_05.xml                           Config_06.xml
+Config_07.xml                           Config_08.xml
+Config_09.xml                           Image_01.bmp
+Image_02.bmp                            Image_03.bmp
+Image_04.bmp                            Image_05.bmp
+Image_06.bmp                            Text_01.txt
+Text_02.txt                             Text_03.txt
+Text_04.txt                             Text_05.txt
+Text_06.txt                             Text_07.txt
+Text_08.txt                             Text_09.txt
+Text_10.txt                             Text_11.txt
+Text_12.txt
+```
 
 通常、パラメーターを指定しないで **Get-Childitem** コマンドレットを呼び出すと、プロパティの表にディレクトリ内のすべてのファイル名が表示されます。この例では、**Get-Childitem** コマンドレットの出力を **Format-Wide** コマンドレットにパイプ処理することによって、出力は 2 つの名前の列で表示されました。一度に表示できるプロパティは 1 種類だけで、**Format-Wide** コマンドレットの後ろに続くプロパティ名で指定しています。*Autosize* パラメーターを追加すると、出力される列は 2 列から、画面の幅に収まる限りの多くの列に変更されます。
 
-    Get-ChildItem | Format-Wide -AutoSize
-    
-        Directory: FileSystem::C:\WorkingFolder
-    
-    Config_01.xml   Config_02.xml   Config_03.xml   Config_04.xml   Config_05.xml
-    Config_06.xml   Config_07.xml   Config_08.xml   Config_09.xml   Image_01.bmp
-    Image_02.bmp    Image_03.bmp    Image_04.bmp    Image_05.bmp    Image_06.bmp
-    Text_01.txt     Text_02.txt     Text_03.txt     Text_04.txt     Text_05.txt
-    Text_06.txt     Text_07.txt     Text_08.txt     Text_09.txt     Text_10.txt
-    Text_11.txt     Text_12.txt
+```powershell
+Get-ChildItem | Format-Wide -AutoSize
+
+    Directory: FileSystem::C:\WorkingFolder
+
+Config_01.xml   Config_02.xml   Config_03.xml   Config_04.xml   Config_05.xml
+Config_06.xml   Config_07.xml   Config_08.xml   Config_09.xml   Image_01.bmp
+Image_02.bmp    Image_03.bmp    Image_04.bmp    Image_05.bmp    Image_06.bmp
+Text_01.txt     Text_02.txt     Text_03.txt     Text_04.txt     Text_05.txt
+Text_06.txt     Text_07.txt     Text_08.txt     Text_09.txt     Text_10.txt
+Text_11.txt     Text_12.txt
+```
 
 この例では、表は、2 列ではなく 5 列で表示されています。*Column* パラメーターを使用すると、次のように情報を表示する列の最大数を指定できるので、より細かく制御できます。
 
-    Get-ChildItem | Format-Wide -Column 4
-    
-        Directory: FileSystem::C:\WorkingFolder
-    
-    Config_01.xml       Config_02.xml       Config_03.xml       Config_04.xml
-    Config_05.xml       Config_06.xml       Config_07.xml       Config_08.xml
-    Config_09.xml       Image_01.bmp        Image_02.bmp        Image_03.bmp
-    Image_04.bmp        Image_05.bmp        Image_06.bmp        Text_01.txt
-    Text_02.txt         Text_03.txt         Text_04.txt         Text_05.txt
-    Text_06.txt         Text_07.txt         Text_08.txt         Text_09.txt
-    Text_10.txt         Text_11.txt         Text_12.txt
+```powershell
+Get-ChildItem | Format-Wide -Column 4
+
+    Directory: FileSystem::C:\WorkingFolder
+
+Config_01.xml       Config_02.xml       Config_03.xml       Config_04.xml
+Config_05.xml       Config_06.xml       Config_07.xml       Config_08.xml
+Config_09.xml       Image_01.bmp        Image_02.bmp        Image_03.bmp
+Image_04.bmp        Image_05.bmp        Image_06.bmp        Text_01.txt
+Text_02.txt         Text_03.txt         Text_04.txt         Text_05.txt
+Text_06.txt         Text_07.txt         Text_08.txt         Text_09.txt
+Text_10.txt         Text_11.txt         Text_12.txt
+```
 
 この例では、*Column* パラメーターを使用して、列の数を 4 に設定しています。
 
@@ -234,14 +252,16 @@ Exchange 管理シェルは柔軟で、スクリプトを簡単に実行でき�
 
 次の例は、簡単なスクリプトを使用して、コマンドによって返されたデータを出力して、Internet Explorer に表示する方法を示したものです。このスクリプトは、パイプラインによって渡されたオブジェクトを取得し、Internet Explorer ウィンドウを開き、Internet Explorer にデータを表示します。
 
-    $Ie = New-Object -Com InternetExplorer.Application
-    $Ie.Navigate("about:blank")
-    While ($Ie.Busy) { Sleep 1 }
-    $Ie.Visible = $True
-    $Ie.Document.Write("$Input")
-    # If the previous line doesn't work on your system, uncomment the line below.
-    # $Ie.Document.IHtmlDocument2_Write(\"$Input\")
-    $Ie
+```powershell
+$Ie = New-Object -Com InternetExplorer.Application
+$Ie.Navigate("about:blank")
+While ($Ie.Busy) { Sleep 1 }
+$Ie.Visible = $True
+$Ie.Document.Write("$Input")
+# If the previous line doesn't work on your system, uncomment the line below.
+# $Ie.Document.IHtmlDocument2_Write(\"$Input\")
+$Ie
+```
 
 このスクリプトを使用するには、スクリプトを実行するコンピューター上の `C:\Program Files\Microsoft\Exchange Server\V15\Scripts` ディレクトリにこのスクリプトを保存します。ファイルに `Out-Ie.ps1` という名前を付けます。ファイルを保存した後は、通常のコマンドレットとしてこのスクリプトを使用できます。
 
@@ -335,12 +355,14 @@ Get-ChildItem | Select Name,Length | ConvertTo-Html | Out-Ie
 
 **Clear-Host** コマンドレットを使用して、コンソール ウィンドウを消去します。この例では、次のコマンドを使用すると、**Clear-Host** コマンドレットに定義されているすべてのエイリアスを検索できます。
 
-    Get-Alias | Where {$_.Definition -eq "Clear-Host"}
-    
-    CommandType     Name                            Definition
-    -----------     ----                            ----------
-    Alias           clear                           clear-host
-    Alias           cls                             clear-host
+```powershell
+Get-Alias | Where {$_.Definition -eq "Clear-Host"}
+
+CommandType     Name                            Definition
+-----------     ----                            ----------
+Alias           clear                           clear-host
+Alias           cls                             clear-host
+```
 
 **Get-Alias** コマンドレットと **Where** コマンドは連携動作して、**Clear-Host** コマンドレットに定義されているエイリアスの一覧を返し、それ以外のコマンドレットについては何も返しません。次の表は、例に使用されている **Where** コマンドの各要素の概要説明です。
 

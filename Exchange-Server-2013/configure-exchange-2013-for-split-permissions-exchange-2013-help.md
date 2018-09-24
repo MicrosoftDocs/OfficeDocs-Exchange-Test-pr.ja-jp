@@ -98,9 +98,9 @@ RBAC 分割型アクセス許可を構成するには、次の操作を行いま
     1.  Exchange 2013 インストール メディアから次のコマンドを実行して、Active Directory 分割型アクセス許可を無効にします。
         
         ```powershell
-setup.exe /PrepareAD /ActiveDirectorySplitPermissions:false
-```
-    
+        setup.exe /PrepareAD /ActiveDirectorySplitPermissions:false
+        ```
+        
     2.  組織内の Exchange 2013 サーバーを再起動するか、Active Directory アクセス トークンがすべての Exchange 2013 サーバーにレプリケートされるのを待ちます。
         
 
@@ -113,8 +113,10 @@ setup.exe /PrepareAD /ActiveDirectorySplitPermissions:false
     
     1.  Active Directory 管理者の役割グループを作成します。役割グループを作成する以外に、コマンドにより、新しい役割グループと、"Mail Recipient Creation/メール受信者の作成" 役割および "Security Group Creation and Membership/セキュリティ グループの作成とメンバーシップ" 役割の間に正規の役割の割り当てが作成されます。
         
-            New-RoleGroup "Active Directory Administrators" -Roles "Mail Recipient Creation", "Security Group Creation and Membership"
-        
+        ```powershell
+        New-RoleGroup "Active Directory Administrators" -Roles "Mail Recipient Creation", "Security Group Creation and Membership"
+        ```
+    
 
         > [!NOTE]
         > この役割グループのメンバーが役割の割り当てを作成できるようにする場合は、"Role Management/役割の管理" 役割を含めます。ここではこの役割を追加する必要はありません。ただし、"Mail Recipient Creation/メール受信者の作成" 役割または "Security Group Creation and Membership/セキュリティ グループの作成とメンバーシップ" 役割のいずれかを他の役割担当者に割り当てる場合は、この新しい役割グループに "Role Management/役割の管理" 役割を割り当てる必要があります。実行する手順は、これらの役割を委任可能な唯一の役割グループとして "Active Directory Administrators/Active Directory 管理者" 役割グループを構成します。
@@ -122,20 +124,22 @@ setup.exe /PrepareAD /ActiveDirectorySplitPermissions:false
     
     2.  以下のコマンドを使用して、新しい役割グループと、"Mail Recipient Creation/メールの受信者の作成" 役割および "Security Group Creation and Membership/セキュリティ グループの作成とメンバーシップ" 役割の間に委任の役割の割り当てを作成します。
         
-            New-ManagementRoleAssignment -Role "Mail Recipient Creation" -SecurityGroup "Active Directory Administrators" -Delegating
-            New-ManagementRoleAssignment -Role "Security Group Creation and Membership" -SecurityGroup "Active Directory Administrators" -Delegating
+        ```powershell
+        New-ManagementRoleAssignment -Role "Mail Recipient Creation" -SecurityGroup "Active Directory Administrators" -Delegating
+        New-ManagementRoleAssignment -Role "Security Group Creation and Membership" -SecurityGroup "Active Directory Administrators" -Delegating
+        ```
     
     3.  以下のコマンドを使用して、新しい役割グループにメンバーを追加します。
         
         ```powershell
-Add-RoleGroupMember "Active Directory Administrators" -Member <user to add>
-```
+        Add-RoleGroupMember "Active Directory Administrators" -Member <user to add>
+        ```
     
     4.  役割グループのメンバーのみがメンバーを追加または削除することができるように、新しい役割グループの代理人の一覧を置き換えます。
         
         ```powershell
-Set-RoleGroup "Active Directory Administrators" -ManagedBy "Active Directory Administrators"
-```
+        Set-RoleGroup "Active Directory Administrators" -ManagedBy "Active Directory Administrators"
+        ```
         
 
         > [!IMPORTANT]
@@ -144,35 +148,45 @@ Set-RoleGroup "Active Directory Administrators" -ManagedBy "Active Directory Adm
     
     5.  以下のコマンドを使用して、"Mail Recipient Creation/メール受信者の作成" 役割へのすべての正規および委任の役割の割り当てを検索します。コマンドは、**Name**、**Role**、および **RoleAssigneeName** プロパティのみを表示します。
         
-            Get-ManagementRoleAssignment -Role "Mail Recipient Creation" | Format-Table Name, Role, RoleAssigneeName -Auto
+        ```powershell
+        Get-ManagementRoleAssignment -Role "Mail Recipient Creation" | Format-Table Name, Role, RoleAssigneeName -Auto
+        ```
     
     6.  以下のコマンドを使用して、新しい役割グループやその他の役割グループ、USG、または保持する必要がある直接的な役割に関連付けられていない "Mail Recipient Creation/メール受信者の作成" 役割へのすべての正規および委任の役割の割り当てを削除します。
         
         ```powershell
-Remove-ManagementRoleAssignment <Mail Recipient Creation role assignment to remove>
-```
+        Remove-ManagementRoleAssignment <Mail Recipient Creation role assignment to remove>
+        ```
         
 
         > [!NOTE]
         > "Active Directory Administrators/Active Directory 管理者" 役割グループ以外のすべての役割担当者に対する "Mail Recipient Creation/メール受信者の作成" 役割への正規および委任の役割の割り当てすべて削除する場合は、次のコマンドを使用します。<EM>WhatIf</EM> スイッチを使用すると、どの役割割り当てを削除するかを確認できます。役割割り当てを削除するには、<EM>WhatIf</EM> スイッチを削除して再度コマンドを実行します。
 
         
-            Get-ManagementRoleAssignment -Role "Mail Recipient Creation" | Where { $_.RoleAssigneeName -NE "Active Directory Administrators" } | Remove-ManagementRoleAssignment -WhatIf
-    
+        ```powershell
+        Get-ManagementRoleAssignment -Role "Mail Recipient Creation" | Where { $_.RoleAssigneeName -NE "Active Directory Administrators" } | Remove-ManagementRoleAssignment -WhatIf
+        ```
+
     7.  以下のコマンドを使用して、"Security Group Creation and Membership/セキュリティ グループの作成とメンバーシップ" 役割へのすべての正規および委任の役割の割り当てを検索します。コマンドは、**Name**、**Role**、および **RoleAssigneeName** プロパティのみを表示します。
         
-            Get-ManagementRoleAssignment -Role "Security Group Creation and Membership" | Format-Table Name, Role, RoleAssigneeName -Auto
+        ```powershell
+        Get-ManagementRoleAssignment -Role "Security Group Creation and Membership" | Format-Table Name, Role, RoleAssigneeName -Auto
+        ```
     
     8.  以下のコマンドを使用して、新しい役割グループやその他の役割グループ、USG、または保持する必要がある直接的な役割に関連付けられていない "Security Group Creation and Membership/セキュリティ グループの作成とメンバーシップ" 役割へのすべての正規および委任の役割の割り当てを削除します。
         
-            Remove-ManagementRoleAssignment <Security Group Creation and Membership role assignment to remove>
+        ```powershell
+        Remove-ManagementRoleAssignment <Security Group Creation and Membership role assignment to remove>
+        ```
         
 
         > [!NOTE]
         > この例で示すように、"Active Directory Administrators/Active Directory 管理者" 役割グループ以外のすべての役割担当者に対する "Security Group Creation and Membership/セキュリティ グループの作成とメンバーシップ" 役割への正規および委任の役割の割り当てをすべて削除するには、前述の注で説明したのと同じコマンドを使用します。
 
         
-            Get-ManagementRoleAssignment -Role "Security Group Creation and Membership" | Where { $_.RoleAssigneeName -NE "Active Directory Administrators" } | Remove-ManagementRoleAssignment -WhatIf
+        ```powershell
+        Get-ManagementRoleAssignment -Role "Security Group Creation and Membership" | Where { $_.RoleAssigneeName -NE "Active Directory Administrators" } | Remove-ManagementRoleAssignment -WhatIf
+        ```
 
 構文およびパラメーターの詳細については、以下のトピックを参照してください。
 
@@ -231,8 +245,8 @@ Exchange 管理者とサーバーは、既存の Active Directory セキュリ�
 1.  Windows コマンド シェルで、Exchange 2013 インストール メディアから次のコマンドを実行して Active Directory 分割型アクセス許可を有効にします。
     
     ```powershell
-setup.exe /PrepareAD /ActiveDirectorySplitPermissions:true
-```
+    setup.exe /PrepareAD /ActiveDirectorySplitPermissions:true
+    ```
 
 2.  組織内に複数の Active Directory ドメインがある場合、Exchange サーバーまたはオブジェクトを含むそれぞれの子ドメインで `setup.exe /PrepareDomain` を実行するか、すべてのドメインの Active Directory サーバーがあるサイトから `setup.exe /PrepareAllDomains` を実行します。
 

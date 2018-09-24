@@ -201,7 +201,9 @@ Test-ExchangeUMCallFlow -Mode Gateway -VoIPSecurity Unsecured -NextHop 10.1.1.1 
 
 UM トラブルシューティング ツールは、SIPClient モードを設定している場合、Office Communications Server 2007 R2 または Microsoft Lync Server を含めた社内または社内外にまたがる展開で使用できます。この例では、SIPClient モードを使用して、Office Communications Server 2007 R2 または Lync Server サーバーが含まれる環境で、セキュリティで保護された UM ダイヤル プランを使用した呼び出しフローをテストします。既定では、UM トラブルシューティング ツールを実行している場合、ツールはコンピューターに現在ログオンしているユーザーの資格情報を使用します。次の例を実行すると、UM トラブルシューティング ツールを実行する際に使用する資格情報の入力が求められます。詳細については、「[Exchange UM トラブルシューティング ツールで使用する資格情報を設定する](set-the-credentials-to-use-with-the-exchange-um-troubleshooting-tool-exchange-2013-help.md)」を参照してください。
 
-    Test-ExchangeUMCallFlow -Mode SIPClient -VoIPSecurity Secured -CallingParty tony@contoso.com -CalledParty david@contoso.com -Credential $get
+  ```powershell
+  Test-ExchangeUMCallFlow -Mode SIPClient -VoIPSecurity Secured -CallingParty tony@contoso.com -CalledParty david@contoso.com -Credential $get
+  ```
 
 ## UM トラブルシューティング ツールのインストール
 

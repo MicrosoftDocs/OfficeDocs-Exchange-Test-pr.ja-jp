@@ -78,8 +78,8 @@ Office 2010 Filter Pack の展開は、次の 2 つの主要な手順で構成�
 3.  レジストリ エディターを起動し、次のレジストリ サブキーを見つけます。
     
     ```powershell
-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ExchangeServer\v15\HubTransportRole\CLSID
-```
+    HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ExchangeServer\v15\HubTransportRole\CLSID
+    ```
 
 4.  <strong>CLSID</strong> で、次のように OneNote ファイルのサブキーを追加します。
     
@@ -108,8 +108,8 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ExchangeServer\v15\HubTransportRole\CLSID
 6.  次のレジストリ キーを見つけます。
     
     ```powershell
-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ExchangeServer\v15\HubTransportRole\filters
-```
+    HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ExchangeServer\v15\HubTransportRole\filters
+    ```
 
 7.  <strong>フィルター</strong> で、次のように .one 拡張子のサブキーを追加します。
     
@@ -182,8 +182,8 @@ Microsoft Office 2010 Filter Pack の IFilter を正常に登録したことを�
 2.  レジストリ エディターを起動し、次のサブキーを見つけます。
     
     ```powershell
-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ExchangeServer\v15\HubTransportRole\CLSID
-```
+    HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ExchangeServer\v15\HubTransportRole\CLSID
+    ```
 
 3.  <strong>CLSID</strong> で、次のように PDF ファイルのサブキーを追加します。
     
@@ -201,8 +201,8 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ExchangeServer\v15\HubTransportRole\CLSID
 4.  次のレジストリ キーを見つけます。
     
     ```powershell
-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ExchangeServer\v15\HubTransportRole\filters
-```
+    HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ExchangeServer\v15\HubTransportRole\filters
+    ```
 
 5.  <strong>フィルター</strong> で、次のように .pdf 拡張子のサブキーを追加します。
     

@@ -107,7 +107,9 @@ Set-ManagementScope <scope name> -ServerRestrictionFilter { <new server filter> 
 
 この例では、サーバー フィルターを、**ServerSite** プロパティが 'CN=Redmond,CN=Sites,CN=Configuration,DC=contoso,DC=com' に設定されているすべてのサーバー オブジェクトに一致するように変更します。
 
+```powershell
     Set-ManagementScope "Company Scope" -ServerRestrictionFilter { ServerSite -eq 'CN=Redmond,CN=Sites,CN=Configuration,DC=contoso,DC=com' }
+```
 
 構文およびパラメーターの詳細については、「[Set-ManagementScope](https://technet.microsoft.com/ja-jp/library/dd297996\(v=exchg.150\))」を参照してください。
 
@@ -135,7 +137,9 @@ Set-ManagementScope <scope name> -DatabaseRestrictionFilter { <new database filt
 
 この例では、**Name** プロパティに文字列 "Executive" が含まれているすべてのデータベース オブジェクトに一致させるようにデータベース フィルターを変更します。
 
+```powershell
     Set-ManagementScope "Database Executive Scope" -DatabaseRestrictionFilter { Name -Like "*Executive*" }
+```
 
 構文およびパラメーターの詳細については、「[Set-ManagementScope](https://technet.microsoft.com/ja-jp/library/dd297996\(v=exchg.150\))」を参照してください。
 

@@ -39,7 +39,9 @@ _**トピックの最終更新日:** 2012-10-04_
 
 *WhatIf* スイッチを使用してコマンドを実行するときは、次の例で示すように、コマンドの最後で *WhatIf* スイッチを指定します。
 
+```powershell
     New-AcceptedDomain -Name "Contoso Domain" -DomainName "contoso.com" -WhatIf 
+```
 
 このコマンド例を実行すると、次のようなテキストがシェルから返されます。
 
@@ -79,11 +81,13 @@ Get-JournalRule | Enable-JournalRule -Confirm
 
 このコマンド例を実行すると、次のような確認プロンプトがシェルから返されます。
 
+```powershell
     Confirm
     Are you sure you want to perform this action?
     Enabling journal rule "Litigation Journal Rule".
     [Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help
     (default is "Y"):
+```
 
 確認プロンプトでは以下の選択肢があります。
 

@@ -107,9 +107,12 @@ Set-RecipientFilterConfig -BlockedRecipients @{Remove="david@adatum.com"}
 
 プロパティに対して同時に値を追加したり削除したりするような、より複雑な組み合わせも使用できます。そのためには、セミコロン (`;` ) を `Add` と `Remove` のアクションの間に挿入します。次に例を示します。
 
-    Set-RecipientFilterConfig -BlockedRecipients @{Add="carter@contoso.com", "sam@northwindtraders.com", "brian@adatum.com"; Remove="john@contoso.com"}
+```powershell
+Set-RecipientFilterConfig -BlockedRecipients @{Add="carter@contoso.com", "sam@northwindtraders.com", "brian@adatum.com"; Remove="john@contoso.com"}
+```  
 
 `Get-RecipientFilterConfig | Format-List BlockedRecipients` コマンドを再度使用すると、Carter、Sam、および Brian の電子メール アドレスが追加された一方で、John のアドレスが削除されたことが分かります。
 
-    BlockedRecipients : {brian@adatum.com, sam@northwindtraders.com, carter@contoso.com, chris@contoso.com, kim@northwindtraders.com}
-
+```powershell
+BlockedRecipients : {brian@adatum.com, sam@northwindtraders.com, carter@contoso.com, chris@contoso.com, kim@northwindtraders.com}
+```  

@@ -34,8 +34,8 @@ Exchange 2013 セットアップがインストールを続行できるように
 2.  次のコマンドを実行して、必要な Windows 機能をインストールします。
     
     ```powershell
-Install-WindowsFeature RSAT-Clustering-CmdInterface
-```
+    Install-WindowsFeature RSAT-Clustering-CmdInterface
+    ```
 
 問題がある場合は、Exchange のフォーラムで質問してください。 次のフォーラムにアクセスしてください。[Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612)、 [Exchange Online](https://go.microsoft.com/fwlink/p/?linkid=267542)、 または [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkid=285351)。
 

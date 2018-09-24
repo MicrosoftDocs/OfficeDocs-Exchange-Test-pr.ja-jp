@@ -42,7 +42,9 @@ Microsoft Exchange の各メールボックスは、Active Directory ユーザ�
     
     組織内の回復可能な削除によって削除されたメールボックスを識別するには、次のコマンドを実行します。
     
-        Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisconnectReason -eq "SoftDeleted" } | ft DisplayName,Database,DisconnectDate
+      ```powershell
+      Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisconnectReason -eq "SoftDeleted" } | ft DisplayName,Database,DisconnectDate
+      ```
 
 **目次**
 

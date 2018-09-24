@@ -176,8 +176,8 @@ Microsoft Cloud で情報を処理すると、優先受信トレイでのメー�
 1.  組み込みの Exchange モバイル デバイス アクセス ルールを利用して、Exchange 管理シェルで次を設定することにより、すべてのモバイル デバイスが接続できないようにブロックできます。
     
     ```powershell
-Set-ActiveSyncOrganizationSettings -DefaultAccessLevel Block
-```
+      Set-ActiveSyncOrganizationSettings -DefaultAccessLevel Block
+    ```
 
 2.  オンプレミスの Exchange Connector をインストールした後で、オンプレミスの条件付きアクセス ポリシーを Intune 内で利用できます。詳細については、「[Exchange On-Premises と従来の Exchange Online Dedicated の条件付きアクセス ポリシーを作成する](https://docs.microsoft.com/intune/conditional-access-exchange-create#configure-exchange-on-premises-access)」を参照してください。
 
@@ -221,13 +221,17 @@ Set-ActiveSyncOrganizationSettings -DefaultAccessLevel Block
 
 1.  Exchange デバイスのアクセス許可ルールを作成し、Exchange Online が ActiveSync プロトコルを使用して、オンプレミスの環境に接続できるようにします。
     
-        If ((Get-ActiveSyncOrganizationSettings).DefaultAccessLevel -ne "Allow") {New-ActiveSyncDeviceAccessRule -Characteristic DeviceType -QueryString "OutlookService" -AccessLevel Allow}
+      ```powershell
+      If ((Get-ActiveSyncOrganizationSettings).DefaultAccessLevel -ne "Allow") {New-ActiveSyncDeviceAccessRule -Characteristic DeviceType -QueryString "OutlookService" -AccessLevel Allow}
+      ```
     
     オンプレミスの Exchange 管理センター経由では、デバイスを管理できないことにご注意ください。モバイル デバイスを管理するには、Intune が必要です。
 
 2.  Exchange ActiveSync プロトコルでは iOS および Android 用の Outlook によるオンプレミスの環境への基本認証を使用したユーザー接続を行えないようにする、Exchange デバイス アクセス ルールを作成します。
     
-        New-ActiveSyncDeviceAccessRule -Characteristic DeviceModel -QueryString "Outlook for iOS and Android" -AccessLevel Block
+      ```powershell
+      New-ActiveSyncDeviceAccessRule -Characteristic DeviceModel -QueryString "Outlook for iOS and Android" -AccessLevel Block
+      ```
     
 
     > [!NOTE]
@@ -359,7 +363,7 @@ ADAL ベースのサインインにより、ハイブリッド Exchange オン�
 
 **A**:はい。ユーザーはいつでも AutoDetect をバイパスして、Exchange ActiveSync プロトコルで基本認証を使用して接続を手動で構成できます。ユーザーが Azure Active Directory の条件付きアクセスや Intune のアプリ保護ポリシーをサポートしていないメカニズムを使用してオンプレミス環境への接続を確立しないようにするには、オンプレミスの Exchange 管理者が、ActiveSync 接続をブロックする Exchange デバイス アクセス ルールを構成する必要があります。これを行うには、Exchange 管理シェルで次のコマンドを入力します。
 
-``` 
- New-ActiveSyncDeviceAccessRule -Characteristic DeviceModel -QueryString "Outlook for iOS and Android" -AccessLevel Block
+```powershell 
+New-ActiveSyncDeviceAccessRule -Characteristic DeviceModel -QueryString "Outlook for iOS and Android" -AccessLevel Block
 ```
 

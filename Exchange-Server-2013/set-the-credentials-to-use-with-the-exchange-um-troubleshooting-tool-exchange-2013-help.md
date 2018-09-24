@@ -60,12 +60,14 @@ Microsoft Exchange 2010 UM トラブルシューティング ツールは **Test
 2.  <strong>Microsoft Exchange 2010 UM トラブルシューティング ツール</strong> ウィンドウのプロンプトで、次を入力し、Enter キーを押します。
     
     ```powershell
-$cred=Get-Credential
-```
+    $cred=Get-Credential
+    ```
 
 3.  <strong>Windows PowerShell 資格情報の要求</strong> ウィンドウに、ドメイン\\ユーザー名およびパスワードを入力して <strong>OK</strong> をクリックします。
 
 4.  <strong>Microsoft Exchange 2010 UM トラブルシューティング ツール</strong> ウィンドウで、呼び出しのフローのテストに必要なコマンドレットのパラメーターを指定します。次に例を示します。
     
-        Test-ExchangeUMCallFlow -Mode SIPClient -CallingParty tonysmith@contoso.com - CalledParty jamiestark@contoso.com NextHop ocsfe.contoso.com -Credential $cred
+      ```powershell
+      Test-ExchangeUMCallFlow -Mode SIPClient -CallingParty tonysmith@contoso.com - CalledParty jamiestark@contoso.com NextHop ocsfe.contoso.com -Credential $cred
+      ```
 

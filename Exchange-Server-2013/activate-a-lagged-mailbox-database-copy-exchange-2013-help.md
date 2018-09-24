@@ -57,7 +57,9 @@ _**トピックの最終更新日:** 2014-01-28_
 
 1.  この例では、[Suspend-MailboxDatabaseCopy](https://technet.microsoft.com/ja-jp/library/dd351074\(v=exchg.150\)) コマンドレットを使用して、アクティブ化されている時間差コピーのレプリケーションを中断します。
     
-        Suspend-MailboxDatabaseCopy DB1\EX3 -SuspendComment "Activate lagged copy of DB1 on Server EX3" -Confirm:$false
+    ```powershell
+    Suspend-MailboxDatabaseCopy DB1\EX3 -SuspendComment "Activate lagged copy of DB1 on Server EX3" -Confirm:$false
+    ```
 
 2.  オプションで (時間差コピーを保存するために)、データベース コピーとそのログ ファイルのコピーを作成します。
     
@@ -74,8 +76,8 @@ _**トピックの最終更新日:** 2014-01-28_
 5.  この例では、Eseutil を使用して回復操作を実行します。
     
     ```powershell
-Eseutil.exe /r eXX /a
-```
+    Eseutil.exe /r eXX /a
+    ```
     
 
     > [!NOTE]
@@ -93,8 +95,8 @@ Eseutil.exe /r eXX /a
 7.  回復プロセスが完了した後、この例では、回復プロセスの一部として使用されたデータベースのレプリケーションを再開します。
     
     ```powershell
-Resume-MailboxDatabaseCopy DB1\EX3
-```
+    Resume-MailboxDatabaseCopy DB1\EX3
+    ```
 
 構文およびパラメーターの詳細については、「[Suspend-MailboxDatabaseCopy](https://technet.microsoft.com/ja-jp/library/dd351074\(v=exchg.150\))」または「[Resume-MailboxDatabaseCopy](https://technet.microsoft.com/ja-jp/library/dd335220\(v=exchg.150\))」を参照してください。
 
@@ -104,7 +106,9 @@ Resume-MailboxDatabaseCopy DB1\EX3
     
     1.  この例では、[Suspend-MailboxDatabaseCopy](https://technet.microsoft.com/ja-jp/library/dd351074\(v=exchg.150\)) コマンドレットを使用して、アクティブ化されている時間差コピーのレプリケーションを中断します。
         
-            Suspend-MailboxDatabaseCopy DB1\EX3 -SuspendComment "Activate lagged copy of DB1 on Server EX3" -Confirm:$false
+        ```powershell
+        Suspend-MailboxDatabaseCopy DB1\EX3 -SuspendComment "Activate lagged copy of DB1 on Server EX3" -Confirm:$false
+        ```
     
     2.  オプションで (時間差コピーを保存するために)、データベース コピーとそのログ ファイルのコピーを作成します。
         
@@ -117,8 +121,8 @@ Resume-MailboxDatabaseCopy DB1\EX3
 2.  この例では、[Move-ActiveMailboxDatabase](https://technet.microsoft.com/ja-jp/library/dd298068\(v=exchg.150\)) コマンドレットと *SkipLagChecks* パラメーターを使用して、遅延メールボックス データベース コピーをアクティブにします。
     
     ```powershell
-Move-ActiveMailboxDatabase DB1 -ActivateOnServer EX3 -SkipLagChecks
-```
+    Move-ActiveMailboxDatabase DB1 -ActivateOnServer EX3 -SkipLagChecks
+    ```
 
 ## シェルで SafetyNet 回復を使用して遅延メールボックス データベース コピーをアクティブにする
 
@@ -126,7 +130,9 @@ Move-ActiveMailboxDatabase DB1 -ActivateOnServer EX3 -SkipLagChecks
     
     1.  この例では、[Suspend-MailboxDatabaseCopy](https://technet.microsoft.com/ja-jp/library/dd351074\(v=exchg.150\)) コマンドレットを使用して、アクティブ化されている時間差コピーのレプリケーションを中断します。
         
-            Suspend-MailboxDatabaseCopy DB1\EX3 -SuspendComment "Activate lagged copy of DB1 on Server EX3" -Confirm:$false
+        ```powershell
+        Suspend-MailboxDatabaseCopy DB1\EX3 -SuspendComment "Activate lagged copy of DB1 on Server EX3" -Confirm:$false
+        ```
     
     2.  オプションで (時間差コピーを保存するために)、データベース コピーとそのログ ファイルのコピーを作成します。
         
@@ -139,16 +145,18 @@ Move-ActiveMailboxDatabase DB1 -ActivateOnServer EX3 -SkipLagChecks
 2.  ESEUTIL データベース ヘッダー出力内の "Log Required:" の値を検索することによって時間差データベース コピーに必要なログを決定する
     
     ```powershell
-Eseutil /mh <DBPath> | findstr /c:"Log Required"
-```
-    
+    Eseutil /mh <DBPath> | findstr /c:"Log Required"
+    ```
+        
     括弧内の 16 進数を書き留めます。最初の数字は必要な最小生成 (LowGeneration と呼ばれる) で、2 つ目の数字は必要な最大生成 (HighGeneration と呼ばれる) です。生成シーケンスが HighGeneration より大きいすべてのログ生成ファイルを別の場所に移して、データベースに再生されないようにします。
 
 3.  データベースのアクティブ コピーをホストしているサーバーで、アクティブ コピーからアクティブになっている時間差コピーのログ ファイルを削除するか、Microsoft Exchange Replication Service を停止します。
 
 4.  データベースの切り替えを実行して、時間差コピーをアクティブにします。この例では、[Move-ActiveMailboxDatabase](https://technet.microsoft.com/ja-jp/library/dd298068\(v=exchg.150\)) コマンドレットといくつかのパラメーターを使用してデータベースをアクティブにします。
     
-        Move-ActiveMailboxDatabase DB1 -ActivateOnServer EX3 -MountDialOverride BestEffort -SkipActiveCopyChecks -SkipClientExperienceChecks -SkipHealthChecks -SkipLagChecks
+    ```powershell
+    Move-ActiveMailboxDatabase DB1 -ActivateOnServer EX3 -MountDialOverride BestEffort -SkipActiveCopyChecks -SkipClientExperienceChecks -SkipHealthChecks -SkipLagChecks
+    ```
 
 5.  この時点で、データベースは自動的にマウントし、SafetyNet から見つからないメッセージの再配信を要求します。
 
@@ -161,6 +169,6 @@ Eseutil /mh <DBPath> | findstr /c:"Log Required"
   - シェルで次のコマンドを実行して、データベース コピーの状態情報を表示します。
     
     ```powershell
-Get-MailboxDatabaseCopyStatus <DatabaseCopyName> | Format-List
-```
+    Get-MailboxDatabaseCopyStatus <DatabaseCopyName> | Format-List
+    ```
 

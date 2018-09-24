@@ -66,8 +66,8 @@ DAG ネットワークが正常に構成されたことを確認するには、�
   - シェルで次のコマンドを実行して、DAG ネットワーク構成の設定を表示し、DAG ネットワークが正常に構成されたことを確認します。
     
     ```powershell
-Get-DatabaseAvailabilityGroupNetwork <DAGNetworkName> | Format-List
-```
+    Get-DatabaseAvailabilityGroupNetwork <DAGNetworkName> | Format-List
+    ```
 
 ## 詳細情報
 

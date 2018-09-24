@@ -62,8 +62,8 @@ _**適用先:** Exchange Online, Exchange Server 2013_
 1.  この Exchange 管理シェル コマンドを実行して、ディレクトリを Exchange のインストール先パスの **Scripts** サブディレクトリに変更します。
     
     ```powershell
-Cd $Env:ExchangeInstallPath\Scripts
-```
+    Cd $Env:ExchangeInstallPath\Scripts
+    ```
 
 2.  Export-RetentionTags.ps1 スクリプトを実行して保持タグを XML ファイルにエクスポートします。
     
@@ -73,8 +73,8 @@ Cd $Env:ExchangeInstallPath\Scripts
 
     
     ```powershell
-.\Export-RetentionTags.ps1 "c:\docs\ExportedRetentionTags.xml"
-```
+    .\Export-RetentionTags.ps1 "c:\docs\ExportedRetentionTags.xml"
+    ```
 
 ## 正常な動作を確認する方法
 
@@ -89,8 +89,8 @@ Cd $Env:ExchangeInstallPath\Scripts
 1.  この Exchange 管理シェル コマンドを実行して、ディレクトリを Exchange のインストール先パスの **Scripts** サブディレクトリに変更します。
     
     ```powershell
-Cd $Env:ExchangeInstallPath\Scripts
-```
+    Cd $Env:ExchangeInstallPath\Scripts
+    ```
 
 2.  Import-RetentionTags.ps1 スクリプトを実行し、以前にエクスポートされた XML ファイルから保持タグをインポートします。
     
@@ -105,8 +105,8 @@ Cd $Env:ExchangeInstallPath\Scripts
 
     
     ```powershell
-.\Import-RetentionTags.ps1 "c:\docs\ExportedRetentionTags.xml"
-```
+    .\Import-RetentionTags.ps1 "c:\docs\ExportedRetentionTags.xml"
+    ```
 
 ## 正常な動作を確認する方法
 

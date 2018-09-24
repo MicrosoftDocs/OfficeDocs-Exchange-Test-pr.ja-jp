@@ -34,8 +34,8 @@ Exchange 2007 セットアップ プログラムを実行するには、他の�
 2.  次のコマンドを実行します。
     
     ```powershell
-Setup /roles:<Failed Server Role>
-```
+    Setup /roles:<Failed Server Role>
+    ```
     
     以下の役割から、1 つ以上の役割を選択します。複数の場合はコンマで区切ります。
     

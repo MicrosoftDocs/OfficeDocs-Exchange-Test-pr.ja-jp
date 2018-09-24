@@ -68,8 +68,8 @@ Remove-FederationTrust
   - シェルで次のコマンドを実行して、フェデレーション信頼の情報が Exchange 組織に返されないことを確認します。
     
     ```powershell
-Get-FederationTrust
-```
+    Get-FederationTrust
+    ```
     
     構文およびパラメーターの詳細については、「[Get-FederationTrust](https://technet.microsoft.com/ja-jp/library/dd351262\(v=exchg.150\))」を参照してください。
 

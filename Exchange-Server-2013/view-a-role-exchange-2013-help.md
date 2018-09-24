@@ -83,7 +83,9 @@ Get-ManagementRole | Format-Table <property 1>, <property 2...>
 
 この例では、組織内のすべての役割の一覧を返し、**Name** プロパティ、およびプロパティ名の先頭に単語 **Implicit** を持つ任意のプロパティを含めます。
 
+```powershell
     Get-ManagementRole | Format-Table Name, Implicit*
+```
 
 構文およびパラメーターの詳細については、「[Get-ManagementRole](https://technet.microsoft.com/ja-jp/library/dd351125\(v=exchg.150\))」を参照してください。
 
@@ -113,7 +115,9 @@ Get-ManagementRole -Cmdlet New-Mailbox
 
 指定したパラメーターを含む役割の一覧を返すには、次の構文を使用します。
 
+```powershell
     Get-ManagementRole [-Cmdlet <cmdlet>] -CmdletParameters <parameter 1>, <parameter 2...>
+```
 
 この例では、パラメーターが存在しているコマンドレットに無関係に、*Database* パラメーターと *Server* パラメーターを含む役割の一覧を返します。
 

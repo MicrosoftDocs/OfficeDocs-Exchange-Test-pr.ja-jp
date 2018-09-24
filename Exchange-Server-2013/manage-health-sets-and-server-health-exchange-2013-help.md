@@ -49,22 +49,22 @@ _**トピックの最終更新日:** 2013-12-02_
 
 次のコマンドのいずれかを実行し、Exchange 2013 を稼働しているサーバーの正常性セットと正常性情報を表示します。
 
-```
+```powershell
 Get-HealthReport -Identity <ServerName>
 ```
-```
+```powershell
 Get-ServerHealth -Identity <ServerName> | Format-Table Server,CurrentHealthSetState,Name,HealthSetName,AlertValue,HealthGroupName -Auto
 ```
 
 次のコマンドのいずれかを実行し、Exchange 2013 を稼働しているサーバーまたはデータベース可用性グループの正常性セットを表示します。
 
-```
+```powershell
 Get-ExchangeServer | Get-HealthReport -RollupGroup
 ```
-```
+```powershell
 Get-ExchangeServer | Get-HealthReport -RollupGroup -HealthSetName <HealthSet>
 ```
-```
+```powershell
 (Get-DatabaseAvailabiltyGroup <DAGName>).Servers | Get-HealthReport -RollupGroup
 ```
 
@@ -88,7 +88,9 @@ Get-HealthReport -Server <ServerName>
 
 以下のコマンドを使用して、Exchange 2013 を稼働しているサーバーの正常性セットに関連したプローブ、モニター、レスポンダーの一覧を表示します。
 
-    Get-MonitoringItemIdentity -Server <ServerName> -Identity <HealthSetName> | Format-Table Identity,ItemType,Name -Auto
+  ```powershell
+  Get-MonitoringItemIdentity -Server <ServerName> -Identity <HealthSetName> | Format-Table Identity,ItemType,Name -Auto
+  ```
 
 ## モニターとその現在の正常性の一覧の表示
 
@@ -98,5 +100,7 @@ Get-HealthReport -Server <ServerName>
 
 以下のコマンドを実行して、Exchange 2013 を稼働しているサーバーのモニターとその現在の正常性の一覧を表示します。
 
-    Get-ServerHealth -HealthSet <HealthSetName> -Server <ServerName> | Format-Table Name, AlertValue -Auto
+  ```powershell
+  Get-ServerHealth -HealthSet <HealthSetName> -Server <ServerName> | Format-Table Name, AlertValue -Auto
+  ```
 

@@ -51,7 +51,9 @@ Microsoft Exchange Server 2013 では、Exchange ツールボックスのキュ�
 
 キューを表示するには、次の構文を使用します。
 
-    Get-Queue [-Filter <Filter> -Server <ServerIdentity> -Include <Internal | External | Empty | DeliveryType> -Exclude <Internal | External | Empty | DeliveryType>]
+```powershell
+Get-Queue [-Filter <Filter> -Server <ServerIdentity> -Include <Internal | External | Empty | DeliveryType> -Exclude <Internal | External | Empty | DeliveryType>]
+```
 
 この例では、Mailbox01 という名前の Exchange 2013 メールボックス サーバーにある空ではないすべてのキューについて、基本情報を表示します。
 
@@ -77,7 +79,9 @@ Get-Queue -Filter {MessageCount -gt 100} | Format-List
 
 複数の Exchange サーバー上のキューについて概要情報を表示するには、次のコマンドを実行します。
 
-    Get-QueueDigest <-Server <ServerIdentity1,ServerIdentity2,..> | -Dag <DagIdentity1,DagIdentity2...> | -Site <ADSiteIdentity1,ADSiteIdentity2...> | -Forest> [-Filter <Filter>]
+```powershell
+Get-QueueDigest <-Server <ServerIdentity1,ServerIdentity2,..> | -Dag <DagIdentity1,DagIdentity2...> | -Site <ADSiteIdentity1,ADSiteIdentity2...> | -Forest> [-Filter <Filter>]
+```
 
 この例では、FirstSite という名前の Active Directory サイト内にあるすべての Exchange 2013 メールボックス サーバー上の、メッセージ数が 100 を超えているキューについて概要情報を表示します。
 
@@ -119,7 +123,9 @@ Get-QueueDigest -Dag DAG01 -Filter {Status -eq "Retry"}
 
 キューを再開するには、次の構文を使用します。
 
-    Resume-Queue <-Identity QueueIdentity | -Filter {QueueFilter} [-Server ServerIdentity]>
+```powershell
+Resume-Queue <-Identity QueueIdentity | -Filter {QueueFilter} [-Server ServerIdentity]>
+```
 
 この例では、状態が "中断" になっているローカル サーバー上のすべてのキューを再開します。
 
@@ -169,7 +175,9 @@ Resume-Queue -Identity Mailbox01\contoso.com
 
 キューを再試行するには、次の構文を使用します。
 
-    Retry-Queue <-Identity QueueIdentity | -Filter QueueFilter [-Server ServerIdentity]>
+```powershell
+Retry-Queue <-Identity QueueIdentity | -Filter QueueFilter [-Server ServerIdentity]>
+```
 
 この例では、ローカル サーバー上で状態が "再試行" のキューをすべて再試行します。
 
@@ -205,7 +213,9 @@ Retry-Queue -Identity Mailbox01\contoso.com
 
 メッセージを再送信するには、次の構文を使用します。
 
-    Retry-Queue <-Identity QueueIdentity | -Filter {Status -eq "Retry"} -Server ServerIdentity> -Resubmit $true
+```powershell
+Retry-Queue <-Identity QueueIdentity | -Filter {Status -eq "Retry"} -Server ServerIdentity> -Resubmit $true
+```
 
 この例では、Mailbox01 という名前のサーバー上の配信キューに置かれている、状態が "再試行" であるメッセージをすべて再送信します。
 
@@ -248,20 +258,20 @@ Retry-Queue -Identity Mailbox01\Unreachable -Resubmit $true
 1.  次のコマンドを実行してメッセージの ID を検索します。
     
     ```powershell
-Get-Message -Queue Poison | Format-Table Identity
-```
+    Get-Message -Queue Poison | Format-Table Identity
+    ```
 
 2.  次のコマンドに前の手順で取得したメッセージの ID を使用します。
     
     ```powershell
-Resume-Message <PoisonMessageIdentity>
-```
+    Resume-Message <PoisonMessageIdentity>
+    ```
     
     この例では、メッセージ ID の値が 222 であるメッセージを有害なメッセージ キューから再開します。
     
     ```powershell
-Resume-Message 222
-```
+    Resume-Message 222
+    ```
 
 ## 正常な動作を確認する方法
 
@@ -293,7 +303,9 @@ Resume-Message 222
 
 キューを中断するには、次の構文を使用します。
 
-    Suspend-Queue <-Identity QueueIdentity | -Filter {QueueFilter} [-Server ServerIdentity]>
+```powershell
+Suspend-Queue <-Identity QueueIdentity | -Filter {QueueFilter} [-Server ServerIdentity]>
+```
 
 この例では、メッセージ数が 1,000 以上で状態が "再試行" であるローカル サーバー上のキューをすべて中断します。
 

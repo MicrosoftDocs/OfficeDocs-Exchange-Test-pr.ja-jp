@@ -93,5 +93,7 @@ Set-Mailbox -Identity "Ben Smith" -AuditOwner HardDelete -AuditEnabled $true
 
 この例では、Ben Smith のメールボックス設定を取得して、指定された監査設定（監査ログ保管期限を含む）を **Format-List** コマンドレットにパイプ処理します。
 
-    Get-Mailbox "Ben Smith" | Format-List *audit*
+  ```powershell
+  Get-Mailbox "Ben Smith" | Format-List *audit*
+  ```
 

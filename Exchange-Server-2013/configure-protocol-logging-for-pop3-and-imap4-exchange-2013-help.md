@@ -41,9 +41,10 @@ _**トピックの最終更新日:** 2012-11-27_
 
 この例では、クライアント アクセス サーバー CAS01 で IMAP4 または POP3 のプロトコル ログ出力を有効にします。
 
+```powershell
     Set-ImapSettings -Server "CAS01" -ProtocolLogEnabled $true
     Set-PopSettings -Server "CAS01" -ProtocolLogEnabled $true
-
+```
 
 > [!NOTE]
 > POP3 または IMAP4 のプロトコル ログ設定を変更した後、使用するサービスとして POP3 または IMAP4 のいずれかを再開する必要があります。POP3 サービスおよび IMAP4 サービスを再起動する方法の詳細については、「<A href="start-and-stop-the-pop3-services-exchange-2013-help.md">POP3 サービスの開始および停止</A>」および「<A href="start-and-stop-the-imap4-services-exchange-2013-help.md">IMAP4 サービスの開始および停止</A>」を参照してください。
@@ -56,9 +57,10 @@ _**トピックの最終更新日:** 2012-11-27_
 
 この例では、クライアント アクセス サーバー CAS01 で IMAP4 または POP3 のプロトコル ログ出力を無効にします。
 
+```powershell
     Set-ImapSettings -Server "CAS01" -protocolLogEnabled $false
     Set-PopSettings -Server "CAS01" -protocolLogEnabled $false
-
+```
 
 > [!NOTE]
 > POP3 または IMAP4 のプロトコル ログ設定を変更した後、使用するサービスとして POP3 または IMAP4 のいずれかを再開する必要があります。POP3 サービスおよび IMAP4 サービスを再起動する方法の詳細については、「<A href="start-and-stop-the-pop3-services-exchange-2013-help.md">POP3 サービスの開始および停止</A>」および「<A href="start-and-stop-the-imap4-services-exchange-2013-help.md">IMAP4 サービスの開始および停止</A>」を参照してください。
@@ -74,8 +76,8 @@ POP3 および IMAP4 設定を変更するには、次のパラメーターを 1
   - *LogFileLocation*   このパラメーターには、POP3 または IMAP4 プロトコル ログ ファイルの場所を指定します。既定では、POP3 プロトコル ログ ファイルは C:\\Program Files\\Microsoft\\Exchange Server\\V15\\Logging\\Pop3 ディレクトリにあります。この例では、クライアント アクセス サーバー CAS01 で POP3 プロトコル ログ出力をオンにします。また、POP3 プロトコル ログ出力のディレクトリを C:\\Pop3Logging に変更します。
     
     ```powershell
-Set-PopSettings -Server "CAS01" -ProtocolLogEnabled $true -LogFileLocation "C:\Pop3Logging"
-```
+    Set-PopSettings -Server "CAS01" -ProtocolLogEnabled $true -LogFileLocation "C:\Pop3Logging"
+    ```
 
   - *LogFileRollOverSettings*   このパラメーターには、POP3 または IMAP4 プロトコル ログ出力で新しいログ ファイルを作成する頻度を指定します。既定では、新しいログ ファイルが毎日作成されます。値は次のいずれかです。
     
@@ -90,22 +92,22 @@ Set-PopSettings -Server "CAS01" -ProtocolLogEnabled $true -LogFileLocation "C:\P
     この設定は、パラメーター *LogPerFileSizeQuota* の値がゼロに設定されている場合にのみ適用されます。この例では、新しいログ ファイルを 1 時間ごとに作成するように、クライアント アクセス サーバー CAS01 の POP3 プロトコル ログを変更します。
     
     ```powershell
-Set-PopSettings -Server "CAS01" -LogPerFileSizeQuota 0 -LogFileRollOverSettings Hourly
-```
+    Set-PopSettings -Server "CAS01" -LogPerFileSizeQuota 0 -LogFileRollOverSettings Hourly
+    ```
 
   - *LogPerFileSizeQuota*   このパラメーターには、POP3 または IMAP4 プロトコル ログ ファイルの最大サイズをバイト単位で指定します。既定では、この値はゼロに設定されます。この値がゼロに設定されている場合、新しいプロトコル ログ ファイルは *LogFileRollOverSettings* パラメーターによって指定されている頻度で作成されます。
     
     この例では、ログ ファイルが 2 メガバイト (MB) に達したときに新しいログ ファイルを作成するように、クライアント アクセス サーバー CAS01 の POP3 プロトコル ログを変更します。
     
     ```powershell
-Set-PopSettings -Server "CAS01" -LogPerFileSizeQuota 2000000
-```
+    Set-PopSettings -Server "CAS01" -LogPerFileSizeQuota 2000000
+    ```
     
     この例では、クライアント アクセス サーバー CAS01 の POP3 プロトコル ログ出力を変更し、ログ ファイルの作成日時およびサイズに関係なく同じログ ファイルを作成します。
     
     ```powershell
-Set-PopSettings -Server "CAS01" -LogPerFileSizeQuota unlimited
-```
+    Set-PopSettings -Server "CAS01" -LogPerFileSizeQuota unlimited
+    ```
 
 
 > [!NOTE]

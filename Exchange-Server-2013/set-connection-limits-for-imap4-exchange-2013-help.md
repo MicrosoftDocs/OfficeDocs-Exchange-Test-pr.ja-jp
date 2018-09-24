@@ -112,8 +112,8 @@ Set-ImapSettings -MaxCommandSize Value
 1.  シェルで、次のコマンドを実行します。
     
     ```powershell
-Get-ImapSettings | format-list
-```
+    Get-ImapSettings | format-list
+    ```
 
 2.  接続設定が正しいことを確認します。
 

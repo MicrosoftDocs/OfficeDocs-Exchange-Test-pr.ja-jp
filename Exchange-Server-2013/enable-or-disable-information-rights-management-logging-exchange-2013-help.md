@@ -75,5 +75,7 @@ Set-TransportService -Identity EXCH01 -IRMLogEnabled $false
 
 この例では、EXCH01 サーバー上のすべての IRM ログのプロパティを取得します。
 
-    Get-TransportService -Identity EXCH01 | Format-List IRMLog*
+  ```powershell
+  Get-TransportService -Identity EXCH01 | Format-List IRMLog*
+  ```
 

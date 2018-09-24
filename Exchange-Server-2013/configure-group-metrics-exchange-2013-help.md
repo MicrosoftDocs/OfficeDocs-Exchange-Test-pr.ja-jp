@@ -66,8 +66,8 @@ OAB を使用していない組織でグループ メトリックス生成が正
 1.  次のコマンドを実行します。
     
     ```powershell
-Get-MailboxServer <ServerIdentity> | Format-List ForceGroupMetricsGeneration
-```
+    Get-MailboxServer <ServerIdentity> | Format-List ForceGroupMetricsGeneration
+    ```
 
 2.  表示される設定が構成した設定であることを確認します。
 

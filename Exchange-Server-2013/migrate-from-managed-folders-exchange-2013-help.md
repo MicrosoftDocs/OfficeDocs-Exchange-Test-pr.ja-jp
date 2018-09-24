@@ -262,13 +262,15 @@ MRM に関連するその他の管理タスクについては、「[メッセー
 
 この例では、Contoso 管理フォルダー メールボックス ポリシーで示される、対応する管理コンテンツの設定に基づいて、保持タグを作成します。
 
-    New-RetentionPolicyTag Corp-DeletedItems -ManagedFolderToUpgrade Corp-DeletedItems
-    New-RetentionPolicyTag Corp-SentItems -ManagedFolderToUpgrade Corp-SentItems
-    New-RetentionPolicyTag Corp-JunkMail -ManagedFolderToUpgrade Corp-JunkMail
-    New-RetentionPolicyTag Corp-EntireMailbox -ManagedFolderToUpgrade Corp-EntireMailbox
-    New-RetentionPolicyTag 30Days -ManagedFolderToUpgrade 30Days
-    New-RetentionPolicyTag 5Years -ManagedFolderToUpgrade 5Years
-    New-RetentionPolicyTag NeverExpire -ManagedFolderToUpgrade NeverExpire
+```powershell
+New-RetentionPolicyTag Corp-DeletedItems -ManagedFolderToUpgrade Corp-DeletedItems
+New-RetentionPolicyTag Corp-SentItems -ManagedFolderToUpgrade Corp-SentItems
+New-RetentionPolicyTag Corp-JunkMail -ManagedFolderToUpgrade Corp-JunkMail
+New-RetentionPolicyTag Corp-EntireMailbox -ManagedFolderToUpgrade Corp-EntireMailbox
+New-RetentionPolicyTag 30Days -ManagedFolderToUpgrade 30Days
+New-RetentionPolicyTag 5Years -ManagedFolderToUpgrade 5Years
+New-RetentionPolicyTag NeverExpire -ManagedFolderToUpgrade NeverExpire
+```
 
 構文およびパラメーターの詳細については、「[New-RetentionPolicyTag](https://technet.microsoft.com/ja-jp/library/dd335226\(v=exchg.150\))」を参照してください。
 
@@ -282,13 +284,15 @@ MRM に関連するその他の管理タスクについては、「[メッセー
 
 この例では、管理フォルダーおよび Contoso 管理フォルダー メールボックス ポリシーで示される、対応する管理コンテンツの設定に基づいて、保持タグを作成します。保存設定は、*ManagedFolderToUpgrade* パラメーターを使用せずに手動で指定されます。
 
-    New-RetentionPolicyTag Corp-DeletedItems -Type DeletedItems -RetentionEnabled $true -AgeLimitForRetention 30 -RetentionAction DeleteAndAllowRecovery
-    New-RetentionPolicyTag Corp-SentItems -Type SentItems -RetentionEnabled $true -AgeLimitforRetention 1825 -RetentionAction MoveToDeletedItems
-    New-RetentionPolicyTag Corp-JunkMail -Type JunkMail -RetentionEnabled $true -AgeLimitforRetention 30 -RetentionAction PermanentlyDelete
-    New-RetentionPolicyTag Corp-EntireMailbox -Type All -RetentionEnabled $true -AgeLimitForRetention 365 -RetentionAction MoveToDeletedItems
-    New-RetentionPolicyTag 30Days -Type Personal -RetentionEnabled $true -AgeLimitForRetention 30 -RetentionAction MoveToDeletedItems
-    New-RetentionPolicyTag 5Years -Type Personal -RetentionEnabled $true -AgeLimitForRetention 1825 -RetentionAction MoveToDeletedItems
-    New-RetentionPolicyTag NeverExpire -Type Personal -RetentionEnabled $false
+```powershell
+New-RetentionPolicyTag Corp-DeletedItems -Type DeletedItems -RetentionEnabled $true -AgeLimitForRetention 30 -RetentionAction DeleteAndAllowRecovery
+New-RetentionPolicyTag Corp-SentItems -Type SentItems -RetentionEnabled $true -AgeLimitforRetention 1825 -RetentionAction MoveToDeletedItems
+New-RetentionPolicyTag Corp-JunkMail -Type JunkMail -RetentionEnabled $true -AgeLimitforRetention 30 -RetentionAction PermanentlyDelete
+New-RetentionPolicyTag Corp-EntireMailbox -Type All -RetentionEnabled $true -AgeLimitForRetention 365 -RetentionAction MoveToDeletedItems
+New-RetentionPolicyTag 30Days -Type Personal -RetentionEnabled $true -AgeLimitForRetention 30 -RetentionAction MoveToDeletedItems
+New-RetentionPolicyTag 5Years -Type Personal -RetentionEnabled $true -AgeLimitForRetention 1825 -RetentionAction MoveToDeletedItems
+New-RetentionPolicyTag NeverExpire -Type Personal -RetentionEnabled $false
+```
 
 構文およびパラメーターの詳細については、「[New-RetentionPolicyTag](https://technet.microsoft.com/ja-jp/library/dd335226\(v=exchg.150\))」を参照してください。
 
@@ -304,7 +308,9 @@ MRM に関連するその他の管理タスクについては、「[メッセー
 
 この例では、アイテム保持ポリシー RP-Corp を作成し、新しく作成した保持タグをポリシーにリンクします。
 
-    New-RetentionPolicy RP-Corp -RetentionPolicyTagLinks Corp-DeletedItems,Corp-SentItems,Corp-JunkMail,Corp-EntireMailbox,30Days,NeverExpire
+```powershell
+New-RetentionPolicy RP-Corp -RetentionPolicyTagLinks Corp-DeletedItems,Corp-SentItems,Corp-JunkMail,Corp-EntireMailbox,30Days,NeverExpire
+```
 
 構文およびパラメーターの詳細については、「[New-RetentionPolicy](https://technet.microsoft.com/ja-jp/library/dd297970\(v=exchg.150\))」を参照してください。
 
@@ -344,13 +350,15 @@ Set-Mailbox -Identity Kwok -RetentionPolicy RP-Corp
     
     このコマンドは、組織内すべてのメールボックスに適用されたアイテム保持ポリシーと、それらのアイテム保持の状態を取得します。
     
-        Get-Mailbox -ResultSize unlimited -Filter {Name -NotLike "DiscoverySearch*�?} | Format-Table Name,RetentionPolicy,RetentionHoldEnabled -Auto
+    ```powershell
+    Get-Mailbox -ResultSize unlimited -Filter {Name -NotLike "DiscoverySearch*�?} | Format-Table Name,RetentionPolicy,RetentionHoldEnabled -Auto
+    ```
 
   - 管理フォルダー アシスタントがアイテム保持ポリシーを使用してメールボックスを処理した後、[Get-RetentionPolicyTag](https://technet.microsoft.com/ja-jp/library/dd298009\(v=exchg.150\)) コマンドレットを使用して、ユーザー メールボックスでプロビジョニングされた保持タグを取得します。
     
     このコマンドは、実際に April Stewart のメールボックスに適用されている保持タグを取得します。
     
     ```powershell
-Get-RetentionPolicyTag -Mailbox astewart
-```
+    Get-RetentionPolicyTag -Mailbox astewart
+    ```
 

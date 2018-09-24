@@ -63,7 +63,9 @@ DLP ポリシーを通じて機密情報を管理するには、ポリシー情�
 
 この例では、ファイル C:\\My Documents\\DLP Backup.xml 内のカスタムの DLP ポリシー テンプレート ファイルをインポートします。XML ファイルから DLP ポリシー コレクションをインポートすると、組織内で定義された既存のすべての DLP ポリシーが削除または上書きされます。現在の DLP ポリシーをインポートして上書きする前に、現在の DLP ポリシー コレクションを必ずバックアップしてください。
 
+```powershell
     Import-DlpPolicyCollection -FileData ([Byte[]]$(Get-Content -Path " C:\My Documents\DLP Backup.xml " -Encoding Byte -ReadCount 0))
+```
 
 ## 詳細情報
 

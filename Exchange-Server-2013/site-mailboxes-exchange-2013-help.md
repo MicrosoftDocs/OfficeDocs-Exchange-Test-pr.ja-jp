@@ -91,7 +91,9 @@ SharePoint でライフサイクル アプリケーションがサイト メー�
 
 削除の印が付いているサイト メールボックスは以下のコマンドで検索や削除ができます。
 
-    Get-Mailbox MDEL:* | ?{$_.RecipientTypeDetails -eq "TeamMailbox"} | Remove-Mailbox -Confirm:$false
+  ```powershell
+  Get-Mailbox MDEL:* | ?{$_.RecipientTypeDetails -eq "TeamMailbox"} | Remove-Mailbox -Confirm:$false
+  ```
 
 サイト メールボックスはアイテム レベルの保持をサポートしていません。保持機能はサイト メールボックスに対してプロジェクト レベルで機能します。したがってサイト メールボックス全体を削除すると、保持アイテムは削除されます。
 

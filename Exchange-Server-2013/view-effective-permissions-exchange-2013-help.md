@@ -71,11 +71,15 @@ Get-ManagementRoleAssignment -Role "Mail Recipients" -GetEffectiveUsers
 
 管理役割によってアクセス許可を付与された特定のユーザーを検索するには、**Get-ManagementRoleAssignment** コマンドレットを使用してすべての有効なユーザーの一覧を取得し、次にコマンドレットの出力を **Where** コマンドレットにパイプ処理します。 **Where** コマンドレットは、出力をフィルタ処理し、指定したユーザーのみを返します。 以下の構文を使用します。
 
-    Get-ManagementRoleAssignment -Role <role name> -GetEffectiveUsers | Where { $_.EffectiveUserName -Eq "<name of user>" }
+```powershell
+Get-ManagementRoleAssignment -Role <role name> -GetEffectiveUsers | Where { $_.EffectiveUserName -Eq "<name of user>" }
+```  
 
 この例では、ジャーナリングの役割の中でユーザー David Strome を検索します。
 
-    Get-ManagementRoleAssignment -Role Journaling -GetEffectiveUsers | Where { $_.EffectiveUserName -Eq "David Strome" }
+```powershell
+Get-ManagementRoleAssignment -Role Journaling -GetEffectiveUsers | Where { $_.EffectiveUserName -Eq "David Strome" }
+```  
 
 一覧の中で返されるプロパティを変更したり、一覧を CSV ファイルにエクスポートする場合は、後の「シェルを使用して出力をカスタマイズし表示する」を参照してください。
 
@@ -85,7 +89,9 @@ Get-ManagementRoleAssignment -Role "Mail Recipients" -GetEffectiveUsers
 
 ユーザーがアクセス許可を受け取るために経由しているすべての役割を調べるには、**Get-ManagementRoleAssignment** コマンドレットを使用してすべての管理役割ですべての有効なユーザーを取得し、次にコマンドレットの出力を **Where** コマンドレットにパイプ処理します。 **Where** コマンドレットは、出力をフィルタ処理し、ユーザーにアクセス許可を付与している役割の割り当てのみを返します。
 
-    Get-ManagementRoleAssignment -GetEffectiveUsers | Where { $_.EffectiveUserName -Eq "<name of user>" }
+```powershell
+Get-ManagementRoleAssignment -GetEffectiveUsers | Where { $_.EffectiveUserName -Eq "<name of user>" }
+```  
 
 この例では、ユーザー Kim Akers にアクセス許可を付与しているすべての役割の割り当てを検索します。
 
@@ -143,11 +149,15 @@ Get-ManagementRoleAssignment -GetEffectiveUsers | Where {     Get-ManagementRole
 
 3.  次の構文を使用して一覧を表示します。
     
-        <command to retrieve list > | Format-Table <property 1>, <property 2>, <property ...>
+    ```powershell
+    <command to retrieve list > | Format-Table <property 1>, <property 2>, <property ...>
+    ```  
 
 この例では、すべての役割からユーザー David Strome を検索し、`EffectiveUserName`、`Role`、`CustomRecipientWriteScope`、および `CustomConfigWriteScope` プロパティを表示します。
 
-    Get-ManagementRoleAssignment -GetEffectiveUsers | Where { $_.EffectiveUserName -Eq "David Strome" } | Format-Table EffectiveUserName, Role, CustomRecipientWriteScope, CustomConfigWriteScope
+```powershell
+Get-ManagementRoleAssignment -GetEffectiveUsers | Where { $_.EffectiveUserName -Eq "David Strome" } | Format-Table EffectiveUserName, Role, CustomRecipientWriteScope, CustomConfigWriteScope
+```  
 
 構文およびパラメーターの詳細については、「[Get-ManagementRoleAssignment](https://technet.microsoft.com/ja-jp/library/dd351024\(v=exchg.150\))」を参照してください。
 
@@ -167,11 +177,15 @@ Get-ManagementRoleAssignment -GetEffectiveUsers | Where {     Get-ManagementRole
 
 3.  次の構文を使用して一覧を CSV ファイルにエクスポートします。
     
-        <command to retrieve list > | Select-Object <property 1>, <property 2>, <property ...> | Export-CSV <filename>
+    ```powershell
+    <command to retrieve list > | Select-Object <property 1>, <property 2>, <property ...> | Export-CSV <filename>
+    ```  
 
 この例では、すべての役割からユーザー David Strome を検索し、`EffectiveUserName`、`Role`、`CustomRecipientWriteScope`、および `CustomConfigWriteScope` プロパティを表示します。
 
-    Get-ManagementRoleAssignment -GetEffectiveUsers | Where { $_.EffectiveUserName -Eq "David Strome" } | Select-Object EffectiveUserName, Role, CustomRecipientWriteScope, CustomConfigWriteScope | Export-CSV c:\output.csv
+```powershell
+Get-ManagementRoleAssignment -GetEffectiveUsers | Where { $_.EffectiveUserName -Eq "David Strome" } | Select-Object EffectiveUserName, Role, CustomRecipientWriteScope, CustomConfigWriteScope | Export-CSV c:\output.csv
+```  
 
 任意のビューアーで CSV ファイルを表示できます。
 

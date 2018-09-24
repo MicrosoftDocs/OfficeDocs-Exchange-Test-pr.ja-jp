@@ -63,11 +63,15 @@ _**トピックの最終更新日:** 2012-10-03_
 
 パラメーターを役割エントリに追加するには、次の構文を使用します。
 
-    Set-ManagementRoleEntry <role name>\<script or non-Exchange cmdlet> -Parameters <parameter 1>, <parameter 2>, <parameter...> -AddParameter -UnscopedTopLevel
+```powershell
+Set-ManagementRoleEntry <role name>\<script or non-Exchange cmdlet> -Parameters <parameter 1>, <parameter 2>, <parameter...> -AddParameter -UnscopedTopLevel
+```
 
 この例では、"Recipient Administrators/受信者管理者" スコープ外役割に関する **CreateUsers.ps1** スクリプトに、*EmailAddress* パラメーターと *City* パラメーターを追加します。
 
-    Set-ManagementRoleEntry "Recipient Administrators\CreateUsers.ps1" -Parameters EmailAddress, City -AddParameter -UnscopedTopLevel
+```powershell
+Set-ManagementRoleEntry "Recipient Administrators\CreateUsers.ps1" -Parameters EmailAddress, City -AddParameter -UnscopedTopLevel
+```
 
 構文およびパラメーターの詳細については、「[Set-ManagementRoleEntry](https://technet.microsoft.com/ja-jp/library/dd351162\(v=exchg.150\))」を参照してください。
 
@@ -89,11 +93,15 @@ _**トピックの最終更新日:** 2012-10-03_
 
 役割エントリからパラメーターを削除するには、次の構文を使用します。
 
-    Set-ManagementRoleEntry <role name>\<script or non-Exchange cmdlet> -Parameters <parameter 1>, <parameter 2>, <parameter...> -RemoveParameter -UnscopedTopLevel
+```powershell
+Set-ManagementRoleEntry <role name>\<script or non-Exchange cmdlet> -Parameters <parameter 1>, <parameter 2>, <parameter...> -RemoveParameter -UnscopedTopLevel
+```
 
 この例では、"Tier 1 Server Administrators/第 1 層サーバー管理者" 役割の **Start-Widget** 非 Exchange コマンドレットから *Delay*、*Force*、および *Credential* の各パラメーターを削除します。
 
-    Set-ManagementRoleEntry "Tier 1 Server Administrators\Start-Widget" -Parameters Delay, Force, Credential -RemoveParameter -UnscopedTopLevel
+```powershell
+Set-ManagementRoleEntry "Tier 1 Server Administrators\Start-Widget" -Parameters Delay, Force, Credential -RemoveParameter -UnscopedTopLevel
+```
 
 構文およびパラメーターの詳細については、「[Set-ManagementRoleEntry](https://technet.microsoft.com/ja-jp/library/dd351162\(v=exchg.150\))」を参照してください。
 
@@ -117,11 +125,15 @@ _**トピックの最終更新日:** 2012-10-03_
 
 役割エントリからすべてのパラメーターを削除するには、次の構文を使用します。
 
-    Set-ManagementRoleEntry <role name>\<script or non-Exchange cmdlet> -Parameters $Null -UnscopedTopLevel
+```powershell
+Set-ManagementRoleEntry <role name>\<script or non-Exchange cmdlet> -Parameters $Null -UnscopedTopLevel
+````
 
 この例では、"Recipient Administrators/受信者管理者" 役割に関する FindMailboxesOverQuota.ps1 スクリプトからすべてのパラメーターを削除します。
 
-    Set-ManagementRoleEntry "Recipient Administrators\FindMailboxesOverQuota.ps1" -Parameters $Null -UnscopedTopLevel
+```powershell
+Set-ManagementRoleEntry "Recipient Administrators\FindMailboxesOverQuota.ps1" -Parameters $Null -UnscopedTopLevel
+```
 
 構文およびパラメーターの詳細については、「[Set-ManagementRoleEntry](https://technet.microsoft.com/ja-jp/library/dd351162\(v=exchg.150\))」を参照してください。
 
@@ -141,11 +153,15 @@ _**トピックの最終更新日:** 2012-10-03_
 
 特定のパラメーター セットを指定するには、次の構文を使用します。
 
-    Set-ManagementRoleEntry <role name>\<script or non-Exchange cmdlet> -Parameters <parameter 1>, <parameter 2>, <parameter...> -UnscopedTopLevel
+```powershell
+Set-ManagementRoleEntry <role name>\<script or non-Exchange cmdlet> -Parameters <parameter 1>, <parameter 2>, <parameter...> -UnscopedTopLevel
+```
 
 この例では、"Seattle Mail Recipient Admins/Seattle のメール受信者管理者" 役割の **Set-Widget** コマンドレットに、*Alias*、*DisplayName*、*WidgetConfig*、および *Enabled* の各パラメーターのみを含めます。
 
-    Set-ManagementRoleEntry "Seattle Mail Recipient Admins\Set-UMMailbox" -Parameters Alias, DisplayName, WidgetConfig, Enabled -UnscopedTopLevel
+```powershell
+Set-ManagementRoleEntry "Seattle Mail Recipient Admins\Set-UMMailbox" -Parameters Alias, DisplayName, WidgetConfig, Enabled -UnscopedTopLevel
+```
 
 構文およびパラメーターの詳細については、「[Set-ManagementRoleEntry](https://technet.microsoft.com/ja-jp/library/dd351162\(v=exchg.150\))」を参照してください。
 

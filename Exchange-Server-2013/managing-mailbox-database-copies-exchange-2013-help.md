@@ -628,7 +628,9 @@ RedistributeActiveDatabases.ps1 -DagName DAG1 -BalanceDbsByActivationPreference 
 
 この例では、アクティブ化優先順位を使用して、DAG 内のアクティブなメールボックス データベース コピーを再配布しバランスをとり、配布の概要を生成します。
 
-    RedistributeActiveDatabases.ps1 -DagName DAG1 -BalanceDbsByActivationPreference -ShowFinalDatabaseDistribution
+  ```powershell
+  RedistributeActiveDatabases.ps1 -DagName DAG1 -BalanceDbsByActivationPreference -ShowFinalDatabaseDistribution
+  ```
 
 ## データベース コピーの監視
 

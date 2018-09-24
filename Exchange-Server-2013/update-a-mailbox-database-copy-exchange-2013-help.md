@@ -87,8 +87,7 @@ _**トピックの最終更新日:** 2012-11-02_
 
 4.  詳細ウィンドウの <strong>データベース コピー</strong> タブで、シードするパッシブ データベース コピーの下にある <strong>更新</strong> をクリックします。
 
-5.  
-    
+5.    
     既定では、データベースのアクティブ コピーがシードのソース データベースとして使用されます。シードにデータベースのパッシブ コピーを使用する場合は、<strong>参照</strong> をクリックして、シード元として使用するパッシブ データベースのコピーを含むサーバーを選択します。
 
 6.  <strong>保存</strong> をクリックして、パッシブ データベース コピーを更新します。
@@ -124,36 +123,36 @@ Update-MailboxDatabaseCopy -Identity DB1\MBX1 -CatalogOnly
 1.  データベースに対して循環ログが有効になっている場合、処理の前に無効にする必要があります。メールボックス データベースの循環ログを無効にするには、次の例のように [Set-MailboxDatabase](https://technet.microsoft.com/ja-jp/library/bb123971\(v=exchg.150\)) コマンドレットを使用します。
     
     ```powershell
-Set-MailboxDatabase DB1 -CircularLoggingEnabled $false
-```
+    Set-MailboxDatabase DB1 -CircularLoggingEnabled $false
+    ```
 
 2.  データベースのマウントを解除する。この例のように、[Dismount-Database](https://technet.microsoft.com/ja-jp/library/bb124936\(v=exchg.150\)) コマンドレットを使用できます。
     
     ```powershell
-Dismount-Database DB1 -Confirm $false
-```
+    Dismount-Database DB1 -Confirm $false
+    ```
 
 3.  手動で、データベース ファイル (データベース ファイルとすべてのログ ファイル) を外部のディスク ドライブやネットワーク共有などの別の場所にコピーします。
 
 4.  データベースをマウントします。この例のように、[Mount-Database](https://technet.microsoft.com/ja-jp/library/aa998871\(v=exchg.150\)) コマンドレットを使用できます。
     
     ```powershell
-Mount-Database DB1
-```
+    Mount-Database DB1
+    ```
 
 5.  コピーをホストするサーバー上で、外部のドライブまたはネットワーク共有からアクティブなデータベース コピーと同じパスにデータベース ファイルをコピーします。たとえば、アクティブ コピーのデータベースのパスが D:\\DB1\\DB1.edb で、ログ ファイルのパスが D:\\DB1 である場合、そのコピーをホストするサーバー上の D:\\DB1 にデータベース ファイルをコピーします。
 
 6.  この例のように、*SeedingPostponed* パラメーターを指定して [Add-MailboxDatabaseCopy](https://technet.microsoft.com/ja-jp/library/dd298105\(v=exchg.150\)) コマンドレットを使用し、メールボックス データベースのコピーを追加します。
     
     ```powershell
-Add-MailboxDatabaseCopy -Identity DB1 -MailboxServer MBX3 -SeedingPostponed
-```
+    Add-MailboxDatabaseCopy -Identity DB1 -MailboxServer MBX3 -SeedingPostponed
+    ```
 
 7.  データベースに循環ログが有効になっている場合、この例のように、[Set-MailboxDatabase](https://technet.microsoft.com/ja-jp/library/bb123971\(v=exchg.150\)) コマンドレットを使用して、循環ログを再度有効にします。
     
     ```powershell
-Set-MailboxDatabase DB1 -CircularLoggingEnabled $true
-```
+    Set-MailboxDatabase DB1 -CircularLoggingEnabled $true
+    ```
 
 ## 正常な動作を確認する方法
 
@@ -164,8 +163,8 @@ Set-MailboxDatabase DB1 -CircularLoggingEnabled $true
   - シェルで次のコマンドを実行して、メールボックス データベースのコピーが正常にシードされ、かつ正常な状態にあることを確認します。
     
     ```powershell
-Get-MailboxDatabaseCopyStatus <DatabaseCopyName>
-```
+    Get-MailboxDatabaseCopyStatus <DatabaseCopyName>
+    ```
     
     ステータスとコンテンツ インデックス ステータスの両方が正常である必要があります。
 

@@ -66,8 +66,8 @@ Set-ContentFilterConfig -Enabled $true
 1.  次のコマンドを実行します。
     
     ```powershell
-Get-ContentFilterConfig | Format-List Enabled
-```
+    Get-ContentFilterConfig | Format-List Enabled
+    ```
 
 2.  表示される *Enabled* プロパティの値を確認します。
 
@@ -94,8 +94,8 @@ Set-ContentFilterConfig -ExternalMailEnabled $true
 1.  次のコマンドを実行します。
     
     ```powershell
-Get-ContentFilterConfig | Format-List ExternalMailEnabled
-```
+    Get-ContentFilterConfig | Format-List ExternalMailEnabled
+    ```
 
 2.  表示される *ExternalMailEnabled* プロパティの値を確認します。
 
@@ -122,8 +122,8 @@ Set-ContentFilterConfig -InternalMailEnabled $false
 1.  次のコマンドを実行します。
     
     ```powershell
-Get-ContentFilterConfig | Format-List InternalMailEnabled
-```
+    Get-ContentFilterConfig | Format-List InternalMailEnabled
+    ```
 
 2.  表示される *InternalMailEnabled* プロパティの値を確認します。
 
@@ -131,7 +131,9 @@ Get-ContentFilterConfig | Format-List InternalMailEnabled
 
 既存の値を置き換えるには、次のコマンドを実行します。
 
+```powershell
     Set-ContentFilterConfig -BypassedRecipients <recipient1,recipient2...> -BypassedSenders <sender1,sender2...> -BypassedSenderDomains <domain1,domain2...>
+```
 
 この例は、コンテンツ フィルターで次の例外を構成します。
 
@@ -143,11 +145,15 @@ Get-ContentFilterConfig | Format-List InternalMailEnabled
 
 <!-- end list -->
 
+```powershell
     Set-ContentFilterConfig -BypassedRecipients laura@contoso.com,julia@contoso.com -BypassedSenders steve@fabrikam.com,cindy@fabrikam.com -BypassedSenderDomains *.nwtraders.com
+```
 
 既存の値を変更せずにエントリを追加または削除するには、次のコマンドを実行します。
 
+```powershell
     Set-ContentFilterConfig -BypassedRecipients @{Add="<recipient1>","<recipient2>"...; Remove="<recipient1>","<recipient2>"...} -BypassedSenders @{Add="<sender1>","<sender2>"...; Remove="<sender1>","<sender2>"...} -BypassedSenderDomains @{Add="<domain1>","<domain2>"...; Remove="<domain1>","<domain2>"...}
+```
 
 この例は、コンテンツ フィルターで次の例外を構成します。
 
@@ -161,7 +167,9 @@ Get-ContentFilterConfig | Format-List InternalMailEnabled
 
 <!-- end list -->
 
+```powershell
     Set-ContentFilterConfig -BypassedRecipients @{Add="tiffany@contoso.com","chris@contoso.com"} -BypassedSenders @{Add="joe@fabrikam.com","michelle@fabrikam.com"} -BypassedSenderDomains @{Add="blueyonderairlines.com"; Remove="*.woodgrovebank.com"}
+```
 
 ## 正常な動作を確認する方法
 
@@ -169,16 +177,19 @@ Get-ContentFilterConfig | Format-List InternalMailEnabled
 
 1.  次のコマンドを実行します。
     
-        Get-ContentFilterConfig | Format-List Bypassed*
-
+    ```powershell
+    Get-ContentFilterConfig | Format-List Bypassed*
+    ```
+    
 2.  表示される値が指定した設定と一致することを確認します。
 
 ## シェルを使用して許可または禁止する語句を構成する
 
 許可およびブロックされる単語と語句を追加するには、次のコマンドを実行します。
 
+    ```powershell
     Add-ContentFilterPhrase -Influence GoodWord -Phrase <Phrase> -Influence BadWord -Phrase <Phrase>
-
+    ```
 この例では、語句 "customer feedback" を含むすべてのメッセージを許可します。
 
 ```powershell
@@ -210,17 +221,17 @@ Remove-ContentFilterPhrase -Phrase "stock tip"
 1.  次のコマンドを実行します。
     
     ```powershell
-Get-ContentFilterPhrase | Format-List Influence,Phrase
-```
+    Get-ContentFilterPhrase | Format-List Influence,Phrase
+    ```
 
 2.  表示される値が指定した設定と一致することを確認します。
 
 ## シェルを使用して SCL のしきい値を構成する
 
 Spam Confidence Level (SCL) のしきい値およびアクションを構成するには、次のコマンドを実行します。
-
+```powershell
     Set-ContentFilterConfig -SCLDeleteEnabled <$true | $false> -SCLDeleteThreshold <Value> -SCLRejectEnabled <$true | $false> -SCLRejectThreshold <Value> -SCLQuarantineEnabled <$true | $false> -SCLQuarantineThreshold <Value>
-
+```
 
 > [!NOTE]
 > 削除アクションの方が拒否アクションより優先され、拒否アクションの方が検疫アクションより優先されます。したがって、SCL による削除アクションのしきい値は、SCL による拒否アクションのしきい値よりも大きい値である必要があります。同じく、拒否アクションのしきい値は、SCL による検疫アクションのしきい値よりも大きい値である必要があります。拒否アクションのみが既定で有効であり、SCL しきい値は 7 です。
@@ -236,8 +247,9 @@ Spam Confidence Level (SCL) のしきい値およびアクションを構成す�
   - 検疫アクションが有効にされ、対応する SCL しきい値が 7 に設定されます。
 
 <!-- end list -->
-
+```powershell
     Set-ContentFilterConfig -SCLDeleteEnabled $true -SCLDeleteThreshold 9 -SCLRejectEnabled $true -SCLRejectThreshold 8 -SCLQuarantineEnabled $true -SCLQuarantineThreshold 7
+```
 
 ## 正常な動作を確認する方法
 
@@ -245,8 +257,10 @@ SCL しきい値が正常に構成されたことを確認するには、次の�
 
 1.  次のコマンドを実行します。
     
+    ```powershell
         Get-ContentFilterConfig | Format-List SCL*
-
+    ```
+    
 2.  表示される値が指定した設定と一致することを確認します。
 
 ## シェルを使用して拒否応答を構成する
@@ -261,7 +275,9 @@ Set-ContentFilterConfig -RejectionResponse "<Custom Text>"
 
 この例では、カスタマイズした拒否応答を送信するよう、コンテンツ フィルター エージェントを構成します。
 
+```powershell
     Set-ContentFilterConfig -RejectionResponse "Your message was rejected because it appears to be SPAM."
+```
 
 ## 正常な動作を確認する方法
 
@@ -269,7 +285,9 @@ Set-ContentFilterConfig -RejectionResponse "<Custom Text>"
 
 1.  次のコマンドを実行します。
     
+    ```powershell
         Get-ContentFilterConfig | Format-List *Reject*
+    ```
 
 2.  表示される値が指定した設定と一致することを確認します。
 
@@ -296,8 +314,8 @@ Outlook 電子メールの消印が正常に構成されたことを確認する
 1.  次のコマンドを実行します。
     
     ```powershell
-Get-ContentFilterConfig | Format-List OutlookEmailPostmarkValidationEnabled
-```
+    Get-ContentFilterConfig | Format-List OutlookEmailPostmarkValidationEnabled
+    ```
 
 2.  表示される値が指定した設定と一致することを確認します。
 

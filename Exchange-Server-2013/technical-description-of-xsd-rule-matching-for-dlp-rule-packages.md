@@ -21,23 +21,25 @@ _**適用先:** Exchange Online, Exchange Server 2013_
 
 `Match` 要素は、`Pattern` および `Evidence` 要素内で使用され、一致させる基本キーワード、regex、または関数を表します。一致自体の定義は、`Rule` 要素の外部に保存され、`idRef` 必須属性によって参照されます。複数の `Match` 要素は、`Pattern` 要素に直接入れることができるパターン定義に入れるか、`Any` 要素を使用して結合して、一致するセマンティックを定義できます。
 
-    <?xml version="1.0" encoding="utf-8"?>
-    <Rules packageId="...">
-            ...
-    <Entity id="...">
-      <Pattern confidenceLevel="85">
-                 <IdMatch idRef="FormattedSSN" />
-                 <Match idRef="USDate" />
-                 <Match idRef="USAddress" />
-      </Pattern>
-    </Entity>
-            ...
-             <Keyword id="FormattedSSN "> ... </Keyword>
-             <Regex id=" USDate "> ... </Regex>
-             <Regex id="USAddress"> ... </Regex>
-            ...
-    
-    </Rules>
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<Rules packageId="...">
+        ...
+<Entity id="...">
+    <Pattern confidenceLevel="85">
+                <IdMatch idRef="FormattedSSN" />
+                <Match idRef="USDate" />
+                <Match idRef="USAddress" />
+    </Pattern>
+</Entity>
+        ...
+            <Keyword id="FormattedSSN "> ... </Keyword>
+            <Regex id=" USDate "> ... </Regex>
+            <Regex id="USAddress"> ... </Regex>
+        ...
+
+</Rules>
+```
 
 ## キーワード ベースの一致を定義する
 
@@ -51,25 +53,27 @@ _**適用先:** Exchange Online, Exchange Server 2013_
 
 
 
-    <Keyword id="Word_Example">
-        <Group matchStyle="word">
-           <Term>card verification</Term>
-           <Term>cvn</Term>
-           <Term>cid</Term>
-           <Term>cvc2</Term>
-           <Term>cvv2</Term>
-           <Term>pin block</Term>
-           <Term>security code</Term>
-        </Group>
-    </Keyword>
-    ...
-    <Keyword id="String_Example">
-        <Group matchStyle="string">
-           <Term>card</Term>
-           <Term>pin</Term>
-           <Term>security</Term>
-        </Group>
-    </Keyword>
+```xml
+<Keyword id="Word_Example">
+    <Group matchStyle="word">
+        <Term>card verification</Term>
+        <Term>cvn</Term>
+        <Term>cid</Term>
+        <Term>cvc2</Term>
+        <Term>cvv2</Term>
+        <Term>pin block</Term>
+        <Term>security code</Term>
+    </Group>
+</Keyword>
+...
+<Keyword id="String_Example">
+    <Group matchStyle="string">
+        <Term>card</Term>
+        <Term>pin</Term>
+        <Term>security</Term>
+    </Group>
+</Keyword>
+```
 
 ## 正規表現ベースの一致を定義する
 
@@ -196,6 +200,7 @@ _**適用先:** Exchange Online, Exchange Server 2013_
 
 regex 要素には、対応するエンティティまたはアフィニティ ルールで参照として使用される “id” 属性があります。単一 regex 要素は、複数のエンティティおよびアフィニティ ルールで参照できます。regex 表現は、regex 表現の要素の値として定義されます。
 
+    ```xml
     <Regex id="CCRegex">
          \bcc\#\s|\bcc\#\:\s
     </Regex>
@@ -207,6 +212,7 @@ regex 要素には、対応するエンティティまたはアフィニティ �
     <Regex id="NorthCarolinaDriversLicenseNumber">
         (^|\s|\:)(\d{1,8})($|\s|\.\s)
     </Regex>
+    ```
 
 ## 複数の一致要素を組み合わせる
 
@@ -221,21 +227,21 @@ regex 要素には、対応するエンティティまたはアフィニティ �
     任意の子 Match 要素の完全サブセットと一致する
 
 <!-- end list -->
-```
+```xml
 <Any minMatches="3" maxMatches="3">
     <Match idRef="USDate" />
     <Match idRef="USAddress" />
     <Match idRef="Name" />
 </Any>
 ```
-```
+```xml
 <Any maxMatches="0">
     <Match idRef="USDate" />
     <Match idRef="USAddress" />
     <Match idRef="Name" />
 </Any>
 ```
-```
+```xml
 <Any minMatches="1" maxMatches="1">
     <Match idRef="USDate" />
     <Match idRef="USAddress" />
@@ -255,32 +261,34 @@ regex 要素には、対応するエンティティまたはアフィニティ �
 
 <!-- end list -->
 
-    <Entity id="..." patternsProximity="300" >
-        <Pattern confidenceLevel="65">
-            <IdMatch idRef="UnformattedSSN" />
-            <Any maxMatches="1">
-                <Match idRef="USDate" />
-                <Match idRef="USAddress" />
-                <Match idRef="Name" />
-            </Any>
-        </Pattern>
-        <Pattern confidenceLevel="75">
-            <IdMatch idRef="UnformattedSSN" />
-            <Any minMatches="2" maxMatches="2">
-                <Match idRef="USDate" />
-                <Match idRef="USAddress" />
-                <Match idRef="Name" />
-            </Any>
-        </Pattern>
-        <Pattern confidenceLevel="85">
-            <IdMatch idRef="UnformattedSSN" />
-            <Any minMatches="3">
-                <Match idRef="USDate" />
-                <Match idRef="USAddress" />
-                <Match idRef="Name" />
-            </Any>
-        </Pattern>
-    </Entity>
+```xml
+<Entity id="..." patternsProximity="300" >
+    <Pattern confidenceLevel="65">
+        <IdMatch idRef="UnformattedSSN" />
+        <Any maxMatches="1">
+            <Match idRef="USDate" />
+            <Match idRef="USAddress" />
+            <Match idRef="Name" />
+        </Any>
+    </Pattern>
+    <Pattern confidenceLevel="75">
+        <IdMatch idRef="UnformattedSSN" />
+        <Any minMatches="2" maxMatches="2">
+            <Match idRef="USDate" />
+            <Match idRef="USAddress" />
+            <Match idRef="Name" />
+        </Any>
+    </Pattern>
+    <Pattern confidenceLevel="85">
+        <IdMatch idRef="UnformattedSSN" />
+        <Any minMatches="3">
+            <Match idRef="USDate" />
+            <Match idRef="USAddress" />
+            <Match idRef="Name" />
+        </Any>
+    </Pattern>
+</Entity>
+```
 
 ## 例: 米国の社会保障ルール
 
@@ -300,18 +308,20 @@ regex 要素には、対応するエンティティまたはアフィニティ �
 
 次に、ルール スキーマ表現に説明を変換します。
 
-    <Entity id="a44669fe-0d48-453d-a9b1-2cc83f2cba77"
-             patternsProximity="300" RecommendedConfidence="85">
-        <Pattern confidenceLevel="85">
-          <IdMatch idRef="FormattedSSN" />
-          <Any minMatches="1">
-              <Match idRef="SSNKeywords" />
-              <Match idRef="USDate" />
-              <Match idRef="USAddress" />
-              <Match idRef="Name" />
-          </Any>
-        </Pattern>
-    </Entity>
+```xml
+<Entity id="a44669fe-0d48-453d-a9b1-2cc83f2cba77"
+            patternsProximity="300" RecommendedConfidence="85">
+    <Pattern confidenceLevel="85">
+        <IdMatch idRef="FormattedSSN" />
+        <Any minMatches="1">
+            <Match idRef="SSNKeywords" />
+            <Match idRef="USDate" />
+            <Match idRef="USAddress" />
+            <Match idRef="Name" />
+        </Any>
+    </Pattern>
+</Entity>
+```
 
 ## 詳細情報
 

@@ -257,7 +257,9 @@ RBAC の詳細については、「[役割ベースのアクセス制御につ�
 
 前述のように、役割グループは複数のレイヤーで構成されます。役割グループを作成したときに何が起こるかを理解するため、次の新しい役割グループを作成する例について考えます。
 
+```powershell
     New-RoleGroup -Name "Seattle Recipient Management" -Roles "Mail Recipients", "Distribution Groups", "Move Mailboxes", "UM Mailboxes" -CustomRecipientWriteScope "Seattle Users", -ManagedBy "Brian", "David", "Katie" -Members "Ray", "Jenn", "Maria", "Chris", "Maija", "Carter", "Jenny", "Sam", "Lukas", "Isabel", "Katie"
+```
 
 上記のコマンドを実行すると、次の処理が行われます。
 

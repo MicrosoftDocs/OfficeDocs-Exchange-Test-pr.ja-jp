@@ -59,13 +59,17 @@ _**トピックの最終更新日:** 2015-04-08_
 
 アドレス書き換えを無効にするには、次のコマンドを実行します。
 
-    Disable-TransportAgent "Address Rewriting Inbound Agent"
-    Disable-TransportAgent "Address Rewriting Outbound Agent"
+```powershell
+Disable-TransportAgent "Address Rewriting Inbound Agent"
+Disable-TransportAgent "Address Rewriting Outbound Agent"
+```
 
 アドレス書き換えを有効にするには、次のコマンドを実行します。
 
-    Enable-TransportAgent "Address Rewriting Inbound Agent"
-    Enable-TransportAgent "Address Rewriting Outbound Agent"
+```powershell
+Enable-TransportAgent "Address Rewriting Inbound Agent"
+Enable-TransportAgent "Address Rewriting Outbound Agent"
+```
 
 ## 正常な動作を確認する方法
 
@@ -74,8 +78,8 @@ _**トピックの最終更新日:** 2015-04-08_
 1.  次のコマンドを実行します。
     
     ```powershell
-Get-TransportAgent
-```
+    Get-TransportAgent
+    ```
 
 2.  受信用アドレス書き換えエージェントと送信用アドレス書き換えエージェントの **Enabled** プロパティの値が構成した値になっていることを確認します。
 
@@ -105,39 +109,55 @@ Get-AddressRewriteEntry "Rewrite Contoso.com to Northwindtraders.com" | Format-L
 
 1 人の受信者の電子メール アドレスを書き換えるには、次の構文を使用します。
 
-    New-AddressRewriteEntry -Name "<Descriptive Name>" -InternalAddress <internal email address> -ExternalAddress <external email address> [-OutboundOnly <$true | $false>]
+```powershell
+New-AddressRewriteEntry -Name "<Descriptive Name>" -InternalAddress <internal email address> -ExternalAddress <external email address> [-OutboundOnly <$true | $false>]
+```
 
 次の例では、受信者 joe@contoso.com の Exchange 組織に出入りするすべてのメッセージの電子メール アドレスを書き換えます。送信メッセージは、support@nortwindtraders.com から到着したように書き換えられます。support@northwindtraders.com に送信された受信メッセージは joe@contoso.com に書き換えられて受信者に配信されます (既定で、*OutboundOnly* パラメーターは `$false` です)。
 
-    New-AddressRewriteEntry -Name "joe@contoso.com to support@northwindtraders.com" -InternalAddress joe@contoso.com -ExternalAddress support@northwindtraders.com
+```powershell
+New-AddressRewriteEntry -Name "joe@contoso.com to support@northwindtraders.com" -InternalAddress joe@contoso.com -ExternalAddress support@northwindtraders.com
+```
 
 ## 単一のドメインまたはサブドメイン内の受信者の電子メール アドレスを書き換える
 
 単一のドメインまたはサブドメイン内の受信者の電子メール アドレスを書き換えるには、次の構文を使用します。
 
-    New-AddressRewriteEntry -Name "<Descriptive Name>" -InternalAddress <domain or subdomain> -ExternalAddress <domain> [-OutboundOnly <$true | $false>]
+```powershell
+New-AddressRewriteEntry -Name "<Descriptive Name>" -InternalAddress <domain or subdomain> -ExternalAddress <domain> [-OutboundOnly <$true | $false>]
+```
 
 次の例では、contoso.com ドメイン内の受信者の Exchange 組織に出入りするすべてのメッセージの電子メール アドレスを書き換えます。送信メッセージは、fabrikam.com ドメインから到着したように書き換えられます。fabrikam.com 電子メール アドレスに送信された受信メッセージは contoso.com に書き換えられて受信者に配信されます (既定で、*OutboundOnly* パラメーターは `$false` です)。
 
-    New-AddressRewriteEntry -Name "Contoso to Fabrikam" -InternalAddress contoso.com -ExternalAddress fabrikam.com
+```powershell
+New-AddressRewriteEntry -Name "Contoso to Fabrikam" -InternalAddress contoso.com -ExternalAddress fabrikam.com
+```
 
 次の例では、sales.contoso.com サブドメイン内の受信者から送信された、Exchange 組織を離れるすべてのメッセージの電子メール アドレスを書き換えます。送信メッセージは、contoso.com ドメインから到着したように書き換えられます。contoso.com 電子メール アドレスに送信された受信メッセージは書き換えられません。
 
-    New-AddressRewriteEntry -Name "sales.contoso.com to contoso.com" -InternalAddress sales.contoso.com -ExternalAddress contoso.com -OutboundOnly $true
+```powershell
+New-AddressRewriteEntry -Name "sales.contoso.com to contoso.com" -InternalAddress sales.contoso.com -ExternalAddress contoso.com -OutboundOnly $true
+```
 
 ## 複数のサブドメイン内の受信者の電子メール アドレスを書き換える
 
 1 つのドメインのすべてのサブドメイン内の受信者の電子メール アドレスを書き換えるには、次の構文を使用します。
 
-    New-AddressRewriteEntry -Name "<Descriptive Name>" -InternalAddress *.<domain> -ExternalAddress <domain> -OutboundOnly $true [-ExceptionList <domain1,domain2...>]
+```powershell
+New-AddressRewriteEntry -Name "<Descriptive Name>" -InternalAddress *.<domain> -ExternalAddress <domain> -OutboundOnly $true [-ExceptionList <domain1,domain2...>]
+```
 
 次の例では、contoso.com ドメインとすべてのサブドメイン内の受信者から送信された、Exchange 組織を離れるすべてのメッセージの電子メール アドレスを書き換えます。送信メッセージは、contoso.com ドメインから到着したように書き換えられます。*InternalAddress* パラメーターにワイルドカードが使用されているため、contoso.com 受信者に送信された受信メッセージを書き換えることはできません。
 
-    New-AddressRewriteEntry -Name "Rewrite all contoso.com subdomains" -InternalAddress *.contoso.com -ExternalAddress contoso.com -OutboundOnly $true
+```powershell
+New-AddressRewriteEntry -Name "Rewrite all contoso.com subdomains" -InternalAddress *.contoso.com -ExternalAddress contoso.com -OutboundOnly $true
+```
 
 次の例は、legal.contoso.com サブドメインと corp.contoso.com サブドメイン内の受信者から送信されたメッセージが書き換えられないことを除いて、1 つ前の例と同様です。
 
-    New-AddressRewriteEntry -Name "Rewrite all contoso.com subdomains except legal.contoso.com and corp.contoso.com" -InternalAddress *.contoso.com -ExternalAddress contoso.com -OutboundOnly $true -ExceptionList legal.contoso.com,corp.contoso.com
+```powershell
+New-AddressRewriteEntry -Name "Rewrite all contoso.com subdomains except legal.contoso.com and corp.contoso.com" -InternalAddress *.contoso.com -ExternalAddress contoso.com -OutboundOnly $true -ExceptionList legal.contoso.com,corp.contoso.com
+```
 
 ## 正常な動作を確認する方法
 
@@ -157,7 +177,9 @@ Get-AddressRewriteEntry "Rewrite Contoso.com to Northwindtraders.com" | Format-L
 
 1 人の受信者の電子メール アドレスを書き換えるアドレス書き換えエントリを変更するには、次の構文を使用します。
 
-    Set-AddressRewriteEntry <AddressRewriteEntryIdentity> -Name "<Descriptive Name>" -InternalAddress <internal email address> -ExternalAddress <external email address> -OutboundOnly <$true | $false>
+```powershell
+Set-AddressRewriteEntry <AddressRewriteEntryIdentity> -Name "<Descriptive Name>" -InternalAddress <internal email address> -ExternalAddress <external email address> -OutboundOnly <$true | $false>
+```
 
 次の例では、"joe@contoso.com to support@nortwindtraders.com" という名前の単一受信者アドレス書き換えエントリの次のプロパティを変更します。
 
@@ -169,13 +191,17 @@ Get-AddressRewriteEntry "Rewrite Contoso.com to Northwindtraders.com" | Format-L
 
 <!-- end list -->
 
-    Set-AddressRewriteEntry "joe@contoso.com to support@nortwindtraders.com" -Name "joe@contoso.com to support@northwindtraders.net" -ExternalAddress support@northwindtraders.net -OutboundOnly $true
+```powershell
+Set-AddressRewriteEntry "joe@contoso.com to support@nortwindtraders.com" -Name "joe@contoso.com to support@northwindtraders.net" -ExternalAddress support@northwindtraders.net -OutboundOnly $true
+```
 
 ## 単一のドメインまたはサブドメイン内の受信者のアドレス書き換えエントリを変更する
 
 単一のドメインまたはサブドメインからの受信者の電子メール アドレスを書き換えるアドレス書き換えエントリを変更するには、次の構文を使用します。
 
-    Set-AddressRewriteEntry <AddressRewriteEntryIdentity> -Name "<Descriptive Name>" -InternalAddress <domain or subdomain> -ExternalAddress <domain> -OutboundOnly <$true | $false>
+```powershell
+Set-AddressRewriteEntry <AddressRewriteEntryIdentity> -Name "<Descriptive Name>" -InternalAddress <domain or subdomain> -ExternalAddress <domain> -OutboundOnly <$true | $false>
+```
 
 次の例では、"Northwind Traders to Contoso" いう名前の単一ドメイン アドレス書き換えエントリの内部アドレス値を変更します。
 
@@ -187,23 +213,33 @@ Set-AddressRewriteEntry "Northwindtraders to Contoso" -InternalAddress northwind
 
 1 つのドメインとすべてのサブドメイン内の受信者の電子メール アドレスを書き換えるアドレス書き換えエントリを変更するには、次の構文を使用します。
 
-    Set-AddressRewriteEntry <AddressRewriteEntryIdentity> -Name "<Descriptive Name>" -InternalAddress *.<domain> -ExternalAddress <domain> -ExceptionList <list of domains>
+```powershell
+Set-AddressRewriteEntry <AddressRewriteEntryIdentity> -Name "<Descriptive Name>" -InternalAddress *.<domain> -ExternalAddress <domain> -ExceptionList <list of domains>
+```
 
 複数サブドメイン アドレス書き換えエントリの既存の例外リストの値を置き換えるには、次の構文を使用します。
 
-    Set-AddressRewriteEntry <AddressRewriteEntryIdentity> -ExceptionList <domain1,domain2,...>
+```powershell
+Set-AddressRewriteEntry <AddressRewriteEntryIdentity> -ExceptionList <domain1,domain2,...>
+```
 
 次の例では、marketing.contoso.com と legal.contoso.com という値を持つ、"Contoso to Northwind Traders" という名前の複数サブドメイン アドレス書き換えエントリの既存の例外リストを置き換えます。
 
-    Set-AddressRewriteEntry "Contoso to Northwind Traders" -ExceptionList sales.contoso.com,legal.contoso.com
+```powershell
+Set-AddressRewriteEntry "Contoso to Northwind Traders" -ExceptionList sales.contoso.com,legal.contoso.com
+```
 
 既存の例外リストの値を変更せずに、複数サブドメイン アドレス書き換えエントリに対して選択的に例外リストの値を追加または削除するには、次の構文を使用します。
 
-    Set-AddressRewriteEntry <AddressRewriteEntryIdentity> -ExceptionList @{Add="<domain1>","<domain2>"...; Remove="<domain1>","<domain2>"...}
+```powershell
+Set-AddressRewriteEntry <AddressRewriteEntryIdentity> -ExceptionList @{Add="<domain1>","<domain2>"...; Remove="<domain1>","<domain2>"...}
+```
 
 次の例では、"Contoso to Northwind Traders" という名前の複数サブドメイン アドレス書き換えエントリの例外リストに対して、finanace.contoso.com を追加し、marketing.contoso.com を削除します。
 
-    Set-AddressRewriteEntry "Contoso to Northwind Traders" -ExceptionList @{Add="finanace.contoso.com"; Remove="marketing.contoso.com"}
+```powershell
+Set-AddressRewriteEntry "Contoso to Northwind Traders" -ExceptionList @{Add="finanace.contoso.com"; Remove="marketing.contoso.com"}
+```
 
 ## 正常な動作を確認する方法
 
@@ -231,7 +267,9 @@ Remove-AddressRewriteEntry "Contoso.com to Northwindtraders.com"
 
 複数のアドレス書き換えエントリを削除するには、次の構文を使用します。
 
-    Get-AddressRewriteEntry [<search criteria>] | Remove-AddressRewriteEntry [-WhatIf]
+```powershell
+Get-AddressRewriteEntry [<search criteria>] | Remove-AddressRewriteEntry [-WhatIf]
+```
 
 次の例では、すべてのアドレス書き換えエントリを削除します。
 
@@ -241,11 +279,15 @@ Get-AddressRewriteEntry | Remove-AddressRewriteEntry
 
 次の例は、名前に "to contoso.com" というテキストが含まれるアドレス書き換えエントリの削除をシミュレートします。*WhatIf* スイッチを使用すれば、変更をコミットせずに、結果をプレビューすることができます。
 
-    Get-AddressRewriteEntry "*to contoso.com" | Remove-AddressRewriteEntry -WhatIf
+```powershell
+Get-AddressRewriteEntry "*to contoso.com" | Remove-AddressRewriteEntry -WhatIf
+```
 
 結果に問題がなければ、*WhatIf* スイッチを使用せずにもう一度コマンドを実行して、アドレス書き換えエントリを削除します。
 
-    Get-AddressRewriteEntry "*to contoso.com" | Remove-AddressRewriteEntry
+```powershell
+Get-AddressRewriteEntry "*to contoso.com" | Remove-AddressRewriteEntry
+```
 
 ## 正常な動作を確認する方法
 

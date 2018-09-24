@@ -114,9 +114,12 @@ EAC を使用して、サーバーが Standard Edition または Enterprise Edit
 
 2.  特定の Exchange サーバーのライセンス状況を確認するには次のコマンドを実行します。
     
+    ```powershell
         Get-ExchangeServer ExServer01 | Format-Table Edition,*Trial*
+    ```
 
 3.  (省略可能) 組織内のすべての Exchange サーバーのライセンス状況を確認するには次のコマンドを実行します。
-    
+    ```powershell    
         Get-ExchangeServer | Format-Table Name, Edition, *Trial* -Auto
+    ```
 

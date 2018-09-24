@@ -63,15 +63,21 @@ Remove-ManagementRoleEntry "Seattle Server Administrators\Enable-MailUser"
 
 役割から複数の役割エントリを削除するには、**Get-ManagementRoleEntry** コマンドレットを使用して、削除する役割エントリのリストを取得する必要があります。 次に、その出力を **Remove-ManagementRoleEntry** コマンドレットにパイプ出力する必要があります。 **Get-ManagementRoleEntry** コマンドレットでワイルドカード文字を使用して、複数の役割エントリに一致させることができます。 *WhatIf* スイッチを使用して、削除しようとしている役割エントリが正しいかどうかを確認することをお勧めします。 以下の構文を使用します。
 
-    Get-ManagementRoleEntry <management role>\<role entry with wildcard character> | Remove-ManagementRoleEntry -WhatIf
+```powershell
+Get-ManagementRoleEntry <management role>\<role entry with wildcard character> | Remove-ManagementRoleEntry -WhatIf
+```
 
 この例では、"Seattle Server Administrators/Seattle のサーバー管理者" という役割から、"journal" という単語を含むすべての役割エントリを削除します。
 
-    Get-ManagementRoleEntry "Seattle Server Administrators\*Journal*" | Remove-ManagementRoleEntry -WhatIf
+```powershell
+Get-ManagementRoleEntry "Seattle Server Administrators\*Journal*" | Remove-ManagementRoleEntry -WhatIf
+```
 
 *WhatIf* スイッチを指定してコマンドを実行すると、削除しようとしているすべての役割エントリのリストがコマンドレットから返されます。 リストが正しいと思える場合は、*WhatIf* スイッチなしでコマンドをもう一度実行して、役割エントリを削除できます。
 
-    Get-ManagementRoleEntry "Seattle Server Administrators\*Journal*" | Remove-ManagementRoleEntry
+```powershell
+Get-ManagementRoleEntry "Seattle Server Administrators\*Journal*" | Remove-ManagementRoleEntry
+```
 
 構文およびパラメーターの詳細については、「[Get-ManagementRoleEntry](https://technet.microsoft.com/ja-jp/library/dd335210\(v=exchg.150\))」と「[Remove-ManagementRoleEntry](https://technet.microsoft.com/ja-jp/library/dd351187\(v=exchg.150\))」を参照してください。
 
@@ -81,11 +87,15 @@ Remove-ManagementRoleEntry "Seattle Server Administrators\Enable-MailUser"
 
 役割エントリからパラメーターを削除するには、次の構文を使用します。
 
-    Set-ManagementRoleEntry <management role>\<role entry> -Parameters <parameter 1>,<parameter 2...> -RemoveParameter
+```powershell
+Set-ManagementRoleEntry <management role>\<role entry> -Parameters <parameter 1>,<parameter 2...> -RemoveParameter
+```
 
 この例では、*MaxSafeSenders*、*MaxSendSize*、*SecondaryAddress*、および*UseDatabaseQuotaDefaults* パラメーターを、"Seattle Server Administrators/Seattle のサーバー管理者" という役割にある **Set-Mailbox** 役割エントリから削除します。
 
-    Set-ManagementRoleEntry "Seattle Server Administrators\Set-Mailbox" -Parameters MaxSafeSenders,MaxSendSize,SecondaryAddress,UseDatabaseQuotaDefaults -RemoveParameter
+```powershell
+Set-ManagementRoleEntry "Seattle Server Administrators\Set-Mailbox" -Parameters MaxSafeSenders,MaxSendSize,SecondaryAddress,UseDatabaseQuotaDefaults -RemoveParameter
+```
 
 構文およびパラメーターの詳細については、「[Set-ManagementRoleEntry](https://technet.microsoft.com/ja-jp/library/dd351162\(v=exchg.150\))」を参照してください。
 

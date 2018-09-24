@@ -88,8 +88,8 @@ Exchange 2013 を使用できるように組織を準備する最初の手順は
 3.  次のコマンドを実行して、スキーマを拡張します。
     
     ```powershell
-Setup.exe /PrepareSchema /IAcceptExchangeServerLicenseTerms
-```
+    Setup.exe /PrepareSchema /IAcceptExchangeServerLicenseTerms
+    ```
 
 セットアップでスキーマの拡張が終了したら、Active Directory が変更をすべてのドメイン コントローラーにレプリケートするまで待機している必要があります。レプリケートの進行状況を確認する場合は、`repadmin` ツールを使用することができます。`Repadmin` は、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2 の Active Directory ドメイン サービス ツール機能の一部として組み込まれています。Repadmin の使用方法の詳細については、「[Repadmin](https://go.microsoft.com/fwlink/p/?linkid=257879)」を参照してください。
 
@@ -125,7 +125,9 @@ Exchange 用の Active Directory を準備するため以下のコマンドを�
 
 2.  次のコマンドを実行します。
     
-        Setup.exe /PrepareAD /OrganizationName:"<organization name>" /IAcceptExchangeServerLicenseTerms
+      ```powershell
+      Setup.exe /PrepareAD /OrganizationName:"<organization name>" /IAcceptExchangeServerLicenseTerms
+      ```  
 
 セットアップで Exchange 用の Active Directory の準備が終了したら、Active Directory が変更をすべてのドメイン コントローラーにレプリケートするまで待機している必要があります。レプリケートの進行状況を確認する場合は、`repadmin` ツールを使用することができます。`repadmin` は、Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2 の Active Directory ドメイン サービス ツール機能の一部として組み込まれています。このツールの使用方法の詳細については、「[Repadmin](https://go.microsoft.com/fwlink/p/?linkid=257879)」を参照してください。
 
@@ -152,8 +154,8 @@ Active Directory フォレストにすべてのドメインを準備する前に
 2.  次のコマンドを実行します。
     
     ```powershell
-Setup.exe /PrepareAllDomains /IAcceptExchangeServerLicenseTerms
-```
+    Setup.exe /PrepareAllDomains /IAcceptExchangeServerLicenseTerms
+    ```
 
 ## 準備する Active Directory ドメインを選択する
 
@@ -179,7 +181,9 @@ Active Directory フォレストにドメインを準備する前に、以下の
 
 2.  次のコマンドを実行します。準備するドメインの FQDN を含めます。コマンドを実行しているドメインを準備する場合は、FQDN を含める必要はありません。
     
-        Setup.exe /PrepareDomain:<FQDN of the domain you want to prepare> /IAcceptExchangeServerLicenseTerms
+      ```powershell
+      Setup.exe /PrepareDomain:<FQDN of the domain you want to prepare> /IAcceptExchangeServerLicenseTerms
+      ```  
 
 3.  Exchange サーバーをインストールする、または電子メールが有効なユーザーを配置する各 Active Directory ドメインに対してこれらの手順を繰り返します。
 

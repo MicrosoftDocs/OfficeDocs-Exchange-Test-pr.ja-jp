@@ -58,8 +58,8 @@ Remove-OrganizationRelationship -Identity "Contoso"
   - 次のシェル コマンドを実行して、組織の関係の情報が削除されていることを確認します。
     
     ```powershell
-Get-OrganizationRelationship | Format-List
-```
+    Get-OrganizationRelationship | Format-List
+    ```
 
 
 > [!TIP]

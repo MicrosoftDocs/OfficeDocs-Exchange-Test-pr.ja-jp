@@ -91,7 +91,9 @@ EACを使用してプロトコル ログ設定が正常に構成されたこと�
 
 送信コネクタまたは受信コネクタ上でのプロトコル ログ出力を有効または無効にするには、次のコマンドを実行します。
 
-    <Set-SendConnector |Set-ReceiveConnector> <ConnectorIdentity> -ProtocolLoggingLevel <Verbose | None>
+```powershell
+<Set-SendConnector |Set-ReceiveConnector> <ConnectorIdentity> -ProtocolLoggingLevel <Verbose | None>
+```  
 
 この例では、Connection from Contoso.com という名前の受信コネクタのプロトコル ログ出力を有効にします。
 
@@ -106,8 +108,8 @@ Set-ReceiveConnector "Connection from Contoso.com" -ProtocolLoggingLevel Verbose
 1.  シェルで、次のコマンドを実行します。
     
     ```command line
-<Get-SendConnector |Get-ReceiveConnector> | Format-List Name,ProtocolLoggingLevel
-```
+    <Get-SendConnector |Get-ReceiveConnector> | Format-List Name,ProtocolLoggingLevel
+    ```
 
 2.  表示された値が構成した値であることを確認します。
 
@@ -115,7 +117,9 @@ Set-ReceiveConnector "Connection from Contoso.com" -ProtocolLoggingLevel Verbose
 
 メールボックス サーバー上のトランスポート サービスおよびクライアント アクセス サーバー上のフロント エンド トランスポート サービスに存在する、暗黙的な不可視の組織内送信コネクタ上でのプロトコル ログ出力を有効または無効にするには、次のコマンドを実行します。
 
-    <Set-TransportService | Set-FrontEndTransportService> -IntraOrgConnectorProtocolLoggingLevel <Verbose | None>
+```powershell
+<Set-TransportService | Set-FrontEndTransportService> -IntraOrgConnectorProtocolLoggingLevel <Verbose | None>
+```  
 
 この例では、Mailbox01 というメールボックス サーバー上のトランスポート サービスの組織内送信コネクタ上でのプロトコル ログ出力を有効にします。
 
@@ -129,7 +133,9 @@ Set-TransportService Mailbox01 -IntraOrgConnectorProtocolLoggingLevel Verbose
 
 1.  シェルで、次のコマンドを実行します。
     
-        <Get-TransportService | Get-FrontEndTransportService> <ServerIdentity> | Format-List IntraOrgConnectorProtocolLoggingLevel
+    ```powershell
+    <Get-TransportService | Get-FrontEndTransportService> <ServerIdentity> | Format-List IntraOrgConnectorProtocolLoggingLevel
+    ```  
 
 2.  表示された値が構成した値であることを確認します。
 
@@ -153,7 +159,9 @@ Set-MailboxTransportService Mailbox01 -MailboxDeliveryConnectorProtocolLoggingLe
 
 1.  シェルで、次のコマンドを実行します。
     
-        Get-MailboxTransportService <ServerIdentity> | Format-List MailboxDeliveryConnectorProtocolLoggingLevel
+    ```powershell
+    Get-MailboxTransportService <ServerIdentity> | Format-List MailboxDeliveryConnectorProtocolLoggingLevel
+    ```  
 
 2.  表示された値が構成した値であることを確認します。
 
@@ -161,7 +169,9 @@ Set-MailboxTransportService Mailbox01 -MailboxDeliveryConnectorProtocolLoggingLe
 
 プロトコル ログ出力設定を構成にするには、次のコマンドを実行します。
 
-    <Set-TransportService | Set-MailboxTransportService | Set-FrontEndTransportService> <ServerIdentity> -ReceiveProtocolLogPath <LocalFilePath> -SendProtocolLogPath <LocalFilePath> -ReceiveProtocolLogMaxFileSize <Size> -SendProtocolLogMaxFileSize <Size> -ReceiveProtocolLogMaxDirectorySize <Size> -SendProtocolLogMaxDirectorySize <Size> -ReceiveProtocolLogMaxAge <dd.hh:mm:ss> -SendProtocolLogMaxAge <dd.hh:mm:ss>
+```powershell
+<Set-TransportService | Set-MailboxTransportService | Set-FrontEndTransportService> <ServerIdentity> -ReceiveProtocolLogPath <LocalFilePath> -SendProtocolLogPath <LocalFilePath> -ReceiveProtocolLogMaxFileSize <Size> -SendProtocolLogMaxFileSize <Size> -ReceiveProtocolLogMaxDirectorySize <Size> -SendProtocolLogMaxDirectorySize <Size> -ReceiveProtocolLogMaxAge <dd.hh:mm:ss> -SendProtocolLogMaxAge <dd.hh:mm:ss>
+```  
 
 この例では、Mailbox01 というメールボックス サーバー上のトランスポート サービスにおいて、次のようなプロトコル ログ設定を行います。
 
@@ -175,7 +185,9 @@ Set-MailboxTransportService Mailbox01 -MailboxDeliveryConnectorProtocolLoggingLe
 
 <!-- end list -->
 
-    Set-TransportService Mailbox01 -ReceiveProtocolLogPath "D:\Hub Receive SMTP Log" -SendProtocolLogPath "D:\Hub Send SMTP Log" -ReceiveProtocolLogMaxFileSize 20MB -SendProtocolLogMaxFileSize 20MB -ReceiveProtocolLogMaxDirectorySize 400MB -SendProtocolLogMaxDirectorySize 400MB -ReceiveProtocolLogMaxAge 45.00:00:00 -SendProtocolLogMaxAge 45.00:00:00
+```powershell
+Set-TransportService Mailbox01 -ReceiveProtocolLogPath "D:\Hub Receive SMTP Log" -SendProtocolLogPath "D:\Hub Send SMTP Log" -ReceiveProtocolLogMaxFileSize 20MB -SendProtocolLogMaxFileSize 20MB -ReceiveProtocolLogMaxDirectorySize 400MB -SendProtocolLogMaxDirectorySize 400MB -ReceiveProtocolLogMaxAge 45.00:00:00 -SendProtocolLogMaxAge 45.00:00:00
+```  
 
 
 > [!NOTE]
@@ -195,7 +207,9 @@ Set-MailboxTransportService Mailbox01 -MailboxDeliveryConnectorProtocolLoggingLe
 
 1.  シェルで、次のコマンドを実行します。
     
-        <Get-TransportService | Get-MailboxTransportService | Get-FrontEndTransportService> <ServerIdentity> | Format-List SendConnectorProtocolLog*,ReceiveConnectorProtocolLog*
+    ```powershell
+    <Get-TransportService | Get-MailboxTransportService | Get-FrontEndTransportService> <ServerIdentity> | Format-List SendConnectorProtocolLog*,ReceiveConnectorProtocolLog*
+    ```  
 
 2.  表示された値が構成した値であることを確認します。
 

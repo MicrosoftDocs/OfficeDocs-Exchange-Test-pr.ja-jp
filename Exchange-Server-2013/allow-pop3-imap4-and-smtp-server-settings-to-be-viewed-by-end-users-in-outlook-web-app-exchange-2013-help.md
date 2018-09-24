@@ -76,8 +76,8 @@ iisreset
 1.  シェルで、次のコマンドを実行します。
     
     ```powershell
-Get-PopSettings | format-list
-```
+    Get-PopSettings | format-list
+    ```
 
 2.  *ExternalConnectionSettings* プロパティが設定されていることを確認します。
 
@@ -86,8 +86,8 @@ Get-PopSettings | format-list
 1.  シェルで、次のコマンドを実行します。
     
     ```powershell
-Get-ImapSettings | format-list
-```
+    Get-ImapSettings | format-list
+    ```
 
 2.  *ExternalConnectionSettings* プロパティが設定されていることを確認します。
 
@@ -97,7 +97,9 @@ Get-ImapSettings | format-list
 
 この例では、エンド ユーザーが Outlook Web App を使用して内部および外部の SMTP サーバー設定を表示できるようにします。
 
-    Get-ReceiveConnector "*Client Frontend*" | Set-ReceiveConnector -Fqdn Server.Contoso.com -AdvertiseClientSettings $true 
+```powershell
+Get-ReceiveConnector "*Client Frontend*" | Set-ReceiveConnector -Fqdn Server.Contoso.com -AdvertiseClientSettings $true 
+```
 
 構文およびパラメーターの詳細については、「[Set-ReceiveConnector](https://technet.microsoft.com/ja-jp/library/bb125140\(v=exchg.150\))」を参照してください。
 
@@ -108,8 +110,8 @@ Get-ImapSettings | format-list
 1.  シェルで、次のコマンドを実行します。
     
     ```powershell
-Get-ReceiveConnector | format-list
-```
+    Get-ReceiveConnector | format-list
+    ```
 
 2.  *AdvertiseClientSettings* プロパティを `true` に設定した場合、ユーザーは Outlook Web App で SMTP サーバー設定を表示できます。*AdvertiseClientSettings* を `false` に設定した場合、ユーザーは Outlook Web App で SMTP サーバー設定を表示できません。
 

@@ -180,7 +180,9 @@ Set-CASMailbox -Identity adam@contoso.com -MAPIBlockOutlookVersions $null
 
 
 
-    Set-RpcClientAccess -Server CAS01 -BlockedClientVersions "0.0.0-5.65535.65535;7.0.0;8.02.4-11.65535.65535"
+  ```powershell
+  Set-RpcClientAccess -Server CAS01 -BlockedClientVersions "0.0.0-5.65535.65535;7.0.0;8.02.4-11.65535.65535"
+  ```
 
 構文およびパラメーター定義の詳細については、「[Set-RpcClientAccess](https://technet.microsoft.com/ja-jp/library/dd351072\(v=exchg.150\))」を参照してください。
 

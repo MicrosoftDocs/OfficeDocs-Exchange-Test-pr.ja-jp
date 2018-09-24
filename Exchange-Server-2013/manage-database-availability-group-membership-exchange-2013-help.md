@@ -88,8 +88,8 @@ DAG メンバーシップが正常に管理されていることを確認する�
   - シェルで次のコマンドを実行して、DAG メンバーシップ情報を表示します。
     
     ```powershell
-Get-DatabaseAvailabilityGroup <DAGName> | Format-List Servers
-```
+    Get-DatabaseAvailabilityGroup <DAGName> | Format-List Servers
+    ```
 
 ## 詳細情報
 

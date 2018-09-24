@@ -64,8 +64,8 @@ _**トピックの最終更新日:** 2017-07-26_
     すべての Exchange 組織で、フェデレーション信頼に Azure AD 認証システムのビジネス インスタンスを使用することをお勧めします。2 つの Exchange 組織間でフェデレーション共有を構成する前に、各 Exchange 組織で既存のフェデレーション信頼に Azure AD 認証システムのどちらのインスタンスが使用されているかを確認する必要があります。Exchange 組織で既存のフェデレーション信頼に使用されている Azure AD 認証システムのインスタンスを判別するには、次のシェル コマンドを実行します。
     
     ```powershell
-Get-FederationInformation -DomainName <hosted Exchange domain namespace>
-```
+    Get-FederationInformation -DomainName <hosted Exchange domain namespace>
+    ```
     
     ビジネス インスタンスは、*TokenIssuerURIs* パラメーターに `<uri:federation:MicrosoftOnline>` という値を返します。
     
@@ -119,35 +119,45 @@ Get-FederationInformation -DomainName <hosted Exchange domain namespace>
 
 1.  次のコマンドを実行して、フェデレーション信頼で使用する証明書用の一意のサブジェクト キー識別子を作成します。
     
-        $ski = [System.Guid]::NewGuid().ToString("N")
+    ```powershell
+    $ski = [System.Guid]::NewGuid().ToString("N")
+    ```
 
 2.  フェデレーション信頼で使用する自己署名証明書を作成するには、次の構文を使用します。
     
-        New-ExchangeCertificate -FriendlyName "<Descriptive Name>" -DomainName <domain> -Services Federation -KeySize 2048 -PrivateKeyExportable $true -SubjectKeyIdentifier $ski
-    
+    ```powershell
+    New-ExchangeCertificate -FriendlyName "<Descriptive Name>" -DomainName <domain> -Services Federation -KeySize 2048 -PrivateKeyExportable $true -SubjectKeyIdentifier $ski
+    ```
+
     この例では、Azure AD 認証システムとのフェデレーション信頼で使用する自己署名証明書を作成します。証明書はフレンドリ名の値 Exchange Federated Sharing を使用し、ドメイン値は **USERDNSDOMAIN** 環境変数から取得されます。
     
-        New-ExchangeCertificate -FriendlyName "Exchange Federated Sharing" -DomainName $env:USERDNSDOMAIN -Services Federation -KeySize 2048 -PrivateKeyExportable $true -SubjectKeyIdentifier $ski
+    ```powershell
+    New-ExchangeCertificate -FriendlyName "Exchange Federated Sharing" -DomainName $env:USERDNSDOMAIN -Services Federation -KeySize 2048 -PrivateKeyExportable $true -SubjectKeyIdentifier $ski
+    ```
 
 3.  フェデレーションの信頼を作成し、前の手順で作成した自己署名証明書を組織の Exchange サーバーに自動的に展開するには、次の構文を使用します。
     
-        Get-ExchangeCertificate | ?{$_.FriendlyName -eq "<FriendlyName>"} | New-FederationTrust -Name "<Descriptive Name>"
+    ```powershell
+    Get-ExchangeCertificate | ?{$_.FriendlyName -eq "<FriendlyName>"} | New-FederationTrust -Name "<Descriptive Name>"
+    ```
     
     この例では、Azure AD Authentication という名前のフェデレーション信頼を作成し、Exchange Federated Sharing という名前の自己署名証明書を展開します。
-    
-        Get-ExchangeCertificate | ?{$_.FriendlyName -eq "Exchange Federated Sharing"} | New-FederationTrust -Name "Azure AD Authentication"
+
+    ```powershell
+    Get-ExchangeCertificate | ?{$_.FriendlyName -eq "Exchange Federated Sharing"} | New-FederationTrust -Name "Azure AD Authentication"
+    ```
 
 4.  この構文を使用して、フェデレーション信頼用に構成するドメインに必要な、ドメイン所有権の証明の TXT レコードを返します。
     
     ```powershell
-Get-FederatedDomainProof -DomainName <domain>
-```
+    Get-FederatedDomainProof -DomainName <domain>
+    ```
     
     この例では、プライマリ共有ドメイン contoso.com に必要なドメイン所有権の証明の TXT レコードを返します。
     
     ```powershell
-Get-FederatedDomainProof -DomainName contoso.com
-```
+    Get-FederatedDomainProof -DomainName contoso.com
+    ```
     
     **メモ:** 
     
@@ -160,29 +170,33 @@ Get-FederatedDomainProof -DomainName contoso.com
 6.  次のコマンドを実行して、Azure AD からメタデータおよび証明書を取得します。
     
     ```powershell
-Set-FederationTrust -RefreshMetadata -Identity "Azure AD authentication"
-```
+    Set-FederationTrust -RefreshMetadata -Identity "Azure AD authentication"
+    ```
 
 7.  この構文を使用して、ステップ 3 で作成したフェデレーション信頼のプライマリ共有ドメインを構成します。指定したドメインは、フェデレーション信頼の組織識別子 (OrgID) を構成するために使用されます。OrgID の詳細については、「[フェデレーション組織識別子](federation-exchange-2013-help.md)」を参照してください。
     
-        Set-FederatedOrganizationIdentifier -DelegationFederationTrust "<Federation Trust Name>" -AccountNamespace <Accepted Domain> -Enabled $true
-    
+    ```powershell
+    Set-FederatedOrganizationIdentifier -DelegationFederationTrust "<Federation Trust Name>" -AccountNamespace <Accepted Domain> -Enabled $true
+    ```
+
     この例では、承認済みドメイン contoso.com を、Azure AD Authentication というフェデレーション信頼のプライマリ共有ドメインとして構成します。
     
-        Set-FederatedOrganizationIdentifier -DelegationFederationTrust "Azure AD authentication" -AccountNamespace contoso.com -Enabled $true
+    ```powershell
+    Set-FederatedOrganizationIdentifier -DelegationFederationTrust "Azure AD authentication" -AccountNamespace contoso.com -Enabled $true
+    ```
 
 8.  フェデレーション信頼に他のドメインを追加するには、次の構文を使用します。
     
     ```powershell
-Add-FederatedDomain -DomainName <AdditionalDomain>
-```
+    Add-FederatedDomain -DomainName <AdditionalDomain>
+    ```
     
     sales.contoso.com ドメインのメール アドレスを持つユーザーにフェデレーション共有機能が必要なため、この例では、サブドメイン sales.contoso.com をフェデレーション信頼に追加します。
     
     ```powershell
-Add-FederatedDomain -DomainName sales.contoso.com
-```
-    
+    Add-FederatedDomain -DomainName sales.contoso.com
+    ```
+        
     フェデレーション信頼に追加するドメインまたはサブドメインには、ドメイン所有権の証明の TXT レコードが必要です。
 
 構文およびパラメーターの詳細については、「[New-ExchangeCertificate](https://technet.microsoft.com/ja-jp/library/aa998327\(v=exchg.150\))」、「[New-FederationTrust](https://technet.microsoft.com/ja-jp/library/dd351047\(v=exchg.150\))」、「[Get-FederatedDomainProof](https://technet.microsoft.com/ja-jp/library/ff717833\(v=exchg.150\))」、「[Set-FederationTrust](https://technet.microsoft.com/ja-jp/library/dd298034\(v=exchg.150\))」、「[Set-FederatedOrganizationIdentifier](https://technet.microsoft.com/ja-jp/library/dd351037\(v=exchg.150\))」、「[Add-FederatedDomain](https://technet.microsoft.com/ja-jp/library/dd351208\(v=exchg.150\))」を参照してください。
@@ -196,14 +210,14 @@ Add-FederatedDomain -DomainName sales.contoso.com
 1.  次のシェル コマンドを実行して、フェデレーション信頼情報を確認します。
     
     ```powershell
-Get-FederationTrust | Format-List
-```
+    Get-FederationTrust | Format-List
+    ```
 
 2.  *\<PrimarySharedDomain\>* をプライマリ共有ドメインに置き換え、次のシェル コマンドを実行し、フェデレーション情報を組織から取得できることを確認します。
     
     ```powershell
-Get-FederationInformation -DomainName <PrimarySharedDomain>
-```
+    Get-FederationInformation -DomainName <PrimarySharedDomain>
+    ```
 
 構文およびパラメーターの詳細については、「[Get-FederationTrust](https://technet.microsoft.com/ja-jp/library/dd351262\(v=exchg.150\))」と「[Get-FederationInformation](https://technet.microsoft.com/ja-jp/library/dd351221\(v=exchg.150\))」を参照してください。
 

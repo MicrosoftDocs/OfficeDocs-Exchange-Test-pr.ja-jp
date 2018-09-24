@@ -254,11 +254,15 @@ Active Directory フェデレーション サービスを構成するには、�
 
 6.  次のコマンドを実行します。
     
-        Add-KdsRootKey -EffectiveTime (Get-Date).AddHours(-10)
+    ```powershell
+    Add-KdsRootKey -EffectiveTime (Get-Date).AddHours(-10)
+    ```  
 
 7.  この例では、adfs.contoso.com をという名前のフェデレーション サービスの FsGmsa をという名前の新しい GMSA アカウントを作成します。フェデレーション サービス名は、クライアントに表示されている値です。
     
-        New-ADServiceAccount FsGmsa -DNSHostName adfs.contoso.com -ServicePrincipalNames http/adfs.contoso.com
+    ```powershell
+    New-ADServiceAccount FsGmsa -DNSHostName adfs.contoso.com -ServicePrincipalNames http/adfs.contoso.com
+    ```  
 
 8.  <strong>構成データベースの指定</strong> ページで、<strong>Windows Internal Database を使用してサーバーにデータベースを作成します</strong> を選択してから、<strong>次へ</strong> をクリックします。
 
@@ -272,10 +276,10 @@ Active Directory フェデレーション サービスを構成するには、�
 
 Windowsの次の PowerShell コマンドは、上記の手順と同じです。
     
-```
+```powershell
 Import-Module ADFS
 ```
-```
+```powershell
 Install-AdfsFarm -CertificateThumbprint 0E0C205D252002D535F6D32026B6AB074FB840E7 -FederationServiceDisplayName "Contoso Corporation" -FederationServiceName adfs.contoso.com -GroupServiceAccountIdentifier "contoso\FSgmsa`$"
 ```
 
@@ -349,7 +353,9 @@ EAC に対して証明書利用者信頼を作成するために上記の手順�
 
 6.  <strong>規則の構成</strong> ページの <strong>規則の種類の選択</strong> ステップで、<strong>要求規則名</strong> の下に要求規則の名前を入力します。要求規則には説明的な名前 (例: **ActiveDirectoryUserSID**) を付けてください。<strong>カスタム規則</strong> の下に、この規則について次のような要求規則言語の構文を入力します。
     
-        c:[Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/windowsaccountname", Issuer == "AD AUTHORITY"] => issue(store = "Active Directory", types = ("http://schemas.microsoft.com/ws/2008/06/identity/claims/primarysid"), query = ";objectSID;{0}", param = c.Value);
+    ```powershell
+    c:[Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/windowsaccountname", Issuer == "AD AUTHORITY"] => issue(store = "Active Directory", types = ("http://schemas.microsoft.com/ws/2008/06/identity/claims/primarysid"), query = ";objectSID;{0}", param = c.Value);
+    ```  
 
 7.  <strong>規則の構成</strong> ページで、<strong>完了</strong> をクリックします。
 
@@ -359,7 +365,9 @@ EAC に対して証明書利用者信頼を作成するために上記の手順�
 
 10. <strong>規則の構成</strong> ページの <strong>規則の種類の選択</strong> ステップで、<strong>要求規則名</strong> の下に要求規則の名前を入力します。要求規則には説明的な名前 (例: **ActiveDirectoryUPN**) を付けてください。<strong>カスタム規則</strong> の下に、この規則について次のような要求規則言語の構文を入力します。
     
-        c:[Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/windowsaccountname", Issuer == "AD AUTHORITY"] => issue(store = "Active Directory", types = ("http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn"), query = ";userPrincipalName;{0}", param = c.Value);
+    ```powershell
+    c:[Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/windowsaccountname", Issuer == "AD AUTHORITY"] => issue(store = "Active Directory", types = ("http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn"), query = ";userPrincipalName;{0}", param = c.Value);
+    ```  
 
 11. <strong>終了</strong> をクリックします。
 
@@ -377,23 +385,29 @@ EAC に対して証明書利用者信頼を作成するために上記の手順�
 
 **IssuanceAuthorizationRules.txt の内容:** 
 
-    @RuleTemplate = "AllowAllAuthzRule" => issue(Type = "http://schemas.microsoft.com/authorization/claims/permit", Value = "true");
+```powershell
+@RuleTemplate = "AllowAllAuthzRule" => issue(Type = "http://schemas.microsoft.com/authorization/claims/permit", Value = "true");
+```  
 
 **IssuanceTransformRules.txt の内容:** 
 
-    @RuleName = "ActiveDirectoryUserSID" c:[Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/windowsaccountname", Issuer == "AD AUTHORITY"] => issue(store = "Active Directory", types = ("http://schemas.microsoft.com/ws/2008/06/identity/claims/primarysid"), query = ";objectSID;{0}", param = c.Value); 
-    
-    @RuleName = "ActiveDirectoryUPN" c:[Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/windowsaccountname", Issuer == "AD AUTHORITY"] => issue(store = "Active Directory", types = ("http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn"), query = ";userPrincipalName;{0}", param = c.Value);
+```powershell
+@RuleName = "ActiveDirectoryUserSID" c:[Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/windowsaccountname", Issuer == "AD AUTHORITY"] => issue(store = "Active Directory", types = ("http://schemas.microsoft.com/ws/2008/06/identity/claims/primarysid"), query = ";objectSID;{0}", param = c.Value); 
+
+@RuleName = "ActiveDirectoryUPN" c:[Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/windowsaccountname", Issuer == "AD AUTHORITY"] => issue(store = "Active Directory", types = ("http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn"), query = ";userPrincipalName;{0}", param = c.Value);
+```  
 
 **次のコマンドを実行します。**
 
-    [string]$IssuanceAuthorizationRules=Get-Content -Path C:\IssuanceAuthorizationRules.txt
-    
-    [string]$IssuanceTransformRules=Get-Content -Path c:\IssuanceTransformRules.txt
-    
-    Add-ADFSRelyingPartyTrust -Name "Outlook Web App" -Enabled $true -Notes "This is a trust for https://mail.contoso.com/owa/" -WSFedEndpoint https://mail.contoso.com/owa/ -Identifier https://mail.contoso.com/owa/ -IssuanceTransformRules $IssuanceTransformRules -IssuanceAuthorizationRules $IssuanceAuthorizationRules
-    
-    Add-ADFSRelyingPartyTrust -Name "Exchange Admin Center (EAC)" -Enabled $true -Notes "This is a trust for https://mail.contoso.com/ecp/" -WSFedEndpoint https://mail.contoso.com/ecp/ -Identifier https://mail.contoso.com/ecp/ -IssuanceTransformRules $IssuanceTransformRules -IssuanceAuthorizationRules $IssuanceAuthorizationRules
+```powershell
+[string]$IssuanceAuthorizationRules=Get-Content -Path C:\IssuanceAuthorizationRules.txt
+
+[string]$IssuanceTransformRules=Get-Content -Path c:\IssuanceTransformRules.txt
+
+Add-ADFSRelyingPartyTrust -Name "Outlook Web App" -Enabled $true -Notes "This is a trust for https://mail.contoso.com/owa/" -WSFedEndpoint https://mail.contoso.com/owa/ -Identifier https://mail.contoso.com/owa/ -IssuanceTransformRules $IssuanceTransformRules -IssuanceAuthorizationRules $IssuanceAuthorizationRules
+
+Add-ADFSRelyingPartyTrust -Name "Exchange Admin Center (EAC)" -Enabled $true -Notes "This is a trust for https://mail.contoso.com/ecp/" -WSFedEndpoint https://mail.contoso.com/ecp/ -Identifier https://mail.contoso.com/ecp/ -IssuanceTransformRules $IssuanceTransformRules -IssuanceAuthorizationRules $IssuanceAuthorizationRules
+```  
 
 ## ステップ 4: Web アプリケーション プロキシの役割サービスをインストールする (省略可能)
 
@@ -463,7 +477,9 @@ Web アプリケーションの役割サービスを構成するには、以下�
 
 次の Windows PowerShell コマンドレットは、上記の手順と同じ操作を実行します。
 
-    Install-WebApplicationProxy -CertificateThumprint 1a2b3c4d5e6f1a2b3c4d5e6f1a2b3c4d5e6f1a2b -FederationServiceName adfs.contoso.com
+```powershell
+Install-WebApplicationProxy -CertificateThumprint 1a2b3c4d5e6f1a2b3c4d5e6f1a2b3c4d5e6f1a2b -FederationServiceName adfs.contoso.com
+```  
 
 ## ステップ 6: Web アプリケーション プロキシを使用して Outlook Web App と EAC を発行する (省略可能)
 
@@ -503,11 +519,15 @@ Web アプリケーション プロキシを使用して Outlook Web App およ�
 
 次の Windows PowerShell コマンドレットは、Outlook Web App に対する上記の手順と同じ作業を実行します。
 
-    Add-WebApplicationProxyApplication -BackendServerUrl 'https://mail.contoso.com/owa/' -ExternalCertificateThumbprint 'E9D5F6CDEA243E6E62090B96EC6DE873AF821983' -ExternalUrl 'https://external.contoso.com/owa/' -Name 'OWA' -ExternalPreAuthentication ADFS -ADFSRelyingPartyName 'Outlook Web App'
+```powershell
+Add-WebApplicationProxyApplication -BackendServerUrl 'https://mail.contoso.com/owa/' -ExternalCertificateThumbprint 'E9D5F6CDEA243E6E62090B96EC6DE873AF821983' -ExternalUrl 'https://external.contoso.com/owa/' -Name 'OWA' -ExternalPreAuthentication ADFS -ADFSRelyingPartyName 'Outlook Web App'
+```  
 
 次の Windows PowerShell コマンドレットは、EAC に対する上記の手順と同じ作業を実行します。
 
-    Add-WebApplicationProxyApplication -BackendServerUrl 'https://mail.contoso.com/ecp/' -ExternalCertificateThumbprint 'E9D5F6CDEA243E6E62090B96EC6DE873AF821983' -ExternalUrl 'https://external.contoso.com/ecp/' -Name 'EAC' -ExternalPreAuthentication ADFS -ADFSRelyingPartyName 'Exchange Admin Center'
+```powershell
+Add-WebApplicationProxyApplication -BackendServerUrl 'https://mail.contoso.com/ecp/' -ExternalCertificateThumbprint 'E9D5F6CDEA243E6E62090B96EC6DE873AF821983' -ExternalUrl 'https://external.contoso.com/ecp/' -Name 'EAC' -ExternalPreAuthentication ADFS -ADFSRelyingPartyName 'Exchange Admin Center'
+```  
 
 これらの手順を完了すると、Web アプリケーション プロキシは Outlook Web App クライアントと EAC クライアントの AD FS 認証を実行し、これらに代わって Exchange への接続をプロキシ処理します。AD FS 認証用に Exchange 自体を構成する必要はないため、ステップ 10 に進んで構成をテストします。
 
@@ -523,8 +543,10 @@ Exchange 2013 内の Outlook Web App および EAC でクレームベース認�
 
 Exchange 管理シェルで次のコマンドを実行します。
 
-    $uris = @(" https://mail.contoso.com/owa/","https://mail.contoso.com/ecp/")
-    Set-OrganizationConfig -AdfsIssuer "https://adfs.contoso.com/adfs/ls/" -AdfsAudienceUris $uris -AdfsSignCertificateThumbprint "88970C64278A15D642934DC2961D9CCA5E28DA6B"
+```powershell
+$uris = @(" https://mail.contoso.com/owa/","https://mail.contoso.com/ecp/")
+Set-OrganizationConfig -AdfsIssuer "https://adfs.contoso.com/adfs/ls/" -AdfsAudienceUris $uris -AdfsSignCertificateThumbprint "88970C64278A15D642934DC2961D9CCA5E28DA6B"
+```  
 
 
 > [!NOTE]
@@ -546,11 +568,15 @@ OWA および ECP の仮想ディレクトリについては、唯一の認証�
 
 ECP 仮想ディレクトリを構成するには、Exchange 管理シェルを使用します。シェル ウィンドウで次のコマンドを実行します。
 
-    Get-EcpVirtualDirectory | Set-EcpVirtualDirectory -AdfsAuthentication $true -BasicAuthentication $false -DigestAuthentication $false -FormsAuthentication $false -WindowsAuthentication $false
+```powershell
+Get-EcpVirtualDirectory | Set-EcpVirtualDirectory -AdfsAuthentication $true -BasicAuthentication $false -DigestAuthentication $false -FormsAuthentication $false -WindowsAuthentication $false
+```  
 
 OWA 仮想ディレクトリを構成するには、Exchange 管理シェルを使用します。シェル ウィンドウで次のコマンドを実行します。
 
-    Get-OwaVirtualDirectory | Set-OwaVirtualDirectory -AdfsAuthentication $true -BasicAuthentication $false -DigestAuthentication $false -FormsAuthentication $false -WindowsAuthentication $false -OAuthAuthentication $false
+```powershell
+Get-OwaVirtualDirectory | Set-OwaVirtualDirectory -AdfsAuthentication $true -BasicAuthentication $false -DigestAuthentication $false -FormsAuthentication $false -WindowsAuthentication $false -OAuthAuthentication $false
+```  
 
 
 > [!NOTE]
@@ -567,8 +593,8 @@ Exchange 仮想ディレクトリに変更を加えることを含め、必要�
   - Windows PowerShell を使用:
     
     ```powershell
-Restart-Service W3SVC,WAS -noforce
-```
+    Restart-Service W3SVC,WAS -noforce
+    ```
 
   - コマンド ラインを使用: <strong>スタート</strong> ボタンをクリックし、<strong>ファイル名を指定して実行</strong> をクリックします。次に、「`IISReset /noforce`」と入力し、<strong>OK</strong> をクリックします。
 

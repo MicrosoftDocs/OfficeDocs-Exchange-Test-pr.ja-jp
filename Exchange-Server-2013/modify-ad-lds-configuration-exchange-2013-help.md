@@ -85,7 +85,9 @@ _**トピックの最終更新日:** 2015-04-08_
 
 この例では、AD LDS で使用される LDAP ポートを 5000 に変更します。アンパサンド (&) はコマンド構文の一部です。
 
-    & $env:ExchangeInstallPath\Scripts\ConfigureAdam.ps1 -LdapPort:5000
+  ```powershell
+  & $env:ExchangeInstallPath\Scripts\ConfigureAdam.ps1 -LdapPort:5000
+  ```
 
 この例では、AD LDS 構成に次のような変更を加えます。アンパサンド (&) はコマンド構文の一部です。パラメーターとその値の間に使用されているコロン (:) に注意してください。
 
@@ -99,5 +101,7 @@ _**トピックの最終更新日:** 2015-04-08_
 
 <!-- end list -->
 
-    & $env:ExchangeInstallPath\Scripts\ConfigureAdam.ps1 -LdapPort:5000 -SslPort:5001 -LogPath:"D:\Exchange Server\Data\ADLDS" -DataPath:"D:\Exchange Server\Data\ADLDS"
+  ```powershell
+  & $env:ExchangeInstallPath\Scripts\ConfigureAdam.ps1 -LdapPort:5000 -SslPort:5001 -LogPath:"D:\Exchange Server\Data\ADLDS" -DataPath:"D:\Exchange Server\Data\ADLDS"
+  ```
 

@@ -68,8 +68,8 @@ Set-SenderFilterConfig -Enabled $true
 1.  次のコマンドを実行します。
     
     ```powershell
-Get-SenderFilterConfig | Format-List Enabled
-```
+    Get-SenderFilterConfig | Format-List Enabled
+    ```
 
 2.  表示された値が構成した値であることを確認します。
 
@@ -77,15 +77,21 @@ Get-SenderFilterConfig | Format-List Enabled
 
 既存の値を置き換えるには、次のコマンドを実行します。
 
-    Set-SenderFilterConfig -BlockedSenders <sender1,sender2...> -BlockedDomains <domain1,domain2...> -BlockedDomainsAndSubdomains <domain1,domain2...>
+```powershell
+Set-SenderFilterConfig -BlockedSenders <sender1,sender2...> -BlockedDomains <domain1,domain2...> -BlockedDomainsAndSubdomains <domain1,domain2...>
+```
 
 この例では、kim@contoso.com および john@contoso.com からのメッセージ、fabrikam.com ドメインからのメッセージ、ならびに northwindtraders.com とそのすべてのサブドメインからのメッセージを受信拒否するよう送信者フィルター エージェントが構成されています。
 
-    Set-SenderFilterConfig -BlockedSenders kim@contoso.com,john@contoso.com -BlockedDomains fabrikam.com -BlockedDomainsAndSubdomains northwindtraders.com
+```powershell
+Set-SenderFilterConfig -BlockedSenders kim@contoso.com,john@contoso.com -BlockedDomains fabrikam.com -BlockedDomainsAndSubdomains northwindtraders.com
+```
 
 既存の値を変更せずにエントリを追加または削除するには、次のコマンドを実行します。
 
-    Set-SenderFilterConfig -BlockedSenders @{Add="<sender1>","<sender2>"...; Remove="<sender1>","<sender2>"...} -BlockedDomains @{Add="<domain1>","<domain2>"...; Remove="<domain1>","<domain2>"...} -BlockedDomainsAndSubdomains @{Add="<domain1>","<domain2>"...; Remove="<domain1>","<domain2>"...}
+```powershell
+Set-SenderFilterConfig -BlockedSenders @{Add="<sender1>","<sender2>"...; Remove="<sender1>","<sender2>"...} -BlockedDomains @{Add="<domain1>","<domain2>"...; Remove="<domain1>","<domain2>"...} -BlockedDomainsAndSubdomains @{Add="<domain1>","<domain2>"...; Remove="<domain1>","<domain2>"...}
+```
 
 この例では、次の情報を指定して送信者フィルター エージェントを構成します。
 
@@ -97,7 +103,9 @@ Get-SenderFilterConfig | Format-List Enabled
 
 <!-- end list -->
 
-    Set-SenderFilterConfig -BlockedSenders @{Add="chris@contoso.com","michelle@contoso.com"} -BlockedDomains @{Remove="tailspintoys.com"} -BlockedDomainsAndSubdomains @{Add="blueyonderairlines.com"}
+```powershell
+Set-SenderFilterConfig -BlockedSenders @{Add="chris@contoso.com","michelle@contoso.com"} -BlockedDomains @{Remove="tailspintoys.com"} -BlockedDomainsAndSubdomains @{Add="blueyonderairlines.com"}
+```
 
 ## 正常な動作を確認する方法
 
@@ -106,8 +114,8 @@ Get-SenderFilterConfig | Format-List Enabled
 1.  次のコマンドを実行します。
     
     ```powershell
-Get-SenderFilterConfig | Format-List BlockedSenders,BlockedDomains,BlockedDomainsAndSubdomains
-```
+    Get-SenderFilterConfig | Format-List BlockedSenders,BlockedDomains,BlockedDomainsAndSubdomains
+    ```
 
 2.  表示された値が構成した値であることを確認します。
 
@@ -132,8 +140,8 @@ Set-SenderFilterConfig -BlankSenderBlockingEnabled $true
 1.  次のコマンドを実行します。
     
     ```powershell
-Get-SenderFilterConfig | Format-List BlankSenderBlockingEnabled
-```
+    Get-SenderFilterConfig | Format-List BlankSenderBlockingEnabled
+    ```
 
 2.  表示された値が構成した値であることを確認します。
 

@@ -119,7 +119,9 @@ Exchange ツールボックスのキュー ビューアーを使用して配信�
 
 **Get-Message** コマンドレットを使って、配信用に現在キューに格納されているメッセージのプロパティを表示します。次の例では、現在再試行状態にあるすべてのメッセージの送信者アドレス、受信者、件名、および受信データ情報を表にまとめます。
 
-    Get-Message -IncludeRecipientInfo -Filter {Status -eq "Retry"} | Format-Table FromAddress,Recipients,Subject,DateReceived
+```powershell
+Get-Message -IncludeRecipientInfo -Filter {Status -eq "Retry"} | Format-Table FromAddress,Recipients,Subject,DateReceived
+```
 
 構文およびパラメーターの詳細については、「[Get-Message](https://technet.microsoft.com/ja-jp/library/bb124738\(v=exchg.150\))」を参照してください。
 

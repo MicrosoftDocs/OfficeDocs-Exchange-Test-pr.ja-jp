@@ -48,20 +48,20 @@ _**トピックの最終更新日:** 2014-06-27_
 2.  この例の方法で [New-MailboxDatabase](https://technet.microsoft.com/ja-jp/library/aa997976\(v=exchg.150\)) コマンドレットを使用して、ダイヤル トーン データベースを作成します。
     
     ```powershell
-New-MailboxDatabase -Name DTDB1 -EdbFilePath D:\DialTone\DTDB1.EDB
-```
+	New-MailboxDatabase -Name DTDB1 -EdbFilePath D:\DialTone\DTDB1.EDB
+	```
 
 3.  この例の方法で [Set-Mailbox](https://technet.microsoft.com/ja-jp/library/bb123981\(v=exchg.150\)) コマンドレットを使用して、復旧対象データベース上にホストされるユーザー メールボックスを移動します。
     
     ```powershell
-Get-Mailbox -Database DB1 | Set-Mailbox -Database DTDB1
-```
+	Get-Mailbox -Database DB1 | Set-Mailbox -Database DTDB1
+	```
 
 4.  この例の方法で [Mount-Database](https://technet.microsoft.com/ja-jp/library/aa998871\(v=exchg.150\)) コマンドレットを使用して、データベースをマウントして、クライアント コンピューターがデータベースにアクセスして、メッセージを送受信できるようにします。
     
     ```powershell
-Mount-Database -Identity DTDB1
-```
+	Mount-Database -Identity DTDB1
+	```
 
 5.  回復データベース (RDB) を作成して、回復するデータを含むデータベースとログ ファイルを RDB に回復、またはコピーします。詳細な手順については、「[回復用データベースを作成する](create-a-recovery-database-exchange-2013-help.md)」を参照してください。
 
@@ -70,46 +70,50 @@ Mount-Database -Identity DTDB1
 7.  この例の方法で RDB をマウントしてから、[Dismount-Database](https://technet.microsoft.com/ja-jp/library/bb124936\(v=exchg.150\)) コマンドレットを使用してマウント解除します。
     
     ```powershell
-Mount-Database -Identity RDB1
-```
-        Dismount-Database -Identity RDB1
+	Mount-Database -Identity RDB1
+	```
+    ```powershell
+    Dismount-Database -Identity RDB1
+    ```
 
 8.  RDB のマウント解除後、RDB フォルダー内の現在のデータベースとログ ファイルを安全な場所に移動します。これは、回復したデータベースとダイヤル トーン データベースとを交換する準備段階で行われます。
 
 9.  この例の方法でダイヤル トーン データベースをマウント解除します。このデータベースをマウント解除すると、エンド ユーザーに対するサービスの中断が発生します。
     
     ```powershell
-Dismount-Database -Identity DTDB1
-```
+	Dismount-Database -Identity DTDB1
+	```
 
 10. ダイヤル トーン データベース フォルダーから RDB フォルダーにデータベースとログ ファイルを移動します。
 
 11. この例の方法で、回復したデータベースを含む安全な場所からダイヤル トーン データベース フォルダーにデータベースとログ ファイルを移動し、データベースをマウントします。
     
     ```powershell
-Mount-Database -Identity DTDB1
-```
+	Mount-Database -Identity DTDB1
+	```
     
     これにより、エンド ユーザーに対するサービスが再開します。エンド ユーザーは、本来の運用データベースにアクセスして、メッセージを送受信できるようになります。
 
 12. この例の方法で RDB をマウントします。
     
     ```powershell
-Mount-Database -Identity RDB1
-```
+	Mount-Database -Identity RDB1
+	```
 
 13. この例の方法で、[Get-Mailbox](https://technet.microsoft.com/ja-jp/library/bb123685\(v=exchg.150\)) および [New-MailboxRestoreRequest](https://technet.microsoft.com/ja-jp/library/ff829875\(v=exchg.150\)) コマンドレットを使用して、RDB からデータをエクスポートし、それを復旧したデータベースにインポートします。これにおり、ダイヤル トーン データベースを使用して送受信されたすべてのメッセージが運用データベースにインポートされます。
-```
-$mailboxes = Get-Mailbox -Database DTDB1
-```
-```
-$mailboxes | %{ New-MailboxRestoreRequest -SourceStoreMailbox $_.ExchangeGuid -SourceDatabase RDB1 -TargetMailbox $_ }
-```
+    ```powershell
+    $mailboxes = Get-Mailbox -Database DTDB1
+    ```
+    ```powershell
+    $mailboxes | %{ New-MailboxRestoreRequest -SourceStoreMailbox $_.ExchangeGuid -SourceDatabase RDB1 -TargetMailbox $_ }
+    ```
 
 14. 復旧操作が完了したら、この例の方法で RDB をマウント解除して削除します。
     
-        Dismount-Database -Identity RDB1
-        Remove-MailboxDatabase -Identity RDB1
+    ```powershell
+    Dismount-Database -Identity RDB1
+    Remove-MailboxDatabase -Identity RDB1
+    ```
 
 構文およびパラメーターの詳細については、以下のトピックを参照してください。
 

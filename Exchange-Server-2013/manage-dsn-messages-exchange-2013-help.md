@@ -66,19 +66,27 @@ Get-SystemMessage En\Internal\5.1.2 | Format-List
 
 次のコマンドを実行します。
 
+```powershell
     New-SystemMessage -Internal <$true | $false> -Language <Locale> -DSNCode <x.y.z> -Text "<DSN text>"
+```
 
 この例では、内部送信者に英語で送信する DSN コード 5.1.2 のカスタム プレーン テキスト DSN メッセージを作成します。
 
+```powershell
     New-SystemMessage -Internal $true -Language En -DSNCode 5.1.2 -Text "You tried to send a message to a disabled mailbox that's no longer accepting messages. Please contact the Help Desk at extension 123 for assistance."
+```
 
 この例では、外部送信者に英語で送信する DSN コード 5.1.2 のカスタム プレーン テキスト DSN メッセージを作成します。
 
+```powershell
     New-SystemMessage -Internal $false -Language En -DSNCode 5.1.2 -Text "You tried to send a message to a disabled mailbox that's no longer accepting messages. Please contact your System Administrator for more information."
+```
 
 この例では、内部送信者に英語で送信する DSN コード 5.1.2 のカスタム HTML DSN メッセージを作成します。
 
+```powershell
     New-SystemMessage -DSNCode 5.1.2 -Internal $true -Language En -Text 'You tried to send a message to a <B>disabled</B> mailbox. Please visit <A HREF="http://it.contoso.com">Internal Support</A> or contact &quot;InfoSec&quot; for more information.'
+```
 
 ## 正常な動作を確認する方法
 
@@ -87,8 +95,8 @@ Get-SystemMessage En\Internal\5.1.2 | Format-List
 1.  次のコマンドを実行します。
     
     ```powershell
-Get-SystemMessge -DSNCode <x.y.z> | Format-List Name,Internal,Text,Language
-```
+    Get-SystemMessge -DSNCode <x.y.z> | Format-List Name,Internal,Text,Language
+    ```
 
 2.  表示された値が構成した値であることを確認します。
 
@@ -98,11 +106,15 @@ Get-SystemMessge -DSNCode <x.y.z> | Format-List Name,Internal,Text,Language
 
 カスタム DSN メッセージのテキストを変更するには、以下のコマンドを実行します。
 
+```powershell
     Set-SystemMessage <Locale>\<Internal | External>\<DSNcode> -Text "<DSN text>"
+```
 
 この例では、内部送信者に英語で送信する DSN コード 5.1.2 のカスタム DSN メッセージに割り当てたテキストを変更します。
 
+```powershell
     Set-SystemMessage En\Internal\5.1.2 -Text "The mailbox you tried to send an e-mail message to is disabled and is no longer accepting messages. Please contact the Help Desk at extension 123 for assistance."
+```
 
 ## 正常な動作を確認する方法
 
@@ -111,8 +123,8 @@ Get-SystemMessge -DSNCode <x.y.z> | Format-List Name,Internal,Text,Language
 1.  次のコマンドを実行します。`Get-SystemMessage`.
     
     ```powershell
-Set-SystemMessage <Locale>\<Internal | External>\<DSNcode> | Format-List -Text
-```
+    Set-SystemMessage <Locale>\<Internal | External>\<DSNcode> | Format-List -Text
+    ```
 
 2.  表示された値が構成した値であることを確認します。
 
@@ -151,14 +163,14 @@ DSN メッセージを Exchange 受信者のメールボックスにコピーす
 2.  次のコマンドを実行します。
     
     ```powershell
-Set-OrganizationConfig -MicrosoftExchangeRecipientReplyRecipient <MailboxIdentity>
-```
+    Set-OrganizationConfig -MicrosoftExchangeRecipientReplyRecipient <MailboxIdentity>
+    ```
     
     たとえば、"Contoso System Mailbox" という名前の既存のメールボックスを Exchange 受信者に割り当てるには、以下のコマンドを実行します。
     
     ```powershell
-Set-OrganizationConfig -MicrosoftExchangeRecipientReplyRecipient "Contoso System Mailbox"
-```
+    Set-OrganizationConfig -MicrosoftExchangeRecipientReplyRecipient "Contoso System Mailbox"
+    ```
 
 ## 手順 2:監視する DSN コードを指定する
 
@@ -183,8 +195,9 @@ Set-TransportConfig -GenerateCopyOfDSNFor 5.7.1,5.7.2,5.7.3
 ```
 
 既存の値を変更せずにエントリを追加または削除するには、次のコマンドを実行します。
-
+```powershell
     Set-TransportConfig -GenerateCopyOfDSNFor @{Add="<x.y.z>","<x.y.z>"...; Remove="<x.y.z>","<x.y.z>"...}
+```
 
 この例では、Exchange 受信者に転送する DSN メッセージの既存の一覧に対して DSN コード 5.7.5 を追加し、DSN コード 5.7.1 を削除します。
 

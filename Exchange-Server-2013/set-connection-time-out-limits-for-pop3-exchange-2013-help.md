@@ -94,8 +94,8 @@ Set -PopSettings -Identity CAS01 -PreAuthenticatedConnectionTimeout TimeValue
 1.  シェルで、次のコマンドを実行します。
     
     ```powershell
-Get-PopSettings | format-list
-```
+    Get-PopSettings | format-list
+    ```
 
 2.  接続設定が正しいことを確認します。
 

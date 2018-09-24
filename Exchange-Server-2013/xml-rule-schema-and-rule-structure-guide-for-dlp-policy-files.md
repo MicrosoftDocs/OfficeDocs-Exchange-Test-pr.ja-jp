@@ -86,36 +86,40 @@ DLP ポリシー テンプレートは、XML ドキュメントとして表さ�
 
 DLP ポリシー テンプレートは、次のスキーマに従う XML ドキュメントとして表されます。XML は大文字と小文字が区別されることに注意してください。たとえば、`dlpPolicyTemplates` は機能しますが、`DlpPolicyTemplates` は機能しません。
 
-    <?xml version="1.0" encoding="UTF-8"?>
-    <dlpPolicyTemplates>
-      <dlpPolicyTemplate id="F7C29AEC-A52D-4502-9670-141424A83FAB" mode="Audit" state="Enabled" version="15.0.2.0">
-        <contentVersion>4</contentVersion>
-        <publisherName>Microsoft</publisherName>
-        <name>
-          <localizedString lang="en">PCI-DSS</localizedString>
-        </name>
-        <description>
-          <localizedString lang="en">Detects the presence of information subject to Payment Card Industry Data Security Standard (PCI-DSS) compliance requirements.</localizedString>
-        </description>
-        <keywords></keywords>
-        <ruleParameters></ruleParameters>
-        <ruleParameters/>
-        <policyCommands>
-          <!-- The contents below are applied/executed as rules directly in PS - -->
-          <commandBlock>
-            <![CDATA[ new-transportRule "PCI-DSS: Monitor Payment Card Information Sent To Outside" -DlpPolicy "%%DlpPolicyName%%" -SentToScope NotInOrganization -SetAuditSeverity High -MessageContainsDataClassifications @{Name="Credit Card Number"; MinCount="1" } -Comments "Monitors payment card information sent to outside the organization as part of the PCI-DSS DLP Policy."]]>
-          </commandBlock>
-          <commandBlock>
-            <![CDATA[ new-transportRule "PCI-DSS: Monitor Payment Card Information Sent To Within" -DlpPolicy "%%DlpPolicyName%%" -Comments "Monitors payment card information sent inside the organization as part of the PCI-DSS DLP Policy." -SentToScope InOrganization -SetAuditSeverity Low -MessageContainsDataClassifications @{Name="Credit Card Number"; MinCount="1" } ]]>
-          </commandBlock>
-        </policyCommands>
-        <policyCommandsResources></policyCommandsResources>
-      </dlpPolicyTemplate>
-    </dlpPolicyTemplates>
+  ```xml
+  <?xml version="1.0" encoding="UTF-8"?>
+  <dlpPolicyTemplates>
+    <dlpPolicyTemplate id="F7C29AEC-A52D-4502-9670-141424A83FAB" mode="Audit" state="Enabled" version="15.0.2.0">
+      <contentVersion>4</contentVersion>
+      <publisherName>Microsoft</publisherName>
+      <name>
+        <localizedString lang="en">PCI-DSS</localizedString>
+      </name>
+      <description>
+        <localizedString lang="en">Detects the presence of information subject to Payment Card Industry Data Security Standard (PCI-DSS) compliance requirements.</localizedString>
+      </description>
+      <keywords></keywords>
+      <ruleParameters></ruleParameters>
+      <ruleParameters/>
+      <policyCommands>
+        <!-- The contents below are applied/executed as rules directly in PS - -->
+        <commandBlock>
+          <![CDATA[ new-transportRule "PCI-DSS: Monitor Payment Card Information Sent To Outside" -DlpPolicy "%%DlpPolicyName%%" -SentToScope NotInOrganization -SetAuditSeverity High -MessageContainsDataClassifications @{Name="Credit Card Number"; MinCount="1" } -Comments "Monitors payment card information sent to outside the organization as part of the PCI-DSS DLP Policy."]]>
+        </commandBlock>
+        <commandBlock>
+          <![CDATA[ new-transportRule "PCI-DSS: Monitor Payment Card Information Sent To Within" -DlpPolicy "%%DlpPolicyName%%" -Comments "Monitors payment card information sent inside the organization as part of the PCI-DSS DLP Policy." -SentToScope InOrganization -SetAuditSeverity Low -MessageContainsDataClassifications @{Name="Credit Card Number"; MinCount="1" } ]]>
+        </commandBlock>
+      </policyCommands>
+      <policyCommandsResources></policyCommandsResources>
+    </dlpPolicyTemplate>
+  </dlpPolicyTemplates>
+  ```
 
 XML ファイルに含まれるいずれかの要素に対するパラメーターに空白を含める場合、そのパラメーターを二重引用符で囲む必要があり、そうしないと適切に動作しません。以下の例では、`-SentToScope` の後に続くパラメーターを使用できますが、これはスペースを含まない連続した文字列であるため、二重引用符は使用しません。ただし、–`Comments` に指定するパラメーターには二重引用符がなくスペースが含まれるため、Exchange 管理センターには表示されません。
 
-    <CommandBlock><![CDATA[ new-transportRule "PCI-DSS: Monitor Payment Card Information Sent To Within" -DlpPolicy "PCI-DSS" -Comments Monitors payment card information sent inside the organization -SentToScope InOrganization -SetAuditSeverity Low -MessageContainsDataClassifications @{Name="Credit Card Number"; MinCount="1" } ]]> </CommandBlock>
+  ```powershell
+  <CommandBlock><![CDATA[ new-transportRule "PCI-DSS: Monitor Payment Card Information Sent To Within" -DlpPolicy "PCI-DSS" -Comments Monitors payment card information sent inside the organization -SentToScope InOrganization -SetAuditSeverity Low -MessageContainsDataClassifications @{Name="Credit Card Number"; MinCount="1" } ]]> </CommandBlock>
+  ```
 
 ## localizedString 要素
 
@@ -223,57 +227,59 @@ XML ファイルに含まれるいずれかの要素に対するパラメータ�
 
 ポリシー テンプレートのこの部分には、ポリシー定義のインスタンス化に使用される Exchange 管理シェル コマンドのリストが含まれます。インポート プロセスでは、インスタンス化プロセスの一部として各コマンドが実行されます。以下に、ポリシー コマンドの例を示します。
 
-    <PolicyCommands>
-        <!-- The contents below are applied/executed as rules directly in PS - -->
-          <CommandBlock> <![CDATA[ new-transportRule "PCI-DSS: Monitor Payment Card Information Sent To Outside" -DlpPolicy "PCI-DSS" -SentToScope NotInOrganization -SetAuditSeverity High -MessageContainsDataClassifications @{Name="Credit Card Number"; MinCount="1" } -Comments "Monitors payment card information sent to outside the organization as part of the PCI-DSS DLP policy."]]></CommandBlock>
-          <CommandBlock><![CDATA[ new-transportRule "PCI-DSS: Monitor Payment Card Information Sent To Within" -DlpPolicy "PCI-DSS" -Comments "Monitors payment card information sent inside the organization as part of the PCI-DSS DLP policy." -SentToScope InOrganization -SetAuditSeverity Low -MessageContainsDataClassifications @{Name="Credit Card Number"; MinCount="1" } ]]> </CommandBlock>
-      </PolicyCommands> 
+  ```powershell
+  <PolicyCommands>
+      <!-- The contents below are applied/executed as rules directly in PS - -->
+        <CommandBlock> <![CDATA[ new-transportRule "PCI-DSS: Monitor Payment Card Information Sent To Outside" -DlpPolicy "PCI-DSS" -SentToScope NotInOrganization -SetAuditSeverity High -MessageContainsDataClassifications @{Name="Credit Card Number"; MinCount="1" } -Comments "Monitors payment card information sent to outside the organization as part of the PCI-DSS DLP policy."]]></CommandBlock>
+        <CommandBlock><![CDATA[ new-transportRule "PCI-DSS: Monitor Payment Card Information Sent To Within" -DlpPolicy "PCI-DSS" -Comments "Monitors payment card information sent inside the organization as part of the PCI-DSS DLP policy." -SentToScope InOrganization -SetAuditSeverity Low -MessageContainsDataClassifications @{Name="Credit Card Number"; MinCount="1" } ]]> </CommandBlock>
+    </PolicyCommands> 
+  ```
 
 コマンドレットの形式は、使用されるコマンドレットの標準的な Exchange 管理シェルのコマンドレット構文です。コマンドは順番に実行されます。各コマンド ノードには、複数のコマンドで構成されるスクリプト ブロックを含めることができます。以下の例では、DLP ポリシー テンプレート内に分類ルール パックを埋め込む方法と、ポリシーの作成プロセスでルール パックをインストールする方法を示しています。分類ルール パックはポリシー テンプレートに埋め込まれ、次にテンプレート内のコマンドレットにパラメーターとして渡されます。
 
-``` 
+```powershell 
 <CommandBlock>
-  <![CDATA[
+<![CDATA[
 $rulePack = [system.Text.Encoding]::Unicode.GetBytes('<?xml version="1.0" encoding="utf-16"?>
 <rulePackage xmlns="http://schemas.microsoft.com/office/2011/mce">
 
-  <RulePack id="c3f021a3-c265-4dc2-b3a7-41a1800bf518">
-    <Version major="1" minor="0" build="0" revision="0"/>
-    <Publisher id="e17451d3-9648-4117-a0b1-493a6d5c73ad"/>
-    <Details defaultLangCode="en-us">
-      <LocalizedDetails langcode="en-us">
-        <PublisherName>Contoso</PublisherName>
-        <Name>Contoso Sample Rule Pack</Name>
-        <Description>This is a sample rule package</Description>
-      </LocalizedDetails>
-    </Details>
-  </RulePack>
+<RulePack id="c3f021a3-c265-4dc2-b3a7-41a1800bf518">
+<Version major="1" minor="0" build="0" revision="0"/>
+<Publisher id="e17451d3-9648-4117-a0b1-493a6d5c73ad"/>
+<Details defaultLangCode="en-us">
+  <LocalizedDetails langcode="en-us">
+    <PublisherName>Contoso</PublisherName>
+    <Name>Contoso Sample Rule Pack</Name>
+    <Description>This is a sample rule package</Description>
+  </LocalizedDetails>
+</Details>
+</RulePack>
 
-  <Rules>
-    <Entity id="7cc35258-6b35-4415-baff-a76d1a018980" patternsProximity="300" recommendedConfidence="85" workload="Exchange">     
+<Rules>
+<Entity id="7cc35258-6b35-4415-baff-a76d1a018980" patternsProximity="300" recommendedConfidence="85" workload="Exchange">     
 
-      <Pattern confidenceLevel="85">
-        <IdMatch idRef="Regex_Contoso" />
-        <Any minMatches="1">
-          <Match idRef="Regex_conf" />
-        </Any>
-      </Pattern>
-    </Entity>
+  <Pattern confidenceLevel="85">
+    <IdMatch idRef="Regex_Contoso" />
+    <Any minMatches="1">
+      <Match idRef="Regex_conf" />
+    </Any>
+  </Pattern>
+</Entity>
 
-    <Regex id="Regex_Contoso">(?i)(\bContoso\b)</Regex>
-    <Regex id="Regex_conf">(?i)(\bConfidential\b)</Regex>
+<Regex id="Regex_Contoso">(?i)(\bContoso\b)</Regex>
+<Regex id="Regex_conf">(?i)(\bConfidential\b)</Regex>
 
-    <LocalizedStrings>
-      <Resource idRef="7cc35258-6b35-4415-baff-a76d1a018980">
-        <Name default="true" langcode="en-us">
-          Confidential Information Rule
-        </Name>
-        <Description default="true" langcode="en-us">
-          Sample rule pack - Detects Contoso confidential information
-        </Description>
-      </Resource>
-    </LocalizedStrings>
-  </Rules>
+<LocalizedStrings>
+  <Resource idRef="7cc35258-6b35-4415-baff-a76d1a018980">
+    <Name default="true" langcode="en-us">
+      Confidential Information Rule
+    </Name>
+    <Description default="true" langcode="en-us">
+      Sample rule pack - Detects Contoso confidential information
+    </Description>
+  </Resource>
+</LocalizedStrings>
+</Rules>
 
 </RulePackage>
 

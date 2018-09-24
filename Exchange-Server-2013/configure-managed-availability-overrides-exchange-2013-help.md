@@ -49,11 +49,15 @@ _**トピックの最終更新日:** 2015-11-30_
 
 特定の期間のローカル オーバーライドを作成するには、次の構文を使用します。
 
-    Add-ServerMonitoringOverride -Server <ServerName> -Identity <HealthSetName>\<MonitoringItemName>[\<TargetResource>] -ItemType <Probe | Monitor | Responder | Maintenance> -PropertyName <PropertyName> -PropertyValue <Value> -Duration <dd.hh:mm:ss>
+```powershell
+Add-ServerMonitoringOverride -Server <ServerName> -Identity <HealthSetName>\<MonitoringItemName>[\<TargetResource>] -ItemType <Probe | Monitor | Responder | Maintenance> -PropertyName <PropertyName> -PropertyValue <Value> -Duration <dd.hh:mm:ss>
+```  
 
 Exchange の特定のバージョンのローカル オーバーライドを作成するには、次の構文を使用します。
 
-    Add-ServerMonitoringOverride -Server <ServerName> -Identity <HealthSetName>\<MonitoringItemName>[\<TargetResource>] -ItemType <Probe | Monitor | Responder | Maintenance> -PropertyName <PropertyName> -PropertyValue <Value> -Version <15.01.xxxx.xxx>
+```powershell
+Add-ServerMonitoringOverride -Server <ServerName> -Identity <HealthSetName>\<MonitoringItemName>[\<TargetResource>] -ItemType <Probe | Monitor | Responder | Maintenance> -PropertyName <PropertyName> -PropertyValue <Value> -Version <15.01.xxxx.xxx>
+```  
 
 
 > [!NOTE]
@@ -63,13 +67,17 @@ Exchange の特定のバージョンのローカル オーバーライドを作�
 
 この例は、EXCH03 という名前のサーバー上の応答側 `ActiveDirectoryConnectivityConfigDCServerReboot` を 20 日間無効にするローカルのオーバーライドを追加します。
 
-    Add-ServerMonitoringOverride -Server EXCH03 -Identity "AD\ActiveDirectoryConnectivityConfigDCServerReboot" -ItemType Responder -PropertyName Enabled -PropertyValue 0 -Duration 20.00:00:00
+```powershell
+Add-ServerMonitoringOverride -Server EXCH03 -Identity "AD\ActiveDirectoryConnectivityConfigDCServerReboot" -ItemType Responder -PropertyName Enabled -PropertyValue 0 -Duration 20.00:00:00
+```  
 
 ## 正常な動作を確認する方法
 
 ローカル オーバーライドが正常に作成されたことを確認するには、**Get-ServerMonitoringOverride** コマンドレットを使ってローカル オーバーライドの一覧を表示します。
 
-    Get-ServerMonitoringOverride  -Server <ServerIdentity> | Format-List
+```powershell
+Get-ServerMonitoringOverride  -Server <ServerIdentity> | Format-List
+```  
 
 作成したオーバーライドが一覧に表示されます。
 
@@ -77,17 +85,23 @@ Exchange の特定のバージョンのローカル オーバーライドを作�
 
 ローカル オーバーライドを削除するには、次の構文を使用します。
 
-    Remove-ServerMonitoringOverride -Server <ServerName> -Identity <HealthSetName>\<MonitoringItemName>[\<TargetResource>] -ItemType <ExistingItemTypeValue> -PropertyName <PropertytoRemove>
+```powershell
+Remove-ServerMonitoringOverride -Server <ServerName> -Identity <HealthSetName>\<MonitoringItemName>[\<TargetResource>] -ItemType <ExistingItemTypeValue> -PropertyName <PropertytoRemove>
+```  
 
 この例は、サーバー EXCH01 からの Exchange 正常性セットの `ActiveDirectoryConnectivityConfigDCServerReboot` 応答側の既存ローカル オーバーライドを削除します。
 
-    Remove-ServerMonitoringOverride -Server EXCH01 -Identity Exchange\ActiveDirectoryConnectivityConfigDCServerReboot -ItemType Responder -PropertyName Enabled
+```powershell
+Remove-ServerMonitoringOverride -Server EXCH01 -Identity Exchange\ActiveDirectoryConnectivityConfigDCServerReboot -ItemType Responder -PropertyName Enabled
+```  
 
 ## 正常な動作を確認する方法
 
 ローカル オーバーライドが正常に削除されたことを確認するには、**Get-ServerMonitoringOverride** コマンドレットを使ってローカル オーバーライドの一覧を表示します。
 
-    Get-ServerMonitoringOverride  -Server <ServerIdentity> | Format-List
+```powershell
+Get-ServerMonitoringOverride  -Server <ServerIdentity> | Format-List
+```  
 
 削除されたオーバーライドは、一覧には表示されません。
 
@@ -95,11 +109,15 @@ Exchange の特定のバージョンのローカル オーバーライドを作�
 
 特定の期間のグローバル オーバーライドを作成するには、次の構文を使用します。
 
-    Add-GlobalMonitoringOverride -Identity <HealthSetName>\<MonitoringItemName>[\<TargetResource>] -ItemType <Probe | Monitor | Responder | Maintenance> -PropertyName <PropertytoOverride> -PropertyValue <NewPropertyValue> -Duration <dd.hh:mm:ss>
+```powershell
+Add-GlobalMonitoringOverride -Identity <HealthSetName>\<MonitoringItemName>[\<TargetResource>] -ItemType <Probe | Monitor | Responder | Maintenance> -PropertyName <PropertytoOverride> -PropertyValue <NewPropertyValue> -Duration <dd.hh:mm:ss>
+```  
 
 Exchange の特定のバージョンのグローバル オーバーライドを作成するには、次の構文を使用します。
 
-    Add-GlobalMonitoringOverride -Identity <HealthSetName>\<MonitoringItemName>[\<TargetResource>] -ItemType <Probe | Monitor | Responder | Maintenance> -PropertyName <PropertytoOverride> -PropertyValue <NewPropertyValue> -ApplyVersion <15.01.xxxx.xxx>
+```powershell
+Add-GlobalMonitoringOverride -Identity <HealthSetName>\<MonitoringItemName>[\<TargetResource>] -ItemType <Probe | Monitor | Responder | Maintenance> -PropertyName <PropertytoOverride> -PropertyValue <NewPropertyValue> -ApplyVersion <15.01.xxxx.xxx>
+```  
 
 
 > [!NOTE]
@@ -109,11 +127,15 @@ Exchange の特定のバージョンのグローバル オーバーライドを�
 
 この例は、`OnPremisesInboundProxy` プローブを 30 日間無効にするグローバル オーバーライドを追加します。
 
-    Add-GlobalMonitoringOverride -Identity "FrontendTransport\OnPremisesInboundProxy" -ItemType Probe -PropertyName Enabled -PropertyValue 0 -Duration 30.00:00:00
+```powershell
+Add-GlobalMonitoringOverride -Identity "FrontendTransport\OnPremisesInboundProxy" -ItemType Probe -PropertyName Enabled -PropertyValue 0 -Duration 30.00:00:00
+```  
 
 この例は、Exchange バージョン 15.01.0225.042 を実行する全サーバー上の `StorageLogicalDriveSpaceEscalate` 応答側を無効にするグローバル オーバーライドを追加します。
 
-    Add-GlobalMonitoringOverride -Identity "MailboxSpace\StorageLogicalDriveSpaceEscalate" -PropertyName Enabled -PropertyValue 0 -ItemType Responder -ApplyVersion "15.01.0225.042"
+```powershell
+Add-GlobalMonitoringOverride -Identity "MailboxSpace\StorageLogicalDriveSpaceEscalate" -PropertyName Enabled -PropertyValue 0 -ItemType Responder -ApplyVersion "15.01.0225.042"
+```
 
 ## 正常な動作を確認する方法
 
@@ -129,11 +151,15 @@ Get-GlobalMonitoringOverride
 
 グローバル オーバーライドを削除するには、次の構文を使用します。
 
-    Remove-GlobalMonitoringOverride -Identity <HealthSetName>\<MonitoringItemName>[\<TargetResource>] -ItemType <ExistingItemTypeValue> -PropertyName <OverriddenProperty>
+```powershell
+Remove-GlobalMonitoringOverride -Identity <HealthSetName>\<MonitoringItemName>[\<TargetResource>] -ItemType <ExistingItemTypeValue> -PropertyName <OverriddenProperty>
+```  
 
 この例は、`FrontEndTransport` 正常性セットの `OnPremisesInboundProxy` プローブの `ExtensionAttributes` プロパティの既存のグローバル オーバーライドを削除します。
 
-    Remove-GlobalMonitoringOverride -Identity FrontEndTransport\OnPremisesInboundProxy -ItemType Probe -PropertyName ExtensionAttributes
+```powershell
+Remove-GlobalMonitoringOverride -Identity FrontEndTransport\OnPremisesInboundProxy -ItemType Probe -PropertyName ExtensionAttributes
+```  
 
 ## 正常な動作を確認する方法
 

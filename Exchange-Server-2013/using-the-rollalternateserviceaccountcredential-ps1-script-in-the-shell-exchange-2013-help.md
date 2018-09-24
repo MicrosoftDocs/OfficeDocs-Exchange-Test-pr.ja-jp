@@ -35,7 +35,9 @@ Exchange Server 2013 に含まれている RollAlternateServiceAccountPassword.p
 
 ## 構文
 
-    RollAlternateServiceAccountPassword.ps1 -Scope <Object> -Identity <Object> -Source <Object> -
+```powershell
+RollAlternateServiceAccountPassword.ps1 -Scope <Object> -Identity <Object> -Source <Object> -
+```  
 
 ## 解説
 
@@ -91,7 +93,9 @@ Exchange Server 2013 に含まれている RollAlternateServiceAccountPassword.p
 
 \-verbose フラグを使用してスクリプトを対話的に実行する場合、スクリプトの出力によって正常に終了したスクリプトの処理が示される必要があります。クライアント アクセス サーバーが更新されたことを確認するには、ASA 資格情報上の最終変更時刻のタイム スタンプを確認してください。次の例では、クライアント アクセス サーバーの一覧と、代替サービス アカウントの最終更新時刻を生成します。
 
-    Get-ClientAccessServer -IncludeAlternateServiceAccountCredentialstatus |Fl Name, AlternateServiceAccountConfiguration
+```powershell
+Get-ClientAccessServer -IncludeAlternateServiceAccountCredentialstatus |Fl Name, AlternateServiceAccountConfiguration
+```  
 
 スクリプトを実行しているコンピューターでイベント ログを調べることもできます。スクリプトのイベント ログ エントリは、ソースの *MSExchange Management Application* から収集され、アプリケーション イベント ログに記録されます。次の表に、記録されるイベントと、その意味を一覧します。
 
@@ -239,25 +243,33 @@ Exchange Server 2013 に含まれている RollAlternateServiceAccountPassword.p
 
 この例では、スクリプトを使用して、最初のセットアップを行うためにフォレスト内のすべてのクライアント アクセス サーバーに資格情報をプッシュ転送します。
 
-    .\RollAlternateserviceAccountPassword.ps1 -ToEntireForest -GenerateNewPasswordFor "Contoso\ComputerAccount$" -Verbose
+```powershell
+.\RollAlternateserviceAccountPassword.ps1 -ToEntireForest -GenerateNewPasswordFor "Contoso\ComputerAccount$" -Verbose
+```  
 
 ## 例 2
 
 この例では、ユーザー アカウントの ASA 資格情報の新しいパスワードを生成し、名前が \*mailbox\* に一致するクライアント アクセス サーバー アレイのすべてのメンバーにパスワードを配布します。
 
-    .\RollAlternateserviceAccountPassword.ps1 -ToArrayMembers *mailbox* -GenerateNewPasswordFor "Contoso\UserAccount" -Verbose
+```powershell
+.\RollAlternateserviceAccountPassword.ps1 -ToArrayMembers *mailbox* -GenerateNewPasswordFor "Contoso\UserAccount" -Verbose
+```  
 
 ## 例 3
 
 この例は、月に 1 回自動的にパスワードをロールする、"Exchange-RollAsa" という名前のスケジュールされたタスクを設定します。フォレスト全体のすべてのクライアント アクセス サーバーの ASA 資格情報を、スクリプトによって生成された新しいパスワードで更新します。スケジュールされたタスクは作成されますが、スクリプトは実行されません。スケジュールされたタスクが実行されても、スクリプトは無人モードで実行されます。
 
-    .\RollAlternateServiceAccountPassword.ps1 -CreateScheduledTask "Exchange-RollAsa" -ToEntireForest -GenerateNewPasswordFor 'contoso\computerAccount$'
+```powershell
+.\RollAlternateServiceAccountPassword.ps1 -CreateScheduledTask "Exchange-RollAsa" -ToEntireForest -GenerateNewPasswordFor 'contoso\computerAccount$'
+```  
 
 ## 例 4
 
 この例では、"CAS01" という名前のクライアント アクセス サーバー アレイ内のすべてのクライアント アクセス サーバーの ASA 資格情報を更新します。ドメイン Contoso の Active Directory コンピューター アカウント ServiceAc1 から資格情報を入手します。
 
-    .\RollAlternateserviceAccountPassword.ps1 -ToArrayMembers "CAS01" -GenerateNewPasswordFor "CONTOSO\ServiceAc1$" 
+```powershell
+.\RollAlternateserviceAccountPassword.ps1 -ToArrayMembers "CAS01" -GenerateNewPasswordFor "CONTOSO\ServiceAc1$" 
+```  
 
 ## 例 5
 
@@ -265,5 +277,7 @@ Exchange Server 2013 に含まれている RollAlternateServiceAccountPassword.p
 
 クライアント アクセス サーバーがトラフィックを受け取る前に、ASA 資格情報を更新する必要があります。共有 ASA 資格情報を、既に適切に構成されているクライアント アクセス サーバーからコピーします。たとえば、現時点でサーバー A に有効な ASA 資格情報が存在し、そのアレイにたった今サーバー B を追加した場合、スクリプトを使用してサーバー A からサーバー B に資格情報 (パスワードを含む) をコピーすることができます。これは、サーバー B が停止している場合や、パスワードを最後に登録したときにサーバー B がまだアレイのメンバーでなかった場合に便利です。
 
-    .\RollAlternateServiceAccountPassword.ps1 -CopyFrom ServerA -ToSpecificServers ServerB -Verbose
+```powershell
+.\RollAlternateServiceAccountPassword.ps1 -CopyFrom ServerA -ToSpecificServers ServerB -Verbose
+```  
 

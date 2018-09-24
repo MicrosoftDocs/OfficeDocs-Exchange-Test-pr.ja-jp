@@ -93,7 +93,9 @@ Set-Mailbox bsuneja@contoso.com -LitigationHoldEnabled $true -LitigationHoldDura
 
 次の例では、組織内のすべてのユーザー メールボックスを 1 年間 (365 日間) 訴訟ホールドの対象にします。
 
-    Get-Mailbox -ResultSize Unlimited -Filter {RecipientTypeDetails -eq "UserMailbox"} | Set-Mailbox -LitigationHoldEnabled $true -LitigationHoldDuration 365
+```powershell
+Get-Mailbox -ResultSize Unlimited -Filter {RecipientTypeDetails -eq "UserMailbox"} | Set-Mailbox -LitigationHoldEnabled $true -LitigationHoldDuration 365
+```
 
 この例では、[Get-Mailbox](https://technet.microsoft.com/ja-jp/library/bb123685\(v=exchg.150\)) コマンドレットを使用して組織内のすべてのユーザー メールボックスを取得し、受信者フィルターを使用してすべてのユーザーのメールボックスを含めます。それから、メールボックスの一覧を [Set-Mailbox](https://technet.microsoft.com/ja-jp/library/bb123981\(v=exchg.150\)) コマンドレットにパイプ処理して訴訟ホールドを有効にし、保持期間を指定します。
 
@@ -129,11 +131,15 @@ Set-Mailbox bsuneja@contoso.com -LitigationHoldEnabled $false
 
   - シェルで、次のいずれかのコマンドを実行します。
     
-        Get-Mailbox <name of mailbox> | FL LitigationHold*
+    ```powershell
+    Get-Mailbox <name of mailbox> | FL LitigationHold*
+    ```
     
     または
     
-        Get-Mailbox -ResultSize Unlimited -Filter {RecipientTypeDetails -eq "UserMailbox"} | FL Name,LitigationHold*
+    ```powershell
+    Get-Mailbox -ResultSize Unlimited -Filter {RecipientTypeDetails -eq "UserMailbox"} | FL Name,LitigationHold*
+    ```
     
     メールボックスが無期限に訴訟ホールドの対象とされた場合、メールボックスの *LitigationHoldDuration* プロパティの値は `Unlimited` に設定されています。
 
@@ -152,24 +158,24 @@ Set-Mailbox bsuneja@contoso.com -LitigationHoldEnabled $false
   - すべてのメールボックスを保持の対象にする上記のコマンドでは、すべてのユーザーのメールボックスを返す受信者フィルターが使用されます。特定のメールボックスを訴訟ホールドの対象とするために、その他の受信者プロパティを使用して、**Set-Mailbox** コマンドレットにパイプ処理できるそれらのメールボックスの一覧を返すことができます。
     
     以下に、**Get-Mailbox** コマンドレットと **Get-Recipient** コマンドレットを使用して、共通のユーザー属性またはメールボックス属性に基づいてメールボックスのサブセットを返す例を示します。これらの例では、関連するメールボックスのプロパティ (*CustomAttributeN* や *Department* など) が入力されていることを想定しています。
-    ```
+    ```powershell
     Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'CustomAttribute15 -eq "OneYearLitigationHold"'
     ```
+    
+    ```powershell
+    Get-Recipient -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'Department -eq "HR"'
     ```
-```powershell
-Get-Recipient -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'Department -eq "HR"'
-```
-    ```
-    ```
+    
+    ```powershell
     Get-Recipient -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'PostalCode -eq "98052"'
     ```
-    ```
+
+    ```powershell
     Get-Recipient -RecipientTypeDetails UserMailbox -ResultSize unlimited -Filter 'StateOrProvince -eq "WA"'
     ```
-    ```
-```powershell
-Get-Mailbox -ResultSize Unlimited -Filter {RecipientTypeDetails -ne "DiscoveryMailbox"}
-```
+
+    ```powershell
+    Get-Mailbox -ResultSize Unlimited -Filter {RecipientTypeDetails -ne "DiscoveryMailbox"}
     ```
 
     フィルターで他のユーザーのメールボックス プロパティを使用して、メールボックスを含めたり、除外したりすることができます。詳細については、「[-Filter パラメーターのフィルター可能なプロパティ](https://technet.microsoft.com/ja-jp/library/bb738155\(v=exchg.150\))」を参照してください。

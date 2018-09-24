@@ -92,12 +92,16 @@ RBAC 分割型アクセス許可から Exchange 2013 共有アクセス許可に
 
 2.  次のコマンドを使用して、"Mail Recipient Creation/メール受信者の作成" 役割に対する正規の役割の割り当てを 組織の管理 および Recipient Management 役割グループに追加します。
     
-        New-ManagementRoleAssignment -Role "Mail Recipient Creation" -SecurityGroup "Organization Management"
-        New-ManagementRoleAssignment -Role "Security Group Creation and Membership" -SecurityGroup "Recipient Management"
+```powershell
+New-ManagementRoleAssignment -Role "Mail Recipient Creation" -SecurityGroup "Organization Management"
+New-ManagementRoleAssignment -Role "Security Group Creation and Membership" -SecurityGroup "Recipient Management"
+```
 
 3.  次のコマンドを使用して、"Security Group Creation and Membership/セキュリティ グループの作成とメンバーシップ" 役割に対する正規の役割の割り当てを 組織の管理 役割グループに追加します。
     
-        New-ManagementRoleAssignment -Role "Security Group Creation and Membership" -SecurityGroup "Organization Management"
+```powershell
+New-ManagementRoleAssignment -Role "Security Group Creation and Membership" -SecurityGroup "Organization Management"
+```
 
 構文およびパラメーターの詳細については、「[New-ManagementRoleAssignment](https://technet.microsoft.com/ja-jp/library/dd335193\(v=exchg.150\))」を参照してください。
 
@@ -115,11 +119,14 @@ Exchange 関連の分割型アクセス許可を Active Directory 管理者か�
 
 1.  次のコマンドを使用して、Active Directory 管理者がメンバーとして属す役割グループまたはユニバーサル セキュリティ グループ (USG) に "Mail Recipient Creation/メール受信者の作成" 役割を割り当てる、正規および委任の役割の割り当てを削除します。このコマンドは、例として "Active Directory Administrators/Active Directory管理者" 役割グループを使用します。*WhatIf* スイッチを使用すると、どの役割割り当てを削除するかを確認できます。役割割り当てを削除するには、*WhatIf* スイッチを削除して再度コマンドを実行します。
     
+    ```powershell
         Get-ManagementRoleAssignment -Role "Mail Recipient Creation" | Where { $_.RoleAssigneeName -EQ "Active Directory Administrators" } | Remove-ManagementRoleAssignment -WhatIf
+    ```
 
 2.  次のコマンドを使用して、Active Directory 管理者がメンバーとして属す役割グループまたは USG に "Security Group Creation and Membership/セキュリティ グループの作成とメンバーシップ" 役割を割り当てる、正規および委任の役割の割り当てを削除します。このコマンドは、例として "Active Directory Administrators/Active Directory管理者" 役割グループを使用します。*WhatIf* スイッチを使用すると、どの役割割り当てを削除するかを確認できます。役割割り当てを削除するには、*WhatIf* スイッチを削除して再度コマンドを実行します。
-    
+    ```powershell
         Get-ManagementRoleAssignment -Role "Security Group Creation and Membership" | Where { $_.RoleAssigneeName -EQ "Active Directory Administrators" } | Remove-ManagementRoleAssignment -WhatIf
+    ```
 
 3.  省略可。Active Directory 管理者からすべての Exchange 権限を削除するには、管理者がメンバーとして属す役割グループまたは USG を削除する方法があります。役割グループを削除する方法の詳細については、「[役割グループの管理](manage-role-groups-exchange-2013-help.md)」を参照してください。
 
@@ -142,14 +149,16 @@ Active Directory 分割型アクセス許可から共有アクセス許可に切
 1.  Windows コマンド シェルで、Exchange 2013 インストール メディアから次のコマンドを実行して Active Directory 分割型アクセス許可を無効にします。
     
     ```powershell
-setup.exe /PrepareAD /ActiveDirectorySplitPermissions:false
-```
+        setup.exe /PrepareAD /ActiveDirectorySplitPermissions:false
+    ```
 
 2.  Exchange 管理シェルで、次のコマンドを実行して、"Mail Recipient Creation/メール受信者の作成" 役割および "Security Group Creation and Management/セキュリティ グループの作成と管理" 役割と、組織の管理 および Recipient Management 役割グループの間に正規の役割割り当てを追加します。
     
+    ```powershell
         New-ManagementRoleAssignment "Mail Recipient Creation_Organization Management" -Role "Mail Recipient Creation" -SecurityGroup "Organization Management"
         New-ManagementRoleAssignment "Security Group Creation and Membership_Org Management" -Role "Security Group Creation and Membership" -SecurityGroup "Organization Management"
         New-ManagementRoleAssignment "Mail Recipient Creation_Recipient Management" -Role "Mail Recipient Creation" -SecurityGroup "Recipient Management"
+     ```
 
 3.  組織内の Exchange 2013 サーバーを再起動します。
     

@@ -21,7 +21,9 @@ _**トピックの最終更新日:** 2015-04-08_
 
 これは、リモートの SMTP メッセージング サーバーが受信コネクタに接続したときに受信する既定の応答です。
 
-    220 <Servername> Microsoft ESMTP MAIL service ready at <RegionalDay-Date-24HourTimeFormat> <RegionalTimeZoneOffset>
+```powershell
+220 <Servername> Microsoft ESMTP MAIL service ready at <RegionalDay-Date-24HourTimeFormat> <RegionalTimeZoneOffset>
+```
 
 受信コネクタの SMTP バナーにカスタム値を指定した場合、その SMTP 受信コネクタに接続するリモート SMTP メッセージング サーバーは、次の応答を受信します。
 
@@ -76,8 +78,8 @@ SMTP バナーの変更が正しく行われたことを確認するには、以
 1.  受信コネクタにアクセスできるコンピューター上で Telnet クライアントを開き、次のコマンドを実行します。
     
     ```powershell
-open <Connector FQDN or IP address> <Port>
-```
+    open <Connector FQDN or IP address> <Port>
+    ```
 
 2.  受信コネクタの応答に構成した SMTP バナーが含まれていることを確認します。
 

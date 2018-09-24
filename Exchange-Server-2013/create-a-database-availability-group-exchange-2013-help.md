@@ -109,7 +109,9 @@ New-DatabaseAvailabilityGroup -Name DAG4
 
 この例では、管理用のアクセス ポイントがない DAG5 という DAG を作成します (Windows Server 2012 R2 DAG でのみ有効)。さらに、DAG の監視サーバーとして MBX4 を使用し、既定の監視ディレクトリを作成します。
 
-    New-DatabaseAvailabilityGroup -Name DAG5 -DatabaseAvailabilityGroupIPAddresses ([System.Net.IPAddress]::None) -WitnessServer MBX4
+  ```powershell
+  New-DatabaseAvailabilityGroup -Name DAG5 -DatabaseAvailabilityGroupIPAddresses ([System.Net.IPAddress]::None) -WitnessServer MBX4
+  ```
 
 ## 正常な動作を確認する方法
 
@@ -120,8 +122,8 @@ DAG が正常に作成されたことを確認するには、次のいずれか�
   - シェルで次のコマンドを実行して DAG が作成されたことを確認し、DAG のプロパティ情報を表示します。
     
     ```powershell
-Get-DatabaseAvailabilityGroup <DAGName> | Format-List
-```
+    Get-DatabaseAvailabilityGroup <DAGName> | Format-List
+    ```
 
 ## 詳細情報
 

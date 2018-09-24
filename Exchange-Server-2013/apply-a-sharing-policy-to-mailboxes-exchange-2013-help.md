@@ -75,7 +75,9 @@ Get-Mailbox -Filter {Department -eq "Marketing"} | Set-Mailbox -SharingPolicy "C
 
 この例では、共有ポリシー Contoso が適用されたすべてのメールボックスを返します。ユーザーをエイリアスと電子メール アドレスのみを表示する表に並べ替えます。
 
-    Get-Mailbox -ResultSize unlimited | Where {$_.SharingPolicy -eq "Contoso" } | format-table Alias, EmailAddresses
+  ```powershell
+  Get-Mailbox -ResultSize unlimited | Where {$_.SharingPolicy -eq "Contoso" } | format-table Alias, EmailAddresses
+  ```
 
 構文およびパラメーターの詳細については、「[Set-Mailbox](https://technet.microsoft.com/ja-jp/library/bb123981\(v=exchg.150\))」と「[Get-Mailbox](https://technet.microsoft.com/ja-jp/library/bb123685\(v=exchg.150\))」を参照してください。
 
@@ -88,8 +90,8 @@ Get-Mailbox -Filter {Department -eq "Marketing"} | Set-Mailbox -SharingPolicy "C
   - 次のシェル コマンドを実行して、ユーザー メールボックスに共有ポリシーが割り当てられたことを確認します。*SharingPolicy* パラメーターに、正しい共有ポリシーが表示されていることを確認します。
     
     ```powershell
-Get-Mailbox <user name> | format-list
-```
+    Get-Mailbox <user name> | format-list
+    ```
 
 
 > [!TIP]
