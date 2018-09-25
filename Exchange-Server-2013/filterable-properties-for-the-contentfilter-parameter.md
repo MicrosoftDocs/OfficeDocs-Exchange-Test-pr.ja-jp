@@ -50,7 +50,7 @@ _**トピックの最終更新日:** 2015-09-10_
 <td>
 
 ```powershell
--ContentFilter {All -like `*Ayla*`}
+-ContentFilter {All -like '*Ayla*'}
 ```
 </td>
 </tr>
