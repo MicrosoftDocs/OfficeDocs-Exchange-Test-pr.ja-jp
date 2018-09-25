@@ -964,7 +964,9 @@ Exchange 機能では、サーバー スコープとデータベース スコ�
 
 データベース スコープを最初に導入したのは Microsoft Exchange 2010 Service Pack 1 (SP1) でしたが、Exchange 2013 でも引き続きサポートしています。Exchange 2010 SP1 より前のバージョンの Exchange でサポートしているのは、受信者スコープとサーバー構成スコープだけです。新しいデータベース スコープを Exchange 2010 SP1 以降のサーバーで作成すると、次の警告が表示されます。
 
-    WARNING: Database management scopes will only be applied when a user connects to a server running Exchange 2010 SP1 or later. Servers running a version of Exchange prior to Exchange 2010 SP1 won't apply any roles from a role assignment linked to a database scope. Database management scopes also won't be visible to the Get-ManagementScope cmdlet when it's run from a pre-Exchange 2010 SP1 server.
+  ```powershell
+  WARNING: Database management scopes will only be applied when a user connects to a server running Exchange 2010 SP1 or later. Servers running a version of Exchange prior to Exchange 2010 SP1 won't apply any roles from a role assignment linked to a database scope. Database management scopes also won't be visible to the Get-ManagementScope cmdlet when it's run from a pre-Exchange 2010 SP1 server.
+  ```
 
 データベース スコープを作成しても、適用されるのは Exchange 2010 SP1 以降を実行しているサーバーに接続するユーザーのみです。Exchange 2010 SP1 より前のサーバーに接続するユーザーには、適用されたデータベース スコープに関連付けた役割割り当てがありません。つまり、これらの役割割り当てで指定するアクセス許可は、ユーザーが Exchange 2010 SP1 より前のサーバーに接続するときには与えられません。データベース スコープは、Exchange 2010 SP1 より前のサーバーで作成、削除、変更、または表示することはできません。
 

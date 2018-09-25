@@ -68,7 +68,11 @@ X-MS-Exchange-Organization-Antispam-Report: DV:<DATVersion>;CW:CustomList;PCL:Ph
 <li><p><strong>PermError   </strong>レコードの形式にエラーがあるなど、DNS レコードが無効です。</p></li>
 </ul>
 <p>Sender ID スタンプは、メッセージ エンベロープでは次のような X-header として表示されます。</p>
-<pre><code>X-MS-Exchange-Organization-SenderIdResult:&lt;status&gt;</code></pre>
+
+```powershell
+X-MS-Exchange-Organization-SenderIdResult:<status>
+```
+
 <p>Sender ID の詳細については、「<a href="sender-id-exchange-2013-help.md">送信者 ID</a>」を参照してください。</p></td>
 </tr>
 <tr class="even">
@@ -93,13 +97,22 @@ X-MS-Exchange-Organization-Antispam-Report: DV:<DATVersion>;CW:CustomList;PCL:Ph
 <p>PCL 値の範囲は 1 ～ 8 です。 A PCL レベルが 1 ～ 3 の場合、<code>Neutral</code> の状態が返されます。これは、メッセージの内容がフィッシングされる可能性が低いことを意味します。PCL レベルが 4 ～ 8 の場合、<code>Suspicious</code> の状態が返されます。これは、メッセージがフィッシングされる可能性が高いことを意味します。</p>
 <p>この値は、Outlook メッセージを処理する内容を決めるために使用されます。Outlook は PCL スタンプを使用し、疑わしいメッセージの内容をブロックします。</p>
 <p>PCL スタンプは、メッセージ エンベロープでは次のような X-header として表示されます。</p>
-<pre><code>X-MS-Exchange-Organization-PCL:&lt;status&gt;</code></pre></td>
+
+```powershell
+X-MS-Exchange-Organization-PCL:<status>
+```
+
+</td>
 </tr>
 <tr class="even">
 <td><p>SCL</p></td>
 <td><p>メッセージの SCL (Spam Confidence Level) スタンプは、内容に基づいたメッセージの評価レベルを示します。コンテンツ フィルター エージェントは、Microsoft SmartScreen テクノロジを使用してメッセージのコンテンツを評価し、各メッセージに SCL レベルを割り当てます。SCL の値は 0 ～ 9 の間です。0 はスパムである可能性が最も低く、9 はスパムである可能性が最も高いと見なされます。Exchange や Outlook で実行される処理は、SCL しきい値の設定によって異なります。</p>
 <p>SCL スタンプは、メッセージ エンベロープでは次のような X-header として表示されます。</p>
-<pre><code>X-MS-Exchange-Organization-SCL:&lt;status&gt;</code></pre>
+
+```powershell
+X-MS-Exchange-Organization-SCL:<status>
+```
+
 <p>SCL しきい値と処理の詳細については、「<a href="spam-confidence-level-threshold-exchange-2013-help.md">Spam Confidence Level のしきい値</a>」を参照してください。</p></td>
 </tr>
 <tr class="odd">

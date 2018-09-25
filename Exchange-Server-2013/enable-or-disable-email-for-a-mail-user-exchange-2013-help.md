@@ -116,21 +116,23 @@ Enable-MailUser -Identity "Sanjay Shah" -ExternalEmailAddress renev@tailspintoys
     ```powershell
     Get-User | Where { $_.RecipientType -eq "User" } | Out-File "C:\Users\Administrator\Desktop\UsersToMailEnable.csv"
     ```
-
+    
     この結果, .csv ファイルは次のようになります。
     
-        Name            RecipientType
-        ----            -------------
-        Guest           User
-        krbtgt          User
-        RMS_SERVICE     User
-        David Pelton    User
-        Kim Akers       User
-        Janet Schorr    User
-        Jeffrey Zang    User
-        Spencer Low     User
-        Toni Poe        User
-        ...
+    ```powershell
+    Name            RecipientType
+    ----            -------------
+    Guest           User
+    krbtgt          User
+    RMS_SERVICE     User
+    David Pelton    User
+    Kim Akers       User
+    Janet Schorr    User
+    Jeffrey Zang    User
+    Spencer Low     User
+    Toni Poe        User
+    ...
+    ```
 
 2.  この CSV ファイルを次のように変更します。
     

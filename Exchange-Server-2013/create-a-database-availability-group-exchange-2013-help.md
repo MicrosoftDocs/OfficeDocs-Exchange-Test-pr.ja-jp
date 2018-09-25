@@ -99,7 +99,9 @@ New-DatabaseAvailabilityGroup -Name DAG2 -DatabaseAvailabilityGroupIPAddresses 1
 
 この例では、DAG3 という DAG を作成します。DAG3 は、監視サーバー MBX2 およびローカル ディレクトリ C:\\DAG3 を使用するように構成されています。複数の DAG メンバーが MAPI ネットワーク上の別々のサブネット上にあるので、DAG3 には複数の静的 IP アドレスが割り当てられます。
 
-    New-DatabaseAvailabilityGroup -Name DAG3 -WitnessServer MBX2 -WitnessDirectory C:\DAG3 -DatabaseAvailabilityGroupIPAddresses 10.0.0.8,192.168.0.8
+```powershell
+New-DatabaseAvailabilityGroup -Name DAG3 -WitnessServer MBX2 -WitnessDirectory C:\DAG3 -DatabaseAvailabilityGroupIPAddresses 10.0.0.8,192.168.0.8
+```
 
 この例では、DHCP を使用するように構成された DAG4 という DAG を作成します。また、ミラーリング監視サーバーはシステムによって自動的に選択され、既定の監視ディレクトリが作成されます。
 
@@ -109,9 +111,9 @@ New-DatabaseAvailabilityGroup -Name DAG4
 
 この例では、管理用のアクセス ポイントがない DAG5 という DAG を作成します (Windows Server 2012 R2 DAG でのみ有効)。さらに、DAG の監視サーバーとして MBX4 を使用し、既定の監視ディレクトリを作成します。
 
-  ```powershell
-  New-DatabaseAvailabilityGroup -Name DAG5 -DatabaseAvailabilityGroupIPAddresses ([System.Net.IPAddress]::None) -WitnessServer MBX4
-  ```
+```powershell
+New-DatabaseAvailabilityGroup -Name DAG5 -DatabaseAvailabilityGroupIPAddresses ([System.Net.IPAddress]::None) -WitnessServer MBX4
+```
 
 ## 正常な動作を確認する方法
 
