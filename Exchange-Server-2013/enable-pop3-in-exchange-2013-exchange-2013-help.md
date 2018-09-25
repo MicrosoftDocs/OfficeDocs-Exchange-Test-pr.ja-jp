@@ -62,26 +62,26 @@ POP3 および IMAP4 を設定する方法の詳細については、「[Exchang
 1.  Microsoft Exchange POP3 サービスを自動で開始されるように設定します。
     
     ```powershell
-Set-service msExchangePOP3 -startuptype automatic
-```
+    Set-service msExchangePOP3 -startuptype automatic
+    ```
 
 2.  Microsoft Exchange POP3 サービスを開始します。
     
     ```powershell
-Start-service msExchangePOP3
-```
+    Start-service msExchangePOP3
+    ```
 
 3.  Microsoft Exchange POP3 Backend サービスを自動で開始されるように設定します。
     
     ```powershell
-Set-service msExchangePOP3BE -startuptype automatic
-```
+    Set-service msExchangePOP3BE -startuptype automatic
+    ```
 
 4.  Microsoft Exchange POP3 Backend サービスを開始します。
     
     ```powershell
-Start-service msExchangePOP3BE
-```
+    Start-service msExchangePOP3BE
+    ```
 
 ## 正常な動作を確認する方法
 

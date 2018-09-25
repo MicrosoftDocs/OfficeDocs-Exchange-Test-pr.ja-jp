@@ -116,24 +116,48 @@ kathleen@contoso.com<br />
 <td><p>組織外部であり、元のメッセージに「CONTOSO LEGAL NOTICE」のような免責事項のテキストが含まれていない場合</p></td>
 <td><p>条件: <strong>[受信者の場所が次の場合]</strong> &gt; <strong>[組織外部]</strong></p>
 <p>例外: <strong>[件名または本文]</strong> &gt; <strong>[件名または本文が次のテキスト パターンと一致する]</strong> &gt; <strong>CONTOSO LEGAL NOTICE</strong></p></td>
-<td><pre><code>-FromScope NotInOrganization -ExceptIf -SubjectOrBodyMatches &quot;CONTOSO LEGAL NOTICE&quot;</code></pre></td>
+<td>
+
+```powershell
+-FromScope NotInOrganization -ExceptIf -SubjectOrBodyMatches "CONTOSO LEGAL NOTICE"
+```
+
+</td>
 </tr>
 <tr class="even">
 <td><p>実行可能ファイルが添付された受信メッセージ</p></td>
 <td><p>条件 1: <strong>[送信者の場所が次の場合]</strong> &gt; <strong>[組織外部]</strong></p>
 <p>条件 2: <strong>[すべての添付ファイル]</strong> &gt; <strong>[実行可能なコンテンツが含まれる]</strong></p></td>
-<td><pre><code>-FromScope NotInOrganization -AttachmentHasExecutableContent</code></pre></td>
+<td>
+
+```powershell
+-FromScope NotInOrganization -AttachmentHasExecutableContent
+```
+
+</td>
 </tr>
 <tr class="odd">
 <td><p>送信者がマーケティング部門である</p></td>
 <td><p>条件: <strong>[送信者]</strong> &gt; <strong>[このグループのメンバーである]</strong> &gt; <strong>group name</strong></p></td>
-<td><pre><code>-FromMemberOf &quot;Marketing Team&quot;</code></pre></td>
+<td>
+
+```powershell
+-FromMemberOf "Marketing Team"
+```
+
+</td>
 </tr>
 <tr class="even">
 <td><p>外部の送信者から Sales ディスカッション グループに送信されるすべてのメッセージ</p></td>
 <td><p>条件 1: <strong>[送信者の場所が次の場合]</strong> &gt; <strong>[組織外部]</strong></p>
 <p>条件 2: <strong>[メッセージ]</strong> &gt; <strong>[[宛先] ボックスまたは [CC] ボックスにこの人物を含む]</strong> &gt; <strong>group name</strong></p></td>
-<td><pre><code>-FromScope NotInOrganization -SentTo &quot;Sales Discussion Group&quot; -PrependSubject &quot;Sent to Sales Discussion Group: &quot;</code></pre></td>
+<td>
+
+```powershell
+-FromScope NotInOrganization -SentTo "Sales Discussion Group" -PrependSubject "Sent to Sales Discussion Group: "
+```
+
+</td>
 </tr>
 <tr class="odd">
 <td><p>1 か月間送信メッセージの先頭に広告を追加する</p></td>
@@ -196,7 +220,7 @@ kathleen@contoso.com<br />
 
 たとえば、署名、`IMG` タグ、および埋め込み CSS を含む HTML の免責事項の例を以下に示します。
 
-```HTML
+  ```xml
     <div style="font-size:9pt;  font-family: 'Calibri',sans-serif;">
     %%displayname%%</br>
     %%title%%</br>
@@ -210,7 +234,7 @@ kathleen@contoso.com<br />
     <p style="font-size:8pt; line-height:10pt; font-family: 'Cambria','times roman',serif;">This message contains confidential information and is intended only for the individual(s) addressed in the message. If you are not the named addressee, you should not disseminate, distribute, or copy this e-mail. If you are not the intended recipient, you are notified that disclosing, distributing, or copying this e-mail is strictly prohibited.  </p>
     <span style="padding-top:10px; font-weight:bold; color:#CC0000; font-size:10pt; font-family: 'Calibri',Arial,sans-serif; "><a href="http://www.fabrikam.com">Fabrikam, Inc. </a></span></br></br>
     </div>
-```
+  ```
 
 ## 免責事項を追加できなかった場合のフォールバック オプション
 

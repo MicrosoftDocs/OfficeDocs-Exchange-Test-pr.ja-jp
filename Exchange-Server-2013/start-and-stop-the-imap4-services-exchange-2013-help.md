@@ -60,28 +60,28 @@ IMAP4 サービスを開始するには:
 1.  クライアント アクセス サーバーの役割を実行しているコンピューター上で、シェルから次のコマンドを実行して Microsoft Exchange IMAP4 サービスを開始します。
     
     ```powershell
-Start-service msExchangeIMAP4
-```
+    Start-service msExchangeIMAP4
+    ```
 
 2.  メールボックス サーバーの役割を実行しているコンピューター上で、シェルから次のコマンドを実行して Microsoft Exchange IMAP4 バックエンド サービスを開始します。
     
     ```powershell
-Start-service msExchangeIMAP4BE
-```
+    Start-service msExchangeIMAP4BE
+    ```
 
 IMAP4 サービスを停止するには:
 
 1.  クライアント アクセス サーバーの役割を実行しているコンピューター上で、シェルから次のコマンドを実行して Microsoft Exchange IMAP4 サービスを停止します。
     
     ```powershell
-Stop-service msExchangeIMAP4
-```
+    Stop-service msExchangeIMAP4
+    ```
 
 2.  メールボックス サーバーの役割を実行しているコンピューター上で、シェルから次のコマンドを実行して Microsoft Exchange IMAP4 Backend サービスを停止します。
     
     ```powershell
-Stop-service msExchangeIMAP4BE
-```
+    Stop-service msExchangeIMAP4BE
+    ```
 
 ## net start コマンドを使用して IMAP4 サービスを開始または停止する
 
@@ -90,28 +90,28 @@ IMAP4 サービスを開始するには:
 1.  クライアント アクセス サーバーの役割を実行しているコンピューター上で、コマンド プロンプトで次のコマンドを実行して Microsoft Exchange IMAP4 サービスを開始します。
     
     ```powershell
-net start msExchangeIMAP4
-```
+    net start msExchangeIMAP4
+    ```
 
 2.  メールボックス サーバーの役割を実行しているコンピューター上で、コマンド プロンプトで次のコマンドを実行して Microsoft Exchange IMAP4 Backend サービスを開始します。
     
     ```powershell
-net start msExchangeIMAP4BE
-```
+    net start msExchangeIMAP4BE
+    ```
 
 IMAP4 サービスを停止するには:
 
 1.  クライアント アクセス サーバーの役割を実行しているコンピューター上で、コマンド プロンプトで次のコマンドを実行して Microsoft Exchange IMAP4 サービスを停止します。
     
     ```powershell
-Net Stop MSExchangeIMAP4
-```
+    Net Stop MSExchangeIMAP4
+    ```
 
 2.  メールボックス サーバーの役割を実行しているコンピューター上で、コマンド プロンプトで次のコマンドを実行して Microsoft Exchange IMAP4 Backend サービスを停止します。
     
     ```powershell
-Net Stop MSExchangeIMAP4BE
-```
+    Net Stop MSExchangeIMAP4BE
+    ```
 
 ## 正常な動作を確認する方法
 

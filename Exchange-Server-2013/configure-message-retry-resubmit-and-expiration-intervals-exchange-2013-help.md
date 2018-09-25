@@ -46,7 +46,6 @@ Microsoft Exchange Server 2013 では、メールボックス サーバーおよ
     ```powershell
     Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
     ```
-
 2.  `<appSettings>` セクションで以下のキーを検索します。
     
     ```powershell
@@ -64,7 +63,6 @@ Microsoft Exchange Server 2013 では、メールボックス サーバーおよ
     <add key="MailboxDeliveryQueueRetryInterval" value="00:03:00" />
     <add key="MaxIdleTimeBeforeResubmit" value="6:00:00" />
     ```
-
 3.  完了したら、EdgeTransport.exe.config ファイルを保存して閉じます。
 
 4.  次のコマンドを実行して、Microsoft Exchange Transport サービスを再起動します。
@@ -72,7 +70,6 @@ Microsoft Exchange Server 2013 では、メールボックス サーバーおよ
     ```powershell
     net stop MSExchangeTransport && net start MSExchangeTransport
     ```
-
 ## 一時エラー発生時の再試行、一時エラー発生時の再試行間隔、および送信接続失敗時の再試行間隔を構成する
 
 一時エラー発生時の再試行には、`QueueGlitchRetryCount` キーと `QueueGlitchRetryInterval` キーで制御される接続試行が失敗した後に行う、接続試行の回数を指定します。一時エラー発生時の再試行回数の既定値は 6 です。このパラメーターの有効な入力範囲は 0 ～ 15 です。一時エラー発生時の再試行回数を 0 に設定すると、次の接続試行は、*送信接続失敗時の再試行間隔*で制御されます。
@@ -207,7 +204,9 @@ Set-TransportService Mailbox01 -DelayNotificationTimeout 06:00:00
 
 遅延 DSN 通知の設定を構成するには、次の構文を使用します。
 
-    Set-TransportConfig -ExternalDelayDSNEnabled <$true | $false> -InternalDelayDSNEnabled <$true |$false>
+```powershell
+Set-TransportConfig -ExternalDelayDSNEnabled <$true | $false> -InternalDelayDSNEnabled <$true |$false>
+```
 
 この例では、外部の送信者に遅延 DSN 通知メッセージを送信しないようにします。
 

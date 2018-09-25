@@ -141,7 +141,7 @@ Exchange 2003 からパブリック フォルダーを直接移行すること�
         
         ```powershell
         Get-PublicFolderDatabase | ForEach {Get-PublicFolderStatistics -Server $_.Server | Where {$_.Name -like "*\*"}}
-        ```
+        ````
     
     3.  パブリック フォルダーが返された場合、次のコマンドを実行することで、名前を変更することができます。
         
@@ -227,7 +227,7 @@ Exchange 2003 からパブリック フォルダーを直接移行すること�
     1.  次のコマンドを実行し、パブリック フォルダー メールボックスが存在するかどうかを確認します。
         
         ```powershell
-        Get-Mailbox -PublicFolder
+        Get-Mailbox -PublicFolder 
         ```
     
     2.  コマンドを実行しても、パブリック フォルダー メールボックスが返されなかった場合は、Step 3: Generate the CSV files に進んでください。上記のコマンドによってパブリック フォルダーが返された場合は、以下のコマンドを使って、パブリック フォルダーが存在するかどうかを確認します。
@@ -243,9 +243,11 @@ Exchange 2003 からパブリック フォルダーを直接移行すること�
         > パブリック フォルダーを削除すると、そこに含まれるすべての情報が完全に削除されます。
 
         
-            Get-Mailbox -PublicFolder | Where{$_.IsRootPublicFolderMailbox -eq $false} | Remove-Mailbox -PublicFolder -Force -Confirm:$false
+        ```powershell
+        Get-Mailbox -PublicFolder | Where{$_.IsRootPublicFolderMailbox -eq $false} | Remove-Mailbox -PublicFolder -Force -Confirm:$false
         
-            Get-Mailbox -PublicFolder | Remove-Mailbox -PublicFolder -Force -Confirm:$false
+        Get-Mailbox -PublicFolder | Remove-Mailbox -PublicFolder -Force -Confirm:$false
+        ```
 
 構文およびパラメーターの詳細については、以下のトピックを参照してください。
 
@@ -271,9 +273,9 @@ Exchange 2003 からパブリック フォルダーを直接移行すること�
 
 1.  従来の Exchange サーバーで `Export-PublicFolderStatistics.ps1` スクリプトを実行し、フォルダー名からフォルダー サイズへのマッピング ファイルを作成します。このスクリプトはローカル管理者が実行する必要があります。このファイルには、2 つの列があります。**FolderName** と **FolderSize** です。**FolderSize** 列の値は、バイト単位で表示されます。**\\PublicFolder01,10000** などです。
     
-    ```powershell
-    .\Export-PublicFolderStatistics.ps1  <Folder to size map path> <FQDN of source server>
-    ```
+     ```powershell
+     .\Export-PublicFolderStatistics.ps1  <Folder to size map path> <FQDN of source server>
+     ```
     
       - *FQDN of source server* は、パブリック フォルダー階層をホストしているメールボックス サーバーの完全修飾ドメイン名です。
     
@@ -283,12 +285,12 @@ Exchange 2003 からパブリック フォルダーを直接移行すること�
     
 
     > [!NOTE]
-    > パブリック フォルダーの名前にバックスラッシュ (<STRONG>\</STRONG>) が含まれる場合、そのパブリック フォルダーは親パブリック フォルダー内に作成されます。.csv ファイルを見直して、バックスラッシュを含む名前を編集することをお勧めします。
+    > パブリック フォルダーの名前にバックスラッシュ (\<STRONG>\</STRONG>) が含まれる場合、そのパブリック フォルダーは親パブリック フォルダー内に作成されます。.csv ファイルを見直して、バックスラッシュを含む名前を編集することをお勧めします。
 
     
-    ```powershell
-    .\PublicFolderToMailboxMapGenerator.ps1 <Maximum mailbox size in bytes> <Folder to size map path> <Folder to mailbox map path>
-    ```
+     ```powershell
+     .\PublicFolderToMailboxMapGenerator.ps1 <Maximum mailbox size in bytes> <Folder to size map path> <Folder to mailbox map path>
+     ```
     
       - *Maximum mailbox size in bytes* は、新しいパブリック フォルダー メールボックス用に設定する最大サイズです。パブリック フォルダー メールボックスのサイズを増やせるように、拡張が可能なサイズを指定する必要があります。
     
@@ -323,13 +325,16 @@ Exchange 2007 のパブリック フォルダーを移行する手順は、Excha
     ```powershell
     $PublicFolderDatabasesInOrg = @(Get-PublicFolderDatabase)
     ```
+
     ```powershell
     $BadItemLimitCount = 5 + ($PublicFolderDatabasesInOrg.Count -1)
     ```
 
 2.  Exchange 2013 サーバーで次のコマンドを実行します。
     
-        New-MigrationBatch -Name PFMigration -SourcePublicFolderDatabase (Get-PublicFolderDatabase -Server <Source server name>) -CSVData (Get-Content <Folder to mailbox map path> -Encoding Byte) -NotificationEmails <email addresses for migration notifications> -BadItemLimit $BadItemLimitCount 
+    ```powershell
+    New-MigrationBatch -Name PFMigration -SourcePublicFolderDatabase (Get-PublicFolderDatabase -Server <Source server name>) -CSVData (Get-Content <Folder to mailbox map path> -Encoding Byte) -NotificationEmails <email addresses for migration notifications> -BadItemLimit $BadItemLimitCount 
+    ```
 
 3.  次のコマンドを使用して移行を開始します。
     
@@ -343,7 +348,7 @@ Exchange 2007 のパブリック フォルダーを移行する手順は、Excha
     
     ```powershell
     New-MigrationBatch -Name PFMigration -SourcePublicFolderDatabase (Get-PublicFolderDatabase -Server <Source server name>) -CSVData (Get-Content <Folder to mailbox map path> -Encoding Byte) -NotificationEmails <email addresses for migration notifications> 
-    ```  
+    ```
     
     `NotificationEmails` パラメーターは省略可能です。
 
@@ -429,9 +434,9 @@ Complete-MigrationBatch PublicFolderMigration
 
 1.  PowerShell で次のコマンドを実行してテスト メールボックスをいくつか割り当て、新規に移行済みのいずれかのパブリック フォルダー メールボックスを既定のパブリック フォルダー メールボックスとして使用します。
     
-    ```powershell
-    Set-Mailbox -Identity <Test User> -DefaultPublicFolderMailbox <Public Folder Mailbox Identity>
-    ```     
+     ```powershell
+     Set-Mailbox -Identity <Test User> -DefaultPublicFolderMailbox <Public Folder Mailbox Identity>
+     ```
 
 2.  前の手順で識別されたテスト ユーザーを使って Outlook 2007 以降にログオンし、次のパブリック フォルダー テストを実行します。
     
@@ -521,13 +526,13 @@ Complete-MigrationBatch PublicFolderMigration
     
     ```powershell
     Get-Mailbox -PublicFolder | Where{$_.IsRootPublicFolderMailbox -eq $false} | Remove-Mailbox -PublicFolder -Force -Confirm:$false
-    
+        
     Get-Mailbox -PublicFolder | Remove-Mailbox -PublicFolder -Force -Confirm:$false
     ```
 
 3.  従来の Exchange サーバーで次のコマンドを実行すると、`PublicFolderMigrationComplete` フラグが `$false` に設定されます。
     
-    ```powershell
-    Set-OrganizationConfig -PublicFolderMigrationComplete:$False
-    ```
+     ```powershell
+     Set-OrganizationConfig -PublicFolderMigrationComplete:$False
+     ```
 

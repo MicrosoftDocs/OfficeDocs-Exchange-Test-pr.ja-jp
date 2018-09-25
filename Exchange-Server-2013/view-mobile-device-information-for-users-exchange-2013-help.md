@@ -50,6 +50,5 @@ Get-MobileDevice コマンドレットを使用すると、特定ユーザーの
 1.  次のコマンドを実行します。
     
     ```powershell
-Get-MobileDevice -Mailbox useralias
-```
-
+    Get-MobileDevice -Mailbox useralias
+    ```

@@ -155,63 +155,64 @@ ASA 資格情報を展開するためのサポートされている唯一の方�
 
 3.  ASA 資格情報を最初の Exchange 2013 クライアント アクセス サーバーに展開するには、次のコマンドを実行します。
     
-        .\RollAlternateServiceAccountPassword.ps1 -ToSpecificServer cas-1.corp.tailspintoys.com -GenerateNewPasswordFor tailspin\EXCH2013ASA$
+    ```powershell
+    .\RollAlternateServiceAccountPassword.ps1 -ToSpecificServer cas-1.corp.tailspintoys.com -GenerateNewPasswordFor tailspin\EXCH2013ASA$
+    ```
 
 4.  代替サービス アカウントのパスワードを変更するかどうかを確認するメッセージが表示されたら、<strong>はい</strong> で応答します。
 
-RollAlternateServiceAccountPassword.ps1 スクリプトを実行すると表示される出力の例を次に示します。  
+RollAlternateServiceAccountPassword.ps1 スクリプトを実行すると表示される出力の例を次に示します。
 
 ```powershell
-
-========== Starting at 01/12/2015 10:17:47 ==========
-Creating a new session for implicit remoting of "Get-ExchangeServer" command...
-Destination servers that will be updated:
-
-Name                                                        PSComputerName
-----                                                        --------------
-cas-1                                                   cas-1.corp.tailspintoys.com
-
-
-Credentials that will be pushed to every server in the specified scope (recent first):
-
-UserName                                                                                                        
-Password
---------                                                                                                        
---------
-tailspin\EXCH2013ASA$                                                                             
-System.Security.SecureString
-
-
-Prior to pushing new credentials, all existing credentials that are invalid or no longer work will be removed from  the destination servers.
-Pushing credentials to server cas-1
-Setting a new password on Alternate Serice Account in Active Directory
-
-Password change
-Do you want to change password for tailspin\EXCH2013ASA$ in Active Directory at this time?
-[Y] Yes  [N] No  [S] Suspend  [?] Help (default is "Y"): y
-Preparing to update Active Directory with a new password for tailspin\EXCH2013ASA$ ...
-Resetting a password in the Active Directory for tailspin\EXCH2013ASA$ ...
-New password was successfully set to Active Directory.
-Retrieving the current Alternate Service Account configuration from servers in scope
-Alternate Service Account properties:
-
-StructuralObjectClass QualifiedUserName Last Pwd Update       SPNs
---------------------- ----------------- ---------------       ----
-computer              tailspin\EXCH2013ASA$   1/12/2015 10:19:53 AM
-
-Per-server Alternate Service Account configuration as of the time of script completion:
-
-
-    Array: {mail.corp.tailspintoys.com}
-
-Identity  AlternateServiceAccountConfiguration
---------  ------------------------------------
-cas-1 Latest: 1/12/2015 10:19:22 AM, tailspin\EXCH2013ASA$
-            ...
-
-========== Finished at 01/12/2015 10:20:00 ==========
-
-        THE SCRIPT HAS SUCCEEDED
+    ========== Starting at 01/12/2015 10:17:47 ==========
+    Creating a new session for implicit remoting of "Get-ExchangeServer" command...
+    Destination servers that will be updated:
+    
+    Name                                                        PSComputerName
+    ----                                                        --------------
+    cas-1                                                   cas-1.corp.tailspintoys.com
+    
+    
+    Credentials that will be pushed to every server in the specified scope (recent first):
+    
+    UserName                                                                                                        
+    Password
+    --------                                                                                                        
+    --------
+    tailspin\EXCH2013ASA$                                                                             
+    System.Security.SecureString
+    
+    
+    Prior to pushing new credentials, all existing credentials that are invalid or no longer work will be removed from  the destination servers.
+    Pushing credentials to server cas-1
+    Setting a new password on Alternate Serice Account in Active Directory
+    
+    Password change
+    Do you want to change password for tailspin\EXCH2013ASA$ in Active Directory at this time?
+    [Y] Yes  [N] No  [S] Suspend  [?] Help (default is "Y"): y
+    Preparing to update Active Directory with a new password for tailspin\EXCH2013ASA$ ...
+    Resetting a password in the Active Directory for tailspin\EXCH2013ASA$ ...
+    New password was successfully set to Active Directory.
+    Retrieving the current Alternate Service Account configuration from servers in scope
+    Alternate Service Account properties:
+    
+    StructuralObjectClass QualifiedUserName Last Pwd Update       SPNs
+    --------------------- ----------------- ---------------       ----
+    computer              tailspin\EXCH2013ASA$   1/12/2015 10:19:53 AM
+    
+    Per-server Alternate Service Account configuration as of the time of script completion:
+    
+    
+       Array: {mail.corp.tailspintoys.com}
+    
+    Identity  AlternateServiceAccountConfiguration
+    --------  ------------------------------------
+    cas-1 Latest: 1/12/2015 10:19:22 AM, tailspin\EXCH2013ASA$
+              ...
+    
+    ========== Finished at 01/12/2015 10:20:00 ==========
+    
+            THE SCRIPT HAS SUCCEEDED
 ```
 
 ## ASA 資格情報を別の Exchange 2013 クライアント アクセス サーバーに展開する
@@ -228,50 +229,49 @@ cas-1 Latest: 1/12/2015 10:19:22 AM, tailspin\EXCH2013ASA$
 
 4.  ASA 資格情報を展開する各クライアント アクセス サーバーについて、手順 3 を繰り返します。
 
-RollAlternateServiceAccountPassword.ps1 スクリプトを実行すると表示される出力の例を次に示します。  
+RollAlternateServiceAccountPassword.ps1 スクリプトを実行すると表示される出力の例を次に示します。
 
 ```powershell
-
-========== Starting at 01/12/2015 10:34:35 ==========
-Destination servers that will be updated:
-
-Name                                                        PSComputerName
-----                                                        --------------
-cas-2                                                   cas-2.corp.tailspintoys.com
-
-
-Credentials that will be pushed to every server in the specified scope (recent first):
-
-UserName                                                                                                        
-Password
---------                                                                                                        
---------
-tailspin\EXCH2013ASA$                                                                             
-System.Security.SecureString
-
-Prior to pushing new credentials, all existing credentials will be removed from the destination servers.
-Pushing credentials to server cas-2
-Retrieving the current Alternate Service Account configuration from servers in scope
-Alternate Service Account properties:
-
-StructuralObjectClass QualifiedUserName Last Pwd Update       SPNs
---------------------- ----------------- ---------------       ----
-computer              tailspin\EXCH2013ASA$   1/12/2015 10:19:53 AM
-
-Per-server Alternate Service Account configuration as of the time of script completion:
-
-
-    Array: cas-2.corp.tailspintoys.com
-
-Identity  AlternateServiceAccountConfiguration
---------  ------------------------------------
-cas-2 Latest: 1/12/2015 10:37:59 AM, tailspin\EXCH2013ASA$
-            ...
-
-
-========== Finished at 01/12/2015 10:38:13 ==========
-
-        THE SCRIPT HAS SUCCEEDED
+    ========== Starting at 01/12/2015 10:34:35 ==========
+    Destination servers that will be updated:
+    
+    Name                                                        PSComputerName
+    ----                                                        --------------
+    cas-2                                                   cas-2.corp.tailspintoys.com
+    
+    
+    Credentials that will be pushed to every server in the specified scope (recent first):
+    
+    UserName                                                                                                        
+    Password
+    --------                                                                                                        
+    --------
+    tailspin\EXCH2013ASA$                                                                             
+    System.Security.SecureString
+    
+    Prior to pushing new credentials, all existing credentials will be removed from the destination servers.
+    Pushing credentials to server cas-2
+    Retrieving the current Alternate Service Account configuration from servers in scope
+    Alternate Service Account properties:
+    
+    StructuralObjectClass QualifiedUserName Last Pwd Update       SPNs
+    --------------------- ----------------- ---------------       ----
+    computer              tailspin\EXCH2013ASA$   1/12/2015 10:19:53 AM
+    
+    Per-server Alternate Service Account configuration as of the time of script completion:
+    
+    
+       Array: cas-2.corp.tailspintoys.com
+    
+    Identity  AlternateServiceAccountConfiguration
+    --------  ------------------------------------
+    cas-2 Latest: 1/12/2015 10:37:59 AM, tailspin\EXCH2013ASA$
+              ...
+    
+    
+    ========== Finished at 01/12/2015 10:38:13 ==========
+    
+            THE SCRIPT HAS SUCCEEDED
 ```
 
 ## ASA 資格情報の展開の確認
@@ -289,19 +289,19 @@ cas-2 Latest: 1/12/2015 10:37:59 AM, tailspin\EXCH2013ASA$
 上記の Get-ClientAccessServer コマンドを実行し、以前の ASA 資格情報が設定されていない場合に表示される出力の例を次に示します。
 
 ```powershell
-Name                                 : CAS-1
-AlternateServiceAccountConfiguration : Latest: 1/12/2015 10:19:22 AM, tailspin\EXCH2013ASA$
-                                        Previous: <Not set>
-                                            ...
+    Name                                 : CAS-1
+    AlternateServiceAccountConfiguration : Latest: 1/12/2015 10:19:22 AM, tailspin\EXCH2013ASA$
+                                           Previous: <Not set>
+                                               ...
 ```
 
 上記の Get-ClientAccessServer コマンドを実行し、ASA 資格情報が以前に設定されていた場合に表示される出力の例を次に示します。以前の ASA 資格情報と、設定された日時が返されます。
 
 ```powershell
-Name                                 : CAS-3
-AlternateServiceAccountConfiguration : Latest: 1/12/2015 10:19:22 AM, tailspin\EXCH2013ASA$
-                                        Previous: 7/15/2014 12:58:35 PM, tailspin\oldSharedServiceAccountName$
-                                            ...
+    Name                                 : CAS-3
+    AlternateServiceAccountConfiguration : Latest: 1/12/2015 10:19:22 AM, tailspin\EXCH2013ASA$
+                                           Previous: 7/15/2014 12:58:35 PM, tailspin\oldSharedServiceAccountName$
+                                               ...
 ```
 
 ## サービス プリンシパル名 (SPN) を ASA 資格情報に関連付ける

@@ -517,11 +517,15 @@ Get-QueueDigest -Server Mailbox01,Mailbox02,Mailbox03 -Include External -Exclude
 
 この例では、Contoso.com で終わる SMTP ドメイン名を送信先に持つキューと、現在 500 を超えるメッセージが存在するキューの一覧が表示されます。
 
-    Get-Queue -Filter {Identity -like "*contoso.com*" -and MessageCount -gt 500}
+```powershell
+Get-Queue -Filter {Identity -like "*contoso.com*" -and MessageCount -gt 500}
+```
 
 この例では、5 よりも大きい SCL を持つ contoso.com ドメインの電子メール アドレスから送信されたメッセージの一覧が表示されます。
 
-    Get-Message -Filter {FromAddress -like "*Contoso.com*" -and SCL -gt 5}
+```powershell
+Get-Message -Filter {FromAddress -like "*Contoso.com*" -and SCL -gt 5}
+```
 
 ページのトップへ
 

@@ -134,7 +134,6 @@ New-RoleGroup "Limited Organization Management" -Roles $RoleGroup.Roles -Members
 
 たとえば、次のコマンドは、"Organization Management/組織管理" 役割グループをコピーして、"Vancouver Users" 受信者の範囲と "Vancouver Servers" 構成の範囲を持つ "Vancouver Organization Management" という名前の新しい役割グループを作成します。
 
-    
 ```powershell
 $RoleGroup = Get-RoleGroup "Organization Management"
 New-RoleGroup "Vancouver Organization Management" -Roles $RoleGroup.Roles -CustomRecipientWriteScope "Vancouver Users" -CustomConfigWriteScope "Vancouver Servers"
@@ -259,13 +258,15 @@ New-ManagementRoleAssignment -SecurityGroup "Seattle Compliance" -Role "Transpor
 
 次の構文を使用して、定義済みスコープを持つ役割グループに役割を割り当てます。指定しない場合、役割割り当ての名前は自動的に作成されます。
 
-    New-ManagementRoleAssignment -SecurityGroup <role group name> -Role <role name> -RecipientRelativeWriteScope < MyGAL | MyDistributionGroups | Organization | Self >
+```powershell
+New-ManagementRoleAssignment -SecurityGroup <role group name> -Role <role name> -RecipientRelativeWriteScope < MyGAL | MyDistributionGroups | Organization | Self >
+```
 
 この例では、"Enterprise Support/エンタープライズ サポート" という役割グループにメッセージ追跡の役割を割り当て、これを "Organization/組織" という定義済みスコープに適用しています。
 
 ```powershell
 New-ManagementRoleAssignment -SecurityGroup "Enterprise Support" -Role "Message Tracking" -RecipientRelativeWriteScope Organization
-``` 
+```
 
 構文およびパラメーターの詳細については、「[New-ManagementRoleAssignment](https://technet.microsoft.com/ja-jp/library/dd335193\(v=exchg.150\))」を参照してください。
 
@@ -395,10 +396,9 @@ Get-ManagementRoleAssignment -RoleAssignee <role group name> -Role <role name> -
 
 この例では、"Seattle Recipient Administrators/Seattle の受信者管理者" 役割グループから、管理者が配布グループを管理できる "Distribution Groups/配布グループ" 役割を削除します。配布グループを管理するためのアクセス許可を付与する役割割り当てを削除するので、正規の役割割り当てのみが返されるよう、*Delegating* パラメーターを `$False` に設定します。
 
-```powershell 
+```powershell
 Get-ManagementRoleAssignment -RoleAssignee "Seattle Recipient Administrators" -Role "Distribution Groups" -Delegating $false | Remove-ManagementRoleAssignment
 ```
-
 
 構文およびパラメーターの詳細については、「[Remove-ManagementRoleAssignment](https://technet.microsoft.com/ja-jp/library/dd351205\(v=exchg.150\))」を参照してください。
 
@@ -535,7 +535,7 @@ Set-ManagementRoleAssignment "Mail Recipients_Sales Recipient Management" -Custo
         ```powershell
         Get-ManagementRoleAssignment -RoleAssignee <role group name> | Format-Table *WriteScope
         ```
-    
+
     2.  役割割り当ての書き込みスコープが、指定のスコープに変更されたことを確認します。
 
 ## 役割グループの委任を追加または削除する
@@ -565,7 +565,7 @@ Set-ManagementRoleAssignment "Mail Recipients_Sales Recipient Management" -Custo
     ```
 
 2.  次のコマンドを使用して、変数に格納されている役割グループに代理人を追加します。
-
+    
     ```powershell
     $RoleGroup.ManagedBy += (Get-User <user to add>).Identity
     ```
@@ -609,7 +609,7 @@ Set-RoleGroup "Organization Management" -ManagedBy $RoleGroup.ManagedBy
     ```powershell
     $RoleGroup.ManagedBy -= (Get-User <user to remove>).Identity
     ```
-
+    
 
     > [!NOTE]
     > USG を削除する場合は、<STRONG>Get-Group</STRONG> コマンドレットを使用します。

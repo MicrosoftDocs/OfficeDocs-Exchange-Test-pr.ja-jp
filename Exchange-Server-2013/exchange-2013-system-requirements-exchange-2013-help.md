@@ -283,7 +283,13 @@ Exchange 2013 サーバーに対して推奨するハードウェア要件は、
 > <LI>
 > <P><STRONG>Windows Server 2008 R2</STRONG>&nbsp;&nbsp;&nbsp;Windows Server を再インストールし、<STRONG>[完全インストール]</STRONG> オプションを選択します。</P>
 > <LI>
-> <P><STRONG>Windows Server 2012 R2</STRONG> または <STRONG>Windows Server 2012</STRONG>&nbsp;&nbsp;&nbsp;次のコマンドを実行することによって、Windows Server Core モード サーバーを完全インストールに変換します。</P><PRE><CODE>Install-WindowsFeature Server-Gui-Mgmt-Infra, Server-Gui-Shell -Restart</CODE></PRE></LI></UL>
+> <P><STRONG>Windows Server 2012 R2</STRONG> または <STRONG>Windows Server 2012</STRONG>&nbsp;&nbsp;&nbsp;次のコマンドを実行することによって、Windows Server Core モード サーバーを完全インストールに変換します。</P>
+>
+> ```powershell
+> Install-WindowsFeature Server-Gui-Mgmt-Infra, Server-Gui-Shell -Restart  
+> ```
+>
+> </LI></UL>
 
 
 
