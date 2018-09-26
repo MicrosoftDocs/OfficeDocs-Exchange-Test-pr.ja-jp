@@ -85,17 +85,23 @@ _**トピックの最終更新日:** 2015-01-01_
 
   - この例では、組織上の関係 Contoso にドメイン名 service.contoso.com を追加します。
     
-        $domains = (Get-OrganizationRelationship Contoso).DomainNames
-        $domains += 'service.contoso.com'
-        Set-OrganizationRelationship -Identity Contoso -DomainNames $domains
+      ```powershell
+      $domains = (Get-OrganizationRelationship Contoso).DomainNames
+      $domains += 'service.contoso.com'
+      Set-OrganizationRelationship -Identity Contoso -DomainNames $domains
+      ```  
 
   - この例では、組織上の関係 Contoso を無効にします。
     
-        Set-OrganizationRelationship -Identity Contoso -Enabled $false
+    ```powershell
+    Set-OrganizationRelationship -Identity Contoso -Enabled $false
+    ```  
 
   - この例では、組織の関係 WoodgroveBank で予定表の空き時間情報アクセスを有効にして、アクセス レベルを `AvailabilityOnly` (時間だけの予定表の空き時間情報) に設定します。
     
-        Set-OrganizationRelationship -Identity Contoso -FreeBusyAccessEnabled $true -FreeBusyAccessLevel AvailabilityOnly
+      ```powershell
+      Set-OrganizationRelationship -Identity Contoso -FreeBusyAccessEnabled $true -FreeBusyAccessLevel AvailabilityOnly
+      ```  
 
 構文およびパラメーターの詳細については、「[Get-OrganizationRelationship](https://technet.microsoft.com/ja-jp/library/ee332343\(v=exchg.150\))」と「[Set-OrganizationRelationship](https://technet.microsoft.com/ja-jp/library/ee332326\(v=exchg.150\))」を参照してください。
 
@@ -103,7 +109,9 @@ _**トピックの最終更新日:** 2015-01-01_
 
 組織上の関係の更新が成功したかどうかを確認するには、以下のシェル コマンドを実行して組織上の関係情報を確認します。
 
-    Get-OrganizationRelationship | format-list
+```powershell
+Get-OrganizationRelationship | format-list
+```
 
 
 > [!TIP]

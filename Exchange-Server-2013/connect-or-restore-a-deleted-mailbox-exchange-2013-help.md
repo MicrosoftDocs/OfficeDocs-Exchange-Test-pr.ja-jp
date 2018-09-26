@@ -49,7 +49,9 @@ EAC またはシェルを使用して、削除済みメールボックスを Act
 
   - ユーザー アカウントを接続する削除済みメールボックスがメールボックス データベースに存在し、回復可能な削除によって削除されたメールボックスではないことを確認するには、次のコマンドを実行します。
     
-        Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisplayName -eq "<display name>" } | fl DisplayName,Database,DisconnectReason
+    ```powershell
+    Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisplayName -eq "<display name>" } | fl DisplayName,Database,DisconnectReason
+    ```
     
     削除済みメールボックスがメールボックス データベースに存在し、*DisconnectReason* プロパティの値が `Disabled` である必要があります。メールボックスがデータベースから消去されている場合、コマンドは結果を返しません。
 
@@ -101,7 +103,9 @@ EAC またはシェルを使用して、削除済みメールボックスを Act
 
 この例では、ユーザー メールボックスを接続しています。*Identity* パラメーターでは、MBXDB01 という名前のメールボックス データベースに保持された、削除済みメールボックスの表示名を指定します。*User* パラメーターでは、メールボックスを接続する Active Directory ユーザー アカウントを指定します。
 
-    Connect-Mailbox -Identity "Paul Cannon" -Database MBXDB01 -User "Robin Wood" -Alias robinw
+```powershell
+Connect-Mailbox -Identity "Paul Cannon" -Database MBXDB01 -User "Robin Wood" -Alias robinw
+```
 
 
 > [!NOTE]
@@ -111,19 +115,27 @@ EAC またはシェルを使用して、削除済みメールボックスを Act
 
 この例では、リンクされたメールボックスを接続しています。*Identity* パラメーターでは、MBXDB02 という名前のメールボックス データベースの削除済みメールボックスを指定します。*LinkedMasterAccount* パラメーターでは、メールボックスを接続するアカウント フォレスト内の Active Directory ユーザー アカウントを指定します。*LinkedDomainController* パラメーターでは、アカウント フォレスト内のドメイン コント ローラーを指定します。
 
-    Connect-Mailbox -Identity "Temp User" -Database MBXDB02 -LinkedDomainController FabrikamDC01 -LinkedMasterAccount danpark@fabrikam.com -Alias dpark
+```powershell
+Connect-Mailbox -Identity "Temp User" -Database MBXDB02 -LinkedDomainController FabrikamDC01 -LinkedMasterAccount danpark@fabrikam.com -Alias dpark
+```
 
 この例では、会議室メールボックスを接続しています。
 
-    Connect-Mailbox -Identity "rm2121" -Database "MBXResourceDB" -User "Conference Room 2121" -Alias ConfRm2121 -Room
+```powershell
+Connect-Mailbox -Identity "rm2121" -Database "MBXResourceDB" -User "Conference Room 2121" -Alias ConfRm2121 -Room
+```
 
 この例では、備品メールボックスを接続しています。
 
-    Connect-Mailbox -Identity "MotorPool01" -Database "MBXResourceDB" -User "Van01 (12 passengers)" -Alias van01 -Equipment
+```powershell
+Connect-Mailbox -Identity "MotorPool01" -Database "MBXResourceDB" -User "Van01 (12 passengers)" -Alias van01 -Equipment
+```
 
 この例では、共有メールボックスを接続しています。
 
-    Connect-Mailbox -Identity "Printer Support" -Database MBXDB01 -User "Corp Printer Support" -Alias corpprint -Shared
+```powershell
+Connect-Mailbox -Identity "Printer Support" -Database MBXDB01 -User "Corp Printer Support" -Alias corpprint -Shared
+```
 
 
 > [!NOTE]
@@ -143,7 +155,9 @@ EAC またはシェルを使用して、削除済みメールボックスを Act
 
   - シェルで、次のコマンドを実行します。
     
-        Get-User <identity>
+    ```powershell
+    Get-User <identity>
+    ```
     
     *RecipientType* プロパティの **UserMailbox** 値は、ユーザー アカウントとメールボックスが接続されていることを示します。**Get-Mailbox \<identity\>** コマンドを実行して、メールボックスが接続されたことを確認することもできます。
 
@@ -163,15 +177,21 @@ EAC またはシェルを使用して、削除済みメールボックスを Act
 
 メールボックス復元要求を作成するには、削除済みメールボックスの表示名、従来の識別名 (DN)、またはメールボックス GUID を使用する必要があります。復元する削除済みメールボックスの `DisplayName` プロパティ、`MailboxGuid` プロパティ、および `LegacyDN` プロパティの値を表示するには、**Get-MailboxStatistics** コマンドレットを使用します。たとえば、次のコマンドを実行すると、組織内のすべての無効なメールボックスおよび削除済みメールボックスに関するこの情報が返されます。
 
-    Get-MailboxDatabase | Get-MailboxStatistics | Where {$_.DisconnectReason -eq "Disabled"} | fl DisplayName,MailboxGuid,LegacyDN,Database
+```powershell
+Get-MailboxDatabase | Get-MailboxStatistics | Where {$_.DisconnectReason -eq "Disabled"} | fl DisplayName,MailboxGuid,LegacyDN,Database
+```
 
 この例では、*SourceStoreMailbox* パラメーターによって識別される、MBXDB01 メールボックス データベースにある削除済みメールボックスを、メールボックス Debra Garcia に復元します。従来の DN 値が同じではない別のメールボックスに復元元メールボックスを復元できるように、*AllowLegacyDNMismatch* パラメーターを使用します。
 
-    New-MailboxRestoreRequest -SourceStoreMailbox e4890ee7-79a2-4f94-9569-91e61eac372b -SourceDatabase MBXDB01 -TargetMailbox "Debra Garcia" -AllowLegacyDNMismatch
+```powershell
+New-MailboxRestoreRequest -SourceStoreMailbox e4890ee7-79a2-4f94-9569-91e61eac372b -SourceDatabase MBXDB01 -TargetMailbox "Debra Garcia" -AllowLegacyDNMismatch
+```
 
 この例では、Pilar Pinilla の削除済みアーカイブ メールボックスを Pilar Pinilla の現在のアーカイブ メールボックスに復元します。プライマリ メールボックスと、その対応するアーカイブ メールボックスの従来の DN は同じであるため、*AllowLegacyDNMismatch* パラメーターは必要ありません。
 
-    New-MailboxRestoreRequest -SourceStoreMailbox "Personal Archive - Pilar Pinilla" -SourceDatabase "MDB01" -TargetMailbox pilarp@contoso.com -TargetIsArchive
+```powershell
+New-MailboxRestoreRequest -SourceStoreMailbox "Personal Archive - Pilar Pinilla" -SourceDatabase "MDB01" -TargetMailbox pilarp@contoso.com -TargetIsArchive
+```
 
 構文およびパラメーターの詳細については、「[New-MailboxRestoreRequest](https://technet.microsoft.com/ja-jp/library/ff829875\(v=exchg.150\))」を参照してください。
 
@@ -183,7 +203,9 @@ EAC またはシェルを使用して、削除済みメールボックスを Act
 
 1.  次のコマンドレットを実行して Active Directory フォレストとドメイン コント ローラーの完全修飾ドメイン名 (FQDN) を取得します。
     
-        Get-OrganizationConfig | fl OriginatingServer
+    ```powershell
+    Get-OrganizationConfig | fl OriginatingServer
+    ```
 
 2.  手順 1 で返される情報を使用して、パブリック フォルダー メールボックスの GUID と、削除されたパブリック フォルダー メールボックスが含まれていたメールボックス データベースの GUID または名前を、Active Directory の削除済みオブジェクト コンテナーで検索します。
     
@@ -197,15 +219,19 @@ EAC またはシェルを使用して、削除済みメールボックスを Act
 
 1.  次のコマンドを実行して新しい Active Directory オブジェクトを作成します (適切な資格情報の入力が求められる場合があります)。
     
-        New-MailUser <mailUserName> -ExternalEmailAddress <emailAddress> 
-        
-        Get-MailUser <mailUserName> | Disable-MailUser
+    ```powershell
+    New-MailUser <mailUserName> -ExternalEmailAddress <emailAddress> 
+    
+    Get-MailUser <mailUserName> | Disable-MailUser
+    ```
     
     ここで `<mailUserName>`、`<emailAddress>`、`<mailUserName>` はユーザー選択の値です。次の手順では、同じ `<mailUserName>` 値を使用します。
 
 2.  削除されたパブリック フォルダー メールボックスを、次のコマンドを実行して作成した Active Directory オブジェクトに接続します。
     
-        Connect-Mailbox -Identity <public folder mailbox GUID> -Database <database name or GUID> -User <mailUserName>
+    ```powershell
+    Connect-Mailbox -Identity <public folder mailbox GUID> -Database <database name or GUID> -User <mailUserName>
+    ```
     
 
     > [!NOTE]
@@ -215,7 +241,9 @@ EAC またはシェルを使用して、削除済みメールボックスを Act
 
 3.  次の例を基にして、パブリック フォルダー メールボックスで `Update-StoreMailboxState` を実行します。
     
-        Update-StoreMailboxState -Identity <public folder mailbox GUID> -Database <database name or GUID>
+    ```powershell
+    Update-StoreMailboxState -Identity <public folder mailbox GUID> -Database <database name or GUID>
+    ```
     
     手順 2 に示されていたように、`Identity` パラメーターはパブリック フォルダー メールボックスの GUID、表示名、または LegacyExchangeDN の値を受け付けます。
 

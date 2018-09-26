@@ -43,7 +43,9 @@ OAB に関する考慮事項
 
 Exchange 2007 および Exchange 2010 では、**Move-OfflineAddressBook** コマンドレットを使用して OAB の生成を別のメールボックス サーバーに移動しました。Exchange 2013 では OAB (バージョン 4) のみをサポートします。これは、Exchange 2010 での既定のバージョンと同じバージョンです。Exchange 2013 に他の OAB バージョンを生成させ、組織のメールボックスが置かれているメールボックス サーバーで OAB が生成されるように構成することはできません。したがって、Exchange 2013 で OAB の生成を移動するには、組織のメールボックスを移動する必要があります。OAB の生成は、他の Exchange 2013 のメールボックス データベースにのみ移動することができます。OAB の生成は Exchange の以前のバージョンには移動できません。Exchange 2013 の OAB の組織のメールボックスを見つけるには、次のシェル コマンドを実行します。
 
+```powershell
     Get-Mailbox -Arbitration | where {$_.PersistedCapabilities -like "*oab*"}
+```
 
 それから **MoveRequest** コマンドレットを使用してメールボックスを移動します。
 

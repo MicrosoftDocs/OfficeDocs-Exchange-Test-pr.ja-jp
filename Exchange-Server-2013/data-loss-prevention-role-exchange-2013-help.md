@@ -41,7 +41,9 @@ _**トピックの最終更新日:** 2015-03-09_
 
 この役割に割り当てられている役割グループ、ユーザー、または USG の一覧を表示する場合、次のコマンドを使用します。
 
-    Get-ManagementRoleAssignment -Role "<role name>"
+```powershell
+Get-ManagementRoleAssignment -Role "<role name>"
+```
 
 ## 正規および委任の役割の割り当て
 

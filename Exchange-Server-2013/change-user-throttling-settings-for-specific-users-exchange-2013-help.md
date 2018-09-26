@@ -43,17 +43,21 @@ _**トピックの最終更新日:** 2014-08-05_
 
 この例では、特定のユーザーに関連付けることができる ITStaffPolicy という名前の既定以外のユーザー調整ポリシーを作成します。省略するパラメーターはすべて、既定の調整ポリシーの GlobalThrottlingPolicy から値を継承します。このポリシーは、作成後に特定のユーザーに関連付ける必要があります。
 
-    New-ThrottlingPolicy -Name ITStaffPolicy -EwsMaxConcurrency 4 -ThrottlingPolicyScope Regular
+```powershell
+New-ThrottlingPolicy -Name ITStaffPolicy -EwsMaxConcurrency 4 -ThrottlingPolicyScope Regular
+```
 
 この例では、ユーザー名が tonysmith のユーザーを (より上限の高い) 調整ポリシー ITStaffPolicy に関連付けます。
 
-    Set-ThrottlingPolicyAssociation -Identity tonysmith -ThrottlingPolicy ITStaffPolicy
+```powershell
+Set-ThrottlingPolicyAssociation -Identity tonysmith -ThrottlingPolicy ITStaffPolicy
+```
 
 ユーザーとポリシーの関連付けに **Set-ThrottlingPolicyAssociation** コマンドレットを使用する必要はありません。次のコマンドは、tonysmith を調整ポリシー ITStaffPolicy に関連付ける別の方法を表します。
-```
+```powershell
 $b = Get-ThrottlingPolicy ITStaffPolicy
 ```
-```
+```powershell
 Set-Mailbox -Identity tonysmith -ThrottlingPolicy $b
 ```
 
@@ -65,19 +69,25 @@ Set-Mailbox -Identity tonysmith -ThrottlingPolicy $b
 
 1.  次のコマンドを実行します。
     
-        Get-ThrottlingPolicy | Format-List
+    ```powershell
+    Get-ThrottlingPolicy | Format-List
+    ```
 
 2.  作成したばかりの正規調整ポリシーが、GlobalThrottlingPolicy を示す列に表示されていることを確認します。
 
 3.  次のコマンドを実行します。
     
-        Get-ThrottlingPolicy | Format-List
+    ```powershell
+    Get-ThrottlingPolicy | Format-List
+    ```
 
 4.  新しい正規ポリシーのプロパティが構成した値と一致していることを確認します。
 
 5.  次のコマンドを実行します。
     
-        Get-ThrottlingPolicyAssociation
+    ```powershell
+    Get-ThrottlingPolicyAssociation
+    ```
 
 6.  新しい正規ポリシーが、関連付けを行った目的のユーザーに関連付けられていることを確認します。
 

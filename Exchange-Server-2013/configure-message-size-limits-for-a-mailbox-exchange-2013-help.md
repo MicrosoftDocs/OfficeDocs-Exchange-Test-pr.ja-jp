@@ -65,7 +65,9 @@ Exchange 組織では、メールボックスで送受信できる最大メッ�
 
 この例では、メールボックス Debra Garcia の送信メッセージの最大サイズを 25 MB、受信メッセージの最大サイズを 35 MB に設定しています。
 
-    Set-Mailbox "Debra Garcia" -MaxSendSize 25mb -MaxReceiveSize 35mb
+```powershell
+Set-Mailbox "Debra Garcia" -MaxSendSize 25mb -MaxReceiveSize 35mb
+```
 
 構文およびパラメーターの詳細については、「[Set-Mailbox](https://technet.microsoft.com/ja-jp/library/bb123981\(v=exchg.150\))」を参照してください。
 
@@ -85,5 +87,7 @@ Exchange 組織では、メールボックスで送受信できる最大メッ�
 
 シェルで、次のコマンドを実行します。
 
-    Get-Mailbox <identity> | fl MaxSendSize,MaxReceiveSize
+```powershell
+Get-Mailbox <identity> | fl MaxSendSize,MaxReceiveSize
+```
 

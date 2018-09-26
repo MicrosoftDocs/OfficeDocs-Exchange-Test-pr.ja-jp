@@ -45,11 +45,15 @@ _**トピックの最終更新日:** 2012-10-03_
 
 子の役割を持たない役割を削除するには、次の構文を使用します。
 
-    Remove-ManagementRole <role name>
+```powershell
+Remove-ManagementRole <role name>
+```
 
 この例では、"Seattle Server Administrators/Seattle のサーバー管理者" 役割を削除します。
 
-    Remove-ManagementRole "Seattle Server Administrators"
+```powershell
+Remove-ManagementRole "Seattle Server Administrators"
+```
 
 構文およびパラメーターの詳細については、「[Remove-ManagementRole](https://technet.microsoft.com/ja-jp/library/dd351170\(v=exchg.150\))」を参照してください。
 
@@ -65,13 +69,17 @@ _**トピックの最終更新日:** 2012-10-03_
 
 削除したい役割のみが削除されることを確認するには、*WhatIf* スイッチを自分のコマンドで使用して、それが正しいことを確認します。 以下の構文を使用します。
 
-    Remove-ManagementRole <role name> -Recurse -WhatIf
+```powershell
+Remove-ManagementRole <role name> -Recurse -WhatIf
+```
 
 *WhatIf* スイッチは、変更をコミットせずにコマンドを実行し、削除される役割を報告します。 *WhatIf* スイッチの詳細については、「[WhatIf、Confirm、および ValidateOnly スイッチ](whatif-confirm-and-validateonly-switches-exchange-2013-help.md)」を参照してください。
 
 削除したい役割のみが削除されることを確認したら、同じコマンドを *WhatIf* スイッチなしで実行します。 この例では、"London Administrators/London の管理者" 役割とそのすべての子の役割を削除します。
 
-    Remove-ManagementRole "London Administrators" -Recurse
+```powershell
+Remove-ManagementRole "London Administrators" -Recurse
+```
 
 構文およびパラメーターの詳細については、「[Remove-ManagementRole](https://technet.microsoft.com/ja-jp/library/dd351170\(v=exchg.150\))」を参照してください。
 
@@ -79,7 +87,9 @@ _**トピックの最終更新日:** 2012-10-03_
 
 対象範囲外の役割を削除するには、このトピックで前に「子の役割を持たない管理役割を削除する」と「子の役割を持つ管理役割を削除する」で説明した手順と同じ手順を使用できます。 唯一異なるのは、対象範囲外の役割を削除する場合で、コマンドを実行するときに *UnScopedTopLevel* スイッチを指定する必要があります。 この例では、対象範囲外の役割とそのすべての子の役割を削除します。
 
-    Remove-ManagementRole "Custom IT Scripts" -Recurse -UnScopedTopLevel
+```powershell
+Remove-ManagementRole "Custom IT Scripts" -Recurse -UnScopedTopLevel
+```
 
 他の役割を削除する場合と同様に、*WhatIf* スイッチを使用して正しい役割を削除していることを確認します。
 

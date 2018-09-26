@@ -116,7 +116,9 @@ _**トピックの最終更新日:** 2012-11-27_
 
 この例では、CONTOSO Exchange リソース フォレスト内の Ayla Kol にリンクされたメールボックスを作成します。FABRIKAM ドメインがアカウント フォレスト内に存在します。管理者アカウント FABRIKAM \\administrator を使用して、リンクされたドメイン コントローラーにアクセスします。
 
-    New-Mailbox -Name "Ayla Kol" -LinkedDomainController "DC1_FABRIKAM" -LinkedMasterAccount " FABRIKAM\aylak" -OrganizationalUnit Users -UserPrincipalName aylak@contoso.com -LinkedCredential:(Get-Credential FABRIKAM\administrator)
+  ```powershell
+  New-Mailbox -Name "Ayla Kol" -LinkedDomainController "DC1_FABRIKAM" -LinkedMasterAccount " FABRIKAM\aylak" -OrganizationalUnit Users -UserPrincipalName aylak@contoso.com -LinkedCredential:(Get-Credential FABRIKAM\administrator)
+  ```
 
 構文およびパラメーターの詳細については、「[New-Mailbox](https://technet.microsoft.com/ja-jp/library/aa997663\(v=exchg.150\))」を参照してください。
 
@@ -128,7 +130,9 @@ _**トピックの最終更新日:** 2012-11-27_
 
   - シェルで次のコマンドを実行して、新しいリンクされたメールボックスの情報を表示します。
     
-        Get-Mailbox <Name> | FL Name,RecipientTypeDetails,IsLinked,LinkedMasterAccount
+    ```powershell
+    Get-Mailbox <Name> | FL Name,RecipientTypeDetails,IsLinked,LinkedMasterAccount
+    ```
 
 ## リンクされたメールボックスのプロパティを変更する
 
@@ -376,15 +380,21 @@ _**トピックの最終更新日:** 2012-11-27_
 
 この例では、**Get-Mailbox** コマンドを使用して、組織内のリンクされたすべてのメールボックスを検索します。
 
-    Get-Mailbox -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'LinkedMailbox')}
+  ```powershell
+  Get-Mailbox -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'LinkedMailbox')}
+  ```
 
 この例では、**Set-Mailbox** コマンドを使用して、電子メール メッセージの \[宛先\]、\[CC\]、または \[BCC\] 行で許可される受信者の数を 500 に制限します。この制限は、組織内のリンクされたすべてのメールボックスに適用されます。
 
-    Get-Mailbox -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'LinkedMailbox')} | Set-Mailbox -RecipientLimits 500
+  ```powershell
+  Get-Mailbox -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'LinkedMailbox')} | Set-Mailbox -RecipientLimits 500
+  ```
 
 この例では、Exchange フォレスト内のリンクされたメールボックスに関連付けられている、fabrikam.com アカウント フォレスト内のリンクされたマスター アカウントを変更します。
 
-    Set-Mailbox -Identity "Ayla Kol" -LinkedDomainController DC1.fabrikam.com -LinkedMasterAccount "fabrikam\robinw" -LinkedCredential:(Get-Credential fabrikam\administrator)
+  ```powershell
+  Set-Mailbox -Identity "Ayla Kol" -LinkedDomainController DC1.fabrikam.com -LinkedMasterAccount "fabrikam\robinw" -LinkedCredential:(Get-Credential fabrikam\administrator)
+  ```
 
 ## 正常な動作を確認する方法
 
@@ -394,9 +404,13 @@ _**トピックの最終更新日:** 2012-11-27_
 
   - シェルで **Get-Mailbox** コマンドレットを使用して、変更を確認します。シェルを使用する場合の利点の 1 つは、複数のリンクされたメールボックスの複数のプロパティを参照できることです。上記の例では、受信者の制限が変更され、次のコマンドの実行により新しい値が確認されます。
     
-        Get-Mailbox -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'LinkedMailbox')} | fl Name,RecipientLimits
+      ```powershell
+      Get-Mailbox -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'LinkedMailbox')} | fl Name,RecipientLimits
+      ```
     
     上記の例では、リンクされたマスター アカウントが変更され、次のコマンドの実行により新しい値が確認されます。
     
-        Get-Mailbox "Ayla Kol" | fl LinkedMasterAccount
+    ```powershell
+    Get-Mailbox "Ayla Kol" | fl LinkedMasterAccount
+    ```
 

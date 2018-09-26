@@ -55,7 +55,9 @@ Microsoft Exchange Server 2013 では、メールボックス サーバー上の
 
 次のコマンドを実行します。
 
-    & $env:ExchangeInstallPath\Scripts\Install-AntiSpamAgents.ps1
+  ```powershell
+  & $env:ExchangeInstallPath\Scripts\Install-AntiSpamAgents.ps1
+  ```
 
 ## このステップの検証方法
 
@@ -65,7 +67,9 @@ Microsoft Exchange Server 2013 では、メールボックス サーバー上の
 
 次のコマンドを実行します。
 
-    Restart-Service MSExchangeTransport
+```powershell
+Restart-Service MSExchangeTransport
+```
 
 ## このステップの検証方法
 
@@ -77,11 +81,15 @@ Sender ID エージェントが無視する必要があるすべての内部 SMT
 
 既存の値に影響を与えることなく内部 SMTP サーバーの IP アドレスを追加するには、次のコマンドを実行します。
 
-    Set-TransportConfig -InternalSMTPServers @{Add="<ip address1>","<ip address2>"...}
+```powershell
+Set-TransportConfig -InternalSMTPServers @{Add="<ip address1>","<ip address2>"...}
+```
 
 この例では、内部 SMTP サーバー アドレス 10.0.1.10 および 10.0.1.11 を組織のトランスポート構成に追加します。
 
-    Set-TransportConfig -InternalSMTPServers @{Add="10.0.1.10","10.0.1.11"}
+```powershell
+Set-TransportConfig -InternalSMTPServers @{Add="10.0.1.10","10.0.1.11"}
+```
 
 ## このステップの検証方法
 
@@ -89,7 +97,9 @@ Sender ID エージェントが無視する必要があるすべての内部 SMT
 
 1.  次のコマンドを実行します。
     
-        Get-TransportConfig | Format-List InternalSMTPServers
+    ```powershell
+    Get-TransportConfig | Format-List InternalSMTPServers
+    ```
 
 2.  少なくとも 1 つの有効な内部 SMTP サーバーの IP アドレスが表示されていることを確認します。
 

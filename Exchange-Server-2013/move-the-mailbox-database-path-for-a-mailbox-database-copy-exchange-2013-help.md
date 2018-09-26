@@ -51,11 +51,15 @@ _**トピックの最終更新日:** 2014-05-07_
 
 1.  移動するメールボックス データベースのすべてのコピーの再生ラグ設定または切り詰めラグ設定に注意してください。この情報を取得するには、次の例のように [Get-MailboxDatabase](https://technet.microsoft.com/ja-jp/library/bb124924\(v=exchg.150\)) コマンドレットを使用します。
     
-        Get-MailboxDatabase DB1 | Format-List *lag*
+    ```powershell
+    Get-MailboxDatabase DB1 | Format-List *lag*
+    ```
 
 2.  データベースに対して循環ログが有効になっている場合、処理の前に無効にする必要があります。メールボックス データベースの循環ログを無効にするには、次の例のように [Set-MailboxDatabase](https://technet.microsoft.com/ja-jp/library/bb123971\(v=exchg.150\)) コマンドレットを使用します。
     
-        Set-MailboxDatabase DB1 -CircularLoggingEnabled $false
+    ```powershell
+    Set-MailboxDatabase DB1 -CircularLoggingEnabled $false
+    ```
 
 3.  移動するデータベースのすべてのメールボックス データベース コピーを削除します。詳細な手順については、「[メールボックス データベース コピーを削除する](remove-a-mailbox-database-copy-exchange-2013-help.md)」を参照してください。すべてのコピーを削除した後、別の場所に移動することでそのデータベース コピーを削除する各サーバーのデータベース ファイルやトランザクション ログ ファイルを保持します。これらのファイルは保持されるため、再度追加した後でも、データベース コピーを再シードする必要はありません。
 
@@ -75,16 +79,22 @@ _**トピックの最終更新日:** 2014-05-07_
 
 8.  移動するメールボックス データベースのコピーを含む各サーバーで、次のコマンドを実行して、コンテンツ インデックス サービスを停止し、再開します。
     
-        Net stop MSExchangeFastSearch
-        Net start MSExchangeFastSearch
+    ```powershell
+    Net stop MSExchangeFastSearch
+    Net start MSExchangeFastSearch
+    ```
 
 9.  必要に応じて、次の例のように、[Set-MailboxDatabase](https://technet.microsoft.com/ja-jp/library/bb123971\(v=exchg.150\)) コマンドレットを使用して循環ログを有効にします。
     
-        Set-MailboxDatabase DB1 -CircularLoggingEnabled $true
+    ```powershell
+    Set-MailboxDatabase DB1 -CircularLoggingEnabled $true
+    ```
 
 10. 次の例のように、[Set-MailboxDatabaseCopy](https://technet.microsoft.com/ja-jp/library/dd298104\(v=exchg.150\)) コマンドレットを使用して、再生ラグ タイムと切り詰めラグ タイム用に以前に設定された値を再構成します。
     
-        Set-MailboxDatabaseCopy DB1\MBX2 -ReplayLagTime 00:15:00
+    ```powershell
+    Set-MailboxDatabaseCopy DB1\MBX2 -ReplayLagTime 00:15:00
+    ```
 
 11. 各コピーを追加する場合、次のコピーを追加する前に、コピーの稼働状態を確認することをお勧めします。次の方法で、稼動状態を確認できます。
     
@@ -114,7 +124,9 @@ _**トピックの最終更新日:** 2014-05-07_
 
   - シェルで次のコマンドを実行して、メールボックス データベースのコピーが作成され、かつ正常な状態にあることを確認します。
     
-        Get-MailboxDatabaseCopyStatus <DatabaseCopyName>
-    
+    ```powershell
+    Get-MailboxDatabaseCopyStatus <DatabaseCopyName>
+    ```
+        
     ステータスとコンテンツ インデックス ステータスの両方が正常である必要があります。
 

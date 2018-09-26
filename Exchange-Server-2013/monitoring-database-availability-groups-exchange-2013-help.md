@@ -113,15 +113,21 @@ _**トピックの最終更新日:** 2015-03-09_
 
 この例では、データベース DB2 のすべてのコピーの状態情報を返します。
 
-    Get-MailboxDatabaseCopyStatus -Identity DB2 | Format-List
+```powershell
+Get-MailboxDatabaseCopyStatus -Identity DB2 | Format-List
+```
 
 この例では、メールボックス サーバー MBX2 上のすべてのデータベース コピーの状態を返します。
 
-    Get-MailboxDatabaseCopyStatus -Server MBX2 | Format-List
+```powershell
+Get-MailboxDatabaseCopyStatus -Server MBX2 | Format-List
+```
 
 この例では、ローカル メールボックス サーバー上のすべてのデータベース コピーの状態を返します。
 
-    Get-MailboxDatabaseCopyStatus -Local | Format-List
+```powershell
+Get-MailboxDatabaseCopyStatus -Local | Format-List
+```
 
 **Get-MailboxDatabaseCopyStatus** コマンドレットの使用方法の詳細については、「[Get-MailboxDatabaseCopyStatus](https://technet.microsoft.com/ja-jp/library/dd298044\(v=exchg.150\))」を参照してください。
 
@@ -225,7 +231,9 @@ _**トピックの最終更新日:** 2015-03-09_
 
 この例では、**Test-ReplicationHealth** コマンドレットを使用して、メールボックス サーバー MBX1 のレプリケーションの状態をテストします。
 
-    Test-ReplicationHealth -Identity MBX1
+```powershell
+Test-ReplicationHealth -Identity MBX1
+```
 
 ## クリムゾン チャネルのイベント ログ
 
@@ -361,13 +369,17 @@ Exchange 2013 には、Scripts フォルダー内に CollectOverMetrics.ps1 と�
 
 次の例では、DAG DAG1 内で DB\* (ワイルドカード文字を含む) と一致するすべてのデータベースの測定値を収集します。測定値の収集後、HTML レポートが収集、表示されます。
 
-    CollectOverMetrics.ps1 -DatabaseAvailabilityGroup DAG1 -Database:"DB*" -GenerateHTMLReport -ShowHTMLReport
+```powershell
+CollectOverMetrics.ps1 -DatabaseAvailabilityGroup DAG1 -Database:"DB*" -GenerateHTMLReport -ShowHTMLReport
+```
 
 以下の例では、HTML 形式の概要レポートにフィルターをかける方法を示します。1 つ目の例では、*Database* パラメーターが使用されています。このパラメーターで、データベース名の一覧を取得します。概要レポートには、これらのデータベースに関するデータのみが含まれます。その次の 2 つの例では、*ReportFilter* オプションが使用されています。最後の例では、すべての既定のデータベースをフィルター処理します。
 
-    CollectOverMetrics.ps1 -SummariseCsvFiles (dir *.csv) -Database MailboxDatabase123,MailboxDatabase456
-    CollectOverMetrics.ps1 -SummariseCsvFiles (dir *.csv) -ReportFilter { $_.DatabaseName -notlike "Mailbox Database*" }
-    CollectOverMetrics.ps1 -SummariseCsvFiles (dir *.csv) -ReportFilter { ($_.ActiveOnStart -like "ServerXYZ*") -and ($_.ActiveOnEnd -notlike "ServerXYZ*") }
+```powershell
+CollectOverMetrics.ps1 -SummariseCsvFiles (dir *.csv) -Database MailboxDatabase123,MailboxDatabase456
+CollectOverMetrics.ps1 -SummariseCsvFiles (dir *.csv) -ReportFilter { $_.DatabaseName -notlike "Mailbox Database*" }
+CollectOverMetrics.ps1 -SummariseCsvFiles (dir *.csv) -ReportFilter { ($_.ActiveOnStart -like "ServerXYZ*") -and ($_.ActiveOnEnd -notlike "ServerXYZ*") }
+```
 
 ## CollectReplicationMetrics.ps1 スクリプト
 
@@ -448,9 +460,13 @@ CollectReplicationMetrics.ps1 スクリプトでは、スクリプトの動作�
 
 次の例では、DAG1 という DAG 内のすべてのサーバーから、1 分間隔でサンプリングして 1 時間分のデータを収集し、その後概要レポートを生成します。さらに、*ReportPath* パラメーターが使用されています。このパラメーターによって、すべてのファイルが現在のディレクトリに保存されます。
 
-    CollectReplicationMetrics.ps1 -DagName DAG1 -Duration "01:00:00" -Frequency "00:01:00" -ReportPath
+```powershell
+CollectReplicationMetrics.ps1 -DagName DAG1 -Duration "01:00:00" -Frequency "00:01:00" -ReportPath
+```
 
 次の例では、CounterData\* と一致するすべてのファイルからデータを読み込み、その後概要レポートを生成します。
 
-    CollectReplicationMetrics.ps1 -SummariseFiles (dir CounterData*) -Mode ProcessOnly -ReportPath
+```powershell
+CollectReplicationMetrics.ps1 -SummariseFiles (dir CounterData*) -Mode ProcessOnly -ReportPath
+```
 

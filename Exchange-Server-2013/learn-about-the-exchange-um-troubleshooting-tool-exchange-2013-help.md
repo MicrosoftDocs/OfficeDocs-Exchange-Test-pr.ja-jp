@@ -191,7 +191,9 @@ UM トラブルシューティング ツールは社内外にわたる展開で�
 
 次の例では、Office Communications Server 2007 R2 または Lync Server を含まない環境での呼び出しフローをテストするために、ゲートウェイ モードが使用されています。この例では、VoIP ゲートウェイ、PBX、および IP PBX、さらにユニファイド メッセージング コンポーネントを含むテレフォニー装置をテストします。この例では、ボイス オーバー IP (VoIP) セキュリティ モードを \[セキュリティ保護なし\] に設定し、IP アドレス 10.1.1.1 を次ホップとして使用し、迂回路情報に内線番号を含めます。
 
-    Test-ExchangeUMCallFlow -Mode Gateway -VoIPSecurity Unsecured -NextHop 10.1.1.1 -Diversion 12345
+```powershell
+Test-ExchangeUMCallFlow -Mode Gateway -VoIPSecurity Unsecured -NextHop 10.1.1.1 -Diversion 12345
+```
 
 概要
 
@@ -199,7 +201,9 @@ UM トラブルシューティング ツールは社内外にわたる展開で�
 
 UM トラブルシューティング ツールは、SIPClient モードを設定している場合、Office Communications Server 2007 R2 または Microsoft Lync Server を含めた社内または社内外にまたがる展開で使用できます。この例では、SIPClient モードを使用して、Office Communications Server 2007 R2 または Lync Server サーバーが含まれる環境で、セキュリティで保護された UM ダイヤル プランを使用した呼び出しフローをテストします。既定では、UM トラブルシューティング ツールを実行している場合、ツールはコンピューターに現在ログオンしているユーザーの資格情報を使用します。次の例を実行すると、UM トラブルシューティング ツールを実行する際に使用する資格情報の入力が求められます。詳細については、「[Exchange UM トラブルシューティング ツールで使用する資格情報を設定する](set-the-credentials-to-use-with-the-exchange-um-troubleshooting-tool-exchange-2013-help.md)」を参照してください。
 
-    Test-ExchangeUMCallFlow -Mode SIPClient -VoIPSecurity Secured -CallingParty tony@contoso.com -CalledParty david@contoso.com -Credential $get
+  ```powershell
+  Test-ExchangeUMCallFlow -Mode SIPClient -VoIPSecurity Secured -CallingParty tony@contoso.com -CalledParty david@contoso.com -Credential $get
+  ```
 
 ## UM トラブルシューティング ツールのインストール
 

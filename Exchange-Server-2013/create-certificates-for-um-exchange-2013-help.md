@@ -81,7 +81,9 @@ EAC の Exchange 証明書の新規作成ウィザードまたはシェルを使
 
 この例では、フレンドリ名が `CertUM` で `MyMailboxServer` という名前のメールボックス サーバーに対する新しい Exchange 証明書要求を作成します。
 
+```powershell
     New-ExchangeCertificate -FriendlyName 'CertUM' -GenerateRequest -PrivateKeyExportable $true -KeySize '2048' -DomainName '*.northwindtraders.com' -SubjectName 'C=US,S=wa,L=redmond,O=northwindtraders,OU=servers,CN= northwindtraders.com' -Server 'MyMailboxServer'
+```
 
 ## EAC を使用して UM 用の自己署名証明書を作成する
 
@@ -107,8 +109,9 @@ EAC の Exchange 証明書の新規作成ウィザードまたはシェルを使
 
 この例では、フレンドリ名が `UMCert` で `MyMailboxServer` という名前のメールボックス サーバーに対する新しい Exchange 自己署名証明書を作成します。
 
+```powershell
     New-ExchangeCertificate -Services 'UM, UMCallRouter' -DomainName '*.northwindtraders.com' -FriendlyName 'UMSelfSigned' -SubjectName 'C=US,S=WA,L=Redmond,O=Northwindtraders,OU=Servers,CN= Northwindtraders.com' -PrivateKeyExportable $true
-
+```
 
 > [!TIP]
 > <EM>Services</EM> パラメーターを使用して有効にするサービスを指定した場合は、それらのサービスを割り当てるように要求されます。この例では、UM サービスと UM 呼び出しルーター サービスに対して証明書を有効にするように要求されます。サービスの証明書を有効にする方法については、「<A href="assign-a-certificate-to-the-um-and-um-call-router-services-exchange-2013-help.md">UM および UM 呼び出しルーター サービスへの証明書の割り当て</A>」を参照してください。

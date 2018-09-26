@@ -53,11 +53,15 @@ _**トピックの最終更新日:** 2014-06-23_
 
 この例では、MBX1 というサーバーのサーバー切り替えを実行します。システムによって、MBX1 上のアクティブなデータベースに最適なメールボックス サーバーが自動的に選択されます。
 
-    Move-ActiveMailboxDatabase -Server MBX1
+```powershell
+Move-ActiveMailboxDatabase -Server MBX1
+```
 
 この例では、MBX4 というメールボックス サーバーのサーバー切り替えを実行します。コマンドが完了すると、以前 MBX4上 でアクティブだったデータベースのアクティブ コピーが MBX5 によってホストされます。
 
-    Move-ActiveMailboxDatabase -Server MBX4 -ActivateOnServer MBX5
+```powershell
+Move-ActiveMailboxDatabase -Server MBX4 -ActivateOnServer MBX5
+```
 
 構文およびパラメーターの詳細については、「[Move-ActiveMailboxDatabase](https://technet.microsoft.com/ja-jp/library/dd298068\(v=exchg.150\))」を参照してください。
 

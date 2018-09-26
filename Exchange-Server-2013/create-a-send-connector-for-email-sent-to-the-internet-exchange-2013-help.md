@@ -67,7 +67,9 @@ Exchange 2013 では、**Set-SendConnector** コマンドレットの *FrontendP
 
 この例では、送信コネクタに対して *FrontendProxyEnabled* パラメーターを `$true` に設定します。
 
-    Set-SendConnector "Contoso.com Send Connector" -FrontendProxyEnabled $true
+```powershell
+Set-SendConnector "Contoso.com Send Connector" -FrontendProxyEnabled $true
+```
 
 ## 正常な動作を確認する方法
 

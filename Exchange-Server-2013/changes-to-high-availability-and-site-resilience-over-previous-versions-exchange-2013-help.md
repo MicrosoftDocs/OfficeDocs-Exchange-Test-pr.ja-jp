@@ -253,7 +253,9 @@ Exchange 2010 では、時間差コピーにはページ パッチは利用で�
 
 遅延コピーのログ再生動作は既定では無効で、有効にするには次のコマンドを実行します。
 
-    Set-DatabaseAvailabilityGroup <DAGName> -ReplayLagManagerEnabled $true
+```powershell
+Set-DatabaseAvailabilityGroup <DAGName> -ReplayLagManagerEnabled $true
+```
 
 有効にすると、コピーが 3 つ未満の場合にログ再生が発生します。次の DWORD レジストリ値を変更することで、既定値の 3 を変更できます。
 

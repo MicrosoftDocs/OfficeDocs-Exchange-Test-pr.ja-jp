@@ -37,7 +37,9 @@ Org Custom Apps 管理役割を使用すると、管理者は組織のアプリ�
 
 この役割に割り当てられている役割グループ、ユーザー、または USG の一覧を表示する場合、次のコマンドを使用します。
 
-    Get-ManagementRoleAssignment -Role "<role name>"
+```powershell
+Get-ManagementRoleAssignment -Role "<role name>"
+```
 
 ## 正規および委任の役割の割り当て
 

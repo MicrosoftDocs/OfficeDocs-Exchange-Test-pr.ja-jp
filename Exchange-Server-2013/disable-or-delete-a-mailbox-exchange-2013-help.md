@@ -133,18 +133,20 @@ Exchange Online のメールボックスを削除する必要がある場合は�
 
 次のコマンドを使用して、ユーザー メールボックス、リンクされたメールボックス、リソース メールボックス、および共有メールボックスを無効にします。
 
-    Disable-Mailbox <identity>
+```powershell
+Disable-Mailbox <identity>
+```
 
 このコマンドを実行すると、メールボックスを無効にすることを確認するメッセージが表示されます。
 
 次にメールボックスを無効にするコマンドの例を示します。
-```
+```powershell
 Disable-Mailbox danj
 ```
-```
+```powershell
 Disable-Mailbox "Conf Room 31/1234 (12)"
 ```
-```
+```powershell
 Disable-Mailbox sharedmbx@contoso.com
 ```
 
@@ -158,7 +160,9 @@ Disable-Mailbox sharedmbx@contoso.com
 
   - シェルで、次のコマンドを実行します。
     
-        Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisplayName -eq "<display name>" } | fl DisconnectReason,DisconnectDate
+    ```powershell
+    Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisplayName -eq "<display name>" } | fl DisconnectReason,DisconnectDate
+    ```
     
     *DisconnectReason* プロパティの値が `Disabled` であることは、メールボックスが無効であることを示します。
     
@@ -170,7 +174,9 @@ Disable-Mailbox sharedmbx@contoso.com
 
   - シェルで、次のコマンドを実行します。
     
-        Get-User <identity>
+    ```powershell
+    Get-User <identity>
+    ```
     
     *RecipientType* プロパティの値が `User` で、`UserMailbox` (ユーザーが有効なメールボックスを持つ場合の値) ではないことに注意してください。これにより、メールボックスが無効になっていて、ユーザー アカウントが残っていることを確認します。
 
@@ -194,18 +200,20 @@ Disable-Mailbox sharedmbx@contoso.com
 
 次のコマンドを使用して、ユーザー メールボックス、リンクされたメールボックス、リソース メールボックス、および共有メールボックスを削除します。
 
-    Remove-Mailbox <identity>
+```powershell
+Remove-Mailbox <identity>
+```
 
 このコマンドを実行すると、メールボックスと対応する Active Directory ユーザー アカウントを削除することを確認するメッセージが表示されます。
 
 次にメールボックスを削除するコマンドの例を示します。
-```
+```powershell
 Remove-Mailbox pilarp@contoso.com
 ```
-```
+```powershell
 Remove-Mailbox "Fleet Van (16)"
 ```
-```
+```powershell
 Remove-Mailbox corpprint
 ```
 
@@ -221,7 +229,9 @@ Remove-Mailbox corpprint
 
 1.  次のコマンドを実行してメールボックスが削除されたことを確認します。
     
-        Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisplayName -eq "<display name>" } | fl DisconnectReason,DisconnectDate
+    ```powershell
+    Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisplayName -eq "<display name>" } | fl DisconnectReason,DisconnectDate
+    ```
     
     *DisconnectReason* プロパティの値が `Disabled` であることは、メールボックスが削除されたことを示します。
     
@@ -233,7 +243,9 @@ Remove-Mailbox corpprint
 
 2.  次のコマンドを実行して、Active Directory ユーザー アカウントが削除されていることを確認します。
     
-        Get-User <identity>
+    ```powershell
+    Get-User <identity>
+    ```
     
     このコマンドでユーザーが見つからなかったことを示すエラーが返されたら、アカウントは削除されています。
 

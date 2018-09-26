@@ -93,23 +93,31 @@ _**トピックの最終更新日:** 2015-03-09_
 
 2.  コマンド プロンプト ウィンドウで、次のコマンドを実行して、EdgeTransport.exe.config ファイルをメモ帳で開きます。
     
-        Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
+    ```powershell
+    Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
+    ```
 
 3.  `<appSettings>` セクションで以下のキーを変更します。
     
-        <add key="QueueDatabasePath" value="<LocalPath>" />
-        <add key="QueueDatabaseLoggingPath" value="<LocalPath>" />
+    ```powershell
+    <add key="QueueDatabasePath" value="<LocalPath>" />
+    <add key="QueueDatabaseLoggingPath" value="<LocalPath>" />
+    ```
     
     たとえば、D:\\Queue\\QueueDB で新しいキュー データベースを作成し、D:\\Queue\\QueueLogs で新しいトランザクション ログを作成するには、次の値を使用します。
     
-        <add key="QueueDatabasePath" value="D:\Queue\QueueDB" />
-        <add key="QueueDatabaseLoggingPath" value="D:\Queue\QueueLogs" />
+    ```powershell
+    <add key="QueueDatabasePath" value="D:\Queue\QueueDB" />
+    <add key="QueueDatabaseLoggingPath" value="D:\Queue\QueueLogs" />
+    ```
 
 4.  完了したら、EdgeTransport.exe.config ファイルを保存して閉じます。
 
 5.  次のコマンドを実行して、Microsoft Exchange Transport サービスを再起動します。
     
+    ```powershell
         net stop MSExchangeTransport && net start MSExchangeTransport
+    ```
 
 ## 正常な動作を確認する方法
 
@@ -137,23 +145,31 @@ Microsoft Exchange Transport サービスが適切にシャットダウンしな
 
 2.  コマンド プロンプト ウィンドウで、次のコマンドを実行して、EdgeTransport.exe.config ファイルをメモ帳で開きます。
     
-        Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
+    ```powershell
+    Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
+    ```
 
 3.  `<appSettings>` セクションで以下のキーを変更します。
     
+    ```powershell
         <add key="QueueDatabasePath" value="<LocalPath>" />
         <add key="QueueDatabaseLoggingPath" value="<LocalPath>" />
-    
+    ```
+
     たとえば、キュー データベースの場所を D:\\Queue\\QueueDB に変更し、トランザクション ログの場所を D:\\Queue\\QueueLogs に変更するには、次の値を使用します。
     
+    ```powershell
         <add key="QueueDatabasePath" value="D:\Queue\QueueDB" />
         <add key="QueueDatabaseLoggingPath" value="D:\Queue\QueueLogs" />
+    ```
 
 4.  完了したら、EdgeTransport.exe.config ファイルを保存して閉じます。
 
 5.  次のコマンドを実行して、Microsoft Exchange Transport サービスを停止します。
     
-        net stop MSExchangeTransport
+    ```powershell
+    net stop MSExchangeTransport
+    ```
 
 6.  既存のデータベース ファイル Mail.que および Trn.chk を元の場所から新しい場所に移動します。
 
@@ -161,7 +177,9 @@ Microsoft Exchange Transport サービスが適切にシャットダウンしな
 
 8.  次のコマンドを実行して、Microsoft Exchange Transport サービスを起動します。
     
-        net start MSExchangeTransport
+    ```powershell
+    net start MSExchangeTransport
+    ```
 
 ## 正常な動作を確認する方法
 

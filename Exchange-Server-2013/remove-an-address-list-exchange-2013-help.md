@@ -51,7 +51,9 @@ _**トピックの最終更新日:** 2012-10-14_
 
 この例では、子アドレス一覧が含まれていない Sales Department というアドレス一覧を削除します。
 
-    Remove-AddressList -Identity "Sales Department"
+```powershell
+Remove-AddressList -Identity "Sales Department"
+```
 
 「**Y**」と入力してこのアドレス一覧を削除することを確認し、Enter キーを押します。
 
@@ -61,7 +63,9 @@ _**トピックの最終更新日:** 2012-10-14_
 
 この例では、アドレス一覧 Departments と、その子のアドレス一覧をすべて削除します。
 
-    Remove-AddressList -Identity Departments -Recursive
+```powershell
+Remove-AddressList -Identity Departments -Recursive
+```
 
 「**Y**」と入力して親アドレス一覧とその子アドレス一覧を削除することを確認し、Enter キーを押します。
 

@@ -62,10 +62,11 @@ Exchange Server 2013 では、EAC またはシェルを使用して証明書を�
 ## シェルを使用して新しい証明書要求を作成する
 
 次のコマンドを実行します。
-  ```
+  
+  ```powershell
   $reqfile = New-ExchangeCertificate -GenerateRequest -SubjectName "C=US,o=Contoso,cn=contosotocert" -DomainName "contoso.com" -PrivateKeyExportable $true
   ```
-  ```
+  ```powershell
   $reqfile | out-file c:\certreq.txt
   ```
 

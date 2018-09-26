@@ -315,7 +315,9 @@ MAPI ネットワークで使用することを目的とするネットワーク
 
 Outlook Anywhere クライアントの場合、データセンターごとに単一のサブジェクトの別名 (SAN) 証明書を使用し、証明書内に複数のホスト名を含めることをお勧めします。データベース、サーバー、またはデータセンターの切り替え後に Outlook Anywhere の接続が確実に行われるようにするには、各証明書で同じ証明書のプリンシパル名を使用し、Microsoft の標準フォーム (msstd) の同じプリンシパル名で Active Directory の Outlook プロバイダー構成オブジェクトを構成する必要があります。たとえば、mail.contoso.com の証明書のプリンシパル名を使用する場合、次のように属性を構成します。
 
-    Set-OutlookProvider EXPR -CertPrincipalName "msstd:mail.contoso.com"
+```powershell
+Set-OutlookProvider EXPR -CertPrincipalName "msstd:mail.contoso.com"
+```
 
 Exchange と統合するアプリケーションの一部には、追加の証明書の使用を必要とする場合がある特定の証明書要件があります。Exchange 2013 は、Office Communications Server (OCS) と共存できます。OCS には、証明書のプリンシパル名に OCS サーバー名を使用する 1024 ビット以上の証明書を含めた証明書が必要です。証明書のプリンシパル名に OCS サーバー名を使用すると、Outlook Anywhere が正しく機能しなくなるので、OCS 環境に対応した別の証明書をさらに使用する必要があります。
 

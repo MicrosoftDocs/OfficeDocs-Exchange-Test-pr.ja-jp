@@ -49,7 +49,9 @@ _**トピックの最終更新日:** 2014-12-16_
 
 
 
-    Update-GlobalAddressList -Identity "Fourth Coffee"
+```powershell
+Update-GlobalAddressList -Identity "Fourth Coffee"
+```
 
 構文およびパラメーターの詳細については、「[Update-GlobalAddressList](https://technet.microsoft.com/ja-jp/library/aa998806\(v=exchg.150\))」を参照してください。
 

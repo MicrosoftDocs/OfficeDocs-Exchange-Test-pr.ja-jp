@@ -43,7 +43,9 @@ _**トピックの最終更新日:** 2015-01-04_
 
 この例では、Exchange 組織から組織の関係 Contoso を削除します。
 
-    Remove-OrganizationRelationship -Identity "Contoso"
+```powershell
+Remove-OrganizationRelationship -Identity "Contoso"
+```
 
 構文およびパラメーターの詳細については、「[Remove-OrganizationRelationship](https://technet.microsoft.com/ja-jp/library/ee332362\(v=exchg.150\))」を参照してください。
 
@@ -55,7 +57,9 @@ _**トピックの最終更新日:** 2015-01-04_
 
   - 次のシェル コマンドを実行して、組織の関係の情報が削除されていることを確認します。
     
-        Get-OrganizationRelationship | Format-List
+    ```powershell
+    Get-OrganizationRelationship | Format-List
+    ```
 
 
 > [!TIP]

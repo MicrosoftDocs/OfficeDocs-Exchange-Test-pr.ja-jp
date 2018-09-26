@@ -107,21 +107,29 @@ _**トピックの最終更新日:** 2015-03-09_
 
 組織のコンテンツ転送エンコード方法を設定するには、次のコマンドを実行します。
 
-    Set-OrganizationConfig -ByteEncoderTypeFor7BitCharsets <Integer>
+```powershell
+Set-OrganizationConfig -ByteEncoderTypeFor7BitCharsets <Integer>
+```
 
 たとえば、コンテンツ転送エンコード方法を Base64 に設定するには、次のコマンドを実行します。
 
-    Set-OrganizationConfig -ByteEncoderTypeFor7BitCharsets 2
+```powershell
+Set-OrganizationConfig -ByteEncoderTypeFor7BitCharsets 2
+```
 
 ## シェルを使用してリモート ドメインのコンテンツ転送エンコード方法を構成する
 
 リモート ドメインのすべての受信者のコンテンツ転送エンコード方法を設定するには、次のコマンドを実行します。
 
-    Set-RemoteDomain -ByteEncoderTypeFor7BitCharsets <Value>
+```powershell
+Set-RemoteDomain -ByteEncoderTypeFor7BitCharsets <Value>
+```
 
 たとえば、コンテンツ転送エンコード方法を Base64 に設定するには、次のコマンドを実行します。
 
-    Set- RemoteDomain -ByteEncoderTypeFor7BitCharsets UseBase64
+```powershell
+Set- RemoteDomain -ByteEncoderTypeFor7BitCharsets UseBase64
+```
 
 ## 正常な動作を確認する方法
 

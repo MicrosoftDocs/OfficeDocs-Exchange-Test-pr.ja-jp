@@ -53,13 +53,9 @@ UM 言語に関連した追加タスクについては、「[UM 言語、プロ�
 
 2.  UMLanguagePack.*\<CultureCode\>.exe* ファイルをダブルクリックします。たとえば、ドイツ語の UM 言語パックの場合、UMLanguagePack.de-DE.exe という名前のファイルをダウンロードします。
 
-3.  
-    
-    Exchange 2013 セットアップ ウィザードの <strong>使用許諾契約書</strong> ページで、契約の条項を読んで、<strong>使用許諾契約書に同意します</strong> を選択し、<strong>次へ</strong> をクリックします。
+3.  Exchange 2013 セットアップ ウィザードの <strong>使用許諾契約書</strong> ページで、契約の条項を読んで、<strong>使用許諾契約書に同意します</strong> を選択し、<strong>次へ</strong> をクリックします。
 
-4.  
-    
-    <strong>ユニファイド メッセージング言語パック</strong> ページで、<strong>次のユニファイド メッセージング言語パックがインストールされます。</strong> ウィンドウに正しい言語が表示されていることを確認し、<strong>インストール</strong> をクリックします。
+4.  <strong>ユニファイド メッセージング言語パック</strong> ページで、<strong>次のユニファイド メッセージング言語パックがインストールされます。</strong> ウィンドウに正しい言語が表示されていることを確認し、<strong>インストール</strong> をクリックします。
 
 5.  <strong>完了</strong> をクリックし、UM 言語パックのインストールを終了します。
 
@@ -67,12 +63,15 @@ UM 言語に関連した追加タスクについては、「[UM 言語、プロ�
 
 この例では、メールボックス サーバーの D:\\Exchange\\UMLanguagePacks フォルダーにダウンロードした日本語 (ja-JP) の UM 言語パックをインストールします。
 
-    setup.exe /AddUmLanguagePack:ja-JP /s:d:\Exchange\UMLanguagePacks /IAcceptExchangeServerLicenseTerms
+```powershell
+setup.exe /AddUmLanguagePack:ja-JP /s:d:\Exchange\UMLanguagePacks /IAcceptExchangeServerLicenseTerms
+```
 
 この例では、メールボックス サーバーの D:\\Exchange\\UMLanguagePacks フォルダーにダウンロードしたメキシコのスペイン語 (es-MX) の UM 言語パックおよびドイツ語 (de-DE) の UM 言語パックをインストールします。
 
-    setup.exe /AddUmLanguagePack:es-MX,de-DE /s:d:\Exchange\UMLanguagePacks /IAcceptExchangeServerLicenseTerms
-
+```powershell
+setup.exe /AddUmLanguagePack:es-MX,de-DE /s:d:\Exchange\UMLanguagePacks /IAcceptExchangeServerLicenseTerms
+```
 
 > [!WARNING]
 > /IAcceptExchangeServerLicenseTerms パラメーターを使用しないと、次のエラーが表示されます。Microsoft Exchange Server 2013 無人セットアップへようこそ。Microsoft Exchange Server 2013 をインストールするには、ライセンス条項に同意する必要があります。使用許諾契約書を読むには、http://go.microsoft.com/fwlink/p/?LinkId=150127 にアクセスしてください。使用許諾契約書に同意するには、実行中のコマンドに /IAcceptExchangeServerLicenseTerms パラメーターを追加してください。詳細については、setup /? を実行してください。

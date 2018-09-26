@@ -87,27 +87,38 @@ _**トピックの最終更新日:** 2014-02-15_
 
   - この例は、組織外のドメインである contoso.com に対する共有ポリシー Contoso を変更します。このポリシーを使用すると、Contoso ドメイン内のユーザーが簡易版の空き時間情報を表示できます。
     
-        Set-SharingPolicy -Identity Contoso -Domains 'sales.contoso.com: CalendarSharingFreeBusySimple'
+    ```powershell
+    Set-SharingPolicy -Identity Contoso -Domains 'sales.contoso.com: CalendarSharingFreeBusySimple'
+    ```
 
   - この例は、Contoso という共有ポリシーにドメインをもう 1 つ追加します。既存のポリシーにドメインを追加する場合は、それまでの対象ドメインも指定する必要があります。
     
+    ```powershell
         Set-SharingPolicy -Identity Contoso -Domains 'contoso.com: CalendarSharingFreeBusySimple', 'atlanta.contoso.com: CalendarSharingFreeBusyReviewer', 'beijing.contoso.com: CalendarSharingFreeBusyReviewer'
-
+    ```
+    
   - この例では、共有ポリシー Contoso を既定の共有ポリシーとして設定します。
     
-        Set-SharingPolicy -Identity Contoso -Default $True
+    ```powershell
+    Set-SharingPolicy -Identity Contoso -Default $True
+    ```
 
   - この例では、Contoso という共有ポリシーを無効にします。
     
-        Set-SharingPolicy -Identity "Contoso" -Enabled $False
+    ```powershell
+    Set-SharingPolicy -Identity "Contoso" -Enabled $False
+    ```
 
   - 最初の例では、Contoso という共有ポリシーを削除しています。2 つ目の例では、Contoso という共有ポリシーを削除し、ポリシーを削除する際の確認メッセージが表示されないようにしています。
-      ```
-      Remove-SharingPolicy -Identity Contoso
-      ```
-      ```
-      Remove-SharingPolicy -Identity Contoso -Confirm
-      ```
+     
+    ```powershell
+    Remove-SharingPolicy -Identity Contoso
+    ```
+
+    ```powershell
+    Remove-SharingPolicy -Identity Contoso -Confirm
+    ```
+  
 
 構文およびパラメーターの詳細については、「[Set-SharingPolicy](https://technet.microsoft.com/ja-jp/library/dd297931\(v=exchg.150\))」と「[Remove-SharingPolicy](https://technet.microsoft.com/ja-jp/library/dd351071\(v=exchg.150\))」を参照してください。
 

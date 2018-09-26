@@ -69,7 +69,9 @@ Microsoft Exchange Server 2013 組織のユーザーは、Exchange 組織外の�
 
 この例では、メールボックス サーバー MAIL01 の Web プロキシ URL を構成します。
 
-    Set-ExchangeServer -Identity "MAIL01" -InternetWebProxy "<Webproxy URL>"
+```powershell
+Set-ExchangeServer -Identity "MAIL01" -InternetWebProxy "<Webproxy URL>"
+```
 
 構文およびパラメーターの詳細については、「[Set-ExchangeServer](https://technet.microsoft.com/ja-jp/library/bb123716\(v=exchg.150\))」を参照してください。
 
@@ -77,7 +79,9 @@ Microsoft Exchange Server 2013 組織のユーザーは、Exchange 組織外の�
 
 Web プロキシ URL が正常に構成されたことを確認するには、次のシェル コマンドを実行し、*InternetWebProxy* パラメーターを確認します。
 
-    Get-ExchangeServer | format-list
+```powershell
+Get-ExchangeServer | format-list
+```
 
 ## 手順 2: シェルを使用して、仮想ディレクトリの公開を有効にします。
 
@@ -89,7 +93,9 @@ Web プロキシ URL が正常に構成されたことを確認するには、�
 
 この例では、クライアント アクセス サーバー CAS01 の仮想ディレクトリの公開を有効にします。
 
-    Set-OwaVirtualDirectory -Identity "CAS01\owa (Default Web Site)" -ExternalUrl "<URL for CAS01>" -CalendarEnabled $true
+```powershell
+Set-OwaVirtualDirectory -Identity "CAS01\owa (Default Web Site)" -ExternalUrl "<URL for CAS01>" -CalendarEnabled $true
+```
 
 ID `CAS01\owa (Default Web Site)` は、サーバー名と Outlook Web App 仮想ディレクトリになります。
 
@@ -99,7 +105,9 @@ ID `CAS01\owa (Default Web Site)` は、サーバー名と Outlook Web App 仮�
 
 仮想ディレクトリの公開が正常に有効化されたことを確認するには、次のシェル コマンドを実行し、*ExternalURL* パラメーターを確認します。
 
-    Get-OwaVirtualDirectory | format-list
+```powershell
+Get-OwaVirtualDirectory | format-list
+```
 
 ## 手順 3: インターネット予定表の公開のための共有ポリシーを作成または構成する
 
@@ -143,15 +151,21 @@ ID `CAS01\owa (Default Web Site)` は、サーバー名と Outlook Web App 仮�
 
 この例では、Internet という名前のインターネット予定表の公開の共有ポリシーを作成し、空き時間情報のみを共有するようにポリシーを構成します。このポリシーは有効になっています。
 
-    New-SharingPolicy -Name "Internet" -Domains 'Anonymous: CalendarSharingFreeBusySimple' -Enabled $true
+```powershell
+New-SharingPolicy -Name "Internet" -Domains 'Anonymous: CalendarSharingFreeBusySimple' -Enabled $true
+```
 
 この例では、共有ポリシー Internet をユーザーのメールボックスに追加します。
 
-    Set-Mailbox -Identity <user name> -SharingPolicy "Internet"
+```powershell
+Set-Mailbox -Identity <user name> -SharingPolicy "Internet"
+```
 
 この例では、共有ポリシー Internet を組織単位 (OU) に追加します。
 
-    Set-Mailbox -OrganizationalUnit <OU name> -SharingPolicy "Internet"
+```powershell
+Set-Mailbox -OrganizationalUnit <OU name> -SharingPolicy "Internet"
+```
 
 構文およびパラメーターの詳細については、「[New-SharingPolicy](https://technet.microsoft.com/ja-jp/library/dd298186\(v=exchg.150\))」と「[Set-Mailbox](https://technet.microsoft.com/ja-jp/library/bb123981\(v=exchg.150\))」を参照してください。
 
@@ -159,7 +173,9 @@ ID `CAS01\owa (Default Web Site)` は、サーバー名と Outlook Web App 仮�
 
 共有ポリシーが正常に作成されたことを確認するには、次のシェル コマンドを実行して共有ポリシーの情報を確認します。
 
-    Get-SharingPolicy <policy name> | format-list
+```powershell
+Get-SharingPolicy <policy name> | format-list
+```
 
 ## オプション 2:インターネット予定表の公開用に既定の共有ポリシーを構成する
 
@@ -191,7 +207,9 @@ ID `CAS01\owa (Default Web Site)` は、サーバー名と Outlook Web App 仮�
 
 この例では、\[既定の共有ポリシー\] を更新し、空き時間情報のみを共有するようにポリシーを構成します。このポリシーは有効になっています。
 
-    Set-SharingPolicy -Name "Default Sharing Policy" -Domains 'Anonymous: CalendarSharingFreeBusySimple' -Enabled $true
+```powershell
+Set-SharingPolicy -Name "Default Sharing Policy" -Domains 'Anonymous: CalendarSharingFreeBusySimple' -Enabled $true
+```
 
 構文およびパラメーターの詳細については、「[Set-Mailbox](https://technet.microsoft.com/ja-jp/library/bb123981\(v=exchg.150\))」を参照してください。
 
@@ -199,5 +217,7 @@ ID `CAS01\owa (Default Web Site)` は、サーバー名と Outlook Web App 仮�
 
 \[既定の共有ポリシー\] が正常に更新されたことを確認するには、次のシェル コマンドを実行して共有ポリシーの情報を確認します。
 
-    Get-SharingPolicy <policy name> | format-list
+```powershell
+Get-SharingPolicy <policy name> | format-list
+```
 

@@ -156,7 +156,9 @@ _**トピックの最終更新日:** 2012-12-10_
 
 この例を実行すると、Southeast offices のメールボックス ユーザーが姓のすべての文字と名の最初の 2 文字を組み合わせた電子メール アドレスを持つような電子メール アドレス ポリシーが作成されます。
 
-    New-EmailAddressPolicy -Name "southeast offices" -IncludedRecipients MailboxUsers -ConditionalStateorProvince "Georgia","Alabama","Louisiana" -EnabledEmailAddressTemplates "SMTP:%s%2g@southeast.contoso.com"
+```powershell
+New-EmailAddressPolicy -Name "southeast offices" -IncludedRecipients MailboxUsers -ConditionalStateorProvince "Georgia","Alabama","Louisiana" -EnabledEmailAddressTemplates "SMTP:%s%2g@southeast.contoso.com"
+```
 
 構文およびパラメーターの詳細については、「[New-EmailAddressPolicy](https://technet.microsoft.com/ja-jp/library/aa996800\(v=exchg.150\))」を参照してください。
 

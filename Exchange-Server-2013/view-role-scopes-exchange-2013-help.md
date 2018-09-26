@@ -53,11 +53,15 @@ Microsoft Exchange Server 2013 での管理役割スコープの詳細につい�
 
 特定のスコープの詳細を表示するには、次の構文を使用します。
 
-    Get-ManagementScope <scope name> | Format-List
+```powershell
+Get-ManagementScope <scope name> | Format-List
+```
 
 この例では、シアトル サーバー スコープの詳細を取得します。
 
-    Get-ManagementScope "Seattle Servers" | Format-List
+```powershell
+Get-ManagementScope "Seattle Servers" | Format-List
+```
 
 構文およびパラメーターの詳細については、「[Get-ManagementScope](https://technet.microsoft.com/ja-jp/library/dd298180\(v=exchg.150\))」を参照してください。
 
@@ -65,7 +69,9 @@ Microsoft Exchange Server 2013 での管理役割スコープの詳細につい�
 
 この例では、組織内のスコープの一覧を取得します。
 
-    Get-ManagementScope
+```powershell
+Get-ManagementScope
+```
 
 このコマンドレットは排他的スコープと正規スコープの両方を取得します。排他的スコープまたは正規スコープのいずれか一方を取得したい場合は、後述の「排他的スコープまたは正規のスコープのいずれかすべてを一覧表示する」を参照してください。
 
@@ -77,7 +83,9 @@ Microsoft Exchange Server 2013 での管理役割スコープの詳細につい�
 
 この例では、孤立したスコープの一覧を取得します。
 
-    Get-ManagementScope -Orphan
+```powershell
+Get-ManagementScope -Orphan
+```
 
 構文およびパラメーターの詳細については、「[Get-ManagementScope](https://technet.microsoft.com/ja-jp/library/dd298180\(v=exchg.150\))」を参照してください。
 
@@ -85,15 +93,21 @@ Microsoft Exchange Server 2013 での管理役割スコープの詳細につい�
 
 既定では、**Get-ManagementScope** コマンドレットは、排他的スコープと正規スコープの両方を含むスコープの一覧を返します。排他的スコープまたは正規スコープのいずれか一方のみを取得したい場合は、次の構文を使用してください。
 
-    Get-ManagementScope -Exclusive < $true | $false >
+```powershell
+Get-ManagementScope -Exclusive < $true | $false >
+```
 
 この例では、排他的スコープのみ返します。
 
-    Get-ManagementScope -Exclusive $true
+```powershell
+Get-ManagementScope -Exclusive $true
+```
 
 この例では、正規のスコープの一覧のみ返します。
 
-    Get-ManagementScope -Exclusive $false
+```powershell
+Get-ManagementScope -Exclusive $false
+```
 
 構文およびパラメーターの詳細については、「[Get-ManagementScope](https://technet.microsoft.com/ja-jp/library/dd298180\(v=exchg.150\))」を参照してください。
 

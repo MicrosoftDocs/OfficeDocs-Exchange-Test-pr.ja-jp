@@ -87,23 +87,33 @@ DAG に関連する他の管理タスクについては、「[データベース
 
 この例では、監視サーバー FILESRV1 を使用するように構成された DAG1 という DAG、およびローカル ディレクトリ C:\\DAG1 を作成します。また、DAG1 は、DAG の IP アドレスに DHCP を使用するように構成されています。
 
-    New-DatabaseAvailabilityGroup -Name DAG1 -WitnessServer FILESRV1 -WitnessDirectory C:\DAG1
+```powershell
+New-DatabaseAvailabilityGroup -Name DAG1 -WitnessServer FILESRV1 -WitnessDirectory C:\DAG1
+```
 
 この例では、DAG2 という DAG を作成します。ローカル Active Directory サイトではメールボックス サーバーの役割に DAG の監視サーバーとしての役割が含まれておらず、クライアント アクセス サーバーがシステムにより自動的に選択されます。この例では、MAPI ネットワーク上のすべての DAG メンバーは同じサブネット上にあるので、DAG2 には 1 つの静的 IP アドレスが割り当てられます。
 
-    New-DatabaseAvailabilityGroup -Name DAG2 -DatabaseAvailabilityGroupIPAddresses 10.0.0.8
+```powershell
+New-DatabaseAvailabilityGroup -Name DAG2 -DatabaseAvailabilityGroupIPAddresses 10.0.0.8
+```
 
 この例では、DAG3 という DAG を作成します。DAG3 は、監視サーバー MBX2 およびローカル ディレクトリ C:\\DAG3 を使用するように構成されています。複数の DAG メンバーが MAPI ネットワーク上の別々のサブネット上にあるので、DAG3 には複数の静的 IP アドレスが割り当てられます。
 
-    New-DatabaseAvailabilityGroup -Name DAG3 -WitnessServer MBX2 -WitnessDirectory C:\DAG3 -DatabaseAvailabilityGroupIPAddresses 10.0.0.8,192.168.0.8
+```powershell
+New-DatabaseAvailabilityGroup -Name DAG3 -WitnessServer MBX2 -WitnessDirectory C:\DAG3 -DatabaseAvailabilityGroupIPAddresses 10.0.0.8,192.168.0.8
+```
 
 この例では、DHCP を使用するように構成された DAG4 という DAG を作成します。また、ミラーリング監視サーバーはシステムによって自動的に選択され、既定の監視ディレクトリが作成されます。
 
-    New-DatabaseAvailabilityGroup -Name DAG4
+```powershell
+New-DatabaseAvailabilityGroup -Name DAG4
+```
 
 この例では、管理用のアクセス ポイントがない DAG5 という DAG を作成します (Windows Server 2012 R2 DAG でのみ有効)。さらに、DAG の監視サーバーとして MBX4 を使用し、既定の監視ディレクトリを作成します。
 
-    New-DatabaseAvailabilityGroup -Name DAG5 -DatabaseAvailabilityGroupIPAddresses ([System.Net.IPAddress]::None) -WitnessServer MBX4
+```powershell
+New-DatabaseAvailabilityGroup -Name DAG5 -DatabaseAvailabilityGroupIPAddresses ([System.Net.IPAddress]::None) -WitnessServer MBX4
+```
 
 ## 正常な動作を確認する方法
 
@@ -113,7 +123,9 @@ DAG が正常に作成されたことを確認するには、次のいずれか�
 
   - シェルで次のコマンドを実行して DAG が作成されたことを確認し、DAG のプロパティ情報を表示します。
     
-        Get-DatabaseAvailabilityGroup <DAGName> | Format-List
+    ```powershell
+    Get-DatabaseAvailabilityGroup <DAGName> | Format-List
+    ```
 
 ## 詳細情報
 

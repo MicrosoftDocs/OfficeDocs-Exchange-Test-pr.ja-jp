@@ -47,11 +47,15 @@ Exchange 管理シェルを使用することで、Microsoft Exchange Server 201
 
 シェルを使用して Exchange サーバー上のトランスポート パイプラインのトランスポート エージェントを表示するには、次のコマンドを実行します。
 
-    Get-TransportPipeline | Format-List
+```powershell
+Get-TransportPipeline | Format-List
+```
 
 結果を C:\\My Documents\\Transport Agents.txt という名前のテキスト ファイルにエクスポートするには、次のコマンドを実行します。
 
-    Get-TransportPipeline | Format-List > "C:\My Documents\Transport Agents.txt"
+```powershell
+Get-TransportPipeline | Format-List > "C:\My Documents\Transport Agents.txt"
+```
 
 ## 正常な動作を確認する方法
 

@@ -63,11 +63,15 @@ _**トピックの最終更新日:** 2012-10-09_
 
 1.  変数に外部 Active Directory フォレストの資格情報を格納します。
     
-        $ForeignCredential = Get-Credential
+    ```powershell
+    $ForeignCredential = Get-Credential
+    ```
 
 2.  以下の構文を使用して、リンクされた役割グループを作成します。
     
+    ```powershell
         New-RoleGroup <role group name> -LinkedForeignGroup <name of foreign USG> -LinkedDomainController <FQDN of foreign Active Directory domain controller> -LinkedCredential $ForeignCredential -Roles <role1, role2, role3...>
+    ```
 
 3.  外部 Active Directory フォレストにあるコンピューター上で Active Directory ユーザーとコンピューターを使用して、メンバーを外部 USG に追加、または外部 USG から削除します。
 
@@ -83,8 +87,13 @@ _**トピックの最終更新日:** 2012-10-09_
 
 <!-- end list -->
 
-    $ForeignCredential = Get-Credential
+```powershell
+$ForeignCredential = Get-Credential
+```
+
+```powershell
     New-RoleGroup "Compliance Role Group" -LinkedForeignGroup "Compliance Administrators" -LinkedDomainController DC01.users.contoso.com -LinkedCredential $ForeignCredential -Roles "Transport Rules", "Journaling"
+```
 
 ## シェルを使用してカスタム管理スコープ付きのリンクされた役割グループを作成する
 
@@ -92,12 +101,16 @@ _**トピックの最終更新日:** 2012-10-09_
 
 1.  変数に外部 Active Directory フォレストの資格情報を格納します。
     
-        $ForeignCredential = Get-Credential
+    ```powershell
+    $ForeignCredential = Get-Credential
+    ```
 
 2.  以下の構文を使用して、リンクされた役割グループを作成します。
     
+    ```powershell
         New-RoleGroup <role group name> -LinkedForeignGroup <name of foreign USG> -LinkedDomainController <FQDN of foreign Active Directory domain controller> -CustomConfigWriteScope <name of configuration scope> -CustomRecipientWriteScope <name of recipient scope> -LinkedCredential $ForeignCredential -Roles <role1, role2, role3...>
-
+    ```
+    
 3.  外部 Active Directory フォレストにあるコンピューター上で Active Directory ユーザーとコンピューターを使用して、メンバーを外部 USG に追加、または外部 USG から削除します。
 
 この例では、次のことが行われます。
@@ -112,8 +125,13 @@ _**トピックの最終更新日:** 2012-10-09_
 
 <!-- end list -->
 
-    $ForeignCredential = Get-Credential
-    New-RoleGroup "Seattle Compliance Role Group" -LinkedForeignGroup "Seattle Compliance Administrators" -LinkedDomainController DC01.users.contoso.com -LinkedCredential $ForeignCredential -CustomRecipientWriteScope "Seattle Recipients" -Roles "Transport Rules", "Journaling"
+```powershell
+$ForeignCredential = Get-Credential
+```
+
+```powershell
+New-RoleGroup "Seattle Compliance Role Group" -LinkedForeignGroup "Seattle Compliance Administrators" -LinkedDomainController DC01.users.contoso.com -LinkedCredential $ForeignCredential -CustomRecipientWriteScope "Seattle Recipients" -Roles "Transport Rules", "Journaling"
+```
 
 管理のスコープの詳細については、「[管理役割スコープについて](understanding-management-role-scopes-exchange-2013-help.md)」を参照してください。
 
@@ -123,11 +141,15 @@ OU 受領者スコープを使用するリンクされている役割グルー�
 
 1.  変数に外部 Active Directory フォレストの資格情報を格納します。
     
-        $ForeignCredential = Get-Credential
+    ```powershell
+    $ForeignCredential = Get-Credential
+    ```
 
 2.  以下の構文を使用して、リンクされた役割グループを作成します。
     
-        New-RoleGroup <role group name> -LinkedForeignGroup <name of foreign USG> -LinkedDomainController <FQDN of foreign Active Directory domain controller> -LinkedCredential $ForeignCredential -RecipientOrganizationalUnitScope <OU name> -Roles <role1, role2, role3...>
+    ```powershell
+    New-RoleGroup <role group name> -LinkedForeignGroup <name of foreign USG> -LinkedDomainController <FQDN of foreign Active Directory domain controller> -LinkedCredential $ForeignCredential -RecipientOrganizationalUnitScope <OU name> -Roles <role1, role2, role3...>
+    ```
 
 3.  外部 Active Directory フォレストにあるコンピューター上で Active Directory ユーザーとコンピューターを使用して、メンバーを外部 USG に追加、または外部 USG から削除します。
 
@@ -143,8 +165,13 @@ OU 受領者スコープを使用するリンクされている役割グルー�
 
 <!-- end list -->
 
-    $ForeignCredential = Get-Credential
-    New-RoleGroup "Executives Compliance Role Group" -LinkedForeignGroup "Executives Compliance Administrators" -LinkedDomainController DC01.users.contoso.com -LinkedCredential $ForeignCredential -RecipientOrganizationalUnitScope "Executives OU" -Roles "Transport Rules", "Journaling"
+```powershell
+$ForeignCredential = Get-Credential
+```
+
+```powershell
+New-RoleGroup "Executives Compliance Role Group" -LinkedForeignGroup "Executives Compliance Administrators" -LinkedDomainController DC01.users.contoso.com -LinkedCredential $ForeignCredential -RecipientOrganizationalUnitScope "Executives OU" -Roles "Transport Rules", "Journaling"
+```
 
 管理のスコープの詳細については、「[管理役割スコープについて](understanding-management-role-scopes-exchange-2013-help.md)」を参照してください。
 
@@ -156,11 +183,15 @@ OU 受領者スコープを使用するリンクされている役割グルー�
 
 1.  変数に外部 Active Directory フォレストの資格情報を格納します。
     
-        $ForeignCredential = Get-Credential
+    ```powershell
+    $ForeignCredential = Get-Credential
+    ```
 
 2.  次の構文を使用して、リンクされた既存の役割グループの外部 USG を変更します。
     
-        Set-RoleGroup <role group name> -LinkedForeignGroup <name of foreign USG> -LinkedDomainController <FQDN of foreign Active Directory domain controller> -LinkedCredential $ForeignCredential 
+    ```powershell
+    Set-RoleGroup <role group name> -LinkedForeignGroup <name of foreign USG> -LinkedDomainController <FQDN of foreign Active Directory domain controller> -LinkedCredential $ForeignCredential 
+    ```
 
 この例では、次のことが行われます。
 
@@ -170,6 +201,10 @@ OU 受領者スコープを使用するリンクされている役割グルー�
 
 <!-- end list -->
 
-    $ForeignCredential = Get-Credential
-    Set-RoleGroup "Compliance Role Group" -LinkedForeignGroup "Regulatory Compliance Officers" -LinkedDomainController DC01.users.contoso.com -LinkedCredential $ForeignCredential
+```powershell
+$ForeignCredential = Get-Credential
+```
 
+```powershell
+Set-RoleGroup "Compliance Role Group" -LinkedForeignGroup "Regulatory Compliance Officers" -LinkedDomainController DC01.users.contoso.com -LinkedCredential $ForeignCredential
+```

@@ -167,7 +167,9 @@ themeinfo.xml ファイルを使用して新しいテーマのソート順を変
 
 この例では、Outlook Web App の既定のテーマを設定します。ここでは、サーバー名が `fourthcoffee`、仮想ディレクトリ名が `owa`、Web サイト名が `default web site`、およびテーマが `Custom` という名前のフォルダー内にあります。
 
-    set-owavirtualdirectory -identity "fourthcoffee\owa (default web site)" -defaulttheme Custom 
+```powershell
+set-owavirtualdirectory -identity "fourthcoffee\owa (default web site)" -defaulttheme Custom 
+```
 
 構文およびパラメーターの詳細については、「[Set-OwaVirtualDirectory](https://technet.microsoft.com/ja-jp/library/bb123515\(v=exchg.150\))」を参照してください。
 
@@ -175,11 +177,15 @@ themeinfo.xml ファイルを使用して新しいテーマのソート順を変
 
 この例では、Outlook Web App のテーマ選択を無効にします。ここでは、サーバー名が `fourthcoffee`、仮想ディレクトリ名が `owa`、および Web サイト名が `default web site` です。
 
-    set-owavirtualdirectory -identity "fourthcoffee\owa (default web site)" -themeselectionenabled $false 
+```powershell
+set-owavirtualdirectory -identity "fourthcoffee\owa (default web site)" -themeselectionenabled $false 
+```
 
 また、次の例に示すように、両方のコマンドを同時に実行することもできます。
 
-    set-owavirtualdirectory -identity "fourthcoffee\owa (default web site)" -defaulttheme Custom -themeselectionenabled $false
+```powershell
+set-owavirtualdirectory -identity "fourthcoffee\owa (default web site)" -defaulttheme Custom -themeselectionenabled $false
+```
 
 構文およびパラメーターの詳細については、「[Set-OwaVirtualDirectory](https://technet.microsoft.com/ja-jp/library/bb123515\(v=exchg.150\))」を参照してください。
 

@@ -57,7 +57,9 @@ Exchange Search の管理に関連する管理タスクについては、「[Exc
 
 2.  **メールボックス データベース構成をチェックする**   ユーザーのメールボックス データベースに対して *IndexEnabled* パラメーターが true に設定されていることを確認します。True に設定されている場合は手順 3. に進み、設定されていない場合はシェルで次のコマンドを実行して、*IndexEnabled* フラグが True に設定されていることを確認します。
     
-        Get-MailboxDatabase | Format-Table Name,IndexEnabled
+    ```powershell
+    Get-MailboxDatabase | Format-Table Name,IndexEnabled
+    ```
     
     構文およびパラメーターの詳細については、「[Get-MailboxDatabase](https://technet.microsoft.com/ja-jp/library/bb124924\(v=exchg.150\))」を参照してください。
 
@@ -85,13 +87,17 @@ Exchange Search の管理に関連する管理タスクについては、「[Exc
 
 4.  **データベース コピーのインデックス処理の正常性をチェックする**   コンテンツ インデックスが正常であることを確認します。データベース コピーのコンテンツのインデックス処理の正常性をチェックするには、**Get-MailboxDatabaseCopyStatus** コマンドレットを使用します。
     
-        Get-MailboxDatabaseCopyStatus -Server $env:ComputerName | Format-Table Name,Status,ContentIndex* -Auto
+    ```powershell
+    Get-MailboxDatabaseCopyStatus -Server $env:ComputerName | Format-Table Name,Status,ContentIndex* -Auto
+    ```
     
     構文およびパラメーターの詳細については、「[Get-MailboxDatabaseCopyStatus](https://technet.microsoft.com/ja-jp/library/dd298044\(v=exchg.150\))」を参照してください。
 
 5.  **Test-ExchangeSearch コマンドレットを実行する**   メールボックス データベースのクロールが既に完了している場合、**Test-ExchangeSearch** コマンドレットは、特定のメールボックスのメールボックス データベースに対して実行できます。
     
-        Test-ExchangeSearch -Identity AlanBrewer@contoso.com
+    ```powershell
+    Test-ExchangeSearch -Identity AlanBrewer@contoso.com
+    ```
     
     構文およびパラメーターの詳細については、「[Test-ExchangeSearch](https://technet.microsoft.com/ja-jp/library/bb124733\(v=exchg.150\))」を参照してください。
 

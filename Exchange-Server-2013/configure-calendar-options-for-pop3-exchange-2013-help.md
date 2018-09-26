@@ -39,19 +39,27 @@ POP3 に関連する詳細情報については、「[Exchange Server 2013 で�
 
 この例では、POP3 ユーザーが iCalendar 標準 (予定表情報をやり取りするための標準) を使用できるようにします。
 
-    Set-PopSettings -Identity CAS01 -CalendarItemRetrievalOption iCalendar
+```powershell
+Set-PopSettings -Identity CAS01 -CalendarItemRetrievalOption iCalendar
+```
 
 この例では、POP3 ユーザーが内部のサーバーから予定表情報にアクセスできるようにします。
 
-    Set-PopSettings -Identity CAS01 -CalendarItemRetrievalOption IntranetUrl 
+  ```powershell
+  Set-PopSettings -Identity CAS01 -CalendarItemRetrievalOption IntranetUrl 
+  ```
 
 この例では、POP3 ユーザーが外部のサーバー上のインターネットから予定表の情報にアクセスできるようにします。
 
-    Set-PopSettings -CalendarItemRetrievalOption InternetUrl
+```powershell
+Set-PopSettings -CalendarItemRetrievalOption InternetUrl
+```
 
 この例では、直接の Outlook Web App URL を使用して、POP3 ユーザーが予定表情報にアクセスできるようにします。`Custom` を使用する場合は、*OWAServerUrl* パラメーターを使用して Outlook Web App URL を指定する必要があります。
 
-    Set-PopSettings -CalendarItemRetrievalOption Custom -OwaServerUrl "https://OwaServer01"
+```powershell
+Set-PopSettings -CalendarItemRetrievalOption Custom -OwaServerUrl "https://OwaServer01"
+```
 
 POP3 に予定表オプションを指定した後、POP3 サービスを再起動する必要があります。POP3 サービスを再起動する方法の詳細については、「[POP3 サービスの開始および停止](start-and-stop-the-pop3-services-exchange-2013-help.md)」を参照してください。
 
@@ -63,7 +71,9 @@ POP3 に予定表オプションを指定した後、POP3 サービスを再起�
 
 シェルで、次のコマンドを実行します。
 
-    Get-PopSettings | format-list
+```powershell
+Get-PopSettings | format-list
+```
 
 予定表の設定が正しいことを確認します。
 

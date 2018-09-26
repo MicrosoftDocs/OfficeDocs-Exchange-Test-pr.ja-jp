@@ -76,7 +76,9 @@ Information Rights Management (IRM) に関連するその他の管理タスク�
 
   - トランスポート保護ルールは、AD RMS 展開に既存の RMS テンプレートがないと作成できません。この例では、AD RMS クラスターから使用できるテンプレートを取得します。
     
-        Get-RMSTemplate | format-list
+    ```powershell
+    Get-RMSTemplate | format-list
+    ```
     
     構文およびパラメーターの詳細については、「[Get-RMSTemplate](https://technet.microsoft.com/ja-jp/library/dd297960\(v=exchg.150\))」を参照してください。
 
@@ -87,7 +89,9 @@ Information Rights Management (IRM) に関連するその他の管理タスク�
     > この例では、<CODE>SubjectContainsWords</CODE> 述語を使用します。ルールの条件や例外は、トランスポート ルール述語を任意に組み合わせて定義できます。使用できる述語については、<A href="mail-flow-rule-conditions-and-exceptions-predicates-in-exchange-2013-exchange-2013-help.md">トランスポート ルールの条件 (述語)</A> を参照してください。
 
     
-        New-TransportRule -Name "Protect-BusinessCriticalProject" -SubjectContainsWords "Business Critical" -ApplyRightsProtectionTemplate "Do Not Forward"
+      ```powershell
+      New-TransportRule -Name "Protect-BusinessCriticalProject" -SubjectContainsWords "Business Critical" -ApplyRightsProtectionTemplate "Do Not Forward"
+      ```
     
     構文およびパラメーターの詳細については、「[New-TransportRule](https://technet.microsoft.com/ja-jp/library/bb125138\(v=exchg.150\))」を参照してください。
 

@@ -43,25 +43,31 @@ _**トピックの最終更新日:** 2014-12-16_
 
 1.  コマンド プロンプト ウィンドウで、次のコマンドを実行して、EdgeTransport.exe.config アプリケーション構成ファイルをメモ帳で開きます。
     
-        Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
+    ```powershell
+    Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
+    ```
 
 2.  `<appSettings>` セクションで以下のキーを検索します。
     
-        <add key="PriorityQueuingEnabled" value="false" />
-        <add key="MaxPerDomainHighPriorityConnections" value="3" />
-        <add key="MaxPerDomainNormalPriorityConnections" value="15" />
-        <add key="MaxPerDomainLowPriorityConnections" value="2" />
-        <add key="HighPriorityMessageExpirationTimeout" value="8:00:00" />
-        <add key="NormalPriorityMessageExpirationTimeout" value="2.00:00:00" />
-        <add key="LowPriorityMessageExpirationTimeout" value="2.00:00:00" />
-        <add key="HighPriorityDelayNotificationTimeout" value="00:30:00" />
-        <add key="NormalPriorityDelayNotificationTimeout" value="4:00:00" />
-        <add key="LowPriorityDelayNotificationTimeout" value="8:00:00" />
-        <add key="MaxHighPriorityMessageSize" value="250KB" />
+    ```powershell
+    <add key="PriorityQueuingEnabled" value="false" />
+    <add key="MaxPerDomainHighPriorityConnections" value="3" />
+    <add key="MaxPerDomainNormalPriorityConnections" value="15" />
+    <add key="MaxPerDomainLowPriorityConnections" value="2" />
+    <add key="HighPriorityMessageExpirationTimeout" value="8:00:00" />
+    <add key="NormalPriorityMessageExpirationTimeout" value="2.00:00:00" />
+    <add key="LowPriorityMessageExpirationTimeout" value="2.00:00:00" />
+    <add key="HighPriorityDelayNotificationTimeout" value="00:30:00" />
+    <add key="NormalPriorityDelayNotificationTimeout" value="4:00:00" />
+    <add key="LowPriorityDelayNotificationTimeout" value="8:00:00" />
+    <add key="MaxHighPriorityMessageSize" value="250KB" />
+    ```
     
     メールボックス サーバーの Microsoft Exchange Transport サービスで優先度キューを有効にするには、次の値を使用します。
     
-        <add key="PriorityQueuingEnabled" value="true" />
+    ```command line
+    <add key="PriorityQueuingEnabled" value="true" />
+    ```
     
     残りの優先度キューの値を構成するか、既定値のままにしておきます。
 
@@ -69,7 +75,9 @@ _**トピックの最終更新日:** 2014-12-16_
 
 4.  次のコマンドを実行して、Microsoft Exchange Transport サービスを再起動します。
     
-        net stop MSExchangeTransport && net start MSExchangeTransport
+    ```powershell
+    net stop MSExchangeTransport && net start MSExchangeTransport
+    ```
 
 ## 正常な動作を確認する方法
 

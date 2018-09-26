@@ -137,7 +137,9 @@ EAC を使用して Outlook Web App 仮想ディレクトリのプロパティ�
 
 この例では、サーバー Contoso 上の既定の Outlook Web App 仮想ディレクトリで基本認証を有効にします。
 
+```powershell
     set-OwaVirtualDirectory -Identity "Contoso\owa (default web site)" -FormsAuthentication $true
+```
 
 構文およびパラメーターの詳細については、「[Set-OwaVirtualDirectory](https://technet.microsoft.com/ja-jp/library/bb123515\(v=exchg.150\))」を参照してください。
 
@@ -145,19 +147,27 @@ EAC を使用して Outlook Web App 仮想ディレクトリのプロパティ�
 
 この例では、Exchange 組織内でインストールされているクライアント アクセス サーバーの役割を持つすべてのコンピューター上のすべてのインターネット インフォメーション サービス (IIS) Web サイトにあるすべての Outlook Web App 仮想ディレクトリのプロパティを表示します。
 
-    Get-OWAVirtualDirectory
+```powershell
+Get-OWAVirtualDirectory
+```
 
 この例では、ローカル Exchange サーバー上の既定 IIS Web サイトにある Outlook Web App 仮想ディレクトリのプロパティを表示します。
 
+```powershell
     Get-OWAVirtualDirectory -identity "<Exchange Server Name>\owa (default web site)"
+```
 
 この例では、特定の Exchange サーバー上の IIS Web サイトにあるすべての Outlook Web App 仮想ディレクトリのプロパティを表示します。
 
-    Get-OWAVirtualDirectory -server <Exchange Server Name>
+```powershell
+Get-OWAVirtualDirectory -server <Exchange Server Name>
+```
 
 この例では、Exchange 組織内ですべてのクライアント アクセス サーバーにあるすべての IIS Web サイトの各 Outlook Web App 仮想ディレクトリに対するプロパティ値を表示します。
 
-    Get-OWAVirtualDirectory | format-list
+```powershell
+Get-OWAVirtualDirectory | format-list
+```
 
 構文およびパラメーターの詳細については、「[Get-OwaVirtualDirectory](https://technet.microsoft.com/ja-jp/library/aa998588\(v=exchg.150\))」を参照してください。
 

@@ -65,11 +65,15 @@ POP3 および IMAP4 に関連する詳細情報については、「[Exchange S
 
 この例では、ユーザー John Smith に対して POP3 を有効にします。
 
-    Set-CASMailbox -Identity "John Smith" -POPEnabled $true
+```powershell
+Set-CASMailbox -Identity "John Smith" -POPEnabled $true
+```
 
 この例では、ユーザー John Smith に対して POP3 を無効にします。
 
-    Set-CASMailbox -Identity "John Smith" -POPEnabled $false
+```powershell
+Set-CASMailbox -Identity "John Smith" -POPEnabled $false
+```
 
 ## 正常な動作を確認する方法
 

@@ -41,11 +41,15 @@ Microsoft Exchange Server 2013 では、Exchange 組織内の受信者または�
 
 この例では、*VoicemailJournalingEnabled* パラメーターを `$false` に設定することによって、ボイス メールおよび不在着信通知のジャーナリングを無効にします。
 
-    Set-TransportConfig -VoicemailJournalingEnabled $false
+```powershell
+Set-TransportConfig -VoicemailJournalingEnabled $false
+```
 
 この例では、同じパラメーターを `$true` に設定することによって、ボイス メールおよび不在着信通知のジャーナリングを有効にします。
 
-    Set-TransportConfig -VoicemailJournalingEnabled $true
+```powershell
+Set-TransportConfig -VoicemailJournalingEnabled $true
+```
 
 構文とパラメーターの詳細については、「[Set-TransportConfig](https://technet.microsoft.com/ja-jp/library/bb124151\(v=exchg.150\))」を参照してください。
 

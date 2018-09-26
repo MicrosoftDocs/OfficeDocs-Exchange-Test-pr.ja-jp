@@ -97,16 +97,22 @@ _**トピックの最終更新日:** 2012-10-08_
 
 1.  以下の構文を使用して、変数にコピーする役割グループを格納します。
     
-        $RoleGroup = Get-RoleGroup <name of role group to copy>
+    ```powershell
+    $RoleGroup = Get-RoleGroup <name of role group to copy>
+    ```
 
 2.  以下の構文を使用して、新しい役割グループを作成し、役割グループにメンバーを追加し、新しい役割グループを他のユーザーに委任できる人を指定します。
     
-        New-RoleGroup <name of new role group> -Roles $RoleGroup.Roles -Members <member1, member2, member3...> -ManagedBy <user1, user2, user3...>
+    ```powershell
+    New-RoleGroup <name of new role group> -Roles $RoleGroup.Roles -Members <member1, member2, member3...> -ManagedBy <user1, user2, user3...>
+    ```
 
 たとえば、次のコマンドは、"Organization Management/組織管理" 役割グループをコピーし、新しい役割グループに "Limited Organization Management" という名前を付けます。メンバーに Isabelle、Carter、Lukas を追加します。Jenny と Katie によって委任できるようになります。
 
-    $RoleGroup = Get-RoleGroup "Organization Management"
-    New-RoleGroup "Limited Organization Management" -Roles $RoleGroup.Roles -Members Isabelle, Carter, Lukas -ManagedBy Jenny, Katie
+```powershell
+$RoleGroup = Get-RoleGroup "Organization Management"
+New-RoleGroup "Limited Organization Management" -Roles $RoleGroup.Roles -Members Isabelle, Carter, Lukas -ManagedBy Jenny, Katie
+```
 
 新しい役割グループを作成すると、役割の追加または削除や、役割に対する役割割り当てのスコープの変更などが可能になります。
 
@@ -116,16 +122,22 @@ _**トピックの最終更新日:** 2012-10-08_
 
 1.  以下の構文を使用して、変数にコピーする役割グループを格納します。
     
-        $RoleGroup = Get-RoleGroup <name of role group to copy>
+    ```powershell
+    $RoleGroup = Get-RoleGroup <name of role group to copy>
+    ```
 
 2.  以下の構文を使用して、カスタムのスコープを持つ新しい役割グループを作成します。
     
-        New-RoleGroup <name of new role group> -Roles $RoleGroup.Roles -CustomRecipientWriteScope <recipient scope name> -CustomConfigWriteScope <configuraiton scope name>
+    ```powershell
+    New-RoleGroup <name of new role group> -Roles $RoleGroup.Roles -CustomRecipientWriteScope <recipient scope name> -CustomConfigWriteScope <configuraiton scope name>
+    ```
 
 たとえば、次のコマンドは、"Organization Management/組織管理" 役割グループをコピーして、"Vancouver Users" 受信者の範囲と "Vancouver Servers" 構成の範囲を持つ "Vancouver Organization Management" という名前の新しい役割グループを作成します。
 
-    $RoleGroup = Get-RoleGroup "Organization Management"
-    New-RoleGroup "Vancouver Organization Management" -Roles $RoleGroup.Roles -CustomRecipientWriteScope "Vancouver Users" -CustomConfigWriteScope "Vancouver Servers"
+```powershell
+$RoleGroup = Get-RoleGroup "Organization Management"
+New-RoleGroup "Vancouver Organization Management" -Roles $RoleGroup.Roles -CustomRecipientWriteScope "Vancouver Users" -CustomConfigWriteScope "Vancouver Servers"
+```
 
 このトピックの「シェルを使用してスコープを持たない役割グループをコピーする」で説明した *Members* パラメーターを使用して、役割グループを作成するときにメンバーを役割グループに追加することもできます。管理のスコープの詳細については、「[管理役割スコープについて](understanding-management-role-scopes-exchange-2013-help.md)」を参照してください。
 
@@ -137,16 +149,22 @@ _**トピックの最終更新日:** 2012-10-08_
 
 1.  以下の構文を使用して、変数にコピーする役割グループを格納します。
     
-        $RoleGroup = Get-RoleGroup <name of role group to copy>
+    ```powershell
+    $RoleGroup = Get-RoleGroup <name of role group to copy>
+    ```
 
 2.  以下の構文を使用して、カスタムのスコープを持つ新しい役割グループを作成します。
     
-        New-RoleGroup <name of new role group> -Roles $RoleGroup.Roles -RecipientOrganizationalUnitScope <OU name>
+    ```powershell
+    New-RoleGroup <name of new role group> -Roles $RoleGroup.Roles -RecipientOrganizationalUnitScope <OU name>
+    ```
 
 たとえば、次のコマンドは、"Recipient Management/受信者管理" 役割グループをコピーして、Toronto Users OU のユーザーのみに管理を許可する "Toronto Recipient Management" という名前の新しい役割グループを作成します。
 
-    $RoleGroup = Get-RoleGroup "Recipient Management"
-    New-RoleGroup "Toronto Recipient Management" -Roles $RoleGroup.Roles -RecipientOrganizationalUnitScope "contoso.com/Toronto Users"
+```powershell
+$RoleGroup = Get-RoleGroup "Recipient Management"
+New-RoleGroup "Toronto Recipient Management" -Roles $RoleGroup.Roles -RecipientOrganizationalUnitScope "contoso.com/Toronto Users"
+```
 
 このトピックの「シェルを使用してスコープを持たない役割グループをコピーする」で説明した *Members* パラメーターを使用して、役割グループを作成するときにメンバーを役割グループに追加することもできます。管理のスコープの詳細については、「[管理役割スコープについて](understanding-management-role-scopes-exchange-2013-help.md)」を参照してください。
 
@@ -220,11 +238,15 @@ _**トピックの最終更新日:** 2012-10-08_
 
 次の構文を使用して、役割グループにスコープを持たない役割を割り当てます。指定しない場合、役割割り当ての名前は自動的に作成されます。
 
-    New-ManagementRoleAssignment -SecurityGroup <role group name> -Role <role name>
+```powershell
+New-ManagementRoleAssignment -SecurityGroup <role group name> -Role <role name>
+```
 
 この例では、"Seattle Compliance/Seattle 規制順守" という役割グループに対し、トランスポート ルールの管理役割を割り当てています。
 
-    New-ManagementRoleAssignment -SecurityGroup "Seattle Compliance" -Role "Transport Rules"
+```powershell
+New-ManagementRoleAssignment -SecurityGroup "Seattle Compliance" -Role "Transport Rules"
+```
 
 構文およびパラメーターの詳細については、「[New-ManagementRoleAssignment](https://technet.microsoft.com/ja-jp/library/dd335193\(v=exchg.150\))」を参照してください。
 
@@ -236,11 +258,15 @@ _**トピックの最終更新日:** 2012-10-08_
 
 次の構文を使用して、定義済みスコープを持つ役割グループに役割を割り当てます。指定しない場合、役割割り当ての名前は自動的に作成されます。
 
-    New-ManagementRoleAssignment -SecurityGroup <role group name> -Role <role name> -RecipientRelativeWriteScope < MyGAL | MyDistributionGroups | Organization | Self >
+```powershell
+New-ManagementRoleAssignment -SecurityGroup <role group name> -Role <role name> -RecipientRelativeWriteScope < MyGAL | MyDistributionGroups | Organization | Self >
+```
 
 この例では、"Enterprise Support/エンタープライズ サポート" という役割グループにメッセージ追跡の役割を割り当て、これを "Organization/組織" という定義済みスコープに適用しています。
 
-    New-ManagementRoleAssignment -SecurityGroup "Enterprise Support" -Role "Message Tracking" -RecipientRelativeWriteScope Organization
+```powershell
+New-ManagementRoleAssignment -SecurityGroup "Enterprise Support" -Role "Message Tracking" -RecipientRelativeWriteScope Organization
+```
 
 構文およびパラメーターの詳細については、「[New-ManagementRoleAssignment](https://technet.microsoft.com/ja-jp/library/dd335193\(v=exchg.150\))」を参照してください。
 
@@ -258,11 +284,15 @@ _**トピックの最終更新日:** 2012-10-08_
 
 次の構文を使用して、受信者フィルター ベースのスコープを持つ役割グループに役割を割り当てます。指定しない場合、役割割り当ての名前は自動的に作成されます。
 
-    New-ManagementRoleAssignment -SecurityGroup <role group name> -Role <role name> -CustomRecipientWriteScope <role scope name>
+```powershell
+New-ManagementRoleAssignment -SecurityGroup <role group name> -Role <role name> -CustomRecipientWriteScope <role scope name>
+```
 
 この例では、"Seattle Recipient Admins/Seattle の受信者管理者" という役割グループにメッセージ追跡の役割を割り当て、これを "Seattle Recipients/Seattle の受信者" というスコープに適用しています。
 
-    New-ManagementRoleAssignment -SecurityGroup "Seattle Recipient Admins" -Role "Message Tracking" -CustomRecipientWriteScope "Seattle Recipients"
+```powershell
+New-ManagementRoleAssignment -SecurityGroup "Seattle Recipient Admins" -Role "Message Tracking" -CustomRecipientWriteScope "Seattle Recipients"
+```
 
 構文およびパラメーターの詳細については、「[New-ManagementRoleAssignment](https://technet.microsoft.com/ja-jp/library/dd335193\(v=exchg.150\))」を参照してください。
 
@@ -280,11 +310,15 @@ _**トピックの最終更新日:** 2012-10-08_
 
 次の構文を使用して、構成スコープを持つ役割グループに役割を割り当てます。指定しない場合、役割割り当ての名前は自動的に作成されます。
 
-    New-ManagementRoleAssignment -SecurityGroup <role group name> -Role <role name> -CustomConfigWriteScope <role scope name>
+```powershell
+New-ManagementRoleAssignment -SecurityGroup <role group name> -Role <role name> -CustomConfigWriteScope <role scope name>
+```
 
 この例では、"Seattle Server Admins/Seattle のサーバー管理者" という役割グループにデータベースの役割を割り当て、これを "Seattle Servers/Seattle のサーバー" というスコープに適用しています。
 
-    New-ManagementRoleAssignment -SecurityGroup "Seattle Server Admins" -Role "Databases" -CustomConfigWriteScope "Seattle Servers"
+```powershell
+New-ManagementRoleAssignment -SecurityGroup "Seattle Server Admins" -Role "Databases" -CustomConfigWriteScope "Seattle Servers"
+```
 
 構文およびパラメーターの詳細については、「[New-ManagementRoleAssignment](https://technet.microsoft.com/ja-jp/library/dd335193\(v=exchg.150\))」を参照してください。
 
@@ -300,11 +334,15 @@ OU に対して役割の書き込みスコープをスコープする場合、*R
 
 次のコマンドを使用して役割を役割グループに割り当て、役割の書き込みスコープを特定の OU に限定できます。指定しない場合、役割割り当ての名前は自動的に作成されます。
 
-    New-ManagementRoleAssignment -SecurityGroup <role group name> -Role <role name> -RecipientOrganizationalUnitScope <OU>
+```powershell
+New-ManagementRoleAssignment -SecurityGroup <role group name> -Role <role name> -RecipientOrganizationalUnitScope <OU>
+```
 
 この例では、メール受信者の役割を "Seattle Recipient Admins/Seattle の受信者管理者" という役割グループに割り当て、割り当てのスコープを "Contoso.com" ドメインの "Sales\\Users" という OU に指定しています。
 
-    New-ManagementRoleAssignment -SecurityGroup "Seattle Recipient Admins" -Role "Mail Recipients" -RecipientOrganizationalUnitScope contoso.com/sales/users
+```powershell
+New-ManagementRoleAssignment -SecurityGroup "Seattle Recipient Admins" -Role "Mail Recipients" -RecipientOrganizationalUnitScope contoso.com/sales/users
+```
 
 構文およびパラメーターの詳細については、「[New-ManagementRoleAssignment](https://technet.microsoft.com/ja-jp/library/dd335193\(v=exchg.150\))」を参照してください。
 
@@ -352,11 +390,15 @@ OU に対して役割の書き込みスコープをスコープする場合、*R
 
 役割グループから役割を削除するには、次の構文を使用します。
 
-    Get-ManagementRoleAssignment -RoleAssignee <role group name> -Role <role name> -Delegating <$true | $false> | Remove-ManagementRoleAssignment
+```powershell
+Get-ManagementRoleAssignment -RoleAssignee <role group name> -Role <role name> -Delegating <$true | $false> | Remove-ManagementRoleAssignment
+```
 
 この例では、"Seattle Recipient Administrators/Seattle の受信者管理者" 役割グループから、管理者が配布グループを管理できる "Distribution Groups/配布グループ" 役割を削除します。配布グループを管理するためのアクセス許可を付与する役割割り当てを削除するので、正規の役割割り当てのみが返されるよう、*Delegating* パラメーターを `$False` に設定します。
 
-    Get-ManagementRoleAssignment -RoleAssignee "Seattle Recipient Administrators" -Role "Distribution Groups" -Delegating $false | Remove-ManagementRoleAssignment
+```powershell
+Get-ManagementRoleAssignment -RoleAssignee "Seattle Recipient Administrators" -Role "Distribution Groups" -Delegating $false | Remove-ManagementRoleAssignment
+```
 
 構文およびパラメーターの詳細については、「[Remove-ManagementRoleAssignment](https://technet.microsoft.com/ja-jp/library/dd351205\(v=exchg.150\))」を参照してください。
 
@@ -418,11 +460,15 @@ EAC を使用して役割グループのスコープを変更する場合、実�
 
 シェルを使用して、ある役割グループに属するすべての役割の割り当て範囲を一括して変更するには、次の構文を使用します。
 
-    Get-ManagementRoleAssignment -RoleAssignee <name of role group> | Set-ManagementRoleAssignment -CustomRecipientWriteScope <recipient scope name> -CustomConfigWriteScope <configuration scope name> -RecipientRelativeScopeWriteScope < MyDistributionGroups | Organization | Self> -ExclusiveRecipientWriteScope <exclusive recipient scope name> -ExclusiveConfigWriteScope <exclusive configuration scope name> -RecipientOrganizationalUnitScope <organizational unit>
+```powershell
+Get-ManagementRoleAssignment -RoleAssignee <name of role group> | Set-ManagementRoleAssignment -CustomRecipientWriteScope <recipient scope name> -CustomConfigWriteScope <configuration scope name> -RecipientRelativeScopeWriteScope < MyDistributionGroups | Organization | Self> -ExclusiveRecipientWriteScope <exclusive recipient scope name> -ExclusiveConfigWriteScope <exclusive configuration scope name> -RecipientOrganizationalUnitScope <organizational unit>
+```
 
 使用するスコープの構成に必要なパラメーターのみを使用します。たとえば、"Sales Recipient Management/営業受信者の管理" 役割グループに属するすべての役割の割り当ての受信者の範囲を "Direct Sales Employees/直販従業員" に変更する場合は、次のコマンドを使用します。
 
-    Get-ManagementRoleAssignment -RoleAssignee "Sales Recipient Management" | Set-ManagementRoleAssignment -CustomRecipientWriteScope "Direct Sales Employees"
+```powershell
+Get-ManagementRoleAssignment -RoleAssignee "Sales Recipient Management" | Set-ManagementRoleAssignment -CustomRecipientWriteScope "Direct Sales Employees"
+```
 
 
 > [!NOTE]
@@ -450,17 +496,23 @@ EAC を使用して役割グループのスコープを変更する場合、実�
 
 1.  ある役割グループに属するすべての役割の割り当ての名前を検索するには、次のコマンドを使用します。管理役割の割り当てを **Format-List** コマンドレットにパイプ処理すると、その割り当てのフル ネームを表示することができます。
     
-        Get-ManagementRoleAssignment -RoleAssignee <role group name> | Format-List Name
+    ```powershell
+    Get-ManagementRoleAssignment -RoleAssignee <role group name> | Format-List Name
+    ```
 
 2.  変更する役割の割り当ての名前を検索します。役割割り当ての名前は、次の手順で使用します。
 
 3.  割り当て範囲を個別に設定するには、次の構文を使用します。
     
-        Set-ManagementRoleAssignment <role assignment name> -CustomRecipientWriteScope <recipient scope name> -CustomConfigWriteScope <configuration scope name> -RecipientRelativeScopeWriteScope < MyDistributionGroups | Organization | Self> -ExclusiveRecipientWriteScope <exclusive recipient scope name> -ExclusiveConfigWriteScope <exclusive configuration scope name> -RecipientOrganizationalUnitScope <organizational unit>
+    ```powershell
+    Set-ManagementRoleAssignment <role assignment name> -CustomRecipientWriteScope <recipient scope name> -CustomConfigWriteScope <configuration scope name> -RecipientRelativeScopeWriteScope < MyDistributionGroups | Organization | Self> -ExclusiveRecipientWriteScope <exclusive recipient scope name> -ExclusiveConfigWriteScope <exclusive configuration scope name> -RecipientOrganizationalUnitScope <organizational unit>
+    ```
 
 使用するスコープの構成に必要なパラメーターのみを使用します。たとえば、"Mail Recipients\_Sales Recipient Management/メール受信者\_営業受信者管理" 役割の割り当ての受信者の範囲を "All Sales Employees/すべての営業従業員" に変更する場合は、次のコマンドを使用します。
 
-    Set-ManagementRoleAssignment "Mail Recipients_Sales Recipient Management" -CustomRecipientWriteScope "All Sales Employees"
+```powershell
+Set-ManagementRoleAssignment "Mail Recipients_Sales Recipient Management" -CustomRecipientWriteScope "All Sales Employees"
+```
 
 管理役割の割り当ての変更の詳細については、「[役割の割り当てを変更する](change-a-role-assignment-exchange-2013-help.md)」を参照してください。
 
@@ -480,8 +532,10 @@ EAC を使用して役割グループのスコープを変更する場合、実�
     
     1.  シェルで、次のコマンドを実行します。
         
-            Get-ManagementRoleAssignment -RoleAssignee <role group name> | Format-Table *WriteScope
-    
+        ```powershell
+        Get-ManagementRoleAssignment -RoleAssignee <role group name> | Format-Table *WriteScope
+        ```
+
     2.  役割割り当ての書き込みスコープが、指定のスコープに変更されたことを確認します。
 
 ## 役割グループの委任を追加または削除する
@@ -506,11 +560,15 @@ EAC を使用して役割グループのスコープを変更する場合、実�
 
 1.  以下のコマンドを使用して、変数に役割グループを格納します。
     
-        $RoleGroup = Get-RoleGroup <role group name>
+    ```powershell
+    $RoleGroup = Get-RoleGroup <role group name>
+    ```
 
 2.  次のコマンドを使用して、変数に格納されている役割グループに代理人を追加します。
     
-        $RoleGroup.ManagedBy += (Get-User <user to add>).Identity
+    ```powershell
+    $RoleGroup.ManagedBy += (Get-User <user to add>).Identity
+    ```
     
 
     > [!NOTE]
@@ -522,13 +580,17 @@ EAC を使用して役割グループのスコープを変更する場合、実�
 
 4.  以下のコマンドを使用して、実際の役割グループに対し委任の新しい一覧を適用します。
     
-        Set-RoleGroup <role group name> -ManagedBy $RoleGroup.ManagedBy
+    ```powershell
+    Set-RoleGroup <role group name> -ManagedBy $RoleGroup.ManagedBy
+    ```
 
 この例では、ユーザー David Strome を 組織の管理 役割グループの代理人として追加します。
 
-    $RoleGroup = Get-RoleGroup "Organization Management"
-    $RoleGroup.ManagedBy += (Get-User "David Strome").Identity
-    Set-RoleGroup "Organization Management" -ManagedBy $RoleGroup.ManagedBy
+```powershell
+$RoleGroup = Get-RoleGroup "Organization Management"
+$RoleGroup.ManagedBy += (Get-User "David Strome").Identity
+Set-RoleGroup "Organization Management" -ManagedBy $RoleGroup.ManagedBy
+```
 
 構文およびパラメーターの詳細については、「[Set-RoleGroup](https://technet.microsoft.com/ja-jp/library/dd638182\(v=exchg.150\))」を参照してください。
 
@@ -538,11 +600,15 @@ EAC を使用して役割グループのスコープを変更する場合、実�
 
 1.  以下のコマンドを使用して、変数に役割グループを格納します。
     
-        $RoleGroup = Get-RoleGroup <role group name>
+    ```powershell
+    $RoleGroup = Get-RoleGroup <role group name>
+    ```
 
 2.  次のコマンドを使用して、変数に格納されている役割グループから代理人を削除します。
     
-        $RoleGroup.ManagedBy -= (Get-User <user to remove>).Identity
+    ```powershell
+    $RoleGroup.ManagedBy -= (Get-User <user to remove>).Identity
+    ```
     
 
     > [!NOTE]
@@ -554,13 +620,17 @@ EAC を使用して役割グループのスコープを変更する場合、実�
 
 4.  以下のコマンドを使用して、実際の役割グループに対し委任の新しい一覧を適用します。
     
-        Set-RoleGroup <role group name> -ManagedBy $RoleGroup.ManagedBy
+    ```powershell
+    Set-RoleGroup <role group name> -ManagedBy $RoleGroup.ManagedBy
+    ```
 
 この例では、ユーザー David Strome を 組織の管理 役割グループの代理人として削除します。
 
-    $RoleGroup = Get-RoleGroup "Organization Management"
-    $RoleGroup.ManagedBy -= (Get-User "David Strome").Identity
-    Set-RoleGroup "Organization Management" -ManagedBy $RoleGroup.ManagedBy
+```powershell
+$RoleGroup = Get-RoleGroup "Organization Management"
+$RoleGroup.ManagedBy -= (Get-User "David Strome").Identity
+Set-RoleGroup "Organization Management" -ManagedBy $RoleGroup.ManagedBy
+```
 
 構文およびパラメーターの詳細については、「[Set-RoleGroup](https://technet.microsoft.com/ja-jp/library/dd638182\(v=exchg.150\))」を参照してください。
 
@@ -570,7 +640,9 @@ EAC を使用して役割グループのスコープを変更する場合、実�
 
 1.  シェルで、次のコマンドを実行します。
     
-        Get-RoleGroup <role group name> | Format-List ManagedBy
+    ```powershell
+    Get-RoleGroup <role group name> | Format-List ManagedBy
+    ```
 
 2.  *ManagedBy* プロパティに一覧表示された代理人には、役割グループの管理を行うべき代理人だけが含まれることを確認します。
 

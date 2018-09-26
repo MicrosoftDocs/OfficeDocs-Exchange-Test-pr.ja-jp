@@ -32,8 +32,10 @@ _**トピックの最終更新日:** 2017-02-28_
   - このトピックの手順では Exchange 管理シェル を使います。オンプレミスの Exchange 組織で Exchange 管理シェル を開く方法については、「[シェルを開く](https://technet.microsoft.com/ja-jp/library/dd638134\(v=exchg.150\))」を参照してください。
 
   - 既存のフェデレーション証明書の有効期限が切れているかどうかを確かめるには、Exchange 管理シェル で次のコマンドを実行します。
-    
-        Get-ExchangeCertificate -Thumbprint (Get-FederationTrust).OrgCertificate.Thumbprint | Format-Table -Auto Thumbprint,NotAfter
+
+```powershell
+    Get-ExchangeCertificate -Thumbprint (Get-FederationTrust).OrgCertificate.Thumbprint | Format-Table -Auto Thumbprint,NotAfter
+```
 
   - このトピックの手順で使用可能なキーボード ショートカットについては、「[Exchange 管理センターのキーボード ショートカット](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)」を参照してください。
 
@@ -51,7 +53,9 @@ _**トピックの最終更新日:** 2017-02-28_
 
 Exchange 管理シェル で次のコマンドを実行して、新しいフェデレーション証明書を作成します。
 
-    $SKI = [System.Guid]::NewGuid().ToString("N"); New-ExchangeCertificate -DomainName 'Federation' -FriendlyName "Exchange Delegation Federation" -Services Federation -SubjectKeyIdentifier $SKI -PrivateKeyExportable $true
+```powershell
+$SKI = [System.Guid]::NewGuid().ToString("N"); New-ExchangeCertificate -DomainName 'Federation' -FriendlyName "Exchange Delegation Federation" -Services Federation -SubjectKeyIdentifier $SKI -PrivateKeyExportable $true
+```
 
 構文およびパラメーターの詳細については、「[New-ExchangeCertificate](https://technet.microsoft.com/ja-jp/library/aa998327\(v=exchg.150\))」を参照してください。
 
@@ -67,11 +71,15 @@ Exchange 管理シェル で次のコマンドを実行して、新しいフェ�
 
 Exchange 管理シェル を使って、新しい証明書をフェデレーション証明書として構成するには、次の構文を使用します。
 
-    Set-FederationTrust -Identity "Microsoft Federation Gateway" -Thumbprint <Thumbprint> -RefreshMetaData
+```powershell
+Set-FederationTrust -Identity "Microsoft Federation Gateway" -Thumbprint <Thumbprint> -RefreshMetaData
+```
 
 この例では、手順 1 の証明書の拇印値 `6A99CED2E4F2B5BE96C5D17D662D217EF58B8F73` を使用します。
 
-    Set-FederationTrust -Identity "Microsoft Federation Gateway" -Thumbprint 6A99CED2E4F2B5BE96C5D17D662D217EF58B8F73 -RefreshMetaData
+```powershell
+Set-FederationTrust -Identity "Microsoft Federation Gateway" -Thumbprint 6A99CED2E4F2B5BE96C5D17D662D217EF58B8F73 -RefreshMetaData
+```
 
 構文およびパラメーターの詳細については、「[Set-FederationTrust](https://technet.microsoft.com/ja-jp/library/dd298034\(v=exchg.150\))」を参照してください。
 
@@ -83,11 +91,15 @@ Exchange 管理シェル を使って、新しい証明書をフェデレーシ�
 
 1.  Exchange 管理シェル で次のコマンドを実行して、必要な TXT レコードに必要な値を調べます。
     
-        Get-FederatedDomainProof -DomainName <Domain> | Format-List Thumbprint,Proof
+    ```powershell
+    Get-FederatedDomainProof -DomainName <Domain> | Format-List Thumbprint,Proof
+    ```
     
     たとえば、フェデレーション ドメインが contoso.edu であれば次のコマンドを実行します。
     
-        Get-FederatedDomainProof -DomainName contoso.com | Format-List Thumbprint,Proof
+    ```powershell
+    Get-FederatedDomainProof -DomainName contoso.com | Format-List Thumbprint,Proof
+    ```
     
     コマンド出力は次のようになります。
     
@@ -109,7 +121,9 @@ Exchange は新しいフェデレーション証明書を自動的にすべて�
 
 Exchange 管理シェル を使って、新しいフェデレーション証明書の配布を確認するために、次のコマンドを実行します。
 
-    $Servers = Get-ExchangeServer; $Servers | foreach {Get-ExchangeCertificate -Server $_ | Where {$_.Services -match 'Federation'}} | Format-List Identity,Thumbprint,Services,Subject
+```powershell
+$Servers = Get-ExchangeServer; $Servers | foreach {Get-ExchangeCertificate -Server $_ | Where {$_.Services -match 'Federation'}} | Format-List Identity,Thumbprint,Services,Subject
+```
 
 **メモ**:Exchange 2010 では **Test-FederationCertificate** コマンドレット出力に、サーバー名が含まれます。Exchange 2013 以降でのこのコマンドレット出力には、サーバー名は含まれません。
 
@@ -117,7 +131,9 @@ Exchange 管理シェル を使って、新しいフェデレーション証明�
 
 Exchange 管理シェル で新しいフェデレーション証明書をアクティブ化するために次のコマンドを実行します。
 
-    Set-FederationTrust -Identity "Microsoft Federation Gateway" -PublishFederationCertificate
+```powershell
+Set-FederationTrust -Identity "Microsoft Federation Gateway" -PublishFederationCertificate
+```
 
 構文およびパラメーターの詳細については、「[Set-FederationTrust](https://technet.microsoft.com/ja-jp/library/dd298034\(v=exchg.150\))」を参照してください。
 
@@ -129,7 +145,9 @@ Exchange 管理シェル で新しいフェデレーション証明書をアク�
 
   - Exchange 管理シェル で、次のコマンドを実行して、新しい証明書が使用されていることを確認します。
     
-        Get-FederationTrust | Format-List *priv*
+    ```powershell
+    Get-FederationTrust | Format-List *priv*
+    ```
     
       - **OrgPrivCertificate** プロパティには、新しいフェデレーション証明書の拇印を含める必要があります。
     
@@ -137,7 +155,9 @@ Exchange 管理シェル で新しいフェデレーション証明書をアク�
 
   - Exchange 管理シェル で、*\<user's email address\>* を組織のユーザーの電子メールアドレスに置き換え、次のコマンドを実行して、フェデレーション信頼が機能していることを確認します。
     
-        Test-FederationTrust -UserIdentity <user's email address>
+    ```powershell
+    Test-FederationTrust -UserIdentity <user's email address>
+    ```
 
 ## 有効期限切れのフェデレーション証明書の置き換え
 
@@ -145,21 +165,29 @@ Exchange 管理シェル で新しいフェデレーション証明書をアク�
 
 1.  複数のフェデレーション ドメインを使っている場合は、プライマリ共有ドメインを識別しておいて、このドメインは最後に削除する必要があります。Exchange 管理シェル を使ってプライマリ共有ドメインとすべてのフェデレーション ドメインを識別するには、次のコマンドを実行します。
     
-        Get-FederatedOrganizationIdentifier | Format-List AccountNamespace,Domains
+    ```powershell
+    Get-FederatedOrganizationIdentifier | Format-List AccountNamespace,Domains
+    ```
     
     **AccountNamespace** プロパティの値には、`FYDIBOHF25SPDLT<primary shared domain>` 形式のプライマリ共有ドメインが含まれます。たとえば、値 `FYDIBOHF25SPDLT.contoso.com` では contoso.com がプライマリ共有ドメインです。
 
 2.  Exchange 管理シェル で次のコマンドを実行して、プライマリ共有ドメインではない各フェデレーション ドメインを削除します。
     
-        Remove-FederatedDomain -DomainName <domain> -Force
+    ```powershell
+    Remove-FederatedDomain -DomainName <domain> -Force
+    ```
 
 3.  プライマリ共有ドメイン以外のすべてのフェデレーション ドメインを削除した後で、Exchange 管理シェル で次のコマンドを実行してプライマリ共有ドメインを削除します。
     
-        Remove-FederatedDomain -DomainName <domain> -Force
+    ```powershell
+    Remove-FederatedDomain -DomainName <domain> -Force
+    ```
 
 4.  Exchange 管理シェル で次のコマンドを実行してフェデレーション信頼を削除します。
     
-        Remove-FederationTrust "Microsoft Federation Gateway"
+    ```powershell
+    Remove-FederationTrust "Microsoft Federation Gateway"
+    ```
 
 5.  フェデレーション信頼の再作成手順については、「[フェデレーションの信頼の作成](https://technet.microsoft.com/ja-jp/library/dd335198\(v=exchg.150\))」を参照ください。
 

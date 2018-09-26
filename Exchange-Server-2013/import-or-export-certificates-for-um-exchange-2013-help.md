@@ -67,7 +67,9 @@ Exchange 用の証明書のインポートは、以下の場合に便利なこ�
 
 この例では、ユーザー名とパスワードを求めるプロンプトが表示された後、拇印が Thumbprint A36DE2B9B62980A717EBD0C3052F5F0B08FBFFCC の証明書をファイルにエクスポートします。
 
+```powershell
     $file = Export-ExchangeCertificate -Thumbprint A36DE2B9B62980A717EBD0C3052F5F0B08FBFFCC -BinaryEncoded:$true -Password (Get-Credential).password
+```
 
 この例では、次のことが行われます。
 
@@ -78,10 +80,10 @@ Exchange 用の証明書のインポートは、以下の場合に便利なこ�
 3.  ユーザー名とパスワードを入力した後、証明書をファイルへ出力する。
 
 <!-- end list -->
-  ```
+  ```powershell
   $file = Get-ExchangeCertificate -DomainName umcorp.northwindtraders.com | Export-ExchangeCertificate -BinaryEncoded:$true -Password (Get-Credential).password
   ```
-  ```
+  ```powershell
   Set-Content -Path "d:\umcerts\selfsigned.pfx" -Value $file.FileData =Encoding Byte
   ```
 
@@ -97,5 +99,6 @@ Exchange 用の証明書のインポートは、以下の場合に便利なこ�
 
 この例では、ユーザー名とパスワードを入力した後、d:\\certificates\\exchange\\SelfSignedUMCert.pfx 証明書ファイルから証明書をインポートします。
 
+```powershell
     Import-ExchangeCertificate -FileData ([Byte[]]$(Get-Content -Path d:\certificates\exchange\SelfSignedUMCert.pfx -Encoding Byte -ReadCount 0)) -Password:(Get-Credential).password
-
+```

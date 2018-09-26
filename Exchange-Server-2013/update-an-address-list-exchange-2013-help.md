@@ -53,11 +53,15 @@ _**トピックの最終更新日:** 2012-10-14_
 
 この例では、アドレス一覧 Washington State を更新します。
 
-    Update-AddressList "Washington State"
+```powershell
+Update-AddressList "Washington State"
+```
 
 同じ名前で複数のアドレス一覧が存在する場合、更新するアドレス一覧への完全パスを指定する必要があります。たとえば、North America の下のアドレス一覧 Sales を更新する場合に、Europe の下にも Sales アドレス一覧が存在する場合、次のコマンドを使用します。
 
-    Update-AddressList "North America\Sales"
+```powershell
+Update-AddressList "North America\Sales"
+```
 
 構文およびパラメーターの詳細については、「[Update-AddressList](https://technet.microsoft.com/ja-jp/library/aa997982\(v=exchg.150\))」を参照してください。
 

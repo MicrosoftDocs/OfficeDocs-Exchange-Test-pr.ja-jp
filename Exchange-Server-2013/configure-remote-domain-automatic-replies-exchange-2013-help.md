@@ -41,9 +41,13 @@ Exchange 管理シェルを使用して、リモート ドメイン経由での�
 
 この例では、リモート ドメイン Contoso に対する自動返信を有効にします。既定では、この設定は無効になっています。
 
-    Set-RemoteDomain Contoso -AutoReplyEnabled $true
+```powershell
+Set-RemoteDomain Contoso -AutoReplyEnabled $true
+```
 
 この例では、リモート ドメインへの自動転送を許可します。既定では、この設定は無効になっています。
 
-    Set-RemoteDomain Contoso -AutoForwardEnabled $true
+```powershell
+Set-RemoteDomain Contoso -AutoForwardEnabled $true
+```
 

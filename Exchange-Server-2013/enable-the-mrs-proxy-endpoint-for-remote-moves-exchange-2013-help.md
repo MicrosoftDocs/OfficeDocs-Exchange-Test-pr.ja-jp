@@ -67,11 +67,15 @@ MRS プロキシ エンドポイントを有効にするクライアント ア�
 
 次のコマンドは、クライアント アクセス サーバー EXCH-SRV-01 上の MRS プロキシ エンドポイントを有効にします。
 
-    Set-WebServicesVirtualDirectory -Identity "EXCH-SRV-01\EWS (Default Web Site)" -MRSProxyEnabled $true
+  ```powershell
+  Set-WebServicesVirtualDirectory -Identity "EXCH-SRV-01\EWS (Default Web Site)" -MRSProxyEnabled $true
+  ```
 
 次のコマンドは、Exchange 組織内のすべてのクライアント アクセス サーバー上の MRS プロキシ エンドポイントを有効にします。
 
-    Get-WebServicesVirtualDirectory | Set-WebServicesVirtualDirectory -MRSProxyEnabled $true
+```powershell
+Get-WebServicesVirtualDirectory | Set-WebServicesVirtualDirectory -MRSProxyEnabled $true
+```
 
 
 > [!IMPORTANT]
@@ -93,7 +97,9 @@ MRS プロキシ エンドポイントが正常に有効になったことを確
 
 管理シェルで、次のコマンドを実行します。
 
-    Get-WebServicesVirtualDirectory | FL Identity,MRSProxyEnabled
+```powershell
+Get-WebServicesVirtualDirectory | FL Identity,MRSProxyEnabled
+```
 
 *MRSProxyEnabled* パラメーターが `True` に設定されていることを確認します。
 
@@ -101,10 +107,10 @@ MRS プロキシ エンドポイントが有効に設定されているかどう
 
 次の例では、corp.contoso.com フォレスト内のサーバーとの通信をテストします。
 
-```
+```powershell
 $Credentials = Get-Credential
 ```
-```
+```powershell
 Test-MigrationServerAvailability -ExchangeRemoteMove -Autodiscover -EmailAddress administrator@corp.contoso.com -Credentials $Credentials
 ```
 

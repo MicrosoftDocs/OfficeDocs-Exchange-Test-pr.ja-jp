@@ -59,5 +59,7 @@ EAC またはシェルを使って特定の Exchange サービスに対して、
 
 この例では、ユニファイド メッセージングと UM 呼び出しルーター サービスへ証明書を割り当てます。
 
-    Enable-ExchangeCertificate -Thumbprint 5113ae0233a72fccb75b1d0198628675333d010e -Services 'UM, UMCallRouter'
+  ```powershell
+  Enable-ExchangeCertificate -Thumbprint 5113ae0233a72fccb75b1d0198628675333d010e -Services 'UM, UMCallRouter'
+  ```
 

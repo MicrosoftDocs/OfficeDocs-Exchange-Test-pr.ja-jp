@@ -53,11 +53,15 @@ Microsoft Exchange Server 2013 での管理役割の詳細については、「[
 
 新しい役割を作成するには、次の構文を使用します。
 
-    New-ManagementRole -Parent <existing role to copy> -Name <name of new role>
+```powershell
+New-ManagementRole -Parent <existing role to copy> -Name <name of new role>
+```
 
 この例では、メール受信者の役割およびその管理役割エントリを、"Seattle Mail Recipient/Seattle のメール受信者" という役割にコピーしています。
 
-    New-ManagementRole -Parent "Mail Recipients" -Name "Seattle Mail Recipients"
+```powershell
+New-ManagementRole -Parent "Mail Recipients" -Name "Seattle Mail Recipients"
+```
 
 構文およびパラメーターの詳細については、「[New-ManagementRole](https://technet.microsoft.com/ja-jp/library/dd298073\(v=exchg.150\))」を参照してください。
 

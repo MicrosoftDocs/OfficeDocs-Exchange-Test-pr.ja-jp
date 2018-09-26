@@ -81,11 +81,15 @@ _**トピックの最終更新日:** 2015-04-07_
 
 <!-- end list -->
 
-    New-OrganizationRelationship -Name "Contoso" -DomainNames "contoso.com","northamerica.contoso.com","europe.contoso.com" -FreeBusyAccessEnabled $true -FreeBusyAccessLevel LimitedDetails
+  ```powershell
+  New-OrganizationRelationship -Name "Contoso" -DomainNames "contoso.com","northamerica.contoso.com","europe.contoso.com" -FreeBusyAccessEnabled $true -FreeBusyAccessLevel LimitedDetails
+  ```
 
 この例では、**Get-FederationInformation** コマンドレットで指定したドメイン名を使用して、外部 Exchange 組織 Contoso.com から構成情報の自動検出を試行します。この方法を使用して組織の関係を作成する場合は、**Set-FederatedOrganizationIdentifier** コマンドレットを使用して組織 ID を作成していることを最初に確認する必要があります。
 
-    Get-FederationInformation -DomainName Contoso.com | New-OrganizationRelationship -Name "Contoso" -FreeBusyAccessEnabled $true -FreeBusyAccessLevel -LimitedDetails
+  ```powershell
+  Get-FederationInformation -DomainName Contoso.com | New-OrganizationRelationship -Name "Contoso" -FreeBusyAccessEnabled $true -FreeBusyAccessLevel -LimitedDetails
+  ```
 
 構文およびパラメーターの詳細については、「[Get-FederationInformation](https://technet.microsoft.com/ja-jp/library/dd351221\(v=exchg.150\))」と「[New-OrganizationRelationship](https://technet.microsoft.com/ja-jp/library/ee332357\(v=exchg.150\))」を参照してください。
 
@@ -103,7 +107,9 @@ _**トピックの最終更新日:** 2015-04-07_
 
 <!-- end list -->
 
-    New-OrganizationRelationship -Name "Fourth Coffee" -DomainNames "fourthcoffee.com" -FreeBusyAccessEnabled $true -FreeBusyAccessLevel -AvailabilityOnly -TargetAutodiscoverEpr "https://mail.fourthcoffee.com/autodiscover/autodiscover.svc/wssecurity" -TargetApplicationUri "mail.fourthcoffee.com"
+  ```powershell
+  New-OrganizationRelationship -Name "Fourth Coffee" -DomainNames "fourthcoffee.com" -FreeBusyAccessEnabled $true -FreeBusyAccessLevel -AvailabilityOnly -TargetAutodiscoverEpr "https://mail.fourthcoffee.com/autodiscover/autodiscover.svc/wssecurity" -TargetApplicationUri "mail.fourthcoffee.com"
+  ```
 
 構文およびパラメーターの詳細については、「[New-OrganizationRelationship](https://technet.microsoft.com/ja-jp/library/ee332357\(v=exchg.150\))」を参照してください。
 
@@ -113,7 +119,9 @@ _**トピックの最終更新日:** 2015-04-07_
 
 組織の関係が正常に作成されたことをさらに確認するには、次のシェル コマンドを実行して組織の関係の情報を確認します。
 
-    Get-OrganizationRelationship | format-list
+```powershell
+Get-OrganizationRelationship | format-list
+```
 
 
 > [!TIP]

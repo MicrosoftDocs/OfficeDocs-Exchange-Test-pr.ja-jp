@@ -73,11 +73,15 @@ _**トピックの最終更新日:** 2012-10-12_
 
 この例では、*RecipientFilter* パラメーターを使用してアドレス一覧 MyAddressList を作成し、メールボックス ユーザーであり、`StateOrProvince` が `Washington` または `Oregon` に設定されている受信者を含めます。
 
-    New-AddressList -Name MyAddressList -RecipientFilter {((RecipientType -eq 'UserMailbox') -and ((StateOrProvince -eq 'Washington') -or (StateOrProvince -eq 'Oregon')))}
+```powershell
+New-AddressList -Name MyAddressList -RecipientFilter {((RecipientType -eq 'UserMailbox') -and ((StateOrProvince -eq 'Washington') -or (StateOrProvince -eq 'Oregon')))}
+```
 
 この例では、組み込みのコンテナーを使用して、親コンテナー All Rooms に子アドレス一覧 Building 34 Meeting Rooms を作成します。
 
-    New-AddressList -Name "Building 34 Meeting Rooms" -Container "\All Rooms" -IncludedRecipients Resources -ConditionalCustomAttribute1 "Building 34"
+```powershell
+New-AddressList -Name "Building 34 Meeting Rooms" -Container "\All Rooms" -IncludedRecipients Resources -ConditionalCustomAttribute1 "Building 34"
+```
 
 構文およびパラメーターの詳細については、「[New-AddressList](https://technet.microsoft.com/ja-jp/library/aa996912\(v=exchg.150\))」を参照してください。
 

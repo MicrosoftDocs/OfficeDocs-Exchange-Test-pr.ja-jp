@@ -49,11 +49,15 @@ Microsoft Exchange Server 2013 では、SMTP トラフィックを圧縮する W
 
 ダウングレードされた Exchange サーバー認証を使用するように、メールボックス サーバーのトランスポート サービスを構成するには、次のコマンドを実行します。
 
-    Set-TransportService <ServerIdentity> -UseDowngradedExchangeServerAuth $true
+```powershell
+Set-TransportService <ServerIdentity> -UseDowngradedExchangeServerAuth $true
+```
 
 この例では、Mailbox01 というサーバーでこの構成変更を行います。
 
-    Set-TransportService Mailbox01 -UseDowngradedExchangeServerAuth $true
+```powershell
+Set-TransportService Mailbox01 -UseDowngradedExchangeServerAuth $true
+```
 
 ## 手順 2:対象の Active Directory サイト用に、メールボックス サーバーで専用の受信コネクタを作成する
 
@@ -75,7 +79,9 @@ Microsoft Exchange Server 2013 では、SMTP トラフィックを圧縮する W
 
 メールボックス サーバー上で受信コネクタを作成するには、次のコマンドを実行します。
 
-    New-ReceiveConnector -Name <Name> -Server <ServerIdentity> -RemoteIPRanges <IPAddressRange> -Internal
+  ```powershell
+  New-ReceiveConnector -Name <Name> -Server <ServerIdentity> -RemoteIPRanges <IPAddressRange> -Internal
+  ```
 
 この例では、次の設定を使用して、WAN という受信コネクタを Mailbox01 というサーバー上に作成します。
 
@@ -85,39 +91,53 @@ Microsoft Exchange Server 2013 では、SMTP トラフィックを圧縮する W
 
 <!-- end list -->
 
-    New-ReceiveConnector -Name WAN -Server Hub01 -RemoteIPRanges 10.0.2.0/24 -Internal
+```powershell
+New-ReceiveConnector -Name WAN -Server Hub01 -RemoteIPRanges 10.0.2.0/24 -Internal
+```
 
 ## 手順 3:シェルを使用して、専用の受信コネクタで TLS を無効にする
 
 受信コネクタで TLS を無効にするには、次のコマンドを実行します。
 
-    Set-ReceiveConnector <ReceiveConnectorIdentity> -SuppressXAnonymousTLS $true
+```powershell
+Set-ReceiveConnector <ReceiveConnectorIdentity> -SuppressXAnonymousTLS $true
+```
 
 この例では、Mailbox01 というメールボックス サーバーの、WAN という受信コネクタで TLS を無効にします。
 
-    Set-ReceiveConnector Mailbox01\WAN -SuppressXAnonymousTLS $true
+```powershell
+Set-ReceiveConnector Mailbox01\WAN -SuppressXAnonymousTLS $true
+```
 
 ## 手順 4:シェルを使用して Active Directory サイトをハブ サイトとして指定する
 
 Active Directory サイトをハブ サイトとして指定するには、次のコマンドを実行します。
 
-    Set-AdSite <ADSiteIdentity> -HubSiteEnabled $true
+```powershell
+Set-AdSite <ADSiteIdentity> -HubSiteEnabled $true
+```
 
 暗号化されていないトラフィックにメールボックス サーバーが関与する Active Directory サイトごとに、この手順を 1 回実行する必要があります。
 
 この例では、Central Office Site 1 という Active Directory サイトをハブ サイトとして構成します。
 
-    Set-AdSite "Central Office Site 1" -HubSiteEnabled $true
+```powershell
+Set-AdSite "Central Office Site 1" -HubSiteEnabled $true
+```
 
 ## 手順 5:シェルを使用して WAN 接続を通過する最小コスト ルーティング パスを構成する
 
 Active Directory での IP サイト リンク コストの構成方法によっては、この手順を実行する必要がない場合もあります。展開されている WOC デバイスとのネットワーク リンクが最小コスト ルーティング パスになっていることを確認する必要があります。Active Directory サイトのリンク コストおよび Exchange 固有のサイト リンク コストを確認するには、次のコマンドを実行します。
 
-    Get-AdSiteLink
+```powershell
+Get-AdSiteLink
+```
 
 展開されている WOC デバイスとのネットワーク リンクが最小コスト ルーティング パスになっていない場合は、特定の IP サイト リンクに Exchange 固有のコストを割り当て、メッセージが正しくルーティングされるようにする必要があります。この問題の詳細については、「[シナリオ: WAN 最適化コントローラーをサポートするように Exchange を構成する](scenario-configure-exchange-to-support-wan-optimization-controllers-exchange-2013-help.md)」の「Exchange 固有の Active Directory サイト リンク コストの構成」セクションを参照してください。
 
 この例では、Branch Office 2-Branch Office 1 という IP サイト リンクで Exchange 固有のコストを 15 に構成します。
 
-    Set-AdSiteLink "Branch Office 2-Branch Office 1" -ExchangeCost 15
+```powershell
+Set-AdSiteLink "Branch Office 2-Branch Office 1" -ExchangeCost 15
+```
 

@@ -49,11 +49,15 @@ _**トピックの最終更新日:** 2012-10-08_
 
 メールボックスに割り当てられている割り当てポリシーを変更するには、次の構文を使用します。
 
-    Set-Mailbox <mailbox alias or name> -RoleAssignmentPolicy <assignment policy>
+```powershell
+Set-Mailbox <mailbox alias or name> -RoleAssignmentPolicy <assignment policy>
+```
 
 この例では、Brian というメールボックスの割り当てポリシーを "Unified Messaging Users/ユニファイド メッセージング ユーザー" に設定します。
 
-    Set-Mailbox Brian -RoleAssignmentPolicy "Unified Messaging Users"
+```powershell
+Set-Mailbox Brian -RoleAssignmentPolicy "Unified Messaging Users"
+```
 
 ## シェルを使用して、特定の割り当てポリシーが割り当てられているメールボックスのグループの割り当てポリシーを変更する
 
@@ -73,15 +77,21 @@ _**トピックの最終更新日:** 2012-10-08_
 
 特定のポリシーが割り当てられているメールボックスのグループの割り当てポリシーを変更する場合、次の構文を使用します。
 
-    Get-Mailbox | Where { $_.RoleAssignmentPolicy -Eq "<assignment policy to find>" } | Set-Mailbox -RoleAssignmentPolicy <assignment policy to set>
+```powershell
+Get-Mailbox | Where { $_.RoleAssignmentPolicy -Eq "<assignment policy to find>" } | Set-Mailbox -RoleAssignmentPolicy <assignment policy to set>
+```
 
 この例では、"Redmond Users - No Voicemail/Redmond ユーザー - ボイスメールなし" の割り当てポリシーに割り当てられているすべてのメールボックスを検索し、割り当てポリシーを "Redmond Users - Voicemail Enabled/Redmond ユーザー - ボイスメール有効" に変更します。
 
-    Get-Mailbox | Where { $_.RoleAssignmentPolicy -Eq "Redmond Users - No Voicemail" } | Set-Mailbox -RoleAssignmentPolicy "Redmond Users - Voicemail Enabled"
+```powershell
+Get-Mailbox | Where { $_.RoleAssignmentPolicy -Eq "Redmond Users - No Voicemail" } | Set-Mailbox -RoleAssignmentPolicy "Redmond Users - Voicemail Enabled"
+```
 
 この例では、実際に変更を行わずに変更されるすべてのメールボックスを表示できるように、*WhatIf* パラメーターが含まれています。
 
-    Get-Mailbox | Where { $_.RoleAssignmentPolicy -Eq "Redmond Users - No Voicemail" } | Set-Mailbox -RoleAssignmentPolicy "Redmond Users - Voicemail Enabled" -WhatIf
+```powershell
+Get-Mailbox | Where { $_.RoleAssignmentPolicy -Eq "Redmond Users - No Voicemail" } | Set-Mailbox -RoleAssignmentPolicy "Redmond Users - Voicemail Enabled" -WhatIf
+```
 
 構文およびパラメーターの詳細については、「[Get-Mailbox](https://technet.microsoft.com/ja-jp/library/bb123685\(v=exchg.150\))」または「[Set-Mailbox](https://technet.microsoft.com/ja-jp/library/bb123981\(v=exchg.150\))」を参照してください。
 

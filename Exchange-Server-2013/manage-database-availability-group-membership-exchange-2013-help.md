@@ -63,15 +63,21 @@ DAG に関連する他の管理タスクについては、「[データベース
 
 この例では、メールボックス サーバー MBX1 を DAG1 という名前の DAG に追加します。
 
-    Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer MBX1
+```powershell
+Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer MBX1
+```
 
 この例では、メールボックス サーバー MBX1 を DAG1 という名前の DAG から削除します。このコマンドを実行する前に、メールボックス サーバ－にレプリケートされたデータベースが存在しないことを確認します。
 
-    Remove-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer MBX1
+```powershell
+Remove-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer MBX1
+```
 
 この例では、メールボックス サーバー MBX4 の構成設定を DAG2 という名前の DAG から削除します。MBX4 は長期間オフラインになると想定されるので、残りのオンライン DAG メンバーとクォーラムを確立するために、MBX4 がオフラインである間はその構成が DAG から削除されます。
 
-    Remove-DatabaseAvailabilityGroupServer -Identity DAG2 -MailboxServer MBX4 -ConfigurationOnly
+```powershell
+Remove-DatabaseAvailabilityGroupServer -Identity DAG2 -MailboxServer MBX4 -ConfigurationOnly
+```
 
 ## 正常な動作を確認する方法
 
@@ -81,7 +87,9 @@ DAG メンバーシップが正常に管理されていることを確認する�
 
   - シェルで次のコマンドを実行して、DAG メンバーシップ情報を表示します。
     
-        Get-DatabaseAvailabilityGroup <DAGName> | Format-List Servers
+    ```powershell
+    Get-DatabaseAvailabilityGroup <DAGName> | Format-List Servers
+    ```
 
 ## 詳細情報
 

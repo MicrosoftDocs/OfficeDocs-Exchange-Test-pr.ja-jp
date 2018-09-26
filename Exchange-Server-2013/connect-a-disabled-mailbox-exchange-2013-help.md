@@ -43,7 +43,9 @@ EAC またはシェルを使用して、無効にされたメールボックス�
 
   - 次のコマンドを実行して、ユーザー アカウントを接続する無効にされたメールボックスがメールボックス データベースに存在し、回復可能な削除によって削除されたメールボックスではないことを確認します。
     
-        Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisplayName -eq "<display name>" } | fl DisplayName,Database,DisconnectReason
+    ```powershell
+    Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisplayName -eq "<display name>" } | fl DisplayName,Database,DisconnectReason
+    ```
     
     無効にされたメールボックスを接続するには、メールボックスがメールボックス データベースに存在し、*DisconnectReason* プロパティの値が `Disabled` である必要があります。メールボックスがデータベースから消去されている場合、コマンドは結果を返しません。
 
@@ -85,15 +87,21 @@ EAC またはシェルを使用して、無効にされたメールボックス�
 
 この例では、ユーザー メールボックスを接続しています。*Identity* パラメーターでは、Exchange データベースの切断されたメールボックスを指定します。*User* パラメーターでは、メールボックスを再接続する Active Directory ユーザー アカウントを指定します。
 
-    Connect-Mailbox -Identity "Jeffrey Zeng" -Database MBXDB01 -User "Jeffrey Zeng"
+```powershell
+Connect-Mailbox -Identity "Jeffrey Zeng" -Database MBXDB01 -User "Jeffrey Zeng"
+```
 
 この例では、リンクされたメールボックスを接続しています。*Identity* パラメーターでは、Exchange データベースの切断されたメールボックスを指定します。*LinkedMasterAccount* パラメーターでは、メールボックスを再接続するアカウント フォレスト内の Active Directory ユーザー アカウントを指定します。*Alias* パラメーターではエイリアスを指定します。これは、再接続されたメールボックスでの、電子メール アドレスの @ 記号の左に表示される部分です。
 
-    Connect-Mailbox -Identity "Kai Axford" -Database MBXDB02 -LinkedDomainController FabrikamDC01 -LinkedMasterAccount kai.axford@fabrikam.com -Alias kaia
+```powershell
+Connect-Mailbox -Identity "Kai Axford" -Database MBXDB02 -LinkedDomainController FabrikamDC01 -LinkedMasterAccount kai.axford@fabrikam.com -Alias kaia
+```
 
 この例では、共有メールボックスを接続しています。
 
-    Connect-Mailbox -Identity "Corporate Shared Mailbox" -Database "Mailbox Database 03" -User "Corporate Shared Mailbox" -Alias corpshared -Shared
+```powershell
+Connect-Mailbox -Identity "Corporate Shared Mailbox" -Database "Mailbox Database 03" -User "Corporate Shared Mailbox" -Alias corpshared -Shared
+```
 
 
 > [!NOTE]
@@ -113,7 +121,9 @@ EAC またはシェルを使用して、無効にされたメールボックス�
 
   - シェルで、次のコマンドを実行します。
     
-        Get-User <identity>
+    ```powershell
+    Get-User <identity>
+    ```
     
     *RecipientType* プロパティの **UserMailbox** 値は、ユーザー アカウントとメールボックスが接続されていることを示します。**Get-Mailbox** コマンドレットを実行して、メールボックスの存在を確認することもできます。
 

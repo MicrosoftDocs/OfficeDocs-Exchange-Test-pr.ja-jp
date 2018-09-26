@@ -67,19 +67,27 @@ POP3 に関連する詳細情報については、「[Exchange Server 2013 で�
 
 この例では、サーバーの接続の制限を設定します。
 
-    Set-PopSettings -Identity CAS01 -MaxConnections Value
+```powershell
+Set-PopSettings -Identity CAS01 -MaxConnections Value
+```
 
 この例では、IP アドレスの接続の制限を設定します。
 
-    Set-PopSettings -Identity CAS01 -MaxConnectionsFromSingleIP Value
+```powershell
+Set-PopSettings -Identity CAS01 -MaxConnectionsFromSingleIP Value
+```
 
 この例では、ユーザーの接続の制限を設定します。
 
-    Set-PopSettings -MaxConnectionsPerUser Value 
+```powershell
+Set-PopSettings -MaxConnectionsPerUser Value 
+```
 
 この例では、コマンドの最大サイズを設定します。
 
-    Set-PopSettings -MaxCommandSize Value
+```powershell
+Set-PopSettings -MaxCommandSize Value
+```
 
 接続制限を設定した後、POP3 サービスを再起動する必要があります。POP3 サービスを再起動する方法の詳細については、「[POP3 サービスの開始および停止](start-and-stop-the-pop3-services-exchange-2013-help.md)」を参照してください。
 
@@ -103,7 +111,9 @@ POP3 に関連する詳細情報については、「[Exchange Server 2013 で�
 
 1.  シェルで、次のコマンドを実行します。
     
-        Get-PopSettings | format-list
+    ```powershell
+    Get-PopSettings | format-list
+    ```
 
 2.  接続設定が正しいことを確認します。
 

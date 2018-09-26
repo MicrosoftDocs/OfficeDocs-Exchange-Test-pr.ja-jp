@@ -47,11 +47,15 @@ _**トピックの最終更新日:** 2015-01-22_
 
 この例では、Soumya Singhi の \[回復可能なアイテム\] フォルダーの統計情報を取得し、リスト形式でその出力を表示します。
 
-    Get-MailboxFolderStatistics -Identity "Soumya Singhi" -FolderScope RecoverableItems | Format-List
+```powershell
+Get-MailboxFolderStatistics -Identity "Soumya Singhi" -FolderScope RecoverableItems | Format-List
+```
 
 この例では、Soumya Singhi の \[回復可能なアイテム\] フォルダーの統計情報を取得し、フォルダー名、フォルダー パス、フォルダー内のアイテム数、およびフォルダー サイズを表形式で表示します。
 
-    Get-MailboxFolderStatistics -Identity "Soumya Singhi" -FolderScope RecoverableItems | Format-Table Name,FolderPath,ItemsInFolder,FolderAndSubfolderSize
+```powershell
+Get-MailboxFolderStatistics -Identity "Soumya Singhi" -FolderScope RecoverableItems | Format-Table Name,FolderPath,ItemsInFolder,FolderAndSubfolderSize
+```
 
 構文およびパラメーターの詳細については、「[Get-MailboxFolderStatistics](https://technet.microsoft.com/ja-jp/library/aa996762\(v=exchg.150\))」を参照してください。
 
@@ -59,7 +63,9 @@ _**トピックの最終更新日:** 2015-01-22_
 
 この例では、訴訟ホールドの対象となっているすべてのメールボックスのリストを取得し、各メールボックスの \[回復可能なアイテム\] フォルダーとそのサブフォルダーの統計情報を取得します。**Identity** (メールボックス フォルダー ID) および **FolderAndSubfolderSize** プロパティは表形式で表示されます。
 
-    Get-Mailbox -ResultSize Unlimited -Filter {LitigationHoldEnabled -eq $true} | Get-MailboxFolderStatistics | Format-Table Identity,FolderAndSubfolderSize
+```powershell
+Get-Mailbox -ResultSize Unlimited -Filter {LitigationHoldEnabled -eq $true} | Get-MailboxFolderStatistics | Format-Table Identity,FolderAndSubfolderSize
+```
 
 構文およびパラメーターの詳細については、「[Get-Mailbox](https://technet.microsoft.com/ja-jp/library/bb123685\(v=exchg.150\))」と「[Get-MailboxFolderStatistics](https://technet.microsoft.com/ja-jp/library/aa996762\(v=exchg.150\))」を参照してください。
 
@@ -67,9 +73,13 @@ _**トピックの最終更新日:** 2015-01-22_
 
 次の例は、ユーザー メールボックスの \[回復可能なアイテム\] フォルダーのクォータと警告クォータを表示しています。例では、メールボックスが訴訟ホールドまたはインプレース保持の対象になっているかどうかに関する情報も取得します。
 
-    Get-Mailbox -Identity <identity of mailbox> | Format-List RecoverableItems*,LitigationHoldEnabled,InPlaceHolds
+```powershell
+Get-Mailbox -Identity <identity of mailbox> | Format-List RecoverableItems*,LitigationHoldEnabled,InPlaceHolds
+```
 
 次の例は、組織内のユーザー メールボックスすべての \[回復可能なアイテム\] フォルダーのクォータと警告クォータを表示しています。例では、保留情報も取得します。
 
-    Get-Mailbox -ResultSize Unlimited -Filter {RecipientTypeDetails -eq "UserMailbox"} | Format-List Name,RecoverableItems*,LitigationHoldEnabled,InPlaceHolds
+```powershell
+Get-Mailbox -ResultSize Unlimited -Filter {RecipientTypeDetails -eq "UserMailbox"} | Format-List Name,RecoverableItems*,LitigationHoldEnabled,InPlaceHolds
+```
 

@@ -57,7 +57,9 @@ _**トピックの最終更新日:** 2013-02-18_
 
 メッセージ追跡を構成するには、次のコマンドを実行します。
 
-    Set-TransportService <ServerIdentity> -MessageTrackingLogEnabled <$true | $false> -MessageTrackingLogMaxAge <dd.hh:mm:ss> -MessageTrackingLogMaxDirectorySize <Size> -MessageTrackingLogMaxFileSize <Size> -MessageTrackingLogPath <LocalFilePath> -MessageTrackingLogSubjectLoggingEnabled <$true|$false>
+  ```powershell
+  Set-TransportService <ServerIdentity> -MessageTrackingLogEnabled <$true | $false> -MessageTrackingLogMaxAge <dd.hh:mm:ss> -MessageTrackingLogMaxDirectorySize <Size> -MessageTrackingLogMaxFileSize <Size> -MessageTrackingLogPath <LocalFilePath> -MessageTrackingLogSubjectLoggingEnabled <$true|$false>
+  ```
 
 この例では、Mailbox01 というメールボックス サーバーで次のようなメッセージ追跡ログ設定を行います。
 
@@ -71,7 +73,9 @@ _**トピックの最終更新日:** 2013-02-18_
 
 <!-- end list -->
 
-    Set-TransportService Mailbox01 -MessageTrackingLogPath "D:\Hub Message Tracking Log" -MessageTrackingLogMaxFileSize 20MB -MessageTrackingLogMaxDirectorySize 1.5GB -MessageTrackingLogMaxAge 45.00:00:00
+  ```powershell
+  Set-TransportService Mailbox01 -MessageTrackingLogPath "D:\Hub Message Tracking Log" -MessageTrackingLogMaxFileSize 20MB -MessageTrackingLogMaxDirectorySize 1.5GB -MessageTrackingLogMaxAge 45.00:00:00
+  ```
 
 
 > [!NOTE]
@@ -87,11 +91,15 @@ _**トピックの最終更新日:** 2013-02-18_
 
 この例では、Mailbox01 という名前のメールボックス サーバーのメッセージ追跡ログで、メッセージの件名のログを無効にします。
 
-    Set-TransportService Mailbox01 -MessageTrackingLogSubjectLoggingEnabled $false
+```powershell
+Set-TransportService Mailbox01 -MessageTrackingLogSubjectLoggingEnabled $false
+```
 
 この例では、Mailbox01 という名前のメールボックス サーバーのメッセージ追跡を無効にします。
 
-    Set-TransportService Mailbox01 -MessageTrackingLogEnabled $false
+```powershell
+Set-TransportService Mailbox01 -MessageTrackingLogEnabled $false
+```
 
 ## 正常な動作を確認する方法
 
@@ -99,7 +107,9 @@ _**トピックの最終更新日:** 2013-02-18_
 
 1.  シェルで、次のコマンドを実行します。
     
-        Get-TransportService <ServerIdentity> | Format-List MessageTrackingLog*
+      ```powershell
+      Get-TransportService <ServerIdentity> | Format-List MessageTrackingLog*
+      ```
 
 2.  表示された値が構成した値であることを確認します。
 

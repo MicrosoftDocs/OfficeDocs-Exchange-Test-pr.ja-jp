@@ -49,9 +49,7 @@ _**トピックの最終更新日:** 2012-12-10_
 
 2.  リスト ビューで、変更する電子メール アドレス ポリシーを選択し、<strong>編集</strong>![編集アイコン](images/Bb124582.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "編集アイコン") をクリックします。
 
-3.  
-    
-    <strong>電子メール アドレス ポリシー</strong> で <strong>適用対象</strong> をクリックし、設定を変更します。
+3.  <strong>電子メール アドレス ポリシー</strong> で <strong>適用対象</strong> をクリックし、設定を変更します。
 
 ## EAC を使用して電子メール アドレス ポリシーの優先度を変更するには
 
@@ -65,7 +63,9 @@ _**トピックの最終更新日:** 2012-12-10_
 
 この例では、現在 Georgia、Alabama、および Louisiana の受信者が含まれている電子メール アドレス ポリシー South East Offices を編集して、Texas の受信者も含めます。
 
-    Set-EmailAddressPolicy -Identity "South East Offices" -ConditionalStateorProvince "Georgia","Alabama","Louisiana","Texas"
+```powershell
+Set-EmailAddressPolicy -Identity "South East Offices" -ConditionalStateorProvince "Georgia","Alabama","Louisiana","Texas"
+```
 
 
 > [!NOTE]

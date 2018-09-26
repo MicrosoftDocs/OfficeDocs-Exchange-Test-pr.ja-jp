@@ -47,7 +47,9 @@ _**トピックの最終更新日:** 2015-07-21_
 
 この例では、パブリック フォルダー PF\_SanFrancisco からメールボックス MBX\_DB01 への移動要求を開始します。
 
-    New-MoveRequest -Identity "PF_SanFrancisco" -TargetDatabase MBX_DB01
+```powershell
+New-MoveRequest -Identity "PF_SanFrancisco" -TargetDatabase MBX_DB01
+```
 
 構文およびパラメーターの詳細については、「[New-MoveRequest](https://technet.microsoft.com/ja-jp/library/dd351123\(v=exchg.150\))」を参照してください。
 
@@ -57,19 +59,25 @@ _**トピックの最終更新日:** 2015-07-21_
 
 この例では、パブリック フォルダー メールボックス PF\_SanFrancisco からメールボックス データベース MBX\_DB01 への移動要求を開始して、移動要求を実行する準備が整ったときに中断します。
 
-    New-MoveRequest -Identity "PF_SanFrancisco" -TargetDatabase MBX_DB01 -SuspendWhenReadyToComplete
+```powershell
+New-MoveRequest -Identity "PF_SanFrancisco" -TargetDatabase MBX_DB01 -SuspendWhenReadyToComplete
+```
 
 構文およびパラメーターの詳細については、「[New-MoveRequest](https://technet.microsoft.com/ja-jp/library/dd351123\(v=exchg.150\))」を参照してください。
 
 この例では、パブリック フォルダー メールボックス PF\_SanFrancisco に対する、進行中のメールボックス移動の状態を取得します。
 
-    Get-MoveRequest -Identity "PF_SanFrancisco"
+```powershell
+Get-MoveRequest -Identity "PF_SanFrancisco"
+```
 
 構文およびパラメーターの詳細については、「[Get-MoveRequest](https://technet.microsoft.com/ja-jp/library/dd335227\(v=exchg.150\))」を参照してください。
 
 移動要求が "中断" 状態に達したら、要求を再開できます。この例では、パブリック フォルダー メールボックス PF\_SanFrancisco に対する移動要求を再開します。
 
-    Resume-MoveRequest -Identity "PF_SanFrancisco"
+```powershell
+Resume-MoveRequest -Identity "PF_SanFrancisco"
+```
 
 構文およびパラメーターの詳細については、「[Resume-MoveRequest](https://technet.microsoft.com/ja-jp/library/ee332320\(v=exchg.150\))」を参照してください。
 
@@ -77,7 +85,9 @@ _**トピックの最終更新日:** 2015-07-21_
 
 移動要求が正常に作成されたことを確認するには、次のコマンドを実行します。
 
-    Get-MoveRequestStatistics -Identity PF_SanFrancisco | Format-List Status
+```powershell
+Get-MoveRequestStatistics -Identity PF_SanFrancisco | Format-List Status
+```
 
 状態が `Completed` であれば、移動要求は成功しています。
 

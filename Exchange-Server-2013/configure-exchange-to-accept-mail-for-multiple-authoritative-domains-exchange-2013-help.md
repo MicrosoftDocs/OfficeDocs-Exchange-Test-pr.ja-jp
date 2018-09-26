@@ -73,11 +73,15 @@ Microsoft Exchange Server 2013 では、複数の権限のあるドメインを�
 
 新しい権限のあるドメインを作成するには、次の構文を使用します。
 
-    New-AcceptedDomain -Name "<Unique Name>" -DomainName <SMTP domain> -DomainType Authoritative
+```powershell
+New-AcceptedDomain -Name "<Unique Name>" -DomainName <SMTP domain> -DomainType Authoritative
+```
 
 たとえば、"Fourth Coffee subsidiary" という名前の新しい権限のあるドメインをドメイン fourthcoffee.com に作成するには、次のコマンドを実行します。
 
-    New-AcceptedDomain -Name "Fourth Coffee subsidiary" -DomainName fourthcoffee.com -DomainType Authoritative
+```powershell
+New-AcceptedDomain -Name "Fourth Coffee subsidiary" -DomainName fourthcoffee.com -DomainType Authoritative
+```
 
 ## このステップの検証方法
 
@@ -119,11 +123,15 @@ Microsoft Exchange Server 2013 では、複数の権限のあるドメインを�
 
 既存のプライマリ電子メール アドレスを変更し、古いプライマリ電子メール アドレスをプロキシ アドレスとして保持するには、次のコマンドを実行します。
 
-    Set-EmailAddressPolicy <EmailAddressPolicyIdentity> -EnabledEmailAddressTemplates SMTP:<NewPrimaryEmailAddress>,smtp:<OldPrimaryEmailAddress>
+```powershell
+Set-EmailAddressPolicy <EmailAddressPolicyIdentity> -EnabledEmailAddressTemplates SMTP:<NewPrimaryEmailAddress>,smtp:<OldPrimaryEmailAddress>
+```
 
 たとえば、組織の電子メール アドレス ポリシーで *useralias*`@contoso.com` という電子メール アドレスの形式を使用しているとします。この例では、"Default Policy" という電子メール アドレス ポリシーのプライマリ (返信先) アドレスのドメインを `@fourthcoffee.com` に変更し、`@contoso.com` ドメインの古いプライマリ返信アドレスをプロキシ (セカンダリ) アドレスとして保持します。
 
-    Set-EmailAddressPolicy "Default Policy" -EnabledEmailAddressTemplates SMTP:@fourthcoffee.com,smtp:@contoso.com
+```powershell
+Set-EmailAddressPolicy "Default Policy" -EnabledEmailAddressTemplates SMTP:@fourthcoffee.com,smtp:@contoso.com
+```
 
 
 > [!NOTE]
@@ -133,11 +141,15 @@ Microsoft Exchange Server 2013 では、複数の権限のあるドメインを�
 
 更新した電子メール アドレス ポリシーを受信者に適用するには、次の構文を使用します。
 
-    Update-EmailAddressPolicy <EamilAddressPolicyIdentity>
+```powershell
+Update-EmailAddressPolicy <EamilAddressPolicyIdentity>
+```
 
 たとえば、"Default Policy" という名前の更新済みの電子メール アドレス ポリシーを適用するには、次のコマンドを実行します。
 
-    Update-EmailAddressPolicy "Default Policy"
+```powershell
+Update-EmailAddressPolicy "Default Policy"
+```
 
 ## フィルター処理された一連の受信者の既存のプライマリ電子メール アドレスを置き換える
 
@@ -179,9 +191,7 @@ Microsoft Exchange Server 2013 では、複数の権限のあるドメインを�
 
 6.  <strong>ポリシーを適用する受信者をプレビューします</strong> をクリックして、ポリシーの適用対象になる受信者を表示します。
 
-7.  
-    
-    <strong>保存</strong> をクリックし、この変更を保存してポリシーを作成します。
+7. <strong>保存</strong> をクリックし、この変更を保存してポリシーを作成します。
 
 8.  更新が済むまでは電子メール アドレス ポリシーが適用されないことを説明する警告が表示されます。ポリシーの作成後、そのポリシーを選択して、\[詳細\] ウィンドウで <strong>適用</strong> をクリックします。
 
@@ -189,15 +199,21 @@ Microsoft Exchange Server 2013 では、複数の権限のあるドメインを�
 
 フィルター処理された一連の受信者のプライマリ電子メール アドレスを置き換えるには、次のコマンドを使用します。
 
-    New-EmailAddressPolicy -Name <Policy Name> -Priority <Integer> -IncludedRecipients <RecipientTypes> <Conditional Recipient Properties> -EnabledEmailAddressTemplates SMTP:@<NewPrimaryEmailAddress>
+```powershell
+New-EmailAddressPolicy -Name <Policy Name> -Priority <Integer> -IncludedRecipients <RecipientTypes> <Conditional Recipient Properties> -EnabledEmailAddressTemplates SMTP:@<NewPrimaryEmailAddress>
+```
 
 この例では、"Fourth Coffee Recipients" という電子メール アドレス ポリシーを作成し、Fourth Coffee 部門のメールボックス ユーザーにそのポリシーを割り当て、その電子メール アドレス ポリシーの優先度を最高に設定してポリシーが最初に適用されるようにします。なお、この受信者の古いプライマリ電子メール アドレスを保持しないため、この受信者は古いプライマリ電子メール アドレスで電子メールを受信できなる点に注意してください。
 
-    New-EmailAddressPolicy -Name "Fourth Coffee Recipients" -Priority 1 -IncludedRecipients MailboxUsers -ConditionalDepartment "Fourth Coffee" -EnabledEmailAddressTemplates SMTP:@fourthcoffee.com
+```powershell
+New-EmailAddressPolicy -Name "Fourth Coffee Recipients" -Priority 1 -IncludedRecipients MailboxUsers -ConditionalDepartment "Fourth Coffee" -EnabledEmailAddressTemplates SMTP:@fourthcoffee.com
+```
 
 該当する受信者に新しい電子メール アドレス ポリシーを適用するには、次のコマンドを実行します。
 
-    Update-EmailAddressPolicy "Fourth Coffee Recipients"
+```powershell
+Update-EmailAddressPolicy "Fourth Coffee Recipients"
+```
 
 ## このステップの検証方法
 

@@ -93,7 +93,9 @@ Office 365 グループへのバッチ移行では、この記事で後述する
 
 4.  Office 365 テナントに対して移行機能 **PAW** を有効にする必要があります。有効になっていることを確認するには、Exchange Online PowerShell で次のコマンドを実行します。
     
-        Get-MigrationConfig
+    ```powershell
+    Get-MigrationConfig
+    ```
     
     **Features** の下の出力に **PAW** がある場合は、この機能が有効になっており、「*手順 3: .csv ファイルを作成する*」に進むことができます。
     
@@ -109,13 +111,17 @@ Office 365 グループへのバッチ移行では、この記事で後述する
 
   - **TargetGroupMailbox:**  Office 365 のターゲット グループの SMTP アドレスです。次のコマンドを実行して、プライマリ SMTP アドレスを確認できます。
     
-        Get-UnifiedGroup <alias of the group> | Format-Table PrimarySmtpAddress
+    ```powershell
+    Get-UnifiedGroup <alias of the group> | Format-Table PrimarySmtpAddress
+    ```
 
 .csv ファイルの例:
 
-    "FolderPath","TargetGroupMailbox"
-    "\Sales","sales@contoso.onmicrosoft.com"
-    "\Sales\EMEA","emeasales@contoso.onmicrosoft.com"
+```powershell
+"FolderPath","TargetGroupMailbox"
+"\Sales","sales@contoso.onmicrosoft.com"
+"\Sales\EMEA","emeasales@contoso.onmicrosoft.com"
+```
 
 なお、メール フォルダーとカレンダー フォルダーは、Office 365 の 1 つのグループにマージすることができます。ただし、一度の移行バッチ内で複数のパブリック フォルダーを 1 つのグループにマージする、その他のシナリオはサポートされていません。同じ Office 365 グループに複数のパブリック フォルダーをマップする必要がある場合は、連続して実行する必要がある異なる移行バッチを 1 つずつ実行することで達成することができます。移行バッチごとに最大で 500 のエントリを持つことができます。
 
@@ -129,38 +135,54 @@ Office 365 グループへのバッチ移行では、この記事で後述する
     
     1.  次のコマンドを入力して、パブリック フォルダーの管理者のロールのメンバーであるユーザーのアカウントについて、**LegacyExchangeDN** を検索します。これは、この手順の手順 3 で資格情報が必要になるユーザーと同じユーザーです。
         
-            Get-Mailbox <PublicFolder_Administrator_Account> | Select-Object LegacyExchangeDN
+        ```powershell
+        Get-Mailbox <PublicFolder_Administrator_Account> | Select-Object LegacyExchangeDN
+        ```
     
     2.  次のコマンドを入力して、パブリック フォルダー データベースが格納されているメールボックス サーバーの LegacyExchangeDN を検索します。
         
-            Get-ExchangeServer <public folder server> | Select-Object -Expand ExchangeLegacyDN
+        ```powershell
+        Get-ExchangeServer <public folder server> | Select-Object -Expand ExchangeLegacyDN
+        ```
     
     3.  Outlook Anywhere ホストの完全修飾名 (FQDN) を検索します。これは外部ホスト名です。Outlook Anywhere の複数のインスタンスがある場合には、使用している Exchange Server 2010 組織で、移行エンドポイントに一番近いインスタンスか、パブリック フォルダー レプリカに一番近いインスタンスのいずれかを選択するようお勧めします。次のコマンドを実行すると、Outlook Anywhere のすべてのインスタンスが検索されます。
         
-            Get-OutlookAnywhere | Format-Table Identity, ExternalHostName
+        ```powershell
+        Get-OutlookAnywhere | Format-Table Identity, ExternalHostName
+        ```
 
 2.  Exchange Online の PowerShell で、上記の手順 1 で返された情報を使用して、次の各コマンドを実行します。これらのコマンドの各変数は、手順 1 からの値になります。
     
     1.  Exchange 2010 環境で管理者アクセス許可を持つユーザーの資格情報を、変数 `$Source_Credential` に渡します。最終的に Exchange Online で移行要求を実行するとき、内容をコピーするために、この資格情報を使って Outlook Anywhere 経由で Exchange 2010 サーバーにアクセスします。
         
-            $Source_Credential = Get-Credential
-            <source_domain>\<PublicFolder_Administrator_Account>
+        ```powershell
+        $Source_Credential = Get-Credential
+        <source_domain>\<PublicFolder_Administrator_Account>
+        ```
     
     2.  前述の手順 1a で検出された従来の Exchange サーバー上の移行ユーザーの ExchangeLegacyDN を使って、その値を変数 `$Source_RemoteMailboxLegacyDN` に渡します。
         
-            $Source_RemoteMailboxLegacyDN = "<LegacyExchangeDN from step 1a>"
+        ```powershell
+        $Source_RemoteMailboxLegacyDN = "<LegacyExchangeDN from step 1a>"
+        ```
     
     3.  前述の手順 1b で検出されたパブリック フォルダー サーバーの ExchangeLegacyDN を使って、その値を変数 `$Source_RemotePublicFolderServerLegacyDN` に渡します。
         
-            $Source_RemotePublicFolderServerLegacyDN = "<LegacyExchangeDN from step 1b>"
+        ```powershell
+        $Source_RemotePublicFolderServerLegacyDN = "<LegacyExchangeDN from step 1b>"
+        ```
     
     4.  前述の手順 1c で返された Outlook Anywhere の外部ホスト名を使って、その値を変数 `$Source_OutlookAnywhereExternalHostName` に渡します。
         
-            $Source_OutlookAnywhereExternalHostName = "<ExternalHostName from step 1c>"
+        ```powershell
+        $Source_OutlookAnywhereExternalHostName = "<ExternalHostName from step 1c>"
+        ```
 
 3.  Exchange Online の PowerShell で、次のコマンドを実行して移行エンドポイントを作成します。
     
-        $PfEndpoint = New-MigrationEndpoint -PublicFolderToUnifiedGroup -Name PFToGroupEndpoint -RPCProxyServer $Source_OutlookAnywhereExternalHostName -Credentials $Source_Credential -SourceMailboxLegacyDN $Source_RemoteMailboxLegacyDN -PublicFolderDatabaseServerLegacyDN $Source_RemotePublicFolderServerLegacyDN -Authentication Basic
+    ```powershell
+    $PfEndpoint = New-MigrationEndpoint -PublicFolderToUnifiedGroup -Name PFToGroupEndpoint -RPCProxyServer $Source_OutlookAnywhereExternalHostName -Credentials $Source_Credential -SourceMailboxLegacyDN $Source_RemoteMailboxLegacyDN -PublicFolderDatabaseServerLegacyDN $Source_RemotePublicFolderServerLegacyDN -Authentication Basic
+    ```
 
 4.  次のコマンドを実行して、パブリック フォルダーから Office 365 グループへの新しい移行バッチを作成します。コマンドは次のとおりです。
     
@@ -174,11 +196,15 @@ Office 365 グループへのバッチ移行では、この記事で後述する
     
     <!-- end list -->
     
-        New-MigrationBatch -Name PublicFolderToGroupMigration -CSVData (Get-Content <path to .csv file> -Encoding Byte) -PublicFolderToUnifiedGroup -SourceEndpoint $PfEndpoint.Identity [-NotificationEmails <email addresses for migration notifications>] [-AutoStart]
+    ```powershell
+    New-MigrationBatch -Name PublicFolderToGroupMigration -CSVData (Get-Content <path to .csv file> -Encoding Byte) -PublicFolderToUnifiedGroup -SourceEndpoint $PfEndpoint.Identity [-NotificationEmails <email addresses for migration notifications>] [-AutoStart]
+    ```
 
 5.  Exchange Online の PowerShell で次のコマンドを実行することにより、移行を開始します。このステップが必要になるのは上記の手順 4 でバッチ作成時に `-AutoStart` パラメーターが使用されなかった場合のみであることに注意してください。
     
-        Start-MigrationBatch PublicFolderToGroupMigration
+    ```powershell
+    Start-MigrationBatch PublicFolderToGroupMigration
+    ```
 
 バッチ移行は Exchange Online の PowerShell の `New-MigrationBatch` コマンドレットを使用して作成する必要がありますが、移行の進行状況を Exchange 管理センター で表示および管理できます。移行の進行状況は [Get-MigrationBatch](https://technet.microsoft.com/ja-jp/library/jj219164\(v=exchg.150\)) および [Get-MigrationUser](https://technet.microsoft.com/ja-jp/library/jj218702\(v=exchg.150\)) コマンドレットを実行して表示することもできます。`New-MigrationBatch` コマンドレットは、Office 365 グループ メールボックスごとの移行ユーザーを開始し、メールボックス移行ページを使用してこれらの要求のステータスを表示できます。
 
@@ -208,7 +234,9 @@ Office 365 グループへのバッチ移行では、この記事で後述する
 
 <!-- end list -->
 
-    .\AddMembersToGroups.ps1 -MappingCsv <path to .csv file> -BackupDir <path to backup directory> -ArePublicFoldersOnPremises $true -Credential (Get-Credential)
+```powershell
+.\AddMembersToGroups.ps1 -MappingCsv <path to .csv file> -BackupDir <path to backup directory> -ArePublicFoldersOnPremises $true -Credential (Get-Credential)
+```
 
 ユーザーが Office 365 のグループに追加されると、グループの使用を開始できます。
 
@@ -234,13 +262,17 @@ Office 365 グループへのバッチ移行では、この記事で後述する
 
 <!-- end list -->
 
-    .\LockAndSavePublicFolderProperties.ps1 -MappingCsv <path to .csv file> -BackupDir <path to backup directory> -ArePublicFoldersOnPremises $true -Credential (Get-Credential)
+```powershell
+.\LockAndSavePublicFolderProperties.ps1 -MappingCsv <path to .csv file> -BackupDir <path to backup directory> -ArePublicFoldersOnPremises $true -Credential (Get-Credential)
+```
 
 ## 手順 7: パブリック フォルダーの Office 365 グループへの移行を完了する
 
 パブリック フォルダーを読み取り専用にしたら、もう一度移行を実行する必要があります。これは、データの最後の増分コピーに必要です。移行を再度実行する前に、既存のバッチを削除する必要があります。これを行うには、次のコマンドを実行します。
 
-    Remove-MigrationBatch <name of migration batch>
+```powershell
+Remove-MigrationBatch <name of migration batch>
+```
 
 次に、以下のコマンドを実行して、同じ .csv ファイルで新しいバッチを作成します。コマンドは次のとおりです。
 
@@ -252,11 +284,15 @@ Office 365 グループへのバッチ移行では、この記事で後述する
 
 <!-- end list -->
 
-    New-MigrationBatch -Name PublicFolderToGroupMigration -CSVData (Get-Content <path to .csv file> -Encoding Byte) -PublicFolderToUnifiedGroup -SourceEndpoint $PfEndpoint.Identity [-NotificationEmails <email addresses for migration notifications>] [-AutoStart]
+```powershell
+New-MigrationBatch -Name PublicFolderToGroupMigration -CSVData (Get-Content <path to .csv file> -Encoding Byte) -PublicFolderToUnifiedGroup -SourceEndpoint $PfEndpoint.Identity [-NotificationEmails <email addresses for migration notifications>] [-AutoStart]
+```
 
 新しいバッチが作成されたら、Exchange Online の PowerShell で次のコマンドを実行することにより、移行を開始します。なお、この手順は上記のコマンドで `-AutoStart` パラメーターを使用しなかった場合にのみ必要です。
 
-    Start-MigrationBatch PublicFolderToGroupMigration
+```powershell
+Start-MigrationBatch PublicFolderToGroupMigration
+```
 
 この手順を完了したら (バッチステータスが**完了**になる)、すべてのデータが Office 365 グループにコピーされていることを確認します。その時点で、グループのデータ状況に問題がなければ、移行されたパブリック フォルダーを Exchange 2010 環境から削除することができます。
 
@@ -436,7 +472,9 @@ Exchange 2010 サーバーで次のコマンドを実行します。コマンド
 
 <!-- end list -->
 
-    .\UnlockAndRestorePublicFolderProperties.ps1 -BackupDir <path to backup directory> -ArePublicFoldersOnPremises $true -Credential (Get-Credential)
+```powershell
+.\UnlockAndRestorePublicFolderProperties.ps1 -BackupDir <path to backup directory> -ArePublicFoldersOnPremises $true -Credential (Get-Credential)
+```
 
 Office 365 グループに追加されたアイテムやグループ内で実行された編集操作はパブリック フォルダーにコピーされないことに注意してください。したがって、パブリック フォルダーがグループだった間に追加された新しいデータがある場合、データの損失が生じることになります。
 

@@ -36,13 +36,17 @@ Microsoft Exchange の各メールボックスは、Active Directory ユーザ�
     
     組織内の無効にされたメールボックスを識別するには、シェルで次のコマンドを実行します。
     
-        Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisconnectReason -eq "Disabled" } | ft DisplayName,Database,DisconnectDate
+      ```powershell
+      Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisconnectReason -eq "Disabled" } | ft DisplayName,Database,DisconnectDate
+      ```
 
   - **回復可能な削除によって削除されたメールボックス**   メールボックスを別のメールボックス データベースに移動した場合、Exchange は、移動が完了しても、移動元のメールボックス データベースからメールボックスを完全に削除しません。移動元のメールボックス データベース内のメールボックスが*削除済み (回復可能)* の状態に切り替えられます。無効にされたメールボックスと同じように、回復可能な削除によって削除されたメールボックスは、削除済みメールボックスの保持期間が経過するか **Remove-StoreMailbox** コマンドレットを使用してメールボックスを削除するまでの間、移動元のデータベースに保持されます。
     
     組織内の回復可能な削除によって削除されたメールボックスを識別するには、次のコマンドを実行します。
     
-        Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisconnectReason -eq "SoftDeleted" } | ft DisplayName,Database,DisconnectDate
+      ```powershell
+      Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisconnectReason -eq "SoftDeleted" } | ft DisplayName,Database,DisconnectDate
+      ```
 
 **目次**
 

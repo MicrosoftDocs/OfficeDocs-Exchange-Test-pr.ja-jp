@@ -47,7 +47,9 @@ Microsoft Exchange Server 2013 には、*パートナー アプリケーショ�
 
 次のコマンドを実行して、Exchange 2013 を SharePoint 2013 内の信頼できるセキュリティ トークン発行者として作成します。
 
-    New-SPTrustedSecurityTokenIssuer -Name Exchange -MetadataEndPoint https://<Exchange Server Name or FQDN>/autodiscover/metadata/json/1
+```powershell
+New-SPTrustedSecurityTokenIssuer -Name Exchange -MetadataEndPoint https://<Exchange Server Name or FQDN>/autodiscover/metadata/json/1
+```
 
 ## 手順 2:Exchange 2013 を実行しているサーバー上で SharePoint 2013 のサーバー間認証を構成する
 
@@ -55,8 +57,10 @@ Exchange 2013 サーバー上でこの手順を実行します。この手順を
 
 このコマンドを実行して、SharePoint パートナーのアプリケーションを構成します。
 
-    cd c:\'Program Files'\Microsoft\'Exchange Server'\V15\Scripts
-    .\Configure-EnterprisePartnerApplication.ps1 -AuthMetadataUrl <path to SharePoint AuthMetadataUrl> -ApplicationType SharePoint
+```powershell
+cd c:\'Program Files'\Microsoft\'Exchange Server'\V15\Scripts
+.\Configure-EnterprisePartnerApplication.ps1 -AuthMetadataUrl <path to SharePoint AuthMetadataUrl> -ApplicationType SharePoint
+```
 
 ## 手順 3:承認されたユーザーを "Discovery Management/検出の管理" 役割グループに追加する
 

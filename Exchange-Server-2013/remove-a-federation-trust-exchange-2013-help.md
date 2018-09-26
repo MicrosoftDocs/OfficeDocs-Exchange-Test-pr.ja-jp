@@ -53,7 +53,9 @@ _**トピックの最終更新日:** 2015-01-04_
 
 この例では、フェデレーション信頼を削除します。
 
-    Remove-FederationTrust
+```powershell
+Remove-FederationTrust
+```
 
 構文およびパラメーターの詳細については、「[Remove-FederationTrust](https://technet.microsoft.com/ja-jp/library/dd351153\(v=exchg.150\))」を参照してください。
 
@@ -65,7 +67,9 @@ _**トピックの最終更新日:** 2015-01-04_
 
   - シェルで次のコマンドを実行して、フェデレーション信頼の情報が Exchange 組織に返されないことを確認します。
     
-        Get-FederationTrust
+    ```powershell
+    Get-FederationTrust
+    ```
     
     構文およびパラメーターの詳細については、「[Get-FederationTrust](https://technet.microsoft.com/ja-jp/library/dd351262\(v=exchg.150\))」を参照してください。
 

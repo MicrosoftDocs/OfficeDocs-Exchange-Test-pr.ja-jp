@@ -67,9 +67,13 @@ Microsoft Exchange ユニファイド メッセージング呼び出しルー�
 
 この例では、`UMCallRouter1` という名前のクライアント アクセス サーバーのスタートアップ モードをデュアル モードに設定します。
 
-    Set-UMCallRouterSettings -Server UMCallRouter1 -UMStartUpMode Dual
+```powershell
+Set-UMCallRouterSettings -Server UMCallRouter1 -UMStartUpMode Dual
+```
 
 この例では、`UMCallRouter1` という名前のクライアント アクセス サーバーのスタートアップ モードを TLS モードに設定します。
 
-    Set-UMCallRouterSettings -Server UMCallRouter1 -UMStartUpMode TLS
+```powershell
+Set-UMCallRouterSettings -Server UMCallRouter1 -UMStartUpMode TLS
+```
 

@@ -67,7 +67,9 @@ IRM に関連する追加の管理タスクについては、「[Information Rig
     
     この例では、フェデレーション メールボックスを ADRMSSuperUsers 配布グループに追加します。
     
-        Add-DistributionGroupMember ADRMSSuperUsers -Member FederatedEmail.4c1f4d8b-8179-4148-93bf-00a95fa1e042
+    ```powershell
+    Add-DistributionGroupMember ADRMSSuperUsers -Member FederatedEmail.4c1f4d8b-8179-4148-93bf-00a95fa1e042
+    ```
 
 構文およびパラメーターの詳細については、「[Add-DistributionGroupMember](https://technet.microsoft.com/ja-jp/library/bb124340\(v=exchg.150\))」を参照してください。
 
@@ -101,8 +103,9 @@ AD RMS を使用してスーパー ユーザー グループを設定したら�
     > [!IMPORTANT]
     > ADRMSAdmin PowerShell モジュールは、Windows Server 2008 R2 以降で利用できます。
 
-    
-        Import-Module ADRMSAdmin
-        New-PSDrive -Name MyRmsAdmin -PsProvider AdRmsAdmin -Root https://localhost 
-        Get-ItemProperty -Path MyRmsAdmin:\SecurityPolicy\SuperUser
+    ```powershell
+    Import-Module ADRMSAdmin
+    New-PSDrive -Name MyRmsAdmin -PsProvider AdRmsAdmin -Root https://localhost 
+    Get-ItemProperty -Path MyRmsAdmin:\SecurityPolicy\SuperUser
+    ```
 

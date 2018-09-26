@@ -63,11 +63,15 @@ _**トピックの最終更新日:** 2012-10-03_
 
 パラメーターを役割エントリに追加するには、次の構文を使用します。
 
-    Set-ManagementRoleEntry <role name>\<cmdlet> -Parameters <parameter 1>, <parameter 2>, <parameter...> -AddParameter
+```powershell
+Set-ManagementRoleEntry <role name>\<cmdlet> -Parameters <parameter 1>, <parameter 2>, <parameter...> -AddParameter
+```
 
 この例では、"Recipient Administrators/受信者管理者" 役割の **Set-Mailbox** コマンドレットに *EmailAddresses* パラメーターと *Type* パラメーターを追加します。
 
-    Set-ManagementRoleEntry "Recipient Administrators\Set-Mailbox" -Parameters EmailAddresses, Type -AddParameter
+```powershell
+Set-ManagementRoleEntry "Recipient Administrators\Set-Mailbox" -Parameters EmailAddresses, Type -AddParameter
+```
 
 構文およびパラメーターの詳細については、「[Set-ManagementRoleEntry](https://technet.microsoft.com/ja-jp/library/dd351162\(v=exchg.150\))」を参照してください。
 
@@ -77,11 +81,15 @@ _**トピックの最終更新日:** 2012-10-03_
 
 役割エントリからパラメーターを削除するには、次の構文を使用します。
 
-    Set-ManagementRoleEntry <role name>\<cmdlet> -Parameters <parameter 1>, <parameter 2>, <parameter...> -RemoveParameter
+```powershell
+Set-ManagementRoleEntry <role name>\<cmdlet> -Parameters <parameter 1>, <parameter 2>, <parameter...> -RemoveParameter
+```
 
 この例では、"Tier 1 Server Administrators/第 1 層サーバー管理者" 役割の **Set-SendConnector** コマンドレットから *Port*、*ProtocolLoggingLevel*、および *SmartHostAuthMechanism* の各パラメーターを削除します。
 
-    Set-ManagementRoleEntry "Tier 1 Server Administrators\Set-SendConnector" -Parameters Port, ProtocolLoggingLevel, SmartHostAuthMechanism -RemoveParameter
+```powershell
+Set-ManagementRoleEntry "Tier 1 Server Administrators\Set-SendConnector" -Parameters Port, ProtocolLoggingLevel, SmartHostAuthMechanism -RemoveParameter
+```
 
 構文およびパラメーターの詳細については、「[Set-ManagementRoleEntry](https://technet.microsoft.com/ja-jp/library/dd351162\(v=exchg.150\))」を参照してください。
 
@@ -99,11 +107,15 @@ _**トピックの最終更新日:** 2012-10-03_
 
 役割エントリからすべてのパラメーターを削除するには、次の構文を使用します。
 
-    Set-ManagementRoleEntry <role name>\<cmdlet> -Parameters $Null 
+```powershell
+Set-ManagementRoleEntry <role name>\<cmdlet> -Parameters $Null 
+```
 
 この例では、"Recipient Administrators/受信者管理者" 役割の **Set-CASMailbox** コマンドレットからパラメーターをすべて削除します。
 
-    Set-ManagementRoleEntry "Recipient Administrators\Set-CASMailbox" -Parameters $Null 
+```powershell
+Set-ManagementRoleEntry "Recipient Administrators\Set-CASMailbox" -Parameters $Null 
+```
 
 構文およびパラメーターの詳細については、「[Set-ManagementRoleEntry](https://technet.microsoft.com/ja-jp/library/dd351162\(v=exchg.150\))」を参照してください。
 
@@ -113,11 +125,15 @@ _**トピックの最終更新日:** 2012-10-03_
 
 特定のパラメーター セットを指定するには、次の構文を使用します。
 
-    Set-ManagementRoleEntry <role name>\<cmdlet> -Parameters <parameter 1>, <parameter 2>, <parameter...>
+```powershell
+Set-ManagementRoleEntry <role name>\<cmdlet> -Parameters <parameter 1>, <parameter 2>, <parameter...>
+```
 
 この例では、"Seattle Mail Recipients/Seattle のメール受信者" 役割の **Set-UMMailbox** コマンドレットに、*Identity*、*DisplayName*、*MissedCallNotificationEnabled*、および *PersonalAuthAttendantEnabled* の各パラメーターのみを含めます。
 
-    Set-ManagementRoleEntry "Seattle Mail Recipients\Set-UMMailbox" -Parameters Identity, DisplayName, MissedCallNotificationEnabled, PersonalAutoAttendantEnabled
+```powershell
+Set-ManagementRoleEntry "Seattle Mail Recipients\Set-UMMailbox" -Parameters Identity, DisplayName, MissedCallNotificationEnabled, PersonalAutoAttendantEnabled
+```
 
 構文およびパラメーターの詳細については、「[Set-ManagementRoleEntry](https://technet.microsoft.com/ja-jp/library/dd351162\(v=exchg.150\))」を参照してください。
 

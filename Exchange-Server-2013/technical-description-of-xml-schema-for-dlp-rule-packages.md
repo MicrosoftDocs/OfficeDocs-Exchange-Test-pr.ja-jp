@@ -61,54 +61,56 @@ DLP 機密情報検出エンジンに対しては、主に 2 種類のルール�
 
 さらに、処理の詳細を定義するのに 3 つのサポート要素が使用されます。これらは主要コンポーネント内で参照されます。キーワード、正規表現、および関数です。参照を使用することにより、サポート要素に関する 1 つの定義が、たとえば社会保障番号のように複数のエンティティ ルールやアフィニティ ルールに使用できます。基本的なルールの構造を XML 形式では次のとおりに見ることができます。
 
-    <?xml version="1.0" encoding="utf-8"?>
-    <RulePackage xmlns="http://schemas.microsoft.com/office/2011/mce">
-    
-      <RulePack id="DAD86A92-AB18-43BB-AB35-96F7C594ADAA">
-        <Version major="1" minor="0" build="0" revision="0"/>
-        <Publisher id="619DD8C3-7B80-4998-A312-4DF0402BAC04"/>
-        <Details defaultLangCode="en-us">
-          <LocalizedDetails langcode="en-us">
-            <PublisherName>DLP by EPG</PublisherName>
-            <Name>CSO Custom Rule Pack</Name>
-            <Description>This is a rule package for a EPG demo.</Description>
-          </LocalizedDetails>
-        </Details>
-      </RulePack>
-    
-      <Rules>
-    
-        <!-- Employee ID -->
-        <Entity id="E1CC861E-3FE9-4A58-82DF-4BD259EAB378" patternsProximity="300" recommendedConfidence="75">
-          <Pattern confidenceLevel="75">
-            <IdMatch idRef="Regex_employee_id" />
-            <Match idRef="Keyword_employee" />
-          </Pattern>
-        </Entity>
-    
-        <Regex id="Regex_employee_id">(\s)(\d{9})(\s)</Regex>
-        <Keyword id="Keyword_employee">
-          <Group matchStyle="word">
-            <Term>Identification</Term>
-            <Term>Contoso Employee</Term>
-          </Group>
-        </Keyword>
-    
-    
-        <LocalizedStrings>
-    
-          <Resource idRef="E1CC861E-3FE9-4A58-82DF-4BD259EAB378">
-            <Name default="true" langcode="en-us">
-              Employee ID
-            </Name>
-            <Description default="true" langcode="en-us">
-              A custom classification for detecting Employee ID's
-            </Description>
-          </Resource>
-    
-        </LocalizedStrings>
-      </Rules>
-    </RulePackage>
+  ```xml
+  <?xml version="1.0" encoding="utf-8"?>
+  <RulePackage xmlns="http://schemas.microsoft.com/office/2011/mce">
+  
+    <RulePack id="DAD86A92-AB18-43BB-AB35-96F7C594ADAA">
+      <Version major="1" minor="0" build="0" revision="0"/>
+      <Publisher id="619DD8C3-7B80-4998-A312-4DF0402BAC04"/>
+      <Details defaultLangCode="en-us">
+        <LocalizedDetails langcode="en-us">
+          <PublisherName>DLP by EPG</PublisherName>
+          <Name>CSO Custom Rule Pack</Name>
+          <Description>This is a rule package for a EPG demo.</Description>
+        </LocalizedDetails>
+      </Details>
+    </RulePack>
+  
+    <Rules>
+  
+      <!-- Employee ID -->
+      <Entity id="E1CC861E-3FE9-4A58-82DF-4BD259EAB378" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Regex_employee_id" />
+          <Match idRef="Keyword_employee" />
+        </Pattern>
+      </Entity>
+  
+      <Regex id="Regex_employee_id">(\s)(\d{9})(\s)</Regex>
+      <Keyword id="Keyword_employee">
+        <Group matchStyle="word">
+          <Term>Identification</Term>
+          <Term>Contoso Employee</Term>
+        </Group>
+      </Keyword>
+  
+  
+      <LocalizedStrings>
+  
+        <Resource idRef="E1CC861E-3FE9-4A58-82DF-4BD259EAB378">
+          <Name default="true" langcode="en-us">
+            Employee ID
+          </Name>
+          <Description default="true" langcode="en-us">
+            A custom classification for detecting Employee ID's
+          </Description>
+        </Resource>
+  
+      </LocalizedStrings>
+    </Rules>
+  </RulePackage>
+  ```
 
 ## エンティティ ルール
 
@@ -134,26 +136,28 @@ DLP 機密情報検出エンジンに対しては、主に 2 種類のルール�
 
 IdMatch 要素とマッチ要素はどちらも、マッチが必要なコンテンツの詳細を定義するのではなく、idRef 属性を通じてコンテンツを参照します。これにより、複数のパターンの構成要素における定義の再利用性が向上します。
 
-    <Entity id="..." patternsProximity="300" > 
-        <Pattern confidenceLevel="85">
-            <IdMatch idRef="FormattedSSN" />
-            <Any minMatches="1">
-                <Match idRef="SSNKeyword" />
-                <Match idRef="USDate" />
-                <Match idRef="USAddress" />
-                <Match idRef="Name" />
-            </Any>
-        </Pattern>  
-        <Pattern confidenceLevel="65">
-            <IdMatch idRef="UnformattedSSN" />
-            <Match idRef="SSNKeyword" />
-            <Any minMatches="1">        
-                <Match idRef="USDate" />
-                <Match idRef="USAddress" />
-                <Match idRef="Name" />
-            </Any>
-        </Pattern>
-    </Entity> 
+  ```xml
+  <Entity id="..." patternsProximity="300" > 
+      <Pattern confidenceLevel="85">
+          <IdMatch idRef="FormattedSSN" />
+          <Any minMatches="1">
+              <Match idRef="SSNKeyword" />
+              <Match idRef="USDate" />
+              <Match idRef="USAddress" />
+              <Match idRef="Name" />
+          </Any>
+      </Pattern>  
+      <Pattern confidenceLevel="65">
+          <IdMatch idRef="UnformattedSSN" />
+          <Match idRef="SSNKeyword" />
+          <Any minMatches="1">        
+              <Match idRef="USDate" />
+              <Match idRef="USAddress" />
+              <Match idRef="Name" />
+          </Any>
+      </Pattern>
+  </Entity> 
+  ```
 
 エンティティ id 要素は、前の XML では "..." で表され、GUID である必要があります。また、エンティティ id 要素は \[ローカライズ文字列\] セクションで参照されています。
 
@@ -209,26 +213,28 @@ CLEntity= 1–\[(1–CLPattern1) X (1–CLPattern1)\]
 
 エビデンス要素には、1 つまたは複数のマッチ要素または Any 子要素が含まれます。すべての子マッチ要素および子 Any 要素がマッチした場合、エビデンスが検出され、信頼度はルールの信頼度計算に使用されます。エンティティ ルールと同様の説明が、アフィニティ ルールのマッチ要素または Any 要素にも当てはまります。
 
-    <Affinity id="..." 
-              evidencesProximity="1000"
-              thresholdConfidenceLevel="65">
-        <Evidence confidenceLevel="40">
-            <Any> 
-                <Match idRef="AssetsTerms" /> 
-                <Match idRef="BalanceSheetTerms" /> 
-                <Match idRef="ProfitAndLossTerms" /> 
-            </Any> 
-        </Evidence>
-        <Evidence confidenceLevel="40">
-            <Any minMatches="2"> 
-                <Match idRef="TaxTerms" /> 
-                <Match idRef="DollarAmountTerms" /> 
-                <Match idRef="SECTerms" /> 
-                <Match idRef="SECFilingFormTerms" /> 
-                <Match idRef="DollarTotalRegex" /> 
-            </Any> 
-        </Evidence>
-    </Affinity>
+  ```xml
+  <Affinity id="..." 
+            evidencesProximity="1000"
+            thresholdConfidenceLevel="65">
+      <Evidence confidenceLevel="40">
+          <Any> 
+              <Match idRef="AssetsTerms" /> 
+              <Match idRef="BalanceSheetTerms" /> 
+              <Match idRef="ProfitAndLossTerms" /> 
+          </Any> 
+      </Evidence>
+      <Evidence confidenceLevel="40">
+          <Any minMatches="2"> 
+              <Match idRef="TaxTerms" /> 
+              <Match idRef="DollarAmountTerms" /> 
+              <Match idRef="SECTerms" /> 
+              <Match idRef="SECFilingFormTerms" /> 
+              <Match idRef="DollarTotalRegex" /> 
+          </Any> 
+      </Evidence>
+  </Affinity>
+  ```
 
 ## アフィニティ近接ウィンドウ
 
@@ -325,300 +331,304 @@ CLAffinity= 1 – \[(1 – CLEvidence 1) X (1 – CLEvidence 2) X (1 – CLEvide
 
 ルール スキーマは、各エンティティ要素およびアフィニティ要素について、ローカライズされた名前と説明の格納をサポートします。各エンティティ要素およびアフィニティ要素は、対応する要素が LocalizedStrings セクションに含まれている必要があります。各要素をローカライズするには、リソース要素を LocalizedStrings 要素の子要素として組み入れ、各要素について複数のロケールに名前と説明を格納します。リソース要素には必要な idRef 属性を組み入れ、ローカライズ対象である各要素について、対応する idRef 属性のマッチングを行います。リソース要素のロケール子要素には、個別の各ロケールに対するローカライズされた名前と説明が含まれます。
 
-    <LocalizedStrings>
-        <Resource idRef="guid">
-            <Locale langcode="en-US" default="true"> 
-                <Name>affinity name en-us</Name> 
-                <Description>
-                    affinity description en-us
-                </Description> 
-            </Locale> 
-            <Locale langcode="de"> 
-                <Name>affinity name de</Name> 
-                <Description>
-                    affinity description de
-                </Description> 
-            </Locale> 
-        </Resource>
-    </LocalizedStrings>
+  ```xml
+  <LocalizedStrings>
+      <Resource idRef="guid">
+          <Locale langcode="en-US" default="true"> 
+              <Name>affinity name en-us</Name> 
+              <Description>
+                  affinity description en-us
+              </Description> 
+          </Locale> 
+          <Locale langcode="de"> 
+              <Name>affinity name de</Name> 
+              <Description>
+                  affinity description de
+              </Description> 
+          </Locale> 
+      </Resource>
+  </LocalizedStrings>
+  ```
 
 ## 分類ルール パック XML スキーマ定義
 
-    <?xml version="1.0" encoding="utf-8"?>
-    <xs:schema xmlns:mce="http://schemas.microsoft.com/office/2011/mce"
-               targetNamespace="http://schemas.microsoft.com/office/2011/mce" 
-               xmlns:xs="http://www.w3.org/2001/XMLSchema"
-               elementFormDefault="qualified"
-               attributeFormDefault="unqualified"
-               id="RulePackageSchema">
-      <xs:simpleType name="LangType">
-        <xs:union memberTypes="xs:language">
-          <xs:simpleType>
-            <xs:restriction base="xs:string">
-              <xs:enumeration value=""/>
-            </xs:restriction>
-          </xs:simpleType>
-        </xs:union>
-      </xs:simpleType>
-      <xs:simpleType name="GuidType" final="#all">
-        <xs:restriction base="xs:token">
-          <xs:pattern value="[0-9a-fA-F]{8}\-([0-9a-fA-F]{4}\-){3}[0-9a-fA-F]{12}"/>
-        </xs:restriction>
-      </xs:simpleType>
-      <xs:complexType name="RulePackageType">
-        <xs:sequence>
-          <xs:element name="RulePack" type="mce:RulePackType"/>
-          <xs:element name="Rules" type="mce:RulesType">
-            <xs:key name="UniqueRuleId">
-              <xs:selector xpath="mce:Entity|mce:Affinity"/>
-              <xs:field xpath="@id"/>
-            </xs:key>
-            <xs:key name="UniqueProcessorId">
-              <xs:selector xpath="mce:Regex|mce:Keyword"></xs:selector>
-              <xs:field xpath="@id"/>
-            </xs:key>
-            <xs:key name="UniqueResourceIdRef">
-              <xs:selector xpath="mce:LocalizedStrings/mce:Resource"/>
-              <xs:field xpath="@idRef"/>
-            </xs:key>        
-            <xs:keyref name="ReferencedRuleMustExist" refer="mce:UniqueRuleId">
-              <xs:selector xpath="mce:LocalizedStrings/mce:Resource"/>
-              <xs:field xpath="@idRef"/>
-            </xs:keyref>
-            <xs:keyref name="RuleMustHaveResource" refer="mce:UniqueResourceIdRef">
-              <xs:selector xpath="mce:Entity|mce:Affinity"/>
-              <xs:field xpath="@id"/>
-            </xs:keyref>
-          </xs:element>
-        </xs:sequence>
-      </xs:complexType>
-      <xs:complexType name="RulePackType">
-        <xs:sequence>
-          <xs:element name="Version" type="mce:VersionType"/>
-          <xs:element name="Publisher" type="mce:PublisherType"/>
-          <xs:element name="Details" type="mce:DetailsType">
-            <xs:key name="UniqueLangCodeInLocalizedDetails">
-              <xs:selector xpath="mce:LocalizedDetails"/>
-              <xs:field xpath="@langcode"/>
-            </xs:key>
-            <xs:keyref name="DefaultLangCodeMustExist" refer="mce:UniqueLangCodeInLocalizedDetails">
-              <xs:selector xpath="."/>
-              <xs:field xpath="@defaultLangCode"/>
-            </xs:keyref>
-          </xs:element>
-          <xs:element name="Encryption" type="mce:EncryptionType" minOccurs="0" maxOccurs="1"/>
-        </xs:sequence>
-        <xs:attribute name="id" type="mce:GuidType" use="required"/>
-      </xs:complexType>
-      <xs:complexType name="VersionType">
-        <xs:attribute name="major" type="xs:unsignedShort" use="required"/>
-        <xs:attribute name="minor" type="xs:unsignedShort" use="required"/>
-        <xs:attribute name="build" type="xs:unsignedShort" use="required"/>
-        <xs:attribute name="revision" type="xs:unsignedShort" use="required"/>
-      </xs:complexType>
-      <xs:complexType name="PublisherType">
-        <xs:attribute name="id" type="mce:GuidType" use="required"/>
-      </xs:complexType>
-      <xs:complexType name="LocalizedDetailsType">
-        <xs:sequence>
-          <xs:element name="PublisherName" type="mce:NameType"/>
-          <xs:element name="Name" type="mce:RulePackNameType"/>
-          <xs:element name="Description" type="mce:OptionalNameType"/>
-        </xs:sequence>
-        <xs:attribute name="langcode" type="mce:LangType" use="required"/>
-      </xs:complexType>
-      <xs:complexType name="DetailsType">
-        <xs:sequence>
-          <xs:element name="LocalizedDetails" type="mce:LocalizedDetailsType" maxOccurs="unbounded"/>
-        </xs:sequence>
-        <xs:attribute name="defaultLangCode" type="mce:LangType" use="required"/>
-      </xs:complexType>
-      <xs:complexType name="EncryptionType">
-        <xs:sequence>
-          <xs:element name="Key" type="xs:normalizedString"/>
-          <xs:element name="IV" type="xs:normalizedString"/>
-        </xs:sequence>
-      </xs:complexType>
-      <xs:simpleType name="RulePackNameType">
-        <xs:restriction base="xs:token">
-          <xs:minLength value="1"/>
-          <xs:maxLength value="64"/>
-        </xs:restriction>
-      </xs:simpleType>
-      <xs:simpleType name="NameType">
-        <xs:restriction base="xs:normalizedString">
-          <xs:minLength value="1"/>
-          <xs:maxLength value="256"/>
-        </xs:restriction>
-      </xs:simpleType>
-      <xs:simpleType name="OptionalNameType">
-        <xs:restriction base="xs:normalizedString">
-          <xs:minLength value="0"/>
-          <xs:maxLength value="256"/>
-        </xs:restriction>
-      </xs:simpleType>
-      <xs:simpleType name="RestrictedTermType">
-        <xs:restriction base="xs:string">
-          <xs:minLength value="1"/>
-          <xs:maxLength value="512"/>
-        </xs:restriction>
-      </xs:simpleType>
-      <xs:complexType name="RulesType">
-        <xs:sequence>
-          <xs:choice maxOccurs="unbounded">
-            <xs:element name="Entity" type="mce:EntityType"/>
-            <xs:element name="Affinity" type="mce:AffinityType"/>
-          </xs:choice>
-          <xs:choice minOccurs="0" maxOccurs="unbounded">
-            <xs:element name="Regex" type="mce:RegexType"/>
-            <xs:element name="Keyword" type="mce:KeywordType"/>
-          </xs:choice>
-          <xs:element name="LocalizedStrings" type="mce:LocalizedStringsType"/>
-        </xs:sequence>
-      </xs:complexType>
-      <xs:complexType name="EntityType">
-        <xs:sequence>
-          <xs:element name="Pattern" type="mce:PatternType" maxOccurs="unbounded"/>
-        </xs:sequence>
-        <xs:attribute name="id" type="mce:GuidType" use="required"/>
-        <xs:attribute name="patternsProximity" type="mce:ProximityType" use="required"/>
-        <xs:attribute name="recommendedConfidence" type="mce:ProbabilityType"/>
-        <xs:attribute name="workload" type="mce:WorkloadType"/>
-      </xs:complexType>
-      <xs:complexType name="PatternType">
-        <xs:sequence>
-          <xs:element name="IdMatch" type="mce:IdMatchType"/>
-          <xs:choice minOccurs="0" maxOccurs="unbounded">
-            <xs:element name="Match" type="mce:MatchType"/>
-            <xs:element name="Any" type="mce:AnyType"/>
-          </xs:choice>
-        </xs:sequence>
-        <xs:attribute name="confidenceLevel" type="mce:ProbabilityType" use="required"/>
-      </xs:complexType>
-      <xs:complexType name="AffinityType">
-        <xs:sequence>
-          <xs:element name="Evidence" type="mce:EvidenceType" maxOccurs="unbounded"/>
-        </xs:sequence>
-        <xs:attribute name="id" type="mce:GuidType" use="required"/>
-        <xs:attribute name="evidencesProximity" type="mce:ProximityType" use="required"/>
-        <xs:attribute name="thresholdConfidenceLevel" type="mce:ProbabilityType" use="required"/>
-        <xs:attribute name="workload" type="mce:WorkloadType"/>
-      </xs:complexType>
-      <xs:complexType name="EvidenceType">
-        <xs:sequence>
-          <xs:choice maxOccurs="unbounded">
-            <xs:element name="Match" type="mce:MatchType"/>
-            <xs:element name="Any" type="mce:AnyType"/>
-          </xs:choice>
-        </xs:sequence>
-        <xs:attribute name="confidenceLevel" type="mce:ProbabilityType" use="required"/>
-      </xs:complexType>
-      <xs:complexType name="IdMatchType">
-        <xs:attribute name="idRef" type="xs:string" use="required"/>
-      </xs:complexType>
-      <xs:complexType name="MatchType">
-        <xs:attribute name="idRef" type="xs:string" use="required"/>
-      </xs:complexType>
-      <xs:complexType name="AnyType">
-        <xs:sequence>
-          <xs:choice maxOccurs="unbounded">
-            <xs:element name="Match" type="mce:MatchType"/>
-            <xs:element name="Any" type="mce:AnyType"/>
-          </xs:choice>
-        </xs:sequence>
-        <xs:attribute name="minMatches" type="xs:nonNegativeInteger" default="1"/>
-        <xs:attribute name="maxMatches" type="xs:nonNegativeInteger" use="optional"/>
-      </xs:complexType>
-      <xs:simpleType name="ProximityType">
-        <xs:restriction base="xs:positiveInteger">
-          <xs:minInclusive value="1"/>
-        </xs:restriction>
-      </xs:simpleType>
-      <xs:simpleType name="ProbabilityType">
-        <xs:restriction base="xs:integer">
-          <xs:minInclusive value="1"/>
-          <xs:maxInclusive value="100"/>
-        </xs:restriction>
-      </xs:simpleType>
-      <xs:simpleType name="WorkloadType">
-        <xs:restriction base="xs:string">
-          <xs:enumeration value="Exchange"/>
-          <xs:enumeration value="Outlook"/>
-        </xs:restriction>
-      </xs:simpleType>
-      <xs:complexType name="RegexType">
-        <xs:simpleContent>
-          <xs:extension base="xs:string">
-            <xs:attribute name="id" type="xs:token" use="required"/>
-          </xs:extension>
-        </xs:simpleContent>
-      </xs:complexType>
-      <xs:complexType name="KeywordType">
-        <xs:sequence>
-          <xs:element name="Group" type="mce:GroupType" maxOccurs="unbounded"/>
-        </xs:sequence>
-        <xs:attribute name="id" type="xs:token" use="required"/>
-      </xs:complexType>
-      <xs:complexType name="GroupType">
-        <xs:sequence>
-          <xs:choice>
-            <xs:element name="Term" type="mce:TermType" maxOccurs="unbounded"/>
-          </xs:choice>
-        </xs:sequence>
-        <xs:attribute name="matchStyle" default="word">
-          <xs:simpleType>
-            <xs:restriction base="xs:NMTOKEN">
-              <xs:enumeration value="word"/>
-              <xs:enumeration value="string"/>
-            </xs:restriction>
-          </xs:simpleType>
-        </xs:attribute>
-      </xs:complexType>
-      <xs:complexType name="TermType">
-        <xs:simpleContent>
-          <xs:extension base="mce:RestrictedTermType">
-            <xs:attribute name="caseSensitive" type="xs:boolean" default="false"/>
-          </xs:extension>
-        </xs:simpleContent>
-      </xs:complexType>
-      <xs:complexType name="LocalizedStringsType">
-        <xs:sequence>
-          <xs:element name="Resource" type="mce:ResourceType" maxOccurs="unbounded">
-            <xs:key name="UniqueLangCodeUsedInNamePerResource">
-              <xs:selector xpath="mce:Name"/>
-              <xs:field xpath="@langcode"/>
-            </xs:key>
-            <xs:key name="UniqueLangCodeUsedInDescriptionPerResource">
-              <xs:selector xpath="mce:Description"/>
-              <xs:field xpath="@langcode"/>
-            </xs:key>
-          </xs:element>
-        </xs:sequence>
-      </xs:complexType>
-      <xs:complexType name="ResourceType">
-        <xs:sequence>
-          <xs:element name="Name" type="mce:ResourceNameType" maxOccurs="unbounded"/>
-          <xs:element name="Description" type="mce:DescriptionType" minOccurs="0" maxOccurs="unbounded"/>
-        </xs:sequence>
-        <xs:attribute name="idRef" type="mce:GuidType" use="required"/>
-      </xs:complexType>
-      <xs:complexType name="ResourceNameType">
-        <xs:simpleContent>
-          <xs:extension base="xs:string">
-            <xs:attribute name="default" type="xs:boolean" default="false"/>
-            <xs:attribute name="langcode" type="mce:LangType" use="required"/>
-          </xs:extension>
-        </xs:simpleContent>
-      </xs:complexType>
-      <xs:complexType name="DescriptionType">
-        <xs:simpleContent>
-          <xs:extension base="xs:string">
-            <xs:attribute name="default" type="xs:boolean" default="false"/>
-            <xs:attribute name="langcode" type="mce:LangType" use="required"/>
-          </xs:extension>
-        </xs:simpleContent>
-      </xs:complexType>
-    </xs:schema>
+  ```xml
+  <?xml version="1.0" encoding="utf-8"?>
+  <xs:schema xmlns:mce="http://schemas.microsoft.com/office/2011/mce"
+              targetNamespace="http://schemas.microsoft.com/office/2011/mce" 
+              xmlns:xs="http://www.w3.org/2001/XMLSchema"
+              elementFormDefault="qualified"
+              attributeFormDefault="unqualified"
+              id="RulePackageSchema">
+    <xs:simpleType name="LangType">
+      <xs:union memberTypes="xs:language">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value=""/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:union>
+    </xs:simpleType>
+    <xs:simpleType name="GuidType" final="#all">
+      <xs:restriction base="xs:token">
+        <xs:pattern value="[0-9a-fA-F]{8}\-([0-9a-fA-F]{4}\-){3}[0-9a-fA-F]{12}"/>
+      </xs:restriction>
+    </xs:simpleType>
+    <xs:complexType name="RulePackageType">
+      <xs:sequence>
+        <xs:element name="RulePack" type="mce:RulePackType"/>
+        <xs:element name="Rules" type="mce:RulesType">
+          <xs:key name="UniqueRuleId">
+            <xs:selector xpath="mce:Entity|mce:Affinity"/>
+            <xs:field xpath="@id"/>
+          </xs:key>
+          <xs:key name="UniqueProcessorId">
+            <xs:selector xpath="mce:Regex|mce:Keyword"></xs:selector>
+            <xs:field xpath="@id"/>
+          </xs:key>
+          <xs:key name="UniqueResourceIdRef">
+            <xs:selector xpath="mce:LocalizedStrings/mce:Resource"/>
+            <xs:field xpath="@idRef"/>
+          </xs:key>        
+          <xs:keyref name="ReferencedRuleMustExist" refer="mce:UniqueRuleId">
+            <xs:selector xpath="mce:LocalizedStrings/mce:Resource"/>
+            <xs:field xpath="@idRef"/>
+          </xs:keyref>
+          <xs:keyref name="RuleMustHaveResource" refer="mce:UniqueResourceIdRef">
+            <xs:selector xpath="mce:Entity|mce:Affinity"/>
+            <xs:field xpath="@id"/>
+          </xs:keyref>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="RulePackType">
+      <xs:sequence>
+        <xs:element name="Version" type="mce:VersionType"/>
+        <xs:element name="Publisher" type="mce:PublisherType"/>
+        <xs:element name="Details" type="mce:DetailsType">
+          <xs:key name="UniqueLangCodeInLocalizedDetails">
+            <xs:selector xpath="mce:LocalizedDetails"/>
+            <xs:field xpath="@langcode"/>
+          </xs:key>
+          <xs:keyref name="DefaultLangCodeMustExist" refer="mce:UniqueLangCodeInLocalizedDetails">
+            <xs:selector xpath="."/>
+            <xs:field xpath="@defaultLangCode"/>
+          </xs:keyref>
+        </xs:element>
+        <xs:element name="Encryption" type="mce:EncryptionType" minOccurs="0" maxOccurs="1"/>
+      </xs:sequence>
+      <xs:attribute name="id" type="mce:GuidType" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="VersionType">
+      <xs:attribute name="major" type="xs:unsignedShort" use="required"/>
+      <xs:attribute name="minor" type="xs:unsignedShort" use="required"/>
+      <xs:attribute name="build" type="xs:unsignedShort" use="required"/>
+      <xs:attribute name="revision" type="xs:unsignedShort" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="PublisherType">
+      <xs:attribute name="id" type="mce:GuidType" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="LocalizedDetailsType">
+      <xs:sequence>
+        <xs:element name="PublisherName" type="mce:NameType"/>
+        <xs:element name="Name" type="mce:RulePackNameType"/>
+        <xs:element name="Description" type="mce:OptionalNameType"/>
+      </xs:sequence>
+      <xs:attribute name="langcode" type="mce:LangType" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="DetailsType">
+      <xs:sequence>
+        <xs:element name="LocalizedDetails" type="mce:LocalizedDetailsType" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute name="defaultLangCode" type="mce:LangType" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="EncryptionType">
+      <xs:sequence>
+        <xs:element name="Key" type="xs:normalizedString"/>
+        <xs:element name="IV" type="xs:normalizedString"/>
+      </xs:sequence>
+    </xs:complexType>
+    <xs:simpleType name="RulePackNameType">
+      <xs:restriction base="xs:token">
+        <xs:minLength value="1"/>
+        <xs:maxLength value="64"/>
+      </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="NameType">
+      <xs:restriction base="xs:normalizedString">
+        <xs:minLength value="1"/>
+        <xs:maxLength value="256"/>
+      </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="OptionalNameType">
+      <xs:restriction base="xs:normalizedString">
+        <xs:minLength value="0"/>
+        <xs:maxLength value="256"/>
+      </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="RestrictedTermType">
+      <xs:restriction base="xs:string">
+        <xs:minLength value="1"/>
+        <xs:maxLength value="512"/>
+      </xs:restriction>
+    </xs:simpleType>
+    <xs:complexType name="RulesType">
+      <xs:sequence>
+        <xs:choice maxOccurs="unbounded">
+          <xs:element name="Entity" type="mce:EntityType"/>
+          <xs:element name="Affinity" type="mce:AffinityType"/>
+        </xs:choice>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="Regex" type="mce:RegexType"/>
+          <xs:element name="Keyword" type="mce:KeywordType"/>
+        </xs:choice>
+        <xs:element name="LocalizedStrings" type="mce:LocalizedStringsType"/>
+      </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="EntityType">
+      <xs:sequence>
+        <xs:element name="Pattern" type="mce:PatternType" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute name="id" type="mce:GuidType" use="required"/>
+      <xs:attribute name="patternsProximity" type="mce:ProximityType" use="required"/>
+      <xs:attribute name="recommendedConfidence" type="mce:ProbabilityType"/>
+      <xs:attribute name="workload" type="mce:WorkloadType"/>
+    </xs:complexType>
+    <xs:complexType name="PatternType">
+      <xs:sequence>
+        <xs:element name="IdMatch" type="mce:IdMatchType"/>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="Match" type="mce:MatchType"/>
+          <xs:element name="Any" type="mce:AnyType"/>
+        </xs:choice>
+      </xs:sequence>
+      <xs:attribute name="confidenceLevel" type="mce:ProbabilityType" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="AffinityType">
+      <xs:sequence>
+        <xs:element name="Evidence" type="mce:EvidenceType" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute name="id" type="mce:GuidType" use="required"/>
+      <xs:attribute name="evidencesProximity" type="mce:ProximityType" use="required"/>
+      <xs:attribute name="thresholdConfidenceLevel" type="mce:ProbabilityType" use="required"/>
+      <xs:attribute name="workload" type="mce:WorkloadType"/>
+    </xs:complexType>
+    <xs:complexType name="EvidenceType">
+      <xs:sequence>
+        <xs:choice maxOccurs="unbounded">
+          <xs:element name="Match" type="mce:MatchType"/>
+          <xs:element name="Any" type="mce:AnyType"/>
+        </xs:choice>
+      </xs:sequence>
+      <xs:attribute name="confidenceLevel" type="mce:ProbabilityType" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="IdMatchType">
+      <xs:attribute name="idRef" type="xs:string" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="MatchType">
+      <xs:attribute name="idRef" type="xs:string" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="AnyType">
+      <xs:sequence>
+        <xs:choice maxOccurs="unbounded">
+          <xs:element name="Match" type="mce:MatchType"/>
+          <xs:element name="Any" type="mce:AnyType"/>
+        </xs:choice>
+      </xs:sequence>
+      <xs:attribute name="minMatches" type="xs:nonNegativeInteger" default="1"/>
+      <xs:attribute name="maxMatches" type="xs:nonNegativeInteger" use="optional"/>
+    </xs:complexType>
+    <xs:simpleType name="ProximityType">
+      <xs:restriction base="xs:positiveInteger">
+        <xs:minInclusive value="1"/>
+      </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="ProbabilityType">
+      <xs:restriction base="xs:integer">
+        <xs:minInclusive value="1"/>
+        <xs:maxInclusive value="100"/>
+      </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="WorkloadType">
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="Exchange"/>
+        <xs:enumeration value="Outlook"/>
+      </xs:restriction>
+    </xs:simpleType>
+    <xs:complexType name="RegexType">
+      <xs:simpleContent>
+        <xs:extension base="xs:string">
+          <xs:attribute name="id" type="xs:token" use="required"/>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+    <xs:complexType name="KeywordType">
+      <xs:sequence>
+        <xs:element name="Group" type="mce:GroupType" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute name="id" type="xs:token" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="GroupType">
+      <xs:sequence>
+        <xs:choice>
+          <xs:element name="Term" type="mce:TermType" maxOccurs="unbounded"/>
+        </xs:choice>
+      </xs:sequence>
+      <xs:attribute name="matchStyle" default="word">
+        <xs:simpleType>
+          <xs:restriction base="xs:NMTOKEN">
+            <xs:enumeration value="word"/>
+            <xs:enumeration value="string"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+    <xs:complexType name="TermType">
+      <xs:simpleContent>
+        <xs:extension base="mce:RestrictedTermType">
+          <xs:attribute name="caseSensitive" type="xs:boolean" default="false"/>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+    <xs:complexType name="LocalizedStringsType">
+      <xs:sequence>
+        <xs:element name="Resource" type="mce:ResourceType" maxOccurs="unbounded">
+          <xs:key name="UniqueLangCodeUsedInNamePerResource">
+            <xs:selector xpath="mce:Name"/>
+            <xs:field xpath="@langcode"/>
+          </xs:key>
+          <xs:key name="UniqueLangCodeUsedInDescriptionPerResource">
+            <xs:selector xpath="mce:Description"/>
+            <xs:field xpath="@langcode"/>
+          </xs:key>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="ResourceType">
+      <xs:sequence>
+        <xs:element name="Name" type="mce:ResourceNameType" maxOccurs="unbounded"/>
+        <xs:element name="Description" type="mce:DescriptionType" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute name="idRef" type="mce:GuidType" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="ResourceNameType">
+      <xs:simpleContent>
+        <xs:extension base="xs:string">
+          <xs:attribute name="default" type="xs:boolean" default="false"/>
+          <xs:attribute name="langcode" type="mce:LangType" use="required"/>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+    <xs:complexType name="DescriptionType">
+      <xs:simpleContent>
+        <xs:extension base="xs:string">
+          <xs:attribute name="default" type="xs:boolean" default="false"/>
+          <xs:attribute name="langcode" type="mce:LangType" use="required"/>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:schema>
+  ```
 
 ## 詳細情報
 

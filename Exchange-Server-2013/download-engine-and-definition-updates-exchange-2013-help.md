@@ -41,15 +41,21 @@ Microsoft Exchange Server 2013 の管理者は、マルウェア対策エンジ�
 
 エンジンと定義の更新をダウンロードするには、次のコマンドを実行します。
 
-    & $env:ExchangeInstallPath\Scripts\Update-MalwareFilteringServer.ps1 -Identity <FQDN of server>
+```powershell
+& $env:ExchangeInstallPath\Scripts\Update-MalwareFilteringServer.ps1 -Identity <FQDN of server>
+```
 
 この例では、mailbox01.contoso.com という名前のサーバーにエンジンと定義の更新を手動でダウンロードします。
 
-    & $env:ExchangeInstallPath\Scripts\Update-MalwareFilteringServer.ps1 -Identity mailbox01.contoso.com
+```powershell
+& $env:ExchangeInstallPath\Scripts\Update-MalwareFilteringServer.ps1 -Identity mailbox01.contoso.com
+```
 
 必要に応じて、既定値の「http://forefrontdl.microsoft.com/server/scanengineupdate」以外から更新をダウンロードするための「–EngineUpdatePath」パラメーターを指定できます。HTTP アドレスまたは UNC パスを使用できます。後者の場合は、パスにアクセスできるネットワーク サービスが必要です。次の使用例は、mailbox01.contoso.com という名前のサーバー上にローカル ディレクトリからエンジンおよび定義の更新プログラムを手動でダウンロードします。
 
-    & $env:ExchangeInstallPath\Scripts\Update-MalwareFilteringServer.ps1 -Identity mailbox01.contoso.com -EngineUpdatePath \\Server\sharename
+```powershell
+& $env:ExchangeInstallPath\Scripts\Update-MalwareFilteringServer.ps1 -Identity mailbox01.contoso.com -EngineUpdatePath \\Server\sharename
+```
 
 ## 正常な動作を確認する方法
 

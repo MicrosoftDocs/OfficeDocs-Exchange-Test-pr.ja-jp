@@ -59,11 +59,15 @@ _**トピックの最終更新日:** 2012-10-03_
 
 特定の役割の役割エントリの一覧を表示するには、次の構文を使用します。
 
-    Get-ManagementRoleEntry <role name>\*
+```powershell
+Get-ManagementRoleEntry <role name>\*
+```
 
 この例では、`Recipient Administrators` 役割のすべての役割エントリを取得します。
 
-    Get-ManagementRole "Recipient Administrators\*"
+```powershell
+Get-ManagementRole "Recipient Administrators\*"
+```
 
 構文およびパラメーターの詳細については、「[Get-ManagementRoleEntry](https://technet.microsoft.com/ja-jp/library/dd335210\(v=exchg.150\))」を参照してください。
 
@@ -71,11 +75,15 @@ _**トピックの最終更新日:** 2012-10-03_
 
 特定の役割エントリを含んだすべての役割の一覧を表示するには、次の構文を使用します。
 
-    Get-ManagementRoleEntry *\<cmdlet name>
+```powershell
+Get-ManagementRoleEntry *\<cmdlet name>
+```
 
 この例では、**Set-Mailbox** 役割エントリを含んだすべての役割を取得します。
 
-    Get-ManagementRoleEntry *\Set-Mailbox
+```powershell
+Get-ManagementRoleEntry *\Set-Mailbox
+```
 
 構文およびパラメーターの詳細については、「[Get-ManagementRoleEntry](https://technet.microsoft.com/ja-jp/library/dd335210\(v=exchg.150\))」を参照してください。
 
@@ -83,11 +91,15 @@ _**トピックの最終更新日:** 2012-10-03_
 
 類似の名前を持つコマンドレットを含んだ、対象となる役割の一覧を表示するには、次の構文を使用します。
 
-    Get-ManagementRoleEntry *<partial role name>*\*<partial cmdlet name>*
+```powershell
+Get-ManagementRoleEntry *<partial role name>*\*<partial cmdlet name>*
+```
 
 この例では、名前の中に文字列 `Tier 1` を含んだ役割にある、文字列 `Mailbox` を含んだ役割エントリの一覧を返します。
 
-    Get-ManagementRoleEntry "*Tier 1*\*Mailbox*"
+```powershell
+Get-ManagementRoleEntry "*Tier 1*\*Mailbox*"
+```
 
 構文およびパラメーターの詳細については、「[Get-ManagementRoleEntry](https://technet.microsoft.com/ja-jp/library/dd335210\(v=exchg.150\))」を参照してください。
 
@@ -95,11 +107,15 @@ _**トピックの最終更新日:** 2012-10-03_
 
 1 つの役割エントリの詳細を表示するには、次の構文を使用します。
 
-    Get-ManagementRoleEntry <role name>\<cmdlet name> | Format-List
+```powershell
+Get-ManagementRoleEntry <role name>\<cmdlet name> | Format-List
+```
 
 この例では、`Recipient Administrators` 役割にある **Set-Mailbox** 役割エントリの詳細を取得します。
 
-    Get-ManagementRoleEntry "Recipient Administrators\Set-Mailbox" | Format-List
+```powershell
+Get-ManagementRoleEntry "Recipient Administrators\Set-Mailbox" | Format-List
+```
 
 **Format-List** コマンドレットを使用して表示する役割エントリに、非常に多くのパラメーターが含まれている場合は、このトピックの後で紹介する「1 つの役割エントリのパラメーターを表示する」を参照してください。
 
@@ -111,11 +127,15 @@ _**トピックの最終更新日:** 2012-10-03_
 
 役割エントリ オブジェクトの **Parameters** プロパティに保存されたパラメーターを表示するには、次の構文を使用します。
 
-    (Get-ManagementRoleEntry <role name>\<cmdlet name>).Parameters
+```powershell
+(Get-ManagementRoleEntry <role name>\<cmdlet name>).Parameters
+```
 
 この例では、"Mail Recipients/メール受信者" 役割にある **Set-Mailbox** 役割エントリのパラメーターを取得します。
 
-    (Get-ManagementRoleEntry "Mail Recipients\Set-Mailbox").Parameters
+```powershell
+(Get-ManagementRoleEntry "Mail Recipients\Set-Mailbox").Parameters
+```
 
 構文およびパラメーターの詳細については、「[Get-ManagementRoleEntry](https://technet.microsoft.com/ja-jp/library/dd335210\(v=exchg.150\))」を参照してください。
 

@@ -45,7 +45,9 @@ _**トピックの最終更新日:** 2015-04-08_
 
 次のコマンドを実行します。
 
-    Set-TransportService <ServerIdentity> -RoutingTableLogMaxAge <dd.hh:mm:ss> -RoutingTableLogMaxDirectorySize <Size>  -RoutingTableLogPath <LocalFilePath>
+```powershell
+Set-TransportService <ServerIdentity> -RoutingTableLogMaxAge <dd.hh:mm:ss> -RoutingTableLogMaxDirectorySize <Size>  -RoutingTableLogPath <LocalFilePath>
+```
 
 この例では、Mailbox01 というメールボックス サーバーで次のようなルーティング テーブルのログ設定を行います。
 
@@ -57,7 +59,9 @@ _**トピックの最終更新日:** 2015-04-08_
 
 <!-- end list -->
 
-    Set-TransportService Mailbox01 -RoutingTableLogPath "D:\Routing Table Log" -RoutingTableLogMaxDirectorySize 70MB -RoutingTableLogMaxAge 45.00:00:00
+```powershell
+Set-TransportService Mailbox01 -RoutingTableLogPath "D:\Routing Table Log" -RoutingTableLogMaxDirectorySize 70MB -RoutingTableLogMaxAge 45.00:00:00
+```
 
 
 > [!NOTE]
@@ -71,7 +75,9 @@ _**トピックの最終更新日:** 2015-04-08_
 
 1.  シェルで、次のコマンドを実行します。
     
-        Get-TransportService <ServerIdentity> | Format-List RoutingTableLog*
+    ```powershell
+    Get-TransportService <ServerIdentity> | Format-List RoutingTableLog*
+    ```
 
 2.  表示された値が構成した値であることを確認します。
 
@@ -79,21 +85,29 @@ _**トピックの最終更新日:** 2015-04-08_
 
 1.  コマンド プロンプト ウィンドウで、次のコマンドを実行して、EdgeTransport.exe.config アプリケーション構成ファイルをメモ帳で開きます。
     
-        Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
+    ```powershell
+    Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
+    ```
 
 2.  `<appSettings>` セクションで以下のキーを変更します。
     
-        <add key="RoutingConfigReloadInterval" value="<hh:mm:ss>" />
+    ```command line
+    <add key="RoutingConfigReloadInterval" value="<hh:mm:ss>" />
+    ```
     
     たとえば、ルーティング テーブルの自動再計算の間隔を 10 時間に変更するには、次の値を使用します。
     
-        <add key="RoutingConfigReloadInterval" value="10:00:00" />
+    ```command line
+    <add key="RoutingConfigReloadInterval" value="10:00:00" />
+    ```
 
 3.  完了したら、EdgeTransport.exe.config ファイルを保存して閉じます。
 
 4.  次のコマンドを実行して、Microsoft Exchange Transport サービスを再起動します。
     
-        net stop MSExchangeTransport && net start MSExchangeTransport
+    ```powershell
+    net stop MSExchangeTransport && net start MSExchangeTransport
+    ```
 
 ## 正常な動作を確認する方法
 

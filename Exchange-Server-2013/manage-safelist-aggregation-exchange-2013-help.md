@@ -47,11 +47,15 @@ _**トピックの最終更新日:** 2015-04-08_
 
 信頼できる差出人のリストおよび受信拒否リストの最大数を構成するには、次のコマンドを実行します。
 
-    Set-Mailbox <MailboxIdentity> -MaxSafeSenders <Integer> -MaxBlockedSenders <Integer>
+```powershell
+Set-Mailbox <MailboxIdentity> -MaxSafeSenders <Integer> -MaxBlockedSenders <Integer>
+```
 
 この例では、メールボックス john@contoso.com に対し、最大 2,000 の信頼できる差出人のリストと 200 の受信拒否リストを構成します。
 
-    Set-Mailbox john@contoso.com -MaxSafeSenders 2000 -MaxBlockedSenders 200
+```powershell
+Set-Mailbox john@contoso.com -MaxSafeSenders 2000 -MaxBlockedSenders 200
+```
 
 ## 正常な動作を確認する方法
 
@@ -59,7 +63,9 @@ _**トピックの最終更新日:** 2015-04-08_
 
 1.  次のコマンドを実行します。
     
-        Get-Mailbox <Identity> | Format-List Name,Max*Senders
+    ```powershell
+    Get-Mailbox <Identity> | Format-List Name,Max*Senders
+    ```
 
 2.  表示される値が設定値と一致することを確認します。
 
@@ -69,7 +75,9 @@ Exchange 2013 ではセーフリスト集約が自動的に行われるため、
 
 この例では、メールボックス john@contoso.com の信頼できる差出人のリストを Active Directory に書き込みます。
 
-    Update-Safelist john@contoso.com -Type SafeSenders
+```powershell
+Update-Safelist john@contoso.com -Type SafeSenders
+```
 
 構文およびパラメーターの詳細については、「[Update-SafeList](https://technet.microsoft.com/ja-jp/library/bb125034\(v=exchg.150\))」を参照してください。
 
@@ -81,11 +89,15 @@ Exchange 2013 ではセーフリスト集約が自動的に行われるため、
 
 1.  次のコマンドを実行します。
     
-        Get-ContentFilterConfig | Format-List Enabled
+    ```powershell
+    Get-ContentFilterConfig | Format-List Enabled
+    ```
 
 2.  出力で *Enabled* パラメーターが `True` と表示されている場合は、コンテンツ フィルターが有効になっています。有効になっていない場合は、次のコマンドを実行して Exchange サーバー上でコンテンツ フィルターとコンテンツ フィルター エージェントを有効にします。
     
-        Set-ContentFilterConfig -Enabled $true
+    ```powershell
+    Set-ContentFilterConfig -Enabled $true
+    ```
 
 ## ステップ 2:(オプション) ADSI エディターを使用して、セーフリスト集約データのエッジ トランスポート サーバーへのレプリケーションを確認します
 

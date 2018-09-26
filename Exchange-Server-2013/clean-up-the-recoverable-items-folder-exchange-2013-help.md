@@ -55,7 +55,9 @@ _**トピックの最終更新日:** 2015-09-30_
 
 この例では Gurinder Singh の回復可能なアイテム フォルダーからアイテムを完全に削除し、また検出検索メールボックス (Exchange セットアップで作成した検出メールボックス) の GurinderSingh-RecoverableItems フォルダーにアイテムをコピーします。
 
-    Search-Mailbox -Identity "Gurinder Singh" -SearchDumpsterOnly -TargetMailbox "Discovery Search Mailbox" -TargetFolder "GurinderSingh-RecoverableItems" -DeleteContent
+```powershell
+Search-Mailbox -Identity "Gurinder Singh" -SearchDumpsterOnly -TargetMailbox "Discovery Search Mailbox" -TargetFolder "GurinderSingh-RecoverableItems" -DeleteContent
+```
 
 
 > [!NOTE]
@@ -96,31 +98,45 @@ _**トピックの最終更新日:** 2015-09-30_
     > <EM>UseDatabaseQuotaDefaults</EM> パラメーターが <CODE>$true</CODE> に設定されている場合、以前のクォータ設定は適用されません。メールボックス データベース上に構成された対応するクォータ設定が適用され、個人のメールボックス設定にも適用されます。
 
     
-        Get-Mailbox "Gurinder Singh" | Format-List RecoverableItemsQuota, RecoverableItemsWarningQuota, ProhibitSendQuota, ProhibitSendReceiveQuota, UseDatabaseQuotaDefaults, RetainDeletedItemsFor, UseDatabaseRetentionDefaults
+    ```powershell
+    Get-Mailbox "Gurinder Singh" | Format-List RecoverableItemsQuota, RecoverableItemsWarningQuota, ProhibitSendQuota, ProhibitSendReceiveQuota, UseDatabaseQuotaDefaults, RetainDeletedItemsFor, UseDatabaseRetentionDefaults
+    ```
 
 2.  メールボックスのメールボックス アクセス設定を取得します。後で使用するために、これらの設定を忘れずにメモします。
     
-        Get-CASMailbox "Gurinder Singh" | Format-List EwsEnabled, ActiveSyncEnabled, MAPIEnabled, OWAEnabled, ImapEnabled, PopEnabled
+    ```powershell
+    Get-CASMailbox "Gurinder Singh" | Format-List EwsEnabled, ActiveSyncEnabled, MAPIEnabled, OWAEnabled, ImapEnabled, PopEnabled
+    ```
 
 3.  回復可能なアイテム フォルダーの現在のサイズを取得します。サイズをメモして、手順 6 でクォータを増やすことができるようにします。
     
-        Get-MailboxFolderStatistics "Gurinder Singh" -FolderScope RecoverableItems | Format-List Name,FolderAndSubfolderSize
+    ```powershell
+    Get-MailboxFolderStatistics "Gurinder Singh" -FolderScope RecoverableItems | Format-List Name,FolderAndSubfolderSize
+    ```
 
 4.  現在の管理フォルダー アシスタントのワーク サイクル構成を取得します。後で使用するために、設定を忘れずにメモします。
     
-        Get-MailboxServer "My Mailbox Server" | Format-List Name,ManagedFolderWorkCycle
+    ```powershell
+    Get-MailboxServer "My Mailbox Server" | Format-List Name,ManagedFolderWorkCycle
+    ```
 
 5.  メールボックスへのクライアント アクセスを無効にし、この手順の実行中にメールボックス データに対して変更が行われないようにします。
     
-        Set-CASMailbox "Gurinder Singh" -EwsEnabled $false -ActiveSyncEnabled $false -MAPIEnabled $false -OWAEnabled $false -ImapEnabled $false -PopEnabled $false
+    ```powershell
+    Set-CASMailbox "Gurinder Singh" -EwsEnabled $false -ActiveSyncEnabled $false -MAPIEnabled $false -OWAEnabled $false -ImapEnabled $false -PopEnabled $false
+    ```
 
 6.  回復可能なアイテム フォルダーからアイテムが削除されないことを確認するために、回復可能なアイテムのクォータを増やし、回復可能なアイテムの警告クォータを増やし、削除されたアイテムの保持期間をユーザーの回復可能なアイテム フォルダーの現在のサイズよりも大きく設定します。これは、インプレース保持または訴訟ホールドの対象となっているメールボックスのメッセージを保持するのに特に重要です。これらの設定を現在のサイズの 2 倍に増やすことをお勧めします。
     
-        Set-Mailbox "Gurinder Singh" -RecoverableItemsQuota 50Gb -RecoverableItemsWarningQuota 50Gb -RetainDeletedItemsFor 3650 -ProhibitSendQuota 50Gb -ProhibitSendRecieveQuota 50Gb -UseDatabaseQuotaDefaults $false -UseDatabaseRetentionDefaults $false
+    ```powershell
+    Set-Mailbox "Gurinder Singh" -RecoverableItemsQuota 50Gb -RecoverableItemsWarningQuota 50Gb -RetainDeletedItemsFor 3650 -ProhibitSendQuota 50Gb -ProhibitSendRecieveQuota 50Gb -UseDatabaseQuotaDefaults $false -UseDatabaseRetentionDefaults $false
+    ```
 
 7.  メールボックス サーバーの管理フォルダー アシスタントを無効にする。
     
-        Set-MailboxServer MyMailboxServer -ManagedFolderWorkCycle $null
+    ```powershell
+    Set-MailboxServer MyMailboxServer -ManagedFolderWorkCycle $null
+    ```
     
 
     > [!IMPORTANT]
@@ -130,7 +146,9 @@ _**トピックの最終更新日:** 2015-09-30_
 
 8.  単一アイテムの回復を無効にし、訴訟ホールドからメールボックスを削除します。
     
-        Set-Mailbox "Gurinder Singh" -SingleItemRecoveryEnabled $false -LitigationHoldEnabled $false
+    ```powershell
+    Set-Mailbox "Gurinder Singh" -SingleItemRecoveryEnabled $false -LitigationHoldEnabled $false
+    ```
     
 
     > [!IMPORTANT]
@@ -140,11 +158,15 @@ _**トピックの最終更新日:** 2015-09-30_
 
 9.  アイテムを回復可能なアイテム フォルダーから検出検索メールボックスのフォルダーにコピーして、ソース メールボックスからコンテンツを削除します。
     
-        Search-Mailbox -Identity "Gurinder Singh" -SearchDumpsterOnly -TargetMailbox "Discovery Search Mailbox" -TargetFolder "GurinderSingh-RecoverableItems" -DeleteContent
+    ```powershell
+    Search-Mailbox -Identity "Gurinder Singh" -SearchDumpsterOnly -TargetMailbox "Discovery Search Mailbox" -TargetFolder "GurinderSingh-RecoverableItems" -DeleteContent
+    ```
     
     指定した条件に一致するメッセージのみを削除する必要がある場合は、*SearchQuery* パラメーターを使用して条件を指定します。この例では、<strong>件名</strong>フィールドに「Your bank statement」という文字列が含まれるメッセージを削除します。
     
-        Search-Mailbox -Identity "Gurinder Singh" -SearchQuery "Subject:'Your bank statement'" -SearchDumpsterOnly -TargetMailbox "Discovery Search Mailbox" -TargetFolder "GurinderSingh-RecoverableItems" -DeleteContent
+    ```powershell
+    Search-Mailbox -Identity "Gurinder Singh" -SearchQuery "Subject:'Your bank statement'" -SearchDumpsterOnly -TargetMailbox "Discovery Search Mailbox" -TargetFolder "GurinderSingh-RecoverableItems" -DeleteContent
+    ```
     
 
     > [!NOTE]
@@ -154,7 +176,9 @@ _**トピックの最終更新日:** 2015-09-30_
 
 10. メールボックスが訴訟ホールドの対象だった場合または以前に単一アイテムの回復が有効だった場合は、それらの機能を再度有効にします。
     
-        Set-Mailbox "Gurinder Singh" -SingleItemRecoveryEnabled $true -LitigationHoldEnabled $true
+    ```powershell
+    Set-Mailbox "Gurinder Singh" -SingleItemRecoveryEnabled $true -LitigationHoldEnabled $true
+    ```
     
 
     > [!IMPORTANT]
@@ -180,15 +204,21 @@ _**トピックの最終更新日:** 2015-09-30_
     
     この例では、メールボックスは訴訟ホールドから削除され、削除されたアイテム保持期間は既定値の 14 日間にリセットされ、回復可能なアイテムのクォータはメールボックス データベースと同じ値を使用するよう構成されます。手順 1 でメモした値が異なる場合は、前述のパラメーターを使用してそれぞれの値を指定し、*UseDatabaseQuotaDefaults* パラメーターを `$false` に設定する必要があります。*RetainDeletedItemsForand UseDatabaseRetentionDefaults* パラメーターを以前に異なる値に設定していた場合は、それらも手順 1 でメモした値に戻す必要があります。
     
-        Set-Mailbox "Gurinder Singh" -RetentionHoldEnabled $false -RetainDeletedItemsFor 14 -RecoverableItemsQuota unlimited -UseDatabaseQuotaDefaults $true
+    ```powershell
+    Set-Mailbox "Gurinder Singh" -RetentionHoldEnabled $false -RetainDeletedItemsFor 14 -RecoverableItemsQuota unlimited -UseDatabaseQuotaDefaults $true
+    ```
 
 12. ワーク サイクルの設定を手順 4 でメモした値に戻すことで、管理フォルダー アシスタントを有効にします。この例ではワーク サイクルを 1 日に設定します。
     
-        Set-MailboxServer MyMailboxServer -ManagedFolderWorkCycle 1
+    ```powershell
+    Set-MailboxServer MyMailboxServer -ManagedFolderWorkCycle 1
+    ```
 
 13. クライアント アクセスを有効にします。
     
-        Set-CASMailbox -ActiveSyncEnabled $true -EwsEnabled $true -MAPIEnabled $true -OWAEnabled $true -ImapEnabled $true -PopEnabled $true
+    ```powershell
+    Set-CASMailbox -ActiveSyncEnabled $true -EwsEnabled $true -MAPIEnabled $true -OWAEnabled $true -ImapEnabled $true -PopEnabled $true
+    ```
 
 構文およびパラメーターの詳細については、以下のトピックを参照してください。
 
@@ -214,5 +244,7 @@ _**トピックの最終更新日:** 2015-09-30_
 
 この例では、回復可能なアイテム フォルダーとそのサブフォルダーのサイズ、およびフォルダー/各サブフォルダー内のアイテム数を取得します。
 
-    Get-MailboxFolderStatistics -Identity "Gurinder Singh" -FolderScope RecoverableItems | Format-Table Name,FolderAndSubfolderSize,ItemsInFolderAndSubfolders -Auto
+```powershell
+Get-MailboxFolderStatistics -Identity "Gurinder Singh" -FolderScope RecoverableItems | Format-Table Name,FolderAndSubfolderSize,ItemsInFolderAndSubfolders -Auto
+```
 

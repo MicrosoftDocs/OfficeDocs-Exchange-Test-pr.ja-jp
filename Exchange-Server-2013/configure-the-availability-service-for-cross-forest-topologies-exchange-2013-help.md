@@ -59,12 +59,16 @@ GAL 同期を有効にするには、メールが有効なユーザー、連絡�
 
 この例では、空き時間情報サービスがターゲット フォレストのメールボックス サーバー上でユーザー単位の空き時間情報を取得するように構成します。
 
-    Get-MailboxServer | Add-ADPermission -Accessrights Extendedright -Extendedrights "ms-Exch-
-    EPI-Token-Serialization" -User "<Remote Forest Domain>\Exchange servers"
+```powershell
+Get-MailboxServer | Add-ADPermission -Accessrights Extendedright -Extendedrights "ms-Exch-
+EPI-Token-Serialization" -User "<Remote Forest Domain>\Exchange servers"
+```
 
 この例では、ソース フォレストのローカル メールボックス サーバー上で空き時間情報サービスが使用する、空き時間のアクセス方法を定義します。ローカルのメールボックス サーバーは、フォレスト ContosoForest.com からユーザー単位で空き時間情報にアクセスするように構成されています。この例では、サービス アカウントを使用して空き時間情報を取得します。
 
-    Add-AvailabilityAddressSpace -Forestname ContosoForest.com -AccessMethod PerUserFB -UseServiceAccount:$true
+```powershell
+Add-AvailabilityAddressSpace -Forestname ContosoForest.com -AccessMethod PerUserFB -UseServiceAccount:$true
+```
 
 
 > [!NOTE]
@@ -78,7 +82,9 @@ GAL 同期を有効にするには、メールが有効なユーザー、連絡�
 
 この例では、サービス アカウントを使用する信頼されたフォレスト間の可用性を構成します。
 
-    Get-MailboxServer | Add-ADPermission -Accessrights Extendedright -Extendedright "ms-Exch-EPI-Token-Serialization" -User "<Remote Forest Domain>\Exchange servers"
+```powershell
+Get-MailboxServer | Add-ADPermission -Accessrights Extendedright -Extendedright "ms-Exch-EPI-Token-Serialization" -User "<Remote Forest Domain>\Exchange servers"
+```
 
 構文およびパラメーターの詳細については、以下のトピックを参照してください。
 
@@ -94,10 +100,14 @@ GAL 同期を有効にするには、メールが有効なユーザー、連絡�
 
 この例では、空き時間情報構成オブジェクトの組織全体のアカウントを設定して、ターゲット フォレストの空き時間情報のアクセス レベルを構成します。
 
-    Set-AvailabilityConfig -OrgWideAccount "Contoso.com\User"
+```powershell
+Set-AvailabilityConfig -OrgWideAccount "Contoso.com\User"
+```
 
 この例では、ソース フォレストの空き時間情報アドレス空間構成オブジェクトを追加します。
 
-    $a = Get-Credential (Enter the credentials for organization-wide user in Contoso.com domain)
-    Add-AvailabilityAddressspace -Forestname Contoso.com -Accessmethod OrgWideFB -Credential:$a
+```powershell
+$a = Get-Credential (Enter the credentials for organization-wide user in Contoso.com domain)
+Add-AvailabilityAddressspace -Forestname Contoso.com -Accessmethod OrgWideFB -Credential:$a
+```
 

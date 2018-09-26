@@ -49,19 +49,25 @@ POP3 および IMAP4 に関連する詳細情報については、「[Exchange S
 
 この例では、エンド ユーザーが外部 POP3 サーバー設定を表示できるようにします。
 
-    Set-PopSettings -ExternalConnectionSettings {Dublin01.Contoso.com:995:SSL}
+```powershell
+Set-PopSettings -ExternalConnectionSettings {Dublin01.Contoso.com:995:SSL}
+```
 
 構文およびパラメーターの詳細については、「[Set-PopSettings](https://technet.microsoft.com/ja-jp/library/aa997154\(v=exchg.150\))」を参照してください。
 
 この例では、エンド ユーザーが外部 IMAP4 サーバー設定を表示できるようにします。
 
-    Set-ImapSettings -ExternalConnectionSettings {Dublin01.Contoso.com:993:SSL}
+```powershell
+Set-ImapSettings -ExternalConnectionSettings {Dublin01.Contoso.com:993:SSL}
+```
 
 構文およびパラメーターの詳細については、「[Set-ImapSettings](https://technet.microsoft.com/ja-jp/library/aa998252\(v=exchg.150\))」を参照してください。
 
 これらの変更を適用するには、IIS を再起動する必要があります。POP3 サービスを再起動する必要はありません。IIS を再起動するには、コマンド プロンプトから次を入力します。
 
-    iisreset
+```powershell
+iisreset
+```
 
 ## 正常な動作を確認する方法
 
@@ -69,7 +75,9 @@ POP3 および IMAP4 に関連する詳細情報については、「[Exchange S
 
 1.  シェルで、次のコマンドを実行します。
     
-        Get-PopSettings | format-list
+    ```powershell
+    Get-PopSettings | format-list
+    ```
 
 2.  *ExternalConnectionSettings* プロパティが設定されていることを確認します。
 
@@ -77,7 +85,9 @@ POP3 および IMAP4 に関連する詳細情報については、「[Exchange S
 
 1.  シェルで、次のコマンドを実行します。
     
-        Get-ImapSettings | format-list
+    ```powershell
+    Get-ImapSettings | format-list
+    ```
 
 2.  *ExternalConnectionSettings* プロパティが設定されていることを確認します。
 
@@ -87,7 +97,9 @@ POP3 および IMAP4 に関連する詳細情報については、「[Exchange S
 
 この例では、エンド ユーザーが Outlook Web App を使用して内部および外部の SMTP サーバー設定を表示できるようにします。
 
-    Get-ReceiveConnector "*Client Frontend*" | Set-ReceiveConnector -Fqdn Server.Contoso.com -AdvertiseClientSettings $true 
+```powershell
+Get-ReceiveConnector "*Client Frontend*" | Set-ReceiveConnector -Fqdn Server.Contoso.com -AdvertiseClientSettings $true 
+```
 
 構文およびパラメーターの詳細については、「[Set-ReceiveConnector](https://technet.microsoft.com/ja-jp/library/bb125140\(v=exchg.150\))」を参照してください。
 
@@ -97,7 +109,9 @@ POP3 および IMAP4 に関連する詳細情報については、「[Exchange S
 
 1.  シェルで、次のコマンドを実行します。
     
-        Get-ReceiveConnector | format-list
+    ```powershell
+    Get-ReceiveConnector | format-list
+    ```
 
 2.  *AdvertiseClientSettings* プロパティを `true` に設定した場合、ユーザーは Outlook Web App で SMTP サーバー設定を表示できます。*AdvertiseClientSettings* を `false` に設定した場合、ユーザーは Outlook Web App で SMTP サーバー設定を表示できません。
 

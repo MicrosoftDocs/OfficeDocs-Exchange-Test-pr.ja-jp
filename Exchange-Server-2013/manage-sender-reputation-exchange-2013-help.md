@@ -45,11 +45,15 @@ _**トピックの最終更新日:** 2015-04-08_
 
 この例では送信者評価を無効にします。
 
-    Set-SenderReputationConfig -Enabled $false
+```powershell
+Set-SenderReputationConfig -Enabled $false
+```
 
 この例では送信者評価を有効にします。
 
-    Set-SenderReputationConfig -Enabled $true
+```powershell
+Set-SenderReputationConfig -Enabled $true
+```
 
 ## 正常な動作を確認する方法
 
@@ -57,11 +61,15 @@ _**トピックの最終更新日:** 2015-04-08_
 
 1.  次のコマンドを実行して、プロトコル分析エージェントがインストールされ有効になっていることを確認します。
     
-        Get-TransportAgent
+    ```powershell
+    Get-TransportAgent
+    ```
 
 2.  次のコマンドを実行して、構成した送信者評価の値を確認します。
     
-        Get-SenderReputationConfig | Format-List Enabled,*MailEnabled
+    ```powershell
+    Get-SenderReputationConfig | Format-List Enabled,*MailEnabled
+    ```
 
 ## シェルを使用して、内部メッセージまたは外部メッセージの送信者評価を有効または無効にする
 
@@ -69,19 +77,27 @@ _**トピックの最終更新日:** 2015-04-08_
 
 外部メッセージの送信者評価を無効にするには、次のコマンドを実行します。
 
-    Set-SenderReputationConfig -ExternalMailEnabled $false
+```powershell
+Set-SenderReputationConfig -ExternalMailEnabled $false
+```
 
 外部メッセージの送信者評価を有効にするには、次のコマンドを実行します。
 
-    Set-SenderReputationConfig -ExternalMailEnabled $true
+```powershell
+Set-SenderReputationConfig -ExternalMailEnabled $true
+```
 
 内部メッセージの送信者評価を無効にするには、次のコマンドを実行します。
 
-    Set-SenderReputationConfig -InternalMailEnabled $false
+```powershell
+Set-SenderReputationConfig -InternalMailEnabled $false
+```
 
 内部メッセージの送信者評価を有効にするには、次のコマンドを実行します。
 
-    Set-SenderReputationConfig -InternalMailEnabled $true
+```powershell
+Set-SenderReputationConfig -InternalMailEnabled $true
+```
 
 ## 正常な動作を確認する方法
 
@@ -89,7 +105,9 @@ _**トピックの最終更新日:** 2015-04-08_
 
 1.  次のコマンドを実行します。
     
-        Get-SenderReputationConfig | Format-List Enabled,*MailEnabled
+    ```powershell
+    Get-SenderReputationConfig | Format-List Enabled,*MailEnabled
+    ```
 
 2.  表示される値が設定値と一致することを確認します。
 
@@ -97,11 +115,15 @@ _**トピックの最終更新日:** 2015-04-08_
 
 送信者評価プロパティを構成するには、次のコマンドを実行します。
 
-    Set-SenderReputationConfig -SrlBlockThreshold <Value> -SenderBlockingPeriod <Hours>
+```powershell
+Set-SenderReputationConfig -SrlBlockThreshold <Value> -SenderBlockingPeriod <Hours>
+```
 
 この例では、送信者評価レベル (SRL) 禁止しきい値を 6 に設定し、違反送信者を IP 禁止一覧に 36 時間追加するように送信者評価を構成します。
 
-    Set-SenderReputationConfig -SrlBlockThreshold 6 -SenderBlockingPeriod 36
+```powershell
+Set-SenderReputationConfig -SrlBlockThreshold 6 -SenderBlockingPeriod 36
+```
 
 ## 正常な動作を確認する方法
 
@@ -109,7 +131,9 @@ _**トピックの最終更新日:** 2015-04-08_
 
 1.  次のコマンドを実行します。
     
-        Get-SenderReputationConfig
+    ```powershell
+    Get-SenderReputationConfig
+    ```
 
 2.  表示される値が設定値と一致することを確認します。
 
@@ -148,11 +172,15 @@ _**トピックの最終更新日:** 2015-04-08_
 
 オープン プロキシ サーバーを検出するための送信アクセスを構成するには、次のコマンドを実行します。
 
-    Set-SenderReputationConfig -ProxyServerName <String> -ProxyServerPort <Port> -ProxyServerType <String>
+```powershell
+Set-SenderReputationConfig -ProxyServerName <String> -ProxyServerPort <Port> -ProxyServerType <String>
+```
 
 この例では、HTTP 接続プロトコルをポート 80 で使用する SERVER01 という名前のオープン プロキシ サーバーを使用するように送信者評価を構成します。
 
-    Set-SenderReputationConfig - ProxyServerName SERVER01 -ProxyServerPort 80 -ProxyServerType HttpConnect
+```powershell
+Set-SenderReputationConfig - ProxyServerName SERVER01 -ProxyServerPort 80 -ProxyServerType HttpConnect
+```
 
 ## 正常な動作を確認する方法
 
@@ -160,7 +188,9 @@ _**トピックの最終更新日:** 2015-04-08_
 
 1.  次のコマンドを実行します。
     
-        Get-SenderReputationConfig | Format-List ProxyServer*
+    ```powershell
+    Get-SenderReputationConfig | Format-List ProxyServer*
+    ```
 
 2.  表示された値が構成した値であることを確認します。
 
