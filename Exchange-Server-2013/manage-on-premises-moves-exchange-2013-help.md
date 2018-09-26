@@ -175,10 +175,12 @@ New-MoveRequest -Identity 'tony@alpineskihouse.com' -PrimaryOnly -TargetDatabase
 
 この例では、移行エンドポイントを構成し, .csv ファイルを使用してソース フォレストからターゲット フォレストまでのフォレスト間バッチ移動を作成します。
 
-    New-MigrationEndpoint -Name Fabrikam -ExchangeRemote -Autodiscover -EmailAddress tonysmith@fabrikam.com -Credentials (Get-Credential fabrikam\tonysmith) 
+```PowerShell
+New-MigrationEndpoint -Name Fabrikam -ExchangeRemote -Autodiscover -EmailAddress tonysmith@fabrikam.com -Credentials (Get-Credential fabrikam\tonysmith) 
     
-    $csvData=[System.IO.File]::ReadAllBytes("C:\Users\Administrator\Desktop\batch.csv")
-    New-MigrationBatch -CSVData $csvData -Timezone "Pacific Standard Time" -Name FabrikamMerger -SourceEndpoint Fabrikam -TargetDeliveryDomain "mail.contoso.com"
+$csvData=[System.IO.File]::ReadAllBytes("C:\Users\Administrator\Desktop\batch.csv")
+New-MigrationBatch -CSVData $csvData -Timezone "Pacific Standard Time" -Name FabrikamMerger -SourceEndpoint Fabrikam -TargetDeliveryDomain "mail.contoso.com"
+```  
 
 フォレスト間移動のフォレストの準備方法の詳細については、以下のトピックを参照してください。
 
