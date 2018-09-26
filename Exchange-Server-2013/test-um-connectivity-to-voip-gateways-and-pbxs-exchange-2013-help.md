@@ -45,15 +45,21 @@ UM のトラブルシューティングに関連する他の管理タスクに�
 
 この例では、TCP ポート 5060 で受信 SIP 要求待ちを行うための UM IP ゲートウェイの機能をテストします。
 
-    Test-UMConnectivity -ListenPort 5060 -UMIPGateway MyIPGateway
+```powershell
+Test-UMConnectivity -ListenPort 5060 -UMIPGateway MyIPGateway
+```
 
 この例は、ローカルのメールボックス サーバーが、セキュリティで保護された相互 TLS 接続ではなくセキュリティで保護されていない TCP 接続を使用して、電話番号 56780 を用いて `MyUMIPGateway` という名前の UM IP ゲートウェイ経由で電話をかけることができるかどうかをテストします。
 
-    Test-UMConnectivity -UMIPGateway MyUMIPGateway -Phone 56780 -Secured $false
+```powershell
+Test-UMConnectivity -UMIPGateway MyUMIPGateway -Phone 56780 -Secured $false
+```
 
 この例は、SIP URI を使用してダイヤル プランの Outlook Voice Access 番号をテストします。ここでの例は Lync Server を含む環境で使用できます。
 
-    Test-UMConnectivity -UMIPGateway OCSGateway1 -Phone "sip:SIPdialplan.contoso.com@contoso.com"
+```powershell
+Test-UMConnectivity -UMIPGateway OCSGateway1 -Phone "sip:SIPdialplan.contoso.com@contoso.com"
+```
 
 
 > [!NOTE]

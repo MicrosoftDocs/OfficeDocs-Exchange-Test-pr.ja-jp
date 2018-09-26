@@ -62,24 +62,27 @@ UM 自動応答に関連する追加の管理タスクについては、「[UM �
 ## シェルを使用して UM ダイヤル プランおよび自動応答のカスタム案内応答、アナウンス、メニュー、およびプロンプトをインポートする
 
 この例では、案内応答ファイル welcomegreeting.wav を d:\\UMPrompts から UM ダイヤル プラン `MyUMDialPlan` にインポートします。
-
+```powershell
     [byte[]]$c = Get-content -Path "d:\UMPrompts\welcomegreeting.wav" -Encoding Byte -ReadCount 0
     Import-UMPrompt -UMDialPlan MyUMDialPlan -PromptFileName "welcomegreeting.wav" -PromptFileData $c
+```
 
 この例では、案内応答ファイル welcomegreeting.wav を d:\\UMPrompts から UM 自動応答 `MyUMAutoAttendant` にインポートします。
-
+```powershell
     [byte[]]$c = Get-content -Path "d:\UMPrompts\welcomegreeting.wav" -Encoding Byte -ReadCount 0
     Import-UMPrompt -UMAutoAttendant MyUMAutoAttendant -PromptFileName "welcomegreeting.wav" -PromptFileData $c
+```
 
 ## シェルを使用して UM ダイヤル プランおよび自動応答から、カスタム案内応答、アナウンス、メニュー、およびプロンプトをエクスポートする
 
 この例では、UM ダイヤル プラン `MyUMDialPlan` の案内応答をエクスポートし、welcomegreeting.wav というファイルとして保存します。
-
+```powershell
     $prompt = Export-UMPrompt -PromptFileName "customgreeting.wav�? -UMDialPlan MyUMDialPlan
     set-content -Path "d:\DialPlanPrompts\welcomegreeting.wav" -Value $prompt.AudioData -Encoding Byte
+```
 
 この例では、UM 自動応答 `MYUMAutoAttendant` に使用する勤務時間の案内応答をエクスポートし、BusinessHoursWelcomeGreeting.wav として保存します。
-
+```powershell
     $prompt = Export-UMPrompt -BusinessHoursWelcomeGreeting -UMAutoAttendant MyUMAutoAttendant
     set-content -Path "d:\UMPrompts\BusinessHoursWelcomeGreeting.wav" -Value $prompt.AudioData -Encoding Byte
-
+```

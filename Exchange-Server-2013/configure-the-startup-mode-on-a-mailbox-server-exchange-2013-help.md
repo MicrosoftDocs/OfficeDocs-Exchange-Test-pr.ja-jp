@@ -66,10 +66,11 @@ Microsoft Exchange Unified Messaging サービス用のスタートアップ �
 ## シェルを使用してメールボックス サーバー上のスタートアップ モードを構成する
 
 この例では、`MyUMServer1` という名前のメールボックス サーバーのスタートアップ モードをデュアル モードに設定します。
-
+```powershell
     Set-UMService -Identity MyUMServer1 -UMStartUpMode Dual
+```
 
 この例では、`MyUMServer1` という名前のメールボックス サーバーのスタートアップ モードを TLS モードに設定します。
-
+```powershell
     Set-UMService -Identity MyUMServer1 -UMStartUpMode TLS
-
+```

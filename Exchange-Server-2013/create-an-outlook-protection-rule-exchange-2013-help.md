@@ -45,7 +45,9 @@ IRM に関連する追加の管理タスクについては、「[Information Rig
 
 この例では、Project Contoso という Outlook 保護ルールを作成します。このルールによって、ContosoPMs という配布グループに対して送信されるメッセージが、Business Critical という AD RMS テンプレートで保護されます。
 
-    New-OutlookProtectionRule -Name "Project Contoso" -SentTo "DL-ContosoPMs@contoso.com" -ApplyRightsProtectionTemplate "Business Critical"
+  ```powershell
+  New-OutlookProtectionRule -Name "Project Contoso" -SentTo "DL-ContosoPMs@contoso.com" -ApplyRightsProtectionTemplate "Business Critical"
+  ```
 
 
 > [!NOTE]

@@ -106,12 +106,14 @@ SMTP イベントに対してトランスポート エージェントが登録�
 
 各メッセージ スナップショット ファイルの先頭には、メッセージの本文に追加されているヘッダーと、そのメッセージ スナップショット ファイルが関連付けられている SMTP イベントおよびトランスポート エージェントの一覧が含まれます。これらのヘッダーは、先頭に `X-CreatedBy: MessageSnapshot-Begin injected headers`、末尾に `X-EndOfInjectedXHeaders: MessageSnapshot-End injected headers` が付きます。これらのヘッダーは、以降のトランスポート エージェントと SNMP イベントによって、各メッセージ スナップショット ファイル内で置き換えられます。以下に、電子メール メッセージ ファイルに追加されるヘッダーの例を示します。
 
-    X-CreatedBy: MessageSnapshot-Begin injected headers
-    X-MessageSnapshot-UTC-Time: 2013-01-23T23:20:18.138Z
-    X-MessageSnapshot-Record-Id: 21474836486
-    X-MessageSnapshot-Source: OnSubmittedMessageX-Sender: michelle@nwtraders.com
-    X-Receiver: chris@contoso.com
-    X-EndOfInjectedXHeaders: MessageSnapshot-End injected headers
+  ```powershell
+  X-CreatedBy: MessageSnapshot-Begin injected headers
+  X-MessageSnapshot-UTC-Time: 2013-01-23T23:20:18.138Z
+  X-MessageSnapshot-Record-Id: 21474836486
+  X-MessageSnapshot-Source: OnSubmittedMessageX-Sender: michelle@nwtraders.com
+  X-Receiver: chris@contoso.com
+  X-EndOfInjectedXHeaders: MessageSnapshot-End injected headers
+  ```
 
 ファイルには、メッセージ スナップショット ヘッダーの後に、元のメッセージ ヘッダーのすべてを含む、メッセージの内容が含まれます。トランスポート エージェントによってメッセージの内容が変更される場合は、その変更内容がメッセージに統合されて表示されます。各トランスポート エージェントによってメッセージが処理されるときに、各エージェントによって加えられる変更内容がメッセージの内容に適用されます。トランスポート エージェントによってメッセージの内容に加えられる変更がない場合は、そのエージェントによって作成されるメッセージ スナップショットは、前のトランスポート エージェントによって作成されたメッセージ スナップショットと同じになります。
 

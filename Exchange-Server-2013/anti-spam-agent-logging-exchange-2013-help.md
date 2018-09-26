@@ -268,15 +268,21 @@ _**トピックの最終更新日:** 2015-03-09_
 
 **Get-AntiSpamFilteringReport.ps1** スクリプトは、`%ExchangeInstallPath%Scripts` にあります。シェルのスクリプトは Scripts フォルダーから実行する必要があります。シェルの場所を Scripts フォルダーに変更するには、次のコマンドを実行します。
 
-    Cd $env:ExchangeInstallPath\Scripts
+```powershell
+Cd $env:ExchangeInstallPath\Scripts
+```
 
 Scripts フォルダーのスクリプトを実行するには、次の構文を使用します。
 
-    .\Get-AntiSpamFilteringReport.ps1 -report <ReportValue> [<OptionalParameters>]
+  ```powershell
+  .\Get-AntiSpamFilteringReport.ps1 -report <ReportValue> [<OptionalParameters>]
+  ```
 
 スクリプトの使用方法の詳細を確認するには、次のコマンドを実行します。
 
-    Get-Help -Detailed .\Get-AntiSpamFilteringReport.ps1
+```powershell
+Get-Help -Detailed .\Get-AntiSpamFilteringReport.ps1
+```
 
 ページのトップへ
 

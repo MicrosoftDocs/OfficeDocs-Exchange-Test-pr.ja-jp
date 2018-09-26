@@ -59,13 +59,17 @@ Exchange 2013 および Exchange Online とのハイブリッド展開を実装�
 
 社内 Exchange 組織の Exchange 管理シェル (Exchange PowerShell) で次のコマンドを実行します。
 
-    New-AuthServer -Name "WindowsAzureACS" -AuthMetadataUrl https://accounts.accesscontrol.windows.net/<your verified domain>/metadata/json/1
+```powershell
+New-AuthServer -Name "WindowsAzureACS" -AuthMetadataUrl https://accounts.accesscontrol.windows.net/<your verified domain>/metadata/json/1
+```
 
 ## ステップ 2:Exchange Online 組織のパートナー アプリケーションを使用可能にする
 
 社内 Exchange 組織の Exchange PowerShell で、次のコマンドを実行します。
 
-    Get-PartnerApplication |  ?{$_.ApplicationIdentifier -eq "00000002-0000-0ff1-ce00-000000000000" -and $_.Realm -eq ""} | Set-PartnerApplication -Enabled $true
+```powershell
+Get-PartnerApplication |  ?{$_.ApplicationIdentifier -eq "00000002-0000-0ff1-ce00-000000000000" -and $_.Realm -eq ""} | Set-PartnerApplication -Enabled $true
+```
 
 ## ステップ 3:社内の認証証明書をエクスポートする
 
@@ -73,23 +77,27 @@ Exchange 2013 および Exchange Online とのハイブリッド展開を実装�
 
 1.  次のテキストを、たとえば **ExportAuthCert.ps1** という名前の PowerShell スクリプト ファイルに保存します。
     
-        $thumbprint = (Get-AuthConfig).CurrentCertificateThumbprint
-         
-        if((test-path $env:SYSTEMDRIVE\OAuthConfig) -eq $false)
-        {
-            md $env:SYSTEMDRIVE\OAuthConfig
-        }
-        cd $env:SYSTEMDRIVE\OAuthConfig
-         
-        $oAuthCert = (dir Cert:\LocalMachine\My) | where {$_.Thumbprint -match $thumbprint}
-        $certType = [System.Security.Cryptography.X509Certificates.X509ContentType]::Cert
-        $certBytes = $oAuthCert.Export($certType)
-        $CertFile = "$env:SYSTEMDRIVE\OAuthConfig\OAuthCert.cer"
-        [System.IO.File]::WriteAllBytes($CertFile, $certBytes)
+    ```powershell
+    $thumbprint = (Get-AuthConfig).CurrentCertificateThumbprint
+        
+    if((test-path $env:SYSTEMDRIVE\OAuthConfig) -eq $false)
+    {
+        md $env:SYSTEMDRIVE\OAuthConfig
+    }
+    cd $env:SYSTEMDRIVE\OAuthConfig
+        
+    $oAuthCert = (dir Cert:\LocalMachine\My) | where {$_.Thumbprint -match $thumbprint}
+    $certType = [System.Security.Cryptography.X509Certificates.X509ContentType]::Cert
+    $certBytes = $oAuthCert.Export($certType)
+    $CertFile = "$env:SYSTEMDRIVE\OAuthConfig\OAuthCert.cer"
+    [System.IO.File]::WriteAllBytes($CertFile, $certBytes)
+    ```
 
 2.  社内 Exchange 組織の Exchange PowerShell で、直前の手順で作成した PowerShell スクリプトを実行します。たとえば、
     
-        .\ExportAuthCert.ps1
+    ```powershell
+    .\ExportAuthCert.ps1
+    ```
 
 ## ステップ 4:オンプレミスの認証証明書を Azure Active Directory ACS にアップロードする
 
@@ -99,27 +107,31 @@ Exchange 2013 および Exchange Online とのハイブリッド展開を実装�
 
 2.  次のテキストを、たとえば **UploadAuthCert.ps1** という名前の PowerShell スクリプト ファイルに保存します。
     
-        Connect-MsolService;
-        Import-Module msonlineextended;
-        
-        $CertFile = "$env:SYSTEMDRIVE\OAuthConfig\OAuthCert.cer"
-        
-        $objFSO = New-Object -ComObject Scripting.FileSystemObject;
-        $CertFile = $objFSO.GetAbsolutePathName($CertFile);
-        
-        $cer = New-Object System.Security.Cryptography.X509Certificates.X509Certificate
-        $cer.Import($CertFile);
-        $binCert = $cer.GetRawCertData();
-        $credValue = [System.Convert]::ToBase64String($binCert);
-        
-        $ServiceName = "00000002-0000-0ff1-ce00-000000000000";
-        
-        $p = Get-MsolServicePrincipal -ServicePrincipalName $ServiceName
-        New-MsolServicePrincipalCredential -AppPrincipalId $p.AppPrincipalId -Type asymmetric -Usage Verify -Value $credValue
+    ```powershell
+    Connect-MsolService;
+    Import-Module msonlineextended;
+    
+    $CertFile = "$env:SYSTEMDRIVE\OAuthConfig\OAuthCert.cer"
+    
+    $objFSO = New-Object -ComObject Scripting.FileSystemObject;
+    $CertFile = $objFSO.GetAbsolutePathName($CertFile);
+    
+    $cer = New-Object System.Security.Cryptography.X509Certificates.X509Certificate
+    $cer.Import($CertFile);
+    $binCert = $cer.GetRawCertData();
+    $credValue = [System.Convert]::ToBase64String($binCert);
+    
+    $ServiceName = "00000002-0000-0ff1-ce00-000000000000";
+    
+    $p = Get-MsolServicePrincipal -ServicePrincipalName $ServiceName
+    New-MsolServicePrincipalCredential -AppPrincipalId $p.AppPrincipalId -Type asymmetric -Usage Verify -Value $credValue
+    ```
 
 3.  直前の手順で作成した PowerShell スクリプトを実行します。たとえば、
     
-        .\UploadAuthCert.ps1
+    ```powershell
+    .\UploadAuthCert.ps1
+    ```
 
 4.  スクリプトを起動した後に、\[資格情報\] ダイアログ ボックスが表示されます。Microsoft Online Azure AD 組織のテナント管理者アカウントの資格情報を入力します。スクリプトの実行後、Azure AD 用 Windows PowerShell セッションを開いたままにします。これは、次のステップで PowerShell スクリプトを実行するために使用します。
 
@@ -129,7 +141,9 @@ Exchange 2013 および Exchange Online とのハイブリッド展開を実装�
 
 社内の Exchange 組織にある外部 Exchange エンドポイントが不明な場合は、社内の Exchange 組織の Exchange PowerShell で以下のコマンドを実行することにより、外部の構成済み Web サービス エンドポイントのリストを取得できます。
 
-    Get-WebServicesVirtualDirectory | FL ExternalUrl
+```powershell
+Get-WebServicesVirtualDirectory | FL ExternalUrl
+```
 
 
 > [!NOTE]
@@ -139,20 +153,24 @@ Exchange 2013 および Exchange Online とのハイブリッド展開を実装�
 
 1.  次のテキストを、たとえば **RegisterEndpoints.ps1** という名前の PowerShell スクリプト ファイルに保存します。この例では、ワイルドカードを使用して contoso.com のすべてのエンドポイントを登録します。**contoso.com** を社内の Exchange 組織のホスト名管理機関に置き換えてください。
     
-        $externalAuthority="*.contoso.com"
-         
-        $ServiceName = "00000002-0000-0ff1-ce00-000000000000";
-         
-        $p = Get-MsolServicePrincipal -ServicePrincipalName $ServiceName;
-         
-        $spn = [string]::Format("{0}/{1}", $ServiceName, $externalAuthority);
-        $p.ServicePrincipalNames.Add($spn);
-         
-        Set-MsolServicePrincipal -ObjectID $p.ObjectId -ServicePrincipalNames $p.ServicePrincipalNames;
+    ```powershell
+    $externalAuthority="*.contoso.com"
+        
+    $ServiceName = "00000002-0000-0ff1-ce00-000000000000";
+        
+    $p = Get-MsolServicePrincipal -ServicePrincipalName $ServiceName;
+        
+    $spn = [string]::Format("{0}/{1}", $ServiceName, $externalAuthority);
+    $p.ServicePrincipalNames.Add($spn);
+        
+    Set-MsolServicePrincipal -ObjectID $p.ObjectId -ServicePrincipalNames $p.ServicePrincipalNames;
+    ```
 
 2.  Azure Active Directory 用 Windows PowerShell で、直前のステップで作成した Windows PowerShell スクリプトを実行します。たとえば、次のようにです。
     
-        .\RegisterEndpoints.ps1
+    ```powershell
+    .\RegisterEndpoints.ps1
+    ```
 
 ## ステップ 6:社内の組織から Office 365 への IntraOrganizationConnector を作成する
 
@@ -160,7 +178,9 @@ Exchange Online でホストされるメールボックスのターゲット ア
 
 Exchange PowerShell を使用して、社内の組織で次のコマンドレットを実行します。
 
-    New-IntraOrganizationConnector -name ExchangeHybridOnPremisesToOnline -DiscoveryEndpoint https://outlook.office365.com/autodiscover/autodiscover.svc -TargetAddressDomains <your service target address>
+```powershell
+New-IntraOrganizationConnector -name ExchangeHybridOnPremisesToOnline -DiscoveryEndpoint https://outlook.office365.com/autodiscover/autodiscover.svc -TargetAddressDomains <your service target address>
+```
 
 ## ステップ 7:Office 365 テナントから社内の Exchange 組織への IntraOrganizationConnector を作成する
 
@@ -180,13 +200,15 @@ Exchange PowerShell を使用して、社内の組織で次のコマンドレッ
 
 Windows PowerShell を使用して、次のコマンドレットを実行します。
 
-    $UserCredential = Get-Credential
-    
-    $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
-    
-    Import-PSSession $Session
-    
-    New-IntraOrganizationConnector -name ExchangeHybridOnlineToOnPremises -DiscoveryEndpoint <your on-premises Autodiscover endpoint> -TargetAddressDomains <your on-premises SMTP domain>
+```powershell
+$UserCredential = Get-Credential
+
+$Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
+
+Import-PSSession $Session
+
+New-IntraOrganizationConnector -name ExchangeHybridOnlineToOnPremises -DiscoveryEndpoint <your on-premises Autodiscover endpoint> -TargetAddressDomains <your on-premises SMTP domain>
+```
 
 ## ステップ 8:Exchange 2013 SP1 よりも前のサーバー用に AvailabilityAddressSpace を構成する
 
@@ -212,7 +234,9 @@ Exchange 2013/2010 または Exchange 2013/2007 が含まれる混在展開で�
 
 Exchange 2013 より前のクライアント アクセス サーバーでは、*AvailabilityAddressSpace* は、社内 Exchange 2013 SP1 クライアント アクセス サーバーの Exchange Web サービス エンドポイントを指すよう構成する必要があります。このエンドポイントは、手順 5 で概説したエンドポイントと同じものですが、社内の Exchange 2013 SP1 クライアント アクセス サーバーから、次のコマンドレットを実行することで判別できます。
 
-    Get-WebServicesVirtualDirectory | FL AdminDisplayVersion,ExternalUrl
+```powershell
+Get-WebServicesVirtualDirectory | FL AdminDisplayVersion,ExternalUrl
+```
 
 
 > [!NOTE]
@@ -222,7 +246,9 @@ Exchange 2013 より前のクライアント アクセス サーバーでは、*
 
 *AvailabilityAddressSpace* を構成するには、社内組織で Exchange PowerShell を使用して、次のコマンドレットを実行します。
 
-    Add-AvailabilityAddressSpace -AccessMethod InternalProxy -ProxyUrl <your on-premises External Web Services URL> -ForestName <your Office 365 service target address> -UseServiceAccount $True
+```powershell
+Add-AvailabilityAddressSpace -AccessMethod InternalProxy -ProxyUrl <your on-premises External Web Services URL> -ForestName <your Office 365 service target address> -UseServiceAccount $True
+```
 
 ## 正常な動作を確認する方法
 
@@ -236,11 +262,15 @@ Exchange 2013 より前のクライアント アクセス サーバーでは、*
 
 社内の Exchange 組織が Exchange Online に正常に接続できることを検証するために、社内の組織の Exchange PowerShell で次のコマンドを実行します。
 
-    Test-OAuthConnectivity -Service EWS -TargetUri https://outlook.office365.com/ews/exchange.asmx -Mailbox <On-Premises Mailbox> -Verbose | fl
+```powershell
+Test-OAuthConnectivity -Service EWS -TargetUri https://outlook.office365.com/ews/exchange.asmx -Mailbox <On-Premises Mailbox> -Verbose | fl
+```
 
 Exchange Online 組織が社内の Exchange 組織に正常に接続できることを検証するために、[リモート PowerShell](https://technet.microsoft.com/ja-jp/library/jj984289\(v=exchg.150\)) を使用して Exchange Online 組織に接続し、次のコマンドを実行します。
 
-    Test-OAuthConnectivity -Service EWS -TargetUri <external hostname authority of your Exchange On-Premises deployment>/metadata/json/1 -Mailbox <Exchange Online Mailbox> -Verbose | fl
+```powershell
+Test-OAuthConnectivity -Service EWS -TargetUri <external hostname authority of your Exchange On-Premises deployment>/metadata/json/1 -Mailbox <Exchange Online Mailbox> -Verbose | fl
+```
 
 例: Test-OAuthConnectivity -Service EWS -TargetUri https://lync.contoso.com/metadata/json/1 -Mailbox ExchangeOnlineBox1 -Verbose | fl
 

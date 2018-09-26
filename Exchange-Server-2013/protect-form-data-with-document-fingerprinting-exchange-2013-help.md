@@ -53,20 +53,26 @@ DLP ポリシーへのルールの追加方法については、「[DLP ポリ�
 
 DLP は、分類ルール パッケージを使用して、メッセージ内の機密コンテンツを検出します。ドキュメント フィンガープリントに基づいて分類ルール パッケージを作成するには、**New-Fingerprint** コマンドレットと **New-DataClassification** コマンドレットを使用します。**New-Fingerprint** の結果はデータ分類ルールの外部に保存されないため、**New-Fingerprint** と **New-DataClassification** または **Set-Dataclassification** は、必ず同じ PowerShell セッション内で実行します。次の例では、C:\\My Documents\\Contoso Employee Template.docx ファイルに基づいて新しいドキュメント フィンガープリントを作成します。新しいフィンガープリントは変数として保存し、同じ PowerShell セッション内の **New-DataClassification** コマンドレットで使用できるようにします。
 
-    $Employee_Template = Get-Content "C:\My Documents\Contoso Employee Template.docx" -Encoding byte
-    $Employee_Fingerprint = New-Fingerprint -FileData $Employee_Template -Description "Contoso Employee Template"
+```powershell
+$Employee_Template = Get-Content "C:\My Documents\Contoso Employee Template.docx" -Encoding byte
+$Employee_Fingerprint = New-Fingerprint -FileData $Employee_Template -Description "Contoso Employee Template"
+```
 
 ここで、C:\\My Documents\\Contoso Customer Information Form.docx ファイルのドキュメント フィンガープリントを使用する、"Contoso Employee Confidential" という名前の新しいデータ分類ルールを作成してみましょう。
 
-    $Employee_Template = Get-Content "C:\My Documents\Contoso Customer Information Form.docx" -Encoding byte
-    $Customer_Fingerprint = New-Fingerprint -FileData $Customer_Form -Description "Contoso Customer Information Form"
-    New-DataClassification -Name "Contoso Customer Confidential" -Fingerprints $Customer_Fingerprint -Description "Message contains Contoso customer information." 
+```powershell
+$Employee_Template = Get-Content "C:\My Documents\Contoso Customer Information Form.docx" -Encoding byte
+$Customer_Fingerprint = New-Fingerprint -FileData $Customer_Form -Description "Contoso Customer Information Form"
+New-DataClassification -Name "Contoso Customer Confidential" -Fingerprints $Customer_Fingerprint -Description "Message contains Contoso customer information." 
+```
 
 **Get-DataClassification** コマンドレットを使用してすべての DLP データ分類ルール パッケージを探すことができます。この例では、"Contoso Customer Confidential" がデータ分類ルール パッケージの一覧に含まれています。
 
 最後に、"Contoso Customer Confidential" データ分類ルール パッケージを DLP ポリシーに追加します。
 
-    New-TransportRule -Name "Notify :External Recipient Contoso confidential" -NotifySender NotifyOnly -Mode Enforce -SentToScope NotInOrganization -MessageContainsDataClassification @{Name=" Contoso Customer Confidential"}
+```powershell
+New-TransportRule -Name "Notify :External Recipient Contoso confidential" -NotifySender NotifyOnly -Mode Enforce -SentToScope NotInOrganization -MessageContainsDataClassification @{Name=" Contoso Customer Confidential"}
+```
 
 これで、DLP エージェントが Contoso Customer Form.docx ドキュメント フィンガープリントと一致するドキュメントを検出するようになります。
 

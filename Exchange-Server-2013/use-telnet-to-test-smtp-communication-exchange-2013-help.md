@@ -70,10 +70,12 @@ Telnet をポート 25 で使用して相手先の SMTP サーバーに接続�
     
     このコマンドの出力は次のようになります。
     
-        fabrikam.com mx preference=10, mail exchanger = mail1.fabrikam.com
-        fabrikam.com mx preference=20, mail exchanger = mail2.fabrikam.com
-        mail1.fabrikam.com internet address = 192.168.1.10
-        mail2 fabrikam.com internet address = 192.168.1.20
+    ```powershell
+    fabrikam.com mx preference=10, mail exchanger = mail1.fabrikam.com
+    fabrikam.com mx preference=20, mail exchanger = mail2.fabrikam.com
+    mail1.fabrikam.com internet address = 192.168.1.10
+    mail2 fabrikam.com internet address = 192.168.1.20
+    ```
     
     相手先の SMTP サーバーとして、MX レコードに関連付けられている任意のホスト名または IP アドレスを使用することができます。優先順位の値が小さいほど優先度の高い SMTP サーバーであることを示します。負荷分散とフォールト トレランスについて、複数の MX レコードおよび異なる優先順位の値を使用することができます。
 
@@ -107,8 +109,12 @@ Telnet をポート 25 で使用して相手先の SMTP サーバーに接続�
 > <LI>
 > <P>Telnet クライアントのコマンドでは、大文字と小文字が区別されません。SMTP コマンドの動詞は、判別しやすいように大文字にしています。</P>
 > <LI>
-> <P>Telnet セッションで相手先の SMTP サーバーに接続した後で、BackSpace キーを使用することはできません。SMTP コマンドを誤って入力した場合は、Enter キーを押して再度コマンドを入力する必要があります。認識できない SMTP コマンドや構文エラーがあると、次のようなエラー メッセージが表示されます。</P><PRE><CODE>500 5.3.3 Unrecognized command</CODE></PRE></LI></UL>
-
+> <P>Telnet セッションで相手先の SMTP サーバーに接続した後で、BackSpace キーを使用することはできません。SMTP コマンドを誤って入力した場合は、Enter キーを押して再度コマンドを入力する必要があります。認識できない SMTP コマンドや構文エラーがあると、次のようなエラー メッセージが表示されます。</P>
+> 
+> ```powershell
+> 500 5.3.3 Unrecognized command
+> ```
+> </LI></UL>
 
 
 1.  コマンド プロンプトで「**telnet**」と入力し、Enter キーを押します。このコマンドによって、Telnet セッションが開きます。
@@ -127,7 +133,9 @@ Telnet をポート 25 で使用して相手先の SMTP サーバーに接続�
 
 8.  「**DATA**」と入力し、Enter キーを押します。以下のような応答を受信します。
     
-        354 Start mail input; end with <CLRF>.<CLRF>
+    ```powershell
+    354 Start mail input; end with <CLRF>.<CLRF>
+    ```
 
 9.  「**Subject:Test from Contoso**」と入力し、Enter キーを押します。
 
@@ -137,11 +145,15 @@ Telnet をポート 25 で使用して相手先の SMTP サーバーに接続�
 
 12. Enter キーを押し、ピリオド ( **.** ) を入力して、再度 Enter キーを押します。以下のような応答を受信します。
     
-        250 2.6.0 <GUID> Queued mail for delivery
+    ```powershell
+    250 2.6.0 <GUID> Queued mail for delivery
+    ```
 
 13. 相手先の SMTP サーバーとの接続を解除するには、「**QUIT**」と入力し、Enter キーを押します。以下のような応答を受信します。
     
-        221 2.0.0 Service closing transmission channel
+    ```powershell
+    221 2.0.0 Service closing transmission channel
+    ```
 
 14. Telnet セッションを閉じるには、「**quit**」と入力し、Enter キーを押します。
 

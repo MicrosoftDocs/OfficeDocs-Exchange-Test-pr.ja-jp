@@ -53,22 +53,30 @@ UM ダイヤル プランに関連するその他の管理タスクについて�
 
 この例では、`MyMailboxServer` という名前のメールボックス サーバーを `MySIPDialPlan` という名前の SIP URI ダイヤル プランから削除します。
 
+```powershell
     $dp= Get-UMDialPlan "MySIPDialPlan"
     $s=Get-UMService MyMailboxServer
     $s.dialplans-=$dp.identity
     Set-UMService -id MyMailboxServer -dialplans:$s.dialplans
+```
 
 この例では、SipDP1、SipDP2、および SipDP3 という 3 つの SIP URI ダイヤル プランがあります。この例は、SipDP3 ダイヤル プランから `MyMailboxServer` という名前のメールボックス サーバーを削除します。
 
-    Set-UMService -id MyMailboxServer -DialPlans SipDP1,SipDP2
+```powershell
+Set-UMService -id MyMailboxServer -DialPlans SipDP1,SipDP2
+```
 
 この例では、SipDP1 と SipDP2 という 2 つの SIP URI ダイヤル プランがあります。この例は、SipDP2 ダイヤル プランから `MyMailboxServer` という名前のメールボックス サーバーを削除します。
 
-    Set-UMService -id MyMailboxServer -DialPlans SipDP1
+```powershell
+Set-UMService -id MyMailboxServer -DialPlans SipDP1
+```
 
 この例は、すべての SIP ダイヤル プランから `MyMailboxServer` という名前のメールボックス サーバーを削除します。
 
-    Set-UMService -id MyUMServer -DialPlans $null
+```powershell
+Set-UMService -id MyUMServer -DialPlans $null
+```
 
 ## EAC を使用してクライアント アクセス サーバーを SIP URI ダイヤル プランから削除する
 
@@ -84,20 +92,28 @@ UM ダイヤル プランに関連するその他の管理タスクについて�
 
 この例では、`MyClientAccessServer` というクライアント アクセス サーバーを `MySIPDialPlan` という SIP URI ダイヤル プランから削除します。
 
+```powershell
     $dp= Get-UMDialPlan "MySIPDialPlan"
     $s=Get-UMCallRouterSettings MyClientAccessServer
     $s.dialplans-=$dp.identity
     Set-UMCallRouterSettings -id MyClientAccessServer -dialplans:$s.dialplans
+```
 
 この例では、SipDP1、SipDP2、および SipDP3 という 3 つの SIP URI ダイヤル プランがあります。この例は、SipDP3 ダイヤル プランから `MyClientAccessServer` という名前のクライアント アクセス サーバーを削除します。
 
-    Set-UMCallRouterSettings -id MyClientAccessServer -DialPlans SipDP1,SipDP2
+```powershell
+Set-UMCallRouterSettings -id MyClientAccessServer -DialPlans SipDP1,SipDP2
+```
 
 この例では、SipDP1 と SipDP2 という 2 つの SIP URI ダイヤル プランがあります。この例は、SipDP2 ダイヤル プランから `MyClientAccessServer` という名前のクライアント アクセス サーバーを削除します。
 
-    Set-UMCallRouterSettings -id MyClientAccessServer -DialPlans SipDP1
+```powershell
+Set-UMCallRouterSettings -id MyClientAccessServer -DialPlans SipDP1
+```
 
 この例は、すべての SIP ダイヤル プランから `MyClientAccessServer` という名前のクライアント アクセス サーバーを削除します。
 
-    Set-UMCallRouterSettings -id MyClientAccessServer -DialPlans $null
+```powershell
+Set-UMCallRouterSettings -id MyClientAccessServer -DialPlans $null
+```
 

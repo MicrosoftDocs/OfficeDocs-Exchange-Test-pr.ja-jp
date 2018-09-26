@@ -43,11 +43,15 @@ Exchange Server 2013 や 2016 の Exchange Server 上にメールボックスの
     
     Exchange 2010 では、次のコマンドを実行します。このコマンドは、メールボックス データベースをメールボックス プロビジョニング ロードバランサーから除外します。これにより、このデータベースに新しいメールボックスが自動的に追加されなくなります。
     
-        New-MailboxDatabase -Server <PFServerName_with_CASRole> -Name <NewMDBforPFs> -IsExcludedFromProvisioning $true 
+    ```powershell
+    New-MailboxDatabase -Server <PFServerName_with_CASRole> -Name <NewMDBforPFs> -IsExcludedFromProvisioning $true 
+    ```
     
     Exchange 2007 では、次のコマンドを実行します。
     
-        New-MailboxDatabase -StorageGroup "<PFServerName>\StorageGroup>" -Name <NewMDBforPFs>
+    ```powershell
+    New-MailboxDatabase -StorageGroup "<PFServerName>\StorageGroup>" -Name <NewMDBforPFs>
+    ```
     
 
     > [!NOTE]
@@ -56,16 +60,18 @@ Exchange Server 2013 や 2016 の Exchange Server 上にメールボックスの
 
 
 3.  新しいメールボックス データベース内にプロキシ メールボックスを作成し、アドレス帳でこのメールボックスを非表示にします。このメールボックスの SMTP は自動検出によって *DefaultPublicFolderMailbox* SMTP として返されます。この SMTP を解決することで、クライアントは従来の Exchange サーバーに接続して、パブリック フォルダーにアクセスできます。
-    ```
+    ```powershell
     New-Mailbox -Name <PFMailbox1> -Database <NewMDBforPFs> 
     ```
-    ```
+    ```powershell
     Set-Mailbox -Identity <PFMailbox1> -HiddenFromAddressListsEnabled $true
     ```
 
 4.  Exchange 2010 では、プロキシ パブリック フォルダー メールボックスを返すように、自動検出を有効にします。この手順は Exchange 2007 には必要ありません。
     
-        Set-MailboxDatabase <NewMDBforPFs> -RPCClientAccessServer <PFServerName_with_CASRole>
+    ```powershell
+    Set-MailboxDatabase <NewMDBforPFs> -RPCClientAccessServer <PFServerName_with_CASRole>
+    ```
 
 5.  組織内のすべてのパブリック フォルダー サーバーに対して、前述の手順を繰り返します。
 
@@ -75,7 +81,9 @@ Exchange Server 2013 や 2016 の Exchange Server 上にメールボックスの
 
 Exchange Server 2013 の社内ユーザーがレガシ パブリック フォルダーにアクセスできるようにします。[Step 2: Make remote public folders discoverable](https://docs.microsoft.com/ja-jp/exchange/collaboration-exo/public-folders/set-up-legacy-hybrid-public-folders) で作成したすべてのプロキシ パブリック フォルダー メールボックスを指すことになります。CU5 以降の更新プログラムがインストールされた Exchange 2013 サーバーから次のコマンドを実行します。
 
-    Set-OrganizationConfig -PublicFoldersEnabled Remote -RemotePublicFolderMailboxes ProxyMailbox1,ProxyMailbox2,ProxyMailbox3
+```powershell
+Set-OrganizationConfig -PublicFoldersEnabled Remote -RemotePublicFolderMailboxes ProxyMailbox1,ProxyMailbox2,ProxyMailbox3
+```
 
 
 > [!NOTE]

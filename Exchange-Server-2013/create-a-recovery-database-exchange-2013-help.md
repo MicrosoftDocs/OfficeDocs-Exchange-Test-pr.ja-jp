@@ -39,11 +39,15 @@ _**トピックの最終更新日:** 2013-01-21_
 
 この例では、メールボックス サーバー MBX2 上に回復用データベース RDB1 を作成します。
 
-    New-MailboxDatabase -Recovery -Name RDB1 -Server MBX2
+```powershell
+New-MailboxDatabase -Recovery -Name RDB1 -Server MBX2
+```
 
 この例では、データベース ファイルとログ フォルダーのカスタム パスを使用して、メールボックス サーバー MBX1 上に回復用データベース RDB2 を作成します。
 
-    New-MailboxDatabase -Recovery -Name RDB2 -Server MBX1 -EdbFilePath "C:\Recovery\RDB2\RDB2.EDB" -LogFolderPath "C:\Recovery\RDB2"
+  ```powershell
+  New-MailboxDatabase -Recovery -Name RDB2 -Server MBX1 -EdbFilePath "C:\Recovery\RDB2\RDB2.EDB" -LogFolderPath "C:\Recovery\RDB2"
+  ```
 
 構文およびパラメーターの詳細については、「[New-MailboxDatabase](https://technet.microsoft.com/ja-jp/library/aa997976\(v=exchg.150\))」を参照してください。
 
@@ -53,7 +57,9 @@ _**トピックの最終更新日:** 2013-01-21_
 
   - シェルで次のコマンドを実行して、回復用データベースの構成情報を表示します。
     
-        Get-MailboxDatabase <RecoveryDatabaseName> | Format-List
+    ```powershell
+    Get-MailboxDatabase <RecoveryDatabaseName> | Format-List
+    ```
 
 ## その他のタスク
 

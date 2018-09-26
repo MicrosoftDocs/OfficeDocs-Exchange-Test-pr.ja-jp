@@ -65,7 +65,9 @@ Exchange 組織内で既存のメール ユーザーの電子メールを無効�
 
 この例では、メール ユーザー Yan Li の電子メールを無効にします。
 
-    Disable-MailUser -Identity "Yan Li"
+```powershell
+Disable-MailUser -Identity "Yan Li"
+```
 
 構文およびパラメーターの詳細については、「[Disable-MailUser](https://technet.microsoft.com/ja-jp/library/aa998578\(v=exchg.150\))」を参照してください。
 
@@ -79,13 +81,17 @@ Exchange 組織内で既存のメール ユーザーの電子メールを無効�
 
 3.  シェルで、次のコマンドを実行します。
     
-        Get-MailUser
+    ```powershell
+    Get-MailUser
+    ```
     
     このコマンドレットはメールが有効なユーザーのみを返すため、電子メールを無効にしたメール ユーザーは結果として返されません。
 
 4.  シェルで、次のコマンドを実行します。
     
-        Get-User
+    ```powershell
+    Get-User
+    ```
     
     このコマンドレットはすべての Active Directory ユーザー オブジェクトを返すため、電子メールを無効にしたメール ユーザーが結果として返されます。
 
@@ -97,7 +103,9 @@ Exchange 組織内で既存のメール ユーザーの電子メールを無効�
 
 この例では、ユーザー Sanjay Shah のメールを有効にします。外部の電子メール アドレスを指定する必要があります。
 
-    Enable-MailUser -Identity "Sanjay Shah" -ExternalEmailAddress renev@tailspintoys.com
+```powershell
+Enable-MailUser -Identity "Sanjay Shah" -ExternalEmailAddress renev@tailspintoys.com
+```
 
 ## シェルと CSV ファイルを使用して複数ユーザーのメールの有効にする
 
@@ -105,22 +113,26 @@ Exchange 組織内で既存のメール ユーザーの電子メールを無効�
 
 1.  次のコマンドを実行すると、メールが有効でない既存のユーザーまたは組織内のメールボックスを持っていない既存のユーザーの一覧が管理者のデスクトップ上の UsersToMailEnable.csv というファイルにエクスポートされます。
     
-        Get-User | Where { $_.RecipientType -eq "User" } | Out-File "C:\Users\Administrator\Desktop\UsersToMailEnable.csv"
+    ```powershell
+    Get-User | Where { $_.RecipientType -eq "User" } | Out-File "C:\Users\Administrator\Desktop\UsersToMailEnable.csv"
+    ```
     
     この結果, .csv ファイルは次のようになります。
     
-        Name            RecipientType
-        ----            -------------
-        Guest           User
-        krbtgt          User
-        RMS_SERVICE     User
-        David Pelton    User
-        Kim Akers       User
-        Janet Schorr    User
-        Jeffrey Zang    User
-        Spencer Low     User
-        Toni Poe        User
-        ...
+    ```powershell
+    Name            RecipientType
+    ----            -------------
+    Guest           User
+    krbtgt          User
+    RMS_SERVICE     User
+    David Pelton    User
+    Kim Akers       User
+    Janet Schorr    User
+    Jeffrey Zang    User
+    Spencer Low     User
+    Toni Poe        User
+    ...
+    ```
 
 2.  この CSV ファイルを次のように変更します。
     
@@ -132,19 +144,23 @@ Exchange 組織内で既存のメール ユーザーの電子メールを無効�
     
     更新した CSV ファイルは次のようになります。
     
-        Name,EmailAddress
-        David Pelton,davidp@contoso.com
-        Kim Akers,kakers@tailspintoys.com
-        Janet Schorr,janet.schorr@adatum.com
-        Jeffrey Zang,jzang@tailspintoys.com
-        Spencer Low,spencerl@fouthcoffee.com
-        Toni Poe,tonip@contoso.com
-        ...
+    ```powershell
+    Name,EmailAddress
+    David Pelton,davidp@contoso.com
+    Kim Akers,kakers@tailspintoys.com
+    Janet Schorr,janet.schorr@adatum.com
+    Jeffrey Zang,jzang@tailspintoys.com
+    Spencer Low,spencerl@fouthcoffee.com
+    Toni Poe,tonip@contoso.com
+    ...
+    ```
 
 3.  次のコマンドを実行して、CSV ファイルのデータを使用し、ファイルに記載されたユーザーのメールを有効にします。
     
-        Import-CSV "C:\Users\Administrator\Desktop\UsersToMailEnable.csv" | ForEach-Object {Enable-MailUser -Identity $_.Name -ExternalEmailAddress $_.EmailAddress}
-    
+    ```powershell
+    Import-CSV "C:\Users\Administrator\Desktop\UsersToMailEnable.csv" | ForEach-Object {Enable-MailUser -Identity $_.Name -ExternalEmailAddress $_.EmailAddress}
+    ```
+
     コマンドの結果には、新しくメールを有効にしたユーザーに関する情報が表示されます。
 
 ## 正常な動作を確認する方法
@@ -161,5 +177,7 @@ Active Directory ユーザーのメールが正常に有効化されたことを
 
   - シェルで、次のコマンドを実行して新しいメール ユーザーの情報を表示します。
     
-        Get-MailUser | Format-Table Name,RecipientTypeDetails,ExternalEmailAddress
+    ```powershell
+    Get-MailUser | Format-Table Name,RecipientTypeDetails,ExternalEmailAddress
+    ```
 

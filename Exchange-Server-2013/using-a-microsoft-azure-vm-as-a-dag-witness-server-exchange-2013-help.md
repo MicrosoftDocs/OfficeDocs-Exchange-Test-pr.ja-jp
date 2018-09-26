@@ -189,27 +189,31 @@ Azure 側で VPN ゲートウェイを確立するには、「[管理ポータ�
 
 任意の XML エディターでエクスポートしたファイルを開きます。オンプレミスのサイトへのゲートウェイ接続が、「ConnectionsToLocalNetwork」セクションに一覧表示されます。XML ファイルでその用語を検索すると、セクションが見つかります。この構成ファイルのセクションは次のようになります (ローカル サイトに作成されたサイト名が "Site A" であると仮定した場合)。
 
-    <ConnectionsToLocalNetwork>
-    
-        <LocalNetworkSiteRef name="Site A">
-    
-            <Connection type="IPsec" />
-    
-    </LocalNetworkSiteRef>
+```powershell
+<ConnectionsToLocalNetwork>
+
+    <LocalNetworkSiteRef name="Site A">
+
+        <Connection type="IPsec" />
+
+</LocalNetworkSiteRef>
+```
 
 2 番目のサイトを構成するには、「ConnectionsToLocalNetwork」セクションの下に別の「LocalNetworkSiteRef」セクションを追加します。更新した構成ファイルのセクションは次のようになります (2 番目のローカル サイトのサイト名が "Site B" であると仮定した場合)。
 
-    <ConnectionsToLocalNetwork>
-    
-        <LocalNetworkSiteRef name="Site A">
-    
-            <Connection type="IPsec" />
-    
-        <LocalNetworkSiteRef name="Site B">
-    
-            <Connection type="IPsec" />
-    
-    </LocalNetworkSiteRef>
+```powershell
+<ConnectionsToLocalNetwork>
+
+    <LocalNetworkSiteRef name="Site A">
+
+        <Connection type="IPsec" />
+
+    <LocalNetworkSiteRef name="Site B">
+
+        <Connection type="IPsec" />
+
+</LocalNetworkSiteRef>
+```
 
 更新された構成設定ファイルを保存します。
 
@@ -227,9 +231,11 @@ Azure 側で VPN ゲートウェイを確立するには、「[管理ポータ�
 
 事前共有キーを抽出するには、「[Get-AzureVNetGatewayKey](http://msdn.microsoft.com/ja-jp/library/azure/dn495198.aspx)」コマンドレットを使用します。このコマンドレットは、トンネルごとに 1 回ずつ実行します。次の例は、仮想ネットワーク「Azure Site」とサイト "Site A" および "Site B" の間にあるトンネル用のキーを抽出するために実行する必要があるコマンドを示しています。この例では、出力は個別のファイルに保存されます。または、これらのキーを他の PowerShell コマンドレットにパイプライン処理したり、これらのキーをスクリプトで使用できます。
 
-    Get-AzureVNETGatewayKey -VNetName "Azure Site" -LocalNetworkSiteName "Site A" > C:\Keys\KeysForTunnelToSiteA.txt 
-    
-    Get-AzureVNETGatewayKey -VNetName "Azure Site" -LocalNetworkSiteName "Site B" > C:\Keys\KeysForTunnelToSiteB.txt
+```powershell
+Get-AzureVNETGatewayKey -VNetName "Azure Site" -LocalNetworkSiteName "Site A" > C:\Keys\KeysForTunnelToSiteA.txt 
+
+Get-AzureVNETGatewayKey -VNetName "Azure Site" -LocalNetworkSiteName "Site B" > C:\Keys\KeysForTunnelToSiteB.txt
+```
 
 ## オンプレミスの VPN デバイスを構成する
 
@@ -265,17 +271,21 @@ Microsoft Azure は、サポートされる VPN デバイスに VPN デバイス
 
 この時点で、両方のサイトが VPN ゲートウェイを介して Azure 仮想ネットワークに接続されています。PowerShell で次のコマンドを実行すると、複数サイト VPN の状態を検証できます。
 
-    Get-AzureVnetConnection -VNetName "Azure Site" | Format-Table LocalNetworkSiteName, ConnectivityState
+```powershell
+Get-AzureVnetConnection -VNetName "Azure Site" | Format-Table LocalNetworkSiteName, ConnectivityState
+```
 
 両方のトンネルが稼働している場合、このコマンドの出力は次のようになります。
 
-    LocalNetworkSiteName    ConnectivityState
-    
-    --------------------    -----------------
-    
-    Site A                  Connected
-    
-    Site B                  Connected
+```powershell
+LocalNetworkSiteName    ConnectivityState
+
+--------------------    -----------------
+
+Site A                  Connected
+
+Site B                  Connected
+```
 
 また、Azure 管理ポータルで仮想ネットワークのダッシュボードを表示すると、接続を確認できます。両方のサイトの <strong>ステータス</strong> 列に <strong>接続済み</strong> と表示されます。
 
@@ -293,9 +303,11 @@ Microsoft Azure は、サポートされる VPN デバイスに VPN デバイス
 
 2.  Azure PowerShell を使用して、ドメイン コントローラーとファイル サーバーの両方に優先 IP アドレスを指定します。仮想マシンに優先 IP アドレスを指定する場合は更新する必要があります。これには仮想マシンの再起動が必要になります。次の例では、Azure-DC と Azure-FSW の IP アドレスがそれぞれ 10.0.0.10 と 10.0.0.11 に設定されています。
     
-        Get-AzureVM Azure-DC | Set-AzureStaticVNetIP -IPAddress 10.0.0.10 | Update-AzureVM
-        
-        Get-AzureVM Azure-FSW | Set-AzureStaticVNetIP -IPAddress 10.0.0.11 | Update-AzureVM
+    ```powershell
+    Get-AzureVM Azure-DC | Set-AzureStaticVNetIP -IPAddress 10.0.0.10 | Update-AzureVM
+    
+    Get-AzureVM Azure-FSW | Set-AzureStaticVNetIP -IPAddress 10.0.0.11 | Update-AzureVM
+    ```
     
 
     > [!NOTE]
@@ -329,7 +341,9 @@ Microsoft Azure は、サポートされる VPN デバイスに VPN デバイス
 
 2.  DAG 用にミラーリング監視サーバーを構成するには、次のコマンドを実行します。
     
-        Set-DatabaseAvailabilityGroup -Identity DAG1 -WitnessServer Azure-FSW
+    ```powershell
+    Set-DatabaseAvailabilityGroup -Identity DAG1 -WitnessServer Azure-FSW
+    ```
 
 詳細については、以下のトピックを参照してください。
 
@@ -343,17 +357,23 @@ Microsoft Azure は、サポートされる VPN デバイスに VPN デバイス
 
 1.  次のコマンドを実行して、DAG の構成を検証します。
     
-        Get-DatabaseAvailabilityGroup -Identity DAG1 -Status | Format-List Name, WitnessServer, WitnessDirectory, WitnessShareInUse
+    ```powershell
+    Get-DatabaseAvailabilityGroup -Identity DAG1 -Status | Format-List Name, WitnessServer, WitnessDirectory, WitnessShareInUse
+    ```
     
     *WitnessServer* パラメーターが Azure のファイル サーバーに設定されていること、*WitnessDirectory* パラメーターが適切なパスに設定されていること、*WitnessShareInUse* パラメーターが **Primary** と表示されていることを確認します。
 
 2.  DAG のノードの数が偶数の場合、ファイル共有監視が構成されます。次のコマンドを実行して、クラスターのプロパティにあるファイル共有監視の設定を検証します。*SharePath* パラメーターの値はファイル サーバーを指し示し、正しいパスを表示するはずです。
     
-        Get-ClusterResource -Cluster MBX1 | Get-ClusterParameter | Format-List
+    ```powershell
+    Get-ClusterResource -Cluster MBX1 | Get-ClusterParameter | Format-List
+    ```
 
 3.  次に、次のコマンドを実行して、「ファイル共有監視」クラスター リソースの状態を確認します。クラスター リソースの *State* が "**Online**" と表示されるはずです。
     
-        Get-ClusterResource -Cluster MBX1
+    ```powershell
+    Get-ClusterResource -Cluster MBX1
+    ```
 
 4.  最後に、ファイル エクスプローラーでフォルダーを確認し、サーバー マネージャーで共有を確認して、ファイル サーバーで共有が正常に作成されていることを確認します。
 

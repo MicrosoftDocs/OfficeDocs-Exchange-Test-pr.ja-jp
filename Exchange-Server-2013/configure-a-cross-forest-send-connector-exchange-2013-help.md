@@ -77,7 +77,9 @@ Active Directory において、*フォレスト*は、ディレクトリ サー
 
 この例では、シェルの Enable-CrossForestConnector.ps1 スクリプトを使用して、フォレスト間トポロジで使用する送信コネクタにアクセス許可を設定します。
 
-    .\Enable-CrossForestConnector.ps1 -Connector "Cross-Forest" -user "ANONYMOUS LOGON"
+```powershell
+.\Enable-CrossForestConnector.ps1 -Connector "Cross-Forest" -user "ANONYMOUS LOGON"
+```
 
 ## 正常な動作を確認する方法
 

@@ -53,13 +53,17 @@ Exchange 管理シェルを使用して、クライアント アクセス サー
 
 1.  クライアント アクセス サーバーで、Windows PowerShell を開いて次のコマンドを実行します。
     
-        Add-PSSnapin Microsoft.Exchange.Management.PowerShell.SnapIn
+    ```powershell
+    Add-PSSnapin Microsoft.Exchange.Management.PowerShell.SnapIn
+    ```
 
 2.  コマンドは記述どおりに実行してください。ただし、次の値を追加してください。`-TransportService FrontEnd`.
     
     たとえば、クライアント アクセス サーバー上のフロントエンド トランスポート サービスのトランスポート エージェントを表示するには、次のコマンドを実行します。
     
-        Get-TransportAgent -TransportService FrontEnd
+    ```powershell
+    Get-TransportAgent -TransportService FrontEnd
+    ```
 
 ## シェルを使用してトランスポート エージェントをインストールする
 
@@ -71,11 +75,15 @@ Exchange 管理シェルを使用して、クライアント アクセス サー
 
 次の構文を使用してトランスポート エージェントをインストールします。
 
-    Install-TransportAgent -Name <TransportAgentIdentity> -TransportAgentFactory <"TransportAgentFactory"> -AssemblyPath <"FilePath">
+```powershell
+Install-TransportAgent -Name <TransportAgentIdentity> -TransportAgentFactory <"TransportAgentFactory"> -AssemblyPath <"FilePath">
+```
 
 この例では、メールボックス サーバーのトランスポート サービスで Contoso Transport Agent という架空のトランスポート エージェントがインストールされます。
 
-    Install-TransportAgent -Name "Contoso Transport Agent" -TransportAgentFactory "vendor.exchange.ContosoTransportAgentfactory" -AssemblyPath "C:\Program Files\Vendor\TransportAgent\ContosoTransportAgentFactory.dll"
+```powershell
+Install-TransportAgent -Name "Contoso Transport Agent" -TransportAgentFactory "vendor.exchange.ContosoTransportAgentfactory" -AssemblyPath "C:\Program Files\Vendor\TransportAgent\ContosoTransportAgentFactory.dll"
+```
 
 ## 正常な動作を確認する方法
 
@@ -85,11 +93,15 @@ Exchange 管理シェルを使用して、クライアント アクセス サー
 
 次の構文を使用してトランスポート エージェントを有効にします。
 
-    Enable-TransportAgent <TransportAgentIdentity>
+```powershell
+Enable-TransportAgent <TransportAgentIdentity>
+```
 
 この例では、メールボックス サーバーのトランスポート サービスで Contoso Transport Agent という名前のトランスポート エージェントが有効になります。
 
-    Enable-TransportAgent "Contoso Transport Agent"
+```powershell
+Enable-TransportAgent "Contoso Transport Agent"
+```
 
 ## 正常な動作を確認する方法
 
@@ -99,11 +111,15 @@ Exchange 管理シェルを使用して、クライアント アクセス サー
 
 次の構文を使用してトランスポート エージェントを無効にします。
 
-    Disable-TransportAgent <TransportAgentIdentity>
+```powershell
+Disable-TransportAgent <TransportAgentIdentity>
+```
 
 この例では、メールボックス サーバーのトランスポート サービスで Fabirkam Transport Agent という名前のトランスポート エージェントが無効になります。
 
-    Disable-TransportAgent "Fabrikam Transport Agent"
+```powershell
+Disable-TransportAgent "Fabrikam Transport Agent"
+```
 
 ## 正常な動作を確認する方法
 
@@ -113,15 +129,21 @@ Exchange 管理シェルを使用して、クライアント アクセス サー
 
 トランスポート エージェントの要約リストを表示するには、次のコマンドを実行します。
 
-    Get-TransportAgent
+```powershell
+Get-TransportAgent
+```
 
 特定のトランスポート エージェントの詳細な構成を表示するには、次のコマンドを実行します。
 
-    Get-TransportAgent <TransportAgentIdentity> | Format-List
+```powershell
+Get-TransportAgent <TransportAgentIdentity> | Format-List
+```
 
 この例では、Transport Rule Agent という名前のトランスポート エージェントの詳細な構成が提供されます。
 
-    Get-TransportAgent "Transport Rule Agent" | Format-List
+```powershell
+Get-TransportAgent "Transport Rule Agent" | Format-List
+```
 
 ## シェルを使用してトランスポート エージェントの優先度を構成する
 
@@ -129,11 +151,15 @@ Exchange 管理シェルを使用して、クライアント アクセス サー
 
 既存のトランスポート エージェントの優先度を変更するには、次のコマンドを実行します。
 
-    Set-TransportAgent <TransportAgentIdentity> -Priority <Integer>
+```powershell
+Set-TransportAgent <TransportAgentIdentity> -Priority <Integer>
+```
 
 この例では、メールボックス サーバーのトランスポート サービスの Contoso Transport Agent という名前の既存のトランスポート エージェントに優先エージェントの値 3 が設定されます。
 
-    Set-TransportAgent "Contoso Transport Agent" -Priority 3
+```powershell
+Set-TransportAgent "Contoso Transport Agent" -Priority 3
+```
 
 ## 正常な動作を確認する方法
 
@@ -145,11 +171,15 @@ Exchange 管理シェルを使用して、クライアント アクセス サー
 
 トランスポート エージェントをアンインストールするには、次のコマンドを実行します。
 
-    Uninstall-TransportAgent <TransportAgentIdentity>
+```powershell
+Uninstall-TransportAgent <TransportAgentIdentity>
+```
 
 この例では、メールボックス サーバーのトランスポート サービスから Fabirkam Transport Agent という名前のトランスポート エージェントがアンインストールされます。
 
-    Uninstall-TransportAgent "Fabrikam Transport Agent"
+```powershell
+Uninstall-TransportAgent "Fabrikam Transport Agent"
+```
 
 ## 正常な動作を確認する方法
 

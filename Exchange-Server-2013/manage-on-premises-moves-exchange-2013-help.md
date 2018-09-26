@@ -51,7 +51,9 @@ _**トピックの最終更新日:** 2013-02-25_
 
 この例では、*WhatIf* スイッチを使用して Tony Smith のメールボックスを新しいデータベース DB01 に移動する準備ができているかと、コマンドにエラーがないかをテストします。*WhatIf* スイッチを使用すると、システムによってメールボックスのチェックが実行されます。メールボックスの移動準備ができていない場合は、エラーが表示されます。
 
-    New-MoveRequest -Identity 'tony@alpineskihouse.com' -TargetDatabase DB01 -WhatIf
+```powershell
+New-MoveRequest -Identity 'tony@alpineskihouse.com' -TargetDatabase DB01 -WhatIf
+```
 
 構文およびパラメーターの詳細については、「[New-MigrationBatch](https://technet.microsoft.com/ja-jp/library/jj219166\(v=exchg.150\))」と「[New-MoveRequest](https://technet.microsoft.com/ja-jp/library/dd351123\(v=exchg.150\))」を参照してください。
 
@@ -81,7 +83,9 @@ _**トピックの最終更新日:** 2013-02-25_
 
   - シェルから次のコマンドを実行して、メールボックスの移行情報を取得します。
     
-        Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+    ```powershell
+    Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+    ```
 
 詳細については、「[Get-MigrationUserStatistics](https://technet.microsoft.com/ja-jp/library/jj218695\(v=exchg.150\))」を参照してください。
 
@@ -106,10 +110,10 @@ EAC にログ インし、以下の手順を実行します。
 ## シェルを使用してバッチ移動要求を作成する
 
 この例では、ローカル移動の移行バッチを作成します。ここでは、指定した .csv ファイル内のメールボックスが、別のメールボックス データベースに移動されます。この .csv ファイルには、移動するメールボックスの電子メール アドレスが 1 列に格納されています。この列のヘッダーは、**EmailAddress** という名前にする必要があります。この例の移行バッチは、**Start-MigrationBatch** コマンドレットまたは Exchange 管理センター (EAC) を使用して手動で開始する必要があります。または、*AutoStart* パラメーターを使用して移行バッチを自動で開始することもできます。
-```
+```powershell
 New-MigrationBatch -Local -Name LocalMove1 -CSVData ([System.IO.File]::ReadAllBytes("C:\Users\Administrator\Desktop\LocalMove1.csv")) -TargetDatabases MBXDB2 -TimeZone "Pacific Standard Time"
 ```
-```
+```powershell
 Start-MigrationBatch -Identity LocalMove1
 ```
 
@@ -123,7 +127,9 @@ Start-MigrationBatch -Identity LocalMove1
 
   - シェルから次のコマンドを実行して、メールボックスの移行情報を取得します。
     
-        Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+    ```powershell
+    Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+    ```
 
 詳細については、「[Get-MigrationUserStatistics](https://technet.microsoft.com/ja-jp/library/jj218695\(v=exchg.150\))」を参照してください。
 
@@ -145,7 +151,9 @@ Start-MigrationBatch -Identity LocalMove1
 
 この例では、Tony Smith のプライマリ メールボックスのみ DB01 に移動します。アーカイブは移動されません。
 
-    New-MoveRequest -Identity 'tony@alpineskihouse.com' -PrimaryOnly -TargetDatabase "DB01"
+```powershell
+New-MoveRequest -Identity 'tony@alpineskihouse.com' -PrimaryOnly -TargetDatabase "DB01"
+```
 
 構文およびパラメーターの詳細については、「[New-MoveRequest](https://technet.microsoft.com/ja-jp/library/dd351123\(v=exchg.150\))」を参照してください。
 
@@ -157,7 +165,9 @@ Start-MigrationBatch -Identity LocalMove1
 
   - シェルから次のコマンドを実行して、メールボックスの移行情報を取得します。
     
-        Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+    ```powershell
+    Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+    ```
 
 詳細については、「[Get-MigrationUserStatistics](https://technet.microsoft.com/ja-jp/library/jj218695\(v=exchg.150\))」を参照してください。
 
@@ -165,10 +175,12 @@ Start-MigrationBatch -Identity LocalMove1
 
 この例では、移行エンドポイントを構成し, .csv ファイルを使用してソース フォレストからターゲット フォレストまでのフォレスト間バッチ移動を作成します。
 
-    New-MigrationEndpoint -Name Fabrikam -ExchangeRemote -Autodiscover -EmailAddress tonysmith@fabrikam.com -Credentials (Get-Credential fabrikam\tonysmith) 
+```PowerShell
+New-MigrationEndpoint -Name Fabrikam -ExchangeRemote -Autodiscover -EmailAddress tonysmith@fabrikam.com -Credentials (Get-Credential fabrikam\tonysmith) 
     
-    $csvData=[System.IO.File]::ReadAllBytes("C:\Users\Administrator\Desktop\batch.csv")
-    New-MigrationBatch -CSVData $csvData -Timezone "Pacific Standard Time" -Name FabrikamMerger -SourceEndpoint Fabrikam -TargetDeliveryDomain "mail.contoso.com"
+$csvData=[System.IO.File]::ReadAllBytes("C:\Users\Administrator\Desktop\batch.csv")
+New-MigrationBatch -CSVData $csvData -Timezone "Pacific Standard Time" -Name FabrikamMerger -SourceEndpoint Fabrikam -TargetDeliveryDomain "mail.contoso.com"
+```  
 
 フォレスト間移動のフォレストの準備方法の詳細については、以下のトピックを参照してください。
 
@@ -186,7 +198,9 @@ Start-MigrationBatch -Identity LocalMove1
 
   - シェルから次のコマンドを実行して、メールボックスの移行情報を取得します。
     
-        Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+    ```powershell
+    Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+    ```
 
 詳細については、「[Get-MigrationUserStatistics](https://technet.microsoft.com/ja-jp/library/jj218695\(v=exchg.150\))」を参照してください。
 
@@ -204,7 +218,9 @@ Start-MigrationBatch -Identity LocalMove1
 
 この例では、Tony Smith のアーカイブ メールボックスだけ DB03 に移動します。プライマリ メールボックスは移動されません。
 
-    New-MoveRequest -Identity 'tony@alpineskihouse.com' -ArchiveOnly -ArchiveTargetDatabase "DB03"
+```powershell
+New-MoveRequest -Identity 'tony@alpineskihouse.com' -ArchiveOnly -ArchiveTargetDatabase "DB03"
+```
 
 構文およびパラメーターの詳細については、「[New-MigrationBatch](https://technet.microsoft.com/ja-jp/library/jj219166\(v=exchg.150\))」と「[New-MoveRequest](https://technet.microsoft.com/ja-jp/library/dd351123\(v=exchg.150\))」を参照してください。
 
@@ -214,7 +230,9 @@ Start-MigrationBatch -Identity LocalMove1
 
   - シェルから次のコマンドを実行して、メールボックスの移行情報を取得します。
     
-        Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+    ```powershell
+    Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+    ```
 
 詳細については、「[Get-MigrationUserStatistics](https://technet.microsoft.com/ja-jp/library/jj218695\(v=exchg.150\))」を参照してください。
 
@@ -222,7 +240,9 @@ Start-MigrationBatch -Identity LocalMove1
 
 この例では、Ayla のプライマリ メールボックスとアーカイブ メールボックスを別々のデータベースに移動します。プライマリ データベースは DB01 に移動され、アーカイブは DB03 に移動されます。
 
-    New-MoveRequest -Identity 'ayla@humongousinsurance.com' -TargetDatabase DB01 -ArchiveTargetDatabase -DB03
+```PowerShell
+New-MoveRequest -Identity 'ayla@humongousinsurance.com' -TargetDatabase DB01 -ArchiveTargetDatabase -DB03
+```
 
 構文およびパラメーターの詳細については、「[New-MigrationBatch](https://technet.microsoft.com/ja-jp/library/jj219166\(v=exchg.150\))」と「[New-MoveRequest](https://technet.microsoft.com/ja-jp/library/dd351123\(v=exchg.150\))」を参照してください。
 
@@ -232,7 +252,9 @@ Start-MigrationBatch -Identity LocalMove1
 
   - シェルから次のコマンドを実行して、メールボックスの移行情報を取得します。
     
-        Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+    ```powershell
+    Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+    ```
 
 詳細については、「[Get-MigrationUserStatistics](https://technet.microsoft.com/ja-jp/library/jj218695\(v=exchg.150\))」を参照してください。
 
@@ -252,7 +274,9 @@ Start-MigrationBatch -Identity LocalMove1
 
 この例では、Lisa のプライマリ メールボックスをメールボックス データベース DB01 へ移動し、無効なアイテムの制限値を `100` に設定します。このように無効なアイテムの制限値に大きな値を設定するには、*AcceptLargeDataLoss* パラメーターを使用する必要があります。
 
-    New-MoveRequest -Identity 'Lisa' -PrimaryOnly -TargetDatabase "DB01" -BadItemLimit 100 -AcceptLargeDataLoss
+```PowerShell
+New-MoveRequest -Identity 'Lisa' -PrimaryOnly -TargetDatabase "DB01" -BadItemLimit 100 -AcceptLargeDataLoss
+```
 
 構文およびパラメーターの詳細については、「[New-MigrationBatch](https://technet.microsoft.com/ja-jp/library/jj219166\(v=exchg.150\))」と「[New-MoveRequest](https://technet.microsoft.com/ja-jp/library/dd351123\(v=exchg.150\))」を参照してください。
 
@@ -262,7 +286,9 @@ Start-MigrationBatch -Identity LocalMove1
 
   - シェルから次のコマンドを実行して、メールボックスの移行情報を取得します。
     
-        Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+    ```powershell
+    Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
+    ```
 
 詳細については、「[Get-MigrationUserStatistics](https://technet.microsoft.com/ja-jp/library/jj218695\(v=exchg.150\))」を参照してください。
 

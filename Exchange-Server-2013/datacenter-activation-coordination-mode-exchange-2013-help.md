@@ -63,7 +63,9 @@ DAC モードでない DAG のデータセンターの切り替えを実行す�
 
 DAC モードは、Exchange 管理シェルによってのみ有効化できます。具体的には、次の例に示すように、[Set-DatabaseAvailabilityGroup](https://technet.microsoft.com/ja-jp/library/dd297934\(v=exchg.150\)) コマンドレットを使用して DAC モードを有効にできます。
 
-    Set-DatabaseAvailabilityGroup -Identity DAG2 -DatacenterActivationMode DagOnly
+```powershell
+Set-DatabaseAvailabilityGroup -Identity DAG2 -DatacenterActivationMode DagOnly
+```
 
 前の例では、DAG2 で DAC モードが有効になりました。
 

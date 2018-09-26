@@ -143,7 +143,9 @@ Active Directory ユーザー アカウントはあっても対応するメー�
 
 <!-- end list -->
 
-    New-Mailbox -Alias pilarp -Name "Pilar Pinilla" -FirstName Pilar -LastName Pinilla -DisplayName "Pilar Pinilla" -UserPrincipalName pilarp@contoso.com -Password (ConvertTo-SecureString -String 'Pa$$word1' -AsPlainText -Force)
+  ```powershell
+  New-Mailbox -Alias pilarp -Name "Pilar Pinilla" -FirstName Pilar -LastName Pinilla -DisplayName "Pilar Pinilla" -UserPrincipalName pilarp@contoso.com -Password (ConvertTo-SecureString -String 'Pa$$word1' -AsPlainText -Force)
+  ```
 
 構文およびパラメーターの詳細については、「[New-Mailbox](https://technet.microsoft.com/ja-jp/library/aa997663\(v=exchg.150\))」を参照してください。
 
@@ -155,7 +157,9 @@ Active Directory ユーザー アカウントはあっても対応するメー�
 
   - シェルで次のコマンドを実行して、新しいユーザーのメールボックスに関する情報を表示します。
     
-        Get-Mailbox <Name> | FL Name,RecipientTypeDetails,PrimarySmtpAddress
+    ```powershell
+    Get-Mailbox <Name> | FL Name,RecipientTypeDetails,PrimarySmtpAddress
+    ```
 
 ## 既存のユーザーのメールボックスの作成
 
@@ -207,13 +211,17 @@ Active Directory ユーザー アカウントはあっても対応するメー�
 
 この例では、UsersMailboxDatabase という名前の Exchange データベースで既存のユーザー estherv@contoso.com のメールボックスを作成します。
 
-    Enable-Mailbox estherv@contoso.com -Database UsersMailboxDatabase
+```powershell
+Enable-Mailbox estherv@contoso.com -Database UsersMailboxDatabase
+```
 
 複数のユーザーのメールを有効にするために、**Enable-Mailbox** コマンドレットを使用することも可能です。そのためには、**Get-User** コマンドレットの結果を **Enable-Mailbox** コマンドレットにパイプ処理します。**Get-User** コマンドレットを実行する場合は、まだメールが有効化されていないユーザーのみ返す必要があります。このためには、値 User と *RecipientTypeDetails* パラメーターを指定する必要があります。また、指定する基準を満たすユーザーのみを要求する *Filter* パラメーターを使用することによって、返される結果を制限することもできます。それから、結果を **Enable-Mailbox** コマンドレットにパイプ処理します。
 
 たとえば、次のコマンドを実行すると、まだメールが有効になっていない、**UserPrincipalName** プロパティの値を持つユーザーのメールボックスが有効になり、システム アカウントを誤ってメールボックスに変換しないようにすることができます。
 
-    Get-User -RecipientTypeDetails User -Filter { UserPrincipalName -ne $Null } | Enable-Mailbox
+```powershell
+Get-User -RecipientTypeDetails User -Filter { UserPrincipalName -ne $Null } | Enable-Mailbox
+```
 
 構文およびパラメーターの詳細については、「[Enable-Mailbox](https://technet.microsoft.com/ja-jp/library/aa998251\(v=exchg.150\))」と「[Get-User](https://technet.microsoft.com/ja-jp/library/aa996896\(v=exchg.150\))」を参照してください。
 
@@ -227,7 +235,9 @@ Active Directory ユーザー アカウントはあっても対応するメー�
 
   - シェルで次のコマンドを実行して、メールボックスが有効な新しいユーザーに関する情報を表示します。
     
-        Get-Mailbox <Name> | FL Name,RecipientTypeDetails,PrimarySmtpAddress
+    ```powershell
+    Get-Mailbox <Name> | FL Name,RecipientTypeDetails,PrimarySmtpAddress
+    ```
     
     *RecipientTypeDetails* プロパティの値は `UserMailbox` であることに注意してください。
 

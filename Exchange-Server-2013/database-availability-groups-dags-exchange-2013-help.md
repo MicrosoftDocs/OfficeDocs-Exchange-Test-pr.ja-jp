@@ -61,17 +61,21 @@ DAG には作成時に一意の名前が付けられ、1 つ以上の固定 IP �
 
 この例では、シェルを使用することにより、サーバーが 3 つあるクラスター管理アクセス ポイントを伴う DAG を作成する方法を示します。2 台のサーバー (EX1 および EX2) が同じサブネット上 (10.0.0.0) にあり、3 台目のサーバー (EX3) が別のサブネット上 (192.168.0.0) にあります。
 
-    New-DatabaseAvailabilityGroup -Name DAG1 -WitnessServer EX4 -DatabaseAvailabilityGroupIPAddresses 10.0.0.5,192.168.0.5
-    Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer EX1
-    Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer EX2
-    Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer EX3
+```powershell
+New-DatabaseAvailabilityGroup -Name DAG1 -WitnessServer EX4 -DatabaseAvailabilityGroupIPAddresses 10.0.0.5,192.168.0.5
+Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer EX1
+Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer EX2
+Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer EX3
+```  
 
 クラスター管理アクセス ポイントなしで DAG を作成するコマンドは、非常によく似ています。
 
-    New-DatabaseAvailabilityGroup -Name DAG1 -WitnessServer EX4 -DatabaseAvailabilityGroupIPAddresses ([System.Net.IPAddress])::None
-    Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer EX1
-    Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer EX2
-    Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer EX3
+```powershell
+New-DatabaseAvailabilityGroup -Name DAG1 -WitnessServer EX4 -DatabaseAvailabilityGroupIPAddresses ([System.Net.IPAddress])::None
+Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer EX1
+Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer EX2
+Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer EX3
+```  
 
 DAG1 のクラスターは、EX1 が DAG に追加される際に作成されます。クラスターの作成中に、**Add-DatabaseAvailabilityGroupServer** コマンドレットによって DAG 向けに構成された IP アドレスが取得され、EX1 で見つかったサブネットのいずれにも一致しない IP アドレスは無視されます。上記の最初の例では、DAG1 のクラスターは IP アドレス 10.0.0.5 で作成され、192.168.0.5 は無視されます。上記の 2 番目の例では、*DatabaseAvailabilityGroupIPAddresses* パラメーターの値により、管理アクセス ポイントのない DAG のフェールオーバー クラスターを作成するようタスクに指示しています。このように、コア クラスター リソース グループ内に IP アドレスまたはネットワーク名リソースを指定してクラスターが作成されます。
 

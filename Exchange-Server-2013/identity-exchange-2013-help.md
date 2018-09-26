@@ -35,12 +35,16 @@ Exchange 2013 のオブジェクトの主要な一意の識別子は常に GUID 
 
 次の例では、受信コネクタの一意の *Name* パラメーター値を使用して、*Identity* パラメーターを使用する方法を示しています。また、この例は、*Identity* が位置パラメーターであるため、*Identity* パラメーター名を省略できる方法も示しています。
 
-    Get-ReceiveConnector -Identity "From the Internet"
-    Get-ReceiveConnector "From the Internet"
+```powershell
+Get-ReceiveConnector -Identity "From the Internet"
+Get-ReceiveConnector "From the Internet"
+```
 
 Exchange 2013 のすべてのオブジェクトと同様、受信コネクタは一意の GUID で参照することもできます。たとえば、`"From the Internet"` という名前の受信コネクタが GUID `63d64005-42c5-4f8f-b310-14f6cb125bf3` も割り当てられている場合、次のコマンドを使用して受信コネクタを取得することもできます。
 
-    Get-ReceiveConnector 63d64005-42c5-4f8f-b310-14f6cb125bf3
+```powershell
+Get-ReceiveConnector 63d64005-42c5-4f8f-b310-14f6cb125bf3
+```
 
 ページのトップへ
 
@@ -66,11 +70,15 @@ Identity パラメーターおよびワイルドカード文字の固有の動�
 
 ここで説明する例は、Exchange 2013 組織で構成可能な配信状態通知 (DSN) メッセージを参照します。最初の例は、**Get-SystemMessage** コマンドレットを使用して、DSN 5.4.1 を取得する方法を示します。**Get-SystemMessage** コマンドレットでは、*Identity* パラメーターは 各 DSN メッセージ オブジェクトに構成された複数のデータで構成されます。これらの複数のデータには、DSN が記述されている言語、DSN がスコープの内部か外部か、および次の例のような DSN メッセージ コードが含まれます。
 
-    Get-SystemMessage en\internal\5.4.1
+```powershell
+Get-SystemMessage en\internal\5.4.1
+```
 
 また、Exchange 2013 のすべてのオブジェクトが GUID を持っているため、次の例のように GUID を使用して、この DSN メッセージを取得することもできます。
 
-    Get-SystemMessage 82ca7bde-1c2d-4aa1-97e1-f298a6f10222
+```powershell
+Get-SystemMessage 82ca7bde-1c2d-4aa1-97e1-f298a6f10222
+```
 
 **SystemMessage** コマンドレットで使用される場合の *Identity* パラメーターの構成の詳細については、「[DSN メッセージ ID](dsn-message-identity-exchange-2013-help.md)」を参照してください。
 
@@ -78,19 +86,27 @@ Identity パラメーターおよびワイルドカード文字の固有の動�
 
 このセクションの例では、Exchange 2013 で管理役割を構成する管理役割のエントリを参照します。管理役割は、管理者およびエンド ユーザーに与えられるアクセス許可の制御に使用されます。管理役割のエントリは 2 つの部分から構成されます。関連付けられている管理役割とコマンドレット。Identity パラメーターも、同様に管理役割名およびコマンドレット名の両方で構成されます。たとえば、次は `Mail Recipients` 役割での **Set-Mailbox** コマンドレットの役割エントリです。
 
-    Mail Recipients\Set-Mailbox
+```powershell
+Mail Recipients\Set-Mailbox
+```
 
 `Mail Recipients\Set-Mailbox` 役割エントリは、`Mail Recipients` 役割にいくつかあるエントリのうちの 1 つです。`Mail Recipients` 役割のすべての役割エントリを表示するには、次のコマンドを使用します。
 
-    Get-ManagementRoleEntry "Mail Recipients\*"
+```powershell
+Get-ManagementRoleEntry "Mail Recipients\*"
+```
 
 "`Mailbox`" という文字列を含む `Mail Recipients` 役割のすべての役割エントリを表示するには、次のコマンドを使用します。
 
-    Get-ManagementRoleEntry "Mail Recipients\*Mailbox*"
+```powershell
+Get-ManagementRoleEntry "Mail Recipients\*Mailbox*"
+```
 
 **Set-Mailbox** が役割エントリの 1 つとなっている管理役割をすべて表示するには、次のコマンドを使用します。
 
-    Get-ManagementRoleEntry *\Set-Mailbox
+```powershell
+Get-ManagementRoleEntry *\Set-Mailbox
+```
 
 役割エントリによって、ワイルドカード文字をさまざまな方法で使用し、Exchange 2013 を照会して必要な情報を入手できます。
 

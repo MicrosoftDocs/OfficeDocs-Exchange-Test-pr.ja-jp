@@ -59,7 +59,9 @@ Exchange 組織内の既存のメール連絡先における電子メールを�
 
 この例では、メール連絡先 Neil Black の電子メールを無効にします。
 
-    Disable-MailContact -Identity "Neil Black"
+```powershell
+Disable-MailContact -Identity "Neil Black"
+```
 
 構文およびパラメーターの詳細については、「[Disable-MailContact](https://technet.microsoft.com/ja-jp/library/aa997465\(v=exchg.150\))」を参照してください。
 
@@ -73,13 +75,17 @@ Exchange 組織内の既存のメール連絡先における電子メールを�
 
 3.  シェルで、次のコマンドを実行します。
     
-        Get-MailContact
+    ```powershell
+	Get-MailContact
+	```
     
     このコマンドレットはメールが有効な連絡先のみを返すため、電子メールを無効にした連絡先は結果に返されません。
 
 4.  シェルで、次のコマンドを実行します。
     
-        Get-Contact
+    ```powershell
+	Get-Contact
+	```
     
     このコマンドレットはすべての Active Directory 連絡先オブジェクトを返すため、電子メールを無効にした連絡先が結果に返されます。
 
@@ -91,7 +97,9 @@ Exchange 組織内の既存のメール連絡先における電子メールを�
 
 この例では、連絡先 Rene Valdes のメールを有効にします。外部の電子メール アドレスを指定する必要があります。
 
-    Enable-MailContact -Identity "Rene Valdes" -ExternalEmailAddress renev@tailspintoys.com
+```powershell
+Enable-MailContact -Identity "Rene Valdes" -ExternalEmailAddress renev@tailspintoys.com
+```
 
 ## シェルと CSV ファイルを使用して複数の連絡先のメールを有効にする
 
@@ -99,31 +107,39 @@ Exchange 組織内の既存のメール連絡先における電子メールを�
 
 1.  次のコマンドを実行して、メールが有効ではない既存の連絡先の一覧を管理者のデスクトップ上の Contacts.csv という名前のファイルにエクスポートします。
     
-        Get-Contact | Where { $_.RecipientType -eq "Contact" } | Out-File "C:\Users\Administrator\Desktop\Contacts.csv"
+    ```powershell
+    Get-Contact | Where { $_.RecipientType -eq "Contact" } | Out-File "C:\Users\Administrator\Desktop\Contacts.csv"
+    ```
     
     結果として得られるファイルは、次のようなファイルになります。
     
-        Name
-        Walter Harp
-        James Alvord
-        Rainer Witt
-        Susan Burk
-        Ian Tien
-        ...
+    ```powershell
+    Name
+    Walter Harp
+    James Alvord
+    Rainer Witt
+    Susan Burk
+    Ian Tien
+    ...
+    ```
 
 2.  <strong>EmailAddress</strong> という名前の列見出しを追加し、ファイルの各連絡先の電子メール アドレスを追加します。各連絡先の名前および外部電子メール アドレスは、コンマで区切る必要があります。更新した CSV ファイルは、次のファイルのようになっている必要があります。
     
-        Name,EmailAddress
-        James Alvord,james@contoso.com
-        Susan Burk,sburk@tailspintoys.com
-        Walter Harp,wharp@tailspintoys.com
-        Ian Tien,iant@tailspintoys.com
-        Rainer Witt,rainerw@fourthcoffee.com
-        ...
+    ```powershell
+    Name,EmailAddress
+    James Alvord,james@contoso.com
+    Susan Burk,sburk@tailspintoys.com
+    Walter Harp,wharp@tailspintoys.com
+    Ian Tien,iant@tailspintoys.com
+    Rainer Witt,rainerw@fourthcoffee.com
+    ...
+    ```
 
 3.  次のコマンドを実行して、ファイルの一覧に含まれている連絡先のメールを CSV ファイルのデータを使用して有効にします。
     
-        Import-CSV C:\Users\Administrator\Desktop\Contacts.csv | ForEach-Object {Enable-MailContact -Identity $_.Name -ExternalEmailAddress $_.EmailAddress}
+    ```powershell
+    Import-CSV C:\Users\Administrator\Desktop\Contacts.csv | ForEach-Object {Enable-MailContact -Identity $_.Name -ExternalEmailAddress $_.EmailAddress}
+    ```
     
     コマンドの結果には、メールを有効にした新しい連絡先に関する情報が表示されます。
 
@@ -141,5 +157,7 @@ Active Directory 連絡先のメールが正常に有効化されたことを確
 
   - シェルで次のコマンドを実行して、新しいメール連絡先の情報を表示します。
     
-        Get-MailContact | Format-Table Name,RecipientTypeDetails,ExternalEmailAddress
+    ```powershell
+	Get-MailContact | Format-Table Name,RecipientTypeDetails,ExternalEmailAddress
+	```
 

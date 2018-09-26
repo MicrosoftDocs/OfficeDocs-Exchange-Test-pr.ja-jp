@@ -43,7 +43,9 @@ _**トピックの最終更新日:** 2014-08-05_
 
 この例では、組織内のすべてのユーザーに適用される調整ポリシーを作成します。省略するパラメーターはすべて、既定の調整ポリシーの GlobalThrottlingPolicy から値を継承します。
 
-    New-ThrottlingPolicy -Name AllUsersEWSPolicy EwsMaxConcurrency 4 -ThrottlingPolicyScope Organization
+```powershell
+New-ThrottlingPolicy -Name AllUsersEWSPolicy EwsMaxConcurrency 4 -ThrottlingPolicyScope Organization
+```
 
 構文およびパラメーターの詳細については、「[New-ThrottlingPolicy](https://technet.microsoft.com/ja-jp/library/dd351045\(v=exchg.150\))」を参照してください。
 
@@ -53,13 +55,17 @@ _**トピックの最終更新日:** 2014-08-05_
 
 1.  次のコマンドを実行します。
     
-        Get-ThrottlingPolicy | Format-List
+    ```powershell
+    Get-ThrottlingPolicy | Format-List
+    ```
 
 2.  作成したばかりの組織調整ポリシーが、GlobalThrottlingPolicy を示す列に表示されていることを確認します。
 
 3.  次のコマンドを実行します。
     
-        Get-ThrottlingPolicy | Format-List
+    ```powershell
+    Get-ThrottlingPolicy | Format-List
+    ```
 
 4.  新しい組織ポリシーのプロパティが構成した値と一致していることを確認します。
 

@@ -57,9 +57,11 @@ _**トピックの最終更新日:** 2013-02-14_
 
 このシェルの例では、保持タグ Delete - 3 Days のリンクをアイテム保持ポリシー Corp-Users から解除します。
 
+```powershell
     $tags = (Get-RetentionPolicy "Corp-Users").RetentionPolicyTagLinks
     $tags -= "Deleted Items - 3 Days"
     Set-RetentionPolicy "Corp-Users" -RetentionPolicyTagLinks $tags
+```
 
 構文およびパラメーターの詳細については、「[Get-RetentionPolicy](https://technet.microsoft.com/ja-jp/library/dd298086\(v=exchg.150\))」と「[Set-RetentionPolicy](https://technet.microsoft.com/ja-jp/library/dd335196\(v=exchg.150\))」を参照してください。
 
@@ -71,15 +73,21 @@ _**トピックの最終更新日:** 2013-02-14_
 
 このシェルの例では、メールボックス jpeoples からアイテム保持ポリシーを削除します。
 
-    Set-Mailbox jpeoples -RetentionPolicy $null.
+```powershell
+Set-Mailbox jpeoples -RetentionPolicy $null.
+```
 
 このシェルの例では、Exchange 組織内のすべてのメールボックスからアイテム保持ポリシーを削除します。
 
+```powershell
     Get-Mailbox -ResultSize unlimited -Filter {RetentionPolicy -ne $null} | Set-Mailbox -RetentionPolicy $null
+```
 
 このシェルの例では、アイテム保持ポリシー Corp-Finance が適用されているすべてのメールボックス ユーザーからポリシーを削除します。
 
+```powershell
     Get-Mailbox -ResultSize unlimited -Filter {RetentionPolicy -eq "Corp-Finance"} | Set-Mailbox -RetentionPolicy $null
+```
 
 構文およびパラメーターの詳細については、「[Set-Mailbox](https://technet.microsoft.com/ja-jp/library/bb123981\(v=exchg.150\))」と「[Get-Mailbox](https://technet.microsoft.com/ja-jp/library/bb123685\(v=exchg.150\))」を参照してください。
 
@@ -103,15 +111,21 @@ _**トピックの最終更新日:** 2013-02-14_
 
 この例では、Exchange セットアップによって作成された ArbitrationMailbox ポリシーで使用される、\[削除しない\] タグを除くすべての削除タグを Exchange 組織から削除します。
 
+```powershell
     Get-RetentionPolicyTag | ? {$_.RetentionAction -ne "MoveToArchive" -and $_.Name -ne "Never Delete"} | Remove-RetentionPolicyTag
+```
 
 この例では、\[削除しない\] タグを除くすべての保持タグを削除します。
 
+```powershell
     Get-RetentionPolicyTag | ? {$_.Name -ne "Never Delete"} | Remove-RetentionPolicyTag
+```
 
 このコマンドでは、Exchange 組織から Corp-Users 保持ポリシーが削除されます。
 
-    Remove-RetentionPolicy Corp-Users
+```powershell
+Remove-RetentionPolicy Corp-Users
+```
 
 構文およびパラメーターの詳細については、以下のトピックを参照してください。
 

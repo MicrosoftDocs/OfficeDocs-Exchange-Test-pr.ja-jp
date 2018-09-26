@@ -49,11 +49,15 @@ _**トピックの最終更新日:** 2014-06-24_
 
 この例では、データベース DB1 の循環ログを有効にします。
 
-    Set-MailboxDatabase DB1 -CircularLoggingEnabled $True
+```powershell
+Set-MailboxDatabase DB1 -CircularLoggingEnabled $True
+```
 
 この例では、データベース DB1 の循環ログを無効にします。
 
-    Set-MailboxDatabase DB1 -CircularLoggingEnabled $False
+```powershell
+Set-MailboxDatabase DB1 -CircularLoggingEnabled $False
+```
 
 構成できるその他のメールボックス データベース パラメーターについては、[Set-MailboxDatabase](https://technet.microsoft.com/ja-jp/library/bb123971\(v=exchg.150\)) を参照してください。
 

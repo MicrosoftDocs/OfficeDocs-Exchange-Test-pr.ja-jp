@@ -41,7 +41,9 @@ _**トピックの最終更新日:** 2015-04-08_
 
 次のコマンドを実行します。
 
-    Set-TransportService <ServerIdentity> -AgentLogEnabled <$true | $false> -AgentLogMaxAge <dd.hh:mm:ss> -AgentLogMaxDirectorySize <Size> -AgentLogMaxFileSize <Size> -AgentLogPath <LocalFilePath>
+  ```powershell
+  Set-TransportService <ServerIdentity> -AgentLogEnabled <$true | $false> -AgentLogMaxAge <dd.hh:mm:ss> -AgentLogMaxDirectorySize <Size> -AgentLogMaxFileSize <Size> -AgentLogPath <LocalFilePath>
+  ```
 
 この例では、Mailbox01 というメールボックス サーバーで次のようなエージェント ログ設定を行います。
 
@@ -55,7 +57,9 @@ _**トピックの最終更新日:** 2015-04-08_
 
 <!-- end list -->
 
-    Set-TransportService Mailbox01 -AgentLogPath "D:\Anti-Spam Agent Log" -AgentLogMaxFileSize 20MB -AgentLogMaxDirectorySize 400MB -AgentLogMaxAge 14.00:00:00
+  ```powershell
+  Set-TransportService Mailbox01 -AgentLogPath "D:\Anti-Spam Agent Log" -AgentLogMaxFileSize 20MB -AgentLogMaxDirectorySize 400MB -AgentLogMaxAge 14.00:00:00
+  ```
 
 
 > [!NOTE]
@@ -75,7 +79,9 @@ _**トピックの最終更新日:** 2015-04-08_
 
 1.  シェルで、次のコマンドを実行します。
     
-        Get-TransportService <ServerIdentity> | Format-List AgentLog*
+      ```powershell
+      Get-TransportService <ServerIdentity> | Format-List AgentLog*
+      ```
 
 2.  表示された値が構成した値であることを確認します。
 

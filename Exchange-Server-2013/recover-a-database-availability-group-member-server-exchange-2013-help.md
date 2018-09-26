@@ -51,15 +51,21 @@ DAG に関連する他の管理タスクについては、「[データベース
 
 1.  次の [Get-MailboxDatabase](https://technet.microsoft.com/ja-jp/library/bb124924\(v=exchg.150\)) コマンドレットを使用して、回復対象のサーバーに存在するいずれかのメールボックス データベース コピーのすべての再生ラグ設定または切り詰めラグ設定を取得します。
     
-        Get-MailboxDatabase DB1 | Format-List *lag*
+    ```powershell
+    Get-MailboxDatabase DB1 | Format-List *lag*
+    ```
 
 2.  次の [Remove-MailboxDatabaseCopy](https://technet.microsoft.com/ja-jp/library/dd335119\(v=exchg.150\)) コマンドレットを使用して、回復対象のサーバーに存在するいずれかのメールボックス データベース コピーを削除します。
     
-        Remove-MailboxDatabaseCopy DB1\MBX1
+    ```powershell
+    Remove-MailboxDatabaseCopy DB1\MBX1
+    ```
 
 3.  次の [Remove-DatabaseAvailabilityGroupServer](https://technet.microsoft.com/ja-jp/library/dd297956\(v=exchg.150\)) コマンドレットを使用して、失敗したサーバーの構成を DAG から削除します。
     
-        Remove-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer MBX1
+    ```powershell
+    Remove-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer MBX1
+    ```
     
 
     > [!NOTE]
@@ -71,28 +77,37 @@ DAG に関連する他の管理タスクについては、「[データベース
 
 5.  コマンド プロンプト ウィンドウを開きます。元のセットアップ メディアを使用して、次のコマンドを実行します。
     
-        Setup /m:RecoverServer
+    ```powershell
+    Setup /m:RecoverServer
+    ```
 
 6.  セットアップ回復処理が完了したら、次の [Add-DatabaseAvailabilityGroupServer](https://technet.microsoft.com/ja-jp/library/dd298049\(v=exchg.150\)) コマンドレットを使用して、回復したサーバーを DAG に追加します。
     
-        Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer MBX1
+    ```powershell
+    Add-DatabaseAvailabilityGroupServer -Identity DAG1 -MailboxServer MBX1
+    ```
 
 7.  サーバーを DAG に再び追加したら、[Add-MailboxDatabaseCopy](https://technet.microsoft.com/ja-jp/library/dd298105\(v=exchg.150\)) コマンドレットを使用して、メールボックス データベース コピーを再構成できます。追加対象のデータベース コピーのいずれかの再生ラグ タイムまたは切り詰めラグ タイムが以前に、0 よりも大きい値に設定されていた場合は、次の [Add-MailboxDatabaseCopy](https://technet.microsoft.com/ja-jp/library/dd298105\(v=exchg.150\)) コマンドレットの *ReplayLagTime* パラメーターと *TruncationLagTime* パラメーターを使用して、これらの設定を再構成することができます。
     
-        Add-MailboxDatabaseCopy -Identity DB1 -MailboxServer MBX1
-        Add-MailboxDatabaseCopy -Identity DB2 -MailboxServer MBX1 -ReplayLagTime 3.00:00:00
-        Add-MailboxDatabaseCopy -Identity DB3 -MailboxServer MBX1 -ReplayLagTime 3.00:00:00 -TruncationLagTime 3.00:00:00
+    ```powershell
+    Add-MailboxDatabaseCopy -Identity DB1 -MailboxServer MBX1
+    Add-MailboxDatabaseCopy -Identity DB2 -MailboxServer MBX1 -ReplayLagTime 3.00:00:00
+    Add-MailboxDatabaseCopy -Identity DB3 -MailboxServer MBX1 -ReplayLagTime 3.00:00:00 -TruncationLagTime 3.00:00:00
+    ```
 
 ## 正常な動作を確認する方法
 
 DAG メンバーが正常に復元されたことを確認するには、次の手順を実行します。
 
   - シェルで次のコマンドを実行して、復元された DAG メンバーの正常性と状態を確認します。
-       ```
-        Test-ReplicationHealth <ServerName>
-       ```
-       ```
-        Get-MailboxDatabaseCopyStatus -Server <ServerName>
-       ```
+  
+    ```powershell
+    Test-ReplicationHealth <ServerName>
+    ```
+
+    ```powershell
+    Get-MailboxDatabaseCopyStatus -Server <ServerName>
+    ```
+
     すべてのレプリケーションの正常性テストに正常に合格し、データベースとそのコンテンツ インデックスの状態が正常でなければなりません。
 

@@ -388,7 +388,9 @@ EAC または Exchange 管理シェル で移行バッチを作成する際に�
 
 たとえば、フォレスト間エンタープライズ移動用のバッチを Exchange 管理シェル で作成し、次の Exchange 管理シェル コマンドでユーザーのプライマリおよびアーカイブ メールボックスをターゲット フォレストに移動するとします。
 
-    New-MigrationBatch -Name CrossForestBatch1 -SourceEndpoint ForestEndpoint1 -TargetDeliveryDomain forest2.contoso.com -TargetDatabases @(EXCH-MBX-02,EXCH-MBX-03) -TargetArchiveDatabases @(EXCH-MBX-A02,EXCH-MBX-A03) -CSVData ([System.IO.File]::ReadAllBytes("C:\Users\Administrator\Desktop\CrossForestBatch1.csv")) -AutoStart
+```powershell
+New-MigrationBatch -Name CrossForestBatch1 -SourceEndpoint ForestEndpoint1 -TargetDeliveryDomain forest2.contoso.com -TargetDatabases @(EXCH-MBX-02,EXCH-MBX-03) -TargetArchiveDatabases @(EXCH-MBX-A02,EXCH-MBX-A03) -CSVData ([System.IO.File]::ReadAllBytes("C:\Users\Administrator\Desktop\CrossForestBatch1.csv")) -AutoStart
+```
 
 
 > [!NOTE]
@@ -398,26 +400,32 @@ EAC または Exchange 管理シェル で移行バッチを作成する際に�
 
 この移行バッチの CrossForestBatch1.csv ファイルは部分的に次のようになります。
 
-    EmailAddress,TargetDatabase,TargetArchiveDatabase
-    user1@contoso.com,EXCH-MBX-01,EXCH-MBX-A01
-    user2@contoso.com,,
-    user3@contoso.com,EXCH-MBX-01,
-    ...
+```powershell
+EmailAddress,TargetDatabase,TargetArchiveDatabase
+user1@contoso.com,EXCH-MBX-01,EXCH-MBX-A01
+user2@contoso.com,,
+user3@contoso.com,EXCH-MBX-01,
+...
+```
 
 CSV ファイルの値は移行バッチの値よりも優先されるため、user1 のプライマリおよびアーカイブ メールボックスはそれぞれ、ターゲット フォレスト内の EXCH-MBX-01 と EXCH-MBX-A01 に移動されます。user2 のプライマリおよびアーカイブ メールボックスは EXCH-MBX-02 または EXCH-MBX-03 に移動されます。user3 のプライマリ メールボックスは EXCH-MBX-01 に、アーカイブ メールボックスは EXCH-MBX-A02 または EXCH-MBX-A03 のいずれかに移動されます。
 
 別の例では、ハイブリッド展開のオンボード リモート移動/移行用のバッチを作成し、次のコマンドでアーカイブ メールボックスを Exchange Online に移動するとします。
 
-    New-MigrationBatch -Name OnBoarding1 -SourceEndpoint RemoteEndpoint1 -TargetDeliveryDomain cloud.contoso.com -CSVData ([System.IO.File]::ReadAllBytes("C:\Users\Administrator\Desktop\OnBoarding1.csv")) -MailboxType ArchiveOnly -AutoStart
+```powershell
+New-MigrationBatch -Name OnBoarding1 -SourceEndpoint RemoteEndpoint1 -TargetDeliveryDomain cloud.contoso.com -CSVData ([System.IO.File]::ReadAllBytes("C:\Users\Administrator\Desktop\OnBoarding1.csv")) -MailboxType ArchiveOnly -AutoStart
+```
 
 ただし、選択したユーザーのプライマリ メールボックスも移動したいため、この移行バッチの OnBoarding1.csv ファイルは部分的に次のようになります。
 
-    EmailAddress,MailboxType
-    user1@contoso.com,
-    user2@contoso.com,
-    user3@cloud.contoso.com,PrimaryAndArchive
-    user4@cloud.contoso.com,PrimaryAndArchive
-    ...
+```powershell
+EmailAddress,MailboxType
+user1@contoso.com,
+user2@contoso.com,
+user3@cloud.contoso.com,PrimaryAndArchive
+user4@cloud.contoso.com,PrimaryAndArchive
+...
+````
 
 CSV ファイルのメールボックス タイプの値はバッチを作成するコマンド内の *MailboxType* パラメーターの値よりも優先されるため、user1 と user2 のアーカイブ メールボックスだけが Exchange Online に移行されます。しかし、user3 と user4 のプライマリおよびアーカイブ メールボックスは Exchange Online に移動されます。
 

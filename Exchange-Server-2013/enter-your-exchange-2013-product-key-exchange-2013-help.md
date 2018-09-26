@@ -86,7 +86,9 @@ _**トピックの最終更新日:** 2016-12-09_
 
 
 
-    Set-ExchangeServer ExServer01 -ProductKey aaaaa-aaaaa-aaaaa-aaaaa-aaaaa
+```powershell
+Set-ExchangeServer ExServer01 -ProductKey aaaaa-aaaaa-aaaaa-aaaaa-aaaaa
+```
 
 構文およびパラメーターの詳細については、「[Set-ExchangeServer](https://technet.microsoft.com/ja-jp/library/bb123716\(v=exchg.150\))」を参照してください。
 
@@ -112,9 +114,12 @@ EAC を使用して、サーバーが Standard Edition または Enterprise Edit
 
 2.  特定の Exchange サーバーのライセンス状況を確認するには次のコマンドを実行します。
     
+    ```powershell
         Get-ExchangeServer ExServer01 | Format-Table Edition,*Trial*
+    ```
 
 3.  (省略可能) 組織内のすべての Exchange サーバーのライセンス状況を確認するには次のコマンドを実行します。
-    
+    ```powershell    
         Get-ExchangeServer | Format-Table Name, Edition, *Trial* -Auto
+    ```
 

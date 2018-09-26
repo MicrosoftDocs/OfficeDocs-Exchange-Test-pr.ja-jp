@@ -39,11 +39,15 @@ _**トピックの最終更新日:** 2012-10-04_
 
 *WhatIf* スイッチを使用してコマンドを実行するときは、次の例で示すように、コマンドの最後で *WhatIf* スイッチを指定します。
 
+```powershell
     New-AcceptedDomain -Name "Contoso Domain" -DomainName "contoso.com" -WhatIf 
+```
 
 このコマンド例を実行すると、次のようなテキストがシェルから返されます。
 
-    What if: Creating Accepted Domain "Contoso Domain" with domain name "contoso.com".
+```powershell
+What if: Creating Accepted Domain "Contoso Domain" with domain name "contoso.com".
+```
 
 ## Confirm スイッチ
 
@@ -71,15 +75,19 @@ _**トピックの最終更新日:** 2012-10-04_
 
 *Confirm* スイッチをコマンドに手動で適用する場合、次の例で示すように、コマンドの最後で *Confirm* スイッチを指定します。
 
-    Get-JournalRule | Enable-JournalRule -Confirm
+```powershell
+Get-JournalRule | Enable-JournalRule -Confirm
+```
 
 このコマンド例を実行すると、次のような確認プロンプトがシェルから返されます。
 
+```powershell
     Confirm
     Are you sure you want to perform this action?
     Enabling journal rule "Litigation Journal Rule".
     [Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help
     (default is "Y"):
+```
 
 確認プロンプトでは以下の選択肢があります。
 
@@ -97,7 +105,9 @@ _**トピックの最終更新日:** 2012-10-04_
 
 シェルの既定の動作を変更し、確認プロンプトが自動的に適用されるコマンドレットに対してプロンプト表示を抑制する場合は、次の例のように、*Confirm* スイッチと共に値 `$False` を指定します。
 
-    Get-JournalRule | Disable-JournalRule -Confirm:$False
+```powershell
+Get-JournalRule | Disable-JournalRule -Confirm:$False
+```
 
 この例では、確認プロンプトは表示されません。
 

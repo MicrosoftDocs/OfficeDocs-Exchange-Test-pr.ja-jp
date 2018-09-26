@@ -53,25 +53,35 @@ ASA 資格情報を設定するときに、以下のガイドラインに留意�
     
     **Import-Module** コマンドレットを使用して、Active Directory モジュールをインポートします。
     
-        Import-Module ActiveDirectory
+    ```powershell
+    Import-Module ActiveDirectory
+    ```
 
 2.  **New-ADComputer** コマンドレットを次のコマンドレット構文で使用して、新しい Active Directory コンピューター アカウントを作成します。
     
-        New-ADComputer [-Name] <string> [-AccountPassword <SecureString>] [-AllowReversiblePasswordEncryption <System.Nullable[boolean]>] [-Description <string>] [-Enabled <System.Nullable[bool]>]
+    ```powershell
+    New-ADComputer [-Name] <string> [-AccountPassword <SecureString>] [-AllowReversiblePasswordEncryption <System.Nullable[boolean]>] [-Description <string>] [-Enabled <System.Nullable[bool]>]
+    ```
     
     例: 
     
-        New-ADComputer -Name EXCH2013ASA -AccountPassword (Read-Host 'Enter password' -AsSecureString) -Description 'Alternate Service Account credentials for Exchange' -Enabled:$True -SamAccountName EXCH2013ASA
+    ```powershell
+    New-ADComputer -Name EXCH2013ASA -AccountPassword (Read-Host 'Enter password' -AsSecureString) -Description 'Alternate Service Account credentials for Exchange' -Enabled:$True -SamAccountName EXCH2013ASA
+    ```
     
     ここで、*EXCH2013ASA* はアカウント名を指定します。説明 *Alternate Service Account credentials for Exchange* には任意の内容を指定できます。また、*SamAccountName* パラメーターの値 (この場合は *EXCH2013ASA*) は、ディレクトリで一意である必要があります。
 
 3.  このコマンドレットの構文を使用して Kerberos で使用される AES 256 暗号化の暗号を有効にするには、**Set-ADComputer** コマンドレットを使用します。
     
-        Set-ADComputer [-Name] <string> [-add @{<attributename>="<value>"]
+    ```powershell
+    Set-ADComputer [-Name] <string> [-add @{<attributename>="<value>"]
+    ```
     
     例:   
     
-        Set-ADComputer EXCH2013ASA -add @{"msDS-SupportedEncryptionTypes"="28"}
+    ```powershell
+    Set-ADComputer EXCH2013ASA -add @{"msDS-SupportedEncryptionTypes"="28"}
+    ```
     
     ここで、*EXCH2013ASA* はアカウントの名前であり、変更する属性は 28 の 10 進値を持つ *msDS-SupportedEncryptionTypes* です。これにより、次の暗号が有効になります。RC4-HMAC、AES128-CTS-HMAC-SHA1-96、AES256-CTS-HMAC-SHA1-96。
 
@@ -145,12 +155,15 @@ ASA 資格情報を展開するためのサポートされている唯一の方�
 
 3.  ASA 資格情報を最初の Exchange 2013 クライアント アクセス サーバーに展開するには、次のコマンドを実行します。
     
-        .\RollAlternateServiceAccountPassword.ps1 -ToSpecificServer cas-1.corp.tailspintoys.com -GenerateNewPasswordFor tailspin\EXCH2013ASA$
+    ```powershell
+    .\RollAlternateServiceAccountPassword.ps1 -ToSpecificServer cas-1.corp.tailspintoys.com -GenerateNewPasswordFor tailspin\EXCH2013ASA$
+    ```
 
 4.  代替サービス アカウントのパスワードを変更するかどうかを確認するメッセージが表示されたら、<strong>はい</strong> で応答します。
 
 RollAlternateServiceAccountPassword.ps1 スクリプトを実行すると表示される出力の例を次に示します。
 
+```powershell
     ========== Starting at 01/12/2015 10:17:47 ==========
     Creating a new session for implicit remoting of "Get-ExchangeServer" command...
     Destination servers that will be updated:
@@ -200,6 +213,7 @@ RollAlternateServiceAccountPassword.ps1 スクリプトを実行すると表示�
     ========== Finished at 01/12/2015 10:20:00 ==========
     
             THE SCRIPT HAS SUCCEEDED
+```
 
 ## ASA 資格情報を別の Exchange 2013 クライアント アクセス サーバーに展開する
 
@@ -209,12 +223,15 @@ RollAlternateServiceAccountPassword.ps1 スクリプトを実行すると表示�
 
 3.  ASA 資格情報を別の Exchange 2013 クライアント アクセス サーバーに展開するには、次のコマンドを実行します。
     
-        .\RollAlternateServiceAccountPassword.ps1 -ToSpecificServer cas-2.corp.tailspintoys.com -CopyFrom cas-1.corp.tailspintoys.com
+    ```powershell
+    .\RollAlternateServiceAccountPassword.ps1 -ToSpecificServer cas-2.corp.tailspintoys.com -CopyFrom cas-1.corp.tailspintoys.com
+    ```
 
 4.  ASA 資格情報を展開する各クライアント アクセス サーバーについて、手順 3 を繰り返します。
 
 RollAlternateServiceAccountPassword.ps1 スクリプトを実行すると表示される出力の例を次に示します。
 
+```powershell
     ========== Starting at 01/12/2015 10:34:35 ==========
     Destination servers that will be updated:
     
@@ -255,6 +272,7 @@ RollAlternateServiceAccountPassword.ps1 スクリプトを実行すると表示�
     ========== Finished at 01/12/2015 10:38:13 ==========
     
             THE SCRIPT HAS SUCCEEDED
+```
 
 ## ASA 資格情報の展開の確認
 
@@ -262,23 +280,29 @@ RollAlternateServiceAccountPassword.ps1 スクリプトを実行すると表示�
 
   - クライアント アクセス サーバー上の設定を確認するには、次のコマンドを実行します。
     
-        Get-ClientAccessServer CAS-3 -IncludeAlternateServiceAccountCredentialStatus | Format-List Name, AlternateServiceAccountConfiguration
+    ```powershell
+    Get-ClientAccessServer CAS-3 -IncludeAlternateServiceAccountCredentialStatus | Format-List Name, AlternateServiceAccountConfiguration
+    ```
 
   - ASA 資格情報の展開を確認する各クライアント アクセス サーバーについて、手順 2 を繰り返します。
 
 上記の Get-ClientAccessServer コマンドを実行し、以前の ASA 資格情報が設定されていない場合に表示される出力の例を次に示します。
 
+```powershell
     Name                                 : CAS-1
     AlternateServiceAccountConfiguration : Latest: 1/12/2015 10:19:22 AM, tailspin\EXCH2013ASA$
                                            Previous: <Not set>
                                                ...
+```
 
 上記の Get-ClientAccessServer コマンドを実行し、ASA 資格情報が以前に設定されていた場合に表示される出力の例を次に示します。以前の ASA 資格情報と、設定された日時が返されます。
 
+```powershell
     Name                                 : CAS-3
     AlternateServiceAccountConfiguration : Latest: 1/12/2015 10:19:22 AM, tailspin\EXCH2013ASA$
                                            Previous: 7/15/2014 12:58:35 PM, tailspin\oldSharedServiceAccountName$
                                                ...
+```
 
 ## サービス プリンシパル名 (SPN) を ASA 資格情報に関連付ける
 
@@ -296,11 +320,15 @@ setspn コマンドを実行して SPN がフォレスト内でアカウント�
 
 2.  コマンド プロンプトで、以下のコマンドを入力します。
     
-        setspn -F -Q <SPN>
+    ```powershell
+    setspn -F -Q <SPN>
+    ```
     
     この \<SPN\> には、ASA 資格情報に関連付ける SPN を入力します。たとえば、次のように入力します。
     
-        setspn -F -Q http/mail.corp.tailspintoys.com
+    ```powershell
+    setspn -F -Q http/mail.corp.tailspintoys.com
+    ```
     
     コマンドは何も返さないはずです。何かを返した場合は、別のアカウントが既に SPN に関連付けられています。ASA 資格情報に関連付ける SPN ごとにこの手順を繰り返します。
 
@@ -310,11 +338,15 @@ setspn コマンドを使用して SPN を ASA 資格情報に関連付ける
 
 2.  コマンド プロンプトで、以下のコマンドを入力します。
     
-        setspn -S <SPN> <Account>$
+    ```powershell
+    setspn -S <SPN> <Account>$
+    ```
     
     この \<SPN\> には、ASA 資格情報に関連付ける SPN を入力します。そして、\<Account\> には、ASA 資格情報に関連付けるアカウントを入力します。たとえば、次のように入力します。
     
-        setspn -S http/mail.corp.tailspintoys.com tailspin\EXCH2013ASA$
+    ```powershell
+    setspn -S http/mail.corp.tailspintoys.com tailspin\EXCH2013ASA$
+    ```
     
     ASA 資格情報に関連付ける SPN ごとにこのコマンドを 1 回実行します。
 
@@ -324,11 +356,15 @@ setspn コマンドを使用して SPN を ASA 資格情報に関連付けたこ
 
 2.  コマンド プロンプトで、以下のコマンドを入力します。
     
-        setspn -L <Account>$
+    ```powershell
+    setspn -L <Account>$
+    ```
     
     この \<Account\> には、ASA 資格情報に関連付けるアカウントを入力します。たとえば、次のように入力します。
     
-        setspn -L tailspin\EXCH2013ASA$
+    ```powershell
+    setspn -L tailspin\EXCH2013ASA$
+    ```
     
     このコマンドは 1 度実行するだけで十分です。
 
@@ -338,11 +374,15 @@ setspn コマンドを使用して SPN を ASA 資格情報に関連付けたこ
 
 2.  Outlook Anywhere クライアントの Kerberos 認証を有効にするには、クライアント アクセス サーバー上で次のコマンドを実行します。
     
-        Get-OutlookAnywhere -server CAS-1 | Set-OutlookAnywhere -InternalClientAuthenticationMethod  Negotiate
+    ```powershell
+    Get-OutlookAnywhere -server CAS-1 | Set-OutlookAnywhere -InternalClientAuthenticationMethod  Negotiate
+    ```
 
 3.  MAPI over HTTP クライアントの Kerberos 認証を有効にするには、Exchange 2013 クライアント アクセス サーバー上で次のコマンドを実行します。
     
-        Get-MapiVirtualDirectory -Server CAS-1 | Set-MapiVirtualDirectory -IISAuthenticationMethods Ntlm, Negotiate
+    ```powershell
+    Get-MapiVirtualDirectory -Server CAS-1 | Set-MapiVirtualDirectory -IISAuthenticationMethods Ntlm, Negotiate
+    ```
 
 4.  Kerberos 認証を有効にする各 Exchange 2013 クライアント アクセス サーバーについて、手順 2 と 3 を繰り返します。
 
@@ -374,7 +414,9 @@ HttpProxy ログ ファイルを使用して Kerberos が正常に機能して�
 
 2.  最新のログ ファイルを開き、「**Negotiate**」という語句を検索します。ログ ファイルの行は、次の例のような形式になっています。
     
-        2014-02-19T13:30:49.219Z,e19d08f4-e04c-42da-a6be-b7484b396db0,15,0,775,22,,RpcHttp,mail.corp.tailspintoys.com,/rpc/rpcproxy.dll,,Negotiate,True,tailspin\Wendy,tailspintoys.com,MailboxGuid~ad44b1e0-e44f-4a16-9396-3a437f594f88,MSRPC,192.168.1.77,EXCH1,200,200,,RPC_OUT_DATA,Proxy,exch2.tailspintoys.com,15.00.0775.000,IntraForest,MailboxGuidWithDomain,,,,76,462,1,,1,1,,0,,0,,0,0,16272.3359,0,0,3,0,23,0,25,0,16280,1,16274,16230,16233,16234,16282,?ad44b1e0-e44f-4a16-9396-3a437f594f88@tailspintoys.com:6001,,BeginRequest=2014-02-19T13:30:32.946Z;BeginGetRequestStream=2014-02-19T13:30:32.946Z;OnRequestStreamReady=2014-02-19T13:30:32.946Z;BeginGetResponse=2014-02-19T13:30:32.946Z;OnResponseReady=2014-02-19T13:30:32.977Z;EndGetResponse=2014-02-19T13:30:32.977Z;,PossibleException=IOException;
+    ```powershell
+    2014-02-19T13:30:49.219Z,e19d08f4-e04c-42da-a6be-b7484b396db0,15,0,775,22,,RpcHttp,mail.corp.tailspintoys.com,/rpc/rpcproxy.dll,,Negotiate,True,tailspin\Wendy,tailspintoys.com,MailboxGuid~ad44b1e0-e44f-4a16-9396-3a437f594f88,MSRPC,192.168.1.77,EXCH1,200,200,,RPC_OUT_DATA,Proxy,exch2.tailspintoys.com,15.00.0775.000,IntraForest,MailboxGuidWithDomain,,,,76,462,1,,1,1,,0,,0,,0,0,16272.3359,0,0,3,0,23,0,25,0,16280,1,16274,16230,16233,16234,16282,?ad44b1e0-e44f-4a16-9396-3a437f594f88@tailspintoys.com:6001,,BeginRequest=2014-02-19T13:30:32.946Z;BeginGetRequestStream=2014-02-19T13:30:32.946Z;OnRequestStreamReady=2014-02-19T13:30:32.946Z;BeginGetResponse=2014-02-19T13:30:32.946Z;OnResponseReady=2014-02-19T13:30:32.977Z;EndGetResponse=2014-02-19T13:30:32.977Z;,PossibleException=IOException;
+    ```
     
     **AuthenticationType** の値が「**Negotiate**」になっていれば、サーバーは Kerberos 認証接続を正常に作成しています。
 
@@ -390,7 +432,9 @@ ASA 資格情報を削除するには
 
 1.  Exchange 2013 サーバー上で Exchange 管理シェルを開き、次のコマンドを実行します。
     
-        Set-ClientAccessServer CAS-1 -RemoveAlternateServiceAccountCredentials
+    ```powershell
+    Set-ClientAccessServer CAS-1 -RemoveAlternateServiceAccountCredentials
+    ```
 
 2.  この手順はすぐに実行する必要はありませんが、最後的には、すべてのクライアント コンピューターを再起動して Kerberos チケット キャッシュをコンピューターから消去する必要があります。
 

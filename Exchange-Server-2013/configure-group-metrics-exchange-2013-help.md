@@ -49,11 +49,15 @@ _**トピックの最終更新日:** 2015-04-08_
 
 メールボックス サーバー上でグループ メトリックス生成を有効または無効にするには、次のコマンドを実行します。
 
-    Set-MailboxServer <ServerIdentity> -ForceGroupMetricsGeneration <$true | $false>
+```powershell
+Set-MailboxServer <ServerIdentity> -ForceGroupMetricsGeneration <$true | $false>
+```
 
 この例では、MBX1 という名前のメールボックス サーバー上でグループ メトリックス生成を有効にします。
 
-    Set-MailboxServer MBX1 -ForceGroupMetricsGeneration $true
+```powershell
+Set-MailboxServer MBX1 -ForceGroupMetricsGeneration $true
+```
 
 ## 正常な動作を確認する方法
 
@@ -61,7 +65,9 @@ OAB を使用していない組織でグループ メトリックス生成が正
 
 1.  次のコマンドを実行します。
     
-        Get-MailboxServer <ServerIdentity> | Format-List ForceGroupMetricsGeneration
+    ```powershell
+    Get-MailboxServer <ServerIdentity> | Format-List ForceGroupMetricsGeneration
+    ```
 
 2.  表示される設定が構成した設定であることを確認します。
 

@@ -45,7 +45,9 @@ _**トピックの最終更新日:** 2014-10-01_
 
 この例では、1 日以内にすべてのメールボックスを処理するよう管理フォルダー アシスタントを構成します。
 
-    Set-MailboxServer MyMailboxServer -ManagedFolderWorkCycle 1
+```powershell
+Set-MailboxServer MyMailboxServer -ManagedFolderWorkCycle 1
+```
 
 構文およびパラメーターの詳細については、「[Set-MailboxServer](https://technet.microsoft.com/ja-jp/library/aa998651\(v=exchg.150\))」を参照してください。
 
@@ -55,13 +57,17 @@ _**トピックの最終更新日:** 2014-10-01_
 
 このコマンドは、組織内のすべてのメールボックス サーバーを取得し、各サーバーの管理フォルダー アシスタントの作業サイクルのプロパティを表形式で出力します。*Auto* スイッチを使用すると、列の幅が自動的に調節されます。
 
-    Get-MailboxServer | Format-Table Name,ManagedFolderWorkCycle* -Auto
+  ```powershell
+  Get-MailboxServer | Format-Table Name,ManagedFolderWorkCycle* -Auto
+  ```
 
 ## シェルを使用して管理フォルダー アシスタントを開始する
 
 この例では、管理フォルダー アシスタントを開始して即座に Morris Cornejo のメールボックスを処理します。
 
-    Start-ManagedFolderAssistant -Identity morris.cornejo@contoso.com
+```powershell
+Start-ManagedFolderAssistant -Identity morris.cornejo@contoso.com
+```
 
 構文およびパラメーターの詳細については、「[Start-ManagedFolderAssistant](https://technet.microsoft.com/ja-jp/library/aa998864\(v=exchg.150\))」を参照してください。
 

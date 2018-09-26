@@ -67,24 +67,29 @@ Microsoft Exchange Server 2013 のリンクされた管理役割グループを�
 
 2.  変数に外部 Active Directory フォレストの資格情報を格納します。
     
-        $ForeignCredential = Get-Credential
-
+    ```powershell
+    $ForeignCredential = Get-Credential
+    ```
 3.  組織の管理 役割グループに割り当てられたすべての役割を変数に格納します。
     
-        $OrgMgmt  = Get-RoleGroup "Organization Management"
-
+    ```powershell
+    $OrgMgmt  = Get-RoleGroup "Organization Management"
+    ```
 4.  組織の管理 のリンクされた役割グループを作成し、組み込みの 組織の管理 役割グループに割り当てられた役割を追加します。
     
-        New-RoleGroup "Organization Management - Linked" -LinkedForeignGroup <name of foreign USG> -LinkedDomainController <FQDN of foreign Active Directory domain controller> -LinkedCredential $ForeignCredential -Roles $OrgMgmt.Roles
-
+    ```powershell
+    New-RoleGroup "Organization Management - Linked" -LinkedForeignGroup <name of foreign USG> -LinkedDomainController <FQDN of foreign Active Directory domain controller> -LinkedCredential $ForeignCredential -Roles $OrgMgmt.Roles
+    ```
 5.  新しい組織の管理 のリンクされた役割グループと My\* エンドユーザー役割の間のすべての正規の割り当てを削除します。
     
-        Get-ManagementRoleAssignment -RoleAssignee "Organization Management - Linked" -Role My* | Remove-ManagementRoleAssignment
-
+    ```powershell
+    Get-ManagementRoleAssignment -RoleAssignee "Organization Management - Linked" -Role My* | Remove-ManagementRoleAssignment
+    ```
 6.  新しい組織の管理 のリンクされた役割グループとすべての管理役割の間の委任の役割の割り当てを追加します。
     
-        Get-ManagementRole | New-ManagementRoleAssignment -SecurityGroup "Organization Management - Linked" -Delegating
-
+    ```powershell
+    Get-ManagementRole | New-ManagementRoleAssignment -SecurityGroup "Organization Management - Linked" -Delegating
+    ```
 この例では、以下の値が各パラメーターに使用されていることを想定しています。
 
   - **LinkedForeignGroup**   `Organization Management Administrators`
@@ -93,11 +98,13 @@ Microsoft Exchange Server 2013 のリンクされた管理役割グループを�
 
 この例では、上記の値を使用して 組織の管理 役割グループをリンクされた役割グループとして作成し直します。
 
+```powershell
     $ForeignCredential = Get-Credential
     $OrgMgmt  = Get-RoleGroup "Organization Management"
     New-RoleGroup "Organization Management - Linked" -LinkedForeignGroup "Organization Management Administrators" -LinkedDomainController DC01.users.contoso.com -LinkedCredential $ForeignCredential -Roles $OrgMgmt.Roles
     Get-ManagementRoleAssignment -RoleAssignee "Organization Management - Linked" -Role My* | Remove-ManagementRoleAssignment
     Get-ManagementRole | New-ManagementRoleAssignment -SecurityGroup "Organization Management - Linked" -Delegating
+```
 
 ## 他のすべてのリンクされた役割グループを作成する
 
@@ -107,17 +114,20 @@ Microsoft Exchange Server 2013 のリンクされた管理役割グループを�
 
 2.  変数に外部 Active Directory フォレストの資格情報を格納します。 これは 1 度実行するだけで十分です。
     
-        $ForeignCredential = Get-Credential
-
+    ```powershell
+    $ForeignCredential = Get-Credential
+    ```
 3.  以下のコマンドレットを使用して役割グループ一覧を取得します。
     
-        Get-RoleGroup
-
+    ```powershell
+    Get-RoleGroup
+    ```
 4.  組織の管理 役割グループ以外の各役割グループに対して、次の操作を実行します。
     
-        $RoleGroup = Get-RoleGroup <name of role group to re-create>
+    ```powershell
+    $RoleGroup = Get-RoleGroup <name of role group to re-create>
         New-RoleGroup "<role group name> - Linked" -LinkedForeignGroup <name of foreign USG> -LinkedDomainController <FQDN of foreign Active Directory domain controller> -LinkedCredential $ForeignCredential -Roles $RoleGroup.Roles
-
+    ```
 5.  リンクされた役割グループとして作成し直す必要がある組み込みの役割グループごとに、上記の手順を繰り返します。
 
 この例では、以下の値が各パラメーターに使用されていることを想定しています。
@@ -132,12 +142,14 @@ Microsoft Exchange Server 2013 のリンクされた管理役割グループを�
 
 上記の値を使用して、この例では、Recipient Management と "Server Management/サーバーの管理" 役割グループをリンクされた役割グループとして作成し直します。
 
+```powershell
     $ForeignCredential = Get-Credential
     Get-RoleGroup
     $RoleGroup = Get-RoleGroup "Recipient Management"
     New-RoleGroup "Recipient Management - Linked" -LinkedForeignGroup "Recipient Management Administrators" -LinkedDomainController DC01.users.contoso.com -LinkedCredential $ForeignCredential -Roles $RoleGroup.Roles
     $RoleGroup = Get-RoleGroup "Server Management"
     New-RoleGroup "Server Management - Linked" -LinkedForeignGroup "Server Management Administrators" -LinkedDomainController DC01.users.contoso.com -LinkedCredential $ForeignCredential -Roles $RoleGroup.Roles
+```
 
 ## その他のタスク
 

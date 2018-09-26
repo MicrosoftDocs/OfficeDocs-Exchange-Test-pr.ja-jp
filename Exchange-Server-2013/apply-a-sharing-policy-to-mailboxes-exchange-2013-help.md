@@ -63,15 +63,21 @@ _**トピックの最終更新日:** 2014-02-15_
 
 この例では、ユーザー Barbara の 1 つのメールボックスに共有ポリシー Contoso を適用します。
 
-    Set-Mailbox -Identity Barbara -SharingPolicy "Contoso"
+```powershell
+Set-Mailbox -Identity Barbara -SharingPolicy "Contoso"
+```
 
 この例では、マーケティング部門のすべてのユーザー メールボックスが共有ポリシー Contoso Marketing を使用するように指定します。
 
-    Get-Mailbox -Filter {Department -eq "Marketing"} | Set-Mailbox -SharingPolicy "Contoso Marketing"
+```powershell
+Get-Mailbox -Filter {Department -eq "Marketing"} | Set-Mailbox -SharingPolicy "Contoso Marketing"
+```
 
 この例では、共有ポリシー Contoso が適用されたすべてのメールボックスを返します。ユーザーをエイリアスと電子メール アドレスのみを表示する表に並べ替えます。
 
-    Get-Mailbox -ResultSize unlimited | Where {$_.SharingPolicy -eq "Contoso" } | format-table Alias, EmailAddresses
+  ```powershell
+  Get-Mailbox -ResultSize unlimited | Where {$_.SharingPolicy -eq "Contoso" } | format-table Alias, EmailAddresses
+  ```
 
 構文およびパラメーターの詳細については、「[Set-Mailbox](https://technet.microsoft.com/ja-jp/library/bb123981\(v=exchg.150\))」と「[Get-Mailbox](https://technet.microsoft.com/ja-jp/library/bb123685\(v=exchg.150\))」を参照してください。
 
@@ -83,7 +89,9 @@ _**トピックの最終更新日:** 2014-02-15_
 
   - 次のシェル コマンドを実行して、ユーザー メールボックスに共有ポリシーが割り当てられたことを確認します。*SharingPolicy* パラメーターに、正しい共有ポリシーが表示されていることを確認します。
     
-        Get-Mailbox <user name> | format-list
+    ```powershell
+    Get-Mailbox <user name> | format-list
+    ```
 
 
 > [!TIP]

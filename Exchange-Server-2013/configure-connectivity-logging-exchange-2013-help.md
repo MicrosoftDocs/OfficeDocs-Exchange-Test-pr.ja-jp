@@ -57,7 +57,9 @@ _**トピックの最終更新日:** 2013-02-18_
 
 循環ログを構成するには、次のコマンドを実行します。
 
+```powershell
     <Set-TransportService | Set-MailboxTransportService | Set-FrontEndTransportService> <ServerIdentity> -ConnectivityLogEnabled <$true | $false> -ConnectivityLogMaxAge <dd.hh:mm:ss> -ConnectivityLogMaxDirectorySize <Size> -ConnectivityLogMaxFileSize <Size> -ConnectivityLogPath <LocalFilePath>
+```
 
 この例では、メールボックス サーバー Mailbox01 のトランスポート サービスに以下のように接続ログを設定します。
 
@@ -71,8 +73,9 @@ _**トピックの最終更新日:** 2013-02-18_
 
 <!-- end list -->
 
+```powershell
     Set-TransportService Mailbox01 -ConnectivityLogPath "D:\Hub Connectivity Log" -ConnectivityLogMaxFileSize 20MB -ConnectivityLogMaxDirectorySize 1.5GB -ConnectivityLogMaxAge 45.00:00:00
-
+```
 
 > [!NOTE]
 > <UL>
@@ -91,7 +94,9 @@ _**トピックの最終更新日:** 2013-02-18_
 
 1.  シェルで、次のコマンドを実行します。
     
+    ```powershell
         <Get-TransportService | Get-FrontEndTransportService | Get-MailboxTransportService> <ServerIdentity> | Format-List ConnectivityLog*
-
+    ```
+    
 2.  表示された値が構成した値であることを確認します。
 

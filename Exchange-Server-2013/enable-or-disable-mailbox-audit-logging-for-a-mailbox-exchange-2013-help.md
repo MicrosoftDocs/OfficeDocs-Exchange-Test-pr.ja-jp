@@ -51,11 +51,15 @@ _**トピックの最終更新日:** 2015-09-30_
 
 次の例では、Ben Smith のメールボックスのメールボックス監査ログを有効にします。
 
-    Set-Mailbox -Identity "Ben Smith" -AuditEnabled $true
+```powershell
+Set-Mailbox -Identity "Ben Smith" -AuditEnabled $true
+```
 
 次の例では、Ben Smith のメールボックスのメールボックス監査ログを無効にします。
 
-    Set-Mailbox -Identity "Ben Smith" -AuditEnabled $false
+```powershell
+Set-Mailbox -Identity "Ben Smith" -AuditEnabled $false
+```
 
 構文およびパラメーターの詳細については、「[Set-Mailbox](https://technet.microsoft.com/ja-jp/library/bb123981\(v=exchg.150\))」を参照してください。
 
@@ -65,15 +69,21 @@ _**トピックの最終更新日:** 2015-09-30_
 
 この例では、代理ユーザーが実行した `SendAs` および `SendOnBehalf` の操作が Ben Smith のメールボックスに記録されるよう指定します。
 
-    Set-Mailbox -Identity "Ben Smith" -AuditDelegate SendAs,SendOnBehalf -AuditEnabled $true
+```powershell
+Set-Mailbox -Identity "Ben Smith" -AuditDelegate SendAs,SendOnBehalf -AuditEnabled $true
+```
 
 この例では、管理者が実行した `MessageBind` および `FolderBind` の操作が Ben Smith のメールボックスに記録されるよう指定します。
 
-    Set-Mailbox -Identity "Ben Smith" -AuditAdmin MessageBind,FolderBind -AuditEnabled $true
+```powershell
+Set-Mailbox -Identity "Ben Smith" -AuditAdmin MessageBind,FolderBind -AuditEnabled $true
+```
 
 この例では、メールボックス所有者が実行した `HardDelete` の操作が Ben Smith のメールボックスに記録されるよう指定します。
 
-    Set-Mailbox -Identity "Ben Smith" -AuditOwner HardDelete -AuditEnabled $true
+```powershell
+Set-Mailbox -Identity "Ben Smith" -AuditOwner HardDelete -AuditEnabled $true
+```
 
 構文およびパラメーターの詳細については、「[Set-Mailbox](https://technet.microsoft.com/ja-jp/library/bb123981\(v=exchg.150\))」を参照してください。
 
@@ -83,5 +93,7 @@ _**トピックの最終更新日:** 2015-09-30_
 
 この例では、Ben Smith のメールボックス設定を取得して、指定された監査設定（監査ログ保管期限を含む）を **Format-List** コマンドレットにパイプ処理します。
 
-    Get-Mailbox "Ben Smith" | Format-List *audit*
+  ```powershell
+  Get-Mailbox "Ben Smith" | Format-List *audit*
+  ```
 

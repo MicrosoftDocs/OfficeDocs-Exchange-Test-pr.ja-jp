@@ -39,19 +39,27 @@ IMAP4 に関連する詳細情報については、「[Exchange Server 2013 で�
 
 この例では、IMAP4 ユーザーが予定表情報を交換する標準である iCalendar 標準を使用できるようにします。
 
-    Set-ImapSettings -Identity CAS01 -CalendarItemRetrievalOption iCalendar
+```powershell
+Set-ImapSettings -Identity CAS01 -CalendarItemRetrievalOption iCalendar
+```
 
 この例では、IMAP4 ユーザーが内部サーバーから予定表情報にアクセスできるようにします。
 
+```powershell
     Set-ImapSettings -Identity CAS01 -CalendarItemRetrievalOption IntranetUrl 
+```
 
 この例では、IMAP4 ユーザーが外部サーバー上のインターネットから予定表情報にアクセスできるようにします。
 
-    Set-ImapSettings -CalendarItemRetrievalOption InternetUrl
+```powershell
+Set-ImapSettings -CalendarItemRetrievalOption InternetUrl
+```
 
 この例では、IMAP4 ユーザーが直接 Outlook Web App の URL を使用して予定表情報にアクセスできるようにします。`Custom` を使用している場合、*OWAServerUrl* パラメーターを使用して Outlook Web App URL を指定する必要があります。
 
-    Set-Imap4Settings -CalendarItemRetrievalOption Custom -OwaServerUrl "https://OwaServer01"
+```powershell
+Set-Imap4Settings -CalendarItemRetrievalOption Custom -OwaServerUrl "https://OwaServer01"
+```
 
 IMAP4 の予定表オプションを指定した後に、IMAP4 サービスを再起動する必要があります。IMAP4 サービスを再起動する方法の詳細については、「[IMAP4 サービスの開始および停止](start-and-stop-the-imap4-services-exchange-2013-help.md)」を参照してください。
 
@@ -63,7 +71,9 @@ IMAP4 の予定表オプションを指定した後に、IMAP4 サービスを�
 
 シェルで、次のコマンドを実行します。
 
-    Get-ImapSettings | format-list
+```powershell
+Get-ImapSettings | format-list
+```
 
 予定表の設定が正しいことを確認します。
 

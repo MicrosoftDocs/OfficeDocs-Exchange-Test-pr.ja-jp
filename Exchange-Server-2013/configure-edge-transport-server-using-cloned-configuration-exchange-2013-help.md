@@ -57,11 +57,15 @@ _**トピックの最終更新日:** 2015-04-13_
 
 2.  移動元のサーバーの構成データを移動元のサーバー上のファイルにエクスポートするには、次の構文を使用します。
     
-        ./ExportEdgeConfig.ps1 -CloneConfigData:"<configuration file>"
+    ```powershell
+    ./ExportEdgeConfig.ps1 -CloneConfigData:"<configuration file>"
+    ```
     
     たとえば、移動元のサーバーの構成データを C:\\CloneConfigData.xml ファイルにエクスポートするには、次のコマンドを実行します。
     
-        ./ExportEdgeConfig.ps1 -CloneConfigData:"C:\CloneConfigData.xml"
+    ```powershell
+    ./ExportEdgeConfig.ps1 -CloneConfigData:"C:\CloneConfigData.xml"
+    ```
 
 ## このステップの検証方法
 
@@ -75,11 +79,15 @@ _**トピックの最終更新日:** 2015-04-13_
 
 3.  移動先のサーバー上で構成ファイルを検証してその結果を使用して応答ファイルを作成するには、次の構文を使用します。
     
-        ./ImportEdgeConfig.ps1 -CloneConfigData:"<configuration file>" -IsImport $false -CloneConfigAnswer:"<answer file>"
+    ```powershell
+    ./ImportEdgeConfig.ps1 -CloneConfigData:"<configuration file>" -IsImport $false -CloneConfigAnswer:"<answer file>"
+    ```
     
     たとえば、C:\\CloneConfigData.xml という構成ファイルを検証して、C:\\CloneConfigAnswer.xml という応答ファイルを作成するには、次のコマンドを実行します。
     
-        ./ImportEdgeConfig.ps1 -CloneConfigData:"C:\CloneConfigData.xml" -IsImport $false -CloneConfigAnswer:"C:\CloneConfigAnswer.xml"
+    ```powershell
+    ./ImportEdgeConfig.ps1 -CloneConfigData:"C:\CloneConfigData.xml" -IsImport $false -CloneConfigAnswer:"C:\CloneConfigAnswer.xml"
+    ```
 
 4.  応答ファイルを開き、移動先のサーバーで無効な設定をすべて変更します。変更が必要ない場合は、応答ファイルにエントリは存在しません。変更を保存します。
 
@@ -91,11 +99,15 @@ _**トピックの最終更新日:** 2015-04-13_
 
 移動先のサーバー上で構成ファイルをインポートするには、次の構文を使用します。
 
-    ./ImportEdgeConfig.ps1 -CloneConfigData:"<Configuration file>" -IsImport $true -CloneConfigAnswer:"<answer file>"
+```powershell
+./ImportEdgeConfig.ps1 -CloneConfigData:"<Configuration file>" -IsImport $true -CloneConfigAnswer:"<answer file>"
+```
 
 たとえば、C:\\CloneConfigAnswer.xml という応答ファイルを使用して C:\\CloneConfigData.xml という構成ファイルをインポートするには、次のコマンドを実行します。
 
-    ./ImportEdgeConfig.ps1 -CloneConfigData:"C:\CloneConfigData.xml" -IsImport $true -CloneConfigAnswer:"C:\CloneConfigAnswer.xml"
+```powershell
+./ImportEdgeConfig.ps1 -CloneConfigData:"C:\CloneConfigData.xml" -IsImport $true -CloneConfigAnswer:"C:\CloneConfigAnswer.xml"
+```
 
 ## このステップの検証方法
 

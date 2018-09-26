@@ -49,11 +49,15 @@ _**トピックの最終更新日:** 2014-02-17_
 
 この例では OrgID を無効にし、Exchange 組織のフェデレーションおよびフェデレーション共有を無効にします。
 
-    Set-FederatedOrganizationIdentifier -Enabled $false
+```powershell
+Set-FederatedOrganizationIdentifier -Enabled $false
+```
 
 この例では OrgID を有効にし、Exchange 組織のフェデレーションおよびフェデレーション共有を再度有効にします。
 
-    Set-FederatedOrganizationIdentifier -Enabled $true
+```powershell
+Set-FederatedOrganizationIdentifier -Enabled $true
+```
 
 構文およびパラメーターの詳細については、「[Set-FederatedOrganizationIdentifier](https://technet.microsoft.com/ja-jp/library/dd351037\(v=exchg.150\))」を参照してください。
 
@@ -63,7 +67,9 @@ OrgID が無効または有効になったことは、まず、**Set-Organizatio
 
 さらに正常な動作を確認するには、次の シェル コマンドを実行し、*Enabled* パラメーターに返された値を確認します。
 
-    Get-FederatedOrganizationIdentifier
+```powershell
+Get-FederatedOrganizationIdentifier
+```
 
 
 > [!TIP]

@@ -61,7 +61,9 @@ IRM に関連する追加の管理タスクについては、「[Information Rig
 
 
 
-    Set-IRMConfiguration -SearchEnabled $true
+```powershell
+Set-IRMConfiguration -SearchEnabled $true
+```
 
 構文およびパラメーターの詳細については、「[Set-IRMConfiguration](https://technet.microsoft.com/ja-jp/library/dd979792\(v=exchg.150\))」を参照してください。
 
@@ -75,7 +77,9 @@ IRM に関連する追加の管理タスクについては、「[Information Rig
 
 
 
-    Set-IRMConfiguration -EDiscoverySuperUserEnabled $true
+```powershell
+Set-IRMConfiguration -EDiscoverySuperUserEnabled $true
+```
 
 構文およびパラメーターの詳細については、「[Set-IRMConfiguration](https://technet.microsoft.com/ja-jp/library/dd979792\(v=exchg.150\))」を参照してください。
 

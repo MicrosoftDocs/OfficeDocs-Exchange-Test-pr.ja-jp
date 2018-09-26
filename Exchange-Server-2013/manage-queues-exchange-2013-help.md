@@ -51,15 +51,21 @@ Microsoft Exchange Server 2013 では、Exchange ツールボックスのキュ�
 
 キューを表示するには、次の構文を使用します。
 
-    Get-Queue [-Filter <Filter> -Server <ServerIdentity> -Include <Internal | External | Empty | DeliveryType> -Exclude <Internal | External | Empty | DeliveryType>]
+```powershell
+Get-Queue [-Filter <Filter> -Server <ServerIdentity> -Include <Internal | External | Empty | DeliveryType> -Exclude <Internal | External | Empty | DeliveryType>]
+```
 
 この例では、Mailbox01 という名前の Exchange 2013 メールボックス サーバーにある空ではないすべてのキューについて、基本情報を表示します。
 
-    Get-Queue -Server Mailbox01 -Exclude Empty
+```powershell
+Get-Queue -Server Mailbox01 -Exclude Empty
+```
 
 この例では、コマンドが実行されているメールボックス サーバー上の 100 を超えるメッセージを含むすべてのキューに関する詳細を表示します。
 
-    Get-Queue -Filter {MessageCount -gt 100} | Format-List
+```powershell
+Get-Queue -Filter {MessageCount -gt 100} | Format-List
+```
 
 ## シェルを使用して複数の Exchange サーバー上のキューの概要情報を表示する
 
@@ -73,15 +79,21 @@ Microsoft Exchange Server 2013 では、Exchange ツールボックスのキュ�
 
 複数の Exchange サーバー上のキューについて概要情報を表示するには、次のコマンドを実行します。
 
-    Get-QueueDigest <-Server <ServerIdentity1,ServerIdentity2,..> | -Dag <DagIdentity1,DagIdentity2...> | -Site <ADSiteIdentity1,ADSiteIdentity2...> | -Forest> [-Filter <Filter>]
+```powershell
+Get-QueueDigest <-Server <ServerIdentity1,ServerIdentity2,..> | -Dag <DagIdentity1,DagIdentity2...> | -Site <ADSiteIdentity1,ADSiteIdentity2...> | -Forest> [-Filter <Filter>]
+```
 
 この例では、FirstSite という名前の Active Directory サイト内にあるすべての Exchange 2013 メールボックス サーバー上の、メッセージ数が 100 を超えているキューについて概要情報を表示します。
 
-    Get-QueueDigest -Site FirstSite -Filter {MessageCount -gt 100}
+```powershell
+Get-QueueDigest -Site FirstSite -Filter {MessageCount -gt 100}
+```
 
 この例では、DAG01 という名前のデータベース可用性グループ (DAG) 内にあるすべての Exchange 2013 メールボックス サーバー上の、キューの状態が **Retry** 値のキューについて概要情報を表示します。
 
-    Get-QueueDigest -Dag DAG01 -Filter {Status -eq "Retry"}
+```powershell
+Get-QueueDigest -Dag DAG01 -Filter {Status -eq "Retry"}
+```
 
 ## キューを再開する
 
@@ -111,15 +123,21 @@ Microsoft Exchange Server 2013 では、Exchange ツールボックスのキュ�
 
 キューを再開するには、次の構文を使用します。
 
-    Resume-Queue <-Identity QueueIdentity | -Filter {QueueFilter} [-Server ServerIdentity]>
+```powershell
+Resume-Queue <-Identity QueueIdentity | -Filter {QueueFilter} [-Server ServerIdentity]>
+```
 
 この例では、状態が "中断" になっているローカル サーバー上のすべてのキューを再開します。
 
-    Resume-Queue -Filter {Status -eq "Suspended"}
+```powershell
+Resume-Queue -Filter {Status -eq "Suspended"}
+```
 
 この例では、Mailbox01 という名前のサーバー上で、contoso.com という名前の中断されている配信キューを再開します。
 
-    Resume-Queue -Identity Mailbox01\contoso.com
+```powershell
+Resume-Queue -Identity Mailbox01\contoso.com
+```
 
 ## 正常な動作を確認する方法
 
@@ -157,15 +175,21 @@ Microsoft Exchange Server 2013 では、Exchange ツールボックスのキュ�
 
 キューを再試行するには、次の構文を使用します。
 
-    Retry-Queue <-Identity QueueIdentity | -Filter QueueFilter [-Server ServerIdentity]>
+```powershell
+Retry-Queue <-Identity QueueIdentity | -Filter QueueFilter [-Server ServerIdentity]>
+```
 
 この例では、ローカル サーバー上で状態が "再試行" のキューをすべて再試行します。
 
-    Retry-Queue -Filter {status -eq "retry"}
+```powershell
+Retry-Queue -Filter {status -eq "retry"}
+```
 
 この例では、Mailbox01 という名前のサーバー上で `Retry` 状態になっている contoso.com という名前のキューを再試行します。
 
-    Retry-Queue -Identity Mailbox01\contoso.com
+```powershell
+Retry-Queue -Identity Mailbox01\contoso.com
+```
 
 ## 正常な動作を確認する方法
 
@@ -189,15 +213,21 @@ Microsoft Exchange Server 2013 では、Exchange ツールボックスのキュ�
 
 メッセージを再送信するには、次の構文を使用します。
 
-    Retry-Queue <-Identity QueueIdentity | -Filter {Status -eq "Retry"} -Server ServerIdentity> -Resubmit $true
+```powershell
+Retry-Queue <-Identity QueueIdentity | -Filter {Status -eq "Retry"} -Server ServerIdentity> -Resubmit $true
+```
 
 この例では、Mailbox01 という名前のサーバー上の配信キューに置かれている、状態が "再試行" であるメッセージをすべて再送信します。
 
-    Retry-Queue -Filter {Status -eq "Retry"} -Server Mailbox01 -Resubmit $true
+```powershell
+Retry-Queue -Filter {Status -eq "Retry"} -Server Mailbox01 -Resubmit $true
+```
 
 この例では、サーバー Mailbox01 上の到達不能キューに置かれているメッセージをすべて再送信します。
 
-    Retry-Queue -Identity Mailbox01\Unreachable -Resubmit $true
+```powershell
+Retry-Queue -Identity Mailbox01\Unreachable -Resubmit $true
+```
 
 ## 有害メッセージ キュー内にあるメッセージを再送信する
 
@@ -227,15 +257,21 @@ Microsoft Exchange Server 2013 では、Exchange ツールボックスのキュ�
 
 1.  次のコマンドを実行してメッセージの ID を検索します。
     
-        Get-Message -Queue Poison | Format-Table Identity
+    ```powershell
+    Get-Message -Queue Poison | Format-Table Identity
+    ```
 
 2.  次のコマンドに前の手順で取得したメッセージの ID を使用します。
     
-        Resume-Message <PoisonMessageIdentity>
+    ```powershell
+    Resume-Message <PoisonMessageIdentity>
+    ```
     
     この例では、メッセージ ID の値が 222 であるメッセージを有害なメッセージ キューから再開します。
     
-        Resume-Message 222
+    ```powershell
+    Resume-Message 222
+    ```
 
 ## 正常な動作を確認する方法
 
@@ -267,15 +303,21 @@ Microsoft Exchange Server 2013 では、Exchange ツールボックスのキュ�
 
 キューを中断するには、次の構文を使用します。
 
-    Suspend-Queue <-Identity QueueIdentity | -Filter {QueueFilter} [-Server ServerIdentity]>
+```powershell
+Suspend-Queue <-Identity QueueIdentity | -Filter {QueueFilter} [-Server ServerIdentity]>
+```
 
 この例では、メッセージ数が 1,000 以上で状態が "再試行" であるローカル サーバー上のキューをすべて中断します。
 
-    Suspend-Queue -Filter {MessageCount -ge 1000 -and Status -eq "Retry"}
+```powershell
+Suspend-Queue -Filter {MessageCount -ge 1000 -and Status -eq "Retry"}
+```
 
 次の例では、Mailbox01 という名前のサーバー上にある contoso.com という名前のキューを中断します。
 
-    Suspend-Queue -Identity Mailbox01\contoso.com
+```powershell
+Suspend-Queue -Identity Mailbox01\contoso.com
+```
 
 ## 正常な動作を確認する方法
 

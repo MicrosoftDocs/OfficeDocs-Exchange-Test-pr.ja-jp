@@ -37,7 +37,9 @@ _**トピックの最終更新日:** 2015-04-08_
 
   - **Set-AcceptedDomain** コマンドレットの *AddressBookEnabled* パラメーターにより、承認済みドメインに所属する受信者の受信者フィルターを有効または無効にすることができます。既定では、受信者フィルターは権限のあるドメインについては有効、内部の中継ドメインおよび外部の中継ドメインについては無効になっています。組織の承認済みドメインの *AddressBookEnabled* パラメーターのステータスを表示するには、次のコマンドを実行します。
     
-        Get-AcceptedDomain | Format-List Name,AddressBookEnabled
+    ```powershell
+    Get-AcceptedDomain | Format-List Name,AddressBookEnabled
+    ```
 
   - このトピックの手順を使用して受信者フィルターを無効にすると、受信者フィルターの機能は無効になりますが、ベースになっている受信者フィルター エージェントは有効な状態を維持します。
 
@@ -55,11 +57,15 @@ _**トピックの最終更新日:** 2015-04-08_
 
 受信者のフィルターを無効にするには、次のコマンドを実行します。
 
-    Set-RecipientFilterConfig -Enabled $false
+```powershell
+Set-RecipientFilterConfig -Enabled $false
+```
 
 受信者のフィルターを有効にするには、次のコマンドを実行します。
 
-    Set-RecipientFilterConfig -Enabled $true
+```powershell
+Set-RecipientFilterConfig -Enabled $true
+```
 
 
 > [!NOTE]
@@ -73,7 +79,9 @@ _**トピックの最終更新日:** 2015-04-08_
 
 1.  次のコマンドを実行します。
     
-        Get-RecipientFilterConfig | Format-List Enabled
+    ```powershell
+    Get-RecipientFilterConfig | Format-List Enabled
+    ```
 
 2.  表示された値が構成した値であることを確認します。
 
@@ -81,11 +89,15 @@ _**トピックの最終更新日:** 2015-04-08_
 
 次のコマンドを実行します。
 
-    Set-RecipientFilterConfig -BlockListEnabled <$true | $false>
+```powershell
+Set-RecipientFilterConfig -BlockListEnabled <$true | $false>
+```
 
 この例では、受信者禁止一覧を有効にします。
 
-    Set-RecipientFilterConfig -BlockListEnabled $true
+```powershell
+Set-RecipientFilterConfig -BlockListEnabled $true
+```
 
 ## 正常な動作を確認する方法
 
@@ -93,7 +105,9 @@ _**トピックの最終更新日:** 2015-04-08_
 
 1.  次のコマンドを実行します。
     
-        Get-RecipientFilterConfig | Format-List BlockListEnabled
+    ```powershell
+    Get-RecipientFilterConfig | Format-List BlockListEnabled
+    ```
 
 2.  表示された値が構成した値であることを確認します。
 
@@ -101,19 +115,27 @@ _**トピックの最終更新日:** 2015-04-08_
 
 既存の値を置き換えるには、次のコマンドを実行します。
 
-    Set-RecipientFilterConfig -BlockedRecipients <recipient1,recipient2...>
+```powershell
+Set-RecipientFilterConfig -BlockedRecipients <recipient1,recipient2...>
+```
 
 この例では、valuesmark@contoso.com と kim@contoso.com を含む受信者禁止一覧を構成します。
 
-    Set-RecipientFilterConfig -BlockedRecipients mark@contoso.com,kim@contoso.com
+```powershell
+Set-RecipientFilterConfig -BlockedRecipients mark@contoso.com,kim@contoso.com
+```
 
 既存の値を変更せずにエントリを追加または削除するには、次のコマンドを実行します。
 
-    Set-RecipientFilterConfig -BlockedRecipients @{Add="<recipient1>","<recipient2>"...; Remove="<recipient1>","<recipient2>"...}
+```powershell
+Set-RecipientFilterConfig -BlockedRecipients @{Add="<recipient1>","<recipient2>"...; Remove="<recipient1>","<recipient2>"...}
+```
 
 この例では、受信者の一覧に chris@contoso.com が追加され、受信者禁止リストの受信者の一覧から michelle@contoso.com が削除されます。
 
-    Set-RecipientFilterConfig -BlockedRecipients @{Add="chris@contoso.com"; Remove="michelle@contoso.com"}
+```powershell
+Set-RecipientFilterConfig -BlockedRecipients @{Add="chris@contoso.com"; Remove="michelle@contoso.com"}
+```
 
 ## 正常な動作を確認する方法
 
@@ -121,7 +143,9 @@ _**トピックの最終更新日:** 2015-04-08_
 
 1.  次のコマンドを実行します。
     
-        Get-RecipientFilterConfig | Format-List BlockedRecipients
+    ```powershell
+    Get-RecipientFilterConfig | Format-List BlockedRecipients
+    ```
 
 2.  表示された値が構成した値であることを確認します。
 
@@ -129,11 +153,15 @@ _**トピックの最終更新日:** 2015-04-08_
 
 次のコマンドを実行します。
 
-    Set-RecipientFilterConfig -RecipientValidationEnabled <$true | $false>
+```powershell
+Set-RecipientFilterConfig -RecipientValidationEnabled <$true | $false>
+```
 
 組織に存在しない受信者に対するメッセージをブロックするには、以下のコマンドを実行します。
 
-    Set-RecipientFilterConfig -RecipientValidationEnabled $true
+```powershell
+Set-RecipientFilterConfig -RecipientValidationEnabled $true
+```
 
 ## 正常な動作を確認する方法
 
@@ -141,7 +169,9 @@ _**トピックの最終更新日:** 2015-04-08_
 
 1.  次のコマンドを実行します。
     
-        Get-RecipientFilterConfig | Format-List RecipientValidationEnabled
+    ```powershell
+    Get-RecipientFilterConfig | Format-List RecipientValidationEnabled
+    ```
 
 2.  表示された値が構成した値であることを確認します。
 

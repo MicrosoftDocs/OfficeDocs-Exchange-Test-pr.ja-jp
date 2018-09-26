@@ -41,13 +41,17 @@ _**トピックの最終更新日:** 2012-11-29_
 
   - 次のコマンドを実行して、ユーザー アカウントを接続する回復可能な削除によって削除されたメールボックスがまだメールボックス データベース内に存在し、無効にされたメールボックスでないことを確認します。
     
-        Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisplayName -eq "<display name>" } | fl DisplayName,DisconnectReason,DisconnectDate
+    ```powershell
+    Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisplayName -eq "<display name>" } | fl DisplayName,DisconnectReason,DisconnectDate
+    ```
     
     回復可能な削除によって削除されたメールボックスは、メールボックス データベース内に存在する必要があり、*DisconnectReason* プロパティの値は `SoftDeleted` である必要があります。メールボックスがデータベースから削除されている場合、コマンドから結果は返されません。
     
     または、次のコマンドを実行して、組織内の回復可能な削除によって削除されたすべてのメールボックスを表示します。
     
-        Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisconnectReason -eq "SoftDeleted" } | fl DisplayName,DisconnectReason,DisconnectDate
+    ```powershell
+    Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisconnectReason -eq "SoftDeleted" } | fl DisplayName,DisconnectReason,DisconnectDate
+    ```
 
   - このトピックの手順で使用可能なキーボード ショートカットについては、「[Exchange 管理センターのキーボード ショートカット](keyboard-shortcuts-in-the-exchange-admin-center-exchange-online-protection-help.md)」を参照してください。
 
@@ -61,15 +65,21 @@ _**トピックの最終更新日:** 2012-11-29_
 
 メールボックスの復元要求を作成するには、回復可能な削除によって削除されたメールボックスの表示名、メールボックス GUID、または従来の識別名 (DN) を使用する必要があります。**Get-MailboxStatistics** コマンドレットを使用して、復元する回復可能な削除によって削除されたメールボックスの **DisplayName**、**MailboxGuid**、および **LegacyDN** プロパティの値を表示します。たとえば、次のコマンドを実行すると、組織内の無効にされたすべてのメールボックスと回復可能な削除によって削除されたすべてのメールボックスに関して、この情報が返されます。
 
-    Get-MailboxDatabase | Get-MailboxStatistics | Where {$_.DisconnectReason -eq "SoftDeleted"} | fl DisplayName,MailboxGuid,LegacyDN,Database
+```powershell
+Get-MailboxDatabase | Get-MailboxStatistics | Where {$_.DisconnectReason -eq "SoftDeleted"} | fl DisplayName,MailboxGuid,LegacyDN,Database
+```
 
 この例では、*SourceStoreMailbox* パラメーターの表示名で識別され、MBXDB01 メールボックス データベースにある回復可能な削除によって削除されたメールボックスを、Debra Garcia という名前の移動先メールボックスに復元します。*AllowLegacyDNMismatch* パラメーターを使用すると、移動元メールボックスを、回復可能な削除によって削除されたメールボックスと同じ従来の DN 値を持たないメールボックスに復元できます。
 
-    New-MailboxRestoreRequest -SourceStoreMailbox "Debra Garcia" -SourceDatabase MBXDB01 -TargetMailbox "Debra Garcia" -AllowLegacyDNMismatch
+```powershell
+New-MailboxRestoreRequest -SourceStoreMailbox "Debra Garcia" -SourceDatabase MBXDB01 -TargetMailbox "Debra Garcia" -AllowLegacyDNMismatch
+```
 
 この例では、メールボックス GUID で識別される Pilar Pinilla の回復可能な削除によって削除されたアーカイブ メールボックスを、彼女の現在のアーカイブ メールボックスに復元します。この場合、プライマリ メールボックスと対応するアーカイブ メールボックスの従来の DN が同じであるため、*AllowLegacyDNMismatch* パラメーターは不要です。
 
-    New-MailboxRestoreRequest -SourceStoreMailbox dc35895a-a628-4bba-9aa9-650f5cdb9ae7 -SourceDatabase MBXDB02 -TargetMailbox pilarp@contoso.com -TargetIsArchive
+```powershell
+New-MailboxRestoreRequest -SourceStoreMailbox dc35895a-a628-4bba-9aa9-650f5cdb9ae7 -SourceDatabase MBXDB02 -TargetMailbox pilarp@contoso.com -TargetIsArchive
+```
 
 構文およびパラメーターの詳細については、「[New-MailboxRestoreRequest](https://technet.microsoft.com/ja-jp/library/ff829875\(v=exchg.150\))」を参照してください。
 

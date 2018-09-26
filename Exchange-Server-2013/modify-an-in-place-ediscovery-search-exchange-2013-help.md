@@ -76,7 +76,9 @@ _**適用先:** Exchange Server 2013_
 
 この例では、インプレース電子情報開示検索 Search-Project Contoso を変更して、DG-ProjectManagers 配布グループのメンバーに所属するメールボックスを検索します。
 
-    Set-MailboxSearch -Identity "Search-Project Contoso" -SourceMailboxes "DG-ProjectManagers"
+```powershell
+Set-MailboxSearch -Identity "Search-Project Contoso" -SourceMailboxes "DG-ProjectManagers"
+```
 
 ## 正常な動作を確認する方法
 

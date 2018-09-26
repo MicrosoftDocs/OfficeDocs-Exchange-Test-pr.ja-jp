@@ -65,11 +65,15 @@ UM メールボックスに関連するその他のタスクについては、�
 
 この例では、Outlook Voice Access にダイヤル インする、メールボックス ポリシーに関連付けられたユーザーの `MyUMMailboxPolicy` という名前の UM メールボックス ポリシーに対する PIN なしボイル メール アクセスを有効にします。
 
-    Set-UMMailboxPolicy -id MyUMMailboxPolicy -AllowPinlessVoiceMailAccess $true
+```powershell
+Set-UMMailboxPolicy -id MyUMMailboxPolicy -AllowPinlessVoiceMailAccess $true
+```
 
 ## シェルを使用して、UM が有効なユーザーのメールボックスで PIN 入力不要のボイス メール アクセスを有効にする
 
 この例では、Outlook Voice Access にダイヤル インして `tonys@contoso.com` という名前のメールボックスにアクセスするユーザーの PIN なしボイス メール アクセスを有効にします。
 
-    Set-UMMailbox -id tonys@contoso.com -PinlessAccessToVoiceMailEnabled $true
+```powershell
+Set-UMMailbox -id tonys@contoso.com -PinlessAccessToVoiceMailEnabled $true
+```
 

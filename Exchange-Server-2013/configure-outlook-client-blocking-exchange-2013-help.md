@@ -156,11 +156,15 @@ Outlook より前のバージョンの Outlook 2010 を実行している電子�
 
 この例では、11.8010.8036 以前のすべての Outlook バージョンをブロックします。
 
-    Set-CASMailbox -Identity adam@contoso.com -MAPIBlockOutlookVersions "-11.8010.8036"
+```powershell
+Set-CASMailbox -Identity adam@contoso.com -MAPIBlockOutlookVersions "-11.8010.8036"
+```
 
 この例では、Outlook のバージョンでブロックされているメールボックスへのアクセスを復元します。
 
-    Set-CASMailbox -Identity adam@contoso.com -MAPIBlockOutlookVersions $null
+```powershell
+Set-CASMailbox -Identity adam@contoso.com -MAPIBlockOutlookVersions $null
+```
 
 構文およびパラメーターの詳細については、「[Set-CASMailbox](https://technet.microsoft.com/ja-jp/library/bb125264\(v=exchg.150\))」を参照してください。
 
@@ -176,7 +180,9 @@ Outlook より前のバージョンの Outlook 2010 を実行している電子�
 
 
 
-    Set-RpcClientAccess -Server CAS01 -BlockedClientVersions "0.0.0-5.65535.65535;7.0.0;8.02.4-11.65535.65535"
+  ```powershell
+  Set-RpcClientAccess -Server CAS01 -BlockedClientVersions "0.0.0-5.65535.65535;7.0.0;8.02.4-11.65535.65535"
+  ```
 
 構文およびパラメーター定義の詳細については、「[Set-RpcClientAccess](https://technet.microsoft.com/ja-jp/library/dd351072\(v=exchg.150\))」を参照してください。
 

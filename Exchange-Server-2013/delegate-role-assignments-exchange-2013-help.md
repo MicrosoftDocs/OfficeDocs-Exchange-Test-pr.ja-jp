@@ -69,11 +69,15 @@ _**トピックの最終更新日:** 2012-10-02_
 
 この例では、委任役割割り当てを作成して、上級管理の役割グループのメンバーが、"Mail Recipients/メール受信者" の役割を Exchange 組織内の役割の被割り当て者すべてに対して割り当てられるようにしています。
 
-    New-ManagementRoleAssignment -Role "Mail Recipients" -SecurityGroup "Senior Admins" -Name "Mail Recipients_Senior Admin - Delegate" -Delegating
+  ```powershell
+  New-ManagementRoleAssignment -Role "Mail Recipients" -SecurityGroup "Senior Admins" -Name "Mail Recipients_Senior Admin - Delegate" -Delegating
+  ```
 
 この例では、委任役割割り当てを作成して、"legal hold management/上級管理" 役割グループのメンバーが、メール受信者の役割を "contoso.com"ドメイン内の "Sales/Users" という OU 内のユーザーに対してのみ割り当てられるようにしています。
 
-    New-ManagementRoleAssignment -Role "Mail Recipients" -SecurityGroup "Senior Admins" -Name "Mail Recipients_Senior Admins - Delegate" -RecipientOrganizationalUnitScope contoso.com/sales/users -Delegating
+  ```powershell
+  New-ManagementRoleAssignment -Role "Mail Recipients" -SecurityGroup "Senior Admins" -Name "Mail Recipients_Senior Admins - Delegate" -RecipientOrganizationalUnitScope contoso.com/sales/users -Delegating
+  ```
 
 構文およびパラメーターの詳細については、「[New-ManagementRoleAssignment](https://technet.microsoft.com/ja-jp/library/dd335193\(v=exchg.150\))」を参照してください。
 

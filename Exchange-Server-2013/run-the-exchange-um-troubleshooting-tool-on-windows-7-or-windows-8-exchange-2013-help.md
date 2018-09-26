@@ -73,21 +73,29 @@ Microsoft Exchange 2010 UM トラブルシューティング ツールは **Test
 
 3.  Windows PowerShell コマンド プロンプトで、UM トラブルシューティング ツールがインストールされたフォルダーに移動し、以下を実行します。
     
-        C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -psconsolefile .\Microsoft.Exchange.UM.TroubleshootingToolsnapin.psc1 -noexit -command ". '.\Microsoft.Exchange.UM.TroubleshootingTool.ps1' "
+    ```powershell
+    C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -psconsolefile .\Microsoft.Exchange.UM.TroubleshootingToolsnapin.psc1 -noexit -command ". '.\Microsoft.Exchange.UM.TroubleshootingTool.ps1' "
+    ```
 
 4.  Windows Vista、Windows 7、または Windows 8 で UM トラブルシューティング ツールを実行している場合は、Windows PowerShell コマンド プロンプトで、以下を実行します。
     
-        Set-ExecutionPolicy RemoteSigned
+    ```powershell
+    Set-ExecutionPolicy RemoteSigned
+    ```
 
 5.  \[**スタート**\] メニューから、\[**Microsoft Exchange 2010 UM トラブルシューティング ツール**\] を開きます。
 
 6.  <strong>Microsoft Exchange 2010 UM トラブルシューティング ツール</strong> ウィンドウのプロンプトで、次を入力し、Enter キーを押します。
     
-        $cred=Get-Credential
+    ```powershell
+    $cred=Get-Credential
+    ```
 
 7.  <strong>Windows PowerShell 資格情報の要求</strong> ウィンドウに、ドメイン\\ユーザー名およびパスワードを入力して <strong>OK</strong> をクリックします。
 
 8.  <strong>Microsoft Exchange 2010 UM トラブルシューティング ツール</strong> ウィンドウで、呼び出しのフローのテストに必要なコマンドレットのパラメーターを指定します。次に例を示します。
     
-        Test-ExchangeUMCallFlow -Mode SIPClient -CallingParty tonysmith@contoso.com - CalledParty jamiestark@contoso.com NextHop ocsfe.contoso.com -Credential $cred
+    ```powershell
+    Test-ExchangeUMCallFlow -Mode SIPClient -CallingParty tonysmith@contoso.com - CalledParty jamiestark@contoso.com NextHop ocsfe.contoso.com -Credential $cred
+    ```
 

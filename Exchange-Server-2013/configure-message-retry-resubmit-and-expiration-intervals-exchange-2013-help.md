@@ -43,28 +43,33 @@ Microsoft Exchange Server 2013 では、メールボックス サーバーおよ
 
 1.  メールボックス サーバーまたはエッジ トランスポート サーバーのコマンド プロンプト ウィンドウで、次のコマンドを実行して EdgeTransport.exe.config をメモ帳で開きます。
     
-        Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
-
+    ```powershell
+    Notepad %ExchangeInstallPath%Bin\EdgeTransport.exe.config
+    ```
 2.  `<appSettings>` セクションで以下のキーを検索します。
     
-        <add key="QueueGlitchRetryCount" value="<Integer>" />
-        <add key="QueueGlitchRetryInterval" value="<hh:mm:ss>" />
-        <add key="MailboxDeliveryQueueRetryInterval" value="<hh:mm:ss>" />
-        <add key="MaxIdleTimeBeforeResubmit" value="<hh:mm:ss>" />
+    ```powershell
+    <add key="QueueGlitchRetryCount" value="<Integer>" />
+    <add key="QueueGlitchRetryInterval" value="<hh:mm:ss>" />
+    <add key="MailboxDeliveryQueueRetryInterval" value="<hh:mm:ss>" />
+    <add key="MaxIdleTimeBeforeResubmit" value="<hh:mm:ss>" />
+    ```
     
     この例では、キューの誤作動による再試行回数を 6 に、キューの誤作動による再試行の間隔を 30 秒 に、メールボックス配信キューの再試行の間隔を 3 分 に、そして次の再送信までの最大アイドル時間を 6 時間に変更します。
     
-        <add key="QueueGlitchRetryCount" value="6" />
-        <add key="QueueGlitchRetryInterval" value="00:00:30" />
-        <add key="MailboxDeliveryQueueRetryInterval" value="00:03:00" />
-        <add key="MaxIdleTimeBeforeResubmit" value="6:00:00" />
-
+    ```powershell
+    <add key="QueueGlitchRetryCount" value="6" />
+    <add key="QueueGlitchRetryInterval" value="00:00:30" />
+    <add key="MailboxDeliveryQueueRetryInterval" value="00:03:00" />
+    <add key="MaxIdleTimeBeforeResubmit" value="6:00:00" />
+    ```
 3.  完了したら、EdgeTransport.exe.config ファイルを保存して閉じます。
 
 4.  次のコマンドを実行して、Microsoft Exchange Transport サービスを再起動します。
     
-        net stop MSExchangeTransport && net start MSExchangeTransport
-
+    ```powershell
+    net stop MSExchangeTransport && net start MSExchangeTransport
+    ```
 ## 一時エラー発生時の再試行、一時エラー発生時の再試行間隔、および送信接続失敗時の再試行間隔を構成する
 
 一時エラー発生時の再試行には、`QueueGlitchRetryCount` キーと `QueueGlitchRetryInterval` キーで制御される接続試行が失敗した後に行う、接続試行の回数を指定します。一時エラー発生時の再試行回数の既定値は 6 です。このパラメーターの有効な入力範囲は 0 ～ 15 です。一時エラー発生時の再試行回数を 0 に設定すると、次の接続試行は、*送信接続失敗時の再試行間隔*で制御されます。
@@ -85,7 +90,9 @@ Microsoft Exchange Server 2013 では、メールボックス サーバーおよ
 
 次の構文を使用して、メールボックス サーバーまたはエッジ トランスポート サーバーのトランスポート サービスで、一時エラー発生時の再試行、一時エラー発生時の再試行間隔、および送信接続失敗時の再試行間隔を構成します。
 
-    Set-TransportService <ServerIdentity> -TransientFailureRetryCount <Integer> -TransientFailureRetryInterval <hh:mm:ss> -OutboundConnectionFailureRetryInterval <dd.hh:mm:ss>
+```powershell
+Set-TransportService <ServerIdentity> -TransientFailureRetryCount <Integer> -TransientFailureRetryInterval <hh:mm:ss> -OutboundConnectionFailureRetryInterval <dd.hh:mm:ss>
+```
 
 この例では、エッジ トランスポート サーバー Exchange01 の Mailbox01 というメールボックス サーバーの次の値を変更します。
 
@@ -97,7 +104,9 @@ Microsoft Exchange Server 2013 では、メールボックス サーバーおよ
 
 <!-- end list -->
 
-    Set-TransportService Mailbox01 -TransientFailureRetryCount 8 -TransientFailureRetryInterval 00:01:00 -OutboundConnectionFailureRetryInterval 00:45:00
+```powershell
+Set-TransportService Mailbox01 -TransientFailureRetryCount 8 -TransientFailureRetryInterval 00:01:00 -OutboundConnectionFailureRetryInterval 00:45:00
+```
 
 
 > [!NOTE]
@@ -119,7 +128,9 @@ Microsoft Exchange Server 2013 では、メールボックス サーバーおよ
 
 次の構文を使用して、メールボックス サーバーまたはエッジ トランスポート サーバーのトランスポート サービスで、一時エラー発生時の再試行、一時エラー発生時の再試行間隔、および送信接続失敗時の再試行間隔を構成します。
 
-    Set-TransportService <ServerIdentity> -TransientFailureRetryCount <Integer> -TransientFailureRetryInterval <hh:mm:ss> -OutboundConnectionFailureRetryInterval <dd.hh:mm:ss>
+```powershell
+Set-TransportService <ServerIdentity> -TransientFailureRetryCount <Integer> -TransientFailureRetryInterval <hh:mm:ss> -OutboundConnectionFailureRetryInterval <dd.hh:mm:ss>
+```
 
 この例では、エッジ トランスポート サーバー Exchange01 の Mailbox01 というメールボックス サーバーの次の値を変更します。
 
@@ -131,7 +142,9 @@ Microsoft Exchange Server 2013 では、メールボックス サーバーおよ
 
 <!-- end list -->
 
-    Set-TransportService Mailbox01 -TransientFailureRetryCount 8 -TransientFailureRetryInterval 00:01:00 -OutboundConnectionFailureRetryInterval 00:45:00
+```powershell
+Set-TransportService Mailbox01 -TransientFailureRetryCount 8 -TransientFailureRetryInterval 00:01:00 -OutboundConnectionFailureRetryInterval 00:45:00
+```
 
 
 > [!NOTE]
@@ -145,11 +158,15 @@ Microsoft Exchange Server 2013 では、メールボックス サーバーおよ
 
 メッセージの再試行間隔を設定するには、次の構文を使用します。
 
-    Set-TransportService <ServerIdentity> -MessageRetryInterval <dd.hh:mm:ss>
+```powershell
+Set-TransportService <ServerIdentity> -MessageRetryInterval <dd.hh:mm:ss>
+```
 
 この例では、Mailbox01 というメールボックス サーバーで、メッセージの再試行間隔を 20 分に変更します。
 
-    Set-TransportService Mailbox01 -MessageRetryInterval 00:20:00
+```powershell
+Set-TransportService Mailbox01 -MessageRetryInterval 00:20:00
+```
 
 ## 遅延 DSN タイムアウト設定を構成する
 
@@ -173,25 +190,35 @@ EAC またはシェルを使用して、遅延 DSN 通知のタイムアウト�
 
 メッセージの再試行間隔を設定するには、次の構文を使用します。
 
-    Set-TransportService <ServerIdentity> -DelayNotificationTimeout <dd.hh:mm:ss>
+```powershell
+Set-TransportService <ServerIdentity> -DelayNotificationTimeout <dd.hh:mm:ss>
+```
 
 この例では、Mailbox01 というメールボックス サーバーで、遅延 DSN メッセージ通知のタイムアウト間隔を 6 時間に変更します。
 
-    Set-TransportService Mailbox01 -DelayNotificationTimeout 06:00:00
+```powershell
+Set-TransportService Mailbox01 -DelayNotificationTimeout 06:00:00
+```
 
 ## シェルを使用して、外部または内部のメッセージ送信者への遅延 DSN 通知の送信を有効または無効にする
 
 遅延 DSN 通知の設定を構成するには、次の構文を使用します。
 
-    Set-TransportConfig -ExternalDelayDSNEnabled <$true | $false> -InternalDelayDSNEnabled <$true |$false>
+```powershell
+Set-TransportConfig -ExternalDelayDSNEnabled <$true | $false> -InternalDelayDSNEnabled <$true |$false>
+```
 
 この例では、外部の送信者に遅延 DSN 通知メッセージを送信しないようにします。
 
-    Set-TransportConfig -ExternalDelayDSNEnabled $false
+```powershell
+Set-TransportConfig -ExternalDelayDSNEnabled $false
+```
 
 この例では、内部の送信者に遅延 DSN 通知メッセージを送信しないようにします。
 
-    Set-TransportConfig -InternalDelayDSNEnabled $false
+```powershell
+Set-TransportConfig -InternalDelayDSNEnabled $false
+```
 
 ## メッセージの有効期限のタイムアウト間隔を構成する
 
@@ -207,9 +234,13 @@ EAC またはシェルを使用して、遅延 DSN 通知のタイムアウト�
 
 メッセージの有効期限のタイムアウト間隔を構成するには、次の構文を使用します。
 
-    Set-TransportService <ServerIdentity> -MessageExpirationTimeout <dd.hh:mm:ss>
+```powershell
+Set-TransportService <ServerIdentity> -MessageExpirationTimeout <dd.hh:mm:ss>
+```
 
 この例では、Mailbox01 という Exchange サーバーで、メッセージの有効期限のタイムアウト間隔を 4 日に変更します。
 
-    Set-TransportService Mailbox01 -MessageExpirationTimeout 4.00:00:00
+```powershell
+Set-TransportService Mailbox01 -MessageExpirationTimeout 4.00:00:00
+```
 

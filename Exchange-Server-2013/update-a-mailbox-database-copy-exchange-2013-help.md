@@ -87,8 +87,7 @@ _**トピックの最終更新日:** 2012-11-02_
 
 4.  詳細ウィンドウの <strong>データベース コピー</strong> タブで、シードするパッシブ データベース コピーの下にある <strong>更新</strong> をクリックします。
 
-5.  
-    
+5.    
     既定では、データベースのアクティブ コピーがシードのソース データベースとして使用されます。シードにデータベースのパッシブ コピーを使用する場合は、<strong>参照</strong> をクリックして、シード元として使用するパッシブ データベースのコピーを含むサーバーを選択します。
 
 6.  <strong>保存</strong> をクリックして、パッシブ データベース コピーを更新します。
@@ -97,45 +96,63 @@ _**トピックの最終更新日:** 2012-11-02_
 
 この例では、MBX1 上のデータベース DB1 のコピーをシードする方法を示します。
 
-    Update-MailboxDatabaseCopy -Identity DB1\MBX1
+```powershell
+Update-MailboxDatabaseCopy -Identity DB1\MBX1
+```
 
 この例は、シード用のソース メールボックス サーバーとして MBX2 を使用して、MBX1 上のデータベース DB1 のコピーをシードする方法を示します。
 
-    Update-MailboxDatabaseCopy -Identity DB1\MBX1 -SourceServer MBX2
+```powershell
+Update-MailboxDatabaseCopy -Identity DB1\MBX1 -SourceServer MBX2
+```
 
 この例では、コンテンツ インデックス カタログをシードせずに、MBX1 上のデータベース DB1 のコピーをシードする方法を示します。
 
-    Update-MailboxDatabaseCopy -Identity DB1\MBX1 -DatabaseOnly
+```powershell
+Update-MailboxDatabaseCopy -Identity DB1\MBX1 -DatabaseOnly
+```
 
 この例では、データベース ファイルをシードせずに、MBX1 上のデータベース DB1 のコピーのコンテンツ インデックス カタログをシードする方法を示します。
 
-    Update-MailboxDatabaseCopy -Identity DB1\MBX1 -CatalogOnly
+```powershell
+Update-MailboxDatabaseCopy -Identity DB1\MBX1 -CatalogOnly
+```
 
 ## オフライン データベースを手動でコピーする
 
 1.  データベースに対して循環ログが有効になっている場合、処理の前に無効にする必要があります。メールボックス データベースの循環ログを無効にするには、次の例のように [Set-MailboxDatabase](https://technet.microsoft.com/ja-jp/library/bb123971\(v=exchg.150\)) コマンドレットを使用します。
     
-        Set-MailboxDatabase DB1 -CircularLoggingEnabled $false
+    ```powershell
+    Set-MailboxDatabase DB1 -CircularLoggingEnabled $false
+    ```
 
 2.  データベースのマウントを解除する。この例のように、[Dismount-Database](https://technet.microsoft.com/ja-jp/library/bb124936\(v=exchg.150\)) コマンドレットを使用できます。
     
-        Dismount-Database DB1 -Confirm $false
+    ```powershell
+    Dismount-Database DB1 -Confirm $false
+    ```
 
 3.  手動で、データベース ファイル (データベース ファイルとすべてのログ ファイル) を外部のディスク ドライブやネットワーク共有などの別の場所にコピーします。
 
 4.  データベースをマウントします。この例のように、[Mount-Database](https://technet.microsoft.com/ja-jp/library/aa998871\(v=exchg.150\)) コマンドレットを使用できます。
     
-        Mount-Database DB1
+    ```powershell
+    Mount-Database DB1
+    ```
 
 5.  コピーをホストするサーバー上で、外部のドライブまたはネットワーク共有からアクティブなデータベース コピーと同じパスにデータベース ファイルをコピーします。たとえば、アクティブ コピーのデータベースのパスが D:\\DB1\\DB1.edb で、ログ ファイルのパスが D:\\DB1 である場合、そのコピーをホストするサーバー上の D:\\DB1 にデータベース ファイルをコピーします。
 
 6.  この例のように、*SeedingPostponed* パラメーターを指定して [Add-MailboxDatabaseCopy](https://technet.microsoft.com/ja-jp/library/dd298105\(v=exchg.150\)) コマンドレットを使用し、メールボックス データベースのコピーを追加します。
     
-        Add-MailboxDatabaseCopy -Identity DB1 -MailboxServer MBX3 -SeedingPostponed
+    ```powershell
+    Add-MailboxDatabaseCopy -Identity DB1 -MailboxServer MBX3 -SeedingPostponed
+    ```
 
 7.  データベースに循環ログが有効になっている場合、この例のように、[Set-MailboxDatabase](https://technet.microsoft.com/ja-jp/library/bb123971\(v=exchg.150\)) コマンドレットを使用して、循環ログを再度有効にします。
     
-        Set-MailboxDatabase DB1 -CircularLoggingEnabled $true
+    ```powershell
+    Set-MailboxDatabase DB1 -CircularLoggingEnabled $true
+    ```
 
 ## 正常な動作を確認する方法
 
@@ -145,7 +162,9 @@ _**トピックの最終更新日:** 2012-11-02_
 
   - シェルで次のコマンドを実行して、メールボックス データベースのコピーが正常にシードされ、かつ正常な状態にあることを確認します。
     
-        Get-MailboxDatabaseCopyStatus <DatabaseCopyName>
+    ```powershell
+    Get-MailboxDatabaseCopyStatus <DatabaseCopyName>
+    ```
     
     ステータスとコンテンツ インデックス ステータスの両方が正常である必要があります。
 

@@ -314,7 +314,9 @@ Exchange 2013 には、**Get-QueueDigest** という新しいキュー コマン
 
 この例では、Mailbox01、Mailbox02、および Mailbox03 という Exchange 2013 メールボックス サーバー上の空ではない外部キューをすべて返します。
 
-    Get-QueueDigest -Server Mailbox01,Mailbox02,Mailbox03 -Include External -Exclude Empty
+```powershell
+Get-QueueDigest -Server Mailbox01,Mailbox02,Mailbox03 -Include External -Exclude Empty
+```
 
 ページのトップへ
 
@@ -515,11 +517,15 @@ Exchange 2013 には、**Get-QueueDigest** という新しいキュー コマン
 
 この例では、Contoso.com で終わる SMTP ドメイン名を送信先に持つキューと、現在 500 を超えるメッセージが存在するキューの一覧が表示されます。
 
-    Get-Queue -Filter {Identity -like "*contoso.com*" -and MessageCount -gt 500}
+```powershell
+Get-Queue -Filter {Identity -like "*contoso.com*" -and MessageCount -gt 500}
+```
 
 この例では、5 よりも大きい SCL を持つ contoso.com ドメインの電子メール アドレスから送信されたメッセージの一覧が表示されます。
 
-    Get-Message -Filter {FromAddress -like "*Contoso.com*" -and SCL -gt 5}
+```powershell
+Get-Message -Filter {FromAddress -like "*Contoso.com*" -and SCL -gt 5}
+```
 
 ページのトップへ
 
@@ -594,15 +600,21 @@ Exchange 2013 には、**Get-QueueDigest** という新しいキュー コマン
 
 1.  シェルを開き、次のコマンドを入力して結果の最初のページを取得します。
     
-        $Results=Get-message -Server mailbox01.contoso.com -ResultSize 500 -SortOrder +FromAddress,-Size
+    ```powershell
+    $Results=Get-message -Server mailbox01.contoso.com -ResultSize 500 -SortOrder +FromAddress,-Size
+    ```
 
 2.  ブックマーク オブジェクトを設定するには、次のコマンドを入力して、最初のページの最後の要素を変数に保存します。
     
-        $temp=$results[$results.length-1]
+    ```powershell
+    $temp=$results[$results.length-1]
+    ```
 
 3.  指定されたサーバー上で次の 500 オブジェクトを取得し、ブックマーク オブジェクトを除外するには、次のコマンドを入力します。
     
-        Get-message -Server mailbox01.contoso.com -BookmarkObject:$temp -IncludeBookmark $False -ResultSize 500 -SortOrder +FromAddress,-Size
+    ```powershell
+    Get-message -Server mailbox01.contoso.com -BookmarkObject:$temp -IncludeBookmark $False -ResultSize 500 -SortOrder +FromAddress,-Size
+    ```
 
 ページのトップへ
 

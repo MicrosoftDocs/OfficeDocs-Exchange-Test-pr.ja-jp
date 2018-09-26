@@ -51,15 +51,21 @@ Microsoft Exchange Server 2013 での管理役割スコープおよび割り当�
 
 役割の割り当てを有効にするには、次の構文を使用します。
 
-    Set-ManagementRoleAssignment <role assignment> -Enabled $true
+```powershell
+Set-ManagementRoleAssignment <role assignment> -Enabled $true
+```
 
 役割の割り当てを無効にするには、次の構文を使用します。
 
-    Set-ManagementRoleAssignment <role assignment> -Enabled $false
+```powershell
+Set-ManagementRoleAssignment <role assignment> -Enabled $false
+```
 
 この例では、"Help Desk Assignment/ヘルプ デスク割り当て" の役割の割り当てを無効にします。
 
-    Set-ManagementRoleAssignment "Help Desk Assignment" -Enabled $false
+```powershell
+Set-ManagementRoleAssignment "Help Desk Assignment" -Enabled $false
+```
 
 構文およびパラメーターの詳細については、「[Set-ManagementRoleAssignment](https://technet.microsoft.com/ja-jp/library/dd335173\(v=exchg.150\))」を参照してください。
 
@@ -79,11 +85,15 @@ Microsoft Exchange Server 2013 での管理役割スコープおよび割り当�
 
 役割の割り当ての定義済みスコープを変更または追加するには、次の構文を使用します。
 
-    Set-ManagementRoleAssignment <assignment name> -RecipientRelativeWriteScope < MyDistributionGroups | Organization | Self >
+```powershell
+Set-ManagementRoleAssignment <assignment name> -RecipientRelativeWriteScope < MyDistributionGroups | Organization | Self >
+```
 
 この例では、"John's Assignment/John の割り当て" の役割の割り当て上の定義済みスコープを MyDistributionGroups に変更します。
 
-    Set-ManagementRoleAssignment "John's Assignment" - RecipientRelativeWriteScope MyDistributionGroups
+```powershell
+Set-ManagementRoleAssignment "John's Assignment" - RecipientRelativeWriteScope MyDistributionGroups
+```
 
 構文およびパラメーターの詳細については、「[Set-ManagementRoleAssignment](https://technet.microsoft.com/ja-jp/library/dd335173\(v=exchg.150\))」を参照してください。
 
@@ -93,11 +103,15 @@ Microsoft Exchange Server 2013 での管理役割スコープおよび割り当�
 
 新しい受信者フィルター ベースのスコープを指定するか、既存のスコープを置き換えるには、次の構文を使用します。
 
-    Set-ManagementRoleAssignment <assignment name> -CustomRecipientWriteScope <role scope name>
+```powershell
+Set-ManagementRoleAssignment <assignment name> -CustomRecipientWriteScope <role scope name>
+```
 
 この例では、Redmond Recipients に対して受信者フィルター ベースのスコープを追加または変更します。
 
-    Set-ManagementRoleAssignment "Redmond Recipient Administrators Assignment" -CustomRecipientWriteScope "Redmond Recipients"
+```powershell
+Set-ManagementRoleAssignment "Redmond Recipient Administrators Assignment" -CustomRecipientWriteScope "Redmond Recipients"
+```
 
 役割の割り当てに適用されている受信者フィルター ベースのスコープと同じスコープを保持するが、受信者オブジェクトとの照合に使用される受信者フィルターを変更する場合、スコープ自身の受信者フィルターを変更する必要があります。スコープを変更する方法の詳細については、「[役割のスコープを変更する](change-a-role-scope-exchange-2013-help.md)」を参照してください。
 
@@ -109,11 +123,15 @@ Microsoft Exchange Server 2013 での管理役割スコープおよび割り当�
 
 新しい構成スコープを指定するか、既存のスコープを置き換えるには、次の構文を使用します。
 
-    Set-ManagementRoleAssignment <assignment name> -CustomConfigWriteScope <role scope name>
+```powershell
+Set-ManagementRoleAssignment <assignment name> -CustomConfigWriteScope <role scope name>
+```
 
 この例では、Redmond Servers に対して構成スコープを追加または変更します。
 
-    Set-ManagementRoleAssignment "Redmond Administrators Assignment" -CustomConfigWriteScope "Redmond Servers"
+```powershell
+Set-ManagementRoleAssignment "Redmond Administrators Assignment" -CustomConfigWriteScope "Redmond Servers"
+```
 
 役割の割り当てに適用されている構成スコープと同じスコープを保持するが、スコープのサーバー フィルターまたはサーバー リストを変更する場合、構成スコープ自身を変更する必要があります。スコープを変更する方法の詳細については、「[役割のスコープを変更する](change-a-role-scope-exchange-2013-help.md)」を参照してください。
 
@@ -125,11 +143,15 @@ Microsoft Exchange Server 2013 での管理役割スコープおよび割り当�
 
 新しい構成スコープを指定するか、既存のスコープを置き換えるには、次の構文を使用します。
 
-    Set-ManagementRoleAssignment <assignment name> -CustomConfigWriteScope <role scope name>
+```powershell
+Set-ManagementRoleAssignment <assignment name> -CustomConfigWriteScope <role scope name>
+```
 
 この例では、Redmond Databases に対して構成スコープを追加または変更します。
 
-    Set-ManagementRoleAssignment "Redmond Database Admins" -CustomConfigWriteScope "Redmond Databases"
+```powershell
+Set-ManagementRoleAssignment "Redmond Database Admins" -CustomConfigWriteScope "Redmond Databases"
+```
 
 役割の割り当てに適用されている構成スコープと同じスコープを保持するが、スコープのデータベース フィルターまたはデータベース リストを変更する場合、構成スコープ自身を変更する必要があります。スコープを変更する方法の詳細については、「[役割のスコープを変更する](change-a-role-scope-exchange-2013-help.md)」を参照してください。
 
@@ -141,11 +163,15 @@ Microsoft Exchange Server 2013 での管理役割スコープおよび割り当�
 
 役割の割り当ての新しい OU を変更または追加するには、次の構文を使用します。
 
-    Set-ManagementRoleAssignment <assignment name> -RecipientOrganizationalUnitScope <OU>
+```powershell
+Set-ManagementRoleAssignment <assignment name> -RecipientOrganizationalUnitScope <OU>
+```
 
 この例では、contoso.com ドメインの Engineering\\Users OU を "Engineering Help Desk/エンジニアリング ヘルプ デスク" 役割の割り当てに追加します。
 
-    Set-ManagementRoleAssignment "Engineering Help Desk" -RecipientOrganizationalUnitScope contoso.com/Engineering/Users
+```powershell
+Set-ManagementRoleAssignment "Engineering Help Desk" -RecipientOrganizationalUnitScope contoso.com/Engineering/Users
+```
 
 構文およびパラメーターの詳細については、「[Set-ManagementRoleAssignment](https://technet.microsoft.com/ja-jp/library/dd335173\(v=exchg.150\))」を参照してください。
 
@@ -161,7 +187,9 @@ Microsoft Exchange Server 2013 での管理役割スコープおよび割り当�
 
 この例では、排他的受信者書き込みスコープを変更します。
 
-    Set-ManagementRoleAssignment "Exclusive Executive Users" -ExclusiveRecipientWriteScope "Exclusive Executives"
+```powershell
+Set-ManagementRoleAssignment "Exclusive Executive Users" -ExclusiveRecipientWriteScope "Exclusive Executives"
+```
 
 構文およびパラメーターの詳細については、「[Set-ManagementRoleAssignment](https://technet.microsoft.com/ja-jp/library/dd335173\(v=exchg.150\))」を参照してください。
 

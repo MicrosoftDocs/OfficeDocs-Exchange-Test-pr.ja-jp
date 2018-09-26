@@ -117,7 +117,9 @@ ESRA アカウントの詳細、およびこのアカウントを使用して Ed
 
 この例では、エッジ トランスポート サーバーを指定のサイトにサブスクライブして、エッジ トランスポート サーバーからメールボックス サーバーへのインターネット送信コネクタおよび送信コネクタを自動的に作成します。
 
-    New-EdgeSubscription -FileData ([byte[]]$(Get-Content -Path "C:\EdgeSubscriptionInfo.xml" -Encoding Byte -ReadCount 0)) -CreateInternetSendConnector $true -CreateInboundSendConnector $true -Site "Default-First-Site-Name" 
+  ```powershell
+  New-EdgeSubscription -FileData ([byte[]]$(Get-Content -Path "C:\EdgeSubscriptionInfo.xml" -Encoding Byte -ReadCount 0)) -CreateInternetSendConnector $true -CreateInboundSendConnector $true -Site "Default-First-Site-Name" 
+  ```
 
 
 > [!NOTE]  
@@ -127,7 +129,9 @@ ESRA アカウントの詳細、およびこのアカウントを使用して Ed
 
 この例では、エッジ サブスクリプション ファイルをエクスポートします。
 
-    New-EdgeSubscription -FileName "C:\EdgeSubscriptionInfo.xml"
+```powershell
+New-EdgeSubscription -FileName "C:\EdgeSubscriptionInfo.xml"
+```
 
 
 > [!NOTE]  

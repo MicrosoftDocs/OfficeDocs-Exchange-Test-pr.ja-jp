@@ -33,19 +33,27 @@ _**トピックの最終更新日:** 2015-03-09_
 
 複数値プロパティの変更方法は、単一の値しか使用できないプロパティの変更方法とは少し異なります。単一の値しか使用できないプロパティを変更する場合は、次のコマンドのように直接値を割り当てることができます。
 
+```powershell
     Set-TransportConfig -MaxSendSize 12MB
+```
 
 このコマンドを使用して **MaxSendSize** プロパティに新しい値を指定すると、保存されている値が上書きされます。単一の値しか使用できないプロパティの場合は、これで問題ありませんが、複数値プロパティの場合は問題になります。たとえば、**RecipientFilterConfig** オブジェクトの **BlockedRecipients** プロパティが、前のセクションに記載されている 3 つの値を持つように構成されていると仮定します。コマンド `Get-RecipientFilterConfig | Format-List BlockedRecipients` を実行すると、次のように表示されます。
 
+```powershell
     BlockedRecipients : {david@adatum.com, kim@northwindtraders.com, john@contoso.com}
+```
 
 ここで、ブロックされた受信者の一覧に新しい SMTP アドレスを追加する要求を受信したと仮定します。次のコマンドを実行して、新しい SMTP アドレスを追加します。
 
+```powershell
     Set-RecipientFilterConfig -BlockedRecipients chris@contoso.com
+```
 
 `Get-RecipientFilterConfig | Format-List BlockedRecipients` コマンドを再度実行すると、次のように表示されます。
 
+```powershell
     BlockedRecipients : {chris@contoso.com}
+```
 
 これは期待した内容ではありません。ブロックされた受信者の既存の一覧に新しい SMTP アドレスを追加しようとしたにもかかわらず、ブロックされた受信者の既存の一覧が新しい SMTP アドレスで上書きされています。この意図しない結果は、複数値プロパティの変更方法と、単一の値しか使用できないプロパティの変更方法とが異なることを例示しています。複数値プロパティを変更する場合は、値の一覧全体を上書きするのではなく、値を追加または削除することを確認する必要があります。次のセクションでは、この正確な方法を示します。
 
@@ -69,11 +77,23 @@ _**トピックの最終更新日:** 2015-03-09_
 <tbody>
 <tr class="odd">
 <td><p>1 つ以上の値を複数値プロパティに追加します。</p></td>
-<td><pre><code>@{Add=&quot;&lt;value1&gt;&quot;, &quot;&lt;value2&gt;&quot;, &quot;&lt;value3&gt;&quot;}</code></pre></td>
+<td>
+
+```powershell
+@{Add="<value1>", "<value2>", "<value3>"}
+```
+
+</td>
 </tr>
 <tr class="even">
 <td><p>1 つ以上の値を複数値プロパティから削除します。</p></td>
-<td><pre><code>@{Remove=&quot;&lt;value1&gt;&quot;, &quot;&lt;value2&gt;&quot;, &quot;&lt;value3&gt;&quot;}</code></pre></td>
+<td>
+
+```powershell
+@{Remove="<value1>", "<value2>", "<value3>"}
+```
+
+</td>
 </tr>
 </tbody>
 </table>
@@ -81,21 +101,31 @@ _**トピックの最終更新日:** 2015-03-09_
 
 複数値プロパティの構文の表から選択した構文は、コマンドレット上ではパラメーター値として指定されます。たとえば、次のコマンドは複数の値を複数値プロパティに追加します。
 
-    Set-ExampleCmdlet -Parameter @{Add="Red", "Blue", "Green"}
+```powershell
+Set-ExampleCmdlet -Parameter @{Add="Red", "Blue", "Green"}
+```
 
 この構文を使用すると、指定した値がすでにプロパティに存在する値のリストに対して追加または削除されます。このトピックで以前取り上げた **BlockedRecipients** の例で説明すると、次のコマンドを使用して、他の値を上書きすることなくこのプロパティに chris@contoso.com を追加できます。
 
-    Set-RecipientFilterConfig -BlockedRecipients @{Add="chris@contoso.com"}
+```powershell
+Set-RecipientFilterConfig -BlockedRecipients @{Add="chris@contoso.com"}
+```
 
 david@adatum.com を値のリストから削除したい場合は、次のコマンドを使用します。
 
-    Set-RecipientFilterConfig -BlockedRecipients @{Remove="david@adatum.com"}
+```powershell
+Set-RecipientFilterConfig -BlockedRecipients @{Remove="david@adatum.com"}
+```
 
 プロパティに対して同時に値を追加したり削除したりするような、より複雑な組み合わせも使用できます。そのためには、セミコロン (`;` ) を `Add` と `Remove` のアクションの間に挿入します。次に例を示します。
 
-    Set-RecipientFilterConfig -BlockedRecipients @{Add="carter@contoso.com", "sam@northwindtraders.com", "brian@adatum.com"; Remove="john@contoso.com"}
+```powershell
+Set-RecipientFilterConfig -BlockedRecipients @{Add="carter@contoso.com", "sam@northwindtraders.com", "brian@adatum.com"; Remove="john@contoso.com"}
+```
 
 `Get-RecipientFilterConfig | Format-List BlockedRecipients` コマンドを再度使用すると、Carter、Sam、および Brian の電子メール アドレスが追加された一方で、John のアドレスが削除されたことが分かります。
 
-    BlockedRecipients : {brian@adatum.com, sam@northwindtraders.com, carter@contoso.com, chris@contoso.com, kim@northwindtraders.com}
+```powershell
+BlockedRecipients : {brian@adatum.com, sam@northwindtraders.com, carter@contoso.com, chris@contoso.com, kim@northwindtraders.com}
+```
 

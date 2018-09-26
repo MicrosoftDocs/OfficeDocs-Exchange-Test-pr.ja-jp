@@ -95,7 +95,7 @@ _**トピックの最終更新日:** 2014-06-19_
     > [!IMPORTANT]
     > ユーザー アクセス コントロール (UAC) を有効にした場合は、昇格したコマンド プロンプトから <CODE>Setup.exe</CODE> を実行してください。
 
-    
+    ```powershell
         Setup.exe [/Mode:<setup mode>] [/IAcceptExchangeServerLicenseTerms]
         [/Roles:<server roles to install>] [/InstallWindowsComponents] 
         [/OrganizationName:<name for the new Exchange organization>] 
@@ -110,7 +110,8 @@ _**トピックの最終更新日:** 2014-06-19_
         [/MdbName:<mailbox database name>] [/DbFilePath:<Edb file path>] 
         [/LogFolderPath:<log folder path>] [/ActiveDirectorySplitPermissions:<True | False>]
         [/TenantOrganizationConfig:<path>]
-
+    ```
+    
 4.  セットアップによって、Exchange 2013 をインストールするコンピューターのローカルにセットアップ ファイルがコピーされます。
 
 5.  インストールするサーバーの役割に固有のすべての前提条件を含め、前提条件が確認されます。すべての前提条件を満たしていない場合、セットアップは失敗し、失敗の理由を説明するエラー メッセージが返されます。すべての前提条件を満たしている場合は、Exchange 2013 がインストールされます。

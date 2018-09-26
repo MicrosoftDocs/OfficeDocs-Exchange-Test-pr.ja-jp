@@ -51,7 +51,9 @@ DAG に関連する他の管理タスクについては、「[データベース
 
 この例では、DAG DAG1 が削除されます。
 
-    Remove-DatabaseAvailabilityGroup -Identity DAG1
+```powershell
+Remove-DatabaseAvailabilityGroup -Identity DAG1
+```
 
 ## 正常な動作を確認する方法
 
@@ -61,7 +63,9 @@ DAG が正常に削除されたことを確認するには、次のいずれか�
 
   - シェルで、次のコマンドを実行して、DAG がまだ存在するかどうかを確認します。
     
-        Get-DatabaseAvailabilityGroup <DAGName>
+    ```powershell
+    Get-DatabaseAvailabilityGroup <DAGName>
+    ```
     
     DAG が正常に削除された場合、前述コマンドにより、オブジェクトが見つからなかったことを示すエラー メッセージが表示されます。
 

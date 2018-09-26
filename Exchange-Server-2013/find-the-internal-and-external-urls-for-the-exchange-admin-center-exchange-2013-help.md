@@ -47,7 +47,9 @@ EAC の詳細については、「[Exchange 2013 の Exchange 管理者センタ
 
 この例では、ECP 仮想ディレクトリ名、内部 URL、外部 URL を書式付きのリストで返します。
 
-    Get-ECPVirtualDirectory | Format-List Name,InternalURL,ExternalURL
+```powershell
+Get-ECPVirtualDirectory | Format-List Name,InternalURL,ExternalURL
+```
 
 コマンドの実行が終了したら、Web ブラウザー内の *InternalURL* または *ExternalURL* の値を使用して EAC を起動します。
 

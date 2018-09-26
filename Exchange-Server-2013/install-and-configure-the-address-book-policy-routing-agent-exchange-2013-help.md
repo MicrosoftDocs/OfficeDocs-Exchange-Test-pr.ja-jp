@@ -47,7 +47,9 @@ ABP に関連する追加の管理タスクについては、「[アドレス帳
 
 次のコマンドを実行し、ABP ルーティング エージェントをインストールします。このコマンドと構文をこのまま使用する必要があります。
 
-    Install-TransportAgent -Name "ABP Routing Agent" -TransportAgentFactory "Microsoft.Exchange.Transport.Agent.AddressBookPolicyRoutingAgent.AddressBookPolicyRoutingAgentFactory" -AssemblyPath $env:ExchangeInstallPath\TransportRoles\agents\AddressBookPolicyRoutingAgent\Microsoft.Exchange.Transport.Agent.AddressBookPolicyRoutingAgent.dll
+```powershell
+Install-TransportAgent -Name "ABP Routing Agent" -TransportAgentFactory "Microsoft.Exchange.Transport.Agent.AddressBookPolicyRoutingAgent.AddressBookPolicyRoutingAgentFactory" -AssemblyPath $env:ExchangeInstallPath\TransportRoles\agents\AddressBookPolicyRoutingAgent\Microsoft.Exchange.Transport.Agent.AddressBookPolicyRoutingAgent.dll
+```
 
 変更を有効にするためにトランスポート サービスの再起動が必要という警告が表示されますが、先に手順 2 を実行すると、トランスポート サービスの再起動は 1 回で済みます。
 
@@ -59,7 +61,9 @@ ABP に関連する追加の管理タスクについては、「[アドレス帳
 
 ABP ルーティング エージェントをインストールしたら、次のコマンドを実行して有効にする必要があります。
 
-    Enable-TransportAgent "ABP Routing Agent"
+```powershell
+Enable-TransportAgent "ABP Routing Agent"
+```
 
 構文およびパラメーターの詳細については、「[Enable-TransportAgent](https://technet.microsoft.com/ja-jp/library/bb124921\(v=exchg.150\))」を参照してください。
 
@@ -69,11 +73,15 @@ ABP ルーティング エージェントをインストールしたら、次の
 
 1.  次のコマンドを実行して、トランスポート サービスを再起動します。
     
-        Restart-Service MSExchangeTransport
+    ```powershell
+    Restart-Service MSExchangeTransport
+    ```
 
 2.  サービスの再起動後に次のコマンドレットを実行し、ABP ルーティング エージェントがインストールされて有効になっていることを確認します。
     
-        Get-TransportAgent
+    ```powershell
+    Get-TransportAgent
+    ```
     
     ABP ルーティング エージェントが一覧表示される場合、エージェントは正しくインストールされています。
 
@@ -85,7 +93,9 @@ ABP ルーティング エージェントをインストールしたら、次の
 
 このプロセスの最終手順では、組織で ABP ルーティングを有効にします。次のコマンドを実行します。
 
-    Set-TransportConfig -AddressBookPolicyRoutingEnabled $true
+```powershell
+Set-TransportConfig -AddressBookPolicyRoutingEnabled $true
+```
 
 構文およびパラメーターの詳細については、「[Set-TransportConfig](https://technet.microsoft.com/ja-jp/library/bb124151\(v=exchg.150\))」を参照してください。
 

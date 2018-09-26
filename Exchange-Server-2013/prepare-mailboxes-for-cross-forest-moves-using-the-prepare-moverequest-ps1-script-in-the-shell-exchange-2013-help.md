@@ -59,12 +59,16 @@ _**トピックの最終更新日:** 2017-11-22_
 
 1.  次のコマンドを実行して、ローカル フォレストとリモート フォレストの資格情報を取得します。
     
-        $LocalCredentials = Get-Credential
-        $RemoteCredentials = Get-Credential
+```powershell
+$LocalCredentials = Get-Credential
+$RemoteCredentials = Get-Credential
+```
 
 2.  以下のコマンドを実行して、Prepare-MoveRequest.ps1 スクリプトの *LocalForestCredential* パラメーターと *RemoteForestCredential* パラメーターに資格情報を渡します。
     
-        Prepare-MoveRequest.ps1 -Identity JohnSmith@Fabrikan.com -RemoteForestDomainController DC001.Fabrikam.com -RemoteForestCredential $RemoteCredentials -LocalForestDomainController DC001.Contoso.com -LocalForestCredential $LocalCredentials
+```powershell
+Prepare-MoveRequest.ps1 -Identity JohnSmith@Fabrikan.com -RemoteForestDomainController DC001.Fabrikam.com -RemoteForestCredential $RemoteCredentials -LocalForestDomainController DC001.Contoso.com -LocalForestCredential $LocalCredentials
+```
 
 ## スクリプトのパラメーター セット
 
@@ -174,12 +178,16 @@ _**トピックの最終更新日:** 2017-11-22_
 
 1.  次のコマンドを実行して、ローカル フォレストとリモート フォレストの資格情報を取得します。
     
+    ```powershell
         $LocalCredentials = Get-Credential
         $RemoteCredentials = Get-Credential
+    ```
 
 2.  次のコマンドを実行して、Prepare-MoveRequest.ps1 スクリプトの *LocalForestCredential* パラメーターと *RemoteForestCredential* パラメーターに資格情報を渡します。
     
+    ```powershell
         Prepare-MoveRequest.ps1 -Identity JamesAlvord@Contoso.com -RemoteForestDomainController DC001.Fabrikam.com -RemoteForestCredential $RemoteCredentials -LocalForestDomainController DC001.Contoso.com -LocalForestCredential $LocalCredentials -LinkedMailUser 
+    ```
 
 ## 例: パイプライン処理
 
@@ -187,11 +195,15 @@ _**トピックの最終更新日:** 2017-11-22_
 
 1.  次のコマンドを実行します。
     
+    ```powershell
         $UserCredentials = Get-Credential
+    ```
 
 2.  次のコマンドを実行して、資格情報を Prepare-MoveRequest.ps1 スクリプト内の *RemoteForestCredential* パラメーターに渡します。
     
+    ```powershell
         "IanP@Contoso.com", "JoeAn@Contoso.com" | Prepare-MoveRequest.ps1 -RemoteForestDomainController DC001.Fabrikam.com -RemoteForestCredential $UserCredentials
+    ```
 
 ## 例: .csv ファイルを使用してメールが有効なユーザーを一括作成する
 
@@ -211,11 +223,15 @@ Cindy@contoso.com
 
 1.  次のコマンドを実行して、リモート フォレストの資格情報を取得します。
     
+    ```powershell
         $UserCredentials = Get-Credential
+    ```
 
 2.  次のコマンドを実行して、資格情報を Prepare-MoveRequest.ps1 スクリプト内の *RemoteForestCredential* パラメーターに渡します。
     
+    ```powershell
         Import-Csv Test.csv | Prepare-MoveRequest.ps1 -RemoteForestDomainController DC001.Fabrikam.com -RemoteForestCredential $UserCredentials
+    ```
 
 ## 移動先のオブジェクトごとのスクリプトの動作
 

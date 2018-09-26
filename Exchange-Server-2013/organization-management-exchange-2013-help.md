@@ -41,7 +41,9 @@ RBAC の詳細については、「[役割ベースのアクセス制御につ�
 
 次のコマンドを使用して、この役割グループのメンバーであるユーザーまたは USG の一覧を表示できます。
 
-    Get-RoleGroupMember "Organization Management"
+```powershell
+Get-RoleGroupMember "Organization Management"
+```
 
 役割グループのメンバーの詳細については、「[役割グループの管理](manage-role-groups-exchange-2013-help.md)」を参照してください。
 

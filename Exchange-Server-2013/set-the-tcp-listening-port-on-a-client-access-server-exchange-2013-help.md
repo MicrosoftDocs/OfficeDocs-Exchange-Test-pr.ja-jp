@@ -57,5 +57,7 @@ VoIP ゲートウェイ、IP PBX、またはセッション ボーダー コン�
 
 この例では、`MyClientAccessServer` というクライアント アクセス サーバー上の TCP リスニング ポートを 5566 に設定します。
 
-    Set-UMCallRouterSettings -Server MyClientAccessServer -SipTCPListeningPort 5566
+```powershell
+Set-UMCallRouterSettings -Server MyClientAccessServer -SipTCPListeningPort 5566
+```
 

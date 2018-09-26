@@ -63,11 +63,15 @@ _**トピックの最終更新日:** 2015-04-07_
 
 このスコープに含める必要があるメールボックス データベースの静的な一覧を定義する場合は、データベース リストを使用します。データベース リスト スコープを作成するには、次の構文を使用します。
 
-    New-ManagementScope -Name <scope name> -DatabaseList <database 1>, <database 2...>
+```powershell
+New-ManagementScope -Name <scope name> -DatabaseList <database 1>, <database 2...>
+```
 
 この例では、"Database 1"、"Database 2"、および "Database 3" のみに適用されるスコープを作成します。
 
-    New-ManagementScope -Name "Accounting databases" -DatabaseList "Database 1", "Database 2", "Database 3"
+```powershell
+New-ManagementScope -Name "Accounting databases" -DatabaseList "Database 1", "Database 2", "Database 3"
+```
 
 構文およびパラメーターの詳細については、「[New-ManagementScope](https://technet.microsoft.com/ja-jp/library/dd335137\(v=exchg.150\))」を参照してください。
 
@@ -79,11 +83,15 @@ _**トピックの最終更新日:** 2015-04-07_
 
 データベース フィルター スコープを作成するには、次の構文を使用します。
 
-    New-ManagementScope -Name <scope name> -DatabaseRestrictionFilter <filter query>
+```powershell
+New-ManagementScope -Name <scope name> -DatabaseRestrictionFilter <filter query>
+```
 
 この例では、データベースの **Name** プロパティに "ACCT" という文字列が含まれる全データベースを含むスコープを作成します。
 
-    New-ManagementScope -Name "Accounting Databases" -DatabaseRestrictionFilter { Name -Like '*ACCT*' }
+```powershell
+New-ManagementScope -Name "Accounting Databases" -DatabaseRestrictionFilter { Name -Like '*ACCT*' }
+```
 
 構文およびパラメーターの詳細については、「[New-ManagementScope](https://technet.microsoft.com/ja-jp/library/dd335137\(v=exchg.150\))」を参照してください。
 
@@ -101,12 +109,16 @@ _**トピックの最終更新日:** 2015-04-07_
 
 以下の構文を使用して、新しいデータベース スコープと共に、割り当てる管理役割と新しい役割グループの間に役割の割り当てを作成します。
 
-    New-ManagementRoleAssignment -SecurityGroup <role group name> -Role <role name> -CustomConfigWriteScope <database scope name>
+```powershell
+New-ManagementRoleAssignment -SecurityGroup <role group name> -Role <role name> -CustomConfigWriteScope <database scope name>
+```
 
 この例では、Accounting Databases データベース スコープを使用して、"Mail Recipient/メール受信者" と "Mail Recipient Creation Role/メール受信者の作成" 役割と "Accounting Administrators" 役割グループの間に役割の割り当てを作成します。
 
-    New-ManagementRoleAssignment -SecurityGroup "Accounting Administrators" -Role "Mail Recipients" -CustomConfigWriteScope "Accounting Databases"
-    New-ManagementRoleAssignment -SecurityGroup "Accounting Administrators" -Role "Mail Recipient Creation" -CustomConfigWriteScope "Accounting Databases"
+```powershell
+New-ManagementRoleAssignment -SecurityGroup "Accounting Administrators" -Role "Mail Recipients" -CustomConfigWriteScope "Accounting Databases"
+New-ManagementRoleAssignment -SecurityGroup "Accounting Administrators" -Role "Mail Recipient Creation" -CustomConfigWriteScope "Accounting Databases"
+```
 
 構文およびパラメーターの詳細については、「[New-ManagementRoleAssignment](https://technet.microsoft.com/ja-jp/library/dd335193\(v=exchg.150\))」を参照してください。
 
@@ -118,12 +130,16 @@ _**トピックの最終更新日:** 2015-04-07_
 
 以下の構文を使用して、データベース スコープの割り当て先の管理役割と既存の役割グループの間の役割の割り当てを変更します。
 
-    Get-ManagementRoleAssignment -RoleAssignee <role group name> -Role <role name> | Set-ManagementRoleAssignment -CustomConfigWriteScope <database scope name>
+```powershell
+Get-ManagementRoleAssignment -RoleAssignee <role group name> -Role <role name> | Set-ManagementRoleAssignment -CustomConfigWriteScope <database scope name>
+```
 
 この例では、"Accounting Administrators" 役割グループに割り当てられた、"Mail Recipient/メール受信者" および "Mail Recipient Creation Role/メール受信者の作成" 役割に Accounting Databases データベース スコープを追加します。
 
-    Get-ManagementRoleAssignment -RoleAssignee "Accounting Administrators" -Role "Mail Recipients" | Set-ManagementRoleAssignment -CustomConfigWriteScope "Accounting Databases"
-    Get-ManagementRoleAssignment -RoleAssignee "Accounting Administrators" -Role "Mail Recipient Creation" | Set-ManagementRoleAssignment -CustomConfigWriteScope "Accounting Databases"
+```powershell
+Get-ManagementRoleAssignment -RoleAssignee "Accounting Administrators" -Role "Mail Recipients" | Set-ManagementRoleAssignment -CustomConfigWriteScope "Accounting Databases"
+Get-ManagementRoleAssignment -RoleAssignee "Accounting Administrators" -Role "Mail Recipient Creation" | Set-ManagementRoleAssignment -CustomConfigWriteScope "Accounting Databases"
+```
 
 構文およびパラメーターの詳細については、「[Get-ManagementRoleAssignment](https://technet.microsoft.com/ja-jp/library/dd351024\(v=exchg.150\))」または「[Set-ManagementRoleAssignment](https://technet.microsoft.com/ja-jp/library/dd335173\(v=exchg.150\))」を参照してください。
 

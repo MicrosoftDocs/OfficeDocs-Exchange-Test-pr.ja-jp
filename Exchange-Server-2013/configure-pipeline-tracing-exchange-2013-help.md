@@ -47,15 +47,21 @@ _**トピックの最終更新日:** 2015-04-08_
 
 次の構文を使用して、パイプライン トレース送信者のアドレスを構成します。
 
-    <Set-TransportService | Set-MailboxTransportService> <ServerIdentity> -PipelineTracingSenderAddress <SMTPAddress | "<>">
+```powershell
+<Set-TransportService | Set-MailboxTransportService> <ServerIdentity> -PipelineTracingSenderAddress <SMTPAddress | "<>">
+```
 
 この例では、Mailbox01 というメールボックス サーバーのトランスポート サービスで送信者 chris@contoso.com が送信したすべてのメッセージのスナップショットをキャプチャするようにパイプライン トレースを構成します。
 
-    Set-TransportService Mailbox01 -PipelineTracingSenderAddress chris@contoso.com
+```powershell
+Set-TransportService Mailbox01 -PipelineTracingSenderAddress chris@contoso.com
+```
 
 この例では、Mailbox02 というメールボックス サーバーのトランスポート サービスが受信したすべてのシステム生成メッセージのスナップショットをキャプチャするようにパイプライン トレースを構成します。
 
-    Set-TransportService Mailbox02 -PipelineTracingSenderAddress "<>"
+```powershell
+Set-TransportService Mailbox02 -PipelineTracingSenderAddress "<>"
+```
 
 
 > [!NOTE]
@@ -69,11 +75,15 @@ _**トピックの最終更新日:** 2015-04-08_
 
 次の構文を使用して、パイプライン トレース フォルダーを構成します。
 
-    <Set-TransportService | Set-MailboxTransportService> <ServerIdentity> -PipelineTracingPath <LocalFilePath>
+```powershell
+<Set-TransportService | Set-MailboxTransportService> <ServerIdentity> -PipelineTracingPath <LocalFilePath>
+```
 
 この例では、Mailbox01 というメールボックス サーバーのトランスポート サービスのパイプライン トレース フォルダーを D:\\Hub\\Pipeline Tracing に設定します。
 
-    Set-TransportService Mailbox01 -PipelineTracingPath "D:\Hub\Pipeline Tracing"
+```powershell
+Set-TransportService Mailbox01 -PipelineTracingPath "D:\Hub\Pipeline Tracing"
+```
 
 ## 手順 3:シェルを使用してパイプライン トレースを有効にする
 
@@ -81,11 +91,15 @@ _**トピックの最終更新日:** 2015-04-08_
 
 次の構文を使用してパイプライン トレースを有効にします。
 
-    <Set-TransportService | Set-MailboxTransportService> <ServerIdentity> -PipelineTracingEnabled $true
+```powershell
+<Set-TransportService | Set-MailboxTransportService> <ServerIdentity> -PipelineTracingEnabled $true
+```
 
 この例では、Mailbox01 というメールボックス サーバーのトランスポート サービスでパイプライン トレースを有効にします。
 
-    Set-TransportService Mailbox01 -PipelineTracingEnabled $true
+```powershell
+Set-TransportService Mailbox01 -PipelineTracingEnabled $true
+```
 
 ## 正常な動作を確認する方法
 
@@ -93,7 +107,9 @@ _**トピックの最終更新日:** 2015-04-08_
 
 1.  次のコマンドを実行します。
     
-        <Get-TransportService | Get-MailboxTransportService> <ServerIdentity> | Format-List PipelineTracing*
+    ```powershell
+    <Get-TransportService | Get-MailboxTransportService> <ServerIdentity> | Format-List PipelineTracing*
+    ```
 
 2.  表示された値が構成した値であることを確認します。
 
@@ -105,11 +121,15 @@ _**トピックの最終更新日:** 2015-04-08_
 
 次の構文を使用してパイプライン トレースを無効にします。
 
-    <Set-TransportService | Set-MailboxTransportService> <ServerIdentity> -PipelineTracingEnabled $false
+```powershell
+<Set-TransportService | Set-MailboxTransportService> <ServerIdentity> -PipelineTracingEnabled $false
+```
 
 この例では、Mailbox01 というメールボックス サーバーのトランスポート サービスでパイプライン トレースを無効にします。
 
-    Set-TransportService Mailbox01 -PipelineTracingEnabled $false
+```powershell
+Set-TransportService Mailbox01 -PipelineTracingEnabled $false
+```
 
 ## 正常な動作を確認する方法
 
@@ -117,7 +137,9 @@ _**トピックの最終更新日:** 2015-04-08_
 
 1.  次のコマンドを実行します。
     
-        <Get-TransportService | Get-MailboxTransportService> <ServerIdentity> | Format-List PipelineTracingEnabled
+    ```powershell
+    <Get-TransportService | Get-MailboxTransportService> <ServerIdentity> | Format-List PipelineTracingEnabled
+    ```
 
 2.  *PipelineTracingEnabled* パラメーターの値が $false になっていることを確認します。
 

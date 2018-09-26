@@ -67,16 +67,24 @@ DAG が DAC モードではない場合、プライマリ データセンター�
 
 1.  プライマリ データセンターの DAG メンバーは、メンバーごとに次のコマンドを実行して、DAG の基になるクラスターから強制的に削除される必要があります。
     
-        net stop clussvc
-        cluster <DAGName> node <DAGMemberName> /forcecleanup
+    ```powershell
+    net stop clussvc
+    ```
+    ```powershell
+    cluster <DAGName> node <DAGMemberName> /forcecleanup
+    ```
 
 2.  この際、第 2 データセンター内の DAG メンバーを再起動して、第 2 データセンターからの削除プロセスを完了するために使用する必要があります。第 2 データセンター内の各 DAG メンバーで、メンバーごとに次のコマンドを実行してクラスター サービスを停止します。
     
-        net stop clussvc
+    ```powershell
+    net stop clussvc
+    ```
 
 3.  第 2 データセンター内の各 DAG メンバーで、次のコマンドを実行してクラスター サービスのクォーラム開始を強制します。
     
-        net start clussvc /forcequorum
+    ```powershell
+    net start clussvc /forcequorum
+    ```
 
 4.  フェールオーバー クラスター管理ツールを開き、DAG の基になるクラスターに接続します。クラスターを展開し、<strong>ノード</strong> を展開します。プライマリ データセンターの各ノードを右クリックし、<strong>他の操作</strong> に続いて <strong>削除</strong> を選択します。プライマリ データセンターの DAG メンバーの削除を完了後、フェールオーバー クラスター管理ツールを閉じます。
 
@@ -106,23 +114,33 @@ DAG が DAC モードでない場合、第 2 データセンター内のメー�
     
     1.  DAG メンバー数が奇数である場合、次のコマンドを実行して、DAG クォーラム モデルをノードおよびファイル共有マジョリティ クォーラムからノード マジョリティ クォーラムに変更します。
         
-            cluster <DAGName> /quorum /nodemajority
+        ```powershell
+        cluster <DAGName> /quorum /nodemajority
+        ```
     
     2.  DAG メンバー数が偶数である場合、Exchange 管理シェルで次のコマンドを実行して、監視サーバーおよびディレクトリを再構成します。
         
-            Set-DatabaseAvailabilityGroup <DAGName> -WitnessServer <ServerName>
+        ```powershell
+        Set-DatabaseAvailabilityGroup <DAGName> -WitnessServer <ServerName>
+        ```
 
 2.  次のコマンドを実行して、第 2 データセンター内の残りの DAG メンバーでクラスター サービスを開始します。
     
-        net start clussvc
+    ```powershell
+    net start clussvc
+    ```
 
 3.  サーバー切り替えを実行し、DAG メンバーごとに次のコマンドを実行して、DAG 内のメールボックス データベースをアクティブ化します。
     
-        Move-ActiveMailboxDatabase -Server <DAGMemberinPrimarySite> -ActivateOnServer <DAGMemberinSecondSite>
+    ```powershell
+    Move-ActiveMailboxDatabase -Server <DAGMemberinPrimarySite> -ActivateOnServer <DAGMemberinSecondSite>
+    ```
 
 4.  次のコマンドを実行して、2 番目のサイトの DAG メンバーごとにメールボックス データベースをマウントします。
     
-        Get-MailboxDatabase <DAGMemberinSecondSite> | Mount-Database
+    ```powershell
+    Get-MailboxDatabase <DAGMemberinSecondSite> | Mount-Database
+    ```
 
 ページのトップへ
 

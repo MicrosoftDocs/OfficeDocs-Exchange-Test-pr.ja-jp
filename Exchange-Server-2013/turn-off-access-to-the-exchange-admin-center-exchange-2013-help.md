@@ -51,7 +51,9 @@ _**トピックの最終更新日:** 2013-05-20_
 
 この例では、サーバー CAS01 の EAC へのアクセスをオフにします。
 
-    Set-ECPVirtualDirectory -Identity "CAS01\ecp (default web site)" -AdminEnabled $false
+```powershell
+Set-ECPVirtualDirectory -Identity "CAS01\ecp (default web site)" -AdminEnabled $false
+```
 
 構文およびパラメーターの詳細については、「[Set-EcpVirtualDirectory](https://technet.microsoft.com/ja-jp/library/dd297991\(v=exchg.150\))」を参照してください。
 

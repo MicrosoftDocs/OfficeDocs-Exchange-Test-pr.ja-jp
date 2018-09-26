@@ -59,7 +59,9 @@ _**トピックの最終更新日:** 2012-11-16_
 
 次のコマンドを実行して、アクティブ メールボックスと関連付けられている Active Directory ユーザー アカウントを完全に削除します。
 
-    Remove-Mailbox -Identity <identity> -Permanent $true
+```powershell
+Remove-Mailbox -Identity <identity> -Permanent $true
+```
 
 
 > [!NOTE]
@@ -79,7 +81,9 @@ _**トピックの最終更新日:** 2012-11-16_
 
 3.  次のコマンドを実行して、Exchange メールボックス データベースからメールボックスが正常に削除されたことを確認します。
     
-        Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisplayName -eq "<display name>" }
+    ```powershell
+    Get-MailboxDatabase | Get-MailboxStatistics | Where {         Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisplayName -eq "<display name>" }.DisplayName -eq "<display name>" }
+    ```
     
     メールボックスが正常に削除されていれば、コマンドは結果を返しません。メールボックスが削除されていない場合、コマンドはメールボックスに関する情報を返します。
 
@@ -91,13 +95,17 @@ _**トピックの最終更新日:** 2012-11-16_
 
 切断されたメールボックスが無効化されているかそれとも回復可能な削除によって削除されているかを確認するには、次のコマンドを実行します。
 
-    Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisplayName -eq "<display name>" } | fl DisplayName,MailboxGuid,Database,DisconnectReason
+```powershell
+Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisplayName -eq "<display name>" } | fl DisplayName,MailboxGuid,Database,DisconnectReason
+```
 
 切断されたメールボックスの *DisconnectReason* プロパティの値は、`Disabled` または `SoftDeleted` です。
 
 組織内のすべての切断されたメールボックスの種類を表示するために、次のコマンドを実行できます。
 
-    Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisconnectReason -ne $null } | fl DisplayName,MailboxGuid,Database,DisconnectReason
+```powershell
+Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisconnectReason -ne $null } | fl DisplayName,MailboxGuid,Database,DisconnectReason
+```
 
 
 > [!WARNING]
@@ -107,15 +115,21 @@ _**トピックの最終更新日:** 2012-11-16_
 
 この例では、メールボックス データベース MBD01 から、GUID が 2ab32ce3-fae1-4402-9489-c67e3ae173d3 の無効化されたメールボックスを完全に削除します。
 
-    Remove-StoreMailbox -Database MBD01 -Identity "2ab32ce3-fae1-4402-9489-c67e3ae173d3" -MailboxState Disabled
+```powershell
+Remove-StoreMailbox -Database MBD01 -Identity "2ab32ce3-fae1-4402-9489-c67e3ae173d3" -MailboxState Disabled
+```
 
 この例では、メールボックス データベース MBD01 から、回復可能な削除によって削除された Dan Jump のメールボックスを完全に削除します。
 
-    Remove-StoreMailbox -Database MBD01 -Identity "Dan Jump" -MailboxState SoftDeleted
+```powershell
+Remove-StoreMailbox -Database MBD01 -Identity "Dan Jump" -MailboxState SoftDeleted
+```
 
 この例では、メールボックス データベース MBD01 から、回復可能な削除によって削除されたメールボックスをすべて完全に削除します。
 
-    Get-MailboxStatistics -Database MBD01 | where {$_.DisconnectReason -eq "SoftDeleted"} | ForEach {Remove-StoreMailbox -Database $_.Database -Identity $_.MailboxGuid -MailboxState SoftDeleted}
+```powershell
+Get-MailboxStatistics -Database MBD01 | where {$_.DisconnectReason -eq "SoftDeleted"} | ForEach {Remove-StoreMailbox -Database $_.Database -Identity $_.MailboxGuid -MailboxState SoftDeleted}
+```
 
 構文およびパラメーターの詳細については、「[Remove-StoreMailbox](https://technet.microsoft.com/ja-jp/library/ff829913\(v=exchg.150\))」と「[Get-MailboxStatistics](https://technet.microsoft.com/ja-jp/library/bb124612\(v=exchg.150\))」を参照してください。
 
@@ -123,7 +137,9 @@ _**トピックの最終更新日:** 2012-11-16_
 
 切断されたメールボックスを完全に削除したことと、Exchange メールボックス データベースからそのメールボックスが正常に削除されたことを確認するには、次のコマンドを実行します。
 
-    Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisplayName -eq "<display name>" }
+```powershell
+Get-MailboxDatabase | Get-MailboxStatistics | Where {     Get-MailboxDatabase | Get-MailboxStatistics | Where { $_.DisplayName -eq "<display name>" }.DisplayName -eq "<display name>" }
+```
 
 メールボックスが正常に削除されていれば、コマンドは結果を返しません。メールボックスが削除されていない場合、コマンドはメールボックスに関する情報を返します。
 

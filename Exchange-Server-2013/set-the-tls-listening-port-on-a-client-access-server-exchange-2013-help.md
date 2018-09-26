@@ -67,5 +67,7 @@ UM IP ゲートウェイとセキュリティ保護された SIP モードまた
 
 この例では、`MyClientAccessServer` というクライアント アクセス サーバー上の TLS リスニング ポートを 5561 に設定します。
 
-    Set-UMCallRouterSettings -Server MyClientAccessServer -SipTlsListeningPort 5561
+```powershell
+Set-UMCallRouterSettings -Server MyClientAccessServer -SipTlsListeningPort 5561
+```
 

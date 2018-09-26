@@ -556,16 +556,18 @@ Exchange 2013 では、Exchange 2013 メールボックス サーバーにトラ
 
 この例は、ユーザー chris@contoso.com がユーザー michelle@contoso.com にテスト メッセージを送信し、送信が成功したときに生成されたメッセージ追跡ログの要約で、2 人が同じサーバーにメールボックスを持っています。
 
-    EventId    Source      Sender            Recipients             MessageSubject
-    -------    ------      ------            ----------             --------------
-    NOTIFYMAPI STOREDRIVER                   {}
-    RECEIVE    STOREDRIVER chris@contoso.com {michelle@contoso.com} test
-    SUBMIT     STOREDRIVER chris@contoso.com {michelle@contoso.com} test
-    HAREDIRECT SMTP        chris@contoso.com {michelle@contoso.com} test
-    RECEIVE    SMTP        chris@contoso.com {michelle@contoso.com} test
-    AGENTINFO  AGENT       chris@contoso.com {michelle@contoso.com} test
-    SEND       SMTP        chris@contoso.com {michelle@contoso.com} test
-    DELIVER    STOREDRIVER chris@contoso.com {michelle@contoso.com} test
+  ```powershell
+  EventId    Source      Sender            Recipients             MessageSubject
+  -------    ------      ------            ----------             --------------
+  NOTIFYMAPI STOREDRIVER                   {}
+  RECEIVE    STOREDRIVER chris@contoso.com {michelle@contoso.com} test
+  SUBMIT     STOREDRIVER chris@contoso.com {michelle@contoso.com} test
+  HAREDIRECT SMTP        chris@contoso.com {michelle@contoso.com} test
+  RECEIVE    SMTP        chris@contoso.com {michelle@contoso.com} test
+  AGENTINFO  AGENT       chris@contoso.com {michelle@contoso.com} test
+  SEND       SMTP        chris@contoso.com {michelle@contoso.com} test
+  DELIVER    STOREDRIVER chris@contoso.com {michelle@contoso.com} test
+  ```
 
 ページのトップへ
 

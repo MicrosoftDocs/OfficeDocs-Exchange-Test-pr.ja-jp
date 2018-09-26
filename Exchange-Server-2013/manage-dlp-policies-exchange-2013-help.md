@@ -69,7 +69,9 @@ Exchange 管理シェルの詳細については、「[Exchange 2013 で Powersh
 
 この例では、Employee Numbers という名前の架空の DLP ポリシーに関する情報を返しています。このコマンドは、指定した DLP ポリシーの詳細な構成を表示するために、**Format-List** コマンドレットにパイプ処理されます。
 
-    Get-DlpPolicy "Employee Numbers" | Format-List
+```powershell
+Get-DlpPolicy "Employee Numbers" | Format-List
+```
 
 構文およびパラメーターの詳細については、「[Get-DlpPolicy](https://technet.microsoft.com/ja-jp/library/jj215752\(v=exchg.150\))」を参照してください。
 
@@ -99,7 +101,9 @@ Exchange 管理シェルの詳細については、「[Exchange 2013 で Powersh
 
 Exchange 管理シェルを使用して、ポリシーの操作と通知レベルを指定できます。この例では、Employee Numbers という名前の架空の DLP ポリシーのモードを設定し、操作を適用せず通知メッセージを表示しないようにしています。
 
-    Set-DlpPolicy "Employee Numbers" -Mode Audit
+```powershell
+Set-DlpPolicy "Employee Numbers" -Mode Audit
+```
 
 構文およびパラメーターの詳細については、「[Set-DlpPolicy](https://technet.microsoft.com/ja-jp/library/jj215778\(v=exchg.150\))」を参照してください。
 
@@ -119,7 +123,9 @@ EAC を使用して DLP ポリシーを完全に削除できます。ポリシ�
 
 この例では、Employee Numbers という名前の架空の DLP ポリシーを削除しています。
 
-    Remove-DlpPolicy "Employee Numbers"
+```powershell
+Remove-DlpPolicy "Employee Numbers"
+```
 
 構文およびパラメーターの詳細については、「[Remove-DlpPolicy](https://technet.microsoft.com/ja-jp/library/jj215677\(v=exchg.150\))」を参照してください。
 

@@ -53,27 +53,37 @@ _**トピックの最終更新日:** 2013-02-21_
 
 <!-- end list -->
 
-    New-SiteMailboxProvisioningPolicy -Name SM_ProvisioningPolicy -IsDefault -IssueWarningQuota 9GB -ProhibitSendReceiveQuota 10GB -MaxReceiveSize 50MB
+```powershell
+New-SiteMailboxProvisioningPolicy -Name SM_ProvisioningPolicy -IsDefault -IssueWarningQuota 9GB -ProhibitSendReceiveQuota 10GB -MaxReceiveSize 50MB
+```
 
 ## サイト メールボックス プロビジョニング ポリシーの設定を表示する
 
 この例では、組織内のすべてのサイト メールボックスのプロビジョニング ポリシーに関する詳細情報が返されます。
 
-    Get-SiteMailboxProvisioningPolicy | Format-List
+```powershell
+Get-SiteMailboxProvisioningPolicy | Format-List
+```
 
 この例では組織のすべてのポリシーが返されますが、どのポリシーが既定のポリシーであるかを特定する `IsDefault` 情報のみが表示されます。
 
-    Get-SiteMailboxProvisioningPolicy | Format-List IsDefault
+```powershell
+Get-SiteMailboxProvisioningPolicy | Format-List IsDefault
+```
 
 ## 既存のサイト メールボックス プロビジョニング ポリシーを変更する
 
 この例では、Default という名前のサイト メールボックス プロビジョニング ポリシーを変更して、サイト メールボックスが受信できる電子メール メッセージの最大サイズを 25 MB にします。(Exchange のインストール時に、**Default** という名前のプロビジョニング ポリシーが生成されます。)
 
-    Set-SiteMailboxProvisioningPolicy -Identity Default -MaxReceiveSize 25MB
+```powershell
+Set-SiteMailboxProvisioningPolicy -Identity Default -MaxReceiveSize 25MB
+```
 
 この例では、警告表示クォータを 9.5 GB、送受信禁止クォータを 10 GB に変更します。
 
-    Set-SiteMailboxProvisioningPolicy -Identity Default -IssueWarningQuota 9GB -ProhibitSendReceiveQuota 10GB
+```powershell
+Set-SiteMailboxProvisioningPolicy -Identity Default -IssueWarningQuota 9GB -ProhibitSendReceiveQuota 10GB
+```
 
 ## サイト メールボックス名のプレフィックスを構成する
 
@@ -81,7 +91,9 @@ _**トピックの最終更新日:** 2013-02-21_
 
 この例では *DefaultAliasPrefixEnabled* パラメーターを $false に設定し、プレフィックスが付けられないようにします。
 
-    Set-SiteMailboxProvisioningPolicy -Identity Default -DefaultAliasPrefixEnabled $false -AliasPrefix $null
+```powershell
+Set-SiteMailboxProvisioningPolicy -Identity Default -DefaultAliasPrefixEnabled $false -AliasPrefix $null
+```
 
 この例では既定のプロビジョニング ポリシーを変更し、*AliasPrefix* を FOREST01 に設定します。
 
@@ -91,7 +103,9 @@ _**トピックの最終更新日:** 2013-02-21_
 
 
 
-    Set-SiteMailboxProvisioningPolicy -Identity Default -AliasPrefix FOREST01 -DefaultAliasPrefixEnabled $false
+```powershell
+Set-SiteMailboxProvisioningPolicy -Identity Default -AliasPrefix FOREST01 -DefaultAliasPrefixEnabled $false
+```
 
 
 > [!NOTE]
@@ -103,7 +117,9 @@ _**トピックの最終更新日:** 2013-02-21_
 
 この例では、Exchange のセットアップ時に生成された既定のサイト メールボックス ポリシーを削除します。
 
-    Remove-SiteMailboxProvisioningPolicy -Identity Default
+```powershell
+Remove-SiteMailboxProvisioningPolicy -Identity Default
+```
 
 
 > [!IMPORTANT]

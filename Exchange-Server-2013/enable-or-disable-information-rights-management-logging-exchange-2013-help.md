@@ -53,7 +53,9 @@ IRM に関連する追加の管理タスクについては、「[Information Rig
 
 この例では、メールボックス サーバーで IRM ログを有効にしています。
 
-    Set-TransportService -Identity EXCH01 -IRMLogEnabled $true
+```powershell
+Set-TransportService -Identity EXCH01 -IRMLogEnabled $true
+```
 
 構文およびパラメーターの詳細については、「[Set-TransportService](https://technet.microsoft.com/ja-jp/library/jj215682\(v=exchg.150\))」を参照してください。
 
@@ -61,7 +63,9 @@ IRM に関連する追加の管理タスクについては、「[Information Rig
 
 この例では、メールボックス サーバーで IRM ログを無効にしています。
 
-    Set-TransportService -Identity EXCH01 -IRMLogEnabled $false
+```powershell
+Set-TransportService -Identity EXCH01 -IRMLogEnabled $false
+```
 
 構文およびパラメーターの詳細については、「[Set-TransportService](https://technet.microsoft.com/ja-jp/library/jj215682\(v=exchg.150\))」を参照してください。
 
@@ -71,5 +75,7 @@ IRM に関連する追加の管理タスクについては、「[Information Rig
 
 この例では、EXCH01 サーバー上のすべての IRM ログのプロパティを取得します。
 
-    Get-TransportService -Identity EXCH01 | Format-List IRMLog*
+  ```powershell
+  Get-TransportService -Identity EXCH01 | Format-List IRMLog*
+  ```
 

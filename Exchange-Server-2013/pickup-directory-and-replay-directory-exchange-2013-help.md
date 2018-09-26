@@ -87,28 +87,32 @@ Exchange 2013 では、ピックアップ ディレクトリの既定の場所�
 
 この例では、ピックアップ ディレクトリで受け入れ可能な形式を使用しているテキスト メッセージを示します。
 
-    To: mary@contoso.com
-    From: bob@fabrikam.com
-    Subject: Message subject
+  ```XML
+  To: mary@contoso.com
+  From: bob@fabrikam.com
+  Subject: Message subject
     
-    This is the body of the message.
+  This is the body of the message.
+  ```
 
 ピックアップ ディレクトリのメッセージ ファイルでは、MIME コンテンツもサポートされています。MIME では、7 ビットの ASCII テキストでは表現できない言語、HTML、その他のマルチメディア コンテンツなど、広範なメッセージのコンテンツが定義されています。MIME の詳細な説明とその要件に関しては、ここでは扱いません。この例では、ピックアップ ディレクトリで受け入れ可能な形式を使用している単純な MIME メッセージを示します。
 
-    To: mary@contoso.com
-    From: bob@fabrikam.com
-    Subject: Message subject
-    MIME-Version: 1.0
-    Content-Type: text/html; charset="iso-8859-1"
-    Content-Transfer-Encoding: 7bit
+  ```XML
+  To: mary@contoso.com
+  From: bob@fabrikam.com
+  Subject: Message subject
+  MIME-Version: 1.0
+  Content-Type: text/html; charset="iso-8859-1"
+  Content-Transfer-Encoding: 7bit
     
-    <HTML><BODY>
-    <TABLE>
-    <TR><TD>cell 1</TD><TD>cell 2</TD></TR>
-    <TR><TD>cell 3</TD><TD>cell 4</TD></TR>
-    </TABLE>
+  <HTML><BODY>
+  <TABLE>
+  <TR><TD>cell 1</TD><TD>cell 2</TD></TR>
+  <TR><TD>cell 3</TD><TD>cell 4</TD></TR>
+  </TABLE>
 
-    </BODY></HTML>
+  </BODY></HTML>
+```
 
 ページのトップへ
 
@@ -130,7 +134,9 @@ Exchange 2013 では、ピックアップ ディレクトリの既定の場所�
 
 ピックアップ ディレクトリでは、メッセージ送信プロセスの一環として、独自の `Received` ヘッダー フィールドがメッセージに追加されます。`Received` ヘッダー フィールドは次の形式で適用されます。
 
-    Received: from localhost by Pickup with Microsoft SMTP Server id <ExchangeServerVersion><datetime>
+  ```XML
+  Received: from localhost by Pickup with Microsoft SMTP Server id <ExchangeServerVersion><datetime>
+  ```
 
 ピックアップ ディレクトリでは、次のメッセージ ヘッダー フィールドが存在しない場合または正しくない場合に、次のような変更が加えられます。
 
@@ -160,7 +166,9 @@ Exchange 2013 では、ピックアップ ディレクトリの既定の場所�
 
   - **X-Sender**   この X-Header は、標準の SMTP メッセージ内の `From` メッセージ ヘッダー フィールド要件に替わります。1 つの電子メール アドレスを含む 1 つの `X-Sender` フィールドが存在する必要があります。`From` メッセージ ヘッダー フィールドがある場合、再生ディレクトリはこれを無視します。ただし、受信者の電子メール クライアントには、メッセージの送信者として `From` メッセージ ヘッダー フィールドの値が表示されます。次の例で示すように、他のパラメーターは通常、`X-Sender` フィールドに存在します。
     
-        X-Sender: <bob@fabrikam.com> BODY=7bit RET=HDRS ENVID=12345ABCD auth=<someAuth>
+    ```XML
+    X-Sender: <bob@fabrikam.com> BODY=7bit RET=HDRS ENVID=12345ABCD auth=<someAuth>
+    ```
     
 
     > [!NOTE]
@@ -170,7 +178,9 @@ Exchange 2013 では、ピックアップ ディレクトリの既定の場所�
 
   - **X-Receiver**   この X-Header は、標準の SMTP メッセージ内の `To` メッセージ ヘッダー フィールド要件に替わります。1 つの電子メール アドレスを含む 1 つ以上の `X-Receiver` フィールドが存在する必要があります。複数の受信者がいる場合は、複数の `X-Receiver` フィールドを含めることができます。`To` メッセージ ヘッダー フィールドがある場合、再生ディレクトリはこれを無視します。ただし、受信者の電子メール クライアントには、メッセージの受信者として `To` メッセージ ヘッダー フィールドの値が表示されます。次の例で示すように、他の省略可能なパラメーターが、`X-Receiver` フィールドに存在することがあります。
     
-        X-Receiver: <mary@contoso.com> NOTIFY=NEVER ORcpt=mary@contoso.com
+      ```XML
+      X-Receiver: <mary@contoso.com> NOTIFY=NEVER ORcpt=mary@contoso.com
+      ```
     
 
     > [!NOTE]
@@ -194,30 +204,34 @@ Exchange 2013 では、ピックアップ ディレクトリの既定の場所�
 
 この例では、再生ディレクトリで受け入れ可能な形式を使用しているテキスト メッセージを示します。
 
-    X-Receiver: <mary@contoso.com> NOTIFY=NEVER ORcpt=mary@contoso.com
-    X-Sender: <bob@fabrikam.com> BODY=7bit ENVID=12345AB auth=<someAuth>
-    Subject: Optional message subject
+  ```XML
+  X-Receiver: <mary@contoso.com> NOTIFY=NEVER ORcpt=mary@contoso.com
+  X-Sender: <bob@fabrikam.com> BODY=7bit ENVID=12345AB auth=<someAuth>
+  Subject: Optional message subject
     
-    This is the body of the message.
+  This is the body of the message.
+  ```
 
 再生ディレクトリ メッセージ ファイルでは MIME コンテンツもサポートされます。MIME では、7 ビットの ASCII テキストでは表現できない言語、HTML、その他のマルチメディア コンテンツなど、広範なメッセージのコンテンツが定義されています。MIME の詳細な説明とその要件に関しては、ここでは扱いません。この例では、再生ディレクトリで受け入れ可能な形式を使用している単純な MIME メッセージを示します。
 
-    X-Receiver: <mary@contoso.com> NOTIFY=NEVER ORcpt=mary@contoso.com
-    X-Sender: <bob@fabrikam.com> BODY=7bit ENVID=12345ABCD auth=<someAuth>
-    To: mary@contoso.com
-    From: bob@fabrikam.com
-    Subject: Optional message subject
-    MIME-Version: 1.0
-    Content-Type: text/html; charset="iso-8859-1"
-    Content-Transfer-Encoding: 7bit
-    
-    <HTML><BODY>
-    <TABLE>
-    <TR><TD>cell 1</TD><TD>cell 2</TD></TR>
-    <TR><TD>cell 3</TD><TD>cell 4</TD></TR>
-    </TABLE>
+  ```XML
+  X-Receiver: <mary@contoso.com> NOTIFY=NEVER ORcpt=mary@contoso.com
+  X-Sender: <bob@fabrikam.com> BODY=7bit ENVID=12345ABCD auth=<someAuth>
+  To: mary@contoso.com
+  From: bob@fabrikam.com
+  Subject: Optional message subject
+  MIME-Version: 1.0
+  Content-Type: text/html; charset="iso-8859-1"
+  Content-Transfer-Encoding: 7bit
+   
+  <HTML><BODY>
+  <TABLE>
+  <TR><TD>cell 1</TD><TD>cell 2</TD></TR>
+  <TR><TD>cell 3</TD><TD>cell 4</TD></TR>
+  </TABLE>
 
-    </BODY></HTML>
+  </BODY></HTML>
+  ```
 
 ページのトップへ
 
@@ -227,7 +241,9 @@ Exchange 2013 では、ピックアップ ディレクトリの既定の場所�
 
 再生ディレクトリでは、メッセージ送信プロセスの中で、独自の `Received` メッセージ ヘッダー フィールドがメッセージに追加されます。Received メッセージ ヘッダー フィールドは次の形式で適用されます。
 
-    Received: from <ReceivingServerName> by Replay with <ExchangeServerVersion><DateTime>
+  ```XML
+  Received: from <ReceivingServerName> by Replay with <ExchangeServerVersion><DateTime>
+  ```
 
 再生ディレクトリでは、メッセージ ヘッダー内の次のメッセージ ヘッダー フィールドが変更されます。
 

@@ -75,7 +75,9 @@ _**トピックの最終更新日:** 2017-01-23_
 
 インターネットにメッセージを送信するように構成された送信コネクタを作成するには、次のコマンドを実行します。
 
-    New-SendConnector -Name "To Internet" -AddressSpaces * -Usage Internet -DNSRoutingEnabled $true
+  ```powershell
+  New-SendConnector -Name "To Internet" -AddressSpaces * -Usage Internet -DNSRoutingEnabled $true
+  ```
 
 構文およびパラメーターの詳細については、「[New-SendConnector](https://technet.microsoft.com/ja-jp/library/aa998936\(v=exchg.150\))」を参照してください。
 
@@ -107,8 +109,10 @@ _**トピックの最終更新日:** 2017-01-23_
 
 Exchange 組織にメッセージを送信するように構成された送信コネクタを作成するには、次のコマンドを実行します。
 
-    $MailboxCredentials = Get-Credential
-    New-SendConnector -Name "To Internal Org" -Usage Internal -AddressSpaces *.contoso.com -DNSRoutingEnabled $false -SmartHosts mbxserver01.contoso.com,mbxserver02.contoso.com -SmartHostAuthMechanism BasicAuthRequireTLS -AuthenticationCredential $MailboxCredentials
+  ```powershell
+  $MailboxCredentials = Get-Credential
+  New-SendConnector -Name "To Internal Org" -Usage Internal -AddressSpaces *.contoso.com -DNSRoutingEnabled $false -SmartHosts mbxserver01.contoso.com,mbxserver02.contoso.com -SmartHostAuthMechanism BasicAuthRequireTLS -AuthenticationCredential $MailboxCredentials
+  ```
 
 構文およびパラメーターの詳細については、「[New-SendConnector](https://technet.microsoft.com/ja-jp/library/aa998936\(v=exchg.150\))」を参照してください。
 
@@ -122,7 +126,9 @@ Exchange 組織にメッセージを送信するように構成された送信�
 
 インターネットからのメッセージのみを受け付けるように既定の受信コネクタを変更するには、次のコマンドを実行します。
 
-    Set-ReceiveConnector "Default internal Receive connector Edge01" -Name "From Internet" -Bindings 10.1.1.1:25
+  ```powershell
+  Set-ReceiveConnector "Default internal Receive connector Edge01" -Name "From Internet" -Bindings 10.1.1.1:25
+  ```
 
 構文およびパラメーターの詳細については、「[Set-ReceiveConnector](https://technet.microsoft.com/ja-jp/library/bb125140\(v=exchg.150\))」を参照してください。
 
@@ -142,7 +148,9 @@ Exchange 組織にメッセージを送信するように構成された送信�
 
 Exchange 組織からのみメッセージを受け付けるように構成した受信コネクタを作成するには、次のコマンドを実行します。
 
-    New-ReceiveConnector -Name "From Internal Org" -Usage Internal -AuthMechanism TLS,BasicAuth,BasicAuthRequireTLS,ExchangeServer -Bindings 10.1.1.2:25 -RemoteIPRanges 192.168.5.10,192.168.5.20
+  ```powershell
+  New-ReceiveConnector -Name "From Internal Org" -Usage Internal -AuthMechanism TLS,BasicAuth,BasicAuthRequireTLS,ExchangeServer -Bindings 10.1.1.2:25 -RemoteIPRanges 192.168.5.10,192.168.5.20
+  ```
 
 構文およびパラメーターの詳細については、「[New-ReceiveConnector](https://technet.microsoft.com/ja-jp/library/bb125139\(v=exchg.150\))」を参照してください。
 
@@ -150,8 +158,10 @@ Exchange 組織からのみメッセージを受け付けるように構成し�
 
 必要な送信コネクタおよび受信コネクタを正常に構成できたことを検証するには、エッジ トランスポート サーバー上で次のコマンドを実行し、表示される値が構成した値と同じであることを確認します。
 
-    Get-SendConnector | Format-List Name,Usage,AddressSpaces,SourceTransportServers,DSNRoutingEnabled,SmartHosts,SmartHostAuthMechanism
-    Get-ReceiveConnector | Format-List Name,Usage,AuthMechanism,Bindings,RemoteIPRanges
+  ```powershell
+  Get-SendConnector | Format-List Name,Usage,AddressSpaces,SourceTransportServers,DSNRoutingEnabled,SmartHosts,SmartHostAuthMechanism
+  Get-ReceiveConnector | Format-List Name,Usage,AuthMechanism,Bindings,RemoteIPRanges
+  ```
 
 ## メールボックス サーバーの手順
 
@@ -181,8 +191,10 @@ Exchange 組織からのみメッセージを受け付けるように構成し�
 
 送信メッセージをエッジ トランスポート サーバーに送信するように構成された送信コネクタを作成するには、次のコマンドを実行します。
 
-    $EdgeCredentials = Get-Credential
-    New-SendConnector -Name "To Edge" -Usage Internal -AddressSpaces * -DNSRoutingEnabled $false -SmartHosts edge01.contoso.com -SourceTransportServers mbxserver01.contoso.com,mbxserver02.contoso.com -SmartHostAuthMechanism BasicAuthRequireTLS -AuthenticationCredential $EdgeCredentials
+  ```powershell
+  $EdgeCredentials = Get-Credential
+  New-SendConnector -Name "To Edge" -Usage Internal -AddressSpaces * -DNSRoutingEnabled $false -SmartHosts edge01.contoso.com -SourceTransportServers mbxserver01.contoso.com,mbxserver02.contoso.com -SmartHostAuthMechanism BasicAuthRequireTLS -AuthenticationCredential $EdgeCredentials
+  ```
 
 構文およびパラメーターの詳細については、「[New-SendConnector](https://technet.microsoft.com/ja-jp/library/aa998936\(v=exchg.150\))」を参照してください。
 
@@ -190,5 +202,7 @@ Exchange 組織からのみメッセージを受け付けるように構成し�
 
 送信メッセージをエッジ トランスポート サーバーに送信するように構成した送信コネクタを正常に作成できたことを検証するには、メールボックス サーバーで次のコマンドを実行しし、表示される値が構成した値と同じであることを確認します。
 
-    Get-SendConnector | Format-List Name,Usage,AddressSpaces,DSNRoutingEnabled,SmartHosts,SourceTransportServers,SmartHostAuthMechanism
+  ```powershell
+  Get-SendConnector | Format-List Name,Usage,AddressSpaces,DSNRoutingEnabled,SmartHosts,SourceTransportServers,SmartHostAuthMechanism
+  ```
 

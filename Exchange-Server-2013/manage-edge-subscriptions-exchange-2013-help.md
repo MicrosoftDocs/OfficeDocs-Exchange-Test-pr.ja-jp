@@ -73,19 +73,27 @@ Exchange 組織から、または、Exchange 組織とエッジ トランスポ�
 
 1.  エッジ トランスポート サーバーからエッジ サブスクリプションを削除するには、次の構文を使用します。
     
-        Remove-EdgeSubscription <EdgeTransportServerIdentity>
+    ```powershell
+    Remove-EdgeSubscription <EdgeTransportServerIdentity>
+    ```
     
     たとえば、Edge01 という名前のエッジ トランスポート サーバー上のエッジ サブスクリプションを削除するには、次のコマンドを実行します。
     
-        Remove-EdgeSubscription Edge01
+    ```powershell
+    Remove-EdgeSubscription Edge01
+    ```
 
 2.  メールボックス サーバーからエッジ サブスクリプションを削除するには、次の構文を使用します。
     
-        Remove-EdgeSubscription <MailboxServerIdentity>
+    ```powershell
+    Remove-EdgeSubscription <MailboxServerIdentity>
+    ```
     
     たとえば、Mailbox01 という名前のメールボックス サーバー上のエッジ サブスクリプションを削除するには、次のコマンドを実行します。
     
-        Remove-EdgeSubscription Mailbox01
+    ```powershell
+    Remove-EdgeSubscription Mailbox01
+    ```
 
 エッジ サブスクリプションを削除する必要があるのは、次のような場合です。
 
@@ -143,7 +151,9 @@ Active Directory 内の構成または受信者を大幅に変更して、その
 
 EdgeSyn を手動で実行するには、次の構文を使用します。
 
-    Start-EdgeSynchronization [-Server <MailboxServerIdentity>] [-TargetServer <EdgeTransportServerIdentity> [-ForceFullSync]
+  ```powershell
+  Start-EdgeSynchronization [-Server <MailboxServerIdentity>] [-TargetServer <EdgeTransportServerIdentity> [-ForceFullSync]
+  ```
 
 次の例では、以下のオプションで EdgeSync を起動します。
 
@@ -155,7 +165,9 @@ EdgeSyn を手動で実行するには、次の構文を使用します。
 
 <!-- end list -->
 
-    Start-EdgeSynchronization -Server Mailbox01
+```powershell
+Start-EdgeSynchronization -Server Mailbox01
+```
 
 この例では、以下のオプションで EdgeSync を開始します。
 
@@ -167,7 +179,9 @@ EdgeSyn を手動で実行するには、次の構文を使用します。
 
 <!-- end list -->
 
-    Start-EdgeSynchronization -TargetServer Edge03 -ForceFullSync
+```powershell
+Start-EdgeSynchronization -TargetServer Edge03 -ForceFullSync
+```
 
 ## EdgeSync の結果を確認する
 
@@ -181,11 +195,15 @@ EdgeSyn を手動で実行するには、次の構文を使用します。
 
 単一の受信者の EdgeSync 結果を確認するには、サブスクライブ先の Active Directory サイト内のメールボックス サーバー上で次の構文を使用します。
 
-    Test-EdgeSynchronization -VerifyRecipient <emailaddress>
+```powershell
+Test-EdgeSynchronization -VerifyRecipient <emailaddress>
+```
 
 次の例では、ユーザー kate@contoso.com の EdgeSync 結果を確認します。
 
-    Test-EdgeSynchronization -VerifyRecipient kate@contoso.com
+```powershell
+Test-EdgeSynchronization -VerifyRecipient kate@contoso.com
+```
 
 ページのトップへ
 

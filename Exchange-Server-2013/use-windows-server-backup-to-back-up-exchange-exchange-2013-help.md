@@ -87,7 +87,9 @@ Windows Server Backup を使用して、Exchange データベースのバック
 
   - Exchange 管理シェルで次のコマンドを実行して、選択したボリュームの各データベースが正常にバックアップされたことを確認します。
     
-        Get-MailboxDatabase -Server <ServerName> -Status | fl Name,*FullBackup
+    ```powershell
+    Get-MailboxDatabase -Server <ServerName> -Status | fl Name,*FullBackup
+    ```
     
     データベースの *SnapshotLastFullBackup* および *LastFullBackup* プロパティは、前回バックアップに成功した日時と、それが VSS の完全バックアップであったかどうかを示しています。
 

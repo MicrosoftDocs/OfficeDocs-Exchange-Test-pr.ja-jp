@@ -59,21 +59,29 @@ POP3 サービスを開始するには、次の手順を実行します。
 
 1.  クライアント アクセス サーバーの役割を実行しているコンピューター上で、シェルから次のコマンドを実行して Microsoft Exchange POP3 サービスを開始します。
     
-        Start-service MSExchangePOP3
+    ```powershell
+    Start-service MSExchangePOP3
+    ```
 
 2.  メールボックス サーバーの役割を実行しているコンピューター上で、シェルから次のコマンドを実行して Microsoft Exchange POP3 バックエンド サービスを開始します。
     
-        Start-service MSExchangePOP3BE
+    ```powershell
+    Start-service MSExchangePOP3BE
+    ```
 
 POP3 サービスを停止するには、次の手順を実行します。
 
 1.  クライアント アクセス サーバーの役割を実行しているコンピューター上で、シェルから次のコマンドを実行して Microsoft Exchange POP3 サービスを停止します。
     
-        Stop-service MSExchangePOP3
+    ```powershell
+    Stop-service MSExchangePOP3
+    ```
 
 2.  メールボックス サーバーの役割を実行しているコンピューター上で、シェルから次のコマンドを実行して Microsoft Exchange POP3 バックエンド サービスを停止します。
     
-        Stop-service MSExchangePOP3BE
+    ```powershell
+    Stop-service MSExchangePOP3BE
+    ```
 
 ## net start コマンドを使用して POP3 サービスを開始または停止する
 
@@ -81,21 +89,29 @@ POP3 サービスを開始するには、次の手順を実行します。
 
 1.  クライアント アクセス サーバーの役割を実行しているコンピューター上で、コマンド プロンプトで次のコマンドを実行して Microsoft Exchange POP3 サービスを開始します。
     
-        Net Start msExchangePOP3
+    ```powershell
+    Net Start msExchangePOP3
+    ```
 
 2.  メールボックス サーバーの役割を実行しているコンピューター上で、コマンド プロンプトで次のコマンドを実行して Microsoft Exchange POP3 バックエンド サービスを開始します。
     
-        Net Start msExchangePOP3BE
+    ```powershell
+    Net Start msExchangePOP3BE
+    ```
 
 POP3 サービスを停止するには、次の手順を実行します。
 
 1.  クライアント アクセス サーバーの役割を実行しているコンピューター上で、コマンド プロンプトで次のコマンドを実行して Microsoft Exchange POP3 サービスを停止します。
     
-        Net Stop MSExchangePOP3
+    ```powershell
+    Net Stop MSExchangePOP3
+    ```
 
 2.  メールボックス サーバーの役割を実行しているコンピューター上で、コマンド プロンプトで次のコマンドを実行して Microsoft Exchange POP3 バックエンド サービスを停止します。
     
-        Net Stop MSExchangePOP3BE
+    ```powershell
+    Net Stop MSExchangePOP3BE
+    ```
 
 ## 正常な動作を確認する方法
 

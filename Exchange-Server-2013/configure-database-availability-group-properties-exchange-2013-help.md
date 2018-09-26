@@ -78,31 +78,45 @@ EAC またはシェルを使用して、データベース可用性グループ 
 
 この例では、DAG1 という DAG の監視ディレクトリを C:\\DAG1DIR に設定します。
 
-    Set-DatabaseAvailabilityGroup -Identity DAG1 -WitnessDirectory C:\DAG1DIR
+```powershell
+Set-DatabaseAvailabilityGroup -Identity DAG1 -WitnessDirectory C:\DAG1DIR
+```
 
 この例では、DAG1 という DAG に対して、代替ミラーリング監視サーバーを CAS3 に、代替監視ディレクトリを C:\\DAGFileShareWitnesses\\DAG1.contoso.com に事前に構成します。
 
-    Set-DatabaseAvailabilityGroup -Identity DAG1 -AlternateWitnessDirectory C:\DAGFileShareWitnesses\DAG1.contoso.com -AlternateWitnessServer CAS3
+```powershell
+Set-DatabaseAvailabilityGroup -Identity DAG1 -AlternateWitnessDirectory C:\DAGFileShareWitnesses\DAG1.contoso.com -AlternateWitnessServer CAS3
+```
 
 この例では、動的ホスト構成プロトコル (DHCP) を使用して IP アドレスを取得するように、DAG1 という DAG を構成します。
 
-    Set-DatabaseAvailabilityGroup -Identity DAG1 -DatabaseAvailabilityGroupIPAddresses 0.0.0.0
+```powershell
+Set-DatabaseAvailabilityGroup -Identity DAG1 -DatabaseAvailabilityGroupIPAddresses 0.0.0.0
+```
 
 この例では、静的な IP アドレス 10.0.0.8 を使用するように、DAG1 という DAG を構成します。
 
-    Set-DatabaseAvailabilityGroup -Identity DAG1 -DatabaseAvailabilityGroupIPAddresses 10.0.0.8
+```powershell
+Set-DatabaseAvailabilityGroup -Identity DAG1 -DatabaseAvailabilityGroupIPAddresses 10.0.0.8
+```
 
 この例では、DAG1 という複数サブネットの DAG に複数の静的 IP アドレスを構成します。
 
-    Set-DatabaseAvailabilityGroup -Identity DAG1 -DatabaseAvailabilityGroupIPAddresses 10.0.0.8,10.0.1.8
+```powershell
+Set-DatabaseAvailabilityGroup -Identity DAG1 -DatabaseAvailabilityGroupIPAddresses 10.0.0.8,10.0.1.8
+```
 
 この例では、DAG1 という DAG を DAC モード用に構成します。
 
-    Set-DatabaseAvailabilityGroup -Identity DAG1 -DatacenterActivationMode DagOnly
+```powershell
+Set-DatabaseAvailabilityGroup -Identity DAG1 -DatacenterActivationMode DagOnly
+```
 
 この例では、DAG DAG1 のレプリケーション ポートを 63132 に構成します。
 
-    Set-DatabaseAvailabilityGroup -Identity DAG1 -ReplicationPort 63132
+```powershell
+Set-DatabaseAvailabilityGroup -Identity DAG1 -ReplicationPort 63132
+```
 
 
 > [!NOTE]
@@ -116,7 +130,9 @@ DAG が正常に構成されたことを確認するには、次の手順を実�
 
   - シェルで次のコマンドを実行して、DAG の構成設定を表示し、DAG が正常に構成されたことを確認します。
     
-        Get-DatabaseAvailabilityGroup <DAGName> | Format-List
+    ```powershell
+	Get-DatabaseAvailabilityGroup <DAGName> | Format-List
+	```
 
 ## 詳細情報
 

@@ -83,11 +83,15 @@ _**トピックの最終更新日:** 2015-01-01_
 
 1.  この例では、フェデレーションの信頼からから service.contoso.com ドメインを削除します。
     
-        Remove-FederatedDomain -DomainName service.contoso.com
+    ```powershell
+    Remove-FederatedDomain -DomainName service.contoso.com
+    ```  
 
 2.  この例では、marketing.contoso.com ドメインをフェデレーションの信頼に追加します。
     
-        Add-FederatedDomain -DomainName marketing.contoso.com
+    ```powershell
+    Add-FederatedDomain -DomainName marketing.contoso.com
+    ```  
 
 構文およびパラメーターの詳細については、「[Remove-FederatedDomain](https://technet.microsoft.com/ja-jp/library/dd298128\(v=exchg.150\))」と「[Add-FederatedDomain](https://technet.microsoft.com/ja-jp/library/dd351208\(v=exchg.150\))」を参照してください。
 
@@ -97,31 +101,41 @@ _**トピックの最終更新日:** 2015-01-01_
     
     この例では、Exchange 組織のフェデレーション OrgID と、フェデレーション ドメインや状態などの関連情報を表示します。
     
-        Get-FederatedOrganizationIdentifier
+    ```powershell
+    Get-FederatedOrganizationIdentifier
+    ``` 
 
 2.  **フェデレーション信頼証明書を表示する**
     
     この例では、フェデレーションの信頼 "Azure AD authentication" で使用される前の証明書、現在の証明書、および次の証明書を表示します。
     
-        Get-FederationTrust "Azure AD authentication" | Select Org*certificate
+    ```powershell
+    Get-FederationTrust "Azure AD authentication" | Select Org*certificate
+    ```  
 
 3.  **フェデレーション証明書の状態を確認する**
     
     この例では、組織内のすべてのメールボックス サーバーおよびクライアント アクセス サーバー上のフェデレーション証明書の状態を表示します。
     
-        Test-FederationTrustCertificate
+    ```powershell
+    Test-FederationTrustCertificate
+    ```  
 
 4.  **フェデレーション信頼が、証明書を次の証明書として使用するよう構成する**
     
     この例では、提供された拇印付き証明書を次の証明書として使用するようにフェデレーションの信頼 "Azure AD authentication" を構成します。組織内のすべての Exchange サーバーで証明書を展開した後、*PublishCertificate* スイッチを使用し、この証明書を現在の証明書として使用されるようにフェデレーション信頼を構成できます。
     
-        Set-FederationTrust "Azure AD authentication" -Thumbprint AC00F35CBA8359953F4126E0984B5CCAFA2F4F17
+    ```powershell
+    Set-FederationTrust "Azure AD authentication" -Thumbprint AC00F35CBA8359953F4126E0984B5CCAFA2F4F17
+    ```  
 
 5.  **次の証明書を現在の証明書として使用するようにフェデレーション信頼を構成する**
     
     この例では、フェデレーション信頼 Azure AD 認証が次の証明書を現在の証明書として使用し、それを Azure AD 認証システムに発行するように構成します。
     
-        Set-FederationTrust "Azure AD authentication" -PublishFederationCertificate
+    ```powershell
+    Set-FederationTrust "Azure AD authentication" -PublishFederationCertificate
+    ```  
     
 
     > [!NOTE]
@@ -133,7 +147,9 @@ _**トピックの最終更新日:** 2015-01-01_
     
     この例では、フェデレーション信頼 Azure AD 認証に関する Azure AD 認証システムのフェデレーション メタデータと証明書を更新します。
     
-        Set-FederationTrust "Azure AD authentication" -RefreshMetadata
+    ```powershell
+    Set-FederationTrust "Azure AD authentication" -RefreshMetadata
+    ```  
 
 構文およびパラメーターの詳細については、以下のトピックを参照してください。
 
@@ -153,11 +169,15 @@ _**トピックの最終更新日:** 2015-01-01_
 
 1.  次のシェル コマンドを実行して、フェデレーション信頼情報を確認します。
     
-        Get-FederationTrust | format-list
+    ```powershell
+    Get-FederationTrust | format-list
+    ```  
 
 2.  次のシェル コマンドを実行して、フェデレーション情報を組織から取得できることを確認します。たとえば、sales.contoso.com ドメインおよび marketing.contoso.com ドメインが *DomainNames* パラメーターで返されることを確認します。
     
-        Get-FederationInformation -DomainName <your primary sharing domain>
+    ```powershell
+    Get-FederationInformation -DomainName <your primary sharing domain>
+    ```  
 
 
 > [!TIP]
