@@ -45,7 +45,9 @@ _**トピックの最終更新日:** 2015-04-08_
 
 ピックアップ ディレクトリを構成するには、次の構文を使用します。
 
-    Set-TransportService <ServerIdentity> -PickupDirectoryPath <LocalFilePath> -PickupDirectoryMaxHeaderSize <Size> -PickupDirectoryMaxRecipientsPerMessage <Integer> -PickupDirectoryMaxMessagesPerMinute <Integer>
+```PowerShell
+Set-TransportService <ServerIdentity> -PickupDirectoryPath <LocalFilePath> -PickupDirectoryMaxHeaderSize <Size> -PickupDirectoryMaxRecipientsPerMessage <Integer> -PickupDirectoryMaxMessagesPerMinute <Integer>
+```
 
 この例では、Exchange01 というメールボックス サーバーのピックアップ ディレクトリに次の変更を行います。
 
@@ -59,8 +61,9 @@ _**トピックの最終更新日:** 2015-04-08_
 
 <!-- end list -->
 
-    Set-TransportService Exchange01 -PickupDirectoryPath "D:\Pickup Directory" -PickupDirectoryMaxHeaderSize 96KB -PickupDirectoryMaxRecipientsPerMessage 250 -PickupDirectoryMaxMessagesPerMinute 200
-
+```PowerShell
+Set-TransportService Exchange01 -PickupDirectoryPath "D:\Pickup Directory" -PickupDirectoryMaxHeaderSize 96KB -PickupDirectoryMaxRecipientsPerMessage 250 -PickupDirectoryMaxMessagesPerMinute 200
+```
 
 > [!NOTE]
 > <UL>
@@ -75,7 +78,9 @@ _**トピックの最終更新日:** 2015-04-08_
 
 再生ディレクトリを構成するには、次の構文を使用します。
 
-    Set-TransportService <ServerIdentity> -ReplayDirectoryPath "C:\Replay Directory" <LocalFilePath> -PickupDirectoryMaxMessagesPerMinute <Integer>
+```PowerShell
+Set-TransportService <ServerIdentity> -ReplayDirectoryPath "C:\Replay Directory" <LocalFilePath> -PickupDirectoryMaxMessagesPerMinute <Integer>
+```
 
 この例では、Exchange01 というメールボックス サーバーの再生ディレクトリに次の変更を行います。
 
@@ -85,8 +90,9 @@ _**トピックの最終更新日:** 2015-04-08_
 
 <!-- end list -->
 
-    Set-TransportService Exchange01 -ReplayDirectoryPath "D:\Replay Directory" -PickupDirectoryMaxMessagesPerMinute 200
-
+```PowerShell
+Set-TransportService Exchange01 -ReplayDirectoryPath "D:\Replay Directory" -PickupDirectoryMaxMessagesPerMinute 200
+```
 
 > [!NOTE]
 > <UL>
@@ -103,7 +109,9 @@ _**トピックの最終更新日:** 2015-04-08_
 
 1.  次のコマンドを実行します。
     
-        Get-TransportService <ServerIdentity> | Format-List Pickup*,Replay*
+    ```PowerShell
+    Get-TransportService <ServerIdentity> | Format-List Pickup*,Replay*
+    ```
 
 2.  表示された値が構成した値であることを確認します。
 
