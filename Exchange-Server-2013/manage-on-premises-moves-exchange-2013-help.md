@@ -175,10 +175,12 @@ New-MoveRequest -Identity 'tony@alpineskihouse.com' -PrimaryOnly -TargetDatabase
 
 この例では、移行エンドポイントを構成し, .csv ファイルを使用してソース フォレストからターゲット フォレストまでのフォレスト間バッチ移動を作成します。
 
-    New-MigrationEndpoint -Name Fabrikam -ExchangeRemote -Autodiscover -EmailAddress tonysmith@fabrikam.com -Credentials (Get-Credential fabrikam\tonysmith) 
+```PowerShell
+New-MigrationEndpoint -Name Fabrikam -ExchangeRemote -Autodiscover -EmailAddress tonysmith@fabrikam.com -Credentials (Get-Credential fabrikam\tonysmith) 
     
-    $csvData=[System.IO.File]::ReadAllBytes("C:\Users\Administrator\Desktop\batch.csv")
-    New-MigrationBatch -CSVData $csvData -Timezone "Pacific Standard Time" -Name FabrikamMerger -SourceEndpoint Fabrikam -TargetDeliveryDomain "mail.contoso.com"
+$csvData=[System.IO.File]::ReadAllBytes("C:\Users\Administrator\Desktop\batch.csv")
+New-MigrationBatch -CSVData $csvData -Timezone "Pacific Standard Time" -Name FabrikamMerger -SourceEndpoint Fabrikam -TargetDeliveryDomain "mail.contoso.com"
+```  
 
 フォレスト間移動のフォレストの準備方法の詳細については、以下のトピックを参照してください。
 
@@ -238,7 +240,9 @@ New-MoveRequest -Identity 'tony@alpineskihouse.com' -ArchiveOnly -ArchiveTargetD
 
 この例では、Ayla のプライマリ メールボックスとアーカイブ メールボックスを別々のデータベースに移動します。プライマリ データベースは DB01 に移動され、アーカイブは DB03 に移動されます。
 
-    New-MoveRequest -Identity 'ayla@humongousinsurance.com' -TargetDatabase DB01 -ArchiveTargetDatabase -DB03
+```PowerShell
+New-MoveRequest -Identity 'ayla@humongousinsurance.com' -TargetDatabase DB01 -ArchiveTargetDatabase -DB03
+```
 
 構文およびパラメーターの詳細については、「[New-MigrationBatch](https://technet.microsoft.com/ja-jp/library/jj219166\(v=exchg.150\))」と「[New-MoveRequest](https://technet.microsoft.com/ja-jp/library/dd351123\(v=exchg.150\))」を参照してください。
 
@@ -270,7 +274,9 @@ New-MoveRequest -Identity 'tony@alpineskihouse.com' -ArchiveOnly -ArchiveTargetD
 
 この例では、Lisa のプライマリ メールボックスをメールボックス データベース DB01 へ移動し、無効なアイテムの制限値を `100` に設定します。このように無効なアイテムの制限値に大きな値を設定するには、*AcceptLargeDataLoss* パラメーターを使用する必要があります。
 
-    New-MoveRequest -Identity 'Lisa' -PrimaryOnly -TargetDatabase "DB01" -BadItemLimit 100 -AcceptLargeDataLoss
+```PowerShell
+New-MoveRequest -Identity 'Lisa' -PrimaryOnly -TargetDatabase "DB01" -BadItemLimit 100 -AcceptLargeDataLoss
+```
 
 構文およびパラメーターの詳細については、「[New-MigrationBatch](https://technet.microsoft.com/ja-jp/library/jj219166\(v=exchg.150\))」と「[New-MoveRequest](https://technet.microsoft.com/ja-jp/library/dd351123\(v=exchg.150\))」を参照してください。
 
